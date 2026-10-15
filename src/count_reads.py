@@ -12,7 +12,13 @@ META_FILE = Path(__file__).resolve().parent.parent / "data" / "meta" / "metadata
 OUT_DIR = Path(__file__).resolve().parent.parent / "results"
 
 def count_reads_and_lengths(fq_path: Path):
-    """Return (num_reads, lengths_list) from a fastq.gz file."""
+    """Return (num_reads, lengths_list) from a fastq.gz file.
+
+    Данные: data/raw/*_R1_001.fastq.gz::count_reads_and_lengths,
+            data/raw/*_R2_001.fastq.gz::count_reads_and_lengths
+    Проверка: checks/check.py::main
+    Используется в: src/count_reads.py::main
+    """
     lengths = []
     num_reads = 0
     with gzip.open(fq_path, "rt") as f:
@@ -28,6 +34,14 @@ def count_reads_and_lengths(fq_path: Path):
     return num_reads, lengths
 
 def main():
+    """Main entry point: count reads, write results, print summary.
+
+    Данные: data/meta/metadata.tsv::main,
+            data/raw/*_R1_001.fastq.gz::main,
+            data/raw/*_R2_001.fastq.gz::main
+    Проверка: checks/check.py::main
+    Используется в: results/read_counts_R1.tsv::main
+    """
     # Read metadata to get sample list and R1 filenames
     samples = []
     with open(META_FILE, newline="") as f:
