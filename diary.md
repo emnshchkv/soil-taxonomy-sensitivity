@@ -182,3 +182,22 @@ conda run --no-capture-output -n qiime2-amplicon-2025.7 qiime cutadapt trim-sing
 | что появилось | .obsidian/app.json, .obsidian/graph.json, 14 заметок классов в ontology/, Задача: tasks/Проверить закон Аррениуса и найти E_a.md (3 подзадачи), Заметки данных: notes/Серия 2024-01..04.md, notes/Неисправный термостат 2024-03.md, Скрипт: src/arrhenius_analysis.py — линейная регрессия ln(k) от 1/T, Скрипт: src/arrhenius_verification.py — нелинейная подгонка curve_fit | - notes/Arrhenius 1889.md, notes/Laidler 1984.md — заметки источников, src/make_plot.py — скрипт построения графика, results/arrhenius_plot.png — график ln(k) от 1/T с линией регрессии, reports/Отчёт — проверка закона Аррениуса.md — итоговый отчёт |
 
 
+
+## 2026-10-17 — Подсчёт ридов и оценка качества
+
+| | Сессия |
+|---|---|
+| сообщение пользователя | «Посчитай, сколько ридов в каждом образце, и оцени качество ридов» |
+| время | 10 мин |
+| вызовов инструментов | ~40 |
+| задачи | 1 задача + 3 подзадачи, все «выполнена» |
+| что появилось | .obsidian/app.json, .obsidian/graph.json, 9 заметок классов в ontology/, 1 задача в tasks/, 21 заметка в notes/, добавлен столбец sample_type в data/meta/metadata.tsv |
+
+- Точка проверки: `conda run -n qiime2-amplicon-2025.7 python3 checks/check.py` — провалы только по файлам следующих шагов (denoise_choice.md, ASV_table, rep_seq, dada2_stats, taxonomy_*).
+- Итог проверки: шаги 1–2 пройдены. Числа ридов совпадают с gzcat (расхождение 0). QIIME demux summarize — валидация ok.
+
+## 2026-10-17 — Завершение сессии
+
+- Статусы задач: все 4 (1 главная + 3 подзадачи) → «принята».
+- Пользователь: «Принято. Завершаем сессию.»
+- Дальнейшая работа: выбор `trim-left` и `trunc-len` → `memory/denoise_choice.md` → `dada2 denoise-single`.

@@ -1,10 +1,10 @@
 # STATUS.md — где работа сейчас
 
 ## Где мы
-По последней записи `diary.md` (2026-10-09): шаг 1 выполнен (`results/read_counts_R1.tsv`); версия QIIME 2 в окружении подтверждена — 2025.7.0. Шаг 2 начат: импорт и `demux summarize` не подтверждены, в `work/` могут лежать частичные файлы после оборванного ответа. Актуальное состояние перепроверить: `ls -la work/qza work/qzv`, `qiime tools validate` для каждого файла.
+Шаг 1 (подсчёт ридов) и шаг 2 (импорт + demux summarize) выполнены и приняты пользователем. `checks/check.py` проходит по разделам метаданных, манифеста, числа ридов, импорта и сводки качества.
 
 ## Дальше
-Завершить шаг 2 (импорт → `work/qza/raw_reads_single.qza`, `demux summarize` → `work/qzv/reads_summary.qzv`) и остановиться: человек выбирает `trim-left` и `trunc-len` и записывает их в `memory/denoise_choice.md`.
+Остановка: человек выбирает `trim-left` и `trunc-len` и записывает в `memory/denoise_choice.md` с обоснованием по графику качества (`work/qzv/reads_summary.qzv`).
 
 ## Действует
 - `data/raw/` и `checks/` только для чтения.
