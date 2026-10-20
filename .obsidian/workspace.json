@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6f67b0543f1548de",
+        "id": "71c310ba142a6287",
         "type": "tabs",
         "children": [
           {
-            "id": "f16c082cb06344ba",
+            "id": "d96c44c4b7fee1fc",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -181,6 +181,11 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "f16c082cb06344ba",
-  "lastOpenFiles": []
+  "active": "d96c44c4b7fee1fc",
+  "lastOpenFiles": [
+    "notes/Запрос 2026-10-21 Wikidata.md",
+    "tasks/Классификация classify-sklearn тремя референсными базами.md",
+    "ontology/Источник.md",
+    "notes/Сырые риды R1 проекта.md"
+  ]
 }
