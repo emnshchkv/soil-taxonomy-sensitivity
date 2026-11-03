@@ -64,6 +64,14 @@ conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 checks/check.py
 conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 checks/verify_denoising.py
 ```
 
+Самотест исправленной реализации (только изолированные синтетические копии):
+
+```sh
+conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 checks/verify_denoising.py --self-test
+```
+
+Ожидается `self-test: PASS/0`. Он не меняет `work/`, решение человека и данные; проверка изоляции — `tests/test_verifier_integration.py`. Ожидаемые ответы — `tests/fixtures/denoise-clean/README.md`. Полный режим сохраняет `INCOMPLETE/2`, пока отсутствуют обязательные профили, решение и три реальных результата. Разрешённое пользователем исправление касается только `checks/verify_denoising.py`; `checks/check.py` неизменна.
+
 Полный вердикт охватывает испытания на известных ошибках, профили качества всех 11 образцов и три запуска DADA2. Коды завершения: `0` — PASS, `1` — FAIL с причинами, `2` — INCOMPLETE. Перед денойзингом показать человеку график и сводные показатели каждого образца. Человек выбирает общие параметры обрезки и фиксирует их в `memory/denoise_choice.md`.
 
 ## 2. Карта проекта, источники и граф

@@ -263,3 +263,10 @@ conda run --no-capture-output -n qiime2-amplicon-2025.7 qiime cutadapt trim-sing
 Результат: memory/verifier_repair_plan.md; results/verifier_protected_before.json.
 Точка проверки: conda run -n qiime2-amplicon-2025.7 qiime --version.
 Итог проверки: q2cli 2025.7.0; исходный небезопасный самотест не запускался.
+
+## 2026-11-03 — Исправление договора верификатора
+
+Что сделано: изолированы мутации, добавлены настоящие читатели BIOM/HDF5/FASTA/TSV, чистая validate, сверка сохранённых профилей по FASTQ, приоритет FAIL.
+Результат: checks/verify_denoising.py, src/denoise_examples.py, src/verifier_quality_cases.py, fixtures и описание.
+Точка проверки: conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 checks/verify_denoising.py --self-test.
+Итог проверки: PASS/0, results/verifier_selftest.txt; checks снова закрыта от записи. Реальные архивы проверяются следующим шагом.
