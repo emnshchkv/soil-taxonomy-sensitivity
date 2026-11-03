@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/tests/test_verifier_integration.py", line 143, in <module>
+    safety()
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/tests/test_verifier_integration.py", line 45, in safety
+    assert before == after, "self-test changed project files or permissions"
+AssertionError: self-test changed project files or permissions
+ERROR conda.cli.main_run:execute(142): `conda run python3 tests/test_verifier_integration.py --real-run /Users/elizavetamenshchikova/YSDA/AI/project_bacteria_before_6ce5404_20261103_230603/work-before/qza --quality-archive /Users/elizavetamenshchikova/YSDA/AI/project_bacteria_before_6ce5404_20261103_230603/tracked-before.tar` failed. (See above for error)

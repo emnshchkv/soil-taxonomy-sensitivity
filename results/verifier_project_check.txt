@@ -1,0 +1,10 @@
+ПРОВЕРКА НЕ ПРОЙДЕНА:
+ - denoise_choice.md: нужны строки «trim-left: <число>» и «trunc-len: <число>»
+ - work/qza/ASV_table.qza: файла нет
+ - work/qza/rep_seq.qza: файла нет
+ - work/qza/dada2_stats.qza: файла нет
+ - work/qzv/dada2_stats.qzv: файла нет
+ - work/qza/taxonomy_sklearn_silva138.qza: файла нет
+ - work/qza/taxonomy_sklearn_gtdb.qza: файла нет
+ - work/qza/taxonomy_sklearn_gg2.qza: файла нет
+ERROR conda.cli.main_run:execute(142): `conda run /bin/sh -c export PATH="$CONDA_PREFIX/bin:$PATH"; exec "$CONDA_PREFIX/bin/python3" -B checks/check.py` failed. (See above for error)

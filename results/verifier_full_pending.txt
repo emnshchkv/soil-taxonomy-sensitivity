@@ -1,0 +1,62 @@
+ok versioned fixture files and SHA256: True
+ok versioned fixture verdict: True
+ok clean: []
+ok clean exit: 0
+ok order: []
+ok order exit: 0
+ok transfer: ['REPEAT_DIFFERENCE']
+ok transfer exit: 1
+ok duplicate: ['SAMPLE_KEY']
+ok duplicate exit: 1
+ok reuse: ['REUSED_RUN']
+ok reuse exit: 1
+ok length: ['ASV_LENGTH', 'REPEAT_DIFFERENCE']
+ok length exit: 1
+ok balance: ['READ_BALANCE', 'REPEAT_DIFFERENCE']
+ok balance exit: 1
+ok version: ['PROVENANCE']
+ok version exit: 1
+ok input: ['PROVENANCE']
+ok input exit: 1
+ok mixed_execution: ['PROVENANCE']
+ok mixed_execution exit: 1
+ok fail_and_missing: ['INCOMPLETE', 'READ_BALANCE', 'REPEAT_DIFFERENCE']
+ok fail_and_missing exit: 1
+ok param: ['PROVENANCE']
+ok param exit: 1
+ok increasing: ['REPEAT_DIFFERENCE', 'STATS_COUNT']
+ok increasing exit: 1
+ok missing: ['INCOMPLETE']
+ok missing exit: 2
+ok low_retention: ['INCOMPLETE', 'REPEAT_DIFFERENCE']
+ok low_retention exit: 1
+ok two reads Q10,Q30: (2, Decimal('15'), Decimal('20'), Decimal('25'))
+ok sample summary: (2, 2, Decimal('20'), Decimal('50'))
+ok median +1: ['QUALITY_VALUE']
+ok malformed FASTQ: ['FASTQ_FORMAT']
+ok saved profiles manual oracle: ([], 0)
+ok saved median mutation: ['QUALITY_VALUE']
+ok saved summary mutation: ['QUALITY_VALUE']
+ok duplicate position: ['QUALITY_KEY']
+ok missing profile is incomplete: 2
+ok profile error outranks missing file: 1
+ok baseline 2x2: set()
+ok baseline 3x3: set()
+ok baseline 5x5: set()
+ok baseline 8x8: set()
+ok property axis order sizes=2x2,3x3,5x5,8x8: 4
+ok property feature renaming sizes=2x2,3x3,5x5,8x8: 4
+ok property balanced transfer sizes=2x2,3x3,5x5,8x8: 4
+ok property per-sample balance sizes=2x2,3x3,5x5,8x8: 4
+ok property stage monotonicity sizes=2x2,3x3,5x5,8x8: 4
+ok property count domain sizes=2x2,3x3,5x5,8x8: 4
+ok property purity sizes=2x2,3x3,5x5,8x8: 4
+elapsed_seconds=2.64
+INCOMPLETE quality_by_position: missing /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/quality_by_position.tsv
+INCOMPLETE quality_by_sample: missing /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/quality_by_sample.tsv
+INCOMPLETE denoise_choice: missing решение человека: trim-left
+INCOMPLETE work/qza: missing /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/work/qza/ASV_table.qza
+INCOMPLETE work/denoise_repeats/02: missing /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/work/denoise_repeats/02/ASV_table.qza
+INCOMPLETE work/denoise_repeats/03: missing /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/work/denoise_repeats/03/ASV_table.qza
+full: INCOMPLETE/2
+ERROR conda.cli.main_run:execute(142): `conda run python3 checks/verify_denoising.py` failed. (See above for error)

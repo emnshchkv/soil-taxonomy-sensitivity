@@ -1,0 +1,63 @@
+/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/q2_demux/_summarize/_visualizer.py:11: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+During startup - There were 13 warnings (use warnings() to see them)
+R[write to console]: Error in library.dynam(lib, package, package.lib) : 
+  shared object ‘methods.dylib’ not found
+
+self-test isolation: PASS; 102 files, SHA256 and modes unchanged
+populated foreign work/memory sentinels: PASS; 10 files unchanged
+Traceback (most recent call last):
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/tests/test_verifier_integration.py", line 146, in <module>
+    real_archives(args.real_run)
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/tests/test_verifier_integration.py", line 72, in real_archives
+    artifacts = [Artifact.load(str(directory/p[0])) for p in api.PRODUCTS]
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/tests/test_verifier_integration.py", line 72, in <listcomp>
+    artifacts = [Artifact.load(str(directory/p[0])) for p in api.PRODUCTS]
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/sdk/result.py", line 83, in load
+    archiver = archive.Archiver.load(filepath)
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/core/archive/archiver.py", line 387, in load
+    ref = cls(data_path, process_alias, Format(rec), cache)
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/core/archive/format/v7_0.py", line 179, in __init__
+    super().__init__(archive_record)
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/core/archive/format/v1.py", line 32, in __init__
+    super().__init__(archive_record)
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/core/archive/format/v0.py", line 75, in __init__
+    self.format = sdk.parse_format(format)
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/sdk/util.py", line 109, in parse_format
+    pm = qiime2.sdk.PluginManager()
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/sdk/plugin_manager.py", line 67, in __new__
+    self._init(add_plugins=add_plugins)
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/sdk/plugin_manager.py", line 105, in _init
+    plugin = entry_point.load()
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/importlib/metadata/__init__.py", line 171, in load
+    module = import_module(match.group('module'))
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/q2_composition/__init__.py", line 18, in <module>
+    from ._ancombc2 import ancombc2, ancombc2_visualizer
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/q2_composition/_ancombc2.py", line 16, in <module>
+    from rpy2.robjects.conversion import Converter
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/rpy2/robjects/__init__.py", line 18, in <module>
+    from rpy2.robjects.robject import RObjectMixin, RObject
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/rpy2/robjects/robject.py", line 81, in <module>
+    class RObjectMixin(abc.ABC):
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/rpy2/robjects/robject.py", line 93, in RObjectMixin
+    __show = _get_exported_value('methods', 'show')
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/rpy2/rinterface_lib/conversion.py", line 45, in _
+    cdata = function(*args, **kwargs)
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/rpy2/rinterface.py", line 817, in __call__
+    raise embedded.RRuntimeError(_rinterface._geterrmessage())
+rpy2.rinterface_lib.embedded.RRuntimeError: Error in library.dynam(lib, package, package.lib) : 
+  shared object ‘methods.dylib’ not found
+
+ERROR conda.cli.main_run:execute(142): `conda run python3 tests/test_verifier_integration.py --real-run /Users/elizavetamenshchikova/YSDA/AI/project_bacteria_before_6ce5404_20261103_230603/work-before/qza --quality-archive /Users/elizavetamenshchikova/YSDA/AI/project_bacteria_before_6ce5404_20261103_230603/tracked-before.tar` failed. (See above for error)

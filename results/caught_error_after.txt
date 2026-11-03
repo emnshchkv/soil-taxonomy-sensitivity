@@ -1,0 +1,13 @@
+Command: python3 checks/verify_denoising.py --example-dir "$CASE"
+Case: temporary synthetic transfer; create/repair with src/denoise_examples.py
+run=1 SYN_soil: input=12 non-chimeric=9 retention=75.00% ASV=2
+run=1 SYN_water: input=10 non-chimeric=5 retention=50.00% ASV=2
+run=2 SYN_soil: input=12 non-chimeric=9 retention=75.00% ASV=2
+run=2 SYN_water: input=10 non-chimeric=5 retention=50.00% ASV=2
+run=3 SYN_soil: input=12 non-chimeric=9 retention=75.00% ASV=2
+run=3 SYN_water: input=10 non-chimeric=5 retention=50.00% ASV=2
+runs=1-2 different_sequences/cells/max_delta_reads/stats=(0, 0, 0, 0)
+runs=1-3 different_sequences/cells/max_delta_reads/stats=(0, 0, 0, 0)
+runs=2-3 different_sequences/cells/max_delta_reads/stats=(0, 0, 0, 0)
+synthetic example: PASS/0
+Exit code: 0

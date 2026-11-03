@@ -1,0 +1,19 @@
+self-test isolation: PASS; 87 files, SHA256 and modes unchanged
+populated foreign work/memory sentinels: PASS; 10 files unchanged
+Traceback (most recent call last):
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/tests/test_verifier_integration.py", line 145, in <module>
+    real_archives(args.real_run)
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/tests/test_verifier_integration.py", line 68, in real_archives
+    from qiime2 import Artifact
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/__init__.py", line 9, in <module>
+    from qiime2.sdk import Artifact, Visualization, ResultCollection
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/sdk/__init__.py", line 9, in <module>
+    from .context import Context, AsynchronousContext, ParallelContext
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/sdk/context/__init__.py", line 10, in <module>
+    from .parallel import ParallelContext
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/sdk/context/parallel.py", line 13, in <module>
+    from qiime2.sdk.parallel_config import PARALLEL_CONFIG
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/sdk/parallel_config.py", line 37, in <module>
+    'max_threads': max(psutil.cpu_count() - 1, 1)},
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'int'
+ERROR conda.cli.main_run:execute(142): `conda run python3 tests/test_verifier_integration.py --real-run /Users/elizavetamenshchikova/YSDA/AI/project_bacteria_before_6ce5404_20261103_230603/work-before/qza --quality-archive /Users/elizavetamenshchikova/YSDA/AI/project_bacteria_before_6ce5404_20261103_230603/tracked-before.tar` failed. (See above for error)

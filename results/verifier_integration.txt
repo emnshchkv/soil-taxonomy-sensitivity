@@ -1,0 +1,13 @@
+/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/q2_demux/_summarize/_visualizer.py:11: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+self-test isolation: PASS; 103 files, SHA256 and modes unchanged
+populated foreign work/memory sentinels: PASS; 10 files unchanged
+real QZA vs QIIME Artifact.validate/view/export: PASS; 3374 ASV, 11 samples
+reader check only; archived outputs, no new DADA2 execution
+real archive SHA256: {"ASV_table.qza": "eb9222373ed9690dd6cc6a50cb86e5144db3c1c7b7dc1ffedba00c79d04ccb96", "dada2_stats.qza": "013254104b672bc7dd3cb64f3298f5984ba1bde5361c6f049cc0178a73fd3dd8", "rep_seq.qza": "677a3aa53cfeb1aebf85ef474903801764055855a9a1ee13857bcfd87158e815"}
+reference quality_by_position.tsv SHA256=aec97c9ff134c756b71a849dea5eed7964386be5bca98ee60a0dc55ec6344dbe
+reference quality_by_sample.tsv SHA256=6108134134eb9773829e180765c9e0389587a78a27d3e20b04e84f889a1969ca
+real saved profiles vs independent FASTQ histogram: PASS; 2761 positions, 11 samples
+real saved median +1 in temporary copy: FAIL/1 QUALITY_VALUE (expected)
+restored real profile in temporary copy: PASS/0
+integration checks: PASS/0
