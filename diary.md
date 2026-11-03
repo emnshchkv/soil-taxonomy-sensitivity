@@ -255,3 +255,11 @@ conda run --no-capture-output -n qiime2-amplicon-2025.7 qiime cutadapt trim-sing
   - Работ без локальной копии в library/: 5 (файлы не скачивались).
 - Точка проверки: заметки источников (`notes/Knight 2018.md`, `notes/Ruppert 2019.md`, `notes/Chiu 2019.md`, `notes/Zhou 2017.md`, `notes/Milani 2017.md`), заметка запроса OpenAlex, заметка Wikidata (`notes/16S ribosomal RNA.md`).
 - Итог проверки: принято пользователем — «Принимаю работу». Команды не запускались, проверка визуальная.
+
+
+## 2026-11-03 — План исправления верификатора
+
+Что сделано: записаны задача и три подзадачи; план испытаний до запуска исправленного кода.
+Результат: memory/verifier_repair_plan.md; results/verifier_protected_before.json.
+Точка проверки: conda run -n qiime2-amplicon-2025.7 qiime --version.
+Итог проверки: q2cli 2025.7.0; исходный небезопасный самотест не запускался.
