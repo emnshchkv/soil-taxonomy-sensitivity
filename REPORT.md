@@ -8,7 +8,7 @@
 | Вариант | проверка данных и тесты на свойствах |
 | Репозиторий | https://github.com/emnshchkv/soil-taxonomy-sensitivity |
 | Проверенный коммит кода | `3d37377f22269fd05832fd407ae99a080d3d1e79` |
-| Метка git | hw2 пока на c55905f; перенос и публикация ожидают согласования |
+| Метка git | hw2 |
 | Публичная команда | `conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 checks/verify_denoising.py --self-test` |
 
 ## 1. Задача и место верификатора
@@ -113,7 +113,7 @@
 ```bash
 git clone https://github.com/emnshchkv/soil-taxonomy-sensitivity.git
 cd soil-taxonomy-sensitivity
-git checkout 3d37377f22269fd05832fd407ae99a080d3d1e79
+git checkout hw2
 conda create -n qiime2-amplicon-2025.7 --file env/explicit.txt
 conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 checks/verify_denoising.py --self-test
 ```
@@ -138,8 +138,8 @@ conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 checks/verify_de
 | Фрагмент или файл | Пометка | Инструмент или модель | Чем проверено |
 |---|---|---|---|
 | Выбор 20/200 и разрешение продолжить три повтора | [написано] | исследователь | сообщения и memory/denoise_choice.md |
-| checks/verify_denoising.py, src/denoise_examples.py, src/qiime_runtime.py, прежние тесты | [порождено] | ИИ-ассистент | свойства, самотест и независимое чтение настоящих QZA |
+| checks/verify_denoising.py, src/denoise_examples.py, src/qiime_runtime.py, прежние тесты | [порождено] | ИИ-ассистент (GPT 6) | свойства, самотест и независимое чтение настоящих QZA |
 | quality_profiles.py, run_denoise_repeats.py, первоначальная обёртка | [порождено] | AI4Science | quality-only и provenance; дефекты обёртки раскрыты выше |
-| Исправленная check_exact_match.py, denoise_evidence.py и test_exact_match*.py | [порождено] | ИИ-ассистент (GPT-6) | регрессии, CLI-сценарии, чистая копия и неизменность |
-| REPORT.md, METHOD.md §§8–10, проектный отчёт и текущие заметки | [порождено] | ИИ-ассистент (GPT-6) | сверка с TSV, provenance и журналами |
+| Исправленная check_exact_match.py, denoise_evidence.py и test_exact_match*.py | [порождено] | AI4Science | регрессии, CLI-сценарии, чистая копия и неизменность |
+| REPORT.md, METHOD.md §§8–10, проектный отчёт и текущие заметки | [порождено] | AI4Science | сверка с TSV, provenance и журналами |
 | Числа и UUID | [источник] | результаты проверок | SHA256 и TSV в results/exact_match_reproduction/ |
