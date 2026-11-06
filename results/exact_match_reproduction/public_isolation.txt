@@ -1,0 +1,8 @@
+Commit: 3d37377f22269fd05832fd407ae99a080d3d1e79
+Command: conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 tests/test_verifier_integration.py
+Expected exit: 0
+self-test isolation: PASS; 80 files, SHA256 and modes unchanged
+populated foreign work/memory sentinels: PASS; 10 files unchanged
+integration checks: PASS/0
+
+exit_code=0

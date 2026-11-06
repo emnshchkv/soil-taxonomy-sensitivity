@@ -1,0 +1,6 @@
+Original protected files: 122
+SHA256 and modes unchanged: True
+No additions/removals in data, work, checks, env, memory, tests/fixtures.
+checks and data/raw directory mode: 0555
+METHOD sections 0-7 equal a398c5f: True
+No DADA2 execution.

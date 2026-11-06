@@ -1,0 +1,9 @@
+Commit: 3d37377f22269fd05832fd407ae99a080d3d1e79
+Command: conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 src/denoise_evidence.py --root /Users/elizavetamenshchikova/YSDA/AI/project_bacteria --out-dir /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/denoise-final-fix-040o0_kl/clean_reproduction/provenance
+Expected exit: 0
+Evidence: 9 artifacts, 33 sample rows, 3 pairs
+run=1 execution=afece195-a63c-4e7f-8035-c8f97cb164ee stats_duration_seconds=103.518008
+run=2 execution=b4eeb58f-2cb2-41d2-a6af-ebe13753bcb0 stats_duration_seconds=122.630873
+run=3 execution=caef497c-b1c2-4593-a39f-d87e28a97e38 stats_duration_seconds=91.904062
+
+exit_code=0

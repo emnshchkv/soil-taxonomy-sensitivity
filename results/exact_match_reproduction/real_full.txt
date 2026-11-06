@@ -1,0 +1,100 @@
+Commit: 3d37377f22269fd05832fd407ae99a080d3d1e79
+Command: conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 checks/verify_denoising.py
+Expected exit: 2
+ok versioned fixture files and SHA256: True
+ok versioned fixture verdict: True
+ok clean: []
+ok clean exit: 0
+ok order: []
+ok order exit: 0
+ok transfer: ['REPEAT_DIFFERENCE']
+ok transfer exit: 1
+ok duplicate: ['SAMPLE_KEY']
+ok duplicate exit: 1
+ok reuse: ['REUSED_RUN']
+ok reuse exit: 1
+ok length: ['ASV_LENGTH', 'REPEAT_DIFFERENCE']
+ok length exit: 1
+ok balance: ['READ_BALANCE', 'REPEAT_DIFFERENCE']
+ok balance exit: 1
+ok version: ['PROVENANCE']
+ok version exit: 1
+ok input: ['PROVENANCE']
+ok input exit: 1
+ok mixed_execution: ['PROVENANCE']
+ok mixed_execution exit: 1
+ok fail_and_missing: ['INCOMPLETE', 'READ_BALANCE', 'REPEAT_DIFFERENCE']
+ok fail_and_missing exit: 1
+ok param: ['PROVENANCE']
+ok param exit: 1
+ok increasing: ['REPEAT_DIFFERENCE', 'STATS_COUNT']
+ok increasing exit: 1
+ok missing: ['INCOMPLETE']
+ok missing exit: 2
+ok low_retention: ['INCOMPLETE', 'REPEAT_DIFFERENCE']
+ok low_retention exit: 1
+ok two reads Q10,Q30: (2, Decimal('15'), Decimal('20'), Decimal('25'))
+ok sample summary: (2, 2, Decimal('20'), Decimal('50'))
+ok median +1: ['QUALITY_VALUE']
+ok malformed FASTQ: ['FASTQ_FORMAT']
+ok saved profiles manual oracle: ([], 0)
+ok saved median mutation: ['QUALITY_VALUE']
+ok saved summary mutation: ['QUALITY_VALUE']
+ok duplicate position: ['QUALITY_KEY']
+ok missing profile is incomplete: 2
+ok profile error outranks missing file: 1
+ok baseline 2x2: set()
+ok baseline 3x3: set()
+ok baseline 5x5: set()
+ok baseline 8x8: set()
+ok property axis order sizes=2x2,3x3,5x5,8x8: 4
+ok property feature renaming sizes=2x2,3x3,5x5,8x8: 4
+ok property balanced transfer sizes=2x2,3x3,5x5,8x8: 4
+ok property per-sample balance sizes=2x2,3x3,5x5,8x8: 4
+ok property stage monotonicity sizes=2x2,3x3,5x5,8x8: 4
+ok property count domain sizes=2x2,3x3,5x5,8x8: 4
+ok property purity sizes=2x2,3x3,5x5,8x8: 4
+run=1 K_S63: input=10396 non-chimeric=9802 retention=94.29% ASV=77
+run=1 Kr1_S80: input=15079 non-chimeric=12351 retention=81.91% ASV=142
+run=1 Kr2_S81: input=16861 non-chimeric=8904 retention=52.81% ASV=200
+run=1 Kr3_S82: input=12807 non-chimeric=9985 retention=77.97% ASV=202
+run=1 Kr4_S83: input=37446 non-chimeric=12293 retention=32.83% ASV=84
+run=1 Kr5_S84: input=60078 non-chimeric=1505 retention=2.51% ASV=42
+run=1 LUB2_S92: input=26688 non-chimeric=25216 retention=94.48% ASV=763
+run=1 LUB3_S93: input=7513 non-chimeric=6623 retention=88.15% ASV=401
+run=1 LUB4_S94: input=17833 non-chimeric=16199 retention=90.84% ASV=780
+run=1 LUB5_S95: input=20410 non-chimeric=19090 retention=93.53% ASV=806
+run=1 LUB6_S96: input=30955 non-chimeric=28821 retention=93.11% ASV=999
+run=2 K_S63: input=10396 non-chimeric=9802 retention=94.29% ASV=77
+run=2 Kr1_S80: input=15079 non-chimeric=12351 retention=81.91% ASV=142
+run=2 Kr2_S81: input=16861 non-chimeric=8904 retention=52.81% ASV=200
+run=2 Kr3_S82: input=12807 non-chimeric=9985 retention=77.97% ASV=202
+run=2 Kr4_S83: input=37446 non-chimeric=12293 retention=32.83% ASV=84
+run=2 Kr5_S84: input=60078 non-chimeric=1505 retention=2.51% ASV=42
+run=2 LUB2_S92: input=26688 non-chimeric=25216 retention=94.48% ASV=763
+run=2 LUB3_S93: input=7513 non-chimeric=6623 retention=88.15% ASV=401
+run=2 LUB4_S94: input=17833 non-chimeric=16199 retention=90.84% ASV=780
+run=2 LUB5_S95: input=20410 non-chimeric=19090 retention=93.53% ASV=806
+run=2 LUB6_S96: input=30955 non-chimeric=28821 retention=93.11% ASV=999
+run=3 K_S63: input=10396 non-chimeric=9802 retention=94.29% ASV=77
+run=3 Kr1_S80: input=15079 non-chimeric=12351 retention=81.91% ASV=142
+run=3 Kr2_S81: input=16861 non-chimeric=8904 retention=52.81% ASV=200
+run=3 Kr3_S82: input=12807 non-chimeric=9985 retention=77.97% ASV=202
+run=3 Kr4_S83: input=37446 non-chimeric=12293 retention=32.83% ASV=84
+run=3 Kr5_S84: input=60078 non-chimeric=1505 retention=2.51% ASV=42
+run=3 LUB2_S92: input=26688 non-chimeric=25216 retention=94.48% ASV=763
+run=3 LUB3_S93: input=7513 non-chimeric=6623 retention=88.15% ASV=401
+run=3 LUB4_S94: input=17833 non-chimeric=16199 retention=90.84% ASV=780
+run=3 LUB5_S95: input=20410 non-chimeric=19090 retention=93.53% ASV=806
+run=3 LUB6_S96: input=30955 non-chimeric=28821 retention=93.11% ASV=999
+runs=1-2 different_sequences/cells/max_delta_reads/stats=(0, 0, 0, 0)
+runs=1-3 different_sequences/cells/max_delta_reads/stats=(0, 0, 0, 0)
+runs=2-3 different_sequences/cells/max_delta_reads/stats=(0, 0, 0, 0)
+elapsed_seconds=2.79
+INCOMPLETE run 1: Kr5_S84 retention below 30%; human review
+INCOMPLETE run 2: Kr5_S84 retention below 30%; human review
+INCOMPLETE run 3: Kr5_S84 retention below 30%; human review
+full: INCOMPLETE/2
+ERROR conda.cli.main_run:execute(142): `conda run python3 checks/verify_denoising.py` failed. (See above for error)
+
+exit_code=2

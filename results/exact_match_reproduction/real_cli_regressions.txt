@@ -1,0 +1,13 @@
+Commit: 3d37377f22269fd05832fd407ae99a080d3d1e79
+Command: conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 tests/test_exact_match_cli.py --project /Users/elizavetamenshchikova/YSDA/AI/project_bacteria --log-dir /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/denoise-final-fix-040o0_kl/clean_reproduction/negative_cases
+Expected exit: 0
+complete: expected=0 actual=0 matched=True
+missing_counts: expected=2 actual=2 matched=True
+missing_quality: expected=2 actual=2 matched=True
+missing_run: expected=2 actual=2 matched=True
+transfer: expected=1 actual=1 matched=True
+transfer_and_missing: expected=1 actual=1 matched=True
+restored: expected=0 actual=0 matched=True
+Protected source files unchanged: True; files=135
+
+exit_code=0

@@ -1,0 +1,6 @@
+11 project-report sample rows match samples.tsv.
+All 12 clean-reproduction cases have expected exit codes.
+Three pairs have four zero metrics each.
+Duration sum 318.052943 s is consistent across reports and METHOD.
+METHOD sections 0-7 unchanged.
+Documentation verification: PASS/0

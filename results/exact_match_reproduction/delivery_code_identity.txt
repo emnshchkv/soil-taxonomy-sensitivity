@@ -1,0 +1,5 @@
+Checked code commit: 3d37377f22269fd05832fd407ae99a080d3d1e79
+Documentation commit: 12bcef805a4be70d8ddefd4eee3a9e89fbda95f9
+Command: git diff 3d37377f22269fd05832fd407ae99a080d3d1e79 12bcef805a4be70d8ddefd4eee3a9e89fbda95f9 -- src checks tests
+Output: empty
+exit_code=0

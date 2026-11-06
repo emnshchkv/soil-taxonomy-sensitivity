@@ -1,0 +1,5 @@
+Commit: 3d37377f22269fd05832fd407ae99a080d3d1e79
+Initial git status --porcelain: empty
+Final git diff HEAD: empty
+Private inputs attached only after public checks.
+No DADA2 execution; existing outputs read only.

@@ -1,0 +1,26 @@
+Commit: 3d37377f22269fd05832fd407ae99a080d3d1e79
+Command: conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 tests/test_exact_match.py
+Expected exit: 0
+test_all_eleven_required (__main__.ExactMatchTests) ... ok
+test_choice_read_failure_is_audited (__main__.ExactMatchTests) ... ok
+test_complete (__main__.ExactMatchTests) ... ok
+test_error_outranks_missing_run (__main__.ExactMatchTests) ... ok
+test_known_retention_exception (__main__.ExactMatchTests) ... ok
+test_missing_choice (__main__.ExactMatchTests) ... ok
+test_missing_counts (__main__.ExactMatchTests) ... ok
+test_missing_profile (__main__.ExactMatchTests) ... ok
+test_missing_run (__main__.ExactMatchTests) ... ok
+test_new_kr5_loss_requires_review (__main__.ExactMatchTests) ... ok
+test_other_soil_loss_requires_review (__main__.ExactMatchTests) ... ok
+test_reused_execution (__main__.ExactMatchTests) ... ok
+test_transfer (__main__.ExactMatchTests) ... ok
+test_transfer_outranks_missing_counts (__main__.ExactMatchTests) ... ok
+test_unrelated_incomplete_survives_exception (__main__.ExactMatchTests) ... ok
+test_zero_soil_is_failure (__main__.ExactMatchTests) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.510s
+
+OK
+
+exit_code=0

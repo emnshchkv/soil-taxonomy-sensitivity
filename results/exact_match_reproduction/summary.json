@@ -1,0 +1,62 @@
+[
+  {
+    "case": "public_selftest",
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "case": "public_regressions",
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "case": "public_isolation",
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "case": "synthetic_create",
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "case": "synthetic_before",
+    "expected": 1,
+    "actual": 1
+  },
+  {
+    "case": "synthetic_repair",
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "case": "synthetic_after",
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "case": "real_exact_documented",
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "case": "real_full",
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "case": "real_cli_regressions",
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "case": "real_evidence",
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "case": "project_check",
+    "expected": 1,
+    "actual": 1
+  }
+]

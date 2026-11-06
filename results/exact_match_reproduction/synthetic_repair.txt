@@ -1,0 +1,6 @@
+Commit: 3d37377f22269fd05832fd407ae99a080d3d1e79
+Command: conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 src/denoise_examples.py repair /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/denoise-final-fix-040o0_kl/clean_synthetic_case
+Expected exit: 0
+repaired: third run soil [5,4]
+
+exit_code=0
