@@ -1,0 +1,8 @@
+case	expected_exit	actual_exit	matched	log
+complete	0	1	False	complete.txt
+missing_counts	2	1	False	missing_counts.txt
+missing_quality	2	1	False	missing_quality.txt
+missing_run	2	1	False	missing_run.txt
+transfer	1	1	False	transfer.txt
+transfer_and_missing	1	1	False	transfer_and_missing.txt
+restored	0	1	False	restored.txt

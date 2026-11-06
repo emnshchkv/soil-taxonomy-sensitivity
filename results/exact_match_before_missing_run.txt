@@ -1,0 +1,14 @@
+Command: ['conda', 'run', '--no-capture-output', '-n', 'qiime2-amplicon-2025.7', '/bin/sh', '-c', 'exec "$CONDA_PREFIX/bin/python3" -B src/check_exact_match.py']
+Commit: 0e5a048
+============================================================
+Команда точного совпадения трёх повторов DADA2
+============================================================
+
+[1/4] Входные хеши и профили качества...
+  OK
+
+[2/4] Три полных исполнения...
+FAIL: Запуск 3: /private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/dada2-fix-review-5iq0fzzq/clone/work/denoise_repeats/03/ASV_table.qza не найден
+ERROR conda.cli.main_run:execute(142): `conda run /bin/sh -c exec "$CONDA_PREFIX/bin/python3" -B src/check_exact_match.py` failed. (See above for error)
+
+exit_code=1

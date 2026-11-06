@@ -1,0 +1,462 @@
+{
+  "checks/check.py": [
+    "6ade7aad3e3a49f338ff8abea97ca880cf8d2de573902c47737a1f3ce1ee5c37",
+    292
+  ],
+  "checks/verify_denoising.py": [
+    "659c083342c32ac6952144bc04f4a7432b675808b9be16c54f4a64b1ab2c3a6c",
+    292
+  ],
+  "data/.DS_Store": [
+    "41ba3eb7f1fadb21b92d5fc43ee09e025ee758e2458b04bd61a2dd382d2962a5",
+    420
+  ],
+  "data/.gitkeep": [
+    "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    436
+  ],
+  "data/meta/.DS_Store": [
+    "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3",
+    420
+  ],
+  "data/meta/fq-manifest-single.tsv": [
+    "f5c8a4d06f352e4b8ebf519f9d362043de3a5779ba270d71adc9b84b6f636f17",
+    420
+  ],
+  "data/meta/metadata.tsv": [
+    "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123",
+    420
+  ],
+  "data/raw/.DS_Store": [
+    "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3",
+    292
+  ],
+  "data/raw/K_S63_R1_001.fastq.gz": [
+    "2b31129651002002c5ee55f7e83b13195b12c05d3745974ea2b38303c19c43ec",
+    292
+  ],
+  "data/raw/K_S63_R2_001.fastq.gz": [
+    "edcaed4e0369fdc0ecc4ab579b5d778526bb70770ba8b6ab1149b4b6c5871228",
+    292
+  ],
+  "data/raw/Kr1_S80_R1_001.fastq.gz": [
+    "af96750a0a1a6a8d23000faaaffbdf828cf5318bf8aa6e39ffc144cf79a051df",
+    292
+  ],
+  "data/raw/Kr1_S80_R2_001.fastq.gz": [
+    "acbc8a895af05fbb65889acf4e0baf8fe4707d01f1d4a5f3cf9117157f44ef32",
+    292
+  ],
+  "data/raw/Kr2_S81_R1_001.fastq.gz": [
+    "40d50ea766444af3bafb9636b315f06e0bf63d533a19e3e6f49a494145f8c3a8",
+    292
+  ],
+  "data/raw/Kr2_S81_R2_001.fastq.gz": [
+    "6397ddc781cad9562fdf75fe3c4f52587ead7d8987dee74443dfc666aa3e1612",
+    292
+  ],
+  "data/raw/Kr3_S82_R1_001.fastq.gz": [
+    "b9ce463e46f64a15ed997f686b29ecd7121825b4bcea34ba30f135ea9132eafa",
+    292
+  ],
+  "data/raw/Kr3_S82_R2_001.fastq.gz": [
+    "af29926ea3842979bbb053658a3d1a34d4fe835b7fd056de2b538a1bd7810d37",
+    292
+  ],
+  "data/raw/Kr4_S83_R1_001.fastq.gz": [
+    "3a5edd45731684b4bddb909b87c9b7bae07e58377620d6f3514cbbb02f2105fe",
+    292
+  ],
+  "data/raw/Kr4_S83_R2_001.fastq.gz": [
+    "0d9d4313b01796634bb7a12a65f3fb0bb889299723d12b20d8dc288e06c06061",
+    292
+  ],
+  "data/raw/Kr5_S84_R1_001.fastq.gz": [
+    "a3a046ebbbf2da26265c5f296c649ca86568a8fb49e45b39dec59a103a31d73e",
+    292
+  ],
+  "data/raw/Kr5_S84_R2_001.fastq.gz": [
+    "c6af7de48d196395b5fb43cb6364d8b4f12727de795aebfa8c18d1f39ea0955e",
+    292
+  ],
+  "data/raw/LUB2_S92_first_launch_R1_001.fastq.gz": [
+    "4d8a4de8d6c7db8a1f68ef79b7e6de4993e84128116aced9ce5ca084e1c95cda",
+    292
+  ],
+  "data/raw/LUB2_S92_first_launch_R2_001.fastq.gz": [
+    "4d55f05841ee29af06471c1818f60eef624b98e98e6ff2887fc8023ca8614c34",
+    292
+  ],
+  "data/raw/LUB3_S93_first_launch_R1_001.fastq.gz": [
+    "2142a53d9eaebe04baf3da84e8f3d604b2eb58940df34f7347193bc5b18f4de9",
+    292
+  ],
+  "data/raw/LUB3_S93_first_launch_R2_001.fastq.gz": [
+    "7841239afc81db554e04068a96b5c52ba51a702cb1cdff8d6a925b555895f1de",
+    292
+  ],
+  "data/raw/LUB4_S94_first_launch_R1_001.fastq.gz": [
+    "0ef55c768ec353461d01c007e5e4d328ac5fc69ff8e15a935375ee4bd1068dae",
+    292
+  ],
+  "data/raw/LUB4_S94_first_launch_R2_001.fastq.gz": [
+    "fdf538e16f7593993f432946154fb46db40aa56a34116c09780d7e0b5e09a487",
+    292
+  ],
+  "data/raw/LUB5_S95_first_launch_R1_001.fastq.gz": [
+    "9a1ada6280f19be67417813c148832584d92b73e05ce6ac5ee80baed965b8ff1",
+    292
+  ],
+  "data/raw/LUB5_S95_first_launch_R2_001.fastq.gz": [
+    "73cd97e29dc60230df8b245f101a514b20aee65e5282913df6a54cb96c0a4413",
+    292
+  ],
+  "data/raw/LUB6_S96_first_launch_R1_001.fastq.gz": [
+    "b5a7f97c74bbfec12deb7f77ddd3846ab27c889edd9fb718c3f07eedcb368b98",
+    292
+  ],
+  "data/raw/LUB6_S96_first_launch_R2_001.fastq.gz": [
+    "c414ee7d6e3aea882474cbac67202b97a37220a78c7abd52bf652c407807760a",
+    292
+  ],
+  "data/raw.sha256": [
+    "aeaaba15a9b6479938af3ddeb86bf86c23ff1ca9270c5ac3c685f1ac5f0300ab",
+    420
+  ],
+  "data/refs/VERSIONS.md": [
+    "74f038c0ae1daffe04dcd0fa35d8d66c91fcfa163c0a60b132bcb8c0023bff62",
+    420
+  ],
+  "data/refs/gg_2024.09.full-length.nb.sklearn-1.4.2.qza": [
+    "5c5900c10ad601b12cf0d2280d52cc0f7852627e89070595cc3899a6d690ee27",
+    420
+  ],
+  "data/refs/gtdb_classifier_r220.qza": [
+    "07aadcf7472d9cc6f853f6b4615348619f1a3eceb56c1fb1b6d8dbb20554765f",
+    420
+  ],
+  "data/refs/silva-138-99-nb-classifier.qza": [
+    "c08a1aa4d56b449b511f7215543a43249ae9c54b57491428a7e5548a62613616",
+    420
+  ],
+  "env/environment.yml": [
+    "3e294f5b9a32feb8314f6d876013a09f57482426907d6ccaac74dc18a0d2d461",
+    420
+  ],
+  "env/explicit.txt": [
+    "a063218673eca51c9266813365781d372a421396bc64238c34d025b43f30ed6b",
+    420
+  ],
+  "memory/.gitkeep": [
+    "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    436
+  ],
+  "memory/L1/part_01.md": [
+    "9b92b3d6def34d282cb72a3797dc134d177c7ac975a87ca1f7bd589eb3728c80",
+    420
+  ],
+  "memory/L1/part_02.md": [
+    "3d171bfbf09121d32d31b02b48606c5455d24030d467d7c69bdf08afad68dff4",
+    420
+  ],
+  "memory/L1/part_03.md": [
+    "39094b049d6f020b4a6a1e377f9d4f699de1ed2b323669ccf15d143eebd82595",
+    420
+  ],
+  "memory/L1/part_04.md": [
+    "a8a59bdd4e639d41e6493af661dd87435954b6f23e825287df177c35742c1748",
+    420
+  ],
+  "memory/L1/part_05.md": [
+    "0fab13361b2d6e136b94887d521a86aba574febd11a6b3ec93882ccc23621037",
+    420
+  ],
+  "memory/L1/part_06.md": [
+    "e4fa579324908524a06f3eb6964c787a13d1890f3105e22fb06027b4d71e1183",
+    420
+  ],
+  "memory/L1/part_07.md": [
+    "97f76b7f9212e59473fbd4f1a275a634f5a2e17e76a73c43b0072f915045957c",
+    420
+  ],
+  "memory/L1/part_08.md": [
+    "592294042f79dc0f8d572baf114ccf6c4db0d94733ca49ab0053ab8939bb8b4b",
+    420
+  ],
+  "memory/L1/part_09.md": [
+    "f18a27b25a58c673c755d5b010ac71b1d4917c85de3894ddbd42e01e8e6308da",
+    420
+  ],
+  "memory/L1/part_10.md": [
+    "90ebd578b1ec0483b7f54d68ebf08b73db38958f7a0eee8ff51adea5cf67702f",
+    420
+  ],
+  "memory/L1/part_11.md": [
+    "d968aeafa5631196c23ca0796fcc9bd621d7117e8c8da2b89ee027a91a062df4",
+    420
+  ],
+  "memory/L1.md": [
+    "b068f90db287a38edc201dcacf1356d4855f35403fcd52278e7b9a27e3fefa00",
+    420
+  ],
+  "memory/L2.md": [
+    "b0d4c0e48ff0624d8b9a0a23f6cf2503b2c4e7efbd4372086a5aad0d0df68bde",
+    420
+  ],
+  "memory/L3.md": [
+    "06a6bcfd3fd9e4fd5b43b7740463ee334370ccdba50edc211d7f40c3b44ccff9",
+    420
+  ],
+  "memory/denoise_choice.md": [
+    "d2e41289d8d2478f0a9b5d56bfd9289ca1231e743cb87ae8847de925adfc97b4",
+    420
+  ],
+  "memory/state.md": [
+    "51f78dc9849763565fcf7eb4db57f7e11c5d86027e8a8cd11f59b633b47aad00",
+    420
+  ],
+  "memory/verifier_repair_plan.md": [
+    "f3270f9ea6264d4327228085bb286c72530fd318a8e691e95125504f11050d4c",
+    420
+  ],
+  "results/caught_error_after.txt": [
+    "dc0c1f4d99701cadb23ea7767f2203096763bdf93e08227c63f2ed7ab7b3a488",
+    420
+  ],
+  "results/caught_error_before.txt": [
+    "6998084c3ef56c0a78b9e7f93e17486c4f9937a09c43eca782406d79f40df974",
+    420
+  ],
+  "results/check_exact_match_pass.txt": [
+    "16c90dc810bf1b04134f7885599f550947ff2c5447bbd6b1891e244de308b906",
+    420
+  ],
+  "results/exact_match_before_documented_command.txt": [
+    "ed0fc4a7418d577e23214499370ab5fa1c55a8e6275c6a834652c01022ccc137",
+    420
+  ],
+  "results/exact_match_before_missing_counts.txt": [
+    "d0c352090d80b79aad5fc8568c8757f6946c9dfbde33547378823ec43c18caa0",
+    420
+  ],
+  "results/exact_match_before_missing_quality.txt": [
+    "af66a166e9396ede9e05daffc89a4411b99987fa5c9127c61a70366fe6e19720",
+    420
+  ],
+  "results/exact_match_before_missing_run.txt": [
+    "4ae5d292143c45aeca35f402a7837bd29423e34a7c0256fdcf0624a2339e4f48",
+    420
+  ],
+  "results/quality_by_position.tsv": [
+    "673680beac0214c7beffaac83039ea2a4dd63d4d70075543d27a8168e8d75f0a",
+    420
+  ],
+  "results/quality_by_sample.png": [
+    "bfecd70f9cd2ea49cca960f463f7210146c53ebf75c0a7fea7681f35d3f45de7",
+    420
+  ],
+  "results/quality_by_sample.tsv": [
+    "6108134134eb9773829e180765c9e0389587a78a27d3e20b04e84f889a1969ca",
+    420
+  ],
+  "results/read_counts_R1.tsv": [
+    "242ae373be49497594a2a6fb799bdae14425b8c0a09fa271cbe58252f4fa9075",
+    420
+  ],
+  "results/reads_vs_median.tsv": [
+    "aa19ed08dfe1ba8f46ba12675c57565116139fb43dc41cde0734f82887c0795e",
+    420
+  ],
+  "results/selftest_pass.txt": [
+    "e6a289321f1b1b07fada3645c2e045812692fec6061ff4055292e1b00673c4ce",
+    420
+  ],
+  "results/verifier_clean_snapshot.txt": [
+    "84206d56c9da4f816a337cda9986ed150c40254ee4f317fbf95bed7b2ec56461",
+    420
+  ],
+  "results/verifier_full_pending.txt": [
+    "3ba68dc3aed7f68462ddeeca8507de6d293b3cc10c47cd29826d7d69d80a8d28",
+    420
+  ],
+  "results/verifier_integration.txt": [
+    "a81b7faa11c19497e1ab549d995206dc8564cad1bc68ff8d94c1b7519d257781",
+    420
+  ],
+  "results/verifier_integration_concurrent_attempt.txt": [
+    "4e27a3492137a8fbb91cb69c9db38e87a485cb2de458976f491f16755c060413",
+    420
+  ],
+  "results/verifier_integration_r_path_attempt.txt": [
+    "8225cb878543a2679ae8dd7da6e680b1a303330372429c55e79e29ede2bb3b34",
+    420
+  ],
+  "results/verifier_integration_sandbox_attempt.txt": [
+    "01d5ed217c66beb2ddf28a220515e908f21913e1eab253266d630b7b1b0f1146",
+    420
+  ],
+  "results/verifier_project_check.txt": [
+    "918cd16c15aeee8b90b803eb7a8adfdc5ca93a9e47f2023a8527b68000ad93ad",
+    420
+  ],
+  "results/verifier_protected_after.json": [
+    "2537b94accde109a7d6b8f10bab3adbba92a4c432e1bb7a85e41ba120b6ebe65",
+    420
+  ],
+  "results/verifier_protected_before.json": [
+    "ef002b1fb6d3faa4f736fbeaeca7d6982bb58d6967bf6d8a1c4190bc111405bd",
+    420
+  ],
+  "results/verifier_selftest.txt": [
+    "e6a289321f1b1b07fada3645c2e045812692fec6061ff4055292e1b00673c4ce",
+    420
+  ],
+  "work/.DS_Store": [
+    "bdf6f670a316bf3817905479f22d7a19f56d0b38a4c9cdd8206bcf6793c592c4",
+    420
+  ],
+  "work/denoise_repeats/02/ASV_table.qza": [
+    "195cb12a8a7d40e404136b30a7fb0671c94beb66e5d7d423765828d5c56407ee",
+    420
+  ],
+  "work/denoise_repeats/02/dada2_stats.qza": [
+    "2ec7583ae3921281baddba28b107ca35015e0cc93c2cb82cf1faec4e31b3e255",
+    420
+  ],
+  "work/denoise_repeats/02/rep_seq.qza": [
+    "bf65273e74d5a9db62e075e5e241db928031588dadbfade9a43d36cdf720514b",
+    420
+  ],
+  "work/denoise_repeats/03/ASV_table.qza": [
+    "c8a303d0245e8b69ff18787a370f8c9923303eaec73f4d27dd5d48d5d2eb8b56",
+    420
+  ],
+  "work/denoise_repeats/03/dada2_stats.qza": [
+    "06eb51c076b85ab5fd379dc45603c5a7b107116fb337f503788157586a043e88",
+    420
+  ],
+  "work/denoise_repeats/03/rep_seq.qza": [
+    "ea959e6a08ac69b23dc5260382ad747d5b7f15887d25cf5d191ec0eb8e27083e",
+    420
+  ],
+  "work/qza/ASV_table.qza": [
+    "0742f177e67b042b25ab1a479193d3d8c7c5dba22d8e73bd2cec254ef3066489",
+    420
+  ],
+  "work/qza/dada2_stats.qza": [
+    "aee292ec726ffe5d177d3d3d965618def4bd0bcd899135b6283fa5415e90527a",
+    420
+  ],
+  "work/qza/raw_reads_single.qza": [
+    "994baa25162444d445610afce07217312ed0a8c05b020e4b356d8377bf53e5f0",
+    420
+  ],
+  "work/qza/rep_seq.qza": [
+    "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86",
+    420
+  ],
+  "work/qzv/reads_summary.qzv": [
+    "727859cc3cf164b239ac83defad338b30c4624ce18ab84b41330d9ad8d5bb1fb",
+    420
+  ],
+  "work/qzv_export/data.jsonp": [
+    "e34209dea7531ac38fa05fd399b92ffac009c993cb92622110e2847f077fafcb",
+    420
+  ],
+  "work/qzv_export/demultiplex-summary-forward.pdf": [
+    "2a05763e708b44825c18d5b8fb324e4afffe8ba47fcc70875fd23579adbf917a",
+    420
+  ],
+  "work/qzv_export/demultiplex-summary-forward.png": [
+    "e2d11536d411643725b45e6a9961df504a57a2c301adebb93a5f3314db599f26",
+    420
+  ],
+  "work/qzv_export/dist/bundle.js": [
+    "af5d1bca16c2e5c62fc6441a3ede2bce7e8ac972198c871876541ecf8df38ffe",
+    420
+  ],
+  "work/qzv_export/dist/d3-license.txt": [
+    "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+    420
+  ],
+  "work/qzv_export/dist/vendor.bundle.js": [
+    "d3a8ddf8f4b719cbb87d0b8ac204c0a240d512478ffdb02aa6ee6930a391d824",
+    420
+  ],
+  "work/qzv_export/forward-seven-number-summaries.tsv": [
+    "ba16ed5a6ecdc8cb4af1941954033d927700fb4e672d613f537aec84cc4f0eac",
+    420
+  ],
+  "work/qzv_export/index.html": [
+    "d2537e512ad60819486c29f8a885cb21ca128c57b249218ca1f787715da67d9b",
+    420
+  ],
+  "work/qzv_export/overview.html": [
+    "407be3e2d3039de145fd1eeca1ca290501774e53dfc41e62c3c111835de92252",
+    420
+  ],
+  "work/qzv_export/per-sample-fastq-counts.tsv": [
+    "98722c9fdf456d8d7db2efb2eaeda082da2d73c9dd003e68ab1ca4ee43406e67",
+    420
+  ],
+  "work/qzv_export/q2templateassets/css/base-template.css": [
+    "9bdf13e4ffcbb66f078a284475625c5b11fbb9d5d0962256d0f63907587a40f7",
+    420
+  ],
+  "work/qzv_export/q2templateassets/css/bootstrap.min.css": [
+    "4194fb4472202061ab0db48cd8908fdfc09e95ee60edd654cac0c4e5cef31806",
+    420
+  ],
+  "work/qzv_export/q2templateassets/css/normalize.css": [
+    "b87bb63007752ef08e544021bcc95de0ba498bb754192ec6573bc6ff9077865a",
+    420
+  ],
+  "work/qzv_export/q2templateassets/css/tab-parent.css": [
+    "36ec5e1256104266e1e78061d19365849d439fbd8c86dfc5d51b4d84db1ff712",
+    420
+  ],
+  "work/qzv_export/q2templateassets/fonts/glyphicons-halflings-regular.eot": [
+    "13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407",
+    420
+  ],
+  "work/qzv_export/q2templateassets/fonts/glyphicons-halflings-regular.svg": [
+    "42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5",
+    420
+  ],
+  "work/qzv_export/q2templateassets/fonts/glyphicons-halflings-regular.ttf": [
+    "e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456",
+    420
+  ],
+  "work/qzv_export/q2templateassets/fonts/glyphicons-halflings-regular.woff": [
+    "a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742",
+    420
+  ],
+  "work/qzv_export/q2templateassets/fonts/glyphicons-halflings-regular.woff2": [
+    "fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c",
+    420
+  ],
+  "work/qzv_export/q2templateassets/img/qiime2-rect-200.png": [
+    "9706cc73427f914ea00aa6bf719a2a82fc8f2d82f7dfb52f6efd1c7d489d32c6",
+    420
+  ],
+  "work/qzv_export/q2templateassets/js/bootstrap.min.js": [
+    "53964478a7c634e8dad34ecc303dd8048d00dce4993906de1bacf67f663486ef",
+    420
+  ],
+  "work/qzv_export/q2templateassets/js/child.js": [
+    "eedf7e7a3482d1e43ef1aa5d4c933d5ac1a35344b0cc3b8346b5560e9267df38",
+    420
+  ],
+  "work/qzv_export/q2templateassets/js/jquery-3.2.0.min.js": [
+    "2405bdf4c255a4904671bcc4b97938033d39b3f5f20dd068985a8d94cde273e2",
+    420
+  ],
+  "work/qzv_export/q2templateassets/js/parent.js": [
+    "ed9d9b6695168b06cc45424a2f72233335cc9554fafd3a4794cb939de38c75c7",
+    420
+  ],
+  "work/qzv_export/quality-plot.html": [
+    "b86f7a255086934e75774be5205eaf79d954d626e25dc217008a08ff1b717209",
+    420
+  ]
+}

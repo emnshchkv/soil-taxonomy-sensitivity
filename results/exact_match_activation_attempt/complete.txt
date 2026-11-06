@@ -1,0 +1,9 @@
+Commit: 0e5a048de74d219fd15118596cf30a871c6db8a6
+Tracked code differs from commit: True
+Wrapper SHA256: cf5bd9dea6347859ad5fe988b1feaa00ec21ded4296e96fab08ade8362d356e4
+Command: conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_exact_match.py --root /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/exact-match-cases-ma0yiiyi
+Expected exit: 0
+ERROR: This cross-compiler package contains no program /Users/elizavetamenshchikova/miniconda3/bin/x86_64-apple-darwin13.4.0-clang++
+ERROR conda.cli.main_run:execute(142): `conda run python3 /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_exact_match.py --root /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/exact-match-cases-ma0yiiyi` failed. (See above for error)
+
+exit_code=1

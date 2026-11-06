@@ -1,109 +1,92 @@
 #!/usr/bin/env python3
-"""
-Команда точного совпадения трёх повторов DADA2.
-
-Использует функции validate и run_metrics из checks/verify_denoising.py.
-Проверяет:
-1. Входные хеши и профили качества
-2. Три полных исполнения (ASV_table, rep_seq, dada2_stats в каждом)
-3. Все 11 образцов в каждом исполнении
-4. Договор (provenance, баланс, статистика) через validate()
-5. Четыре метрики совпадения через run_metrics()
-
-PASS означает повторяемость.
-
-Запуск (в окружении qiime2-amplicon-2025.7):
-  python3 src/check_exact_match.py
-"""
-
-import io
-import sys
+"""Read-only exact comparison of the three existing 20/200 DADA2 executions."""
+from __future__ import annotations
+import argparse
 from pathlib import Path
+import sys
 
-ROOT = Path(__file__).resolve().parent.parent
+sys.dont_write_bytecode = True
+from qiime_runtime import selected_python
+if __name__ == "__main__":
+    selected_python()
+ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "checks"))
+from verify_denoising import (Audit, Dataset, INPUT_ID, RUNS, SAMPLES, Violation,
+                              check_quality, load_run, read_choice, run_metrics, validate)
 
-from verify_denoising import read_repeats, read_choice, check_quality, Audit
+PAIRS = {(1, 2), (1, 3), (2, 3)}
+# The human approved these existing outputs, not arbitrary future losses.
+APPROVED_RETENTION = ("Kr5_S84", 60078, 1505)
 
 
-def check_files_exist():
-    """Проверяет наличие трёх полных исполнений и всех 11 образцов."""
-    paths = {
-        1: ROOT / "work" / "qza",
-        2: ROOT / "work" / "denoise_repeats" / "02",
-        3: ROOT / "work" / "denoise_repeats" / "03",
-    }
-    for run_num, d in paths.items():
-        for fname in ["ASV_table.qza", "rep_seq.qza", "dada2_stats.qza"]:
-            p = d / fname
-            if not p.exists():
-                return False, f"Запуск {run_num}: {p} не найден"
-    return True, "OK"
+def assess_runs(runs, counts, choice, out):
+    """Keep availability separate from contract errors; never infer PASS from silence."""
+    if set(runs) != {1, 2, 3}:
+        out.incomplete.append(f"three executions required; loaded {sorted(runs)}")
+    if counts is None:
+        out.incomplete.append("input read counts unavailable")
+    else:
+        out.same("SAMPLE_KEY", "-", "input counts", SAMPLES, set(counts))
+    if choice is None:
+        out.incomplete.append("human trimming decision unavailable")
+    else:
+        out.same("PROVENANCE", "-", "approved trimming", (20, 200), choice)
+    data = Dataset(runs, counts, "K_S63", choice, INPUT_ID)
+    if counts is not None and choice is not None:
+        out.errors.extend(validate(data))
+
+    # Output comparison still works without input counts, preserving FAIL priority.
+    metrics = out.read("pairwise metrics", lambda: dict(run_metrics(data)))
+    if metrics is None:
+        metrics = {}
+    if set(metrics) != PAIRS:
+        out.incomplete.append(f"three comparison pairs required; computed {sorted(metrics)}")
+    for pair, values in metrics.items():
+        if any(values) and not any(v.code == "REPEAT_DIFFERENCE" and v.run == str(pair)
+                                   for v in out.errors):
+            out.errors.append(Violation("REPEAT_DIFFERENCE", str(pair),
+                                        "ASV/cells/max_reads/stats", (0, 0, 0, 0), values))
+    for number, run in runs.items():
+        out.same("SAMPLE_KEY", number, "table samples", SAMPLES, run.samples)
+        out.same("SAMPLE_KEY", number, "stats samples", SAMPLES, set(run.stats))
+        for sid, (n, _, _, kept) in sorted(run.stats.items()):
+            if sid != "K_S63" and n and 0 < 100 * kept < 30 * n:
+                if choice == (20, 200) and (sid, n, kept) == APPROVED_RETENTION:
+                    print(f"EXCEPTION run={number} {sid}: {kept}/{n}; human-approved existing outputs")
+                else:
+                    out.incomplete.append(f"run {number}: {sid} retention below 30%; human review")
+    return metrics
+
+
+def audit(root):
+    out = Audit()
+    counts = check_quality(root, out, hashes=True)
+    choice = out.read("denoise_choice", read_choice, root / "memory/denoise_choice.md")
+    runs = {}
+    for number, directory in enumerate(RUNS, 1):
+        run = out.read(directory, load_run, root / directory)
+        if run is not None:
+            runs[number] = run
+    return out, runs, assess_runs(runs, counts, choice, out)
 
 
 def main():
-    print("=" * 60)
-    print("Команда точного совпадения трёх повторов DADA2")
-    print("=" * 60)
-
-    # 1. Входные хеши и профили
-    print("\n[1/4] Входные хеши и профили качества...")
-    out1 = Audit()
-    check_quality(ROOT, out1, hashes=True)
-    if out1.errors:
-        print("FAIL:")
-        for v in out1.errors:
-            print(f"  {v.code} run={v.run} key={v.key}")
-        return 1
-    print("  OK")
-
-    # 2. Наличие трёх исполнений
-    print("\n[2/4] Три полных исполнения...")
-    ok, msg = check_files_exist()
-    if not ok:
-        print(f"FAIL: {msg}")
-        return 1
-    print("  OK")
-
-    # 3. Договор и четыре метрики
-    print("\n[3/4] Договор и четыре метрики совпадения...")
-    out2 = Audit()
-    counts = check_quality(ROOT, out2, hashes=False)
-    choice = read_choice(ROOT / "memory" / "denoise_choice.md")
-    read_repeats(ROOT, out2, counts, choice, verbose=True)
-
-    if out2.errors:
-        print("FAIL:")
-        for v in out2.errors:
-            print(f"  {v.code} run={v.run} key={v.key}")
-        return 1
-
-    # 4. Вывод метрик — перехватываем stdout read_repeats
-    print("\n[4/4] Метрики совпадения:")
-    buf = io.StringIO()
-    old_stdout = sys.stdout
-    sys.stdout = buf
-    out3 = Audit()
-    check_quality(ROOT, out3, hashes=False)
-    choice = read_choice(ROOT / "memory" / "denoise_choice.md")
-    read_repeats(ROOT, out3, counts, choice, verbose=True)
-    sys.stdout = old_stdout
-
-    for line in buf.getvalue().splitlines():
-        if "runs=" in line and "different_sequences" in line:
-            print(f"  {line.strip()}")
-
-    # Проверяем нулевые метрики
-    for v in out3.errors:
-        if v.code == "REPEAT_DIFFERENCE":
-            print(f"FAIL: {v.code} run={v.run} key={v.key}")
-            return 1
-
-    print("\n" + "=" * 60)
-    print("РЕЗУЛЬТАТ: PASS/0 — повторяемость подтверждена")
-    print("=" * 60)
-    return 0
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--root", type=Path, default=ROOT, help="read-only project inputs")
+    args = parser.parse_args()
+    out, runs, metrics = audit(args.root.resolve())
+    for number, run in runs.items():
+        for sid, (n, _, _, kept) in sorted(run.stats.items()):
+            retention = 100 * kept / n if n else 0
+            print(f"run={number} {sid}: input={n} non-chimeric={kept} retention={retention:.2f}%")
+    for (a, b), values in sorted(metrics.items()):
+        print(f"runs={a}-{b} different_sequences/cells/max_delta_reads/stats={values}")
+    return out.finish("exact-match")
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except Exception as exc:
+        print(f"VERIFIER_ERROR FAIL/1: {type(exc).__name__}: {exc}", file=sys.stderr)
+        sys.exit(1)

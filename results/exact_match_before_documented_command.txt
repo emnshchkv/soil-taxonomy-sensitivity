@@ -1,0 +1,11 @@
+Command: ['conda', 'run', '--no-capture-output', '-n', 'qiime2-amplicon-2025.7', 'python3', 'src/check_exact_match.py']
+Commit: 0e5a048
+Traceback (most recent call last):
+  File "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/dada2-fix-review-5iq0fzzq/clone/src/check_exact_match.py", line 26, in <module>
+    from verify_denoising import read_repeats, read_choice, check_quality, Audit
+  File "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/dada2-fix-review-5iq0fzzq/clone/checks/verify_denoising.py", line 27, in <module>
+    import biom
+ModuleNotFoundError: No module named 'biom'
+ERROR conda.cli.main_run:execute(142): `conda run python3 src/check_exact_match.py` failed. (See above for error)
+
+exit_code=1

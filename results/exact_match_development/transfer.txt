@@ -1,0 +1,49 @@
+Commit: 0e5a048de74d219fd15118596cf30a871c6db8a6
+Tracked code differs from commit: True
+Wrapper SHA256: cf5bd9dea6347859ad5fe988b1feaa00ec21ded4296e96fab08ade8362d356e4
+Command: /Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3 -B /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_exact_match.py --root /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/exact-match-cases-u2zl1uyw
+Expected exit: 1
+EXCEPTION run=1 Kr5_S84: 1505/60078; human-approved existing outputs
+EXCEPTION run=2 Kr5_S84: 1505/60078; human-approved existing outputs
+EXCEPTION run=3 Kr5_S84: 1505/60078; human-approved existing outputs
+run=1 K_S63: input=10396 non-chimeric=9802 retention=94.29%
+run=1 Kr1_S80: input=15079 non-chimeric=12351 retention=81.91%
+run=1 Kr2_S81: input=16861 non-chimeric=8904 retention=52.81%
+run=1 Kr3_S82: input=12807 non-chimeric=9985 retention=77.97%
+run=1 Kr4_S83: input=37446 non-chimeric=12293 retention=32.83%
+run=1 Kr5_S84: input=60078 non-chimeric=1505 retention=2.51%
+run=1 LUB2_S92: input=26688 non-chimeric=25216 retention=94.48%
+run=1 LUB3_S93: input=7513 non-chimeric=6623 retention=88.15%
+run=1 LUB4_S94: input=17833 non-chimeric=16199 retention=90.84%
+run=1 LUB5_S95: input=20410 non-chimeric=19090 retention=93.53%
+run=1 LUB6_S96: input=30955 non-chimeric=28821 retention=93.11%
+run=2 K_S63: input=10396 non-chimeric=9802 retention=94.29%
+run=2 Kr1_S80: input=15079 non-chimeric=12351 retention=81.91%
+run=2 Kr2_S81: input=16861 non-chimeric=8904 retention=52.81%
+run=2 Kr3_S82: input=12807 non-chimeric=9985 retention=77.97%
+run=2 Kr4_S83: input=37446 non-chimeric=12293 retention=32.83%
+run=2 Kr5_S84: input=60078 non-chimeric=1505 retention=2.51%
+run=2 LUB2_S92: input=26688 non-chimeric=25216 retention=94.48%
+run=2 LUB3_S93: input=7513 non-chimeric=6623 retention=88.15%
+run=2 LUB4_S94: input=17833 non-chimeric=16199 retention=90.84%
+run=2 LUB5_S95: input=20410 non-chimeric=19090 retention=93.53%
+run=2 LUB6_S96: input=30955 non-chimeric=28821 retention=93.11%
+run=3 K_S63: input=10396 non-chimeric=9802 retention=94.29%
+run=3 Kr1_S80: input=15079 non-chimeric=12351 retention=81.91%
+run=3 Kr2_S81: input=16861 non-chimeric=8904 retention=52.81%
+run=3 Kr3_S82: input=12807 non-chimeric=9985 retention=77.97%
+run=3 Kr4_S83: input=37446 non-chimeric=12293 retention=32.83%
+run=3 Kr5_S84: input=60078 non-chimeric=1505 retention=2.51%
+run=3 LUB2_S92: input=26688 non-chimeric=25216 retention=94.48%
+run=3 LUB3_S93: input=7513 non-chimeric=6623 retention=88.15%
+run=3 LUB4_S94: input=17833 non-chimeric=16199 retention=90.84%
+run=3 LUB5_S95: input=20410 non-chimeric=19090 retention=93.53%
+run=3 LUB6_S96: input=30955 non-chimeric=28821 retention=93.11%
+runs=1-2 different_sequences/cells/max_delta_reads/stats=(0, 0, 0, 0)
+runs=1-3 different_sequences/cells/max_delta_reads/stats=(0, 2, 1, 0)
+runs=2-3 different_sequences/cells/max_delta_reads/stats=(0, 2, 1, 0)
+REPEAT_DIFFERENCE run=(1, 3) key=ASV/cells/max_reads/stats expected=(0, 0, 0, 0) observed=(0, 2, 1, 0)
+REPEAT_DIFFERENCE run=(2, 3) key=ASV/cells/max_reads/stats expected=(0, 0, 0, 0) observed=(0, 2, 1, 0)
+exact-match: FAIL/1
+
+exit_code=1
