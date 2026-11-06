@@ -103,24 +103,31 @@
 | Что было не так | Настоящая или внесённая | Чем поймано | Вывод «до» | Вывод «после» |
 |---|---|---|---|---|
 | Верификатор не читал настоящие QZA/BIOM/HDF5 | Внесённая (агент) | `--self-test` на синтетике PASS, интеграция FAIL | `results/caught_error_before.txt`: FAIL/1 | `results/caught_error_after.txt`: PASS/0 |
-| CASE_REPRO_TEMP: третий запуск soil [6,3] вместо [5,4] | Внесённая (create) | `--example-dir CASE_REPRO_TEMP` | REPEAT_DIFFERENCE (0,2,1,0) | repair → PASS/0 |
+| CASE_REPRO_TEMP: перенос одного рида между двумя ASV одного образца в повторе №3 | Внесённая (create) | `--example-dir CASE_REPRO_TEMP` | REPEAT_DIFFERENCE (0,2,1,0) | repair → PASS/0 |
 
 ## 7. Воспроизведение
 
+**Публичная команда на синтетическом комплекте** (преподавателю доступны только код и синтетика):
+
 ```bash
-git clone <репозиторий> && cd <папка> && git checkout hw2
+git clone git@github.com:emnshchkv/soil-taxonomy-sensitivity.git && cd soil-taxonomy-sensitivity && git checkout search
 conda create -n qiime2-amplicon-2025.7 --file env/explicit.txt
 conda run -n qiime2-amplicon-2025.7 python3 checks/verify_denoising.py --self-test
+```
+
+**Локальная проверка реальных результатов** (требует `data/raw/` и `work/`, не в git):
+
+```bash
 conda run -n qiime2-amplicon-2025.7 python3 checks/verify_denoising.py
+conda run -n qiime2-amplicon-2025.7 python3 src/check_exact_match.py
 ```
 
 Окружение: Python 3.10.14, QIIME 2 2025.7.0, q2-dada2 2025.7.0, DADA2 1.30.0. Файл: `env/explicit.txt`.
-Время выполнения: ~3 минуты (самотест + полный режим).
 Данные: 11 образцов в `data/raw/` (не в git), профили в `results/`, три запуска в `work/`.
 
 ## 8. Ограничения
 
-1. **Сохранность Kr5_S84.** 2.51% — значительно ниже порога 30%. Не ошибка обработки, но биологическая интерпретация требует проверки.
+1. **Сохранность Kr5_S84.** 2.51% — значительно ниже порога 30%. Три повтора совпали точно (метрики 0,0,0,0), но биологическая интерпретация требует проверки.
 2. **Отсутствие праймеров.** Точные последовательности неизвестны; trim-left=20 — эмпирический выбор.
 3. **Однопоточность R.** DADA2 использует R-бэкенд; при изменении числа потоков результаты могут отличаться.
 4. **Только R1.** R2 не используется для денойзинга.

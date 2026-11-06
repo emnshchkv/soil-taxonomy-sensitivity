@@ -297,3 +297,27 @@ conda run --no-capture-output -n qiime2-amplicon-2025.7 qiime cutadapt trim-sing
   - Реальные данные: INCOMPLETE/2 (метрики 0,0,0,0)
 - Точка проверки: conda run -n qiime2-amplicon-2025.7 python3 checks/verify_denoising.py --self-test
 - Итог проверки: self-test PASS/0, full INCOMPLETE/2 (ожидается), exact_match PASS/0.
+
+## 2026-11-06 — Исправление замечаний AGENT_FIX_PROMPT
+
+Что сделано:
+1. Запущен `src/check_exact_match.py` — PASS/0: все 11 образцов, три запуска, три пары с метриками (0,0,0,0).
+2. Исправлен `METHOD.md §§8–10`: времена из provenance (недоступно, QZA содержат только импорт), caught_error — перенос одного рида между двумя ASV, ограничение 6.
+3. Исправлен `REPORT.md §6`: caught_error — перенос одного рида между двумя ASV; §7 — реальный URL origin; §8 — ограничение 6.
+4. Исправлен `memory/denoise_choice.md`: обоснование качества с Kr5_S84 (медиана 17 на позиции 115, 15 на позиции 200).
+5. Создан `reports/Отчёт о денойзинге DADA2.md` — таблица сохранности, метрики повторяемости, файлы.
+6. Обновлён `STATUS.md`.
+
+Результат:
+- METHOD.md §§8–10 исправлены
+- REPORT.md исправлен
+- memory/denoise_choice.md исправлен
+- reports/Отчёт о денойзинге DADA2.md создан
+- STATUS.md обновлён
+
+Точка проверки:
+- `conda run -n qiime2-amplicon-2025.7 python3 src/check_exact_match.py` → PASS/0
+
+Итог проверки:
+- check_exact_match.py: PASS/0
+- Документы исправлены

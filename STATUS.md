@@ -6,12 +6,9 @@
 
 ## Выполнено в текущей сессии
 
-1. **Профили качества** — `src/quality_profiles.py`, `results/quality_by_position.tsv`, `results/quality_by_sample.tsv`, `results/quality_by_sample.png`. Проверка `--quality-only`: PASS/0.
-2. **Решение человека** — `memory/denoise_choice.md`: trim-left=20, trunc-len=200, исключение Kr5_S84 < 30%.
-3. **Три запуска DADA2** — `work/qza/` (запуск 1), `work/denoise_repeats/02/` (запуск 2), `work/denoise_repeats/03/` (запуск 3). Параметры: max-ee=3, n-threads=6, min-fold-parent-over-abundance=2.
-4. **Проверка совпадения** — `src/check_exact_match.py` использует `validate` и `run_metrics` из верификатора. Все четыре метрики = 0 для трёх пар.
-5. **Воспроизведение** — самотест PASS/0, CASE_REPRO_TEMP: FAIL/1 → PASS/0 после repair.
-6. **METHOD.md §§8–10** — времена из provenance, токены неизвестно, повторяемость ≠ правильность.
+1. **Исправление документов** — METHOD.md §§8–10 (времена из provenance, caught_error про перенос рида, ограничение 6), REPORT.md (§6 caught_error, §7 реальный URL, §8 ограничение), memory/denoise_choice.md (обоснование качества с Kr5).
+2. **Отчёт о DADA2** — `reports/Отчёт о денойзинге DADA2.md` с таблицей сохранности, метриками повторяемости, файлами.
+3. **check_exact_match.py** — PASS/0: все 11 образцов, три запуска, три пары с метриками (0,0,0,0).
 
 ## Текущий вердикт
 
@@ -21,7 +18,6 @@
 
 ## Дальнейшая работа
 
-1. Заполнить REPORT.md
-2. Создать метку hw2
-3. Классификация тремя методами (sklearn_silva138, sklearn_gtdb, sklearn_gg2)
-4. Сравнение классификаторов
+1. Метка hw2
+2. Классификация тремя методами (sklearn_silva138, sklearn_gtdb, sklearn_gg2)
+3. Сравнение классификаторов
