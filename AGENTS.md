@@ -80,7 +80,13 @@ conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 checks/verify_de
 conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 src/check_exact_match.py
 ```
 
-Её `PASS/0` означает повторяемость. Исходный полный верификатор сохраняет `INCOMPLETE/2` при сохранности ниже 30%.
+Её `PASS/0` означает повторяемость всех трёх исполнений и пар на 11 образцах. Допускается только согласованный Kr5_S84: 1505 из 60078 ридов при 20/200. Пропуски дают `INCOMPLETE/2`, найденное нарушение имеет приоритет `FAIL/1`. Основной полный верификатор сохраняет `INCOMPLETE/2` при сохранности ниже 30%.
+
+Публичные регрессии обёртки:
+
+```sh
+conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 tests/test_exact_match.py
+```
 
 ## 2. Карта проекта, источники и граф
 
