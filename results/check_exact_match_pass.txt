@@ -1,0 +1,56 @@
+============================================================
+Команда точного совпадения трёх повторов DADA2
+============================================================
+
+[1/4] Входные хеши и профили качества...
+  OK
+
+[2/4] Три полных исполнения...
+  OK
+
+[3/4] Договор и четыре метрики совпадения...
+run=1 K_S63: input=10396 non-chimeric=9802 retention=94.29% ASV=77
+run=1 Kr1_S80: input=15079 non-chimeric=12351 retention=81.91% ASV=142
+run=1 Kr2_S81: input=16861 non-chimeric=8904 retention=52.81% ASV=200
+run=1 Kr3_S82: input=12807 non-chimeric=9985 retention=77.97% ASV=202
+run=1 Kr4_S83: input=37446 non-chimeric=12293 retention=32.83% ASV=84
+run=1 Kr5_S84: input=60078 non-chimeric=1505 retention=2.51% ASV=42
+run=1 LUB2_S92: input=26688 non-chimeric=25216 retention=94.48% ASV=763
+run=1 LUB3_S93: input=7513 non-chimeric=6623 retention=88.15% ASV=401
+run=1 LUB4_S94: input=17833 non-chimeric=16199 retention=90.84% ASV=780
+run=1 LUB5_S95: input=20410 non-chimeric=19090 retention=93.53% ASV=806
+run=1 LUB6_S96: input=30955 non-chimeric=28821 retention=93.11% ASV=999
+run=2 K_S63: input=10396 non-chimeric=9802 retention=94.29% ASV=77
+run=2 Kr1_S80: input=15079 non-chimeric=12351 retention=81.91% ASV=142
+run=2 Kr2_S81: input=16861 non-chimeric=8904 retention=52.81% ASV=200
+run=2 Kr3_S82: input=12807 non-chimeric=9985 retention=77.97% ASV=202
+run=2 Kr4_S83: input=37446 non-chimeric=12293 retention=32.83% ASV=84
+run=2 Kr5_S84: input=60078 non-chimeric=1505 retention=2.51% ASV=42
+run=2 LUB2_S92: input=26688 non-chimeric=25216 retention=94.48% ASV=763
+run=2 LUB3_S93: input=7513 non-chimeric=6623 retention=88.15% ASV=401
+run=2 LUB4_S94: input=17833 non-chimeric=16199 retention=90.84% ASV=780
+run=2 LUB5_S95: input=20410 non-chimeric=19090 retention=93.53% ASV=806
+run=2 LUB6_S96: input=30955 non-chimeric=28821 retention=93.11% ASV=999
+run=3 K_S63: input=10396 non-chimeric=9802 retention=94.29% ASV=77
+run=3 Kr1_S80: input=15079 non-chimeric=12351 retention=81.91% ASV=142
+run=3 Kr2_S81: input=16861 non-chimeric=8904 retention=52.81% ASV=200
+run=3 Kr3_S82: input=12807 non-chimeric=9985 retention=77.97% ASV=202
+run=3 Kr4_S83: input=37446 non-chimeric=12293 retention=32.83% ASV=84
+run=3 Kr5_S84: input=60078 non-chimeric=1505 retention=2.51% ASV=42
+run=3 LUB2_S92: input=26688 non-chimeric=25216 retention=94.48% ASV=763
+run=3 LUB3_S93: input=7513 non-chimeric=6623 retention=88.15% ASV=401
+run=3 LUB4_S94: input=17833 non-chimeric=16199 retention=90.84% ASV=780
+run=3 LUB5_S95: input=20410 non-chimeric=19090 retention=93.53% ASV=806
+run=3 LUB6_S96: input=30955 non-chimeric=28821 retention=93.11% ASV=999
+runs=1-2 different_sequences/cells/max_delta_reads/stats=(0, 0, 0, 0)
+runs=1-3 different_sequences/cells/max_delta_reads/stats=(0, 0, 0, 0)
+runs=2-3 different_sequences/cells/max_delta_reads/stats=(0, 0, 0, 0)
+
+[4/4] Метрики совпадения:
+  runs=1-2 different_sequences/cells/max_delta_reads/stats=(0, 0, 0, 0)
+  runs=1-3 different_sequences/cells/max_delta_reads/stats=(0, 0, 0, 0)
+  runs=2-3 different_sequences/cells/max_delta_reads/stats=(0, 0, 0, 0)
+
+============================================================
+РЕЗУЛЬТАТ: PASS/0 — повторяемость подтверждена
+============================================================
