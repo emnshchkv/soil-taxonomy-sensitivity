@@ -342,3 +342,10 @@ conda run --no-capture-output -n qiime2-amplicon-2025.7 qiime cutadapt trim-sing
 Результат: public_selftest=0, public_regressions=0 (16 тестов), public_isolation=0; synthetic_before=1 → synthetic_after=0; real_exact_documented=0; real_full=2; CLI-регрессии=0, внутри семь сценариев 0,2,2,2,1,1,0. project_check=1 только по четырём ожидаемым файлам следующих этапов.
 Точка проверки: results/exact_match_reproduction/ содержит точные команды, commit, вывод, exit_code, девять SHA256, UUID исполнений, времена, статистику и метрики.
 Итог проверки: все ожидаемые коды получены; 122 исходных защищённых файла и права неизменны, METHOD.md §§0–7 совпадают с a398c5f. Журналы фиксируются отдельным коммитом. DADA2 не запускался, hw2 и origin не менялись.
+
+## 2026-11-07 — Сводка денойзинга и готовность классификаторов
+
+Что сделано: по AGENT_CLASSIFIER_READINESS_PROMPT.txt создана недостающая сводка денойзинга work/qzv/dada2_stats.qzv штатной командой `qiime metadata tabulate` (SampleData[DADA2Stats] → Metadata, CLI преобразует автоматически) и проверена через `qiime tools validate`. Сверены строки первого запуска (run=1) из results/exact_match_reproduction/provenance/samples.tsv со статистикой QZA (экспорт в work/qzv_export/dada2_stats/stats.tsv).
+Результат: q2cli version 2025.7.0. Создание сводки: exit 0, "Saved Visualization to: work/qzv/dada2_stats.qzv". Валидация: exit 0, "appears to be valid at level=max". Все 11 образцов: input, filtered, denoised, non-chimeric совпадают точно между samples.tsv (run=1) и QZA stats.tsv; сохранность (percentage of input non-chimeric) совпадает с retention_pct (QZA 2 знака, samples.tsv 6). Kr5_S84: 1505/60078 = 2.51% — согласовано, потери не исследуются.
+Точка проверки: conda run --no-capture-output -n qiime2-amplicon-2025.7 qiime metadata tabulate --m-input-file work/qza/dada2_stats.qza --o-visualization work/qzv/dada2_stats.qzv; qiime tools validate work/qzv/dada2_stats.qzv.
+Итог проверки: обе команды exit 0; сводка валидна; статистика QZA совпадает с samples.tsv. DADA2 не запускался.
