@@ -1,0 +1,10 @@
+=== CASE 4: неправильный UUID ===
+Проверка 1 (статистика DADA2): PASS, образцов=11 (ровно 11, набор совпадает)
+Проверка 2 (выбор 5 ID и последовательности): PASS, всего ASV=3374, 5 ID и их последовательности совпадают
+FAIL: проба silva138: UUID классификатора 00000000-0000-0000-0000-000000000000, ожидалось 70b4b5f4-8fce-40bd-b508-afacbc12a5ed
+Проверка 3 (silva138): проба ASV=5, Confidence∈[0,1]=True, action=classify_sklearn, reads=f191f736-c066-42be-aa44-80e29282c3a8, classifier=00000000-0000-0000-0000-000000000000, confidence=0.7, n_jobs=1
+Проверка 3 (gtdb): проба ASV=5, Confidence∈[0,1]=True, action=classify_sklearn, reads=f191f736-c066-42be-aa44-80e29282c3a8, classifier=5d5461cc-6a51-434b-90ab-040f388e4221, confidence=0.7, n_jobs=1
+Проверка 3 (gg2): проба ASV=5, Confidence∈[0,1]=True, action=classify_sklearn, reads=f191f736-c066-42be-aa44-80e29282c3a8, classifier=49ccfb0a-155d-404b-80b4-818d2aeb53b2, confidence=0.7, n_jobs=1
+ИТОГ: FAIL
+ERROR conda.cli.main_run:execute(142): `conda run /bin/sh -c exec "$CONDA_PREFIX/bin/python3" -B src/verify_classifier_readiness.py` failed. (See above for error)
+EXIT=1

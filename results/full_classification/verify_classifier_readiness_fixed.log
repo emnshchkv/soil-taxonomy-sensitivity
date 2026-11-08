@@ -1,0 +1,9 @@
+/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/q2_demux/_summarize/_visualizer.py:11: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Проверка 1 (статистика DADA2): PASS, образцов=11 (ровно 11, набор совпадает)
+Проверка 2 (выбор 5 ID и последовательности): PASS, всего ASV=3374, 5 ID и их последовательности совпадают
+Проверка 3 (silva138): проба ASV=5, Confidence∈[0,1]=True, action=classify_sklearn, reads=f191f736-c066-42be-aa44-80e29282c3a8, classifier=70b4b5f4-8fce-40bd-b508-afacbc12a5ed, confidence=0.7, n_jobs=1
+Проверка 3 (gtdb): проба ASV=5, Confidence∈[0,1]=True, action=classify_sklearn, reads=f191f736-c066-42be-aa44-80e29282c3a8, classifier=5d5461cc-6a51-434b-90ab-040f388e4221, confidence=0.7, n_jobs=1
+Проверка 3 (gg2): проба ASV=5, Confidence∈[0,1]=True, action=classify_sklearn, reads=f191f736-c066-42be-aa44-80e29282c3a8, classifier=49ccfb0a-155d-404b-80b4-818d2aeb53b2, confidence=0.7, n_jobs=1
+ИТОГ: PASS
+EXIT=0

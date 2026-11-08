@@ -1,0 +1,9 @@
+=== CASE 3: изменённая последовательность ===
+Проверка 1 (статистика DADA2): PASS, образцов=11 (ровно 11, набор совпадает)
+FAIL: последовательность 0021cfa2357aba7fe9d1b92465676a8d в probe5_seqs.qza != rep_seq.qza
+Проверка 3 (silva138): проба ASV=5, Confidence∈[0,1]=True, action=classify_sklearn, reads=f191f736-c066-42be-aa44-80e29282c3a8, classifier=70b4b5f4-8fce-40bd-b508-afacbc12a5ed, confidence=0.7, n_jobs=1
+Проверка 3 (gtdb): проба ASV=5, Confidence∈[0,1]=True, action=classify_sklearn, reads=f191f736-c066-42be-aa44-80e29282c3a8, classifier=5d5461cc-6a51-434b-90ab-040f388e4221, confidence=0.7, n_jobs=1
+Проверка 3 (gg2): проба ASV=5, Confidence∈[0,1]=True, action=classify_sklearn, reads=f191f736-c066-42be-aa44-80e29282c3a8, classifier=49ccfb0a-155d-404b-80b4-818d2aeb53b2, confidence=0.7, n_jobs=1
+ИТОГ: FAIL
+ERROR conda.cli.main_run:execute(142): `conda run /bin/sh -c exec "$CONDA_PREFIX/bin/python3" -B src/verify_classifier_readiness.py` failed. (See above for error)
+EXIT=1
