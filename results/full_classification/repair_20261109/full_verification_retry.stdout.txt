@@ -1,0 +1,7 @@
+silva138_validate: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/full_classification/repair_20261109/full_verification_retry
+silva138_export: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/full_classification/repair_20261109/full_verification_retry
+gtdb_validate: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/full_classification/repair_20261109/full_verification_retry
+gtdb_export: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/full_classification/repair_20261109/full_verification_retry
+gg2_validate: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/full_classification/repair_20261109/full_verification_retry
+gg2_export: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/full_classification/repair_20261109/full_verification_retry
+full-classification: PASS/0; /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/full_classification/repair_20261109/full_verification_retry

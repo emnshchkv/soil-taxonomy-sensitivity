@@ -1,0 +1,296 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "root": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "results": [
+    {
+      "method": "silva138",
+      "rows": 3374,
+      "status": "PASS",
+      "files": [
+        {
+          "path": "work/qza/rep_seq.qza",
+          "uuid": "978af6f8-91bb-4df2-9e19-b395076e5f3c",
+          "sha256": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86"
+        },
+        {
+          "path": "data/refs/silva-138-99-nb-classifier.qza",
+          "uuid": "70b4b5f4-8fce-40bd-b508-afacbc12a5ed",
+          "sha256": "c08a1aa4d56b449b511f7215543a43249ae9c54b57491428a7e5548a62613616"
+        },
+        {
+          "path": "work/qza/taxonomy_sklearn_silva138.qza",
+          "uuid": "1e17faa9-825e-4930-ba09-f02e38391ca4",
+          "sha256": "66d7b18f8349c6adcd2e0d8a74f860e6674f5691e5bdbea8cd885cb0381505d6"
+        }
+      ],
+      "execution": {
+        "uuid": "ecf8e1ef-c952-45a5-87d5-db27f686aec0",
+        "runtime": {
+          "start": "2026-11-08 05:57:37.780711+03:00",
+          "end": "2026-11-08 06:15:27.353262+03:00",
+          "duration": "17 minutes, 49 seconds, and 572551 microseconds"
+        },
+        "execution_context": {
+          "type": "synchronous"
+        }
+      },
+      "action": {
+        "type": "method",
+        "plugin": "environment:plugins:feature-classifier",
+        "action": "classify_sklearn",
+        "inputs": [
+          {
+            "reads": "978af6f8-91bb-4df2-9e19-b395076e5f3c"
+          },
+          {
+            "classifier": "70b4b5f4-8fce-40bd-b508-afacbc12a5ed"
+          }
+        ],
+        "parameters": [
+          {
+            "reads_per_batch": "auto"
+          },
+          {
+            "n_jobs": 1
+          },
+          {
+            "pre_dispatch": "2*n_jobs"
+          },
+          {
+            "confidence": 0.7
+          },
+          {
+            "read_orientation": "auto"
+          }
+        ],
+        "output-name": "classification",
+        "citations": [
+          "action|feature-classifier:2025.7.0|method:classify_sklearn|0"
+        ]
+      },
+      "framework": {
+        "version": "2025.7.0",
+        "website": "https://qiime2.org",
+        "citations": [
+          "framework|qiime2:2025.7.0|0"
+        ]
+      },
+      "original_classification_exit_code": null,
+      "original_exit_note": "не сохранён; классификация не повторялась",
+      "export_checks": [
+        {
+          "id": "0021cfa2357aba7fe9d1b92465676a8d",
+          "taxon": "d__Eukaryota",
+          "confidence": 0.9883264301603688,
+          "matches": true
+        },
+        {
+          "id": "0027dadcdc187da02f8f422ae4690999",
+          "taxon": "d__Bacteria",
+          "confidence": 0.9999999066387846,
+          "matches": true
+        },
+        {
+          "id": "002d2685b94200ea0724b24286fec6ba",
+          "taxon": "d__Bacteria;p__Acidobacteriota;c__Vicinamibacteria;o__Vicinamibacterales;f__Vicinamibacteraceae;g__Vicinamibacteraceae;s__",
+          "confidence": 0.9841766103310717,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "method": "gtdb",
+      "rows": 3374,
+      "status": "PASS",
+      "files": [
+        {
+          "path": "work/qza/rep_seq.qza",
+          "uuid": "978af6f8-91bb-4df2-9e19-b395076e5f3c",
+          "sha256": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86"
+        },
+        {
+          "path": "data/refs/gtdb_classifier_r220.qza",
+          "uuid": "5d5461cc-6a51-434b-90ab-040f388e4221",
+          "sha256": "07aadcf7472d9cc6f853f6b4615348619f1a3eceb56c1fb1b6d8dbb20554765f"
+        },
+        {
+          "path": "work/qza/taxonomy_sklearn_gtdb.qza",
+          "uuid": "64a8d4d3-2751-4a3d-a0b2-711c358793fc",
+          "sha256": "a542ba9b762e42112b7dc95a05de6b9870b4b8e22b01acd0847b22201090f73e"
+        }
+      ],
+      "execution": {
+        "uuid": "8e4cae32-ff8a-44e7-833b-5e1687d0218c",
+        "runtime": {
+          "start": "2026-11-08 06:36:32.691838+03:00",
+          "end": "2026-11-08 07:26:28.642475+03:00",
+          "duration": "49 minutes, 55 seconds, and 950637 microseconds"
+        },
+        "execution_context": {
+          "type": "synchronous"
+        }
+      },
+      "action": {
+        "type": "method",
+        "plugin": "environment:plugins:feature-classifier",
+        "action": "classify_sklearn",
+        "inputs": [
+          {
+            "reads": "978af6f8-91bb-4df2-9e19-b395076e5f3c"
+          },
+          {
+            "classifier": "5d5461cc-6a51-434b-90ab-040f388e4221"
+          }
+        ],
+        "parameters": [
+          {
+            "reads_per_batch": "auto"
+          },
+          {
+            "n_jobs": 1
+          },
+          {
+            "pre_dispatch": "2*n_jobs"
+          },
+          {
+            "confidence": 0.7
+          },
+          {
+            "read_orientation": "auto"
+          }
+        ],
+        "output-name": "classification",
+        "citations": [
+          "action|feature-classifier:2025.7.0|method:classify_sklearn|0"
+        ]
+      },
+      "framework": {
+        "version": "2025.7.0",
+        "website": "https://qiime2.org",
+        "citations": [
+          "framework|qiime2:2025.7.0|0"
+        ]
+      },
+      "original_classification_exit_code": null,
+      "original_exit_note": "не сохранён; классификация не повторялась",
+      "export_checks": [
+        {
+          "id": "0021cfa2357aba7fe9d1b92465676a8d",
+          "taxon": "d__Bacteria",
+          "confidence": 0.89845580131513,
+          "matches": true
+        },
+        {
+          "id": "0027dadcdc187da02f8f422ae4690999",
+          "taxon": "d__Bacteria;p__Desulfobacterota_B;c__Binatia;o__UBA9968;f__UBA9968;g__DP-20;s__DP-20 sp946478635",
+          "confidence": 0.9905642356139865,
+          "matches": true
+        },
+        {
+          "id": "002d2685b94200ea0724b24286fec6ba",
+          "taxon": "d__Bacteria;p__Acidobacteriota;c__Vicinamibacteria;o__Vicinamibacterales",
+          "confidence": 0.9005433603616488,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "method": "gg2",
+      "rows": 3374,
+      "status": "PASS",
+      "files": [
+        {
+          "path": "work/qza/rep_seq.qza",
+          "uuid": "978af6f8-91bb-4df2-9e19-b395076e5f3c",
+          "sha256": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86"
+        },
+        {
+          "path": "data/refs/gg_2024.09.full-length.nb.sklearn-1.4.2.qza",
+          "uuid": "49ccfb0a-155d-404b-80b4-818d2aeb53b2",
+          "sha256": "5c5900c10ad601b12cf0d2280d52cc0f7852627e89070595cc3899a6d690ee27"
+        },
+        {
+          "path": "work/qza/taxonomy_sklearn_gg2.qza",
+          "uuid": "fdc19c64-00f2-4fae-b8ac-387eadd6e74f",
+          "sha256": "e972b452e45cfc991e69712ded06b3ef47d5915a85caecfbdc06016ab2439771"
+        }
+      ],
+      "execution": {
+        "uuid": "7b532a3b-dda8-4024-85db-5317ddc52dee",
+        "runtime": {
+          "start": "2026-11-08 08:16:41.890256+03:00",
+          "end": "2026-11-08 08:32:59.983326+03:00",
+          "duration": "16 minutes, 18 seconds, and 93070 microseconds"
+        },
+        "execution_context": {
+          "type": "synchronous"
+        }
+      },
+      "action": {
+        "type": "method",
+        "plugin": "environment:plugins:feature-classifier",
+        "action": "classify_sklearn",
+        "inputs": [
+          {
+            "reads": "978af6f8-91bb-4df2-9e19-b395076e5f3c"
+          },
+          {
+            "classifier": "49ccfb0a-155d-404b-80b4-818d2aeb53b2"
+          }
+        ],
+        "parameters": [
+          {
+            "reads_per_batch": "auto"
+          },
+          {
+            "n_jobs": 1
+          },
+          {
+            "pre_dispatch": "2*n_jobs"
+          },
+          {
+            "confidence": 0.7
+          },
+          {
+            "read_orientation": "auto"
+          }
+        ],
+        "output-name": "classification",
+        "citations": [
+          "action|feature-classifier:2025.7.0|method:classify_sklearn|0"
+        ]
+      },
+      "framework": {
+        "version": "2025.7.0",
+        "website": "https://qiime2.org",
+        "citations": [
+          "framework|qiime2:2025.7.0|0"
+        ]
+      },
+      "original_classification_exit_code": null,
+      "original_exit_note": "не сохранён; классификация не повторялась",
+      "export_checks": [
+        {
+          "id": "0021cfa2357aba7fe9d1b92465676a8d",
+          "taxon": "d__Bacteria",
+          "confidence": 0.8326838822966172,
+          "matches": true
+        },
+        {
+          "id": "0027dadcdc187da02f8f422ae4690999",
+          "taxon": "d__Bacteria; p__Desulfobacterota_B; c__Binatia; o__UBA9968; f__UBA9968",
+          "confidence": 0.999842050991983,
+          "matches": true
+        },
+        {
+          "id": "002d2685b94200ea0724b24286fec6ba",
+          "taxon": "d__Bacteria; p__Acidobacteriota; c__Vicinamibacteria; o__Vicinamibacterales",
+          "confidence": 0.9969898608080286,
+          "matches": true
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

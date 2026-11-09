@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "qiime",
+    "tools",
+    "export",
+    "--input-path",
+    "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/work/qza/taxonomy_sklearn_gg2.qza",
+    "--output-path",
+    "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-verify-7uu584fl/gg2"
+  ],
+  "command": "qiime tools export --input-path /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/work/qza/taxonomy_sklearn_gg2.qza --output-path /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-verify-7uu584fl/gg2",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-09T14:48:12.215041+00:00",
+  "end_utc": "2026-11-09T14:48:38.817433+00:00",
+  "exit_code": 0,
+  "stdout": "gg2_export.stdout.txt",
+  "stderr": "gg2_export.stderr.txt"
+}

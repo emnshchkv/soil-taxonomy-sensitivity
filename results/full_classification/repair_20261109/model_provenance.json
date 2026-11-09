@@ -1,0 +1,662 @@
+[
+  {
+    "method": "silva138",
+    "path": "data/refs/silva-138-99-nb-classifier.qza",
+    "uuid": "70b4b5f4-8fce-40bd-b508-afacbc12a5ed",
+    "sha256": "c08a1aa4d56b449b511f7215543a43249ae9c54b57491428a7e5548a62613616",
+    "training_action": {
+      "type": "method",
+      "plugin": "environment:plugins:feature-classifier",
+      "action": "fit_classifier_naive_bayes",
+      "inputs": [
+        {
+          "reference_reads": "3d95f079-b580-4bce-8c28-8b8a437be0d6"
+        },
+        {
+          "reference_taxonomy": "0e9ef7c4-65a0-408a-859a-b9ce2548e1f8"
+        },
+        {
+          "class_weight": null
+        }
+      ],
+      "parameters": [
+        {
+          "classify__alpha": 0.001
+        },
+        {
+          "classify__chunk_size": 20000
+        },
+        {
+          "classify__class_prior": "null"
+        },
+        {
+          "classify__fit_prior": false
+        },
+        {
+          "feat_ext__alternate_sign": false
+        },
+        {
+          "feat_ext__analyzer": "char_wb"
+        },
+        {
+          "feat_ext__binary": false
+        },
+        {
+          "feat_ext__decode_error": "strict"
+        },
+        {
+          "feat_ext__encoding": "utf-8"
+        },
+        {
+          "feat_ext__input": "content"
+        },
+        {
+          "feat_ext__lowercase": true
+        },
+        {
+          "feat_ext__n_features": 8192
+        },
+        {
+          "feat_ext__ngram_range": "[7, 7]"
+        },
+        {
+          "feat_ext__norm": "l2"
+        },
+        {
+          "feat_ext__preprocessor": "null"
+        },
+        {
+          "feat_ext__stop_words": "null"
+        },
+        {
+          "feat_ext__strip_accents": "null"
+        },
+        {
+          "feat_ext__token_pattern": "(?u)\\b\\w\\w+\\b"
+        },
+        {
+          "feat_ext__tokenizer": "null"
+        },
+        {
+          "verbose": false
+        }
+      ],
+      "output-name": "classifier",
+      "citations": [
+        "action|feature-classifier:2024.5.0|method:fit_classifier_naive_bayes|0"
+      ]
+    },
+    "framework_version": "2024.5.0",
+    "feature_classifier_version": "2024.5.0",
+    "sklearn_version_file": {
+      "sklearn-version": "1.4.2"
+    },
+    "source_records": [
+      {
+        "member": "70b4b5f4-8fce-40bd-b508-afacbc12a5ed/provenance/artifacts/0e9ef7c4-65a0-408a-859a-b9ce2548e1f8/action/action.yaml",
+        "action": {
+          "type": "method",
+          "plugin": "environment:plugins:rescript",
+          "action": "dereplicate",
+          "inputs": [
+            {
+              "sequences": "9fb9a8c4-703f-4578-bae4-6d546b2b9eae"
+            },
+            {
+              "taxa": "2c4f2fe8-11c2-4d3b-92c5-cb3c205352fe"
+            }
+          ],
+          "parameters": [
+            {
+              "mode": "uniq"
+            },
+            {
+              "perc_identity": 1.0
+            },
+            {
+              "threads": 1
+            },
+            {
+              "rank_handles": [
+                "domain",
+                "phylum",
+                "class",
+                "order",
+                "family",
+                "genus",
+                "species"
+              ]
+            },
+            {
+              "derep_prefix": false
+            }
+          ],
+          "output-name": "dereplicated_taxa",
+          "citations": [
+            "action|rescript:2024.5.0|method:dereplicate|0"
+          ]
+        }
+      },
+      {
+        "member": "70b4b5f4-8fce-40bd-b508-afacbc12a5ed/provenance/artifacts/3d95f079-b580-4bce-8c28-8b8a437be0d6/action/action.yaml",
+        "action": {
+          "type": "method",
+          "plugin": "environment:plugins:rescript",
+          "action": "dereplicate",
+          "inputs": [
+            {
+              "sequences": "9fb9a8c4-703f-4578-bae4-6d546b2b9eae"
+            },
+            {
+              "taxa": "2c4f2fe8-11c2-4d3b-92c5-cb3c205352fe"
+            }
+          ],
+          "parameters": [
+            {
+              "mode": "uniq"
+            },
+            {
+              "perc_identity": 1.0
+            },
+            {
+              "threads": 1
+            },
+            {
+              "rank_handles": [
+                "domain",
+                "phylum",
+                "class",
+                "order",
+                "family",
+                "genus",
+                "species"
+              ]
+            },
+            {
+              "derep_prefix": false
+            }
+          ],
+          "output-name": "dereplicated_sequences",
+          "citations": [
+            "action|rescript:2024.5.0|method:dereplicate|0"
+          ]
+        }
+      },
+      {
+        "member": "70b4b5f4-8fce-40bd-b508-afacbc12a5ed/provenance/artifacts/bbcd7b8b-b73d-42d3-95f9-7928c4c65552/action/action.yaml",
+        "action": {
+          "type": "import",
+          "format": "RNAFASTAFormat",
+          "manifest": [
+            {
+              "name": "SILVA_138.1_SSURef_NR99_tax_silva.fasta",
+              "md5sum": "b1a79c7b5a65b7f3b1a4543a8fb3c4e3"
+            }
+          ]
+        }
+      },
+      {
+        "member": "70b4b5f4-8fce-40bd-b508-afacbc12a5ed/provenance/artifacts/749e9655-042b-448e-ac0d-be2adbf51148/action/action.yaml",
+        "action": {
+          "type": "import",
+          "format": "NewickFormat",
+          "manifest": [
+            {
+              "name": "tax_slv_ssu_138.1.tre",
+              "md5sum": "2a232dabdf460da4db143444ae02fdb7"
+            }
+          ]
+        }
+      },
+      {
+        "member": "70b4b5f4-8fce-40bd-b508-afacbc12a5ed/provenance/artifacts/2906b676-703a-4d36-a3ba-12c78660bef0/action/action.yaml",
+        "action": {
+          "type": "import",
+          "format": "SILVATaxonomyFormat",
+          "manifest": [
+            {
+              "name": "tax_slv_ssu_138.1.txt",
+              "md5sum": "65c4258fa6b2fd18feeb7c23a615d104"
+            }
+          ]
+        }
+      },
+      {
+        "member": "70b4b5f4-8fce-40bd-b508-afacbc12a5ed/provenance/artifacts/2c4f2fe8-11c2-4d3b-92c5-cb3c205352fe/action/action.yaml",
+        "action": {
+          "type": "pipeline",
+          "plugin": "environment:plugins:rescript",
+          "action": "get_silva_data",
+          "inputs": [],
+          "parameters": [
+            {
+              "version": "138.1"
+            },
+            {
+              "target": "SSURef_NR99"
+            },
+            {
+              "include_species_labels": false
+            },
+            {
+              "rank_propagation": true
+            },
+            {
+              "ranks": null
+            },
+            {
+              "download_sequences": true
+            }
+          ],
+          "output-name": "silva_taxonomy",
+          "citations": [
+            "action|rescript:2024.5.0|pipeline:get_silva_data|0",
+            "action|rescript:2024.5.0|pipeline:get_silva_data|1"
+          ],
+          "alias-of": "9e66aa3d-0669-4fdf-a9a3-5c9655080851"
+        }
+      },
+      {
+        "member": "70b4b5f4-8fce-40bd-b508-afacbc12a5ed/provenance/artifacts/a3b524a7-9e51-49ff-8fca-89704b662ae2/action/action.yaml",
+        "action": {
+          "type": "method",
+          "plugin": "environment:plugins:rescript",
+          "action": "cull_seqs",
+          "inputs": [
+            {
+              "sequences": "4b3e461f-976c-4389-8a9a-3b29ec21eab6"
+            }
+          ],
+          "parameters": [
+            {
+              "num_degenerates": 5
+            },
+            {
+              "homopolymer_length": 8
+            },
+            {
+              "n_jobs": 1
+            }
+          ],
+          "output-name": "clean_sequences"
+        }
+      },
+      {
+        "member": "70b4b5f4-8fce-40bd-b508-afacbc12a5ed/provenance/artifacts/4b3e461f-976c-4389-8a9a-3b29ec21eab6/action/action.yaml",
+        "action": {
+          "type": "method",
+          "plugin": "environment:plugins:rescript",
+          "action": "reverse_transcribe",
+          "inputs": [
+            {
+              "rna_sequences": "4453176e-ac4e-4dde-94e4-9f5d7859efae"
+            }
+          ],
+          "parameters": [],
+          "output-name": "dna_sequences"
+        }
+      },
+      {
+        "member": "70b4b5f4-8fce-40bd-b508-afacbc12a5ed/provenance/artifacts/adfad57c-d89b-4cfb-bafc-16dd3291ff45/action/action.yaml",
+        "action": {
+          "type": "import",
+          "format": "SILVATaxidMapFormat",
+          "manifest": [
+            {
+              "name": "taxmap_slv_ssu_ref_nr_138.1.txt",
+              "md5sum": "10e46e105a3625d254b1abe90baa8706"
+            }
+          ]
+        }
+      },
+      {
+        "member": "70b4b5f4-8fce-40bd-b508-afacbc12a5ed/provenance/artifacts/4453176e-ac4e-4dde-94e4-9f5d7859efae/action/action.yaml",
+        "action": {
+          "type": "pipeline",
+          "plugin": "environment:plugins:rescript",
+          "action": "get_silva_data",
+          "inputs": [],
+          "parameters": [
+            {
+              "version": "138.1"
+            },
+            {
+              "target": "SSURef_NR99"
+            },
+            {
+              "include_species_labels": false
+            },
+            {
+              "rank_propagation": true
+            },
+            {
+              "ranks": null
+            },
+            {
+              "download_sequences": true
+            }
+          ],
+          "output-name": "silva_sequences",
+          "citations": [
+            "action|rescript:2024.5.0|pipeline:get_silva_data|0",
+            "action|rescript:2024.5.0|pipeline:get_silva_data|1"
+          ],
+          "alias-of": "bbcd7b8b-b73d-42d3-95f9-7928c4c65552"
+        }
+      },
+      {
+        "member": "70b4b5f4-8fce-40bd-b508-afacbc12a5ed/provenance/artifacts/9fb9a8c4-703f-4578-bae4-6d546b2b9eae/action/action.yaml",
+        "action": {
+          "type": "method",
+          "plugin": "environment:plugins:rescript",
+          "action": "filter_seqs_length_by_taxon",
+          "inputs": [
+            {
+              "sequences": "a3b524a7-9e51-49ff-8fca-89704b662ae2"
+            },
+            {
+              "taxonomy": "2c4f2fe8-11c2-4d3b-92c5-cb3c205352fe"
+            }
+          ],
+          "parameters": [
+            {
+              "labels": [
+                "Archaea",
+                "Bacteria",
+                "Eukaryota"
+              ]
+            },
+            {
+              "min_lens": [
+                900,
+                1200,
+                1400
+              ]
+            },
+            {
+              "max_lens": null
+            },
+            {
+              "global_min": null
+            },
+            {
+              "global_max": null
+            }
+          ],
+          "output-name": "filtered_seqs"
+        }
+      }
+    ],
+    "interpretation_limit": "Имена импортов и фильтры не подтверждают подготовку до импорта, регион или праймеры."
+  },
+  {
+    "method": "gtdb",
+    "path": "data/refs/gtdb_classifier_r220.qza",
+    "uuid": "5d5461cc-6a51-434b-90ab-040f388e4221",
+    "sha256": "07aadcf7472d9cc6f853f6b4615348619f1a3eceb56c1fb1b6d8dbb20554765f",
+    "training_action": {
+      "type": "method",
+      "plugin": "environment:plugins:feature-classifier",
+      "action": "fit_classifier_naive_bayes",
+      "inputs": [
+        {
+          "reference_reads": "4a3c7493-65dc-432a-8ad0-cb3ca553d21d"
+        },
+        {
+          "reference_taxonomy": "ebc75ab7-c869-4261-9dee-891267fd35e3"
+        },
+        {
+          "class_weight": null
+        }
+      ],
+      "parameters": [
+        {
+          "classify__alpha": 0.001
+        },
+        {
+          "classify__chunk_size": 20000
+        },
+        {
+          "classify__class_prior": "null"
+        },
+        {
+          "classify__fit_prior": false
+        },
+        {
+          "feat_ext__alternate_sign": false
+        },
+        {
+          "feat_ext__analyzer": "char_wb"
+        },
+        {
+          "feat_ext__binary": false
+        },
+        {
+          "feat_ext__decode_error": "strict"
+        },
+        {
+          "feat_ext__encoding": "utf-8"
+        },
+        {
+          "feat_ext__input": "content"
+        },
+        {
+          "feat_ext__lowercase": true
+        },
+        {
+          "feat_ext__n_features": 8192
+        },
+        {
+          "feat_ext__ngram_range": "[7, 7]"
+        },
+        {
+          "feat_ext__norm": "l2"
+        },
+        {
+          "feat_ext__preprocessor": "null"
+        },
+        {
+          "feat_ext__stop_words": "null"
+        },
+        {
+          "feat_ext__strip_accents": "null"
+        },
+        {
+          "feat_ext__token_pattern": "(?u)\\b\\w\\w+\\b"
+        },
+        {
+          "feat_ext__tokenizer": "null"
+        },
+        {
+          "verbose": false
+        }
+      ],
+      "output-name": "classifier",
+      "citations": [
+        "action|feature-classifier:2024.5.0|method:fit_classifier_naive_bayes|0"
+      ]
+    },
+    "framework_version": "2024.5.0",
+    "feature_classifier_version": "2024.5.0",
+    "sklearn_version_file": {
+      "sklearn-version": "1.4.2"
+    },
+    "source_records": [
+      {
+        "member": "5d5461cc-6a51-434b-90ab-040f388e4221/provenance/artifacts/d6fe6104-2e16-4369-8392-4737e9bd548a/action/action.yaml",
+        "action": {
+          "type": "import",
+          "format": "DNAFASTAFormat",
+          "manifest": [
+            {
+              "name": "bac120_ssu_reps_r220.fna",
+              "md5sum": "21640352fb4d7f0839fca3fcdd17cc26"
+            }
+          ]
+        }
+      },
+      {
+        "member": "5d5461cc-6a51-434b-90ab-040f388e4221/provenance/artifacts/642212c2-fd4a-444c-8187-82a0f5ef2a60/action/action.yaml",
+        "action": {
+          "type": "import",
+          "format": "HeaderlessTSVTaxonomyFormat",
+          "manifest": [
+            {
+              "name": "bac120_taxonomy_r220.tsv",
+              "md5sum": "c18f4f4846d31bfebbaad0e9461b732d"
+            }
+          ]
+        }
+      },
+      {
+        "member": "5d5461cc-6a51-434b-90ab-040f388e4221/provenance/artifacts/a5120adf-6ccd-4ada-833c-d6009dda6ead/action/action.yaml",
+        "action": {
+          "type": "import",
+          "format": "HeaderlessTSVTaxonomyFormat",
+          "manifest": [
+            {
+              "name": "ar53_taxonomy_r220.tsv",
+              "md5sum": "a682836db574bfba6dac6db394407220"
+            }
+          ]
+        }
+      },
+      {
+        "member": "5d5461cc-6a51-434b-90ab-040f388e4221/provenance/artifacts/10716197-da93-4582-8b73-b77ddfb8b259/action/action.yaml",
+        "action": {
+          "type": "import",
+          "format": "DNAFASTAFormat",
+          "manifest": [
+            {
+              "name": "ar53_ssu_reps_r220.fna",
+              "md5sum": "f437d233d16c8c48e134efd10580d046"
+            }
+          ]
+        }
+      }
+    ],
+    "interpretation_limit": "Имена импортов и фильтры не подтверждают подготовку до импорта, регион или праймеры."
+  },
+  {
+    "method": "gg2",
+    "path": "data/refs/gg_2024.09.full-length.nb.sklearn-1.4.2.qza",
+    "uuid": "49ccfb0a-155d-404b-80b4-818d2aeb53b2",
+    "sha256": "5c5900c10ad601b12cf0d2280d52cc0f7852627e89070595cc3899a6d690ee27",
+    "training_action": {
+      "type": "method",
+      "plugin": "environment:plugins:feature-classifier",
+      "action": "fit_classifier_naive_bayes",
+      "inputs": [
+        {
+          "reference_reads": "5b42d9b6-2f24-4f01-b989-9b4dafca7d5e"
+        },
+        {
+          "reference_taxonomy": "b7c3e691-ea51-4547-94dd-f79f49e41a36"
+        },
+        {
+          "class_weight": null
+        }
+      ],
+      "parameters": [
+        {
+          "classify__alpha": 0.001
+        },
+        {
+          "classify__chunk_size": 20000
+        },
+        {
+          "classify__class_prior": "null"
+        },
+        {
+          "classify__fit_prior": false
+        },
+        {
+          "feat_ext__alternate_sign": false
+        },
+        {
+          "feat_ext__analyzer": "char_wb"
+        },
+        {
+          "feat_ext__binary": false
+        },
+        {
+          "feat_ext__decode_error": "strict"
+        },
+        {
+          "feat_ext__encoding": "utf-8"
+        },
+        {
+          "feat_ext__input": "content"
+        },
+        {
+          "feat_ext__lowercase": true
+        },
+        {
+          "feat_ext__n_features": 8192
+        },
+        {
+          "feat_ext__ngram_range": "[7, 7]"
+        },
+        {
+          "feat_ext__norm": "l2"
+        },
+        {
+          "feat_ext__preprocessor": "null"
+        },
+        {
+          "feat_ext__stop_words": "null"
+        },
+        {
+          "feat_ext__strip_accents": "null"
+        },
+        {
+          "feat_ext__token_pattern": "(?u)\\b\\w\\w+\\b"
+        },
+        {
+          "feat_ext__tokenizer": "null"
+        },
+        {
+          "verbose": false
+        }
+      ],
+      "output-name": "classifier",
+      "citations": [
+        "action|feature-classifier:2024.5.0|method:fit_classifier_naive_bayes|0"
+      ]
+    },
+    "framework_version": "2024.5.0",
+    "feature_classifier_version": "2024.5.0",
+    "sklearn_version_file": {
+      "sklearn-version": "1.4.2"
+    },
+    "source_records": [
+      {
+        "member": "49ccfb0a-155d-404b-80b4-818d2aeb53b2/provenance/artifacts/5b42d9b6-2f24-4f01-b989-9b4dafca7d5e/action/action.yaml",
+        "action": {
+          "type": "import",
+          "format": "DNAFASTAFormat",
+          "manifest": [
+            {
+              "name": "2024.9.backbone.fna",
+              "md5sum": "5c5d84ddf524b815ec47a684ace39dcc"
+            }
+          ]
+        }
+      },
+      {
+        "member": "49ccfb0a-155d-404b-80b4-818d2aeb53b2/provenance/artifacts/b7c3e691-ea51-4547-94dd-f79f49e41a36/action/action.yaml",
+        "action": {
+          "type": "import",
+          "format": "TSVTaxonomyFormat",
+          "manifest": [
+            {
+              "name": "2024.9.backbone.tax",
+              "md5sum": "058c1a301903be986cbfb5fdd8bad053"
+            }
+          ]
+        }
+      }
+    ],
+    "interpretation_limit": "Имена импортов и фильтры не подтверждают подготовку до импорта, регион или праймеры."
+  }
+]

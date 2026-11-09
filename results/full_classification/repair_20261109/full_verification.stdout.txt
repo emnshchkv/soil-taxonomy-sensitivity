@@ -1,0 +1,7 @@
+silva138_validate: exit=1; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/full_classification/repair_20261109/full_verification
+gtdb_validate: exit=1; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/full_classification/repair_20261109/full_verification
+gg2_validate: exit=1; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/full_classification/repair_20261109/full_verification
+FAIL: silva138: Violation: QZA_VALIDATE: silva138
+FAIL: gtdb: Violation: QZA_VALIDATE: gtdb
+FAIL: gg2: Violation: QZA_VALIDATE: gg2
+full-classification: FAIL/1; /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/full_classification/repair_20261109/full_verification

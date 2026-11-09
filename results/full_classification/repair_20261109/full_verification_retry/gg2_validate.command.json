@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "qiime",
+    "tools",
+    "validate",
+    "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/work/qza/taxonomy_sklearn_gg2.qza",
+    "--level",
+    "max"
+  ],
+  "command": "qiime tools validate /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/work/qza/taxonomy_sklearn_gg2.qza --level max",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-09T14:47:42.899324+00:00",
+  "end_utc": "2026-11-09T14:48:12.213955+00:00",
+  "exit_code": 0,
+  "stdout": "gg2_validate.stdout.txt",
+  "stderr": "gg2_validate.stderr.txt"
+}

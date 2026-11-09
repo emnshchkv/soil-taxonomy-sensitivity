@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "qiime",
+    "tools",
+    "export",
+    "--input-path",
+    "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/work/qza/taxonomy_sklearn_gtdb.qza",
+    "--output-path",
+    "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-verify-7uu584fl/gtdb"
+  ],
+  "command": "qiime tools export --input-path /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/work/qza/taxonomy_sklearn_gtdb.qza --output-path /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-verify-7uu584fl/gtdb",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-09T14:47:12.388710+00:00",
+  "end_utc": "2026-11-09T14:47:42.293381+00:00",
+  "exit_code": 0,
+  "stdout": "gtdb_export.stdout.txt",
+  "stderr": "gtdb_export.stderr.txt"
+}

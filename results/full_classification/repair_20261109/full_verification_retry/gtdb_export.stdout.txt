@@ -1,0 +1,1 @@
+Exported /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/work/qza/taxonomy_sklearn_gtdb.qza as TSVTaxonomyDirectoryFormat to directory /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-verify-7uu584fl/gtdb

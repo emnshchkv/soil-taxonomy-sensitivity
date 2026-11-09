@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "qiime",
+    "tools",
+    "validate",
+    "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/work/qza/taxonomy_sklearn_gtdb.qza",
+    "--level",
+    "max"
+  ],
+  "command": "qiime tools validate /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/work/qza/taxonomy_sklearn_gtdb.qza --level max",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-09T14:42:52.708750+00:00",
+  "end_utc": "2026-11-09T14:42:53.741854+00:00",
+  "exit_code": 1,
+  "stdout": "gtdb_validate.stdout.txt",
+  "stderr": "gtdb_validate.stderr.txt"
+}

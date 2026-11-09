@@ -1,0 +1,5 @@
+Python 3.10.14 | packaged by conda-forge | (main, Mar 20 2024, 12:53:34) [Clang 16.0.6 ]
+qiime2 2025.7.0
+q2-feature-classifier 2025.7.0
+q2cli 2025.7.0
+scikit-learn 1.4.2

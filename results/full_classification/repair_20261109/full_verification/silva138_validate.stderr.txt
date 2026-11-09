@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/qiime", line 11, in <module>
+    sys.exit(qiime())
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/click/core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/click/core.py", line 1082, in main
+    rv = self.invoke(ctx)
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/click/core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/click/core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/click/core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/click/core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/q2cli/builtin/tools.py", line 748, in validate
+    import qiime2.sdk
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/__init__.py", line 9, in <module>
+    from qiime2.sdk import Artifact, Visualization, ResultCollection
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/sdk/__init__.py", line 9, in <module>
+    from .context import Context, AsynchronousContext, ParallelContext
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/sdk/context/__init__.py", line 10, in <module>
+    from .parallel import ParallelContext
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/sdk/context/parallel.py", line 13, in <module>
+    from qiime2.sdk.parallel_config import PARALLEL_CONFIG
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/qiime2/sdk/parallel_config.py", line 37, in <module>
+    'max_threads': max(psutil.cpu_count() - 1, 1)},
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'int'

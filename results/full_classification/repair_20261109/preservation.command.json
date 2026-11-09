@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "conda",
+    "run",
+    "--no-capture-output",
+    "-n",
+    "qiime2-amplicon-2025.7",
+    "python3",
+    "-B",
+    "src/check_classification_preservation.py",
+    "--baseline",
+    "results/full_classification/repair_20261109/protected_before.json",
+    "--output",
+    "results/full_classification/repair_20261109/protected_after.json"
+  ],
+  "command": "conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 -B src/check_classification_preservation.py --baseline results/full_classification/repair_20261109/protected_before.json --output results/full_classification/repair_20261109/protected_after.json",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-09T14:49:41.383735+00:00",
+  "end_utc": "2026-11-09T14:49:46.111155+00:00",
+  "exit_code": 0,
+  "stdout": "preservation.stdout.txt",
+  "stderr": "preservation.stderr.txt"
+}

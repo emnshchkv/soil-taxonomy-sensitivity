@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "conda",
+    "run",
+    "--no-capture-output",
+    "-n",
+    "qiime2-amplicon-2025.7",
+    "/bin/sh",
+    "-c",
+    "exec \"$CONDA_PREFIX/bin/python3\" -B -c \"$1\"",
+    "sh",
+    "import importlib.metadata as m,sys\nprint(\"Python\",sys.version)\nfor p in [\"qiime2\",\"q2-feature-classifier\",\"q2cli\",\"scikit-learn\"]:\n print(p,m.version(p))\n"
+  ],
+  "command": "conda run --no-capture-output -n qiime2-amplicon-2025.7 /bin/sh -c 'exec \"$CONDA_PREFIX/bin/python3\" -B -c \"$1\"' sh 'import importlib.metadata as m,sys\nprint(\"Python\",sys.version)\nfor p in [\"qiime2\",\"q2-feature-classifier\",\"q2cli\",\"scikit-learn\"]:\n print(p,m.version(p))\n'",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-09T14:46:23.089990+00:00",
+  "end_utc": "2026-11-09T14:46:33.173802+00:00",
+  "exit_code": 0,
+  "stdout": "environment.stdout.txt",
+  "stderr": "environment.stderr.txt"
+}

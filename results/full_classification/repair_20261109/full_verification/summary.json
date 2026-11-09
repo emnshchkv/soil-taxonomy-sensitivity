@@ -1,0 +1,11 @@
+{
+  "status": "FAIL",
+  "exit_code": 1,
+  "root": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "results": [],
+  "errors": [
+    "silva138: Violation: QZA_VALIDATE: silva138",
+    "gtdb: Violation: QZA_VALIDATE: gtdb",
+    "gg2: Violation: QZA_VALIDATE: gg2"
+  ]
+}
