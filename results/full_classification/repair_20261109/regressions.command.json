@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "conda",
+    "run",
+    "--no-capture-output",
+    "-n",
+    "qiime2-amplicon-2025.7",
+    "python3",
+    "-B",
+    "tests/test_classification_contract.py",
+    "--log-dir",
+    "results/full_classification/repair_20261109/regressions"
+  ],
+  "command": "conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 -B tests/test_classification_contract.py --log-dir results/full_classification/repair_20261109/regressions",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-09T11:22:37.340675+00:00",
+  "end_utc": "2026-11-09T11:22:51.940942+00:00",
+  "exit_code": 0,
+  "stdout": "regressions.stdout.txt",
+  "stderr": "regressions.stderr.txt"
+}

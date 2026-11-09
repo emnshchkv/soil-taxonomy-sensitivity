@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "-B",
+    "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/tests/test_classification_contract.py",
+    "--project",
+    "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+    "--case",
+    "full_wrong_parameter"
+  ],
+  "command": "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3 -B /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/tests/test_classification_contract.py --project /Users/elizavetamenshchikova/YSDA/AI/project_bacteria --case full_wrong_parameter",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-09T11:22:47.936918+00:00",
+  "end_utc": "2026-11-09T11:22:48.115165+00:00",
+  "exit_code": 1,
+  "stdout": "full_wrong_parameter.stdout.txt",
+  "stderr": "full_wrong_parameter.stderr.txt"
+}

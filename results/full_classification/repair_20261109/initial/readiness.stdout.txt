@@ -1,0 +1,29 @@
+{
+  "samples": 11,
+  "asv": 3374,
+  "probe_ids": [
+    "0021cfa2357aba7fe9d1b92465676a8d",
+    "0027dadcdc187da02f8f422ae4690999",
+    "002d2685b94200ea0724b24286fec6ba",
+    "006661799e8f204cef635d45144494e9",
+    "0078d1c10db41a22b23bd33997e74aaf"
+  ],
+  "models": [
+    {
+      "method": "silva138",
+      "rows": 5,
+      "uuid": "118ef744-e0aa-4a21-95c1-7b3996e40444"
+    },
+    {
+      "method": "gtdb",
+      "rows": 5,
+      "uuid": "28c9f7fd-c89b-44d0-9e1d-14a5c3ec5d16"
+    },
+    {
+      "method": "gg2",
+      "rows": 5,
+      "uuid": "0b6cdce6-06c1-4fa3-b405-444dc9c5ff2d"
+    }
+  ]
+}
+readiness: PASS/0

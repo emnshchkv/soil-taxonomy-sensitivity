@@ -1,0 +1,238 @@
+{
+  "passed": true,
+  "count": 29,
+  "cases": [
+    {
+      "case": "baseline_ready",
+      "scope": "ready",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_marker": "PASS",
+      "passed": true
+    },
+    {
+      "case": "baseline_full",
+      "scope": "full",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_marker": "PASS",
+      "passed": true
+    },
+    {
+      "case": "missing_sample",
+      "scope": "ready",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "SAMPLE_SET",
+      "passed": true
+    },
+    {
+      "case": "duplicate_stats",
+      "scope": "ready",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "DUPLICATE_ID",
+      "passed": true
+    },
+    {
+      "case": "duplicate_saved",
+      "scope": "ready",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "DUPLICATE_ID",
+      "passed": true
+    },
+    {
+      "case": "duplicate_metadata",
+      "scope": "ready",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "DUPLICATE_ID",
+      "passed": true
+    },
+    {
+      "case": "duplicate_rep",
+      "scope": "ready",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "DUPLICATE_ID",
+      "passed": true
+    },
+    {
+      "case": "duplicate_probe",
+      "scope": "ready",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "DUPLICATE_ID",
+      "passed": true
+    },
+    {
+      "case": "changed_sequence",
+      "scope": "ready",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "PROBE_SEQUENCE",
+      "passed": true
+    },
+    {
+      "case": "wrong_probe_ids",
+      "scope": "ready",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "TAXONOMY_ID_SET",
+      "passed": true
+    },
+    {
+      "case": "changed_probe_uuid",
+      "scope": "ready",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "READS_UUID",
+      "passed": true
+    },
+    {
+      "case": "wrong_classifier",
+      "scope": "ready",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "CLASSIFIER_UUID",
+      "passed": true
+    },
+    {
+      "case": "full_duplicate",
+      "scope": "full",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "DUPLICATE_ID",
+      "passed": true
+    },
+    {
+      "case": "full_wrong_ids",
+      "scope": "full",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "TAXONOMY_ID_SET",
+      "passed": true
+    },
+    {
+      "case": "full_nan",
+      "scope": "full",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "CONFIDENCE",
+      "passed": true
+    },
+    {
+      "case": "full_negative",
+      "scope": "full",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "CONFIDENCE",
+      "passed": true
+    },
+    {
+      "case": "full_over_one",
+      "scope": "full",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "CONFIDENCE",
+      "passed": true
+    },
+    {
+      "case": "full_empty_taxon",
+      "scope": "full",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "TAXON_EMPTY",
+      "passed": true
+    },
+    {
+      "case": "full_type",
+      "scope": "full",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "QZA_TYPE",
+      "passed": true
+    },
+    {
+      "case": "full_missing",
+      "scope": "full",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "FileNotFoundError",
+      "passed": true
+    },
+    {
+      "case": "full_changed_rep_uuid",
+      "scope": "full",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "READS_UUID",
+      "passed": true
+    },
+    {
+      "case": "full_changed_model_uuid",
+      "scope": "full",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "CLASSIFIER_UUID",
+      "passed": true
+    },
+    {
+      "case": "full_wrong_parameter",
+      "scope": "full",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "PARAMETER",
+      "passed": true
+    },
+    {
+      "case": "full_wrong_action",
+      "scope": "full",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_marker": "ACTION",
+      "passed": true
+    },
+    {
+      "case": "reorder_ready",
+      "scope": "ready",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_marker": "PASS",
+      "passed": true
+    },
+    {
+      "case": "reorder_full",
+      "scope": "full",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_marker": "PASS",
+      "passed": true
+    },
+    {
+      "case": "confidence_bounds",
+      "scope": "full",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_marker": "PASS",
+      "passed": true
+    },
+    {
+      "case": "legacy_duplicate_stats",
+      "scope": "legacy",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_marker": "LEGACY_FALSE_PASS",
+      "passed": true
+    },
+    {
+      "case": "legacy_duplicate_probe",
+      "scope": "legacy",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_marker": "LEGACY_FALSE_PASS",
+      "passed": true
+    }
+  ]
+}
