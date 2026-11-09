@@ -21,3 +21,8 @@
 - `work/qza/raw_reads_single.qza` — импорт ридов; `work/qzv/reads_summary.qzv` — сводка качества. Остальные артефакты QIIME 2 — тоже в `work/qza/` и `work/qzv/`; git их не отслеживает.
 - `results/read_counts_R1.tsv` — число и длина ридов по образцам; остальные итоговые таблицы — тоже в `results/`.
 - `paper/` — литература: `bokulich18.pdf`, `mcdonald23.pdf`, `parks21.pdf`, `robeson21.pdf`; `robeson21.txt` — текст статьи; `paper/parts/part_01.md`–`part_11.md` — статья по частям.
+
+- src/verify_classifier_readiness.py — проверка актуальной статистики и трёх проб на пяти ASV; без расчётов.
+- src/verify_full_classification.py — проверка готовых полных таксономий, validate/export и новые полные журналы.
+- results/full_classification/repair_20261109/README.md — актуальные доказательства, воспроизведение, регрессии и ограничения исторических журналов.
+- reports/Готовность к классификации.md — текущий отчёт о готовности и выполненной полной классификации.
