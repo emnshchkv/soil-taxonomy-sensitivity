@@ -1,0 +1,2 @@
+OUTPUT_VALUE: manifest.tsv: ('ASV_table',), uuid: '00000000-0000-0000-0000-000000000001' != 'c4cd5d73-7f49-5abf-8d0a-de684ee6abf4'
+FAIL/1 — tables only; stage acceptance not checked

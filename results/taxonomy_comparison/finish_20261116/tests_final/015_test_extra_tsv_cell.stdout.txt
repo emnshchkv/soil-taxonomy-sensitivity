@@ -1,0 +1,3 @@
+OUTPUT_ROW_WIDTH: coverage.tsv:2
+OUTPUT_KEYS: coverage.tsv: missing=1, extra=0; examples=[('sklearn_silva138', 'тип')]
+FAIL/1 — tables only; stage acceptance not checked

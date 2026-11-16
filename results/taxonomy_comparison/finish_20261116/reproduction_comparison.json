@@ -1,0 +1,15 @@
+{
+  "tolerance": 1e-12,
+  "violations": [],
+  "rows": {
+    "assignments.tsv": 3374,
+    "coverage.tsv": 15,
+    "coverage_per_sample.tsv": 150,
+    "pairwise_match.tsv": 15,
+    "pairwise_match_per_sample.tsv": 150,
+    "profiles.tsv": 8966,
+    "distances.tsv": 150,
+    "summary.tsv": 15,
+    "manifest.tsv": 7
+  }
+}

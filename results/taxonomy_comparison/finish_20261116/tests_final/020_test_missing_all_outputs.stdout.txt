@@ -1,0 +1,13 @@
+MISSING_OUTPUT: assignments.tsv
+MISSING_OUTPUT: coverage.tsv
+MISSING_OUTPUT: coverage_per_sample.tsv
+MISSING_OUTPUT: pairwise_match.tsv
+MISSING_OUTPUT: pairwise_match_per_sample.tsv
+MISSING_OUTPUT: profiles.tsv
+MISSING_OUTPUT: distances.tsv
+MISSING_OUTPUT: summary.tsv
+MISSING_OUTPUT: manifest.tsv
+MISSING_OUTPUT: README.md
+MISSING_OUTPUT: normalization_rules.txt
+MISSING_OUTPUT: run.json
+INCOMPLETE/2 — tables only; stage acceptance not checked

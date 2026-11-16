@@ -1,0 +1,2 @@
+ASV_SET: table, FASTA and taxonomies must have the same 3374 IDs
+FAIL/1 — tables only; stage acceptance not checked

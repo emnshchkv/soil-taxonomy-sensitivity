@@ -1,0 +1,9 @@
+CODE_VERSION: expected full commit SHA
+OUTPUT_VALUE: manifest.tsv: ('ASV_table',), code_version: 'b813ac47ffee43a8f9eb40d1b317b96e9e31cfe3' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('VERSIONS',), code_version: 'b813ac47ffee43a8f9eb40d1b317b96e9e31cfe3' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('metadata',), code_version: 'b813ac47ffee43a8f9eb40d1b317b96e9e31cfe3' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('rep_seq',), code_version: 'b813ac47ffee43a8f9eb40d1b317b96e9e31cfe3' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('sklearn_gg2',), code_version: 'b813ac47ffee43a8f9eb40d1b317b96e9e31cfe3' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('sklearn_gtdb',), code_version: 'b813ac47ffee43a8f9eb40d1b317b96e9e31cfe3' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('sklearn_silva138',), code_version: 'b813ac47ffee43a8f9eb40d1b317b96e9e31cfe3' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+FAIL/1 — tables only; stage acceptance not checked

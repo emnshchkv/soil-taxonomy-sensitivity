@@ -1,0 +1,2 @@
+Расчёт создан: /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-hwk_5or9/outputs
+Для вердикта запустите независимую проверку check_taxonomy_comparison.py.

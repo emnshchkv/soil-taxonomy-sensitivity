@@ -1,0 +1,2 @@
+Расчёт создан: /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/reproduction
+Для вердикта запустите независимую проверку check_taxonomy_comparison.py.

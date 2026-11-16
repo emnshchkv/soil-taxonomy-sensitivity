@@ -1,0 +1,2 @@
+OUTPUT_HEADER: coverage.tsv: None
+FAIL/1 — tables only; stage acceptance not checked

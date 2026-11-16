@@ -1,0 +1,2 @@
+INPUT_INVALID: work/qza/rep_seq.qza: Violation: DUPLICATE_ID: synthetic_0000
+FAIL/1 — tables only; stage acceptance not checked

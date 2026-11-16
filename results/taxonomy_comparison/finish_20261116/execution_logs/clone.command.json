@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "git",
+    "clone",
+    "--local",
+    "--no-hardlinks",
+    "--no-checkout",
+    "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+    "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-clean-reproduction-rkoebm_9/source"
+  ],
+  "command": "git clone --local --no-hardlinks --no-checkout /Users/elizavetamenshchikova/YSDA/AI/project_bacteria /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-clean-reproduction-rkoebm_9/source",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-16T11:45:43.614582+00:00",
+  "end_utc": "2026-11-16T11:45:44.841675+00:00",
+  "exit_code": 0,
+  "stdout": "clone.stdout.txt",
+  "stderr": "clone.stderr.txt"
+}

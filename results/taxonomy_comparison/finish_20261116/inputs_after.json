@@ -1,0 +1,44 @@
+{
+  "ASV_table": {
+    "path": "work/qza/ASV_table.qza",
+    "sha256": "0742f177e67b042b25ab1a479193d3d8c7c5dba22d8e73bd2cec254ef3066489",
+    "uuid": "f756256a-ae50-47f4-a10f-5677c67851d5",
+    "type": "FeatureTable[Frequency]"
+  },
+  "rep_seq": {
+    "path": "work/qza/rep_seq.qza",
+    "sha256": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86",
+    "uuid": "978af6f8-91bb-4df2-9e19-b395076e5f3c",
+    "type": "FeatureData[Sequence]"
+  },
+  "metadata": {
+    "path": "data/meta/metadata.tsv",
+    "sha256": "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123",
+    "uuid": "",
+    "type": "text"
+  },
+  "VERSIONS": {
+    "path": "data/refs/VERSIONS.md",
+    "sha256": "d02f87f183b6d43699b3ec0850d8d9ef41149b682eccda38166cee2e01d9e66e",
+    "uuid": "",
+    "type": "text"
+  },
+  "sklearn_silva138": {
+    "path": "work/qza/taxonomy_sklearn_silva138.qza",
+    "sha256": "66d7b18f8349c6adcd2e0d8a74f860e6674f5691e5bdbea8cd885cb0381505d6",
+    "uuid": "1e17faa9-825e-4930-ba09-f02e38391ca4",
+    "type": "FeatureData[Taxonomy]"
+  },
+  "sklearn_gtdb": {
+    "path": "work/qza/taxonomy_sklearn_gtdb.qza",
+    "sha256": "a542ba9b762e42112b7dc95a05de6b9870b4b8e22b01acd0847b22201090f73e",
+    "uuid": "64a8d4d3-2751-4a3d-a0b2-711c358793fc",
+    "type": "FeatureData[Taxonomy]"
+  },
+  "sklearn_gg2": {
+    "path": "work/qza/taxonomy_sklearn_gg2.qza",
+    "sha256": "e972b452e45cfc991e69712ded06b3ef47d5915a85caecfbdc06016ab2439771",
+    "uuid": "fdc19c64-00f2-4fae-b8ac-387eadd6e74f",
+    "type": "FeatureData[Taxonomy]"
+  }
+}

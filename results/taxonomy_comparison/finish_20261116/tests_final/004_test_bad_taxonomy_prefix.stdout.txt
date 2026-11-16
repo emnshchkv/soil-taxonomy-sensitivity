@@ -1,0 +1,4 @@
+RUN_INPUTS: run inputs differ from actual inputs
+TAXON_FORMAT: sklearn_silva138/synthetic_0000: Unexpected rank fragment: 'x__P'
+ORACLE_INPUT: ValueError: Unexpected rank fragment: 'x__P'
+FAIL/1 — tables only; stage acceptance not checked

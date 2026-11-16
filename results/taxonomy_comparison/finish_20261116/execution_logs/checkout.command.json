@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "git",
+    "checkout",
+    "--detach",
+    "b813ac47ffee43a8f9eb40d1b317b96e9e31cfe3"
+  ],
+  "command": "git checkout --detach b813ac47ffee43a8f9eb40d1b317b96e9e31cfe3",
+  "cwd": "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-clean-reproduction-rkoebm_9/source",
+  "start_utc": "2026-11-16T11:45:44.842266+00:00",
+  "end_utc": "2026-11-16T11:45:44.990350+00:00",
+  "exit_code": 0,
+  "stdout": "checkout.stdout.txt",
+  "stderr": "checkout.stderr.txt"
+}

@@ -1,0 +1,11 @@
+tests: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/execution_logs
+historical_replay: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/execution_logs
+main: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/execution_logs
+tables_main: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/execution_logs
+clone: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/execution_logs
+checkout: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/execution_logs
+reproduction: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/execution_logs
+tables_reproduction: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/execution_logs
+project_check: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/execution_logs
+full_acceptance: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/execution_logs
+PASS/0 — comparison, tests and local reproduction: /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116

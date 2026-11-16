@@ -1,0 +1,7 @@
+Literal rank-prefix normalization; trim surrounding whitespace; preserve suffixes.
+Service labels: empty, Unassigned, Unknown_Family.
+Lineage keys retain known ancestors through the target rank; unknown target = UNCLASSIFIED.
+No synonyms, filtering, rarefaction or pooling of sample read counts.
+ASV denominator: positive sum in ten soils; sample denominator: all reads in that soil.
+Conditional fractions use separate ASV and read denominators; zero denominator = NA.
+Distance = half L1 over the union of lineage keys including UNCLASSIFIED.

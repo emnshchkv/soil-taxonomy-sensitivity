@@ -1,0 +1,2 @@
+MISSING_OUTPUT: distances.tsv
+INCOMPLETE/2 — tables only; stage acceptance not checked

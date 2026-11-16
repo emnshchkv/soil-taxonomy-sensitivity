@@ -1,0 +1,83 @@
+{
+  "code": {
+    "clean": true,
+    "commit": "b813ac47ffee43a8f9eb40d1b317b96e9e31cfe3",
+    "files": {
+      "src/check_taxonomy_comparison.py": "03aa2e7700e0aaf22fa74d36f62f4b9a436816bb916d9645e535c5257e9f233b",
+      "src/classification_contract.py": "7b8d8ef1b49cf2d095f85fb51867dd568d9b4107bdf74226b8ff2f015609f4fb",
+      "src/classification_logging.py": "2e25863ee7fe2e15f5f0c861d8d0b5cc38c605d682837447b983f1a2958f9001",
+      "src/complete_taxonomy_comparison.py": "0ee79760c4029aeab7a88d4bfd7d406b19fc66efc0047a4dcc2f1027c8742e2e",
+      "src/qiime_runtime.py": "a408561d5755dcd5beeb060c8c961c4d7bf47c18963df9d36ec1066504b1e766",
+      "src/repro_defects.py": "e1ca427e7c5f2ea5cbcdd8a9f3467274eb9e2b7e6e31cfe7e298e98722498621",
+      "src/taxonomy_compare_acceptance.py": "ccca7b1c1e3e17c9ebf5f391f13af9bfc125164d885b60f66378701effcc22e9",
+      "src/taxonomy_compare_core.py": "3df322392bfadfd0b8720ded985734c46ef53d6dbdd11ce19a79cbd374e4a2bb",
+      "src/taxonomy_compare_io.py": "4512d6fecd093fbfa63301d553dc4c8ae59158ce03b64bf3218dc60d6ee41a4c",
+      "src/taxonomy_comparison.py": "f27002736fb17057871b35c0b851a879053b6c2a668d3e9db10d943fb15ab77d",
+      "tests/taxonomy_comparison_fixtures.py": "39866690fc9023fb97888bfaf26b7f835073097a92242ecba99b906af1b2ca0e",
+      "tests/test_taxonomy_comparison.py": "db192f52abbc95a35dd9c5455d4722a85e80d137818703017baf52b277f28ddf"
+    },
+    "version": "b813ac47ffee43a8f9eb40d1b317b96e9e31cfe3"
+  },
+  "finished_at_utc": "2026-11-16T11:45:49.759474+00:00",
+  "input_dir": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-clean-reproduction-rkoebm_9/source",
+  "inputs": {
+    "ASV_table": {
+      "path": "work/qza/ASV_table.qza",
+      "sha256": "0742f177e67b042b25ab1a479193d3d8c7c5dba22d8e73bd2cec254ef3066489",
+      "type": "FeatureTable[Frequency]",
+      "uuid": "f756256a-ae50-47f4-a10f-5677c67851d5"
+    },
+    "VERSIONS": {
+      "path": "data/refs/VERSIONS.md",
+      "sha256": "d02f87f183b6d43699b3ec0850d8d9ef41149b682eccda38166cee2e01d9e66e",
+      "type": "text",
+      "uuid": ""
+    },
+    "metadata": {
+      "path": "data/meta/metadata.tsv",
+      "sha256": "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123",
+      "type": "text",
+      "uuid": ""
+    },
+    "rep_seq": {
+      "path": "work/qza/rep_seq.qza",
+      "sha256": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86",
+      "type": "FeatureData[Sequence]",
+      "uuid": "978af6f8-91bb-4df2-9e19-b395076e5f3c"
+    },
+    "sklearn_gg2": {
+      "path": "work/qza/taxonomy_sklearn_gg2.qza",
+      "sha256": "e972b452e45cfc991e69712ded06b3ef47d5915a85caecfbdc06016ab2439771",
+      "type": "FeatureData[Taxonomy]",
+      "uuid": "fdc19c64-00f2-4fae-b8ac-387eadd6e74f"
+    },
+    "sklearn_gtdb": {
+      "path": "work/qza/taxonomy_sklearn_gtdb.qza",
+      "sha256": "a542ba9b762e42112b7dc95a05de6b9870b4b8e22b01acd0847b22201090f73e",
+      "type": "FeatureData[Taxonomy]",
+      "uuid": "64a8d4d3-2751-4a3d-a0b2-711c358793fc"
+    },
+    "sklearn_silva138": {
+      "path": "work/qza/taxonomy_sklearn_silva138.qza",
+      "sha256": "66d7b18f8349c6adcd2e0d8a74f860e6674f5691e5bdbea8cd885cb0381505d6",
+      "type": "FeatureData[Taxonomy]",
+      "uuid": "1e17faa9-825e-4930-ba09-f02e38391ca4"
+    }
+  },
+  "out_dir": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/reproduction",
+  "outputs": {
+    "README.md": "22ab2b5b7647c103b10a0f35142fba274e20747a8d865c078964b64df861166b",
+    "assignments.tsv": "d4378a9c18697702d13d5c3866389874fbfd2080b5ca60da60a8684c490e91c5",
+    "coverage.tsv": "ebf65a0e34751ed2579dce7f08f75e1a01207811c4623a85756e9a8cf1d59ac7",
+    "coverage_per_sample.tsv": "0bc7de8bef6da615253e5debdc266a3d89b07a5acc16c2e716d9238b01e7e01f",
+    "distances.tsv": "4b48ff45312549218de6bed325df9677c7bdc752f56bb6cb98699f077d6a2fd7",
+    "manifest.tsv": "8abb00f7571df8af5e65b152c84bc3418741371d0042604ea77cb3c25a950a44",
+    "normalization_rules.txt": "a3b0b5e12babcc4d3ef658221c52b35be0da38b28c756603822db68d200aace0",
+    "pairwise_match.tsv": "07ed4a6519dcc50396d90aef36d3b74827e5dd7385dd200a6c1927ab81c7cced",
+    "pairwise_match_per_sample.tsv": "7a9dc59aca4f20b813dc3ac74490120149bb95b00144fee808cad474115bbb9d",
+    "profiles.tsv": "1fd0298feb3a92987dc6d90be64f016cd8df88cee94d469ca4d91344b99926f3",
+    "summary.tsv": "830ee0a7029e7d37a18d51b34688ca9faf5c4eba96416679e6b9ef33ccc331c7"
+  },
+  "schema_version": 1,
+  "started_at_utc": "2026-11-16T11:45:45.377447+00:00"
+}

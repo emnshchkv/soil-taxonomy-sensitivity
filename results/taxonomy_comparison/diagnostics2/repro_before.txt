@@ -1,0 +1,21 @@
+=== ДЕФЕКТ A: отсутствующие выходы ===
+exit=1
+stdout: 
+stderr: Traceback (most recent call last):
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_taxonomy_comparison.py", line 738, in <module>
+    sys.exit(main())
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_taxonomy_comparison.py", line 709, in main
+    check_assignments(violations, feature_ids, taxonomies, out_dir)
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_taxonomy_comparison.py", line 293, in check_assignments
+    rows = rea
+
+=== ДЕФЕКТ B: абсолютные числа ридов не проверяются ===
+Traceback (most recent call last):
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/repro_defects.py", line 66, in <module>
+    main()
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/repro_defects.py", line 60, in main
+    _check_pairwise_rows(violations, [row], False, {}, {}, [], [])
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_taxonomy_comparison.py", line 466, in _check_pairwise_rows
+    exp = pairwise_match(taxonomies[a], taxonomies[b], soil_asv, table, soil_samples, rank)
+KeyError: 'sklearn_silva138'
+ERROR conda.cli.main_run:execute(142): `conda run python3 src/repro_defects.py` failed. (See above for error)

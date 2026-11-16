@@ -1,0 +1,8 @@
+old_valid_calculate: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/historical_replay
+old_valid_check: exit=1; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/historical_replay
+new_valid_calculate: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/historical_replay
+new_valid_check: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/historical_replay
+old_missing_input: exit=1; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/historical_replay
+new_missing_input: exit=2; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/historical_replay
+old_code_identity: exit=0; logs=/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_comparison/finish_20261116/historical_replay
+PASS/0 — historical defects reproduced; corrected baseline and missing-input verdict verified

@@ -1,0 +1,2 @@
+Расчёт завершён. Выходы в /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-defect-replay-qelx1k07/oldout
+Почвенных образцов: 10; почвенных ASV: 3373

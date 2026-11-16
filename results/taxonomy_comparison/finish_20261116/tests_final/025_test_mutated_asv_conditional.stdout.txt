@@ -1,0 +1,2 @@
+OUTPUT_VALUE: pairwise_match.tsv: ('sklearn_silva138', 'sklearn_gtdb', 'тип'), cond_match_asv_frac: '0.123' != 1.0
+FAIL/1 — tables only; stage acceptance not checked

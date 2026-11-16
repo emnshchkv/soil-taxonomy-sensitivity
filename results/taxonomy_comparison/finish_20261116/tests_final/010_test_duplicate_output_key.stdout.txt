@@ -1,0 +1,3 @@
+OUTPUT_DUPLICATE_KEY: profiles.tsv:346: ('sklearn_silva138', 'Kr1_S80', 'тип', 'UNCLASSIFIED')
+OUTPUT_DUPLICATE_KEY: profiles.tsv: ('sklearn_silva138', 'Kr1_S80', 'тип', 'UNCLASSIFIED')
+FAIL/1 — tables only; stage acceptance not checked
