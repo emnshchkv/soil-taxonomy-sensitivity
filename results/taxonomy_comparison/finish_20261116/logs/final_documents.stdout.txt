@@ -1,0 +1,3 @@
+Missing link Метод буквального сравнения таксономий -> METHOD_COMPARISON
+Missing link Набор готовых таксономий для сравнения -> reports/Готовность к классификации
+FAIL/1 — report, 19 graph pages, protocol, hw2, 85 protected files
