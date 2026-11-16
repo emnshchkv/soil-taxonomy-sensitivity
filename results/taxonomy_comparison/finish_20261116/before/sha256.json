@@ -1,0 +1,7 @@
+{
+  "src/taxonomy_compare_core.py": "5b0cbffb3b4ac1d230732a25b59bc0a434a8dedceb2ef8f20a52817e1b8d6a3a",
+  "src/taxonomy_comparison.py": "41a9e3e559e161fcb2219fc42a0c54e112b4c24e4b2590be5c108d82252911cd",
+  "src/check_taxonomy_comparison.py": "33568e386ad9c3e4196e1478483f68b4b2c8341937edfb41e77138a2ab5bfe83",
+  "tests/test_taxonomy_comparison.py": "ab05666a8a7fdbf77b4b83b80fd8f6ac96763704770b96cfa4b6ee260e305fdc",
+  "src/repro_defects.py": "300d25daabcb43b983af04d18ef9694443ce1cd5e3d1594a737e0ce253b6e24b"
+}
