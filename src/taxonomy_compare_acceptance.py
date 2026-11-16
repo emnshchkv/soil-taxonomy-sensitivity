@@ -203,8 +203,17 @@ def check_evidence(out_dir, dataset, run):
         p = get(e['protected_record'])
         if p:
             protection = json.loads(p.read_text())
-            if protection['violations'] or protection['checked'] < 83:
+            if protection['violations'] or protection['checked'] < 83 or protection['checked']!=len(protection['files']):
                 errors.append(issue('PROTECTED_FILES', 'protected input/results changed'))
+            baseline_path=get('../protected_before.json')
+            start_path=get('../protected_start.json')
+            if baseline_path and start_path:
+                baseline=json.loads(baseline_path.read_text())
+                excluded={'METHOD_COMPARISON.md','diary.md','AGENT_TAXONOMY_COMPARISON_PROMPT.txt'}
+                expected={k:v for k,v in baseline.items() if k not in excluded}
+                started=json.loads(start_path.read_text())
+                if expected!=protection['files'] or started['files']!=expected or started['violations']:
+                    errors.append(issue('PROTECTED_SNAPSHOT','initial and final hashes, modes or sizes differ'))
     except (KeyError, TypeError, ValueError, OSError) as exc:
         errors.append(issue('EVIDENCE_FORMAT', f'{type(exc).__name__}: {exc}', isinstance(exc,FileNotFoundError)))
     return errors

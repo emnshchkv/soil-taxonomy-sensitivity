@@ -134,7 +134,7 @@ def main():
         for p in (base/dirname).rglob('*'):
             if p.is_file():artifacts[relative(p)]=sha256(p)
     for name in ('inputs_before.json','inputs_after.json','clean_checkout.json',
-                 'reproduction_comparison.json','protected_start.json','protected_after.json'):
+                 'reproduction_comparison.json','protected_before.json','protected_start.json','protected_after.json'):
         p=base/name;artifacts[relative(p)]=sha256(p)
     evidence={'schema_version':1,'code_commit':commit,'protocol_commit':args.protocol_commit,
               'inputs_before':data['inputs'],'inputs_after':after['inputs'],
