@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "-B",
+    "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/taxonomy_comparison.py",
+    "--input-dir",
+    "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/test_refuses_overwrite/inputs",
+    "--out-dir",
+    "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/test_refuses_overwrite/outputs"
+  ],
+  "command": "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3 -B /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/taxonomy_comparison.py --input-dir /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/test_refuses_overwrite/inputs --out-dir /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/test_refuses_overwrite/outputs",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-16T11:34:04.640238+00:00",
+  "end_utc": "2026-11-16T11:34:04.744919+00:00",
+  "exit_code": 2,
+  "stdout": "037_overwrite_refused.stdout.txt",
+  "stderr": "037_overwrite_refused.stderr.txt",
+  "expected_exit": 2,
+  "metadata_file": "037_overwrite_refused.command.json",
+  "name": "037_overwrite_refused",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "1f1a31341fde636bb1ae98a621468d239d1cca3d6249cb91ab4ce7480737672f"
+}

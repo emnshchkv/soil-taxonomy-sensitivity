@@ -1,0 +1,2 @@
+EVIDENCE_MISSING: /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-jro43040/test_complete_tables_without_reproduction_are_incomplete/outputs/acceptance.json
+INCOMPLETE/2 — full stage acceptance

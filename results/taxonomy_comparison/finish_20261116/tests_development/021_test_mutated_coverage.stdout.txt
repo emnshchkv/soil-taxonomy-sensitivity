@@ -1,0 +1,2 @@
+OUTPUT_VALUE: coverage.tsv: ('sklearn_silva138', 'тип'), assigned_asv: '999' != 5
+FAIL/1 — tables only; stage acceptance not checked

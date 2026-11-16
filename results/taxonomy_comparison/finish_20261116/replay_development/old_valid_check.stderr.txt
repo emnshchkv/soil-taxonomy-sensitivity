@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-defect-replay-h5zfkg0f/old/src/check_taxonomy_comparison.py", line 837, in <module>
+    sys.exit(main())
+  File "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-defect-replay-h5zfkg0f/old/src/check_taxonomy_comparison.py", line 806, in main
+    check_pairwise(violations, out_dir, taxonomies, table, soil_asv, soil_samples)
+  File "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-defect-replay-h5zfkg0f/old/src/check_taxonomy_comparison.py", line 574, in check_pairwise
+    seen = _check_pairwise_rows(violations, rows, False,
+  File "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-defect-replay-h5zfkg0f/old/src/check_taxonomy_comparison.py", line 465, in _check_pairwise_rows
+    cond = r["cond_match_frac"]
+KeyError: 'cond_match_frac'

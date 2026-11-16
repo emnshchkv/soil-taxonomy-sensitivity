@@ -1,0 +1,2 @@
+OUTPUT_VALUE: pairwise_match_per_sample.tsv: ('sklearn_silva138', 'sklearn_gtdb', 'Kr1_S80', 'тип'), only_b_reads: '999' != 0
+FAIL/1 — tables only; stage acceptance not checked

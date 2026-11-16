@@ -1,0 +1,2 @@
+INPUT_MISSING: work/qza/ASV_table.qza
+INCOMPLETE/2 — tables only; stage acceptance not checked

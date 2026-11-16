@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "-B",
+    "-c",
+    "import sys,json,unittest\nfrom pathlib import Path\nsys.path.insert(0,'tests')\nimport test_taxonomy_comparison as t\nt.LOG_ROOT=Path('results/taxonomy_comparison/finish_20261116/tests_added')\nt.LOG_ROOT.mkdir(exist_ok=False)\nnames=['test_mutated_'+x for x in ['both_match_reads','both_diff_reads','only_a_reads','only_b_reads','neither_reads','total_reads','total_asv','manifest_uuid']]\nnames += ['test_wrong_qza_uuid','test_wrong_role_without_missing_files','test_missing_asv_in_table','test_empty_output_file','test_extra_tsv_cell','test_consistent_scaling_keeps_fractions_but_is_wrong','test_balanced_profile_transfer_is_wrong']\nsuite=unittest.TestSuite(t.ComparisonCLI(name) for name in names)\nr=unittest.TextTestRunner(verbosity=2).run(suite)\ns={'scope':'new15 only; not full acceptance','tests_run':r.testsRun,'failures':len(r.failures),'errors':len(r.errors),'success':r.wasSuccessful(),'code':t.code_identity(),'commands':t.COMMAND_RECORDS}\n(t.LOG_ROOT/'summary.json').write_text(json.dumps(s,ensure_ascii=False,indent=2)+'\\n')\nraise SystemExit(0 if r.wasSuccessful() else 1)\n"
+  ],
+  "command": "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3 -B -c 'import sys,json,unittest\nfrom pathlib import Path\nsys.path.insert(0,'\"'\"'tests'\"'\"')\nimport test_taxonomy_comparison as t\nt.LOG_ROOT=Path('\"'\"'results/taxonomy_comparison/finish_20261116/tests_added'\"'\"')\nt.LOG_ROOT.mkdir(exist_ok=False)\nnames=['\"'\"'test_mutated_'\"'\"'+x for x in ['\"'\"'both_match_reads'\"'\"','\"'\"'both_diff_reads'\"'\"','\"'\"'only_a_reads'\"'\"','\"'\"'only_b_reads'\"'\"','\"'\"'neither_reads'\"'\"','\"'\"'total_reads'\"'\"','\"'\"'total_asv'\"'\"','\"'\"'manifest_uuid'\"'\"']]\nnames += ['\"'\"'test_wrong_qza_uuid'\"'\"','\"'\"'test_wrong_role_without_missing_files'\"'\"','\"'\"'test_missing_asv_in_table'\"'\"','\"'\"'test_empty_output_file'\"'\"','\"'\"'test_extra_tsv_cell'\"'\"','\"'\"'test_consistent_scaling_keeps_fractions_but_is_wrong'\"'\"','\"'\"'test_balanced_profile_transfer_is_wrong'\"'\"']\nsuite=unittest.TestSuite(t.ComparisonCLI(name) for name in names)\nr=unittest.TextTestRunner(verbosity=2).run(suite)\ns={'\"'\"'scope'\"'\"':'\"'\"'new15 only; not full acceptance'\"'\"','\"'\"'tests_run'\"'\"':r.testsRun,'\"'\"'failures'\"'\"':len(r.failures),'\"'\"'errors'\"'\"':len(r.errors),'\"'\"'success'\"'\"':r.wasSuccessful(),'\"'\"'code'\"'\"':t.code_identity(),'\"'\"'commands'\"'\"':t.COMMAND_RECORDS}\n(t.LOG_ROOT/'\"'\"'summary.json'\"'\"').write_text(json.dumps(s,ensure_ascii=False,indent=2)+'\"'\"'\\n'\"'\"')\nraise SystemExit(0 if r.wasSuccessful() else 1)\n'",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-16T11:39:05.337161+00:00",
+  "end_utc": "2026-11-16T11:39:42.912789+00:00",
+  "exit_code": 0,
+  "stdout": "dev_tests_added.stdout.txt",
+  "stderr": "dev_tests_added.stderr.txt"
+}

@@ -1,0 +1,3 @@
+INPUT_INVALID: data/meta/metadata.tsv: Violation: SAMPLE_ROLE: K_S63
+MISSING_OUTPUT: distances.tsv
+FAIL/1 — tables only; stage acceptance not checked

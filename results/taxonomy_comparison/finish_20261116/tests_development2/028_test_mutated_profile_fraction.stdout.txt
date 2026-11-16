@@ -1,0 +1,3 @@
+OUTPUT_FRACTION_DOMAIN: profiles.tsv:2: frac='NaN'
+OUTPUT_VALUE: profiles.tsv: ('sklearn_silva138', 'Kr1_S80', 'тип', 'UNCLASSIFIED'), frac: 'NaN' != 0.994390315913788
+FAIL/1 — tables only; stage acceptance not checked

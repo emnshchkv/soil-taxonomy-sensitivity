@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "-B",
+    "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_taxonomy_comparison.py",
+    "--input-dir",
+    "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/test_bad_input_outranks_missing_output/inputs",
+    "--out-dir",
+    "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/test_bad_input_outranks_missing_output/outputs",
+    "--tables-only"
+  ],
+  "command": "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3 -B /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_taxonomy_comparison.py --input-dir /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/test_bad_input_outranks_missing_output/inputs --out-dir /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/test_bad_input_outranks_missing_output/outputs --tables-only",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-16T11:32:53.031893+00:00",
+  "end_utc": "2026-11-16T11:32:54.472072+00:00",
+  "exit_code": 1,
+  "stdout": "002_test_bad_input_outranks_missing_output.stdout.txt",
+  "stderr": "002_test_bad_input_outranks_missing_output.stderr.txt",
+  "expected_exit": 1,
+  "metadata_file": "002_test_bad_input_outranks_missing_output.command.json",
+  "name": "002_test_bad_input_outranks_missing_output",
+  "stdout_sha256": "0b80abeb418e6fce343c8e861ccd221d771ec830a944534a1adafc3332a15d66",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

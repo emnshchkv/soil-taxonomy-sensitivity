@@ -1,0 +1,20 @@
+test_mutated_both_match_reads (test_taxonomy_comparison.ComparisonCLI) ... ok
+test_mutated_both_diff_reads (test_taxonomy_comparison.ComparisonCLI) ... ok
+test_mutated_only_a_reads (test_taxonomy_comparison.ComparisonCLI) ... ok
+test_mutated_only_b_reads (test_taxonomy_comparison.ComparisonCLI) ... ok
+test_mutated_neither_reads (test_taxonomy_comparison.ComparisonCLI) ... ok
+test_mutated_total_reads (test_taxonomy_comparison.ComparisonCLI) ... ok
+test_mutated_total_asv (test_taxonomy_comparison.ComparisonCLI) ... ok
+test_mutated_manifest_uuid (test_taxonomy_comparison.ComparisonCLI) ... ok
+test_wrong_qza_uuid (test_taxonomy_comparison.ComparisonCLI) ... ok
+test_wrong_role_without_missing_files (test_taxonomy_comparison.ComparisonCLI) ... ok
+test_missing_asv_in_table (test_taxonomy_comparison.ComparisonCLI) ... ok
+test_empty_output_file (test_taxonomy_comparison.ComparisonCLI) ... ok
+test_extra_tsv_cell (test_taxonomy_comparison.ComparisonCLI) ... ok
+test_consistent_scaling_keeps_fractions_but_is_wrong (test_taxonomy_comparison.ComparisonCLI) ... ok
+test_balanced_profile_transfer_is_wrong (test_taxonomy_comparison.ComparisonCLI) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 35.706s
+
+OK

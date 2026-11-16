@@ -1,0 +1,5 @@
+OUTPUT_VALUE: profiles.tsv: ('sklearn_silva138', 'Kr1_S80', 'тип', 'UNCLASSIFIED'), count: '3367' != 3368
+OUTPUT_VALUE: profiles.tsv: ('sklearn_silva138', 'Kr1_S80', 'тип', 'UNCLASSIFIED'), frac: '0.99409506938293479' != 0.994390315913788
+OUTPUT_VALUE: profiles.tsv: ('sklearn_silva138', 'Kr1_S80', 'тип', 'd__Bacteria;p__P'), count: '20' != 19
+OUTPUT_VALUE: profiles.tsv: ('sklearn_silva138', 'Kr1_S80', 'тип', 'd__Bacteria;p__P'), frac: '0.0059049306170652497' != 0.005609684086211987
+FAIL/1 — tables only; stage acceptance not checked

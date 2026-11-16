@@ -1,0 +1,2 @@
+CODE_CONTENT: recorded source hashes differ from executing source
+FAIL/1 — tables only; stage acceptance not checked

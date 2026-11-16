@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "-B",
+    "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/taxonomy_comparison.py",
+    "--input-dir",
+    "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/inputs",
+    "--out-dir",
+    "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/outputs"
+  ],
+  "command": "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3 -B /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/taxonomy_comparison.py --input-dir /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/inputs --out-dir /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/outputs",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-16T11:32:48.695857+00:00",
+  "end_utc": "2026-11-16T11:32:51.171760+00:00",
+  "exit_code": 0,
+  "stdout": "000_baseline_calculation.stdout.txt",
+  "stderr": "000_baseline_calculation.stderr.txt",
+  "expected_exit": 0,
+  "metadata_file": "000_baseline_calculation.command.json",
+  "name": "000_baseline_calculation",
+  "stdout_sha256": "2db52e4dfcf9609c91d8f83030a216ca5e0e667e8d999266696b78121372e489",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

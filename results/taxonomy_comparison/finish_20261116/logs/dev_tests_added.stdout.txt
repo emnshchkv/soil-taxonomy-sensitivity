@@ -1,0 +1,17 @@
+000_baseline_calculation: exit=0; logs=results/taxonomy_comparison/finish_20261116/tests_added
+001_baseline_tables: exit=0; logs=results/taxonomy_comparison/finish_20261116/tests_added
+002_test_mutated_both_match_reads: exit=1; logs=results/taxonomy_comparison/finish_20261116/tests_added
+003_test_mutated_both_diff_reads: exit=1; logs=results/taxonomy_comparison/finish_20261116/tests_added
+004_test_mutated_only_a_reads: exit=1; logs=results/taxonomy_comparison/finish_20261116/tests_added
+005_test_mutated_only_b_reads: exit=1; logs=results/taxonomy_comparison/finish_20261116/tests_added
+006_test_mutated_neither_reads: exit=1; logs=results/taxonomy_comparison/finish_20261116/tests_added
+007_test_mutated_total_reads: exit=1; logs=results/taxonomy_comparison/finish_20261116/tests_added
+008_test_mutated_total_asv: exit=1; logs=results/taxonomy_comparison/finish_20261116/tests_added
+009_test_mutated_manifest_uuid: exit=1; logs=results/taxonomy_comparison/finish_20261116/tests_added
+010_test_wrong_qza_uuid: exit=1; logs=results/taxonomy_comparison/finish_20261116/tests_added
+011_test_wrong_role_without_missing_files: exit=1; logs=results/taxonomy_comparison/finish_20261116/tests_added
+012_test_missing_asv_in_table: exit=1; logs=results/taxonomy_comparison/finish_20261116/tests_added
+013_test_empty_output_file: exit=1; logs=results/taxonomy_comparison/finish_20261116/tests_added
+014_test_extra_tsv_cell: exit=1; logs=results/taxonomy_comparison/finish_20261116/tests_added
+015_test_consistent_scaling_keeps_fractions_but_is_wrong: exit=1; logs=results/taxonomy_comparison/finish_20261116/tests_added
+016_test_balanced_profile_transfer_is_wrong: exit=1; logs=results/taxonomy_comparison/finish_20261116/tests_added

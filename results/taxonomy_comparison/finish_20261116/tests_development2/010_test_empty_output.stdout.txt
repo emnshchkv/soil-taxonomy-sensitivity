@@ -1,0 +1,2 @@
+OUTPUT_KEYS: coverage.tsv: missing=15, extra=0; examples=[('sklearn_gg2', 'класс'), ('sklearn_gg2', 'порядок')]
+FAIL/1 — tables only; stage acceptance not checked

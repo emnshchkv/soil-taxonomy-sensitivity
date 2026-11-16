@@ -1,0 +1,3 @@
+CODE_CONTENT: recorded source hashes differ from executing source
+OUTPUT_VALUE: assignments.tsv: ('synthetic_0000',), soil_asv: '0' != 1
+FAIL/1 — tables only; stage acceptance not checked

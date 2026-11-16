@@ -1,0 +1,2 @@
+OUTPUT_KEYS: distances.tsv: missing=1, extra=0; examples=[('sklearn_gtdb', 'sklearn_gg2', 'LUB6_S96', 'род')]
+FAIL/1 — tables only; stage acceptance not checked

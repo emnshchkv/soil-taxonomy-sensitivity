@@ -1,0 +1,1 @@
+ОТКАЗ: выходной путь уже существует: /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-jro43040/test_refuses_overwrite/outputs

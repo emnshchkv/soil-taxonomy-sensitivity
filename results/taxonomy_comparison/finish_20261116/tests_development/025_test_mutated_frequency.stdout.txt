@@ -1,0 +1,4 @@
+OUTPUT_COUNT_DOMAIN: profiles.tsv:2: count='0.5'
+CODE_CONTENT: recorded source hashes differ from executing source
+OUTPUT_VALUE: profiles.tsv: ('sklearn_silva138', 'Kr1_S80', 'тип', 'UNCLASSIFIED'), count: '0.5' != 3368
+FAIL/1 — tables only; stage acceptance not checked

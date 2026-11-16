@@ -1,0 +1,9 @@
+CODE_SNAPSHOT: snapshot digest mismatch
+OUTPUT_VALUE: manifest.tsv: ('ASV_table',), code_version: 'snapshot-60e3648685d4ca3c6e66353163c0ee1afe6c8b41b128ded83a917752d785d4b4' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('VERSIONS',), code_version: 'snapshot-60e3648685d4ca3c6e66353163c0ee1afe6c8b41b128ded83a917752d785d4b4' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('metadata',), code_version: 'snapshot-60e3648685d4ca3c6e66353163c0ee1afe6c8b41b128ded83a917752d785d4b4' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('rep_seq',), code_version: 'snapshot-60e3648685d4ca3c6e66353163c0ee1afe6c8b41b128ded83a917752d785d4b4' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('sklearn_gg2',), code_version: 'snapshot-60e3648685d4ca3c6e66353163c0ee1afe6c8b41b128ded83a917752d785d4b4' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('sklearn_gtdb',), code_version: 'snapshot-60e3648685d4ca3c6e66353163c0ee1afe6c8b41b128ded83a917752d785d4b4' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('sklearn_silva138',), code_version: 'snapshot-60e3648685d4ca3c6e66353163c0ee1afe6c8b41b128ded83a917752d785d4b4' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+FAIL/1 — tables only; stage acceptance not checked

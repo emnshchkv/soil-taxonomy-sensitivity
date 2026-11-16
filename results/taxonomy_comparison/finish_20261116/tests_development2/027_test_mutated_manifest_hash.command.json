@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "-B",
+    "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_taxonomy_comparison.py",
+    "--input-dir",
+    "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-jro43040/test_mutated_manifest_hash/inputs",
+    "--out-dir",
+    "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-jro43040/test_mutated_manifest_hash/outputs",
+    "--tables-only"
+  ],
+  "command": "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3 -B /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_taxonomy_comparison.py --input-dir /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-jro43040/test_mutated_manifest_hash/inputs --out-dir /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-jro43040/test_mutated_manifest_hash/outputs --tables-only",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-16T11:36:37.676857+00:00",
+  "end_utc": "2026-11-16T11:36:40.938873+00:00",
+  "exit_code": 1,
+  "stdout": "027_test_mutated_manifest_hash.stdout.txt",
+  "stderr": "027_test_mutated_manifest_hash.stderr.txt",
+  "expected_exit": 1,
+  "metadata_file": "027_test_mutated_manifest_hash.command.json",
+  "name": "027_test_mutated_manifest_hash",
+  "stdout_sha256": "60da75ff0df8a2dfdc5900faae8169456bdfc3d8d4d1cfe383c4b76fe3f5e519",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

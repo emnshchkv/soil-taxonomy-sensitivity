@@ -1,0 +1,2 @@
+INPUT_INVALID: work/qza/ASV_table.qza: Violation: SAMPLE_SET: ['K_S63', 'unexpected', 'Kr2_S81', 'Kr3_S82', 'Kr4_S83', 'Kr5_S84', 'LUB2_S92', 'LUB3_S93', 'LUB4_S94', 'LUB5_S95', 'LUB6_S96']
+FAIL/1 — tables only; stage acceptance not checked

@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-defect-replay-h5zfkg0f/old/src/check_taxonomy_comparison.py", line 837, in <module>
+    sys.exit(main())
+  File "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-defect-replay-h5zfkg0f/old/src/check_taxonomy_comparison.py", line 789, in main
+    table, feature_ids, sample_ids, metadata, taxonomies = check_inputs(violations, in_dir)
+  File "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-defect-replay-h5zfkg0f/old/src/check_taxonomy_comparison.py", line 218, in check_inputs
+    table, feature_ids, sample_ids = read_biom_from_qza(in_dir / "work/qza/ASV_table.qza")
+  File "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-defect-replay-h5zfkg0f/old/src/check_taxonomy_comparison.py", line 184, in read_biom_from_qza
+    with zipfile.ZipFile(path) as z:
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/zipfile.py", line 1253, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: '/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-defect-replay-h5zfkg0f/inputs/work/qza/ASV_table.qza'

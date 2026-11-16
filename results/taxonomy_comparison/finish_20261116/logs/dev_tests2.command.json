@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "-B",
+    "tests/test_taxonomy_comparison.py",
+    "--log-dir",
+    "results/taxonomy_comparison/finish_20261116/tests_development2"
+  ],
+  "command": "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3 -B tests/test_taxonomy_comparison.py --log-dir results/taxonomy_comparison/finish_20261116/tests_development2",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-16T11:35:41.280809+00:00",
+  "end_utc": "2026-11-16T11:37:12.246506+00:00",
+  "exit_code": 0,
+  "stdout": "dev_tests2.stdout.txt",
+  "stderr": "dev_tests2.stderr.txt"
+}

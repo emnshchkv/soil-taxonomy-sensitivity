@@ -1,0 +1,16 @@
+CODE_CONTENT: recorded source hashes differ from executing source
+CODE_COMMIT: src/taxonomy_compare_io.py
+CODE_COMMIT: src/taxonomy_compare_core.py
+CODE_COMMIT: src/taxonomy_comparison.py
+CODE_COMMIT: src/check_taxonomy_comparison.py
+CODE_COMMIT: src/taxonomy_compare_acceptance.py
+CODE_COMMIT: tests/test_taxonomy_comparison.py
+CODE_COMMIT: tests/taxonomy_comparison_fixtures.py
+OUTPUT_VALUE: manifest.tsv: ('ASV_table',), code_version: 'snapshot-60e3648685d4ca3c6e66353163c0ee1afe6c8b41b128ded83a917752d785d4b4' != '70c5ede1f955c5838cc57b61d2424c95d8c8d9a0'
+OUTPUT_VALUE: manifest.tsv: ('VERSIONS',), code_version: 'snapshot-60e3648685d4ca3c6e66353163c0ee1afe6c8b41b128ded83a917752d785d4b4' != '70c5ede1f955c5838cc57b61d2424c95d8c8d9a0'
+OUTPUT_VALUE: manifest.tsv: ('metadata',), code_version: 'snapshot-60e3648685d4ca3c6e66353163c0ee1afe6c8b41b128ded83a917752d785d4b4' != '70c5ede1f955c5838cc57b61d2424c95d8c8d9a0'
+OUTPUT_VALUE: manifest.tsv: ('rep_seq',), code_version: 'snapshot-60e3648685d4ca3c6e66353163c0ee1afe6c8b41b128ded83a917752d785d4b4' != '70c5ede1f955c5838cc57b61d2424c95d8c8d9a0'
+OUTPUT_VALUE: manifest.tsv: ('sklearn_gg2',), code_version: 'snapshot-60e3648685d4ca3c6e66353163c0ee1afe6c8b41b128ded83a917752d785d4b4' != '70c5ede1f955c5838cc57b61d2424c95d8c8d9a0'
+OUTPUT_VALUE: manifest.tsv: ('sklearn_gtdb',), code_version: 'snapshot-60e3648685d4ca3c6e66353163c0ee1afe6c8b41b128ded83a917752d785d4b4' != '70c5ede1f955c5838cc57b61d2424c95d8c8d9a0'
+OUTPUT_VALUE: manifest.tsv: ('sklearn_silva138',), code_version: 'snapshot-60e3648685d4ca3c6e66353163c0ee1afe6c8b41b128ded83a917752d785d4b4' != '70c5ede1f955c5838cc57b61d2424c95d8c8d9a0'
+FAIL/1 — tables only; stage acceptance not checked

@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "-B",
+    "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_taxonomy_comparison.py",
+    "--input-dir",
+    "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/test_mutated_profile_fraction/inputs",
+    "--out-dir",
+    "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/test_mutated_profile_fraction/outputs",
+    "--tables-only"
+  ],
+  "command": "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3 -B /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_taxonomy_comparison.py --input-dir /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/test_mutated_profile_fraction/inputs --out-dir /var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/taxonomy-comparison-tests-nprc2q74/test_mutated_profile_fraction/outputs --tables-only",
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "start_utc": "2026-11-16T11:33:43.646916+00:00",
+  "end_utc": "2026-11-16T11:33:45.751910+00:00",
+  "exit_code": 1,
+  "stdout": "028_test_mutated_profile_fraction.stdout.txt",
+  "stderr": "028_test_mutated_profile_fraction.stderr.txt",
+  "expected_exit": 1,
+  "metadata_file": "028_test_mutated_profile_fraction.command.json",
+  "name": "028_test_mutated_profile_fraction",
+  "stdout_sha256": "ea9ec210505b802e59a9c41f03cec4e13efcc7dc5042db44c7e0e897931e7d13",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

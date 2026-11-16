@@ -1,0 +1,2 @@
+OUTPUT_VALUE: assignments.tsv: ('synthetic_0000',), sklearn_silva138_род_assigned: '0' != 1
+FAIL/1 — tables only; stage acceptance not checked

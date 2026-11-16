@@ -1,0 +1,9 @@
+CODE_SNAPSHOT: snapshot digest mismatch
+OUTPUT_VALUE: manifest.tsv: ('ASV_table',), code_version: 'snapshot-487bc49397cab5c7440b8dc4e8a47fabb6c644a2ae0c9ed9fe25db13515f8e2f' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('VERSIONS',), code_version: 'snapshot-487bc49397cab5c7440b8dc4e8a47fabb6c644a2ae0c9ed9fe25db13515f8e2f' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('metadata',), code_version: 'snapshot-487bc49397cab5c7440b8dc4e8a47fabb6c644a2ae0c9ed9fe25db13515f8e2f' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('rep_seq',), code_version: 'snapshot-487bc49397cab5c7440b8dc4e8a47fabb6c644a2ae0c9ed9fe25db13515f8e2f' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('sklearn_gg2',), code_version: 'snapshot-487bc49397cab5c7440b8dc4e8a47fabb6c644a2ae0c9ed9fe25db13515f8e2f' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('sklearn_gtdb',), code_version: 'snapshot-487bc49397cab5c7440b8dc4e8a47fabb6c644a2ae0c9ed9fe25db13515f8e2f' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+OUTPUT_VALUE: manifest.tsv: ('sklearn_silva138',), code_version: 'snapshot-487bc49397cab5c7440b8dc4e8a47fabb6c644a2ae0c9ed9fe25db13515f8e2f' != 'snapshot-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+FAIL/1 — tables only; stage acceptance not checked
