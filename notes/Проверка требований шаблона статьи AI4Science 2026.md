@@ -9,13 +9,13 @@ type: Проверка
 
 ## Проверенные материалы
 
-Каталог пользователя: `/Users/elizavetamenshchikova/Downloads/ai4science_ysda2026_template/`.
+Актуальный каталог: `/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/ai4science_ysda2026_template/`. Пользователь перенёс шаблон в проект 2026-11-17; ссылки ниже обновлены. Каталог исключён из Git, содержимое не изменялось. Первоначальное изучение выполнялось по прежнему пути в Downloads.
 
-- [paper.tex](/Users/elizavetamenshchikova/Downloads/ai4science_ysda2026_template/paper.tex) — структура и требования к содержанию; прочитан целиком.
-- [ai4science_ysda2026.sty](/Users/elizavetamenshchikova/Downloads/ai4science_ysda2026_template/ai4science_ysda2026.sty) — проверены описание, режимы, макет, библиографические настройки, пометки авторства и обезличивание.
-- [paper.bib](/Users/elizavetamenshchikova/Downloads/ai4science_ysda2026_template/paper.bib) и [ai4science_ysda2026.bst](/Users/elizavetamenshchikova/Downloads/ai4science_ysda2026_template/ai4science_ysda2026.bst) — проверены пример библиографии, указания по сверке записей и происхождение стиля.
-- [paper.pdf](/Users/elizavetamenshchikova/Downloads/ai4science_ysda2026_template/paper.pdf) — визуально просмотрены обе страницы версии для рецензирования.
-- [paper_final.pdf](/Users/elizavetamenshchikova/Downloads/ai4science_ysda2026_template/paper_final.pdf) — визуально просмотрены все три страницы итоговой версии; последняя содержит окончание библиографии.
+- [paper.tex](/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/ai4science_ysda2026_template/paper.tex) — структура и требования к содержанию; прочитан целиком.
+- [ai4science_ysda2026.sty](/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/ai4science_ysda2026_template/ai4science_ysda2026.sty) — проверены описание, режимы, макет, библиографические настройки, пометки авторства и обезличивание.
+- [paper.bib](/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/ai4science_ysda2026_template/paper.bib) и [ai4science_ysda2026.bst](/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/ai4science_ysda2026_template/ai4science_ysda2026.bst) — проверены пример библиографии, указания по сверке записей и происхождение стиля.
+- [paper.pdf](/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/ai4science_ysda2026_template/paper.pdf) — визуально просмотрены обе страницы версии для рецензирования.
+- [paper_final.pdf](/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/ai4science_ysda2026_template/paper_final.pdf) — визуально просмотрены все три страницы итоговой версии; последняя содержит окончание библиографии.
 
 В каталоге также есть служебные `algorithm.sty`, `algorithmic.sty`, `fancyhdr.sty` и учебный рисунок с Python-исходником. Исходный каталог не изменялся, пример вычислений не запускался, сборка LaTeX в этой задаче не проверялась. Внешняя литература и DOI не проверялись.
 

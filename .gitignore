@@ -8,3 +8,6 @@ work/
 data/raw/
 data/refs/*.qza
 paper/*.pdf
+
+# Local reference template supplied by the user
+/ai4science_ysda2026_template/
