@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "src/make_paper_results.py",
+    "--out-dir",
+    "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118"
+  ],
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "exit_code": 0,
+  "stdout": "generation.stdout.txt",
+  "stderr": "generation.stderr.txt"
+}

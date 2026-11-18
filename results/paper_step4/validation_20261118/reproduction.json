@@ -1,0 +1,58 @@
+{
+  "commands": [
+    {
+      "command": [
+        "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+        "src/make_paper_results.py",
+        "--out-dir",
+        "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118"
+      ],
+      "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+      "exit_code": 0,
+      "stderr": "generation.stderr.txt",
+      "stdout": "generation.stdout.txt"
+    },
+    {
+      "command": [
+        "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+        "src/make_paper_results.py",
+        "--out-dir",
+        "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-step4-reproduction-tom7x8vv/bundle"
+      ],
+      "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+      "exit_code": 0,
+      "stderr": "regeneration.stderr.txt",
+      "stdout": "regeneration.stdout.txt"
+    }
+  ],
+  "criterion": "identical file set and byte-for-byte SHA256 for every generated file including manifest.json",
+  "files_compared": 10,
+  "final_directory": "results/paper_step4/20261118",
+  "final_sha256": {
+    "README.md": "10d32656f1ff57a18765dae4fc702c035a2d32677ccf2170d072c05a29cb69ff",
+    "comparison_coverage.tsv": "eddf17dfbd9cccaf836b3caaa2f6df64548bc7f662954245356706bd50119f89",
+    "comparison_main.tex": "2cee64d51972270aacc10ebf31266fc06697c4c595f8d9a8613e7210f8a0c501",
+    "comparison_pairs.tsv": "93f4216d48a414d7a728c012a9189f755abe13ccee867635fe9c87eacd2cd62b",
+    "family_main.tex": "09212c249c482ffe16fdc1d87fba34f318452f0d28465f7e6740825f7364749b",
+    "family_sample_counts.tsv": "a107b923689d064f609e7b87a689ed11de13b78ec6b2d343ef036dca662159f2",
+    "figure_sources.tsv": "075d19b97718588cecb7fbd47b050c19564c24227ae0eb5fde04afc57abc9298",
+    "manifest.json": "b204c2d7da84f3e94c18d0dfcf0f757423e76c7e80145d44416185f566f501af",
+    "numbers.tex": "1c9ee98f90e72eacb3a5d3793e0fe877dd0a55a015da30bd08dbe7ddb80a3e01",
+    "numbers.tsv": "60b451702e9c30503be0e63b6cc9355c1c0a803ed01ed7accef057dd64a3fa13"
+  },
+  "manuscript_status": "absent_not_checked",
+  "reproduction_sha256": {
+    "README.md": "10d32656f1ff57a18765dae4fc702c035a2d32677ccf2170d072c05a29cb69ff",
+    "comparison_coverage.tsv": "eddf17dfbd9cccaf836b3caaa2f6df64548bc7f662954245356706bd50119f89",
+    "comparison_main.tex": "2cee64d51972270aacc10ebf31266fc06697c4c595f8d9a8613e7210f8a0c501",
+    "comparison_pairs.tsv": "93f4216d48a414d7a728c012a9189f755abe13ccee867635fe9c87eacd2cd62b",
+    "family_main.tex": "09212c249c482ffe16fdc1d87fba34f318452f0d28465f7e6740825f7364749b",
+    "family_sample_counts.tsv": "a107b923689d064f609e7b87a689ed11de13b78ec6b2d343ef036dca662159f2",
+    "figure_sources.tsv": "075d19b97718588cecb7fbd47b050c19564c24227ae0eb5fde04afc57abc9298",
+    "manifest.json": "b204c2d7da84f3e94c18d0dfcf0f757423e76c7e80145d44416185f566f501af",
+    "numbers.tex": "1c9ee98f90e72eacb3a5d3793e0fe877dd0a55a015da30bd08dbe7ddb80a3e01",
+    "numbers.tsv": "60b451702e9c30503be0e63b6cc9355c1c0a803ed01ed7accef057dd64a3fa13"
+  },
+  "status": "PASS",
+  "temporary_directory": "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-step4-reproduction-tom7x8vv/bundle"
+}

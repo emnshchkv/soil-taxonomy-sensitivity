@@ -1,0 +1,1 @@
+{"manuscript_status": "absent_not_checked", "rows": {"comparison_coverage": 15, "comparison_pairs": 15, "family_sample_counts": 33, "figure_sources": 4, "numbers": 37}, "status": "generated"}
