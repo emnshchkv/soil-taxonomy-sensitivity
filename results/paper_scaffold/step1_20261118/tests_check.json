@@ -1,0 +1,16 @@
+{
+  "command": [
+    "conda",
+    "run",
+    "--no-capture-output",
+    "-n",
+    "qiime2-amplicon-2025.7",
+    "python3",
+    "tests/test_paper_scaffold.py"
+  ],
+  "executor": "scaffold_checker subagent",
+  "exit_code": 0,
+  "tests": 7,
+  "failures": 0,
+  "scope": "synthetic isolated CLI fixtures; summary of observed subagent test result; no scientific re-run"
+}

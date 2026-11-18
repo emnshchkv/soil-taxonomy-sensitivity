@@ -1,0 +1,8 @@
+{
+  "command": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "checks/check.py"
+  ],
+  "environment": "qiime2-amplicon-2025.7",
+  "exit_code": 0
+}
