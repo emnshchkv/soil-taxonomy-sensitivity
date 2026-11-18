@@ -1,0 +1,15 @@
+{
+  "sources": {
+    "results/paper_step4/20261118/comparison_main.tex": "2cee64d51972270aacc10ebf31266fc06697c4c595f8d9a8613e7210f8a0c501",
+    "results/paper_step4/20261118/family_main.tex": "09212c249c482ffe16fdc1d87fba34f318452f0d28465f7e6740825f7364749b",
+    "results/paper_step4/validation_20261118/numeric_verification.json": "ed80f8e1df41003a54ece186999303ade86cc53a7591d8eb0cf4f27069f29264",
+    "results/paper_step4/validation_20261118/numeric_tests.json": "ca9d7f92ca7a8895842b18964daa049c8c9ebd8c25989eecda68d4e78396ce5a",
+    "results/paper_step4/20261118/comparison_pairs.tsv": "93f4216d48a414d7a728c012a9189f755abe13ccee867635fe9c87eacd2cd62b"
+  },
+  "outputs": {
+    "comparison_main.tex": "807db1d40de1a6afae7956cdf3363b35095589f211d4cb139af32b18a592cf03",
+    "extra_numbers.tex": "bba75ed4492ecc33fa8b2d9ae53a49f11dfbcb794f77b6f5745ab020fb4a411f",
+    "extra_numbers.tsv": "88c3233204e127a9d0297f1b2f6029e0b0ffb2a1030dcd38627d2da3f3804897",
+    "family_main.tex": "527a39a179fb9700651768f6e0a83eaaa5ccda2255025091f36f4d48ba2014ef"
+  }
+}

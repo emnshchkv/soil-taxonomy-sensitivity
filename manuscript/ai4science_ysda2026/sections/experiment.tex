@@ -1,0 +1,20 @@
+\section{Эксперимент}
+\label{sec:experiment}
+\porozhdeno{\Claim{E01}{В исходном сравнении медиана покрытия ридов на уровне семейства составляет \CmpSilvaFamilyReadMedianPct{}\% для SILVA, \CmpGtdbFamilyReadMedianPct{}\% для GTDB и \CmpGgTwoFamilyReadMedianPct{}\% для GG2 (табл.~\ref{tab:comparison}). Соответствующее покрытие объединения почвенных ASV равно \CmpSilvaFamilyAsvPct{}\%, \CmpGtdbFamilyAsvPct{}\% и \CmpGgTwoFamilyAsvPct{}\%; эти проценты имеют иной знаменатель. Медианы $D$ на уровне семейства равны \CmpSilvaGtdbFamilyDistanceMedian{} для SILVA--GTDB, \CmpSilvaGgTwoFamilyDistanceMedian{} для SILVA--GG2 и \CmpGtdbGgTwoFamilyDistanceMedian{} для GTDB--GG2.}}
+
+\begin{table*}[t]
+\centering
+\caption{\porozhdeno{\Claim{T01}{Исходное сравнение всех ридов после DADA2: медианы покрытия ридов и расстояния $D$ по почвам. Контроль исключён; знаменатель покрытия --- все риды образца, включая неназначенные. \texttt{UNCLASSIFIED} входит в $D$, поэтому расстояния читаются вместе с покрытием.}}}
+\label{tab:comparison}
+\input{../../results/article_step5/20261118/comparison_main.tex}
+\medskip
+\caption{\porozhdeno{\Claim{T02}{Отдельный модельный отбор Bacteria + Archaea после исключения явно помеченных органелл. «Риды» --- все риды почвы после DADA2; $N$ --- отобранные данной моделью риды; $U$ --- процент \texttt{UNCLASSIFIED} среди $N$, при $N=0$ --- NA. Конечное точное \texttt{f\_\_uncultured} считается неопределённым семейством. Знаменатели отличаются от табл.~\ref{tab:comparison} и между моделями.}}}
+\label{tab:family}
+\input{../../results/article_step5/20261118/family_main.tex}
+\end{table*}
+
+\porozhdeno{\Claim{E02}{На уровне рода условное совпадение среди ASV, назначенных обеими моделями, равно \CmpSilvaGtdbGenusConditionalAsvPct{}\%, \CmpSilvaGgTwoGenusConditionalAsvPct{}\% и \CmpGtdbGgTwoGenusConditionalAsvPct{}\% для тех же пар. Медианы совпадения по ридам составляют соответственно \CmpSilvaGtdbGenusConditionalReadMedianPct{}\%, \CmpSilvaGgTwoGenusConditionalReadMedianPct{}\% и \CmpGtdbGgTwoGenusConditionalReadMedianPct{}\%; в каждой паре они рассчитаны по \CmpSilvaGtdbGenusDefinedSamples{} образцам с определённой долей. Меньшее буквальное расстояние GTDB--GG2 не устанавливает большей биологической точности этих моделей.}}
+
+
+
+\porozhdeno{\Claim{E03}{В семейственном отборе SILVA у Kr2\_S81 и Kr5\_S84 нет выбранных ридов, поэтому доля семейства не определена; GTDB и GG2 для этих образцов сохраняют положительный $N$, но семейства полностью не назначены (табл.~\ref{tab:family}). Это различные ситуации: пустой отбор и неназначенная масса внутри непустого отбора. В LUB-образцах сохраняются назначенные семейства у всех моделей. Подробные профили с отдельными легендами приведены на рис.~\ref{fig:overview}--\ref{fig:ggtwo}; они описывают модельные назначения и не устанавливают экологические причины различий.}}

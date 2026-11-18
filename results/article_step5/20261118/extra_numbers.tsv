@@ -1,0 +1,6 @@
+macro	value	source	locator	rounding
+ArticleTransferChecks	1520	results/paper_step4/validation_20261118/numeric_verification.json	checks	integer
+ArticleTransferCases	16	results/paper_step4/validation_20261118/numeric_tests.json	case_count	integer
+ArticleDetectedMutations	14	results/paper_step4/validation_20261118/numeric_tests.json	cases: expected_exit_code=actual_exit_code=1; count	integer
+ArticleSilvaGtdbFamilyDistanceMin	0.000729	results/paper_step4/20261118/comparison_pairs.tsv	sklearn_silva138;sklearn_gtdb;семейство;distance_min	HALF_EVEN;6 decimals
+ArticleSilvaGtdbFamilyDistanceMax	0.780298	results/paper_step4/20261118/comparison_pairs.tsv	sklearn_silva138;sklearn_gtdb;семейство;distance_max	HALF_EVEN;6 decimals

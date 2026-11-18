@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{ai4science_ysda2026}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{microtype}
+% Local anonymous draft: preserve template files and layout, state actual status.
+\makeatletter
+\renewcommand{\ICML@review}{Локальный обезличенный черновик AI4Science-YSDA 2026. Статья не подана.}
+\makeatother
+\newcommand{\Claim}[2]{#2}
+\input{../../results/paper_step4/20261118/numbers.tex}
+\input{../../results/article_step5/20261118/extra_numbers.tex}
+\icmltitlerunning{Таксономия почв и модели}
+\begin{document}
+\twocolumn[
+\icmltitle{Чувствительность таксономических профилей почв Москвы к выбору готовой модели классификатора}
+\begin{icmlauthorlist}
+\icmlauthor{Анонимные авторы}{anonymous}
+\end{icmlauthorlist}
+\icmlkeywords{таксономическое назначение, городские почвы, воспроизводимость}
+\vskip 0.3in
+]
+\printAffiliationsAndNotice{}
+\label{main:start}
+\input{sections/abstract.tex}
+\input{sections/problem.tex}
+\input{sections/related.tex}
+\input{sections/method.tex}
+\input{sections/verification.tex}
+\input{sections/limitations.tex}
+\input{sections/experiment.tex}
+\input{sections/reproducibility.tex}
+\input{sections/conclusion.tex}
+\label{main:end}
+\clearpage
+\raggedbottom
+\bibliographystyle{ai4science_ysda2026}
+\bibliography{references}
+\input{ai_usage.tex}
+\input{appendix.tex}
+\end{document}
