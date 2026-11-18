@@ -1,0 +1,179 @@
+{
+  "author": "AI4Science-агент",
+  "date": "2026-11-18",
+  "status": "PASS",
+  "scope": "Domain audit only; no domain mask chosen for downstream profiles; no QZA or scientific output modified",
+  "sources_before": {
+    "results/taxonomy_comparison/finish_20261116/main/assignments.tsv": "d4378a9c18697702d13d5c3866389874fbfd2080b5ca60da60a8684c490e91c5",
+    "data/meta/metadata.tsv": "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123",
+    "work/qza/ASV_table.qza": "0742f177e67b042b25ab1a479193d3d8c7c5dba22d8e73bd2cec254ef3066489",
+    "work/qza/rep_seq.qza": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86",
+    "work/qza/taxonomy_sklearn_silva138.qza": "66d7b18f8349c6adcd2e0d8a74f860e6674f5691e5bdbea8cd885cb0381505d6",
+    "work/qza/taxonomy_sklearn_gtdb.qza": "a542ba9b762e42112b7dc95a05de6b9870b4b8e22b01acd0847b22201090f73e",
+    "work/qza/taxonomy_sklearn_gg2.qza": "e972b452e45cfc991e69712ded06b3ef47d5915a85caecfbdc06016ab2439771",
+    "data/refs/VERSIONS.md": "d02f87f183b6d43699b3ec0850d8d9ef41149b682eccda38166cee2e01d9e66e",
+    "results/exact_match_reproduction/provenance/samples.tsv": "121b66402d7277e34411e6ad87c18afd02d4aa36a1123dcd7310c8540f48d961"
+  },
+  "sources_after": {
+    "results/taxonomy_comparison/finish_20261116/main/assignments.tsv": "d4378a9c18697702d13d5c3866389874fbfd2080b5ca60da60a8684c490e91c5",
+    "data/meta/metadata.tsv": "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123",
+    "work/qza/ASV_table.qza": "0742f177e67b042b25ab1a479193d3d8c7c5dba22d8e73bd2cec254ef3066489",
+    "work/qza/rep_seq.qza": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86",
+    "work/qza/taxonomy_sklearn_silva138.qza": "66d7b18f8349c6adcd2e0d8a74f860e6674f5691e5bdbea8cd885cb0381505d6",
+    "work/qza/taxonomy_sklearn_gtdb.qza": "a542ba9b762e42112b7dc95a05de6b9870b4b8e22b01acd0847b22201090f73e",
+    "work/qza/taxonomy_sklearn_gg2.qza": "e972b452e45cfc991e69712ded06b3ef47d5915a85caecfbdc06016ab2439771",
+    "data/refs/VERSIONS.md": "d02f87f183b6d43699b3ec0850d8d9ef41149b682eccda38166cee2e01d9e66e",
+    "results/exact_match_reproduction/provenance/samples.tsv": "121b66402d7277e34411e6ad87c18afd02d4aa36a1123dcd7310c8540f48d961"
+  },
+  "inputs_unchanged": true,
+  "domain_rule": "Split raw Taxon on semicolons, trim surrounding whitespace; normalize d__/D_0__ domain prefixes only. Exact recognized tokens: Bacteria, Archaea, Eukaryota. No synonyms or domain inference. Empty/missing domain or whole Taxon Unassigned => unknown; nonempty unknown domain, duplicated domain, or unexpected unprefixed token => unexpected.",
+  "raw_taxonomy_checks": "Every saved raw *_taxon string matched its current source QZA. All assignment IDs matched the ASV frequency table and sequences; soil_asv was independently checked from soil counts.",
+  "counts_invariants": "Nonnegative integral counts, nonempty original samples/features; each model domain partition conserves counts and observed ASVs; sample totals equal first DADA2 non-chimeric.",
+  "overlap_note": "Boolean any_* flags overlap and must not be summed as a partition; exclusive_partition is provided separately.",
+  "samples": [
+    "K_S63",
+    "Kr1_S80",
+    "Kr2_S81",
+    "Kr3_S82",
+    "Kr4_S83",
+    "Kr5_S84",
+    "LUB2_S92",
+    "LUB3_S93",
+    "LUB4_S94",
+    "LUB5_S95",
+    "LUB6_S96"
+  ],
+  "soil_samples": [
+    "Kr1_S80",
+    "Kr2_S81",
+    "Kr3_S82",
+    "Kr4_S83",
+    "Kr5_S84",
+    "LUB2_S92",
+    "LUB3_S93",
+    "LUB4_S94",
+    "LUB5_S95",
+    "LUB6_S96"
+  ],
+  "control_samples": [
+    "K_S63"
+  ],
+  "asv_all": {
+    "asv": 3374,
+    "per_model": {
+      "sklearn_silva138": {
+        "Bacteria": 2885,
+        "Archaea": 14,
+        "Eukaryota": 342,
+        "unknown": 133,
+        "unexpected": 0
+      },
+      "sklearn_gtdb": {
+        "Bacteria": 3297,
+        "Archaea": 14,
+        "Eukaryota": 0,
+        "unknown": 63,
+        "unexpected": 0
+      },
+      "sklearn_gg2": {
+        "Bacteria": 3303,
+        "Archaea": 13,
+        "Eukaryota": 0,
+        "unknown": 58,
+        "unexpected": 0
+      }
+    },
+    "overlapping_flags": {
+      "common_bacteria": 2883,
+      "any_eukaryota_or_archaea": 356,
+      "any_bacteria": 3354,
+      "any_bacteria_but_disagreement_or_unknown": 471,
+      "any_bacteria_with_eukaryota_or_archaea": 336,
+      "any_unknown_domain": 214,
+      "any_unexpected_domain": 0
+    },
+    "exclusive_partition": {
+      "any_eukaryota_or_archaea": 356,
+      "common_bacteria": 2883,
+      "bacteria_and_unknown_only": 135
+    }
+  },
+  "asv_soil": {
+    "asv": 3309,
+    "per_model": {
+      "sklearn_silva138": {
+        "Bacteria": 2820,
+        "Archaea": 14,
+        "Eukaryota": 342,
+        "unknown": 133,
+        "unexpected": 0
+      },
+      "sklearn_gtdb": {
+        "Bacteria": 3232,
+        "Archaea": 14,
+        "Eukaryota": 0,
+        "unknown": 63,
+        "unexpected": 0
+      },
+      "sklearn_gg2": {
+        "Bacteria": 3238,
+        "Archaea": 13,
+        "Eukaryota": 0,
+        "unknown": 58,
+        "unexpected": 0
+      }
+    },
+    "overlapping_flags": {
+      "common_bacteria": 2818,
+      "any_eukaryota_or_archaea": 356,
+      "any_bacteria": 3289,
+      "any_bacteria_but_disagreement_or_unknown": 471,
+      "any_bacteria_with_eukaryota_or_archaea": 336,
+      "any_unknown_domain": 214,
+      "any_unexpected_domain": 0
+    },
+    "exclusive_partition": {
+      "any_eukaryota_or_archaea": 356,
+      "common_bacteria": 2818,
+      "bacteria_and_unknown_only": 135
+    }
+  },
+  "zero_common_bacteria_samples": [
+    "Kr5_S84"
+  ],
+  "zero_per_model_bacteria_samples": {
+    "sklearn_silva138": [
+      "Kr5_S84"
+    ],
+    "sklearn_gtdb": [],
+    "sklearn_gg2": []
+  },
+  "soil_common_excluded_pct_range": [
+    0.277601522843,
+    100.0
+  ],
+  "soil_per_model_bacteria_excluded_pct_range": {
+    "sklearn_silva138": [
+      0.277601522843,
+      100.0
+    ],
+    "sklearn_gtdb": [
+      0.26173857868,
+      17.8851914825
+    ],
+    "sklearn_gg2": [
+      0.246928822767,
+      18.1118937738
+    ]
+  },
+  "unexpected_tokens": {
+    "sklearn_silva138": {},
+    "sklearn_gtdb": {},
+    "sklearn_gg2": {}
+  },
+  "outputs": {
+    "results/taxonomy_barplots/preflight_20261118/domain_by_sample.tsv": "444b30dbbcca9f3f7a4e05b47ee0a68b24b63bc00ab61a7b5ce49a8da7b26433",
+    "results/taxonomy_barplots/preflight_20261118/domain_assignments.tsv": "6ca5d0962bebe7a40ad32d0cd90ab816faeebb516080053d74f62449f555391b"
+  },
+  "violations": []
+}
