@@ -289,12 +289,14 @@ def inspect(root=ROOT, article_dir=None, draft=False):
         audit.require(len(claims) == len(claim_rows), 'duplicate claims.tsv identifiers')
         audit.need(bool(claim_commands), 'no traceable content claims')
         audit.require(set(claim_ids) == claims.keys(), 'TeX/map claim IDs differ: ' + repr(sorted(set(claim_ids) ^ claims.keys())))
-        generated = list(commands(body, 'porozhdeno', optional=True))
-        audit.need(bool(generated), 'generated text is not marked')
+        authorship = {name: list(commands(body, name, optional=True))
+                      for name in ('porozhdeno', 'napisano')}
+        audit.need(any(authorship.values()), 'authorship marks are missing')
+        details['authorship_claims'] = {name: 0 for name in authorship}
         audit.need('\\begin{aiusage}' in body and '\\end{aiusage}' in body, 'AI usage table is missing')
-        # Generated prose is not silently reclassified as human-authored.
-        for _, _, args, _ in commands(body, 'napisano', optional=True):
-            audit.require(not args[0].strip(), 'human-authored text requires separate documented human evidence; none registered')
+        # Marks declare the origin of prose, not the validity of its claims.
+        # Both origins undergo the same evidence, number and citation checks.
+        # Actual authorship and the AI-usage disclosure need editorial review.
         for _, _, args, _ in commands(body, 'istochnik', optional=True):
             if args[0].strip():
                 audit.require(bool(citation_keys(args[0])), 'source text lacks a citation inside istochnik')
@@ -305,7 +307,12 @@ def inspect(root=ROOT, article_dir=None, draft=False):
             row = claims[claim_id]
             audit.require(all(row.get(field, '').strip() for field in ('section','summary','basis','source','locator','verification')), claim_id + ': empty provenance field')
             audit.require(row.get('basis') in KINDS, claim_id + ': unsupported basis')
-            audit.require(any(a <= start and b >= finish_pos for a, b, _, _ in generated), claim_id + ': not enclosed in generated-text mark')
+            origins = [name for name, marks in authorship.items()
+                       if any(a <= start and b >= finish_pos for a, b, _, _ in marks)]
+            audit.require(bool(origins), claim_id + ': not enclosed in authorship mark')
+            audit.require(len(origins) <= 1, claim_id + ': conflicting authorship marks')
+            for name in origins:
+                details['authorship_claims'][name] += 1
             active_section = next((name for pos, name in reversed(sections) if pos < start), 'Аннотация')
             audit.require(row.get('section') == active_section, f'{claim_id}: section mismatch ({active_section!r})')
             for source in separated(row.get('source','')):

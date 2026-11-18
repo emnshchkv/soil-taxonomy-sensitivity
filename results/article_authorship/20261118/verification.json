@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "date": "2026-11-18",
+  "scope": "Checker support for human authorship on tested source snapshot; no PDF acceptance/build; ongoing user edits require later validation",
+  "commands": [
+    {
+      "command": "python3 src/check_article.py --draft --report results/article_authorship/20261118/draft.json",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 tests/test_article.py --draft-only --report results/article_authorship/20261118/tests.json",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 checks/check.py",
+      "exit_code": 0
+    }
+  ],
+  "command_prefix": "conda run --no-capture-output -n qiime2-amplicon-2025.7",
+  "qiime_version": "2025.7.0",
+  "draft_checks": 661,
+  "authorship_claims": {
+    "porozhdeno": 41,
+    "napisano": 1
+  },
+  "test_cases": 21,
+  "skipped_pdf_cases": [
+    "final_baseline",
+    "running_title_warning",
+    "missing_pdf_final"
+  ],
+  "user_abstract_unchanged_since_task_start": true,
+  "pdf_rebuilt": false,
+  "pdf_unchanged": true,
+  "pdf_sha256": "b44ee887be0fcf8d4e074e62d54de4e85e6c846fd18b2e486354255c79a549f8",
+  "unchanged_preexisting_files": 81,
+  "agent_metadata_edits": [
+    "paper/ai4science_ysda2026/README.md",
+    "paper/ai4science_ysda2026/ai_usage.tex",
+    "paper/ai4science_ysda2026/claims.tsv",
+    "paper/ai4science_ysda2026/section_review.md"
+  ],
+  "concurrent_user_edits": {
+    "paper/ai4science_ysda2026/sections/problem.tex": {
+      "before_sha256": "1b4dc60b28e8b2ccec26dc12fc99ec2e1efcdbcc2a953468efaa556c5168a781",
+      "observed_sha256": "8f42fd51c47a896f832df2e47118b79066a619b32f34fc69cbf35837691f10b4"
+    }
+  },
+  "concurrent_edits_handling": "Observed after PASS tests. Left untouched and excluded from this implementation commit. Previous check results are not claimed as validation of later edits.",
+  "protected_checks_and_scientific_results_unchanged": true
+}

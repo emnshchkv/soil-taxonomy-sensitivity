@@ -2,6 +2,7 @@
 
 Run after the complete draft exists. Each case gets a fresh copy. The test never
 edits a source reached through an external TeX input or a symlink.
+--draft-only runs source checks while explicitly reporting skipped PDF cases.
 """
 from __future__ import annotations
 
@@ -55,24 +56,60 @@ def mutate_table(article):
     replace_one(source_with(article,needle),needle,'mutated_family_main.tex')
 
 
-def mutate_claim(article):
+def mutate_claim(article, claim_id=None):
     path = article/'claims.tsv'
     with path.open(newline='') as f:
         reader = csv.DictReader(f,delimiter='\t'); fields=reader.fieldnames; rows=list(reader)
-    rows[0]['source']='results/nonexistent-claim-evidence.tsv'
+    row = rows[0] if claim_id is None else next(r for r in rows if r['claim_id'] == claim_id)
+    row['source']='results/nonexistent-claim-evidence.tsv'
     with path.open('w',newline='') as f:
         writer=csv.DictWriter(f,fields,delimiter='\t');writer.writeheader();writer.writerows(rows)
+
+
+def mark_written(article, relative='sections/problem.tex', optional=False):
+    """Change declared authorship only in a synthetic temporary manuscript."""
+    path=article/relative
+    text=path.read_text()
+    if '\\porozhdeno{' not in text:
+        raise ValueError(f'authorship fixture anchor missing in {relative}')
+    mark='\\napisano[автор]{' if optional else '\\napisano{'
+    path.write_text(text.replace('\\porozhdeno{',mark))
+
+
+def mark_all_written(article):
+    # This tests validation of an entirely human-declared manuscript. It does
+    # not reclassify the real article's prose or claim to establish authorship.
+    for path in article.rglob('*.tex'):
+        text=path.read_text()
+        if '\\porozhdeno{' in text:
+            path.write_text(text.replace('\\porozhdeno{','\\napisano{'))
+
+
+def conflicting_authorship(article):
+    path=article/'sections/problem.tex'
+    path.write_text('\\napisano{'+path.read_text()+'}\n')
 
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--report',type=Path,help='new JSON report path')
+    parser.add_argument('--draft-only',action='store_true',help='run source-only cases and explicitly skip final PDF checks')
     args=parser.parse_args()
     before=inventory()
     cases=[]
     specs=[
         ('baseline',0,None,True),
         ('final_baseline',0,None,False),
+        ('written_mark',0,mark_written,True),
+        ('written_optional_argument',0,lambda a:mark_written(a,optional=True),True),
+        ('entirely_written',0,mark_all_written,True),
+        ('written_literal_result_number',1,lambda a:(mark_written(a),replace_one(a/'sections/problem.tex','\\ProjectSamplesSoil{}','999')),True),
+        ('written_unknown_citation',1,lambda a:(mark_written(a,'sections/related.tex'),replace_one(a/'sections/related.tex','\\cite{bokulich2018}','\\cite{invented2099}')),True),
+        ('written_missing_claim_source',1,lambda a:(mark_written(a),mutate_claim(a,'P01')),True),
+        ('missing_authorship_mark',1,lambda a:replace_one(a/'sections/problem.tex','\\porozhdeno{\\Claim{P01}','\\textit{\\Claim{P01}'),True),
+        ('empty_written_mark',1,lambda a:replace_one(a/'sections/problem.tex','\\porozhdeno{\\Claim{P01}','\\napisano{}\\textit{\\Claim{P01}'),True),
+        ('source_mark_without_authorship',1,lambda a:replace_one(a/'sections/related.tex','\\porozhdeno{\\Claim{L01}','\\istochnik{\\Claim{L01}'),True),
+        ('conflicting_authorship_marks',1,conflicting_authorship,True),
         ('numeric_macro_override',1,lambda a:replace_one(a/'paper.tex','\\begin{document}','\\renewcommand{\\ProjectSamplesSoil}{999}\n\\begin{document}'),True),
         ('literal_result_number',1,lambda a:replace_one(a/'sections/problem.tex','\\ProjectSamplesSoil{}','999'),True),
         ('wrong_existing_macro',1,lambda a:replace_one(a/'sections/problem.tex','\\ProjectSamplesSoil{}','\\ProjectSamplesAll{}'),True),
@@ -87,6 +124,13 @@ def main():
         ('restored',0,None,True),
     ]
     intended = {
+        'written_literal_result_number':'literal result numbers outside verified macros',
+        'written_unknown_citation':'unknown citations',
+        'written_missing_claim_source':'P01: unsupported/missing source',
+        'missing_authorship_mark':'P01: not enclosed in authorship mark',
+        'empty_written_mark':'P01: not enclosed in authorship mark',
+        'source_mark_without_authorship':'L01: not enclosed in authorship mark',
+        'conflicting_authorship_marks':'conflicting authorship marks',
         'numeric_macro_override':'numeric macro overridden',
         'literal_result_number':'literal result numbers outside verified macros',
         'wrong_existing_macro':'macro list does not match actual claim',
@@ -99,6 +143,9 @@ def main():
         'running_title_warning':'running title exceeds template size limit',
         'missing_pdf_final':'missing build output: paper.pdf',
     }
+    skipped_cases=[name for name,_,_,draft in specs if args.draft_only and not draft]
+    if args.draft_only:
+        specs=[spec for spec in specs if spec[3]]
     with tempfile.TemporaryDirectory(prefix='article-rejection-') as tmp:
         for name,expected,mutation,draft in specs:
             case_root=Path(tmp)/name
@@ -126,6 +173,8 @@ def main():
     after=inventory()
     preserved=before==after
     report={'status':'PASS' if preserved and all(c['accepted'] for c in cases) else 'FAIL',
+            'scope':'source-only CLI regressions; final PDF not checked' if args.draft_only else 'source and final-PDF CLI regressions',
+            'draft_only':args.draft_only,'skipped_cases':skipped_cases,
             'case_count':len(cases),'cases':cases,'source_files_preserved':preserved,
             'preserved_file_count':len(before),'changed_paths':sorted(k for k in set(before)|set(after) if before.get(k)!=after.get(k))}
     encoded=json.dumps(report,ensure_ascii=False,indent=2)+'\n'
