@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "scope": "schema extension, declared/context notes and all notes of extension classes; not full historical graph",
+  "instances_by_class": {
+    "Праймер": 2,
+    "ASV": 0,
+    "МодельКлассификатора": 3,
+    "ТаксономическоеНазначение": 0,
+    "ТаксономическийПрофиль": 0,
+    "СообщениеИсследователя": 2
+  },
+  "instances_checked_per_rule": {
+    "Т1": 3,
+    "Т2": 0,
+    "Т3": 0,
+    "Т4": 0,
+    "Т5": 0
+  },
+  "notes_checked": 18,
+  "original_classes_preserved": 14,
+  "original_rules_preserved": 13
+}
