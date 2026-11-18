@@ -29,7 +29,7 @@
 Итоговый PDF: /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/manuscript/ai4science_ysda2026/paper.pdf.
 Рабочие фрагменты, таблица утверждений и журнал вычитки могут лежать рядом. Читаемые приложения и README со сборкой также сохраняй в этом каталоге.
 
-Литература перенесена из прежнего paper/ в /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/references/: четыре PDF, текст RESCRIPt и его части. Реестр, BibTeX и исторические свидетельства остаются в /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/lit/. Каталог paper/ не создавай для рукописи; согласованное место статьи — manuscript/ai4science_ysda2026/.
+Литература находится в /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/references/: четыре PDF, текст RESCRIPt и его части. Реестр, BibTeX и исторические свидетельства остаются в /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/lit/. Согласованное место статьи — manuscript/ai4science_ysda2026/.
 
 Используй предоставленный шаблон /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/ai4science_ysda2026_template/. Прочитай paper.tex и ai4science_ysda2026.sty из него; необходимые служебные файлы скопируй в рабочий каталог, оригиналы не меняй. Шаблон использует пакет .sty и BibTeX, две колонки, Letter. Не подменяй его другим .cls из учебного каркаса. Не меняй поля, шрифты и интервалы ради объёма. Основной текст — 2–4 страницы; литература, «Использование ИИ-ассистентов» и приложения в этот объём не входят. Собирай обезличенную версию штатным режимом без final/preprint. Это локальный проверяемый черновик, не отправка на конференцию.
 

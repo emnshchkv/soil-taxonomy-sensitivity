@@ -1,0 +1,10 @@
+test_doi_substitution_fails_metadata_check (__main__.LiteratureRegistryTests) ... ok
+test_explicit_missing_manuscript_is_incomplete (__main__.LiteratureRegistryTests) ... ok
+test_present_current_manuscript_is_also_checked (__main__.LiteratureRegistryTests) ... ok
+test_saved_citations_and_metadata_pass_with_no_current_manuscript (__main__.LiteratureRegistryTests) ... ok
+test_unknown_historical_citation_fails (__main__.LiteratureRegistryTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.616s
+
+OK

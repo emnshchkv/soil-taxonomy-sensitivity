@@ -1,0 +1,1204 @@
+{
+  "status": "PASS",
+  "command": [
+    "rg",
+    "-uuu",
+    "--json",
+    "--glob",
+    "!.git/**",
+    "--glob",
+    "!*.pdf",
+    "--glob",
+    "!*.qza",
+    "--glob",
+    "!*.qzv",
+    "--glob",
+    "!*.fastq*",
+    "--glob",
+    "!*.png",
+    "--glob",
+    "!*.jpg",
+    "--glob",
+    "!*.jpeg",
+    "--glob",
+    "!*.pyc",
+    "--glob",
+    "!results/reference_relocation/20261118_full_audit/**",
+    "\\bpaper\\b",
+    "."
+  ],
+  "scope": "Tracked, untracked, hidden and ignored text files; Git internals and binary artifacts excluded. This audit directory contains its own before/after snapshots and is excluded from recursive matching.",
+  "matching_lines": 188,
+  "matching_files": 44,
+  "remaining_old_path_lines": 47,
+  "unresolved_old_paths": [],
+  "occurrences": [
+    {
+      "file": "README.md",
+      "line": 32,
+      "category": "article_filename_or_term",
+      "text": "| `cascade.sh` | Вспомогательный скрипт, добавлен вместе с `paper.txt`; назначение `<уточнить>` |"
+    },
+    {
+      "file": "src/check_paper_scaffold.py",
+      "line": 1,
+      "category": "article_filename_or_term",
+      "text": "\"\"\"Read-only checks for the adapted paper scaffold, not for article acceptance."
+    },
+    {
+      "file": "ai4science_ysda2026_template/ai4science_ysda2026.sty",
+      "line": 142,
+      "category": "article_filename_or_term",
+      "text": "%   ``Appearing in'' notice (for use when the paper has been accepted"
+    },
+    {
+      "file": "ai4science_ysda2026_template/ai4science_ysda2026.sty",
+      "line": 153,
+      "category": "article_filename_or_term",
+      "text": "%% effect that the paper is under review and don't distribute it.  The"
+    },
+    {
+      "file": "ai4science_ysda2026_template/ai4science_ysda2026.sty",
+      "line": 394,
+      "category": "article_filename_or_term",
+      "text": "%% to work well with the two-column format on US letter paper that"
+    },
+    {
+      "file": "ai4science_ysda2026_template/ai4science_ysda2026.sty",
+      "line": 429,
+      "category": "article_filename_or_term",
+      "text": "%%% commands for formatting paper title, author names, and addresses."
+    },
+    {
+      "file": "ai4science_ysda2026_template/ai4science_ysda2026.sty",
+      "line": 488,
+      "category": "article_filename_or_term",
+      "text": "    % no running title on the first page of the paper"
+    },
+    {
+      "file": "src/make_paper_results.py",
+      "line": 2,
+      "category": "article_filename_or_term",
+      "text": "\"\"\"CLI for the fixed paper-results transfer contract.\"\"\""
+    },
+    {
+      "file": "ai4science_ysda2026_template/paper.tex",
+      "line": 1,
+      "category": "article_filename_or_term",
+      "text": "%% paper.tex — шаблон статьи учебной конференции AI4Science-YSDA 2026"
+    },
+    {
+      "file": "ai4science_ysda2026_template/paper.tex",
+      "line": 4,
+      "category": "article_filename_or_term",
+      "text": "%%     pdflatex paper"
+    },
+    {
+      "file": "ai4science_ysda2026_template/paper.tex",
+      "line": 5,
+      "category": "article_filename_or_term",
+      "text": "%%     bibtex   paper"
+    },
+    {
+      "file": "ai4science_ysda2026_template/paper.tex",
+      "line": 6,
+      "category": "article_filename_or_term",
+      "text": "%%     pdflatex paper"
+    },
+    {
+      "file": "ai4science_ysda2026_template/paper.tex",
+      "line": 7,
+      "category": "article_filename_or_term",
+      "text": "%%     pdflatex paper"
+    },
+    {
+      "file": "ai4science_ysda2026_template/paper.tex",
+      "line": 261,
+      "category": "article_filename_or_term",
+      "text": "\\bibliography{paper}"
+    },
+    {
+      "file": "paper_project_skeleton/AGENTS.md",
+      "line": 11,
+      "category": "existing_course_manuscript_template",
+      "text": "- `paper/paper.pdf` — статья на 2–4 страницы в шаблоне `ai4science_ysda`, обезличенная версия;"
+    },
+    {
+      "file": "paper_project_skeleton/AGENTS.md",
+      "line": 32,
+      "category": "existing_course_manuscript_template",
+      "text": "| `paper/` | статья: `paper.tex`, класс шаблона, рисунки |"
+    },
+    {
+      "file": "paper_project_skeleton/paper/paper.tex",
+      "line": 70,
+      "category": "article_filename_or_term",
+      "text": "\\Abstract{A brief summary of the paper: the problem and its context, the"
+    },
+    {
+      "file": "paper_project_skeleton/paper/ai4science_ysda.cls",
+      "line": 43,
+      "category": "article_filename_or_term",
+      "text": "\\ProvidesClass{ai4science_ysda}[2026/10/18 v1.0 AI4Science-YSDA 2026 paper class]"
+    },
+    {
+      "file": "references/robeson21.txt",
+      "line": 105,
+      "category": "article_filename_or_term",
+      "text": "This is a PLOS Computational Biology Software paper."
+    },
+    {
+      "file": "paper_project_skeleton/checks/check_paper.py",
+      "line": 26,
+      "category": "existing_course_manuscript_template",
+      "text": "            \"research/problem.md\", \"lit/lit.md\", \"paper/paper.tex\"):"
+    },
+    {
+      "file": "paper_project_skeleton/checks/check_paper.py",
+      "line": 36,
+      "category": "existing_course_manuscript_template",
+      "text": "paper = re.sub(r\"(?<!\\\\)%.*\", \"\", read(\"paper/paper.tex\"))"
+    },
+    {
+      "file": "paper_project_skeleton/checks/check_paper.py",
+      "line": 37,
+      "category": "article_filename_or_term",
+      "text": "check(not re.search(r\"\\\\documentclass\\[[^\\]]*final[^\\]]*\\]\", paper), \"статья собирается без опции final (обезличенная версия)\")"
+    },
+    {
+      "file": "paper_project_skeleton/checks/check_paper.py",
+      "line": 38,
+      "category": "article_filename_or_term",
+      "text": "check(bool(re.search(r\"\\\\section\\*?\\{Ограничения\", paper)), \"в статье есть раздел «Ограничения»\")"
+    },
+    {
+      "file": "paper_project_skeleton/checks/check_paper.py",
+      "line": 39,
+      "category": "article_filename_or_term",
+      "text": "check(bool(re.search(r\"\\\\section\\*?\\{(Проверка|Verification)\", paper)), \"в статье есть раздел «Проверка»\")"
+    },
+    {
+      "file": "paper_project_skeleton/checks/check_paper.py",
+      "line": 40,
+      "category": "article_filename_or_term",
+      "text": "check(bool(re.search(r\"\\\\(porozhdeno|napisano|istochnik|generated|written|sourced)\\b\", paper)), \"в статье есть пометки авторства\")"
+    },
+    {
+      "file": "paper_project_skeleton/checks/check_paper.py",
+      "line": 41,
+      "category": "article_filename_or_term",
+      "text": "check(\"\\\\begin{aiusage}\" in paper, \"в статье есть раздел об использовании ИИ-ассистентов\")"
+    },
+    {
+      "file": "paper_project_skeleton/checks/check_paper.py",
+      "line": 45,
+      "category": "article_filename_or_term",
+      "text": "cited = {k.strip() for group in re.findall(r\"\\\\cite\\{([^}]*)\\}\", paper) for k in group.split(\",\")}"
+    },
+    {
+      "file": "paper_project_skeleton/checks/check_paper.py",
+      "line": 46,
+      "category": "article_filename_or_term",
+      "text": "items = re.findall(r\"\\\\bibitem\\{([^}]*)\\}\\s*(?:\\\\textit\\{)?\\s*(?:de |van |von )?([A-Za-zА-Яа-яЁё\\-]+)\", paper)"
+    },
+    {
+      "file": "paper_project_skeleton/checks/check_paper.py",
+      "line": 55,
+      "category": "existing_course_manuscript_template",
+      "text": "pdf = ROOT / \"paper\" / \"paper.pdf\""
+    },
+    {
+      "file": "paper_project_skeleton/checks/check_paper.py",
+      "line": 56,
+      "category": "existing_course_manuscript_template",
+      "text": "check(pdf.is_file(), \"есть paper/paper.pdf\")"
+    },
+    {
+      "file": "paper_project_skeleton/checks/check_paper.py",
+      "line": 69,
+      "category": "article_filename_or_term",
+      "text": "found = sorted({m.group(0).lower() for m in re.finditer(BAD, paper, flags=re.I)})"
+    },
+    {
+      "file": "tests/test_paper_scaffold.py",
+      "line": 1,
+      "category": "article_filename_or_term",
+      "text": "\"\"\"CLI contracts for the paper scaffold; all fixtures are synthetic and temporary."
+    },
+    {
+      "file": "tests/test_paper_scaffold.py",
+      "line": 43,
+      "category": "article_filename_or_term",
+      "text": "        self.temporary = tempfile.TemporaryDirectory(prefix=\"paper-scaffold-test-\")"
+    },
+    {
+      "file": "tests/test_literature_registry.py",
+      "line": 46,
+      "category": "article_filename_or_term",
+      "text": "        self.write(f\"{self.base}paper.bib\", \"\\n\\n\".join(bib))"
+    },
+    {
+      "file": "tests/test_literature_registry.py",
+      "line": 47,
+      "category": "article_filename_or_term",
+      "text": "        self.write(f\"{self.base}paper.tex\", \"% \\\\cite{comment_only}\\n\\\\section{Related}\\n\\\\cite{work0,work1}\\n\\\\citep[p. 4]{work2}\\n\\\\textcite{work3,work4}\\n\")"
+    },
+    {
+      "file": "tests/test_literature_registry.py",
+      "line": 52,
+      "category": "article_filename_or_term",
+      "text": "        paths = [f\"{self.base}paper.bib\", f\"{self.base}evidence/verified_sources.json\"]"
+    },
+    {
+      "file": "tests/test_literature_registry.py",
+      "line": 55,
+      "category": "article_filename_or_term",
+      "text": "            destination = \"lit/references.bib\" if source.endswith(\"paper.bib\") else f\"{self.evidence}/{Path(source).name}\""
+    },
+    {
+      "file": "tests/test_literature_registry.py",
+      "line": 103,
+      "category": "article_filename_or_term",
+      "text": "        self.write(f\"{self.base}paper.tex\", \"\\\\cite{foreign_work}\\n\")"
+    },
+    {
+      "file": "tests/test_literature_registry.py",
+      "line": 104,
+      "category": "article_filename_or_term",
+      "text": "        self.git(\"add\", f\"{self.base}paper.tex\")"
+    },
+    {
+      "file": "tests/test_literature_registry.py",
+      "line": 108,
+      "category": "article_filename_or_term",
+      "text": "        (self.root/f\"{self.base}paper.tex\").unlink()"
+    },
+    {
+      "file": "tests/test_literature_registry.py",
+      "line": 127,
+      "category": "article_filename_or_term",
+      "text": "        self.write(f\"{self.base}paper.tex\", \"\\\\cite{current_unknown}\\n\")"
+    },
+    {
+      "file": "tests/test_paper_results.py",
+      "line": 179,
+      "category": "article_filename_or_term",
+      "text": "    with tempfile.TemporaryDirectory(prefix='paper-results-mutations-') as temp:"
+    },
+    {
+      "file": "AGENT_ARTICLE_STEP5_PROMPT.txt",
+      "line": 28,
+      "category": "article_filename_or_term",
+      "text": "Основной исходник: /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/manuscript/ai4science_ysda2026/paper.tex."
+    },
+    {
+      "file": "AGENT_ARTICLE_STEP5_PROMPT.txt",
+      "line": 29,
+      "category": "article_filename_or_term",
+      "text": "Итоговый PDF: /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/manuscript/ai4science_ysda2026/paper.pdf."
+    },
+    {
+      "file": "AGENT_ARTICLE_STEP5_PROMPT.txt",
+      "line": 34,
+      "category": "article_filename_or_term",
+      "text": "Используй предоставленный шаблон /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/ai4science_ysda2026_template/. Прочитай paper.tex и ai4science_ysda2026.sty из него; необходимые служебные файлы скопируй в рабочий каталог, оригиналы не меняй. Шаблон использует пакет .sty и BibTeX, две колонки, Letter. Не подменяй его другим .cls из учебного каркаса. Не меняй поля, шрифты и интервалы ради объёма. Основной текст — 2–4 страницы; литература, «Использование ИИ-ассистентов» и приложения в этот объём не входят. Собирай обезличенную версию штатным режимом без final/preprint. Это локальный проверяемый черновик, не отправка на конференцию."
+    },
+    {
+      "file": "AGENT_ARTICLE_STEP5_PROMPT.txt",
+      "line": 117,
+      "category": "article_filename_or_term",
+      "text": "Из каталога статьи собери pdflatex paper → bibtex paper → pdflatex paper → pdflatex paper. Проверь доступность средств сборки; при их отсутствии не объявляй PDF собранным и не меняй системное окружение скрыто. Закончи доступную часть работы и точно укажи оставшееся препятствие."
+    },
+    {
+      "file": "lit/transfer_manifest.json",
+      "line": 176,
+      "category": "article_filename_or_term",
+      "text": "      \"source\": \"manuscript/ai4science_ysda2026/paper.bib\","
+    },
+    {
+      "file": "lit/transfer_manifest.json",
+      "line": 185,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "      \"original_path\": \"paper/bokulich18.pdf\","
+    },
+    {
+      "file": "lit/transfer_manifest.json",
+      "line": 191,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "      \"original_path\": \"paper/mcdonald23.pdf\","
+    },
+    {
+      "file": "lit/transfer_manifest.json",
+      "line": 197,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "      \"original_path\": \"paper/parks21.pdf\","
+    },
+    {
+      "file": "lit/transfer_manifest.json",
+      "line": 203,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "      \"original_path\": \"paper/robeson21.pdf\","
+    },
+    {
+      "file": "cascade.sh",
+      "line": 7,
+      "category": "article_filename_or_term",
+      "text": "#     bash cascade.sh references/paper.pdf"
+    },
+    {
+      "file": "cascade.sh",
+      "line": 9,
+      "category": "article_filename_or_term",
+      "text": "#     references/paper.txt           текст статьи; страницы разделены символом \\f"
+    },
+    {
+      "file": "cascade.sh",
+      "line": 19,
+      "category": "article_filename_or_term",
+      "text": "PDF=\"${1:?укажите PDF статьи: bash cascade.sh references/paper.pdf}\""
+    },
+    {
+      "file": "lit/lit.md",
+      "line": 123,
+      "category": "article_filename_or_term",
+      "text": "Проверяемый текст — сохранённый комплект `manuscript/ai4science_ysda2026/` из коммита `37254a5a90a3efe5b4c6ca22e38c2e2066767178`. Его `paper_final.tex` подключает `paper.tex`. В разделе «Место в области» сохранённой статьи использованы все семь ключей реестра; при чтении всех десяти `.tex` комплекта найдено семь команд цитирования и семь уникальных ключей, отсутствующих в реестре — **0**. Эта сверка не требует восстановления текста в рабочее дерево."
+    },
+    {
+      "file": "notes/Проверка требований шаблона статьи AI4Science 2026.md",
+      "line": 14,
+      "category": "article_filename_or_term",
+      "text": "- [paper.tex](/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/ai4science_ysda2026_template/paper.tex) — структура и требования к содержанию; прочитан целиком."
+    },
+    {
+      "file": "notes/Проверка требований шаблона статьи AI4Science 2026.md",
+      "line": 16,
+      "category": "article_filename_or_term",
+      "text": "- [paper.bib](/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/ai4science_ysda2026_template/paper.bib) и [ai4science_ysda2026.bst](/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/ai4science_ysda2026_template/ai4science_ysda2026.bst) — проверены пример библиографии, указания по сверке записей и происхождение стиля."
+    },
+    {
+      "file": "notes/Проверка требований шаблона статьи AI4Science 2026.md",
+      "line": 17,
+      "category": "article_filename_or_term",
+      "text": "- [paper.pdf](/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/ai4science_ysda2026_template/paper.pdf) — визуально просмотрены обе страницы версии для рецензирования."
+    },
+    {
+      "file": "notes/Проверка требований шаблона статьи AI4Science 2026.md",
+      "line": 24,
+      "category": "article_filename_or_term",
+      "text": "[источник: paper.tex, строки 3–37; ai4science_ysda2026.sty]"
+    },
+    {
+      "file": "notes/Проверка требований шаблона статьи AI4Science 2026.md",
+      "line": 29,
+      "category": "article_filename_or_term",
+      "text": "- Сборка из каталога будущей статьи: `pdflatex paper` → `bibtex paper` → `pdflatex paper` → `pdflatex paper`. Это рецепт шаблона, а не выполненная здесь команда."
+    },
+    {
+      "file": "notes/Проверка требований шаблона статьи AI4Science 2026.md",
+      "line": 32,
+      "category": "article_filename_or_term",
+      "text": "- Библиография подключается через `\\bibliography{paper}` и `\\bibliographystyle{ai4science_ysda2026}`; ссылки числовые в квадратных скобках. Данные каждой записи, включая DOI при его наличии, сверяются с первоисточником. Примерные записи об ОДУ не являются списком литературы проекта."
+    },
+    {
+      "file": "notes/Проверка требований шаблона статьи AI4Science 2026.md",
+      "line": 36,
+      "category": "article_filename_or_term",
+      "text": "[источник: paper.tex, строки 86–269] [порождено] Сопоставление с проектом приведено в последнем столбце; это план будущего заполнения, не утверждение о полученных результатах."
+    },
+    {
+      "file": "notes/Проверка требований шаблона статьи AI4Science 2026.md",
+      "line": 55,
+      "category": "article_filename_or_term",
+      "text": "[источник: paper.tex, строки 23–28, 95–101, 144–147, 176–177, 211–218, 248–257]"
+    },
+    {
+      "file": "notes/Проверка требований шаблона статьи AI4Science 2026.md",
+      "line": 83,
+      "category": "article_filename_or_term",
+      "text": "- `pdfinfo` подтвердил Letter, две страницы у `paper.pdf`, три у `paper_final.pdf`, пустое поле Author только у обезличенной версии. Все страницы отрендерены через `pdftoppm -r 90 -png` и визуально просмотрены; структура и режимы согласуются с исходником."
+    },
+    {
+      "file": "references/parts/part_01.md",
+      "line": 109,
+      "category": "article_filename_or_term",
+      "text": "This is a PLOS Computational Biology Software paper."
+    },
+    {
+      "file": "notes/Проверка реестра литературы и цитат статьи.md",
+      "line": 10,
+      "category": "article_filename_or_term",
+      "text": "[[src/check_literature_registry.py]] читает сохранённую версию статьи через Git из 37254a5a90a3efe5b4c6ca22e38c2e2066767178 без восстановления. Во всех десяти TeX-файлах найдены семь команд цитирования и семь уникальных ключей; каждый есть в реестре, отсутствующих — 0. Все находятся в разделе «Место в области» paper.tex, строки 44 и 46; paper_final.tex подключает этот текст. Точные локации — [[results/paper_scaffold/step3_20261118/literature.json]]."
+    },
+    {
+      "file": "tasks/Устранить устаревшие пути литературы во всём проекте.md",
+      "line": 7,
+      "category": "article_filename_or_term",
+      "text": "Запрос пользователя: «проверь по всему проекту, нигде не осталось устаревшего paper? если есть, замени на references»."
+    },
+    {
+      "file": "tasks/Устранить устаревшие пути литературы во всём проекте.md",
+      "line": 10,
+      "category": "article_filename_or_term",
+      "text": "Не входит: переименование paper.tex и шаблонов статьи, изменение текста первичных публикаций, сырых данных, научных результатов или внутренностей Git."
+    },
+    {
+      "file": "PAPER_PROJECT.md",
+      "line": 21,
+      "category": "existing_course_manuscript_template",
+      "text": "| `paper/` учебного каркаса | Будущий каталог `manuscript/ai4science_ysda2026/` | Сейчас не заполняется. Литература и её части находятся в `references/`; lit/ сохраняет реестр и свидетельства. |"
+    },
+    {
+      "file": "notes/Проверка ветки article и исключения шаблона из Git.md",
+      "line": 16,
+      "category": "article_filename_or_term",
+      "text": "- SHA256 всех 11 файлов совпали со снимком до изменений. paper.tex и файл стиля читаются из проектного пути; содержимое шаблона не менялось."
+    },
+    {
+      "file": "notes/Проверка ветки article и исключения шаблона из Git.md",
+      "line": 25,
+      "category": "article_filename_or_term",
+      "text": "1. До следующего модельного запуска извлечь уже найденные библиографические записи из ротационных журналов в компактную таблицу источников статьи. Сверить утверждения и DOI, подготовить paper.bib и источники графа; получить необходимые подтверждения человека. Повторять уже выполненные поиски не требуется."
+    },
+    {
+      "file": "notes/Проверка ветки article и исключения шаблона из Git.md",
+      "line": 28,
+      "category": "article_filename_or_term",
+      "text": "4. Написать paper.tex короткими заданиями по разделам, сохраняя файлы и состояние после каждого. Использовать действующий промпт как требования к результату, не повторять весь стартовый обход при каждой сессии."
+    },
+    {
+      "file": "diary.md",
+      "line": 61,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "- Запрос агенту: прочитать целиком paper/robeson21.txt."
+    },
+    {
+      "file": "diary.md",
+      "line": 418,
+      "category": "article_filename_or_term",
+      "text": "Что сделано: задача «Изучить формат и шаблон будущей статьи» выполнена. В notes/ создана проверка «Проверка требований шаблона статьи AI4Science 2026», связанная с задачей. Изучены paper.tex, настройки стиля, библиография и все страницы paper.pdf/paper_final.pdf; сохранены требования и соответствие материалам проекта."
+    },
+    {
+      "file": "diary.md",
+      "line": 608,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "Что сделано: [[Перенести литературу в references]] выполнена; paper/ переименован в references/, обновлены рабочие ссылки, current_path четырёх PDF и .gitignore. Пути каскада сжатия также обновлены, сам каскад не выполнялся."
+    },
+    {
+      "file": "notes/Проверка результата агента по написанию статьи.md",
+      "line": 21,
+      "category": "article_filename_or_term",
+      "text": "Поиск включал скрытые и игнорируемые файлы проекта. Каталог `manuscript/` отсутствует. Не найдены `paper.tex`, `paper.bib`, карта доказательств статьи, её рисунки/генераторы, `check_article.py`, PDF или `submission.zip`. Не появилось заметок новых источников. До аудита STATUS.md и diary.md всё ещё описывали подготовку промпта 16 ноября; агент не записал промежуточный итог и причину остановки."
+    },
+    {
+      "file": "notes/Проверка результата агента по написанию статьи.md",
+      "line": 40,
+      "category": "article_filename_or_term",
+      "text": "- Попытки прочитать каталог шаблона, paper.tex и paper.pdf в Downloads возвращали `Operation not permitted`; попытка скопировать шаблон в /tmp/tpl_test тоже завершилась отказом. Поэтому агент не смог непосредственно изучить оригинальный шаблон в своей среде. Доступ Codex к тому же пути не доказывает доступ другого процесса."
+    },
+    {
+      "file": "lit/evidence/20261117/balvociute2017_primary.html",
+      "line": 1203,
+      "category": "article_filename_or_term",
+      "text": "                     <p>The two main technical ingredients of taxonomic analysis are the reference taxonomy used and the binning approach employed. Binning is usually performed either by aligning reads against reference sequences (e.g. [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 2\" title=\"Pruesse E, Peplies J, Glöckner FO. Sina: Accurate high-throughput multiple sequence alignment of ribosomal RNA genes. Bioinformatics. 2012; 28(14):1823–9.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR2\" id=\"ref-link-section-d4835126e500\">2</a>]) or using k-mer based techniques (e.g. [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 3\" title=\"Cole JR, Wang Q, Fish JA, Chai B, McGarrell DM, Sun Y, Brown CT, Porras-Alfaro A, Kuske CR, Tiedje JM. Ribosomal database project: data and tools for high throughput rRNA analysis. Nucleic Acids Res. 2014; 42(Database issue):633–42.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR3\" id=\"ref-link-section-d4835126e503\">3</a>]). Taxonomic binning of 16S reads is usually based on one of these four taxonomies: SILVA [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 4\" title=\"Yilmaz P, Parfrey LW, Yarza P, Gerken J, Pruesse E, Quast C, Schweer T, Peplies J, Ludwig W, Glöckner FO. The SILVA and “All-species Living Tree Project (LTP)” taxonomic frameworks. Nucleic Acids Res. 2014; 42(Database issue):643–8.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR4\" id=\"ref-link-section-d4835126e506\">4</a>], RDP [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 5\" title=\"Wang Q, Garrity GM, Tiedje JM, Cole JR. Naïve Bayesian classifier for rapid assignment of rRNA sequences into the new bacterial taxonomy. Appl Environ Microbiol. 2007; 73(16):5261–7. doi:&#xA;                    10.1128/AEM.00062-07&#xA;                    &#xA;                  .\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR5\" id=\"ref-link-section-d4835126e509\">5</a>], Greengenes [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 6\" title=\"McDonald D, Price MN, Goodrich J, Nawrocki EP, DeSantis TZ, Probst A, Andersen GL, Knight R, Hugenholtz P. An improved greengenes taxonomy with explicit ranks for ecological and evolutionary analyses of bacteria and archaea. ISME J. 2012; 6(3):610–8.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR6\" id=\"ref-link-section-d4835126e512\">6</a>] or NCBI [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 7\" title=\"Federhen S. The NCBI taxonomy database. Nucleic Acids Res. 2012; 40(D1):136–43.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR7\" id=\"ref-link-section-d4835126e516\">7</a>].</p><p>How important is the choice of reference taxonomy, given the known inconsistencies of microbial classifications [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 8\" title=\"Beiko RG. Microbial malaise: How can we classify the microbiome?Trends Microbiol. 2016; 23(11):671–9.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR8\" id=\"ref-link-section-d4835126e522\">8</a>]? To address this, the aim of this paper is to determine how similar these four taxonomies are, and whether results obtained using one classification can easily be carried over to another.</p><p>We define and explore an algorithm for mapping one taxonomy into another. This method allows us to compare taxonomies and is the basis for a tool that makes analyses on different classifications comparable to each other by mapping them onto a common taxonomy. While our main focus is on the four most popular taxonomic trees, we also consider the recently published Open Tree of life Taxonomy (OTT) [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 9\" title=\"Hinchliff CE, Smith SA, Allman JF, Burleigh JG, Chaudhary R, Coghill LM, Crandall KA, Deng J, Drew BT, Gazis R, Gude K, Hibbett DS, Katz LA, Laughinghouse HD, McTavish EJ, Midford PE, Owen CL, Ree RH, Rees JA, Soltis DE, Williams T, Cranston KA. Synthesis of phylogeny and taxonomy into a comprehensive tree of life. Proc Natl Acad Sci USA. 2015; 112(41):12764–9.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR9\" id=\"ref-link-section-d4835126e528\">9</a>].</p><p>We found that SILVA, RDP and Greengenes can be mapped into NCBI and OTT with few conflicts, but not vice versa. There is a great deal of difference between taxonomies that arise because of the differences in size and structure.</p><h3 class=\"c-article__sub-heading\" id=\"Sec2\">Taxonomic classifications</h3><p>Each of the five taxonomies that we compare is based on a mixture of sources that have been compiled into taxonomies in different ways. They differ in both size and resolution (see Table <a data-track=\"click\" data-track-label=\"link\" data-track-action=\"table anchor\" href=\"/article/10.1186/s12864-017-3501-4#Tab1\">1</a>). All taxonomies assign ranks to their nodes, the seven main ones being domain, phylum, class, order, family, genus and species. However, RDP and SILVA only go down to the genus level, whereas NCBI and OTT go down to the species level and below. The two latter taxonomies also have a number of intermediate ranks and contain many intermediate nodes (Fig. <a data-track=\"click\" data-track-label=\"link\" data-track-action=\"figure anchor\" href=\"/article/10.1186/s12864-017-3501-4#Fig2\">2</a>"
+    },
+    {
+      "file": "lit/evidence/20261117/balvociute2017_primary.html",
+      "line": 1209,
+      "category": "article_filename_or_term",
+      "text": "                           <a data-track=\"click\" data-track-label=\"link\" data-track-action=\"figure anchor\" href=\"/article/10.1186/s12864-017-3501-4#Fig2\">b</a> shows the composition of the five taxonomies at all ranks down to the level of genus. The NCBI taxonomy has 2.7 times fewer genera and 1.9 times fewer species (not shown) than the OTT. In the following we describe each of the five taxonomies in more detail (summarized in Table <a data-track=\"click\" data-track-label=\"link\" data-track-action=\"table anchor\" href=\"/article/10.1186/s12864-017-3501-4#Tab1\">1</a>).</p><h4 class=\"c-article__sub-heading c-article__sub-heading--small\" id=\"Sec3\">SILVA</h4><p>The SILVA database [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 4\" title=\"Yilmaz P, Parfrey LW, Yarza P, Gerken J, Pruesse E, Quast C, Schweer T, Peplies J, Ludwig W, Glöckner FO. The SILVA and “All-species Living Tree Project (LTP)” taxonomic frameworks. Nucleic Acids Res. 2014; 42(Database issue):643–8.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR4\" id=\"ref-link-section-d4835126e824\">4</a>] contains taxonomic information for the domains of Bacteria, Archaea and Eukarya. It is based primarily on phylogenies for small subunit rRNAs (16S for prokaryotes and 18S for Eukarya). Taxonomic rank information for Archaea and Bacteria is obtained from <i>Bergey’s Taxonomic Outlines</i> [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 10\" title=\"Boone DR, Castenholz RW, Garrity GM, Stanley JT, (eds).Bergey’s Manual of Systematic Bacteriology, Volume One : The Archaea and the Deeply Branching and Phototrophic Bacteria. New York: Springer-Verlag; 2001.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR10\" id=\"ref-link-section-d4835126e830\">10</a>–<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 13\" title=\"Krieg NR, Staley JT, Brown DR, Hedlund BP, Paster BJ, Ward NL, Ludwig W, Whitman WB, (eds).Bergey’s Manual of Systematic Bacteriology, Volume 4: The Bacteroidetes, Spirochaetes, Tenericutes (Mollicutes), Acidobacteria, Fibrobacteres, Fusobacteria, Dictyoglomi, Gemmatimonadetes, Lentisphaerae, Verrucomicrobia, Chlamydiae, and Planctomycetes, 2nd edn. New York: Springer-Verlag; 2010.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR13\" id=\"ref-link-section-d4835126e833\">13</a>] and from the <i>List of Prokaryotic Names with Standing in Nomenclature</i> (LPSN) [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 14\" title=\"Parte AC. LPSN—list of prokaryotic names with standing in nomenclature. Nucleic Acids Res. 2014; 42(Database issue):613–6.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR14\" id=\"ref-link-section-d4835126e840\">14</a>], whereas eukaryotic taxonomy is based on the consensus views of the <i>International Society of Protistologists</i> [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 15\" title=\"Adl SM, Simpson AG, Lane CE, Lukeš J, Bass D, Bowser SS, Brown M, Burki F, Dunthorn M, Hampl V, Heiss A, Hoppenrath M, Lara E, leGall L, Lynn DH, McManus H, Mitchell EAD, Mozley-Stanridge SE, Parfrey LW, Pawlowski J, Rueckert S, Shadwick L, Schoch C, Smirnov A, Spiegel FW. The revised classification of eukaryotes. J Eukaryot Microbiol. 2012; 59(5):429–93. doi:&#xA;                    10.1111/j.1550-7408.2012.00644.x&#xA;                    &#xA;                  .\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR15\" id=\"ref-link-section-d4835126e846\">15</a>, <a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 16\" title=\"Adl SM, Simpson AG, Farmer MA, Andersen RA, Anderson OR, Barta JR, Bowser SS, Brugerolle G, Fensome RA, Fredericq S, et al. The new higher level classification of eukaryotes with emphasis on the taxonomy of protists. J Eukaryot Microbiol. 2005; 52(5):399–451.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR16\" id=\"ref-link-section-d4835126e849\">16</a>]. Taxonomic rank assignments in the SILVA database are manually curated [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 4\" title=\"Yilmaz P, Parfrey LW, Yarza P, Gerken J, Pruesse E, Quast C, Schweer T, Peplies J, Ludwig W, Glöckner FO. The SILVA and “All-species Living Tree Project (LTP)” taxonomic frameworks. Nucleic Acids Res. 2014; 42(Database issue):643–8.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR4\" id=\"ref-link-section-d4835126e852\">4</a>]. For the comparisons we used the taxonomy associated with SILVA small subunit ribosomal RNAs (16S/18S) v128 as released on 29/09/2016.</p><h4 class=\"c-article__sub-heading c-article__sub-heading--small\" id=\"Sec4\">Ribosomal database project (RDP)</h4><p>The RDP database [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 3\" title=\"Cole JR, Wang Q, Fish JA, Chai B, McGarrell DM, Sun Y, Brown CT, Porras-Alfaro A, Kuske CR, Tiedje JM. Ribosomal database project: data and tools for high throughput rRNA analysis. Nucleic Acids Res. 2014; 42(Database issue):633–42.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR3\" id=\"ref-link-section-d4835126e864\">3</a>] is based on 16S rRNA sequences from Bacteria, Archaea and Fungi (Eukarya). It contains 16S rRNA sequences available from the <i>International Nucleotide Sequence Database Collaboration</i> (INSDC) [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 17\" title=\"Cochrane G, Karsch-Mizrachi I, Takagi T, International Nucleotide Sequence Database Collaboration. The international nucleotide sequence database collaboration. Nucleic Acids Res. 2016; 44(Database issue):48–50. doi:&#xA;                    10.1093/nar/gkv1323&#xA;                    &#xA;                  .\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR17\" id=\"ref-link-section-d4835126e870\">17</a>] databases. Names of the organisms associated with the sequences are obtained as the most recently published synonym from <i>Bacterial Nomenclature Up-to-Date</i> [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 18\" title=\"Leibniz Institute DSMZ-German Collection of Microorganisms and Cell Cultures Germany. Prokaryotic Nomenclature Up-to-date. &#xA;                    http://www.dsmz.de/bacterial-diversity/prokaryotic-nomenclature-up-to-date&#xA;                    &#xA;                  . Accessed 11 Oct 2016.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR18\" id=\"ref-link-section-d4835126e876\">18</a>]. Information on taxonomic classification for Bacteria and Archaea is based on the taxonomic roadmaps by <i>Bergey’s Trust</i> [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 19\" title=\"Bergey’s Manual Trust. Bergey’s Taxonomic Outlines. &#xA;                    http://www.bergeys.org/outlines.html&#xA;                    &#xA;                  . Accessed 11 Oct 2016.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR19\" id=\"ref-link-section-d4835126e883\">19</a>] and LPSN [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 14\" title=\"Parte AC. LPSN—list of prokaryotic names with standing in nomenclature. Nucleic Acids Res. 2014; 42(Database issue):613–6.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR14\" id=\"ref-link-section-d4835126e886\">14</a>]. Taxonomic information for fungi is obtained from a hand-made classification dedicated to fungal taxonomy [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 3\" title=\"Cole JR, Wang Q, Fish JA, Chai B, McGarrell DM, Sun Y, Brown CT, Porras-Alfaro A, Kuske CR, Tiedje JM. Ribosomal database project: data and tools for high throughput rRNA analysis. Nucleic Acids Res. 2014; 42(Database issue):633–42.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR3\" id=\"ref-link-section-d4835126e889\">3</a>]. For the comparisons we used a taxonomy associated with RDP database of 16S rRNA (Bacteria and Archaea) and 28S rRNA (Fungi) sequences as released on 30/09/2016 (release 11.5).</p><h4 class=\"c-article__sub-heading c-article__sub-heading--small\" id=\"Sec5\">Greengenes (GG)</h4><p>The Greengenes taxonomy [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 6\" title=\"McDonald D, Price MN, Goodrich J, Nawrocki EP, DeSantis TZ, Probst A, Andersen GL, Knight R, Hugenholtz P. An improved greengenes taxonomy with explicit ranks for ecological and evolutionary analyses of bacteria and archaea. ISME J. 2012; 6(3):610–8.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR6\" id=\"ref-link-section-d4835126e900\">6</a>] is dedicated to Bacteria and Archaea. Classification is based on automatic <i>de novo</i> tree construction and rank mapping from other taxonomy sources (mainly NCBI). Phylogenetic tree is constructed from 16S rRNA sequences that have been obtained from public databases and passed a quality filtering. Sequences are aligned by their characters and secondary structure and then subjected to tree construction with FastTree [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 20\" title=\"Price MN, Dehal PS, Arkin AP. Fasttree: Computing large minimum evolution trees with profiles instead of a distance matrix. Mol Biol Evol. 2009; 26(7):1641–50. doi:&#xA;                    10.1093/molbev/msp077&#xA;                    &#xA;                  .\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR20\" id=\"ref-link-section-d4835126e906\">20</a>]. Inner nodes are automatically assigned taxonomic ranks from NCBI supplemented with previous version of Greengenes taxonomy and CyanoDB [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 21\" title=\"Komárek J, Hauer T. CyanoDB.cz – On-line database of cyanobacterial genera. – Word-wide electronic publication. &#xA;                    http://www.cyanodb.cz&#xA;                    &#xA;                  . Univ. of South Bohemia &amp; Inst. of Botany AS CR. Accessed 11 Oct 2016.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR21\" id=\"ref-link-section-d4835126e909\">21</a>]. For the comparisons we used a taxonomy associated with the Greengenes database as released on May 2013. Although Greengenes is still included in some metagenomic analyses packages, for example QIIME [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 22\" title=\"Caporaso JG, Kuczynski J, Stombaugh J, Bittinger K, Bushman FD, Costello EK, Fierer N, Pena AG, Goodrich JK, Gordon JI, et al. Qiime allows analysis of high-throughput community sequencing data. Nat Methods. 2010; 7(5):335–6.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR22\" id=\"ref-link-section-d4835126e912\">22</a>], it has not been updated for the last three years.</p><h4 class=\"c-article__sub-heading c-article__sub-heading--small\" id=\"Sec6\">NCBI</h4><p>The NCBI taxonomy [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 7\" title=\"Federhen S. The NCBI taxonomy database. Nucleic Acids Res. 2012; 40(D1):136–43.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR7\" id=\"ref-link-section-d4835126e923\">7</a>] contains the names of all organisms associated with submissions to the NCBI sequence databases. It is manually curated based on current systematic literature, and uses over 150 sources, for example, the <i>Catalog of Life</i> [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 23\" title=\"Roskov Y, Abucay L, Orrell T, Nicolson D, Flann C, Bailly N, Kirk P, Bourgoin T, DeWalt RE, Decock W, De Wever A. Species 2000 &amp; itis catalogue of life. Species 2000: Naturalis, Leiden, the Netherlands. 2016. ISSN 2405-8858.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR23\" id=\"ref-link-section-d4835126e929\">23</a>], the <i>Encyclopedia of Life</i> [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 24\" title=\"Parr CS, Wilson N, Leary P, Schulz K, Lans K, Walley L, Hammock J, Goddard A, Rice J, Studer M, et al. The encyclopedia of life v2: providing global access to knowledge about life on earth. Biodivers Data J. 2014; 2:1079.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR24\" id=\"ref-link-section-d4835126e935\">24</a>], <i>NameBank</i> [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 25\" title=\"Marine Biological Laboratory. uBio NameBank. &#xA;                    http://www.ebi.ac.uk/miriam/main/collections/MIR:00000338&#xA;                    &#xA;                  . Woods Hole, Massachusetts, USA. Accessed 11 Oct 2016.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR25\" id=\"ref-link-section-d4835126e942\">25</a>] and <i>WikiSpecies</i> [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 26\" title=\"Wikimedia Foundation. Wikispecies. &#xA;                    http://species.wikimedia.org&#xA;                    &#xA;                  . Accessed 11 Oct 2016.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR26\" id=\"ref-link-section-d4835126e948\">26</a>] as well as some specific databases dedicated to particular groups of organisms. It contains some duplicate names that represent different organisms. Each node has a <i>scientific name</i> and may have some <i>synonyms</i> assigned to it [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 7\" title=\"Federhen S. The NCBI taxonomy database. Nucleic Acids Res. 2012; 40(D1):136–43.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR7\" id=\"ref-link-section-d4835126e958\">7</a>]. NCBI taxonomic classification files are updated on a daily basis; in this paper we use the version as of 05/10/2016.</p><h4 class=\"c-article__sub-heading c-article__sub-heading--small\" id=\"Sec7\">Open tree of life taxonomy (OTT)</h4><p>The Open Tree of life Taxonomy [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 9\" title=\"Hinchliff CE, Smith SA, Allman JF, Burleigh JG, Chaudhary R, Coghill LM, Crandall KA, Deng J, Drew BT, Gazis R, Gude K, Hibbett DS, Katz LA, Laughinghouse HD, McTavish EJ, Midford PE, Owen CL, Ree RH, Rees JA, Soltis DE, Williams T, Cranston KA. Synthesis of phylogeny and taxonomy into a comprehensive tree of life. Proc Natl Acad Sci USA. 2015; 112(41):12764–9.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR9\" id=\"ref-link-section-d4835126e969\">9</a>] aims at providing a comprehensive tree spanning as many taxa as possible. OTT is an automated synthesis of published phylogenetic trees and reference taxonomies. Phylogenetic trees have been ranked, aligned and merged together, taxonomies have been used to fill in the sparse regions and gaps left by phylogenies. Phylogenetic trees for the synthesis are obtained from TreeBASE [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 27\" title=\"Sanderson MJ, Donoghue MJ, Piel W, Eriksson T. TreeBASE: a prototype database of phylogenetic analyses and an interactive tool for browsing the phylogeny of life. Am J Bot. 1994; 81(6):183.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR27\" id=\"ref-link-section-d4835126e972\">27</a>], Dryad [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 28\" title=\"Dryad. Dryad Digital Repository. &#xA;                    http://datadryad.org&#xA;                    &#xA;                  . Accessed 11 Oct 2016.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR28\" id=\"ref-link-section-d4835126e975\">28</a>] and in some cases directly from contributing authors. Taxonomies are sourced from <i>IndexFungorum</i> [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 29\" title=\"Index Fungorum Partnership. Index Fungorum. &#xA;                    www.indexfungorum.org/&#xA;                    &#xA;                  . Accessed 11 Oct 2016.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR29\" id=\"ref-link-section-d4835126e981\">29</a>], SILVA, NCBI, <i>Global Biodiversity Information Facility</i> [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 30\" title=\"Global Biodiversity Information facility. GBIF Backbone Taxonomy. &#xA;                    http://www.gbif.org&#xA;                    &#xA;                  . Accessed 11 Oct 2016.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR30\" id=\"ref-link-section-d4835126e988\">30</a>], <i>Interim Register of Marine and Nonmarine Genera</i> [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 31\" title=\"CSIRO. Interim Register of Marine and Nonmarine Genera (IRMNG). &#xA;                    http://www.cmar.csiro.au/datacentre/irmng/&#xA;                    &#xA;                  . Accessed 11 Oct 2016.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR31\" id=\"ref-link-section-d4835126e994\">31</a>] and some clade specific resources [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 9\" title=\"Hinchliff CE, Smith SA, Allman JF, Burleigh JG, Chaudhary R, Coghill LM, Crandall KA, Deng J, Drew BT, Gazis R, Gude K, Hibbett DS, Katz LA, Laughinghouse HD, McTavish EJ, Midford PE, Owen CL, Ree RH, Rees JA, Soltis DE, Williams T, Cranston KA. Synthesis of phylogeny and taxonomy into a comprehensive tree of life. Proc Natl Acad Sci USA. 2015; 112(41):12764–9.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR9\" id=\"ref-link-section-d4835126e997\">9</a>]. For the comparisons we used OTT taxonomy v2.10 draft 11 as generated on 10/09/2016.</p></div></div></section><section data-title=\"Methods\"><div class=\"c-article-section\" id=\"Sec8-section\"><h2 class=\"c-article-section__title js-section-title js-c-reading-companion-sections-item\" id=\"Sec8\">Methods</h2><div class=\"c-article-section__content\" id=\"Sec8-content\"><h3 class=\"c-article__sub-heading\" id=\"Sec9\">Shared taxonomic units</h3><p>First we determined how similar taxonomies are to each other by counting how many taxa they have in common at each rank. Similar comparisons have been carried out by Yilmaz et al. [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 4\" title=\"Yilmaz P, Parfrey LW, Yarza P, Gerken J, Pruesse E, Quast C, Schweer T, Peplies J, Ludwig W, Glöckner FO. The SILVA and “All-species Living Tree Project (LTP)” taxonomic frameworks. Nucleic Acids Res. 2014; 42(Database issue):643–8.\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR4\" id=\"ref-link-section-d4835126e1014\">4</a>], however they confined their comparison to 16S databases, that is, SILVA, RDP and Greengenes; and only to phylum and genus levels.</p><p>We compared the number of shared taxonomic units (by name) between the four taxonomies: SILVA, RDP, Greengenes and NCBI, at each rank from phylum to genus. We then compared the union of the four taxonomies (ALL in Fig. <a data-track=\"click\" data-track-label=\"link\" data-track-action=\"figure anchor\" href=\"/article/10.1186/s12864-017-3501-4#Fig3\">3</a>) against the OTT in the same way (See Fig. <a data-track=\"click\" data-track-label=\"link\" data-track-action=\"figure anchor\" href=\"/article/10.1186/s12864-017-3501-4#Fig3\">3</a>). To avoid differences because of alternative names or misspellings, we used the NCBI synonym dictionary to correct all names to scientific names."
+    },
+    {
+      "file": "lit/evidence/20261117/balvociute2017_primary.html",
+      "line": 1228,
+      "category": "article_filename_or_term",
+      "text": "                           <a data-track=\"click\" data-track-label=\"link\" data-track-action=\"figure anchor\" href=\"/article/10.1186/s12864-017-3501-4#Fig4\">c</a>). We provide such visualizations for all pairs of taxonomies and all types of mapping procedures in the Additional file <a data-track=\"click\" data-track-label=\"link\" data-track-action=\"supplementary material anchor\" href=\"/article/10.1186/s12864-017-3501-4#MOESM1\">1</a>. In the “<a data-track=\"click\" data-track-label=\"link\" data-track-action=\"section anchor\" href=\"/article/10.1186/s12864-017-3501-4#Sec16\">Results</a>” section we provide an overview graph of summary dissimilarities for all pairs.</p></div></div></section><section data-title=\"Implementation\"><div class=\"c-article-section\" id=\"Sec15-section\"><h2 class=\"c-article-section__title js-section-title js-c-reading-companion-sections-item\" id=\"Sec15\">Implementation</h2><div class=\"c-article-section__content\" id=\"Sec15-content\"><p>The mapping procedures described in this paper are implemented in a Java program called <i>CrossClassify</i>, which reads and writes taxonomic classifications in BIOM1 [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 32\" title=\"McDonald D, Clemente J, Kuczynski J, Rideout J, Stombaugh J, Wendel D, Wilke A, Huse S, Hufnagle J, Meyer F, Knight R, Caporaso J. The Biological Observation Matrix (BIOM) format or: how i learned to stop worrying and love the ome-ome. GigaScience. 2012; 1(1):7. doi:&#xA;                    10.1186/2047-217X-1-7&#xA;                    &#xA;                  .\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR32\" id=\"ref-link-section-d4835126e1703\">32</a>] format. The program is Open Source (AGPL license) and is available from <a href=\"http://ab.inf.uni-tuebingen.de/software/crossclassify/\">http://ab.inf.uni-tuebingen.de/software/crossclassify/</a>.</p></div></div></section><section data-title=\"Results\" data-section-type=\"Results\"><div class=\"c-article-section\" id=\"Sec16-section\"><h2 class=\"c-article-section__title js-section-title js-c-reading-companion-sections-item\" id=\"Sec16\">Results</h2><div class=\"c-article-section__content\" id=\"Sec16-content\"><h3 class=\"c-article__sub-heading\" id=\"Sec17\">Comparison by shared taxonomic units</h3><p>The simple comparison reported in Fig. <a data-track=\"click\" data-track-label=\"link\" data-track-action=\"figure anchor\" href=\"/article/10.1186/s12864-017-3501-4#Fig3\">3</a> clearly shows that there are a lot differences between the four taxonomic classifications, but there is also a lot of overlap, too. Each taxonomy at each rank has many taxa not shared with any other taxonomy – 73<i>%</i> of phyla, 70<i>%</i> of class, 63<i>%</i> of order, 90<i>%</i> of all families and 89<i>%</i> of all genera are unique to either SILVA, RDP, Greengenes or NCBI (OTT excluded). The NCBI taxonomy shares many more taxa with SILVA (60<i>%</i> in phylum, class and order ranks, and 10<i>%</i> in family and genus ranks) than it does with RDP (23<i>%</i> and 5<i>%</i>) or Greengenes (13<i>%</i> and 2<i>%</i>).</p><p>Interestingly, there are not many taxonomic units in the intersections that exclude NCBI (6<i>%</i> of phyla, 3<i>%</i> class, 1<i>%</i> order and &lt;1<i>%</i> of families and genera), indicating that the other three taxonomies are mostly contained in the NCBI taxonomy. Comparing the unions of the four taxonomies against OTT, an immediate conclusion is that there is more variety in the union (ALL) at the phylum (54<i>%</i>) and class (64<i>%</i>) ranks, and more in OTT at the genus (63<i>%</i>) and species ranks (not shown), whereas at order and family ranks highest portion of taxonomic units is shared among the union (ALL) and OTT (59<i>%</i> and 46<i>%</i> accordingly).</p><h3 class=\"c-article__sub-heading\" id=\"Sec18\">Comparison by mapping</h3><p>We compare the five taxonomic classifications by mapping them onto each other using the three methods defined above. In Fig. <a data-track=\"click\" data-track-label=\"link\" data-track-action=\"figure anchor\" href=\"/article/10.1186/s12864-017-3501-4#Fig5\">5</a> we show mapping scores for all pairs of taxonomies."
+    },
+    {
+      "file": "lit/evidence/20261117/balvociute2017_primary.html",
+      "line": 1230,
+      "category": "article_filename_or_term",
+      "text": "                        <p>The strict mapping procedure gives very poor scores for most of the pairs with median dissimilarity of 0.5. Dissimilarities lower than 0.28 (25th percentile) are observed only for the mappings of Greengenes onto other taxonomies and for the mapping of NCBI onto OTT.</p><p>The loose mapping algorithm allows one to map nodes to closer ranks when possible and this is reflected in the dissimilarity distribution (median dissimilarity 0.13) as shown in Fig. <a data-track=\"click\" data-track-label=\"link\" data-track-action=\"figure anchor\" href=\"/article/10.1186/s12864-017-3501-4#Fig5\">5</a>. Loose mapping identifies RDP and Greengenes as the most difficult to map to with average dissimilarity of 0.58 for mappings on RDP and 0.77 for Greengenes. Loose mappings onto SILVA taxonomy have an average dissimilarity of 0.21 which is much better than for RDP and Greengenes, but not as good as for the two largest taxonomies – NCBI and OTT which have average mapping dissimilarities of 0.08 and 0.06 accordingly. However when mapping NCBI and OTT onto other taxonomies we get much worse average dissimilarities of approximately 0.68 for both. In fact, the NCBI taxonomy maps much better onto OTT (dissimilarity of 0.02) than vice versa (0.12).</p><p>The mapping of the common paths produces much lower dissimilarities (median 0.02) than the loose mapping procedure, albeit not perfect. That is, there is some disagreement between the taxonomies on the paths to the same taxonomic units.</p><h3 class=\"c-article__sub-heading\" id=\"Sec19\">Other applications</h3><p>The scoring functions and visualization techniques introduced in this paper to compare taxonomies can be used for other purposes, too. For example, they can be used to compare the behavior of two different taxonomic binning methods on the same set of sequencing reads and (same) taxonomy. In this context, the mapping function is defined by the two taxonomic assignments of each read. In a parallel sets plot, we scale the bars so that each bar is proportional to the number of reads that are mapped to the corresponding rank. For example, in Fig. <a data-track=\"click\" data-track-label=\"link\" data-track-action=\"figure anchor\" href=\"/article/10.1186/s12864-017-3501-4#Fig6\">6</a> we display a comparison of the naive <i>Lowest Common Ancestor</i> (LCA) algorithm and the so-called <i>weighted LCA</i> (wLCA) algorithm [<a data-track=\"click\" data-track-action=\"reference anchor\" data-track-label=\"link\" data-test=\"citation-ref\" aria-label=\"Reference 1\" title=\"Huson DH, Beier S, Flade I, Górska A, El-Hadidi M, Mitra S, Ruscheweyh HJ, Tappu R. MEGAN Community Edition - interactive exploration and analysis of large-scale microbiome sequencing data. PLoS Comput Biol. 2016; 12(6):1004957. doi:&#xA;                    10.1371/journal.pcbi.1004957&#xA;                    &#xA;                  .\" href=\"/article/10.1186/s12864-017-3501-4#ref-CR1\" id=\"ref-link-section-d4835126e1854\">1</a>], clearly showing that one method produces more specific taxonomic assignments than the other."
+    },
+    {
+      "file": "lit/evidence/20261117/callahan2016_primary_bioc.xml",
+      "line": 1,
+      "category": "article_filename_or_term",
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE collection SYSTEM \"BioC.dtd\"><collection><source>BioC-API</source><date>20261117</date><key>collection.key</key><document><id>PMC4927377</id><infon key=\"license\">NO-CC CODE</infon><passage><infon key=\"article-id_doi\">10.1038/nmeth.3869</infon><infon key=\"article-id_manuscript\">NIHMS782534</infon><infon key=\"article-id_pmc\">PMC4927377</infon><infon key=\"article-id_pmid\">27214047</infon><infon key=\"fpage\">581</infon><infon key=\"issue\">7</infon><infon key=\"license\">Users may view, print, copy, and download text and data-mine the content in such documents, for the purposes of academic research, subject always to the full Conditions of use:</infon><infon key=\"lpage\">583</infon><infon key=\"name_0\">surname:Callahan;given-names:Benjamin J</infon><infon key=\"name_1\">surname:McMurdie;given-names:Paul J</infon><infon key=\"name_2\">surname:Rosen;given-names:Michael J</infon><infon key=\"name_3\">surname:Han;given-names:Andrew W</infon><infon key=\"name_4\">surname:Johnson;given-names:Amy Jo A</infon><infon key=\"name_5\">surname:Holmes;given-names:Susan P</infon><infon key=\"section_type\">TITLE</infon><infon key=\"type\">front</infon><infon key=\"volume\">13</infon><infon key=\"year\">2016</infon><offset>0</offset><text>DADA2: High resolution sample inference from Illumina amplicon data</text></passage><passage><infon key=\"section_type\">ABSTRACT</infon><infon key=\"type\">abstract</infon><offset>68</offset><text>We present DADA2, a software package that models and corrects Illumina-sequenced amplicon errors. DADA2 infers sample sequences exactly, without coarse-graining into OTUs, and resolves differences of as little as one nucleotide. In several mock communities DADA2 identified more real variants and output fewer spurious sequences than other methods. We applied DADA2 to vaginal samples from a cohort of pregnant women, revealing a diversity of previously undetected Lactobacillus crispatus variants.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>567</offset><text>The importance of microbial communities to human and environmental health has motivated methods for their efficient characterization. The most common and cost-effective method is the amplification and sequencing of targeted genetic elements. Amplicon sequencing of taxonomic marker genes such as the 16S rRNA gene in bacteria, the ITS region in fungi, and the 18S rRNA gene in eukaryotes, provides a census of a community. Functional diversity can be probed by targeting functional genes.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>1056</offset><text>Disentangling biological variation from amplicon sequencing errors presents unique challenges, which prompted the development of amplicon-specific error-correction methods. Most of these methods were designed for 454 pyrosequencing, and are not applicable to Illumina sequencing.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>1336</offset><text>Errors in Illumina-sequenced amplicon data are currently addressed by quality filtering and the construction of Operational Taxonomic Units (OTUs): clusters of sequences that differ by less than a fixed dissimilarity threshold (typically 3%). Lumping together similar sequences reduces the rate at which errors are misinterpreted as biological variation (Supplementary Fig. 1), but OTUs under-utilize the quality of modern sequencing by precluding the possibility of resolving fine-scale variation. Fine-scale variation can be informative about ecological niches, temporal dynamics, and population structure. Fine-scale variation differentiates pathogenic from commensal strains in some cases, and can contain clinically relevant information for more complex microbiome-associated diseases.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>2127</offset><text>The Divisive Amplicon Denoising Algorithm (DADA) introduced a model-based approach for correcting amplicon errors without constructing OTUs. DADA identified fine-scale variation in 454-sequenced amplicon data while outputting few false positives.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>2374</offset><text>Here we present DADA2, an open-source R package (https://github.com/benjjneb/dada2) that extends and improves the DADA algorithm. DADA2 implements a new quality-aware model of Illumina amplicon errors. Sample composition is inferred by dividing amplicon reads into partitions consistent with the error model (Methods). DADA2 is reference-free, and applicable to any genetic locus. The DADA2 R package implements the full amplicon workflow: filtering, dereplication, chimera identification, and merging paired-end reads.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>2894</offset><text>We compared DADA2 to four algorithms (Methods): UPARSE, an OTU construction algorithm with the best published false-positive results; MED, an algorithm with the best published fine-scale resolution in Illumina amplicon data; and the popular mothur (average linkage) and QIIME (uclust) OTU methods.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>3192</offset><text>We benchmarked these algorithms on three mock community datasets: Balanced, HMP and Extreme (Methods, Supplementary Table 1), each sequenced at a depth of over 500,000 highly overlapping paired-end Illumina MiSeq 2×250 reads. The Balanced community contained 57 bacteria and archaea at nominally equal frequencies. The HMP community contained 21 bacteria at nominally equal frequencies. The Extreme community contained 27 bacterial strains at frequencies spanning five orders of magnitude and differing over the sequenced region by as little as one nucleotide (Methods, Supplementary Table 2). Sequence quality varied: Balanced was higher (Mean Q = 35.9 forward/33.5 reverse), Extreme moderate (33.0/29.3), and HMP lower (32.3/28.7).</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>3927</offset><text>We compared output sequences to the known reference sequences present in the reference strains making up these communities. Output sequences that exactly matched a reference sequence were classified as Reference, and those differing by one mismatch or gap were classified as One Off. Contaminants were identified in the yet unclassified sequences by BLASTing against nt (Methods). Sequences with an exact BLAST hit (100% identity, 100% coverage) were classified as Exact, and those with best hits containing one mismatch or gap as One Off. Everything else was classified as Other. We evaluated sensitivity by detection of the reference strains. Note that fine-scale variation was present in all mock communities, as some reference strains contained multiple distinguishable 16S rRNA sequence variants.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>4729</offset><text>We compared the sample sequences output by DADA2 to the output of UPARSE (Fig. 1). Almost all variants with Hamming separation greater than UPARSE's OTU radius (3%, dashed line) were identified by both algorithms (black). However, DADA2 identified fine-scale variation that UPARSE did not (blue), in both the merged reads (Fig. 1) and the forward reads alone (Supplementary Fig. 2–7). DADA2 accurately resolved sequence variants differing by a single nucleotide and present in as few as two reads.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>5229</offset><text>DADA2 identified more reference sequences and as many or more reference strains than UPARSE in every dataset, using merged or forward reads (Table 1). DADA2 identified every reference strain in the Balanced and HMP datasets; the Extreme reference strains it missed demonstrate its limits (Supplementary Note 1). DADA2 output fewer spurious sequences (Other and One Off) than UPARSE in every dataset (Table 1).</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>5639</offset><text>Minimum Entropy Decomposition (MED) is a method to distinguish fine-scale diversity in amplicon data. Like DADA2, MED divides amplicon reads into partitions within which variation is supposed to be artefactual. MED effectively uses a single-site minor-allele-frequency threshold to distinguish real variation, and prevents false positives with a minimum abundance threshold. Thus while MED identified fine-scale variation, it output more false positives and couldn’t detect rare variants (Table 1, Supplementary Fig. 2–7).</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>6166</offset><text>Mothur and QIIME output significantly more spurious sequences than the other methods, although this deficiency was reduced when merging reads (Table 1, Supplementary Fig. 2–7). UPARSE was the most accurate OTU method tested by all measures save the number of reference strains identified in the merged Extreme dataset. The spurious output of mothur and QIIME included chimeric and non-chimeric errors (Supplementary Table 3).</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>6594</offset><text>The residual error rates in the output of DADA2 were very low. For the Balanced dataset, DADA2's residual error rate of 2.46 × 10−8 (forward) and 2.53 × 10−8 (merged), compares favorably to the best error rates of 5.9 × 10−3 and 5.0 × 10−4 previously reported. For the HMP dataset, DADA2's residual error rate of 1.66 × 10−5 (forward) and 2.74 × 10−6 (merged) compares favorably to the previously reported error rates of 9.2 × 10−4 and 4.6 × 10−4 in, and 2 × 10−4 (merged) in. DADA2 discarded relatively few reads compared to the other methods (Table 1).</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>7176</offset><text>DADA2’s core denoising algorithm was slower but comparable to UPARSE, and DADA2 easily processed Illumina samples on a laptop. For the filtered Balanced forward reads (33,516 unique sequences) UPARSE ran in 9s, QIIME/uclust in 17s, DADA2 in 21s, mothur in 2m26s and MED in 2m34s on a 2013 MacBook Pro (Methods).</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>7490</offset><text>We further evaluated DADA2 on two longitudinal, Illumina-sequenced datasets: 142 vaginal samples from 42 pregnant women, and 360 mouse fecal samples.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>7640</offset><text>The vagina is the least diverse human body habitat, often dominated by a single Lactobacillus OTU. Lactobacillus crispatus is the most common species, and L. crispatus dominated communities have been associated with good health and stability. DADA2 revealed that L. crispatus communities are more complex than generally recognized: six distinct L. crispatus sequence variants were present in multiple samples and substantial abundance (Fig. 2a). This variation is imperceptible to OTU methods, as these variants differ by just 1–2 nucleotides over the sequenced region.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>8212</offset><text>The joint distribution of L. crispatus variants strongly suggests they represent multiple bacterial strains. The distribution of sequence variants was stable over time, but differed substantially between women, and distinct ecological relationships appear to exist between variants. L1 and L2 showed a pattern of mutual exclusion consistent with competition for a common niche (Fig. 2b). L1 and L3 showed a pattern more consistent with an absence of direct competition (Fig. 2c): The frequency of L1 was independent of the frequency of L3, which strongly tended towards 20%.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>8787</offset><text>The fecal community is more diverse than the vaginal community or mock communities, which could present different bioinformatic challenges. When applied to the mouse fecal dataset, DADA2 output 389 sequences and UPARSE 327 OTUs, of which 257 were shared. Output sequences were BLASTed against nt: 247/257 of the shared sequences, 123/132 of the DADA2-only sequences, and 26/70 of the UPARSE-only sequences were Exact matches. DADA2-only sequences were typically close to other sample sequences: the median Hamming distance of DADA2-only sequences to a more abundant output sequence was 2, for shared sequences it was 15. Sample richness was highly correlated between the methods (Pearson correlation = 0.99), but DADA2 identified more variants (mean ratio = 1.21). These results are consistent with the mock community benchmarking: DADA2 identified more biological variants, especially within UPARSE's OTU radius, while outputting fewer spurious sequences.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>9744</offset><text>These comparisons show that DADA2 is more accurate than other methods. DADA2 resolves fine-scale variation better than the current best method for that task, while outputting fewer incorrect sequences than the most robust OTU method. The precision of DADA2 improves downstream measures of diversity and dissimilarity, and potentially allows amplicon methods to probe strain-level variation.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>10135</offset><text>The output of DADA2 can be clustered into OTUs, but that often eliminates biological information present in the data. OTUs are not species, and their construction is not necessitated by amplicon errors. DADA2 enhances the study of microbial communities by allowing researchers to accurately reconstruct amplicon-sequenced communities at the highest resolution.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_1</infon><offset>10496</offset><text>Online Methods</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_2</infon><offset>10511</offset><text>The Divisive Amplicon Denoising Algorithm</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>10553</offset><text>The core denoising algorithm in the DADA2 R package is built on a model of the errors in Illumina-sequenced amplicon reads. This error model quantifies the rate λji at which an amplicon read with sequence i is produced from sample sequence j as a function of sequence composition and quality. A Poisson model for the number of repeated observations of the sequence i, parameterized by the rate λji, is then used to calculate the p-value of the null hypothesis that the number of amplicon reads (the abundance) of sequence i is consistent with the error model. These p-values are used as the division criteria for an iterative partitioning algorithm, which continues dividing sequencing reads until all partitions are consistent with being produced from their central sequence. We now describe each of these steps in detail.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_3</infon><offset>11387</offset><text>Sequence comparison</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>11407</offset><text>Pairwise sequence alignments are performed by a vectorized implementation of the Needleman-Wunsch algorithm with ends-free gapping. As alignment dominates the computational costs of the algorithm, two heuristics are enabled by default. The first heuristic is the use of a kmer-distance screen prior to alignment. If the kmer-distance between i and j exceeds a user-settable parameter (KDIST_CUTOFF), no alignment is performed. The default value of this parameter was chosen to exclude only pairs of reads with &gt;10% nucleotide mismatch. The second heuristic is banded alignment, which forgoes calculation of potential alignments in which the net number of gaps of one sequence relative to the other exceeds a user-settable parameter (BAND_SIZE). The default value of this parameter was chosen to minimally impact the alignment of sequences with few indels, such as ribosomal RNA genes. Both heuristics can be disabled by the user, and the default values should be re-examined if the algorithm is applied to genetic regions with significantly different characteristics, such as the indel-rich ITS region.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_3</infon><offset>12510</offset><text>Error model</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>12522</offset><text>DADA2 models errors as occurring independently within a read, and independently between reads. Under this model, the rate at which an amplicon read with sequence i is produced from sample sequence j is reduced to the product over the transition probabilities between the L aligned nucleotides:  The transition probability between aligned nucleotides is allowed to depend on the original nucleotide, substituting nucleotide, and associated quality score, e.g. p(A→C, 35).</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>12995</offset><text>After sequence alignment, the error rate λji is calculated and stored. If sequences i and j were not aligned because they exceeded the kmer-distance cutoff λji is set to 0.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_3</infon><offset>13178</offset><text>The abundance p-value</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>13200</offset><text>The abundance p-value quantifies the notion that sequence i is too abundant for it to be explained by errors in amplicon sequencing. If sequencing errors are independent across reads, the number of amplicon reads with sequence i that will be produced from sample sequence j is Poisson distributed with expectation equal to an error rate λji multiplied by the expected reads of sample sequence j. Let unique sequence i with abundance ai be in partition j containing nj reads. Then, conditional on i being read at least once, the abundance p-value is the probability of seeing that many or more identical reads (ρpois is the Poisson density function):  A low pA indicates that there are more reads of sequence i than can be explained by errors introduced during the amplification and sequencing of nj copies of sample sequence j.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>14035</offset><text>Note that the abundance p-value is calculated conditional on at least one sequence being observed. As a result, all singleton sequences have an abundance p-value of 1, and are never judged inconsistent with the error model. This means that singletons cannot form their own partitions, and DADA2 will not infer singleton sequences. The effect of this is similar in practice to the UPARSE developer's recommendation to remove singleton sequences prior to picking OTUs, and in both cases is driven by the difficulty in robustly differentiating singleton errors from real singleton sequences.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_3</infon><offset>14624</offset><text>The divisive partitioning algorithm</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>14660</offset><text>First, amplicon reads with the same sequence are grouped into unique sequences with an associated abundance and consensus quality profile (or dereplicated). The divisive partition algorithm is initialized by placing all unique sequences into a single partition, and assigning the most abundant sequence as the center of that partition. All unique sequences are then compared to the center of their partition, error rates are calculated and stored, and the abundance p-value is calculated for each unique sequence. If the smallest p-value, after bonferroni correction, falls below the user-settable threshold OMEGA_A, a new partition is formed with the unique sequence with the smallest p-value as its center, and all unique sequences are compared to the center of that new partition.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>15444</offset><text>After a new partition is formed, every unique sequence is allowed to join the partition most likely to have produced it (i.e. that produces the highest expected number of that unique sequence). At that point the division procedure iterates, with each iteration consisting of identifying the unique sequence with the smallest p-value, forming a new partition with that sequence as its center, and reshuffling sequences to their most likely partition.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>15894</offset><text>Division continues until all abundance p-values are greater than OMEGA_A, i.e. all unique sequences are consistent with being produced by amplicon sequencing the center of their partition. The inferred composition of the sample is then the set of central sequences and the corresponding total abundances of those partitions (alternatively: each read is denoised by replacing it with the central sequence of its partition).</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>16317</offset><text>A detailed description of the original version of this divisive algorithm is available in Rosen et al. 2012. The DADA2 implementation has been slightly simplified for computational speed, in particular there is no longer any construction of “indel families”.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_3</infon><offset>16580</offset><text>Error model parameterization</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>16609</offset><text>DADA2 depends on a parameterized error model (the 16 × 41 transition probabilities, e.g. p(A→C, 35) but if those parameters are not known a priori then DADA2 can estimate them from the data.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>16803</offset><text>Given an inferred partition of the amplicon sequences, DADA2 records the mismatches between every sequence and the center of its partition, and counts each type of mismatch (e.g. the number of A→C mismatches where Q=35). That table of observed mismatches represents the errors inferred by DADA2, and can be used to estimate the parameters of the error model. DADA2's default parameter estimation method is to perform a weighted loess fit to the regularized log of the observed mismatch rates as a function of their quality, separately for each transition type (e.g. A→C mismatches are fit separately from A→G mismatches). However, the error rate estimation function is a modular part of the algorithm, and the user is able to provide their own R function to estimate the parameters of the error model from the observed mismatches if they prefer a different method.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_3</infon><offset>17674</offset><text>Alternating estimation until consistency</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>17715</offset><text>DADA2's selfConsist mode alternates sample inference (conditional on the parameters of the error model) with parameter estimation (conditional on the inferred sample composition) until convergence, at which point jointly consistent estimates of the error parameters and sample composition are reported. This improves the accuracy of DADA2: while Illumina quality scores are informative, they do not exactly match their textbook definition (Supplementary Fig. 8), and we have observed significant variation in this relationship between different runs. The plotErrors function in the DADA2 R package produced Supplementary Fig. 8, and is a useful tool to visualize the observed and estimated error rates in various datasets.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_3</infon><offset>18438</offset><text>DADA2 pipeline</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>18453</offset><text>The DADA2 R package implements a complete pipeline to turn paired-end fastq files from the sequencer into merged, denoised, chimera-free, inferred sample sequences. Parts of this pipeline can be substituted with outside methods, but there are some structural differences between the DADA2 pipeline and most others. One such difference is that the DADA2 pipeline performs merging of paired-end reads after denoising. This is because the core denoising algorithm uses the empirical relationship between the quality score and the error rates. When reads are merged, this relationship will differ between the forward-only, overlapping, and reverse-only portions of the merged read. That variation interferes with the denoising algorithm, and therefore greater accuracy can be achieved by denoising before merging, albeit at some computational cost.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_4</infon><offset>19298</offset><text>Filtering</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>19308</offset><text>fastqFilter() implements filtering of fastq files that largely recapitulates the usearch fastq_filter command (http://www.drive5.com/usearch/manual/cmd_fastq_filter.html). In short, this function trims sequences to a specified length, removes sequences shorter than that length, and filters based on the number of ambiguous bases, a minimum quality score, and the expected errors in a read. fastqPairedFilter() implements the same trimming and filtering, but applies it to paired reads jointly, only outputting reads where both the forward and reverse reads pass the filter.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_4</infon><offset>19883</offset><text>Dereplication</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>19897</offset><text>derepFastq() imports a fastq file and outputs a dereplicated list of unique sequences and their abundances. derepFastq() also outputs consensus positional quality scores for each unique sequence by taking the average (mean) of the positional qualities of the component reads. These consensus scores are used by the error model of the dada() function.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_4</infon><offset>20248</offset><text>Denoising</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>20258</offset><text>dada() implements the core denoising algorithm described above.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_4</infon><offset>20322</offset><text>Chimeras</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>20331</offset><text>isBimeraDenovo() identifies sequences that are exact bimeras (two-parent chimeras) of more abundant output sequences. Bimeras are identified by performing a Needleman-Wunsch global alignment of each sequence to all more abundant sequences, and then searching for combinations of a left-parent and a right-parent that cover the child sequence without any mismatches or internal indels. Child sequences that differ by a single mismatch or indel from the chimeric model are also flagged if the left-parent and right-parent are both at least 4-away from the child sequence.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>20901</offset><text>isBimeraDenovo() is intended to be used after denoising, and on exactly inferred sample sequences, rather than on noisy input reads or fuzzy OTUs. It was necessary to implement isBimeraDenovo() because most current stand-alone chimera identification programs are intentionally conservative about identifying chimeras that are relatively close to other more abundant sequences, because such sequences are expected to be later joined together in the same OTU (Supplementary Note 2). DADA2 does not create OTUs, and does differentiate closely related sequence variants, therefore we implemented this simple, but more sensitive, chimera detection method.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_4</infon><offset>21552</offset><text>Merging</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>21560</offset><text>mergePairs() performs a global ends-free alignment between paired forward and reverse reads, and merges them together if they exactly overlap. mergePairs() requires that the input forward and reverse reads read in by derepFastq() were in the same order, a feature which is maintained by fastqPairedFilter(). Note that merging in the DADA2 pipeline happens after denoising, hence the strict requirement of exact overlap since it is expected that nearly all substitution errors have already been removed.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_2</infon><offset>22063</offset><text>Benchmarking</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_3</infon><offset>22076</offset><text>Test datasets</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>22090</offset><text>The Balanced community consists of 57 bacteria and archaea from a broad range of habitats. The 16S rRNA gene sequences of most of these strains were well separated (&gt;3%) over the region sequenced. However, the sequences of 5 strains were identical to other more abundant strains, while 5 strains had a total of 7 additional distinguishable sequence variants in their genomes that differed by 1 or 2 nucleotides. There were also two strains that were less than 3% different from more abundant strains. The Balanced dataset was downloaded from http://www.ebi.ac.uk/ena/data/view/PRJEB6244, and its construction was described in where it is identified as dataset DS 35.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>22757</offset><text>The HMP community consists almost entirely of strains well separated (&gt;3%) over the region sequenced (S. epidermis and S. aureus are indistinguishable), most of which colonize the human body. The HMP dataset was downloaded from http://www.mothur.org/MiSeqDevelopmentData.html, and its construction was described in where it is identified as the MOCK1 sample in run 130403. This dataset was also analyzed in.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>23165</offset><text>The Extreme dataset was generated for this study. The organisms for the Extreme community include human gastrointestinal tract bacterial isolates (Supplementary Table 2). The Extreme dataset was intended to include more fine-scale variation than the other mock communities, the members of which were chosen in part for their well-separated 16S rRNA gene sequences. The Extreme strains are all distinguishable over the sequenced region of the 16S rRNA gene, but some pairs of strains differ by as little as 1 nucleotide. The Extreme dataset is available under SRA accession number SRX1478507.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>23757</offset><text>Extreme strains were grown overnight in liquid broth with the medium recommended from the source culture collection for each respective strain (Table 1). An aliquot of the bacterial culture was used to directly amplify the 16S rRNA gene. One microliter of the bacterial culture was used as template to amplify the V4 region of the 16S rRNA gene using fusion gene primers (515f/806r) that incorporate Illumina adapter sequences and indexing barcodes. The PCR reaction was carried out in a 25 uL mixture containing 1× HotMaster Mix with 2.5 mM Mg2+ (5 PRIME, Gaithersburg, MD), 400 nM forward primer, 400 nM reverse primer, along with the bacterial culture template. The following cycling parameters were used: initial cell lysis and DNA denaturing at 95$^\\circ$C for 10 minutes, followed by 30 cycles of 95°C for 30 seconds, 50°C for 30 seconds, and 72°C for 30 seconds, ending with a final annealing step at 72°C for 10 min. PCR amplicons were cleaned using Agencourt AMPure XP beads (Beckman Coulter, Pasadena, CA) following the manufacturer's instructions. Cleaned PCR amplicons were analyzed and quantified using an Agilent 2100 Bioanalyzer.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>24907</offset><text>Strains were grouped into two taxonomic groups, Firmicutes and Bacteroidetes. Within each taxonomic group, strains were designated for one of six 10-fold dilution groups (Supplementary Table 2). PCR amplicons for each strain were first normalized to the same concentration. From there, each amplicon was individually diluted to its respective dilution level and then all amplicons were pooled. The concentration of the pooled library was quantified using the Quant-iT PicoGreen dsDNA Assay kit (Life Technologies, Carlsbad, CA) and analyzed on an Agilent 2100 Bioanalyzer. The pooled library was diluted to 4 nM and then Illumina's protocol for preparing libraries for sequencing on the MiSeq was followed. The final concentration of the library was diluted to 6 pM with ~20% PhiX spiked in to account for the low base-diversity library. The final pooled library was sequenced on an Illumina MiSeq with a MiSeq Sequencing Reagent Kit v3 to obtain 250 bp paired end reads utilizing custom sequencing primers as described in.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_3</infon><offset>25931</offset><text>Workflow on test data</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>25953</offset><text>A common filtering and trimming was performed before applying each method: The DADA2 fastqPairedFilter (paired reads) and fastqFilter (forward reads only) functions were used to remove sequences with Ns or more than two expected errors, and to trim the first 20 nucleotides and the last 10 nucleotides (forward reads) or 10–50 nucleotides (reverse reads) depending on the quality profile of the data.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>26356</offset><text>The usearch command fastq_mergepairs with a minimum overlap of 20 bases and maximum differences of 1 was used to merge the filtered forward and reverse reads for further analysis by UPARSE, MED and QIIME. Mothur used its native read merging function make.contigs. DADA2 denoised the forward and reverse reads independently, and then merged them with its mergePairs function.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>26731</offset><text>Chimeras were removed from the denoised output of DADA2 and MED by isBimeraDenovo in the DADA2 R package, as this tool is intended for the exactly inferred sequences output by these methods. UPARSE has built-in chimera removal. The uchime method included in mothur and QIIME was used to remove chimeras for those pipelines.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>27055</offset><text>A list of output sequences and associated abundances was obtained for each algorithm. For DADA2 these were the inferred sample sequences, for UPARSE, mothur and QIIME the representative OTU sequences, and for MED the representative sequences of its “nodes”.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>27317</offset><text>We also removed singleton OTUs from the outputs of mothur and QIIME. The DADA2, UPARSE and MED pipelines all decline to call singleton variants, so removing singletons from mothur and QIIME allows a cleaner comparison between methods. Additionally, nearly all of the singleton variants output by mothur and QIIME were spurious, so removing singletons improved their reported accuracy.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>27702</offset><text>Software versions: DADA2 version 0.99.8, usearch version 8.1.1831 (implements UPARSE), MED version 2.0, mothur version 1.36.1, QIIME version 1.9.1.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_3</infon><offset>27850</offset><text>Specificity</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>27862</offset><text>Output sequences were first compared to the known 16S rRNA gene reference sequences of the members of each mock community. If an output sequence matched a reference sequences, it was classified as Reference, and if it had one mismatch or gap to a reference sequence it was classified as One Off. Output sequences that were at least Hamming distance 2 from any reference sequence were then BLASTed against the nr/nt database. If the best hit was an exact match covering the full output sequence, it was classified Exact. If there was a single mismatch or indel, it was classified One Off. Output sequences that remained unclassified to this point were classified Other.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>28531</offset><text>We included the BLAST against nr/nt step because even amplicon sequencing data from communities with a putatively known reference composition will contain contaminant sequences. Contaminants are real, albeit unwanted, biological variation, and should be identified when correcting amplicon errors. While the nr/nt database is imperfect, it is reasonable to expect that Exact matches are far more likely to be real variants than are Others. Output sequences classified as Other, and output sequences classified as One Off that differed by one substitution from a more abundant output sequence, were considered a proxy for false positives. Output sequences classified as Reference or Exact were considered true positives.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_3</infon><offset>29251</offset><text>Sensitivity</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>29263</offset><text>We compiled the 16S rRNA gene sequences (reference sequences) for the intended members of each mock community (reference strains). The presence of each reference strain was confirmed by checking that at least one read matching one of its 16S rRNA gene sequences was present in the filtered dataset. If no such read existed, that strain was removed from the reference list.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>29636</offset><text>Output sequences were compared to the list of reference sequences. If any output sequence matched any 16S rRNA gene sequence present in a strain, that reference strain was considered to have been identified.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_3</infon><offset>29844</offset><text>Time Benchmarking</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>29862</offset><text>When benchmarking computational time, we attempted to isolate the core sample inference algorithms for each pipeline as much as possible. Thus, for the time benchmarking we applied each algorithm to an identically prepared set of sequences: the filtered forward-only reads from the Balanced dataset including singletons. We did not include chimera identification in this benchmarking. The specific commands benchmarked are listed at the end of the Balanced workflow.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>30329</offset><text>Note that preprocessing steps, such as discarding singletons and reference-based chimera removal, can substantially reduce subsequent computation time for all of these methods.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title_2</infon><offset>30506</offset><text>Analysis of Vaginal and Fecal Samples</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>30544</offset><text>The 16S rRNA gene amplicon data from human vaginal samples in (2.13M paired-end Illumina Miseq reads in 157 samples) and from mouse feces in (3.65M paired-end Illumina Miseq reads in 362 samples) were analyzed with the DADA2 pipeline outlined above. First the demultiplexed fastq files were filtered and trimmed in the same manner as the test datasets. Each sample was dereplicated, a portion of the dataset was used to estimate the error parameters, and dada() was applied to the full pooled dataset using those inferred error parameters. isBimeraDenovo() was used to remove chimeras.</text></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">paragraph</infon><offset>31130</offset><text>For the human vaginal samples, output sequences that appeared in at least two samples and at least 0.3% of the total reads were taxonomically identified by BLAST. Further analysis focused on the six L. crispatus sequence variants identified by this procedure.</text></passage><passage><infon key=\"section_type\">SUPPL</infon><infon key=\"type\">title_1</infon><offset>31390</offset><text>Supplementary Material</text></passage><passage><infon key=\"section_type\">SUPPL</infon><infon key=\"type\">footnote</infon><offset>31413</offset><text>Accession Codes</text></passage><passage><infon key=\"section_type\">SUPPL</infon><infon key=\"type\">footnote</infon><offset>31429</offset><text>The Extreme dataset is available from the SRA under accession number SRX1478507 (http://www.ncbi.nlm.nih.gov/sra/SRX1478507).</text></passage><passage><infon key=\"section_type\">SUPPL</infon><infon key=\"type\">footnote</infon><offset>31555</offset><text>Author Contributions</text></passage><passage><infon key=\"section_type\">SUPPL</infon><infon key=\"type\">footnote</infon><offset>31576</offset><text>BJC and SPH designed the research; BJC, PJM and MJR implemented the algorithm; BJC performed the analysis; BJC, PJM, MJR and SPH wrote the paper; AWH and AAJ generated the Extreme dataset designed by BJC, PJM, and AWH.</text></passage><passage><infon key=\"section_type\">SUPPL</infon><infon key=\"type\">footnote</infon><offset>31795</offset><text>Code availability</text></passage><passage><infon key=\"section_type\">SUPPL</infon><infon key=\"type\">footnote</infon><offset>31813</offset><text>The DADA2 R package is open source and available on github (https://github.com/benjjneb/dada2). Package binaries are available through Bioconductor as of its 3.3 release. R markdown files implementing the benchmarking on the Balanced, HMP and Extreme datasets, as well as the analyses of the human vaginal and mouse fecal samples are available from the Stanford Digital Repository: https://purl.stanford.edu/mh194vj6733.</text></passage><passage><infon key=\"section_type\">SUPPL</infon><infon key=\"type\">footnote</infon><offset>32234</offset><text>Competing Financial Interests</text></passage><passage><infon key=\"section_type\">SUPPL</infon><infon key=\"type\">footnote</infon><offset>32264</offset><text>The authors declare no competing financial interests.</text></passage><passage><infon key=\"section_type\">REF</infon><infon key=\"type\">title</infon><offset>32318</offset><text>References</text></passage><passage><infon key=\"fpage\">207</infon><infon key=\"lpage\">214</infon><infon key=\"pub-id_pmid\">22699609</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Nature</infon><infon key=\"type\">ref</infon><infon key=\"volume\">486</infon><infon key=\"year\">2012</infon><offset>32329</offset></passage><passage><infon key=\"fpage\">1019</infon><infon key=\"lpage\">1023</infon><infon key=\"name_0\">surname:Rosen;given-names:MJ</infon><infon key=\"name_1\">surname:Davison;given-names:M</infon><infon key=\"name_2\">surname:Bhaya;given-names:D</infon><infon key=\"name_3\">surname:Fisher;given-names:DS</infon><infon key=\"pub-id_pmid\">26023139</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Science</infon><infon key=\"type\">ref</infon><infon key=\"volume\">348</infon><infon key=\"year\">2015</infon><offset>32330</offset></passage><passage><infon key=\"fpage\">668</infon><infon key=\"lpage\">669</infon><infon key=\"name_0\">surname:Reeder;given-names:J</infon><infon key=\"name_1\">surname:Knight;given-names:R</infon><infon key=\"pub-id_pmid\">20805793</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Nat Methods</infon><infon key=\"type\">ref</infon><infon key=\"volume\">7</infon><infon key=\"year\">2010</infon><offset>32331</offset></passage><passage><infon key=\"fpage\">38</infon><infon key=\"name_0\">surname:Quince;given-names:C</infon><infon key=\"name_1\">surname:Lanzen;given-names:A</infon><infon key=\"name_2\">surname:Davenport;given-names:RJ</infon><infon key=\"name_3\">surname:Turnbaugh;given-names:PJ</infon><infon key=\"pub-id_pmid\">21276213</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">BMC Bioinformatics</infon><infon key=\"type\">ref</infon><infon key=\"volume\">12</infon><infon key=\"year\">2011</infon><offset>32332</offset></passage><passage><infon key=\"fpage\">283</infon><infon key=\"name_0\">surname:Rosen;given-names:MJ</infon><infon key=\"name_1\">surname:Callahan;given-names:BJ</infon><infon key=\"name_2\">surname:Fisher;given-names:DS</infon><infon key=\"name_3\">surname:Holmes;given-names:SP</infon><infon key=\"pub-id_pmid\">23113967</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">BMC Bioinformatics</infon><infon key=\"type\">ref</infon><infon key=\"volume\">13</infon><infon key=\"year\">2012</infon><offset>32333</offset></passage><passage><infon key=\"fpage\">425</infon><infon key=\"lpage\">426</infon><infon key=\"name_0\">surname:Bragg;given-names:L</infon><infon key=\"name_1\">surname:Stone;given-names:G</infon><infon key=\"name_2\">surname:Imelfort;given-names:M</infon><infon key=\"name_3\">surname:Hugenholtz;given-names:P</infon><infon key=\"name_4\">surname:Tyson;given-names:GW</infon><infon key=\"pub-id_pmid\">22543370</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Nat Methods</infon><infon key=\"type\">ref</infon><infon key=\"volume\">9</infon><infon key=\"year\">2012</infon><offset>32334</offset></passage><passage><infon key=\"fpage\">7537</infon><infon key=\"lpage\">7541</infon><infon key=\"name_0\">surname:Schloss;given-names:PD</infon><infon key=\"pub-id_pmid\">19801464</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Appl Environ Microbiol</infon><infon key=\"type\">ref</infon><infon key=\"volume\">75</infon><infon key=\"year\">2009</infon><offset>32335</offset></passage><passage><infon key=\"fpage\">335</infon><infon key=\"lpage\">336</infon><infon key=\"name_0\">surname:Caporaso;given-names:JG</infon><infon key=\"pub-id_pmid\">20383131</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Nat Methods</infon><infon key=\"type\">ref</infon><infon key=\"volume\">7</infon><infon key=\"year\">2010</infon><offset>32336</offset></passage><passage><infon key=\"fpage\">996</infon><infon key=\"lpage\">998</infon><infon key=\"name_0\">surname:Edgar;given-names:RC</infon><infon key=\"pub-id_pmid\">23955772</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Nat Methods</infon><infon key=\"type\">ref</infon><infon key=\"volume\">10</infon><infon key=\"year\">2013</infon><offset>32337</offset></passage><passage><infon key=\"fpage\">E2875</infon><infon key=\"lpage\">E2884</infon><infon key=\"name_0\">surname:Eren;given-names:AM</infon><infon key=\"name_1\">surname:Borisy;given-names:GG</infon><infon key=\"name_2\">surname:Huse;given-names:SM</infon><infon key=\"name_3\">surname:Welch;given-names:JLM</infon><infon key=\"pub-id_pmid\">24965363</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Proc Natl Acad Sci USA</infon><infon key=\"type\">ref</infon><infon key=\"volume\">111</infon><infon key=\"year\">2014</infon><offset>32338</offset></passage><passage><infon key=\"fpage\">968</infon><infon key=\"lpage\">979</infon><infon key=\"name_0\">surname:Eren;given-names:AM</infon><infon key=\"name_1\">surname:Morrison;given-names:HG</infon><infon key=\"name_2\">surname:Lescault;given-names:PJ</infon><infon key=\"name_3\">surname:Reveillaud;given-names:J</infon><infon key=\"name_4\">surname:Vineis;given-names:JH</infon><infon key=\"name_5\">surname:Sogin;given-names:ML</infon><infon key=\"pub-id_pmid\">25325381</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">ISME J</infon><infon key=\"type\">ref</infon><infon key=\"volume\">9</infon><infon key=\"year\">2015</infon><offset>32339</offset></passage><passage><infon key=\"fpage\">68</infon><infon key=\"lpage\">80</infon><infon key=\"name_0\">surname:Tikhonov;given-names:M</infon><infon key=\"name_1\">surname:Leach;given-names:RW</infon><infon key=\"name_2\">surname:Wingreen;given-names:NS</infon><infon key=\"pub-id_pmid\">25012900</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">ISME J</infon><infon key=\"type\">ref</infon><infon key=\"volume\">9</infon><infon key=\"year\">2015</infon><offset>32340</offset></passage><passage><infon key=\"fpage\">1195</infon><infon key=\"lpage\">1201</infon><infon key=\"name_0\">surname:Wang;given-names:C</infon><infon key=\"name_1\">surname:Mitsuya;given-names:Y</infon><infon key=\"name_2\">surname:Gharizadeh;given-names:B</infon><infon key=\"name_3\">surname:Ronaghi;given-names:M</infon><infon key=\"name_4\">surname:Shafer;given-names:RW</infon><infon key=\"pub-id_pmid\">17600086</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Genome Research</infon><infon key=\"type\">ref</infon><infon key=\"volume\">17</infon><infon key=\"year\">2007</infon><offset>32341</offset></passage><passage><infon key=\"fpage\">501</infon><infon key=\"name_0\">surname:McElroy;given-names:K</infon><infon key=\"name_1\">surname:Zagordi;given-names:O</infon><infon key=\"name_2\">surname:Bull;given-names:R</infon><infon key=\"name_3\">surname:Luciani;given-names:F</infon><infon key=\"name_4\">surname:Beerenwinkel;given-names:N</infon><infon key=\"pub-id_pmid\">23879730</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">BMC Genomics</infon><infon key=\"type\">ref</infon><infon key=\"volume\">14</infon><infon key=\"year\">2013</infon><offset>32342</offset></passage><passage><infon key=\"fpage\">647</infon><infon key=\"lpage\">649</infon><infon key=\"name_0\">surname:Guarner;given-names:F</infon><infon key=\"pub-id_pmid\">25201043</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Nat Rev Gastroenterol Hepatol</infon><infon key=\"type\">ref</infon><infon key=\"volume\">11</infon><infon key=\"year\">2014</infon><offset>32343</offset></passage><passage><infon key=\"fpage\">e37</infon><infon key=\"name_0\">surname:Schirmer;given-names:M</infon><infon key=\"pub-id_pmid\">25586220</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Nucleic Acids Res</infon><infon key=\"type\">ref</infon><infon key=\"volume\">43</infon><infon key=\"year\">2015</infon><offset>32344</offset></passage><passage><infon key=\"fpage\">5112</infon><infon key=\"lpage\">5120</infon><infon key=\"name_0\">surname:Kozich;given-names:JJ</infon><infon key=\"name_1\">surname:Westcott;given-names:SL</infon><infon key=\"name_2\">surname:Baxter;given-names:NT</infon><infon key=\"name_3\">surname:Highlander;given-names:SK</infon><infon key=\"name_4\">surname:Schloss;given-names:PD</infon><infon key=\"pub-id_pmid\">23793624</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Appl Environ Microbiol</infon><infon key=\"type\">ref</infon><infon key=\"volume\">79</infon><infon key=\"year\">2013</infon><offset>32345</offset></passage><passage><infon key=\"fpage\">3476</infon><infon key=\"lpage\">3482</infon><infon key=\"name_0\">surname:Edgar;given-names:RC</infon><infon key=\"name_1\">surname:Flyvbjerg;given-names:H</infon><infon key=\"pub-id_pmid\">26139637</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Bioinformatics</infon><infon key=\"type\">ref</infon><infon key=\"volume\">31</infon><infon key=\"year\">2015</infon><offset>32346</offset></passage><passage><infon key=\"fpage\">8988</infon><infon key=\"name_0\">surname:MacIntyre;given-names:DA</infon><infon key=\"pub-id_pmid\">25758319</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Sci Rep</infon><infon key=\"type\">ref</infon><infon key=\"volume\">5</infon><infon key=\"year\">2015</infon><offset>32347</offset></passage><passage><infon key=\"fpage\">4680</infon><infon key=\"issue\">Supplement 1</infon><infon key=\"lpage\">4687</infon><infon key=\"name_0\">surname:Ravel;given-names:J</infon><infon key=\"pub-id_pmid\">20534435</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Proc Natl Acad Sci USA</infon><infon key=\"type\">ref</infon><infon key=\"volume\">108</infon><infon key=\"year\">2011</infon><offset>32348</offset></passage><passage><infon key=\"section_type\">METHODS</infon><infon key=\"type\">title</infon><offset>32349</offset><text>Methods-only References</text></passage><passage><infon key=\"fpage\">e76</infon><infon key=\"name_0\">surname:Sun;given-names:Y</infon><infon key=\"pub-id_pmid\">19417062</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Nucleic Acids Res</infon><infon key=\"type\">ref</infon><infon key=\"volume\">37</infon><infon key=\"year\">2009</infon><offset>32373</offset><text>ESPRIT: estimating species richness using large collections of 16S rRNA pyrosequences</text></passage><passage><infon key=\"fpage\">1621</infon><infon key=\"name_0\">surname:Caporaso;given-names:JG</infon><infon key=\"pub-id_pmid\">22402401</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">ISME J</infon><infon key=\"type\">ref</infon><infon key=\"volume\">6</infon><infon key=\"year\">2012</infon><offset>32459</offset></passage><passage><infon key=\"fpage\">2194</infon><infon key=\"lpage\">2200</infon><infon key=\"name_0\">surname:Edgar;given-names:RC</infon><infon key=\"name_1\">surname:Haas;given-names:BJ</infon><infon key=\"name_2\">surname:Clemente;given-names:JC</infon><infon key=\"name_3\">surname:Quince;given-names:C</infon><infon key=\"name_4\">surname:Knight;given-names:R</infon><infon key=\"pub-id_pmid\">21700674</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Bioinformatics</infon><infon key=\"type\">ref</infon><infon key=\"volume\">27</infon><infon key=\"year\">2011</infon><offset>32460</offset></passage><passage><infon key=\"file\">nihms782534f1.jpg</infon><infon key=\"id\">F1</infon><infon key=\"section_type\">FIG</infon><infon key=\"type\">fig_title_caption</infon><offset>32461</offset><text>Sequence variants inferred by DADA2 compared to the OTUs constructed by UPARSE</text></passage><passage><infon key=\"file\">nihms782534f1.jpg</infon><infon key=\"id\">F1</infon><infon key=\"section_type\">FIG</infon><infon key=\"type\">fig_caption</infon><offset>32540</offset><text>The merged sequences output by DADA2 are plotted for three Illumina amplicon datasets: (a) Balanced, (b) HMP, and (c) Extreme. Frequency is plotted on the y-axis; Hamming distance to the closest more-abundant sequence on the x-axis. Shapes represent accuracy (Methods). When variants are well separated from other members of the community the sequence variants inferred by DADA2 largely coincide with the OTUs output by UPARSE (black). However, DADA2 resolves additional variation (blue), especially within the UPARSE's OTU radius (dashed line), while outputting fewer spurious sequences (One Off and Other).</text></passage><passage><infon key=\"file\">nihms782534f2.jpg</infon><infon key=\"id\">F2</infon><infon key=\"section_type\">FIG</infon><infon key=\"type\">fig_title_caption</infon><offset>33149</offset><text>Lactobacillus crispatus sequence variants in the human vaginal community during pregnancy</text></passage><passage><infon key=\"file\">nihms782534f2.jpg</infon><infon key=\"id\">F2</infon><infon key=\"section_type\">FIG</infon><infon key=\"type\">fig_caption</infon><offset>33239</offset><text>DADA2 identified six Lactobacillus crispatus 16S rRNA sequence variants present in multiple samples and a significant fraction of all reads (L1: 19.7%, L2: 11.1%, L3: 6.5%, L4: 3.1%, L5: 1.3%, L6: 0.4%). (a) The frequency of L1–L6 in each sample. Black bars at the bottom link samples from the same subject. The frequency of (b) L1 vs. L2, and (c) L1 vs. L3, by sample. The dashed line indicates a total frequency of 1.</text></passage><passage><infon key=\"file\">T1.xml</infon><infon key=\"id\">T1</infon><infon key=\"section_type\">TABLE</infon><infon key=\"type\">table_caption</infon><offset>33661</offset><text>The accuracy of DADA2, UPARSE, MED, mothur and QIIME on three mock community datasets</text></passage><passage><infon key=\"file\">T1.xml</infon><infon key=\"id\">T1</infon><infon key=\"section_type\">TABLE</infon><infon key=\"type\">table</infon><infon key=\"xml\">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;"
+    },
+    {
+      "file": "notes/Проверка переноса литературы в references.md",
+      "line": 6,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "2026-11-18: paper/ переименован в references/. Все 17 файлов, включая четыре PDF и части RESCRIPt, совпадают побайтно до/после. Рабочие ссылки, current_path четырёх первичных PDF, .gitignore и пути cascade.sh обновлены. Сам каскад не запускался; bash -n — 0. Реестр остаётся в lit/, будущая рукопись — в manuscript/ai4science_ysda2026/."
+    },
+    {
+      "file": "lit/evidence/20261117/bibliography_sources.tsv",
+      "line": 2,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "bokulich2018\tOptimizing taxonomic classification of marker-gene amplicon sequences with QIIME 2’s q2-feature-classifier plugin\t10.1186/s40168-018-0470-z\t2018\t2018\tMicrobiome\tq2-feature-classifier реализует таксономическое назначение маркерных последовательностей; качество оценивалось на модельных сообществах и симуляциях.\tAbstract; Background; локальный PDF, с. 1\tЗдесь фиксирован один алгоритм и сравниваются готовые модели без эталонной таксономии; точность классификации не оценивается.\thttps://link.springer.com/article/10.1186/s40168-018-0470-z\tpaper/bokulich18.pdf\tbff323dc0ebcc355a6115231750ab856ff0490081b78719a1f2457f06afcd470\tverified\tconfirmed\tAI4Science-агент\t2026-11-17\tnotes/Bokulich 2018.md\tИмена Matthew Dillon и Evan Bolyen в первичной статье отличаются формой от нормализованных OpenAlex Matthew R. Dillon и Evan K Bolyen.\tПодтверждаю все семь DOI\t2026-11-17"
+    },
+    {
+      "file": "lit/evidence/20261117/bibliography_sources.tsv",
+      "line": 3,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "mcdonald2024\tGreengenes2 unifies microbial data in a single reference tree\t10.1038/s41587-023-01845-1\t2024\t2023\tNature Biotechnology\tGreengenes2 объединяет геномные и 16S рРНК-данные в общей филогенетической структуре.\tAbstract; локальный PDF, с. 715; footer: Volume 42, May 2024\tЗдесь используется готовый классификатор на Greengenes2; согласование ампликонов с shotgun-данными и филогенетический анализ не выполняются.\thttps://www.nature.com/articles/s41587-023-01845-1\tpaper/mcdonald23.pdf\t7fa0c22cc46cb897acb37b5d51e1adedff45b40e38d796bf21513c6f621972e5\tverified\tconfirmed\tAI4Science-агент\t2026-11-17\tnotes/McDonald 2024.md\tOpenAlex year=2023 и публикация онлайн 27.07.2023; окончательный выпуск 42(5):715–718 относится к 2024. В BibTeX выбран год выпуска; локальный файл mcdonald23.pdf не переименован. Первичная статья: Daniel McDonald; OpenAlex: Daniel T. McDonald.\tПодтверждаю все семь DOI\t2026-11-17"
+    },
+    {
+      "file": "lit/evidence/20261117/bibliography_sources.tsv",
+      "line": 4,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "parks2022\tGTDB: an ongoing census of bacterial and archaeal diversity through a phylogenetically consistent, rank normalized and complete genome-based taxonomy\t10.1093/nar/gkab776\t2022\t2021\tNucleic Acids Research\tGTDB описывает филогенетически согласованную таксономию бактерий и архей с нормированными рангами на основе геномов.\tAbstract; локальный PDF, с. D785, шапка выпуска\tЗдесь оцениваются назначения коротких ампликонов готовой моделью; статья GTDB не подтверждает происхождение конкретного QZA r220.\thttps://academic.oup.com/nar/article/50/D1/D785/6370255\tpaper/parks21.pdf\td28df175af359e73f9ea96eca521fa43cee3ebd7709fa8d684d2daace449ce0c\tverified\tconfirmed\tAI4Science-агент\t2026-11-17\tnotes/Parks 2022.md\tOpenAlex year=2021 и публикация онлайн 14.09.2021; выпуск Nucleic Acids Research 50(D1):D785–D794 — 2022. В BibTeX выбран 2022; локальный parks21.pdf сохранён. Maria Chuvochina в статье соответствует нормализованной форме Maria S. Chuvochina в OpenAlex.\tПодтверждаю все семь DOI\t2026-11-17"
+    },
+    {
+      "file": "lit/evidence/20261117/bibliography_sources.tsv",
+      "line": 5,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "robeson2021\tRESCRIPt: Reproducible sequence taxonomy reference database management\t10.1371/journal.pcbi.1009581\t2021\t2021\tPLoS Computational Biology\tRESCRIPt поддерживает воспроизводимое получение, обработку и оценку референсных последовательностей и таксономий; состав базы влияет на результаты.\tAbstract; Author summary; локальный PDF, с. 1\tЗдесь готовые классификаторы не переобучаются и базы заново не конструируются.\thttps://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009581\tpaper/robeson21.pdf\t8e91cf39785b71d38e238f3b287064faa8050ea4dfc20c1e862ede6452a2248a\tverified\tconfirmed\tAI4Science-агент\t2026-11-17\tnotes/Robeson 2021.md\tПервичная статья указывает Michael S. Robeson II; OpenAlex нормализует имя как Michael Scott Robeson. В BibTeX сохранён суффикс II из статьи.\tПодтверждаю все семь DOI\t2026-11-17"
+    },
+    {
+      "file": "lit/evidence/20261117/bibliography_review.md",
+      "line": 15,
+      "category": "article_filename_or_term",
+      "text": "Полное соответствие «утверждение — первичный текст — раздел — DOI — подтверждение» и SHA256 локальных текстов хранится в [bibliography_sources.tsv](bibliography_sources.tsv). `paper.bib` содержит семь проверенных записей; для длинных списков McDonald/Bolyen использованы первые три автора и стандартное `and others`, остальные списки полные. Имена в библиографии приведены по первичным текстам; заметки авторов сохраняют нормализованную форму OpenAlex и действительные A-идентификаторы."
+    },
+    {
+      "file": "lit/evidence/20261117/README.md",
+      "line": 10,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "- `callahan2016_primary_bioc.xml`, `bolyen2019_primary_bioc.xml`: первичные тексты из официального сервиса PMC BioC. `balvociute2017_primary.html`: статья издателя. Остальные четыре текста остаются в `paper/`."
+    },
+    {
+      "file": "tasks/Перенести литературу в references.md",
+      "line": 9,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "Готово, когда: каталог paper/ перенесён в references/ без изменения содержимого; рабочие ссылки, current_path реестра и исключение PDF из Git обновлены; сохранены исторические пути/свидетельства; проверки реестра, каркаса и checks/check.py проходят."
+    },
+    {
+      "file": "tasks/Перенести литературу в references.md",
+      "line": 14,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "paper/ перенесён в references/: 17 файлов совпали побайтно, включая четыре PDF; 28 исторических свидетельств сохранены."
+    },
+    {
+      "file": "lit/evidence/20261117/bolyen2019_primary_bioc.xml",
+      "line": 3,
+      "category": "article_filename_or_term",
+      "text": "        </infon><infon key=\"lpage\">857</infon><infon key=\"name_0\">surname:Bolyen;given-names:Evan</infon><infon key=\"name_1\">surname:Rideout;given-names:Jai Ram</infon><infon key=\"name_10\">surname:Bai;given-names:Yang</infon><infon key=\"name_100\">surname:Wan;given-names:Yunhu</infon><infon key=\"name_101\">surname:Wang;given-names:Mingxun</infon><infon key=\"name_102\">surname:Warren;given-names:Jonathan</infon><infon key=\"name_103\">surname:Weber;given-names:Kyle C.</infon><infon key=\"name_104\">surname:Williamson;given-names:Charles H. D.</infon><infon key=\"name_105\">surname:Willis;given-names:Amy D.</infon><infon key=\"name_106\">surname:Xu;given-names:Zhenjiang Zech</infon><infon key=\"name_107\">surname:Zaneveld;given-names:Jesse R.</infon><infon key=\"name_108\">surname:Zhang;given-names:Yilong</infon><infon key=\"name_109\">surname:Zhu;given-names:Qiyun</infon><infon key=\"name_11\">surname:Bisanz;given-names:Jordan E.</infon><infon key=\"name_110\">surname:Knight;given-names:Rob</infon><infon key=\"name_111\">surname:Caporaso;given-names:J. Gregory</infon><infon key=\"name_12\">surname:Bittinger;given-names:Kyle</infon><infon key=\"name_13\">surname:Brejnrod;given-names:Asker</infon><infon key=\"name_14\">surname:Brislawn;given-names:Colin J.</infon><infon key=\"name_15\">surname:Brown;given-names:C. Titus</infon><infon key=\"name_16\">surname:Callahan;given-names:Benjamin J.</infon><infon key=\"name_17\">surname:Caraballo-Rodríguez;given-names:Andrés Mauricio</infon><infon key=\"name_18\">surname:Chase;given-names:John</infon><infon key=\"name_19\">surname:Cope;given-names:Emily K.</infon><infon key=\"name_2\">surname:Dillon;given-names:Matthew R.</infon><infon key=\"name_20\">surname:Da Silva;given-names:Ricardo</infon><infon key=\"name_21\">surname:Diener;given-names:Christian</infon><infon key=\"name_22\">surname:Dorrestein;given-names:Pieter C.</infon><infon key=\"name_23\">surname:Douglas;given-names:Gavin M.</infon><infon key=\"name_24\">surname:Durall;given-names:Daniel M.</infon><infon key=\"name_25\">surname:Duvallet;given-names:Claire</infon><infon key=\"name_26\">surname:Edwardson;given-names:Christian F.</infon><infon key=\"name_27\">surname:Ernst;given-names:Madeleine</infon><infon key=\"name_28\">surname:Estaki;given-names:Mehrbod</infon><infon key=\"name_29\">surname:Fouquier;given-names:Jennifer</infon><infon key=\"name_3\">surname:Bokulich;given-names:Nicholas A.</infon><infon key=\"name_30\">surname:Gauglitz;given-names:Julia M.</infon><infon key=\"name_31\">surname:Gibbons;given-names:Sean M.</infon><infon key=\"name_32\">surname:Gibson;given-names:Deanna L.</infon><infon key=\"name_33\">surname:Gonzalez;given-names:Antonio</infon><infon key=\"name_34\">surname:Gorlick;given-names:Kestrel</infon><infon key=\"name_35\">surname:Guo;given-names:Jiarong</infon><infon key=\"name_36\">surname:Hillmann;given-names:Benjamin</infon><infon key=\"name_37\">surname:Holmes;given-names:Susan</infon><infon key=\"name_38\">surname:Holste;given-names:Hannes</infon><infon key=\"name_39\">surname:Huttenhower;given-names:Curtis</infon><infon key=\"name_4\">surname:Abnet;given-names:Christian C.</infon><infon key=\"name_40\">surname:Huttley;given-names:Gavin A.</infon><infon key=\"name_41\">surname:Janssen;given-names:Stefan</infon><infon key=\"name_42\">surname:Jarmusch;given-names:Alan K.</infon><infon key=\"name_43\">surname:Jiang;given-names:Lingjing</infon><infon key=\"name_44\">surname:Kaehler;given-names:Benjamin D.</infon><infon key=\"name_45\">surname:Kang;given-names:Kyo Bin</infon><infon key=\"name_46\">surname:Keefe;given-names:Christopher R.</infon><infon key=\"name_47\">surname:Keim;given-names:Paul</infon><infon key=\"name_48\">surname:Kelley;given-names:Scott T.</infon><infon key=\"name_49\">surname:Knights;given-names:Dan</infon><infon key=\"name_5\">surname:Al-Ghalith;given-names:Gabriel A.</infon><infon key=\"name_50\">surname:Koester;given-names:Irina</infon><infon key=\"name_51\">surname:Kosciolek;given-names:Tomasz</infon><infon key=\"name_52\">surname:Kreps;given-names:Jorden</infon><infon key=\"name_53\">surname:Langille;given-names:Morgan G. I.</infon><infon key=\"name_54\">surname:Lee;given-names:Joslynn</infon><infon key=\"name_55\">surname:Ley;given-names:Ruth</infon><infon key=\"name_56\">surname:Liu;given-names:Yong-Xin</infon><infon key=\"name_57\">surname:Loftfield;given-names:Erikka</infon><infon key=\"name_58\">surname:Lozupone;given-names:Catherine</infon><infon key=\"name_59\">surname:Maher;given-names:Massoud</infon><infon key=\"name_6\">surname:Alexander;given-names:Harriet</infon><infon key=\"name_60\">surname:Marotz;given-names:Clarisse</infon><infon key=\"name_61\">surname:Martin;given-names:Bryan D.</infon><infon key=\"name_62\">surname:McDonald;given-names:Daniel</infon><infon key=\"name_63\">surname:McIver;given-names:Lauren J.</infon><infon key=\"name_64\">surname:Melnik;given-names:Alexey V.</infon><infon key=\"name_65\">surname:Metcalf;given-names:Jessica L.</infon><infon key=\"name_66\">surname:Morgan;given-names:Sydney C.</infon><infon key=\"name_67\">surname:Morton;given-names:Jamie T.</infon><infon key=\"name_68\">surname:Naimey;given-names:Ahmad Turan</infon><infon key=\"name_69\">surname:Navas-Molina;given-names:Jose A.</infon><infon key=\"name_7\">surname:Alm;given-names:Eric J.</infon><infon key=\"name_70\">surname:Nothias;given-names:Louis Felix</infon><infon key=\"name_71\">surname:Orchanian;given-names:Stephanie B.</infon><infon key=\"name_72\">surname:Pearson;given-names:Talima</infon><infon key=\"name_73\">surname:Peoples;given-names:Samuel L.</infon><infon key=\"name_74\">surname:Petras;given-names:Daniel</infon><infon key=\"name_75\">surname:Preuss;given-names:Mary Lai</infon><infon key=\"name_76\">surname:Pruesse;given-names:Elmar</infon><infon key=\"name_77\">surname:Rasmussen;given-names:Lasse Buur</infon><infon key=\"name_78\">surname:Rivers;given-names:Adam</infon><infon key=\"name_79\">surname:Robeson;given-names:Michael S.;suffix:II</infon><infon key=\"name_8\">surname:Arumugam;given-names:Manimozhiyan</infon><infon key=\"name_80\">surname:Rosenthal;given-names:Patrick</infon><infon key=\"name_81\">surname:Segata;given-names:Nicola</infon><infon key=\"name_82\">surname:Shaffer;given-names:Michael</infon><infon key=\"name_83\">surname:Shiffer;given-names:Arron</infon><infon key=\"name_84\">surname:Sinha;given-names:Rashmi</infon><infon key=\"name_85\">surname:Song;given-names:Se Jin</infon><infon key=\"name_86\">surname:Spear;given-names:John R.</infon><infon key=\"name_87\">surname:Swafford;given-names:Austin D.</infon><infon key=\"name_88\">surname:Thompson;given-names:Luke R.</infon><infon key=\"name_89\">surname:Torres;given-names:Pedro J.</infon><infon key=\"name_9\">surname:Asnicar;given-names:Francesco</infon><infon key=\"name_90\">surname:Trinh;given-names:Pauline</infon><infon key=\"name_91\">surname:Tripathi;given-names:Anupriya</infon><infon key=\"name_92\">surname:Turnbaugh;given-names:Peter J.</infon><infon key=\"name_93\">surname:Ul-Hasan;given-names:Sabah</infon><infon key=\"name_94\">surname:vander Hooft;given-names:Justin J. J.</infon><infon key=\"name_95\">surname:Vargas;given-names:Fernando</infon><infon key=\"name_96\">surname:Vázquez-Baeza;given-names:Yoshiki</infon><infon key=\"name_97\">surname:Vogtmann;given-names:Emily</infon><infon key=\"name_98\">surname:von Hippel;given-names:Max</infon><infon key=\"name_99\">surname:Walters;given-names:William</infon><infon key=\"section_type\">TITLE</infon><infon key=\"type\">front</infon><infon key=\"volume\">37</infon><infon key=\"year\">2020</infon><offset>0</offset><text>Reproducible, interactive, scalable and extensible microbiome data science using QIIME 2</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>89</offset><text>To the Editor — Rapid advances in DNA-sequencing and bioinformatics technologies in the past two decades have substantially improved understanding of the microbial world. This growing understanding relates to the vast diversity of microorganisms; how microbiota and microbiomes affect disease and medical treatment; how microorganisms affect the health of the planet; and the nascent exploration of the medical, forensic, environmental and agricultural applications of microbiome biotechnology. Much of this work has been driven by marker-gene surveys (for example, bacterial/archaeal 16S rRNA genes, fungal internal-transcribed-spacer regions and eukaryotic 18S rRNA genes), which profile microbiota with varying degrees of taxonomic specificity and phylogenetic information. The field is now transitioning to integrate other data types, such as metabolite, metaproteome or metatranscriptome profiles.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>996</offset><text>The QIIME 1 microbiome bioinformatics platform has supported many microbiome studies and gained a broad user and developer community. Interactions with QIIME 1 users in our online support forum, our workshops and direct collaborations have shown the platform’s potential to serve an increasingly diverse array of microbiome researchers in academia, government and industry. Here, we present QIIME 2, a completely reengineered and rewritten system that is expected to facilitate reproducible and modular analysis of microbiome data to enable the next generation of microbiome science.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>1582</offset><text>QIIME 2 was developed on the basis of a plugin architecture (Supplementary Fig. 1) that allows third parties to contribute functionality (https://library.qiime2.org). QIIME 2 plugins exist for latest-generation tools for sequence quality control from different sequencing platforms (DADA2 (ref.) and Deblur), taxonomy assignment and phylogenetic insertion, which quantitatively improve the results over QIIME 1 and other tools (as detailed in the corresponding tool-specific publications). The plugins also support qualitatively new functionality, including microbiome paired-sample and time-series analysis (which are critical for studying the effects of treatments on the microbiome), and machine learning. Trained machine learning models can be saved for application to new data and interrogated to identify important microbiome features. Several recently released plugins, including q2-cscs, q2-metabolomics, q2-shogun, q2-metaphlan2 (ref.) and q2-picrust2 (ref.), provide initial support for analysis of metabolomics and shotgun metagenomics data. We are currently working with teams developing bioinformatics tools for metatranscriptomics and metaproteomics, and we expect to add new plugins supporting these data types to the ecosystem shortly. Additionally, many of the existing ‘downstream’ analysis tools, such as q2-sample-classifier, can already work with these data types individually or in combination if they are provided in a feature table. Thus, QIIME 2 has the potential to serve not only as a marker-gene analysis tool but also a multidimensional and powerful data science platform that can be rapidly adapted to analyze diverse microbiome features.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>3255</offset><text>QIIME 2 provides many new interactive visualization tools facilitating exploratory analyses and result reporting. Static versions of interactive visualizations resulting from four worked examples are provided in Fig. 1. QIIME 2 View (https://view.qiime2.org) is a unique new service (Supplementary Methods) that allows users to securely share and interact with results without installing QIIME 2. The QIIME 2 visualizations presented in Fig. 1 are provided in Supplementary File 1 to allow readers to interact with QIIME 2 View. Corresponding worked QIIME 2 example code is provided in the Supplementary Methods.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>3868</offset><text>Reproducibility, transparency and clarity of microbiome data science are guiding principles in QIIME 2 design. To this end, QIIME 2 includes a decentralized data-provenance tracking system: details of all analysis steps with references to intermediate data are automatically stored in the results. Users can thus retrospectively determine exactly how any result was generated (Fig. 2 illustrates a simplified provenance graph derived from the data provenance of Fig. 1b). QIIME 2 also detects corrupted results indicating that the provenance is no longer reliable and the results no longer contain information enabling reproducibility. The provenance of the visualizations presented in Fig. 1 can be interactively reviewed by loading the contents of Supplementary File 1 with QIIME 2 View, providing far more detailed information than can typically be provided in Methods text. QIIME 2 results are also semantically typed (Fig. 2), and actions indicate acceptable input types, clarifying the data that actions should be applied to and making complex workflows less error prone. Complex workflows can be created and shared by using Jupyter Notebooks or Common Workflow Language (CWL), and support for other workflow engines is currently in development.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>5120</offset><text>Finally, QIIME 2 provides a software-development kit (https://dev.qiime2.org) that can be used to integrate it as a component of other systems (such as Qiita or Illumina BaseSpace) and to develop interfaces targeted toward users with different levels of computational sophistication (Supplementary Fig. 2). QIIME 2 provides the QIIME 2 Studio graphical user interface and QIIME 2 View, interfaces designed for end-user biologists, clinicians and policy-makers; the QIIME 2 application programming interface, designed for data scientists who want to automate workflows or work interactively in Jupyter Notebooks; and q2cli and q2cwl, providing a command-line interface and CWL wrappers for QIIME 2, designed for experts in high-performance computing. At present, computationally expensive steps support parallel computing at the individual-action level (for example, many actions including de-noising and taxonomy assignment support multiple threads). We are currently developing deeper integration with parallelism strategies available in third-party workflow engines, and workflow-level parallelism is currently possible through CWL.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>6257</offset><text>There are many other powerful open-source software tools for microbiome data science, including mothur, phyloseq and related tools available through Bioconductor, and the biobakery suite. The microbiome bioinformatics platform mothur is often compared to QIIME 1 and QIIME 2. A major difference between mothur and QIIME lies in the interactive visualizations: QIIME 2 provides many interactive visualization tools (several examples are provided in Fig. 1), whereas mothur focuses on generating data that can be easily loaded and visualized with other tools. The phyloseq tool focuses on microbiome statistical analysis and generating publication-ready visualizations but, unlike QIIME 2, begins with a feature or operational-taxonomic-unit table, leaving ‘upstream’ processing steps, such as sequence demultiplexing and quality control, to other processing pipelines, many of which (like phyloseq) are available through Bioconductor. The biobakery suite provides analytic functionality that complements that of QIIME 2, and we are actively working with biobakery developers to support interoperability by making their tools accessible as QIIME 2 plugins (for example, the q2-metaphlan2 plugin allows users to run MetaPhlAn2 through QIIME 2). QIIME 2 provides the only Python-based microbiome data-science platform that supports retrospective data-provenance tracking to ensure reproducibility, multi-omics analysis support, interfaces geared toward different user types to enhance usability and an extensibility-focused design through the plugin architecture and software-development kit. We share feedback from users of QIIME 2 on these and other features in Supplementary Methods.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>7944</offset><text>The tools described in the preceding paragraph are all interoperable through plugins, exchange of files in standard formats or using multi-language environments, such as Jupyter Notebooks. For example, the BIOM format is supported by all of them. A diverse ecosystem of interoperable software is beneficial for the field, because it allows both experienced users to obtain multiple perspectives on their data and novice bioinformaticians to work in the programming environments that they are most comfortable with (for example, phyloseq allows users to work in R, whereas QIIME 2 allows users to work in Python). We plan to continue working with the developers of these tools, and with organizations such as the Genomics Standards Consortium, on plugins and standards to ensure interoperability, as well as developing tools to automatically import data from microbiome data-sharing platforms such as Qiita, the European Bioinformatics Institute (EBI) European Read Archive and the National Center for Biotechnology Information (NCBI) Sequence Read Archive.</text></passage><passage><infon key=\"section_type\">INTRO</infon><infon key=\"type\">paragraph</infon><offset>9001</offset><text>Advances in microbiome research promise to improve many aspects of health and the world, and QIIME 2 will help drive those advances by enabling accessible, community-driven microbiome data science.</text></passage><passage><infon key=\"section_type\">SUPPL</infon><infon key=\"type\">title_1</infon><offset>9199</offset><text>Data availability</text></passage><passage><infon key=\"section_type\">SUPPL</infon><infon key=\"type\">paragraph</infon><offset>9217</offset><text>Data for the analyses presented in Fig. 1 are available as follows: Earth Microbiome Project data in Fig. 1a were obtained from ftp://ftp.microbio.me/emp/release1, and the American Gut Project (AGP) data were obtained from Qiita (http://qiita.microbio.me) study ID 10317. Sequence data in Fig. 1c are available in Qiita under study ID 10249 and the EBI under accession number ERP016173. Sequence data in Fig. 1b are available in Qiita under study ID 925 and the EBI under accession number ERP022167. Data in Fig. 1d are available in the q2-ili GitHub repository (https://github.com/biocore/q2-ili). Interactive versions of the Fig. 1 visualizations can be accessed at https://github.com/qiime2/paper1.</text></passage><passage><infon key=\"section_type\">SUPPL</infon><infon key=\"type\">title_1</infon><offset>9919</offset><text>Code availability</text></passage><passage><infon key=\"section_type\">SUPPL</infon><infon key=\"type\">paragraph</infon><offset>9937</offset><text>QIIME 2 is open source and free for all use, including commercial. It is licensed under a BSD three-clause license. Source code is available at https://github.com/qiime2. Help for QIIME 2 is provided at https://forum.qiime2.org.</text></passage><passage><infon key=\"section_type\">SUPPL</infon><infon key=\"type\">title_1</infon><offset>10166</offset><text>Supplementary Material</text></passage><passage><infon key=\"section_type\">SUPPL</infon><infon key=\"type\">footnote</infon><offset>10189</offset><text>Supplementary information is available for this paper at https://doi.org/10.1038/s41587-019-0209-9.</text></passage><passage><infon key=\"section_type\">REF</infon><infon key=\"type\">title</infon><offset>10289</offset><text>References</text></passage><passage><infon key=\"fpage\">548</infon><infon key=\"lpage\">554</infon><infon key=\"name_0\">surname:Smith;given-names:MI</infon><infon key=\"pub-id_pmid\">23363771</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Science</infon><infon key=\"type\">ref</infon><infon key=\"volume\">339</infon><infon key=\"year\">2013</infon><offset>10300</offset></passage><passage><infon key=\"fpage\">97</infon><infon key=\"lpage\">103</infon><infon key=\"name_0\">surname:Gopalakrishnan;given-names:V</infon><infon key=\"pub-id_pmid\">29097493</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Science</infon><infon key=\"type\">ref</infon><infon key=\"volume\">359</infon><infon key=\"year\">2018</infon><offset>10301</offset></passage><passage><infon key=\"fpage\">11169</infon><infon key=\"lpage\">11174</infon><infon key=\"name_0\">surname:Gehring;given-names:CA</infon><infon key=\"name_1\">surname:Sthultz;given-names:CM</infon><infon key=\"name_2\">surname:Flores-Rentería;given-names:L</infon><infon key=\"name_3\">surname:Whipple;given-names:AV</infon><infon key=\"name_4\">surname:Whitham;given-names:TG</infon><infon key=\"pub-id_pmid\">28973879</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Proc. Natl Acad. Sci. USA</infon><infon key=\"type\">ref</infon><infon key=\"volume\">114</infon><infon key=\"year\">2017</infon><offset>10302</offset></passage><passage><infon key=\"fpage\">168</infon><infon key=\"name_0\">surname:Lee;given-names:K</infon><infon key=\"name_1\">surname:Pletcher;given-names:SD</infon><infon key=\"name_2\">surname:Lynch;given-names:SV</infon><infon key=\"name_3\">surname:Goldberg;given-names:AN</infon><infon key=\"name_4\">surname:Cope;given-names:EK</infon><infon key=\"pub-id_pmid\">29876323</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Front. Cell. Infect. Microbiol</infon><infon key=\"type\">ref</infon><infon key=\"volume\">8</infon><infon key=\"year\">2018</infon><offset>10303</offset></passage><passage><infon key=\"fpage\">158</infon><infon key=\"lpage\">162</infon><infon key=\"name_0\">surname:Metcalf;given-names:JL</infon><infon key=\"pub-id_pmid\">26657285</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Science</infon><infon key=\"type\">ref</infon><infon key=\"volume\">351</infon><infon key=\"year\">2016</infon><offset>10304</offset></passage><passage><infon key=\"fpage\">1594</infon><infon key=\"lpage\">1605</infon><infon key=\"name_0\">surname:Rubin;given-names:RL</infon><infon key=\"pub-id_pmid\">29989265</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Ecol. Appl</infon><infon key=\"type\">ref</infon><infon key=\"volume\">28</infon><infon key=\"year\">2018</infon><offset>10305</offset></passage><passage><infon key=\"fpage\">770</infon><infon key=\"lpage\">778</infon><infon key=\"name_0\">surname:Pineda;given-names:A</infon><infon key=\"name_1\">surname:Kaplan;given-names:I</infon><infon key=\"name_2\">surname:Bezemer;given-names:TM</infon><infon key=\"pub-id_pmid\">28757147</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Trends Plant Sci</infon><infon key=\"type\">ref</infon><infon key=\"volume\">22</infon><infon key=\"year\">2017</infon><offset>10306</offset></passage><passage><infon key=\"fpage\">3669</infon><infon key=\"name_0\">surname:Kapono;given-names:CA</infon><infon key=\"pub-id_pmid\">29487294</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Sci. Rep</infon><infon key=\"type\">ref</infon><infon key=\"volume\">8</infon><infon key=\"year\">2018</infon><offset>10307</offset></passage><passage><infon key=\"fpage\">179</infon><infon key=\"lpage\">189</infon><infon key=\"name_0\">surname:Verberkmoes;given-names:NC</infon><infon key=\"pub-id_pmid\">18971961</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">ISME J</infon><infon key=\"type\">ref</infon><infon key=\"volume\">3</infon><infon key=\"year\">2009</infon><offset>10308</offset></passage><passage><infon key=\"fpage\">338</infon><infon key=\"lpage\">356</infon><infon key=\"name_0\">surname:Barr;given-names:T</infon><infon key=\"pub-id_pmid\">29517944</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Gut Microbes</infon><infon key=\"type\">ref</infon><infon key=\"volume\">9</infon><infon key=\"year\">2018</infon><offset>10309</offset></passage><passage><infon key=\"fpage\">581</infon><infon key=\"lpage\">3</infon><infon key=\"name_0\">surname:Callahan;given-names:BJ</infon><infon key=\"pub-id_pmid\">27214047</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Nat. Methods</infon><infon key=\"type\">ref</infon><infon key=\"volume\">13</infon><infon key=\"year\">2016</infon><offset>10310</offset></passage><passage><infon key=\"fpage\">e00191</infon><infon key=\"lpage\">16</infon><infon key=\"name_0\">surname:Amir;given-names:A</infon><infon key=\"pub-id_pmid\">28289731</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">mSystems</infon><infon key=\"type\">ref</infon><infon key=\"volume\">2</infon><infon key=\"year\">2017</infon><offset>10311</offset></passage><passage><infon key=\"fpage\">90</infon><infon key=\"name_0\">surname:Bokulich;given-names:NA</infon><infon key=\"pub-id_pmid\">29773078</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Microbiome</infon><infon key=\"type\">ref</infon><infon key=\"volume\">6</infon><infon key=\"year\">2018</infon><offset>10312</offset></passage><passage><infon key=\"fpage\">e00021</infon><infon key=\"lpage\">18</infon><infon key=\"name_0\">surname:Janssen;given-names:S</infon><infon key=\"pub-id_pmid\">29719869</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">mSystems</infon><infon key=\"type\">ref</infon><infon key=\"volume\">3</infon><infon key=\"year\">2018</infon><offset>10313</offset></passage><passage><infon key=\"fpage\">e00219</infon><infon key=\"lpage\">18</infon><infon key=\"name_0\">surname:Bokulich;given-names:NA</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">mSystems</infon><infon key=\"type\">ref</infon><infon key=\"volume\">3</infon><infon key=\"year\">2018</infon><offset>10314</offset></passage><passage><infon key=\"fpage\">934</infon><infon key=\"name_0\">surname:Bokulich;given-names:N</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">J. Open Source Softw</infon><infon key=\"type\">ref</infon><infon key=\"volume\">3</infon><infon key=\"year\">2018</infon><offset>10315</offset></passage><passage><infon key=\"fpage\">616</infon><infon key=\"lpage\">623</infon><infon key=\"name_0\">surname:Sedio;given-names:BE</infon><infon key=\"name_1\">surname:Rojas Echeverri;given-names:JC</infon><infon key=\"name_2\">surname:Boya;given-names:PCA</infon><infon key=\"name_3\">surname:Wright;given-names:SJ</infon><infon key=\"pub-id_pmid\">27984635</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Ecology</infon><infon key=\"type\">ref</infon><infon key=\"volume\">98</infon><infon key=\"year\">2017</infon><offset>10316</offset></passage><passage><infon key=\"fpage\">828</infon><infon key=\"lpage\">837</infon><infon key=\"name_0\">surname:Wang;given-names:M</infon><infon key=\"pub-id_pmid\">27504778</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Nat. Biotechnol</infon><infon key=\"type\">ref</infon><infon key=\"volume\">34</infon><infon key=\"year\">2016</infon><offset>10317</offset></passage><passage><infon key=\"fpage\">e00069</infon><infon key=\"lpage\">18</infon><infon key=\"name_0\">surname:Hillmann;given-names:B</infon><infon key=\"pub-id_pmid\">30443602</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">mSystems</infon><infon key=\"type\">ref</infon><infon key=\"volume\">3</infon><infon key=\"year\">2018</infon><offset>10318</offset></passage><passage><infon key=\"fpage\">902</infon><infon key=\"lpage\">903</infon><infon key=\"name_0\">surname:Truong;given-names:DT</infon><infon key=\"pub-id_pmid\">26418763</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Nat. Methods</infon><infon key=\"type\">ref</infon><infon key=\"volume\">12</infon><infon key=\"year\">2015</infon><offset>10319</offset></passage><passage><infon key=\"fpage\">814</infon><infon key=\"lpage\">821</infon><infon key=\"name_0\">surname:Langille;given-names:MGI</infon><infon key=\"pub-id_pmid\">23975157</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Nat. Biotechnol</infon><infon key=\"type\">ref</infon><infon key=\"volume\">31</infon><infon key=\"year\">2013</infon><offset>10320</offset></passage><passage><infon key=\"fpage\">87</infon><infon key=\"lpage\">90</infon><infon key=\"name_0\">surname:Kluyver;given-names:T</infon><infon key=\"name_1\">surname:Loizides;given-names:F</infon><infon key=\"name_2\">surname:Schmidt;given-names:B</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">20th International Conference on Electronic Publishing</infon><infon key=\"type\">ref</infon><infon key=\"year\">2016</infon><offset>10321</offset></passage><passage><infon key=\"name_0\">surname:Amstutz;given-names:P</infon><infon key=\"pub-id_doi\">10.6084/m9.figshare.3115156.v2</infon><infon key=\"section_type\">REF</infon><infon key=\"type\">ref</infon><infon key=\"year\">2016</infon><offset>10322</offset></passage><passage><infon key=\"fpage\">796</infon><infon key=\"lpage\">798</infon><infon key=\"name_0\">surname:Gonzalez;given-names:A</infon><infon key=\"pub-id_pmid\">30275573</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Nat. Methods</infon><infon key=\"type\">ref</infon><infon key=\"volume\">15</infon><infon key=\"year\">2018</infon><offset>10323</offset></passage><passage><infon key=\"fpage\">7537</infon><infon key=\"lpage\">7541</infon><infon key=\"name_0\">surname:Schloss;given-names:PD</infon><infon key=\"pub-id_pmid\">19801464</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Appl. Environ. Microbiol</infon><infon key=\"type\">ref</infon><infon key=\"volume\">75</infon><infon key=\"year\">2009</infon><offset>10324</offset></passage><passage><infon key=\"fpage\">e61217</infon><infon key=\"name_0\">surname:McMurdie;given-names:PJ</infon><infon key=\"name_1\">surname:Holmes;given-names:S</infon><infon key=\"pub-id_pmid\">23630581</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">PLoS One</infon><infon key=\"type\">ref</infon><infon key=\"volume\">8</infon><infon key=\"year\">2013</infon><offset>10325</offset></passage><passage><infon key=\"fpage\">115</infon><infon key=\"lpage\">121</infon><infon key=\"name_0\">surname:Huber;given-names:W</infon><infon key=\"pub-id_pmid\">25633503</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Nat. Methods</infon><infon key=\"type\">ref</infon><infon key=\"volume\">12</infon><infon key=\"year\">2015</infon><offset>10326</offset></passage><passage><infon key=\"fpage\">962</infon><infon key=\"lpage\">968</infon><infon key=\"name_0\">surname:Franzosa;given-names:EA</infon><infon key=\"pub-id_pmid\">30377376</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Nat. Methods</infon><infon key=\"type\">ref</infon><infon key=\"volume\">15</infon><infon key=\"year\">2018</infon><offset>10327</offset></passage><passage><infon key=\"fpage\">7</infon><infon key=\"name_0\">surname:McDonald;given-names:D</infon><infon key=\"pub-id_pmid\">23587224</infon><infon key=\"section_type\">REF</infon><infon key=\"source\">Gigascience</infon><infon key=\"type\">ref</infon><infon key=\"volume\">1</infon><infon key=\"year\">2012</infon><offset>10328</offset></passage><passage><infon key=\"file\">nihms-1064803-f0001.jpg</infon><infon key=\"id\">F1</infon><infon key=\"section_type\">FIG</infon><infon key=\"type\">fig_title_caption</infon><offset>10329</offset><text>QIIME 2 provides many interactive visualization tools.</text></passage><passage><infon key=\"file\">nihms-1064803-f0001.jpg</infon><infon key=\"id\">F1</infon><infon key=\"section_type\">FIG</infon><infon key=\"type\">fig_caption</infon><offset>10384</offset><text>The products of four worked examples are presented here, and interactive versions of these screen captures are available in Supplementary File 1 and at https://github.com/qiime2/paper1. Detailed descriptions and methods, including the commands used to generate each of these visualizations, are provided in Supplementary Methods. a, Unweighted UniFrac principal coordinate analysis plot containing 37,680 samples, illustrating the scalability of QIIME 2. Colors indicate sample type, as described by the Earth Microbiome Project ontology (EMPO). b, Interactive taxonomic composition bar plot illustrating the phylum-level composition of microbial-mat samples collected along a temperature gradient in Yellowstone National Park Hot Spring outflow channels (Steep Cone Geyser). The many interactive controls available in this plot vastly decrease the burden of exploratory analysis over QIIME 1. c, Feature volatility plot (https://msystems.asm.org/content/3/6/e00219-18) illustrating the change in Bifidobacterium abundance over time in breast-fed and formula-fed infants. Temporally interesting features can be interactively discovered with this visualization. Bar charts rank the importance (predictive power for time point) and mean abundance of all microbial features. These bar charts provide an interface for visualizing volatility plots (line plots) of individual features in the context of their importance and abundance; clicking on a bar will display the volatility plot of that feature and highlight in blue that feature’s importance and abundance in the bar charts below. d, Molecular cartography of the human skin surface. Colored spots represent the abundance of the small-molecule cosmetic ingredient sodium laureth sulfate on the human skin. Sample data can be interactively visualized in three-dimensional models, thus supporting the discovery of spatial patterns.</text></passage><passage><infon key=\"file\">nihms-1064803-f0002.jpg</infon><infon key=\"id\">F2</infon><infon key=\"section_type\">FIG</infon><infon key=\"type\">fig_title_caption</infon><offset>12267</offset><text>QIIME 2 iteratively records data provenance, ensuring bioinformatics reproducibility.</text></passage><passage><infon key=\"file\">nihms-1064803-f0002.jpg</infon><infon key=\"id\">F2</infon><infon key=\"section_type\">FIG</infon><infon key=\"type\">fig_caption</infon><offset>12353</offset><text>This simplified diagram illustrates the automatically tracked information regarding the creation of the taxonomy bar plot presented in Fig. 1b. QIIME 2 results (circles) contain network diagrams illustrating the data provenance stored in the result. Actions (quadrilaterals) are applied to QIIME 2 results and generate new results. Arrows indicate the flow of QIIME 2 results through actions. TaxonomicClassifier and FeatureData[Sequence] inputs contain independent provenance (red and blue, respectively) and are provided to a classify action (yellow), which taxonomically annotates sequences. The result of the classify action, a FeatureData[Taxonomy] result, integrates the provenance of both inputs with the classify action. This result is then provided to the barplot action with a FeatureTable[Frequency] input, which shares some provenance with the FeatureData[Sequence] input, because they were generated from the same upstream analysis. The resulting visualization (Fig. 1b) has the complete data provenance and correctly identifies shared processing of inputs. This simplified representation was created manually from the complete provenance graph for the purpose of illustration. An interactive and complete version of this provenance graph (as well as those for other Fig. 1 panels) can be accessed through Supplementary File 1.</text></passage></document>"
+    },
+    {
+      "file": "AGENT_ARTICLE_PROMPT.txt",
+      "line": 92,
+      "category": "article_filename_or_term",
+      "text": "Прочитай оригинальные paper.tex, ai4science_ysda2026.sty, paper.bib и просмотри обе PDF-версии. Их инструкции относятся к оформлению статьи; учебная задача ОДУ, значения seed, формулы, числа, рисунок, имена авторов и библиография примера не являются данными проекта или поручением провести новый эксперимент."
+    },
+    {
+      "file": "AGENT_ARTICLE_PROMPT.txt",
+      "line": 112,
+      "category": "article_filename_or_term",
+      "text": "Список литературы. Проверенный paper.bib и штатный стиль."
+    },
+    {
+      "file": "AGENT_ARTICLE_PROMPT.txt",
+      "line": 141,
+      "category": "article_filename_or_term",
+      "text": "pdflatex -interaction=nonstopmode -halt-on-error paper"
+    },
+    {
+      "file": "AGENT_ARTICLE_PROMPT.txt",
+      "line": 142,
+      "category": "article_filename_or_term",
+      "text": "bibtex paper"
+    },
+    {
+      "file": "AGENT_ARTICLE_PROMPT.txt",
+      "line": 143,
+      "category": "article_filename_or_term",
+      "text": "pdflatex -interaction=nonstopmode -halt-on-error paper"
+    },
+    {
+      "file": "AGENT_ARTICLE_PROMPT.txt",
+      "line": 144,
+      "category": "article_filename_or_term",
+      "text": "pdflatex -interaction=nonstopmode -halt-on-error paper"
+    },
+    {
+      "file": "AGENT_ARTICLE_PROMPT.txt",
+      "line": 157,
+      "category": "article_filename_or_term",
+      "text": "- paper.tex, paper.bib, неизменённые необходимые файлы стиля;"
+    },
+    {
+      "file": "AGENT_ARTICLE_PROMPT.txt",
+      "line": 160,
+      "category": "article_filename_or_term",
+      "text": "- проверенный paper.pdf нужной версии; если согласована дополнительная версия, сохраняй её отдельно;"
+    },
+    {
+      "file": "lit/evidence/20261117/verified_sources.json",
+      "line": 8,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"local\": \"paper/bokulich18.pdf\","
+    },
+    {
+      "file": "lit/evidence/20261117/verified_sources.json",
+      "line": 38,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"local\": \"paper/mcdonald23.pdf\","
+    },
+    {
+      "file": "lit/evidence/20261117/verified_sources.json",
+      "line": 68,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"local\": \"paper/parks21.pdf\","
+    },
+    {
+      "file": "lit/evidence/20261117/verified_sources.json",
+      "line": 98,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"local\": \"paper/robeson21.pdf\","
+    },
+    {
+      "file": "results/reference_relocation/20261118/literature.txt",
+      "line": 8,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/reference_relocation/20261118/literature.txt",
+      "line": 16,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/reference_relocation/20261118/literature.txt",
+      "line": 24,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/reference_relocation/20261118/literature.txt",
+      "line": 32,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/reference_relocation/20261118/literature.txt",
+      "line": 40,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/reference_relocation/20261118/literature.txt",
+      "line": 48,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/reference_relocation/20261118/literature.txt",
+      "line": 56,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/reference_relocation/20261118/literature.txt",
+      "line": 70,
+      "category": "article_filename_or_term",
+      "text": "    \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/reference_relocation/20261118/relocation.json",
+      "line": 3,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "  \"from\": \"paper/\","
+    },
+    {
+      "file": "results/reference_relocation/20261118/relocation.json",
+      "line": 28,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "      \"old\": \"paper/bokulich18.pdf\","
+    },
+    {
+      "file": "results/reference_relocation/20261118/relocation.json",
+      "line": 33,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "      \"old\": \"paper/mcdonald23.pdf\","
+    },
+    {
+      "file": "results/reference_relocation/20261118/relocation.json",
+      "line": 38,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "      \"old\": \"paper/parks21.pdf\","
+    },
+    {
+      "file": "results/reference_relocation/20261118/relocation.json",
+      "line": 43,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "      \"old\": \"paper/robeson21.pdf\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 11,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 33,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 57,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 81,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 105,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 129,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 155,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 179,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 205,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 232,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 256,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 280,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 304,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 328,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 352,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.json",
+      "line": 377,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/scientific/literature.txt",
+      "line": 8,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/scientific/literature.txt",
+      "line": 16,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/scientific/literature.txt",
+      "line": 24,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/scientific/literature.txt",
+      "line": 32,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/scientific/literature.txt",
+      "line": 40,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/scientific/literature.txt",
+      "line": 48,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/scientific/literature.txt",
+      "line": 56,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/scientific/literature.txt",
+      "line": 70,
+      "category": "article_filename_or_term",
+      "text": "    \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 11,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 33,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 57,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 81,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 105,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 129,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 155,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 179,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 205,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 232,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 256,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 280,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 304,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 328,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 352,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/numeric_tests.stdout.txt",
+      "line": 377,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-results-mutations-zn4qsm8p/bundle\","
+    },
+    {
+      "file": "results/paper_scaffold/step3_20261118/literature.json",
+      "line": 8,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_scaffold/step3_20261118/literature.json",
+      "line": 16,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_scaffold/step3_20261118/literature.json",
+      "line": 24,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_scaffold/step3_20261118/literature.json",
+      "line": 32,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_scaffold/step3_20261118/literature.json",
+      "line": 40,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_scaffold/step3_20261118/literature.json",
+      "line": 48,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_scaffold/step3_20261118/literature.json",
+      "line": 56,
+      "category": "article_filename_or_term",
+      "text": "      \"path\": \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_scaffold/step3_20261118/literature.json",
+      "line": 70,
+      "category": "article_filename_or_term",
+      "text": "    \"manuscript/ai4science_ysda2026/paper.tex\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/regeneration.json",
+      "line": 6,
+      "category": "article_filename_or_term",
+      "text": "    \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-step4-reproduction-tom7x8vv/bundle\""
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 18,
+      "category": "article_filename_or_term",
+      "text": "    \"ai4science_ysda2026_template/paper.bib\": \"788e1ae0d5b3977078ec54cc07f22b913fc7e952661725f6acba8e4464aff9b9\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 19,
+      "category": "article_filename_or_term",
+      "text": "    \"ai4science_ysda2026_template/paper.pdf\": \"4d587b637d52847b5e4745432319ceb467f0c27f0fdf1c8942de449b27dcbf5e\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 20,
+      "category": "article_filename_or_term",
+      "text": "    \"ai4science_ysda2026_template/paper.tex\": \"58e143fd182e0b8c66f7f41a29938e49f323bd505328ee70bc25c21263765955\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 76,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper/.gitkeep\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 77,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper/parts/part_01.md\": \"78363dc3ffef5c5e341c3bf665a2e570c98126c166a304e1eefc4293852fa079\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 78,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper/parts/part_02.md\": \"73c86fd365cd36ee94646e5f2e1cf730b9b59e9cd573d9d437d75a78f1633066\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 79,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper/parts/part_03.md\": \"6e2c5cedb896fbad1bf2f0941052c8373aefb76c308b9a3ec7f058925dde587d\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 80,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper/parts/part_04.md\": \"e99e79238ee3af444b0cfb907ef61bbbd4c8f192ada83912bcbad7879ae8ed34\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 81,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper/parts/part_05.md\": \"4970601acdf3ccefdcfae72223f0bff688e501342b8e4c283ee42016f3389580\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 82,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper/parts/part_06.md\": \"25b586fb7bc861ed67cd9f588787ce3376d63ef1252ef893092ec12321a9a938\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 83,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper/parts/part_07.md\": \"9e449503aaec028e4c05cb08b74914d95b7f577a465b5f68c33823df528841cb\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 84,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper/parts/part_08.md\": \"d695e78d1583987c3241a4bd1503f8cc29c46ae69e48e4bffe3cc6473c3737ed\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 85,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper/parts/part_09.md\": \"1e370977373dd3adcd995d25cb091a4b355fbcc6719d987cdbf83821981833e7\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 86,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper/parts/part_10.md\": \"ec14b1a4526fb9dc6997bd7c7a4abc9395f861163f5eee8d3d0652e39ce54deb\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 87,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper/parts/part_11.md\": \"8a59375f79d5651320f97b5d49fc947aed4238ff7498e37ffb7b798600fc3260\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 88,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper/robeson21.txt\": \"83aff082dda397f7deda9479d3b806ef4467adfe2a993a1c33785ea5ea90108b\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 98,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper_project_skeleton/paper/ai4science_ysda.cls\": \"b6e18f7d9be122233515efa00771491e2a555c8784306197b371f1eda8aa3e0d\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 99,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper_project_skeleton/paper/example_figure_ru.pdf\": \"c5125fbcf6cf9a6196e878a8a9e6bc90a6c9f4ea50b83c40bc8c052147162488\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 100,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper_project_skeleton/paper/paper.pdf\": \"b5e9c41d11f7abbd91b9c74abb7485c9e31ab7c748b9247fd2edff2b0ec566c8\","
+    },
+    {
+      "file": "results/paper_scaffold/step1_20261118/baseline.json",
+      "line": 101,
+      "category": "historical_path_with_preserved_provenance",
+      "text": "    \"paper_project_skeleton/paper/paper.tex\": \"33623bd9bb97addd141b899a07bd8c505aba186f3b12575c1f68c2c8958375eb\","
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/reproduction.json",
+      "line": 20,
+      "category": "article_filename_or_term",
+      "text": "        \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-step4-reproduction-tom7x8vv/bundle\""
+    },
+    {
+      "file": "results/paper_step4/validation_20261118/reproduction.json",
+      "line": 57,
+      "category": "article_filename_or_term",
+      "text": "  \"temporary_directory\": \"/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/paper-step4-reproduction-tom7x8vv/bundle\""
+    }
+  ],
+  "current_primary_sources": [
+    {
+      "key": "bokulich2018",
+      "current_path": "references/bokulich18.pdf",
+      "sha256_matches": true
+    },
+    {
+      "key": "mcdonald2024",
+      "current_path": "references/mcdonald23.pdf",
+      "sha256_matches": true
+    },
+    {
+      "key": "parks2022",
+      "current_path": "references/parks21.pdf",
+      "sha256_matches": true
+    },
+    {
+      "key": "robeson2021",
+      "current_path": "references/robeson21.pdf",
+      "sha256_matches": true
+    },
+    {
+      "key": "callahan2016",
+      "current_path": "lit/evidence/20261117/callahan2016_primary_bioc.xml",
+      "sha256_matches": true
+    },
+    {
+      "key": "bolyen2019",
+      "current_path": "lit/evidence/20261117/bolyen2019_primary_bioc.xml",
+      "sha256_matches": true
+    },
+    {
+      "key": "balvociute2017",
+      "current_path": "lit/evidence/20261117/balvociute2017_primary.html",
+      "sha256_matches": true
+    }
+  ],
+  "protected_files_unchanged": 123,
+  "prompt_sha256": "3dce3af72cf22c77b2ae2740f535020b391217ef0cb38282f1305d2e068dac13"
+}

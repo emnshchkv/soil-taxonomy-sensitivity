@@ -18,7 +18,7 @@
 | Проверенные результаты сравнения | [README этапа 4](results/taxonomy_comparison/finish_20261116/README.md) | Основные метрики без дополнительного отбора по домену. |
 | Текущие семейственные профили | [README окончательного набора](results/taxonomy_barplots/prokaryote_family_20261118_final/README.md) | Bacteria + Archaea после модельного отбора и исключения органелльных меток; другой знаменатель. |
 | Изображения и их код | [Каталог рисунков](figures/taxonomy/family/README.md), [указатель кода](src/TAXONOMY_BARPLOTS.md) | Четыре актуальных изображения просмотрены для шага 4; выбранные описательные наблюдения и ограничения — [research/results_selection.md](research/results_selection.md). |
-| `paper/` учебного каркаса | Будущий каталог `manuscript/ai4science_ysda2026/` | Сейчас не заполняется. Литература и её части перенесены из `paper/` в `references/`; lit/ сохраняет реестр и свидетельства. |
+| `paper/` учебного каркаса | Будущий каталог `manuscript/ai4science_ysda2026/` | Сейчас не заполняется. Литература и её части находятся в `references/`; lit/ сохраняет реестр и свидетельства. |
 | Проверка шага 1 | [src/check_paper_scaffold.py](src/check_paper_scaffold.py) | Проверяет каркас, связи и заполнение глоссария; не принимает статью. |
 | `checks/check_paper.py` учебного каркаса | Остаётся в исходном `paper_project_skeleton/` | Проверка полной статьи откладывается до подготовки рукописи; в защищённый `checks/` ничего не добавляется. |
 

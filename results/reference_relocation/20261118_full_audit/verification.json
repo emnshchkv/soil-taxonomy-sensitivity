@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "literature",
+      "command": [
+        "conda",
+        "run",
+        "--no-capture-output",
+        "-n",
+        "qiime2-amplicon-2025.7",
+        "python3",
+        "src/check_literature_registry.py"
+      ],
+      "exit_code": 0,
+      "log": "literature.txt"
+    },
+    {
+      "name": "literature_tests",
+      "command": [
+        "conda",
+        "run",
+        "--no-capture-output",
+        "-n",
+        "qiime2-amplicon-2025.7",
+        "python3",
+        "tests/test_literature_registry.py"
+      ],
+      "exit_code": 0,
+      "log": "literature_tests.txt"
+    },
+    {
+      "name": "scaffold",
+      "command": [
+        "conda",
+        "run",
+        "--no-capture-output",
+        "-n",
+        "qiime2-amplicon-2025.7",
+        "python3",
+        "src/check_paper_scaffold.py"
+      ],
+      "exit_code": 0,
+      "log": "scaffold.txt"
+    },
+    {
+      "name": "numbers",
+      "command": [
+        "conda",
+        "run",
+        "--no-capture-output",
+        "-n",
+        "qiime2-amplicon-2025.7",
+        "python3",
+        "src/check_paper_results.py",
+        "--out-dir",
+        "results/paper_step4/20261118"
+      ],
+      "exit_code": 0,
+      "log": "numbers.txt"
+    },
+    {
+      "name": "general",
+      "command": [
+        "conda",
+        "run",
+        "--no-capture-output",
+        "-n",
+        "qiime2-amplicon-2025.7",
+        "python3",
+        "checks/check.py"
+      ],
+      "exit_code": 0,
+      "log": "general.txt"
+    }
+  ],
+  "stale_working_paths": 0,
+  "preserved_files": 123,
+  "prompt_sha256": "3dce3af72cf22c77b2ae2740f535020b391217ef0cb38282f1305d2e068dac13"
+}

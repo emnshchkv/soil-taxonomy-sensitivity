@@ -24,7 +24,7 @@ class LiteratureRegistryTests(unittest.TestCase):
         for i in range(5):
             key, wid, doi = f"work{i}", f"W{i + 1}", f"10.9999/example{i}"
             online, issue = (2023, 2024) if i == 0 else (2020, 2020)
-            primary = f"paper/{key}.txt"
+            primary = f"references/{key}.txt"
             self.write(primary, f"Synthetic primary source {i}\n")
             record = {"key": key, "wid": wid, "doi": doi, "title": f"Example title {i}", "journal": "Example Journal",
                       "issue_year": issue, "openalex_year": online, "discrepancy": f"Online {online}; issue {issue}",
@@ -58,7 +58,7 @@ class LiteratureRegistryTests(unittest.TestCase):
             transfers.append({"source": source, "destination": destination, "sha256": self.sha(destination), "bytes": len(content)})
         self.manifest = {"source_commit": self.commit, "source_base": self.base, "files": transfers,
                          "human_confirmation": {"quote": "Synthetic approval", "date": "2026-11-17"},
-                         "primary_files": [{"key": r["key"], "current_path": f'paper/{r["key"]}.txt', "sha256": r["local_sha256"]} for r in records]}
+                         "primary_files": [{"key": r["key"], "current_path": f'references/{r["key"]}.txt', "sha256": r["local_sha256"]} for r in records]}
         self.json("lit/transfer_manifest.json", self.manifest)
         self.write("lit/lit.md", "---\nstate: draft\n---\n# Registry\n\n" + "\n".join(sections))
         # Only the synthetic fixture is modified: the article remains in Git and
