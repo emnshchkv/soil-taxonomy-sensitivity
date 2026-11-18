@@ -4,6 +4,7 @@
 - [references.bib](references.bib) — выбранные семь библиографических записей, перенесённые без изменения.
 - [transfer_manifest.json](transfer_manifest.json) — исходный коммит, прежние и текущие пути, SHA256 всех копий и первичных текстов.
 - [transfer_check.json](transfer_check.json) — проверка переноса и идентификаторов.
+- [Сверка цитат и метаданных](../results/paper_scaffold/step3_20261118/literature.json) — текущий вердикт реестра; [команды и область проверки](../results/paper_scaffold/step3_20261118/README.md).
 - [evidence/20261117/verified_sources.json](evidence/20261117/verified_sources.json), [bibliography_sources.tsv](evidence/20261117/bibliography_sources.tsv), [bibliography_review.md](evidence/20261117/bibliography_review.md) — сохранённые метаданные, утверждения и подтверждение пользователя от 17 ноября: «Подтверждаю все семь DOI».
 
 Материалы перенесены 18 ноября 2026 года из `backup/article-before-pause-20261118`, коммит `37254a5a90a3efe5b4c6ca22e38c2e2066767178`. Рукопись не переносилась. Четыре PDF остаются в `paper/`; три первичных текста XML/HTML находятся в `evidence/20261117/`. Соответствие старых путей новым записано в manifest.

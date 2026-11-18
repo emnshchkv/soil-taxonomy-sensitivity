@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "literature",
+      "command": [
+        "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+        "src/check_literature_registry.py"
+      ],
+      "exit_code": 0,
+      "evidence": "literature.json"
+    },
+    {
+      "name": "scaffold",
+      "command": [
+        "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+        "src/check_paper_scaffold.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "project",
+      "command": [
+        "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+        "checks/check.py"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "scaffold_tests": {
+    "count": 11,
+    "exit_code": 0,
+    "executor": "week5_saved_research_evidence",
+    "stdout": "scaffold_tests.stdout.txt",
+    "stderr": "scaffold_tests.stderr.txt"
+  },
+  "literature_tests": {
+    "count": 5,
+    "exit_code": 0,
+    "executor": "selected_bibliography_history",
+    "full_log_saved": false
+  },
+  "content_review": {
+    "reviewer": "compression_library_evidence",
+    "date": "2026-11-18",
+    "method": "read-only comparison of the seven entries with saved primary texts and previous verification",
+    "result": "consistent; RESCRIPt Author summary locator corrected from page 1 to page 2",
+    "new_network_queries": false
+  },
+  "protected_files_unchanged_vs_commit": "eb3f441",
+  "protected_files_sha256": {
+    "METHOD.md": "fe1b7c6a84461a899ae2bb175ff2c54040a5daac6e2b644e73a8ada9b76c6542",
+    "METHOD_COMPARISON.md": "d6af15ab6b620fcbdb2242c407bad1d2b4081a8f40e841d02af9aabd62d02abe",
+    "ontology.yaml": "a39cc1fd13e37710b68f47e1b8ead3af725c8b55e36ca4fd40dcc0fc5f3d6035",
+    "data/meta/metadata.tsv": "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123",
+    "data/meta/researcher_ecology_20261118.yaml": "47a785609c497b4acf91f08c56f0c63b3879f124e04c07a0f1c0a21adb91465a",
+    "checks/check.py": "6ade7aad3e3a49f338ff8abea97ca880cf8d2de573902c47737a1f3ce1ee5c37",
+    "research/problem.md": "0b8bf20995cd3ccf5f7e0953917ce8f20c817971e0889175d1803c046e39985a",
+    "memory/L1.md": "b068f90db287a38edc201dcacf1356d4855f35403fcd52278e7b9a27e3fefa00",
+    "memory/L2.md": "b0d4c0e48ff0624d8b9a0a23f6cf2503b2c4e7efbd4372086a5aad0d0df68bde",
+    "memory/L3.md": "06a6bcfd3fd9e4fd5b43b7740463ee334370ccdba50edc211d7f40c3b44ccff9"
+  },
+  "citation_scope": "all ten TeX files at 37254a5a90a3efe5b4c6ca22e38c2e2066767178; current manuscript absent_not_checked"
+}

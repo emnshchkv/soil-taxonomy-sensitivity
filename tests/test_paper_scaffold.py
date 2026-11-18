@@ -121,9 +121,15 @@ rules:
         self.replace("research/problem.md", "state: deferred", "state: accepted")
         self.assert_failure(self.run_checker(), "research/problem.md: ожидалось state: deferred или draft")
 
-    def test_literature_must_remain_deferred(self):
+    def test_literature_draft_passes_without_claiming_content_acceptance(self):
         self.replace("lit/lit.md", "state: deferred", "state: draft")
-        self.assert_failure(self.run_checker(), "lit/lit.md: ожидалось state: deferred")
+        result = self.run_checker()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("Это не приёмка научных результатов, содержания статьи", result.stdout)
+
+    def test_unknown_literature_state_is_rejected(self):
+        self.replace("lit/lit.md", "state: deferred", "state: accepted")
+        self.assert_failure(self.run_checker(), "lit/lit.md: ожидалось state: deferred или draft")
 
     def test_layout_only_does_not_accept_missing_glossary_as_complete(self):
         (self.root / "GLOSSARY.md").unlink()

@@ -125,10 +125,10 @@ def check_scaffold(root: Path, layout_only: bool = False) -> list[str]:
             return {}
         return yaml_mapping(match.group(1), label)
 
-    # Step 2 permits a working problem statement; this checks state, not content.
+    # Steps 2–3 permit working documents; this checks state, not content.
     for relative, allowed_states in (
         ("research/problem.md", ("deferred", "draft")),
-        ("lit/lit.md", ("deferred",)),
+        ("lit/lit.md", ("deferred", "draft")),
     ):
         metadata = frontmatter(read(relative), relative)
         require(metadata.get("state") in allowed_states,
