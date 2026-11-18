@@ -1,0 +1,44 @@
+{
+  "status": "GENERATED",
+  "output": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_barplots/prokaryote_family_20261118",
+  "mask_rows": 10122,
+  "profile_rows": 2499,
+  "soil_figures": 12,
+  "files": 18,
+  "nonempty_soil_samples": {
+    "sklearn_silva138": [
+      "Kr1_S80",
+      "Kr3_S82",
+      "Kr4_S83",
+      "LUB2_S92",
+      "LUB3_S93",
+      "LUB4_S94",
+      "LUB5_S95",
+      "LUB6_S96"
+    ],
+    "sklearn_gtdb": [
+      "Kr1_S80",
+      "Kr2_S81",
+      "Kr3_S82",
+      "Kr4_S83",
+      "Kr5_S84",
+      "LUB2_S92",
+      "LUB3_S93",
+      "LUB4_S94",
+      "LUB5_S95",
+      "LUB6_S96"
+    ],
+    "sklearn_gg2": [
+      "Kr1_S80",
+      "Kr2_S81",
+      "Kr3_S82",
+      "Kr4_S83",
+      "Kr5_S84",
+      "LUB2_S92",
+      "LUB3_S93",
+      "LUB4_S94",
+      "LUB5_S95",
+      "LUB6_S96"
+    ]
+  }
+}

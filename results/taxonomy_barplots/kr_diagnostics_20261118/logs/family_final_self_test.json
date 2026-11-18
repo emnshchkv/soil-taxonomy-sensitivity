@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "src/check_prokaryotic_families.py",
+    "--out-dir",
+    "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_barplots/prokaryote_family_20261118_final",
+    "--self-test",
+    "--json-out",
+    "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_barplots/prokaryote_family_20261118_final/self_test.json"
+  ],
+  "started_utc": "2026-11-18T10:41:50.742609+00:00",
+  "working_directory": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "MPLCONFIGDIR": "/tmp/ai4science-family-final-check-c5g221kp/matplotlib",
+  "XDG_CACHE_HOME": "/tmp/ai4science-family-final-check-c5g221kp/xdg",
+  "exit_code": 0,
+  "finished_utc": "2026-11-18T10:41:54.500613+00:00"
+}

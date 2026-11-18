@@ -1,0 +1,533 @@
+{
+  "status": "PASS",
+  "author": "AI4Science-агент",
+  "created_utc": "2026-11-18T10:44:09.226142+00:00",
+  "readme_path": "results/taxonomy_barplots/kr_diagnostics_20261118/README.md",
+  "readme_sha256": "4b7fee262ff0912b6dbed038be96d8e8d1726638ac14bdd8c6949decd5cd762f",
+  "findings": [],
+  "checks_count": 123,
+  "checks": [
+    {
+      "check": "ASV count",
+      "status": "PASS"
+    },
+    {
+      "check": "Quoted verification result",
+      "status": "PASS"
+    },
+    {
+      "check": "Evidence hashes",
+      "status": "PASS"
+    },
+    {
+      "check": "Partition Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Mass Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Partition Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Mass Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Partition Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Mass Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Partition Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Mass Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Partition Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "Mass Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "Top count Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Top percentage Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Top GTDB GG2 Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Top SILVA domain Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Top count Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Top percentage Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Top GTDB GG2 Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Top SILVA domain Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Top family Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Top count Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Top percentage Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Top GTDB GG2 Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Top SILVA domain Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Top family Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Top count Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Top percentage Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Top GTDB GG2 Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Top SILVA domain Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Top count Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "Top percentage Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "Top GTDB GG2 Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "Top SILVA domain Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "No Archaea sklearn_silva138/Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected sum sklearn_silva138/Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Depth sum sklearn_silva138/Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Exact domain-only Taxon sklearn_silva138/Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "No Archaea sklearn_silva138/Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected sum sklearn_silva138/Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Depth sum sklearn_silva138/Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Exact domain-only Taxon sklearn_silva138/Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "No Archaea sklearn_silva138/Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected sum sklearn_silva138/Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Depth sum sklearn_silva138/Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Exact domain-only Taxon sklearn_silva138/Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "No Archaea sklearn_silva138/Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected sum sklearn_silva138/Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Depth sum sklearn_silva138/Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Kr4 sole exception sklearn_silva138",
+      "status": "PASS"
+    },
+    {
+      "check": "Kr4 family/genus sklearn_silva138",
+      "status": "PASS"
+    },
+    {
+      "check": "No Archaea sklearn_silva138/Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected sum sklearn_silva138/Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "Depth sum sklearn_silva138/Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "Exact domain-only Taxon sklearn_silva138/Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "No Archaea sklearn_gtdb/Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected sum sklearn_gtdb/Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Depth sum sklearn_gtdb/Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Exact domain-only Taxon sklearn_gtdb/Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "No Archaea sklearn_gtdb/Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected sum sklearn_gtdb/Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Depth sum sklearn_gtdb/Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Exact domain-only Taxon sklearn_gtdb/Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "No Archaea sklearn_gtdb/Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected sum sklearn_gtdb/Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Depth sum sklearn_gtdb/Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Exact domain-only Taxon sklearn_gtdb/Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "No Archaea sklearn_gtdb/Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected sum sklearn_gtdb/Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Depth sum sklearn_gtdb/Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Kr4 sole exception sklearn_gtdb",
+      "status": "PASS"
+    },
+    {
+      "check": "Kr4 family/genus sklearn_gtdb",
+      "status": "PASS"
+    },
+    {
+      "check": "No Archaea sklearn_gtdb/Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected sum sklearn_gtdb/Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "Depth sum sklearn_gtdb/Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "Exact domain-only Taxon sklearn_gtdb/Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "No Archaea sklearn_gg2/Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected sum sklearn_gg2/Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Depth sum sklearn_gg2/Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Exact domain-only Taxon sklearn_gg2/Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "No Archaea sklearn_gg2/Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected sum sklearn_gg2/Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Depth sum sklearn_gg2/Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Exact domain-only Taxon sklearn_gg2/Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "No Archaea sklearn_gg2/Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected sum sklearn_gg2/Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Depth sum sklearn_gg2/Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Exact domain-only Taxon sklearn_gg2/Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "No Archaea sklearn_gg2/Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected sum sklearn_gg2/Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Depth sum sklearn_gg2/Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Kr4 sole exception sklearn_gg2",
+      "status": "PASS"
+    },
+    {
+      "check": "Kr4 family/genus sklearn_gg2",
+      "status": "PASS"
+    },
+    {
+      "check": "No Archaea sklearn_gg2/Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "Selected sum sklearn_gg2/Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "Depth sum sklearn_gg2/Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "Exact domain-only Taxon sklearn_gg2/Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "SILVA Kr4 246/249",
+      "status": "PASS"
+    },
+    {
+      "check": "SILVA zero denominators",
+      "status": "PASS"
+    },
+    {
+      "check": "Archaea returned in LUB",
+      "status": "PASS"
+    },
+    {
+      "check": "No Kr family placeholders",
+      "status": "PASS"
+    },
+    {
+      "check": "Top-ASV coverage Kr1_S80",
+      "status": "PASS"
+    },
+    {
+      "check": "Top-ASV coverage Kr2_S81",
+      "status": "PASS"
+    },
+    {
+      "check": "Top-ASV coverage Kr3_S82",
+      "status": "PASS"
+    },
+    {
+      "check": "Top-ASV coverage Kr4_S83",
+      "status": "PASS"
+    },
+    {
+      "check": "Top-ASV coverage Kr5_S84",
+      "status": "PASS"
+    },
+    {
+      "check": "Narrative Taxon example",
+      "status": "PASS"
+    },
+    {
+      "check": "Classifier implementation SHA/version",
+      "status": "PASS"
+    },
+    {
+      "check": "Accepted-rank/Unassigned Confidence semantics",
+      "status": "PASS"
+    },
+    {
+      "check": "Latest corrected README wording",
+      "status": "PASS"
+    },
+    {
+      "check": "Biological uncertainty and per-model masks explicit",
+      "status": "PASS"
+    },
+    {
+      "check": "New family uncultured rule matches code",
+      "status": "PASS"
+    },
+    {
+      "check": "Linked file top_asv_by_kr.tsv",
+      "status": "PASS"
+    },
+    {
+      "check": "Linked file audit_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Linked file asv_diagnostics.tsv",
+      "status": "PASS"
+    },
+    {
+      "check": "Linked file classification_depth.tsv",
+      "status": "PASS"
+    },
+    {
+      "check": "Linked file cross_model_transitions.tsv",
+      "status": "PASS"
+    },
+    {
+      "check": "Linked file filter_reasons.tsv",
+      "status": "PASS"
+    },
+    {
+      "check": "Linked file sample_filter_summary.tsv",
+      "status": "PASS"
+    },
+    {
+      "check": "Linked file family_literal_tokens.tsv",
+      "status": "PASS"
+    },
+    {
+      "check": "Linked file verification.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Linked file audit_manifest.json",
+      "status": "PASS"
+    }
+  ],
+  "selected_domain_only_reads_non_Kr4": {
+    "sklearn_silva138/Kr1_S80": 38,
+    "sklearn_silva138/Kr2_S81": 0,
+    "sklearn_silva138/Kr3_S82": 2,
+    "sklearn_silva138/Kr5_S84": 0,
+    "sklearn_gtdb/Kr1_S80": 10142,
+    "sklearn_gtdb/Kr2_S81": 8013,
+    "sklearn_gtdb/Kr3_S82": 9147,
+    "sklearn_gtdb/Kr5_S84": 1413,
+    "sklearn_gg2/Kr1_S80": 10114,
+    "sklearn_gg2/Kr2_S81": 8098,
+    "sklearn_gg2/Kr3_S82": 8974,
+    "sklearn_gg2/Kr5_S84": 1465
+  },
+  "manual_review": {
+    "confidence": "Correct distinction of last accepted rank and Unassigned formula.",
+    "zero_columns": "Zero denominator correctly distinguished from a missing sample and positive unclassified fraction.",
+    "claims": "No biological ground truth claimed; diagnosis concerns saved assignments and their filtering.",
+    "contract": "Old literal contract and new uncultured rule are explicitly distinguished.",
+    "scope": "Read-only evidence review; no reclassification or external sequence identification."
+  },
+  "evidence_sha256": {
+    "asv_diagnostics.tsv": "3eac961033ff73c2f159c3d4e577e6015b1c135cef0182098d9f77f149d1fb33",
+    "top_asv_by_kr.tsv": "1d57bbefb18a33bfee30dcfd65fd7c0a0b105c81f7d43cde4946bf7d7c9f2f5d",
+    "sample_filter_summary.tsv": "c839e95e90d6eed78dfecbd33fbf2b2146c64dd881d9daea2b94fbb4420144d3",
+    "classification_depth.tsv": "d15b14f2bbdded48cb5291ae2977fa57d65942ad7a5c958e43165fc4f79e198e",
+    "filter_reasons.tsv": "0b0fa0cbd847ca253e2974e00ea96cfa00e3f40a464df198f0c051897767b30e",
+    "verification.json": "9f5be1dc4b65b85102387ad7734a91d74fe1848a7e98a515113df468551f1f0a",
+    "audit_manifest.json": "ebe984e23ad554216a6eea1c3d596499355bb63fdf88b840491159881f7e81d6"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "status": "FAIL",
+  "reviewer": "AI4Science-агент",
+  "checked_at_utc": "2026-11-18T10:39:21.433373+00:00",
+  "figures_reviewed": 4,
+  "figures": [
+    {
+      "name": "overview",
+      "path": "results/taxonomy_barplots/prokaryote_family_20261118/figures/prokaryotic_family_overview.png",
+      "sha256": "fcaeaddedee8b3d962547d198bfd3423be246019840bd4401b03d4400ebe6562",
+      "width_px": 2125,
+      "height_px": 4654,
+      "status": "FAIL",
+      "issues": [
+        "N labels overlap the rotated sample identifiers.",
+        "N rows from upper panels also overlap the following model headings."
+      ],
+      "observations": [
+        "Family legends, Archaea entries, rare-family grey and unknown-family hatching are readable.",
+        "The footer correctly explains a 2% threshold applied per sample.",
+        "SILVA NA positions remain visible."
+      ]
+    },
+    {
+      "name": "silva",
+      "path": "results/taxonomy_barplots/prokaryote_family_20261118/figures/prokaryotic_family_silva.png",
+      "sha256": "933981622768a4f8444629f2e6160ec4eec1ee5360825f22f7cf18093d212ef5",
+      "width_px": 2598,
+      "height_px": 1807,
+      "status": "FAIL",
+      "issues": [
+        "N labels overlap the rotated sample identifiers."
+      ],
+      "observations": [
+        "Family legends, Archaea entries, rare-family grey and unknown-family hatching are readable.",
+        "The footer correctly explains a 2% threshold applied per sample.",
+        "SILVA NA positions remain visible."
+      ]
+    },
+    {
+      "name": "gtdb",
+      "path": "results/taxonomy_barplots/prokaryote_family_20261118/figures/prokaryotic_family_gtdb.png",
+      "sha256": "49a692483f92d94cb0cb9f3232b95829b718faa2cfd969a718341a165d25ee5a",
+      "width_px": 2598,
+      "height_px": 1718,
+      "status": "FAIL",
+      "issues": [
+        "N labels overlap the rotated sample identifiers."
+      ],
+      "observations": [
+        "Family legends, Archaea entries, rare-family grey and unknown-family hatching are readable.",
+        "The footer correctly explains a 2% threshold applied per sample.",
+        "All ten sample bars remain present."
+      ]
+    },
+    {
+      "name": "gg2",
+      "path": "results/taxonomy_barplots/prokaryote_family_20261118/figures/prokaryotic_family_gg2.png",
+      "sha256": "24ff3170c02403baf80124fdc4ebff822c0f712d8519bd289b9955019d74c531",
+      "width_px": 2598,
+      "height_px": 1633,
+      "status": "FAIL",
+      "issues": [
+        "N labels overlap the rotated sample identifiers."
+      ],
+      "observations": [
+        "Family legends, Archaea entries, rare-family grey and unknown-family hatching are readable.",
+        "The footer correctly explains a 2% threshold applied per sample.",
+        "All ten sample bars remain present."
+      ]
+    }
+  ],
+  "cause": "N uses a relative axis-height offset. Long family legends increase the axis height, pushing N into the sample labels and next panel titles.",
+  "required_fix": "Use a fixed point offset below the axis for the N row, then regenerate into a new result directory and review again.",
+  "scientific_or_source_files_modified": false,
+  "scope": "Visual presentation only; independent numerical verification is separate."
+}

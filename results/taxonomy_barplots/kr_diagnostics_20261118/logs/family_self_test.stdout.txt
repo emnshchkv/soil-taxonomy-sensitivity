@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "baseline": "PASS",
+  "mutated": "FAIL",
+  "restored": "PASS",
+  "detected": [
+    "Segment ('sklearn_silva138', 'LUB5_S95', 'd__Bacteria;p__Acidobacteriota;c__Blastocatellia;o__Blastocatellales;f__Blastocatellaceae'): count mismatch"
+  ],
+  "mutation": "Moved one read between two categories of one bar, preserving N; recomputed fractions and refreshed the temporary output hash.",
+  "model": "sklearn_silva138",
+  "sample": "LUB5_S95",
+  "isolation": "Only a temporary output copy changed."
+}

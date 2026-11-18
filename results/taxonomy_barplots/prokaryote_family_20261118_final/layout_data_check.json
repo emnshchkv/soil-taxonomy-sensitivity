@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-18T10:41:54.628089+00:00",
+  "previous_run": "results/taxonomy_barplots/prokaryote_family_20261118",
+  "final_run": "results/taxonomy_barplots/prokaryote_family_20261118_final",
+  "method": "Byte comparison of all six TSVs; SHA256 of seven original sources against both manifests; every original generated artifact against its recorded SHA256; current code against committed 24ec42e and final manifest.",
+  "tables": {
+    "asv_mask.tsv": {
+      "byte_identical": true,
+      "old_sha256": "8125ce66c63e2413e4254443478dc9492301ebf7f25bf6b969e24002f8c90951",
+      "final_sha256": "8125ce66c63e2413e4254443478dc9492301ebf7f25bf6b969e24002f8c90951"
+    },
+    "filter_counts.tsv": {
+      "byte_identical": true,
+      "old_sha256": "bb430bfda383f4566304b30eb4a56fa32e2287c27b1d05e5d7303eeab8ef9922",
+      "final_sha256": "bb430bfda383f4566304b30eb4a56fa32e2287c27b1d05e5d7303eeab8ef9922"
+    },
+    "family_profiles.tsv": {
+      "byte_identical": true,
+      "old_sha256": "28458be89b299837db54deccd9ff0f47c4bc530c0e7d3a83d8bfec2c7276a52a",
+      "final_sha256": "28458be89b299837db54deccd9ff0f47c4bc530c0e7d3a83d8bfec2c7276a52a"
+    },
+    "family_membership.tsv": {
+      "byte_identical": true,
+      "old_sha256": "adc0c79cd8eadce7335f0cc9c520f89a771f127aa0cf01f7e007bfc4319c7bd9",
+      "final_sha256": "adc0c79cd8eadce7335f0cc9c520f89a771f127aa0cf01f7e007bfc4319c7bd9"
+    },
+    "family_keys.tsv": {
+      "byte_identical": true,
+      "old_sha256": "10dc399f1df69a6f2be015148852c255693bbcbf3984b37cb68fa33b1eb316f1",
+      "final_sha256": "10dc399f1df69a6f2be015148852c255693bbcbf3984b37cb68fa33b1eb316f1"
+    },
+    "family_barplot_data.tsv": {
+      "byte_identical": true,
+      "old_sha256": "dd4c907fbf5bf592679546dfea90b6dc887958128af68dc4417db2a9ef75f280",
+      "final_sha256": "dd4c907fbf5bf592679546dfea90b6dc887958128af68dc4417db2a9ef75f280"
+    }
+  },
+  "sources": {
+    "work/qza/ASV_table.qza": {
+      "previous_manifest": "0742f177e67b042b25ab1a479193d3d8c7c5dba22d8e73bd2cec254ef3066489",
+      "final_manifest": "0742f177e67b042b25ab1a479193d3d8c7c5dba22d8e73bd2cec254ef3066489",
+      "current_sha256": "0742f177e67b042b25ab1a479193d3d8c7c5dba22d8e73bd2cec254ef3066489"
+    },
+    "work/qza/rep_seq.qza": {
+      "previous_manifest": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86",
+      "final_manifest": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86",
+      "current_sha256": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86"
+    },
+    "data/meta/metadata.tsv": {
+      "previous_manifest": "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123",
+      "final_manifest": "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123",
+      "current_sha256": "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123"
+    },
+    "data/refs/VERSIONS.md": {
+      "previous_manifest": "d02f87f183b6d43699b3ec0850d8d9ef41149b682eccda38166cee2e01d9e66e",
+      "final_manifest": "d02f87f183b6d43699b3ec0850d8d9ef41149b682eccda38166cee2e01d9e66e",
+      "current_sha256": "d02f87f183b6d43699b3ec0850d8d9ef41149b682eccda38166cee2e01d9e66e"
+    },
+    "work/qza/taxonomy_sklearn_silva138.qza": {
+      "previous_manifest": "66d7b18f8349c6adcd2e0d8a74f860e6674f5691e5bdbea8cd885cb0381505d6",
+      "final_manifest": "66d7b18f8349c6adcd2e0d8a74f860e6674f5691e5bdbea8cd885cb0381505d6",
+      "current_sha256": "66d7b18f8349c6adcd2e0d8a74f860e6674f5691e5bdbea8cd885cb0381505d6"
+    },
+    "work/qza/taxonomy_sklearn_gtdb.qza": {
+      "previous_manifest": "a542ba9b762e42112b7dc95a05de6b9870b4b8e22b01acd0847b22201090f73e",
+      "final_manifest": "a542ba9b762e42112b7dc95a05de6b9870b4b8e22b01acd0847b22201090f73e",
+      "current_sha256": "a542ba9b762e42112b7dc95a05de6b9870b4b8e22b01acd0847b22201090f73e"
+    },
+    "work/qza/taxonomy_sklearn_gg2.qza": {
+      "previous_manifest": "e972b452e45cfc991e69712ded06b3ef47d5915a85caecfbdc06016ab2439771",
+      "final_manifest": "e972b452e45cfc991e69712ded06b3ef47d5915a85caecfbdc06016ab2439771",
+      "current_sha256": "e972b452e45cfc991e69712ded06b3ef47d5915a85caecfbdc06016ab2439771"
+    }
+  },
+  "original_outputs_unchanged": {
+    "asv_mask.tsv": true,
+    "filter_counts.tsv": true,
+    "family_profiles.tsv": true,
+    "family_membership.tsv": true,
+    "family_keys.tsv": true,
+    "family_barplot_data.tsv": true,
+    "figures/prokaryotic_family_overview.pdf": true,
+    "figures/prokaryotic_family_overview.png": true,
+    "figures/prokaryotic_family_overview.svg": true,
+    "figures/prokaryotic_family_silva.pdf": true,
+    "figures/prokaryotic_family_silva.png": true,
+    "figures/prokaryotic_family_silva.svg": true,
+    "figures/prokaryotic_family_gtdb.pdf": true,
+    "figures/prokaryotic_family_gtdb.png": true,
+    "figures/prokaryotic_family_gtdb.svg": true,
+    "figures/prokaryotic_family_gg2.pdf": true,
+    "figures/prokaryotic_family_gg2.png": true,
+    "figures/prokaryotic_family_gg2.svg": true
+  },
+  "code_matches_layout_commit": {
+    "src/plot_prokaryotic_families.py": {
+      "manifest_sha256": "05d1a0c0b97ac88ecc2594bf5908da9e839d33e8b1b0144ef43a58d49a3bb0f5",
+      "current_sha256": "05d1a0c0b97ac88ecc2594bf5908da9e839d33e8b1b0144ef43a58d49a3bb0f5",
+      "commit_24ec42e_sha256": "05d1a0c0b97ac88ecc2594bf5908da9e839d33e8b1b0144ef43a58d49a3bb0f5"
+    },
+    "src/render_prokaryotic_families.py": {
+      "manifest_sha256": "66d5e34061df6146d7cb14e3da27bfe0de3e06a451aac261d8d1bed3e67c4b37",
+      "current_sha256": "66d5e34061df6146d7cb14e3da27bfe0de3e06a451aac261d8d1bed3e67c4b37",
+      "commit_24ec42e_sha256": "66d5e34061df6146d7cb14e3da27bfe0de3e06a451aac261d8d1bed3e67c4b37"
+    },
+    "src/check_prokaryotic_families.py": {
+      "manifest_sha256": "d0a34f9dbb310039520c2c8fb2efbdb964a8f49b593554d396a92caddf2b3feb",
+      "current_sha256": "d0a34f9dbb310039520c2c8fb2efbdb964a8f49b593554d396a92caddf2b3feb",
+      "commit_24ec42e_sha256": "d0a34f9dbb310039520c2c8fb2efbdb964a8f49b593554d396a92caddf2b3feb"
+    },
+    "src/taxonomy_compare_io.py": {
+      "manifest_sha256": "4512d6fecd093fbfa63301d553dc4c8ae59158ce03b64bf3218dc60d6ee41a4c",
+      "current_sha256": "4512d6fecd093fbfa63301d553dc4c8ae59158ce03b64bf3218dc60d6ee41a4c",
+      "commit_24ec42e_sha256": "4512d6fecd093fbfa63301d553dc4c8ae59158ce03b64bf3218dc60d6ee41a4c"
+    },
+    "src/taxonomy_compare_core.py": {
+      "manifest_sha256": "3df322392bfadfd0b8720ded985734c46ef53d6dbdd11ce19a79cbd374e4a2bb",
+      "current_sha256": "3df322392bfadfd0b8720ded985734c46ef53d6dbdd11ce19a79cbd374e4a2bb",
+      "commit_24ec42e_sha256": "3df322392bfadfd0b8720ded985734c46ef53d6dbdd11ce19a79cbd374e4a2bb"
+    },
+    "src/classification_contract.py": {
+      "manifest_sha256": "7b8d8ef1b49cf2d095f85fb51867dd568d9b4107bdf74226b8ff2f015609f4fb",
+      "current_sha256": "7b8d8ef1b49cf2d095f85fb51867dd568d9b4107bdf74226b8ff2f015609f4fb",
+      "commit_24ec42e_sha256": "7b8d8ef1b49cf2d095f85fb51867dd568d9b4107bdf74226b8ff2f015609f4fb"
+    }
+  },
+  "scientific_inputs_unchanged": true
+}
