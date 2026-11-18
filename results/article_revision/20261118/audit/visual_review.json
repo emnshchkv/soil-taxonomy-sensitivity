@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "pdf_sha256": "851ff820092d867b390359d45f41b225b2207956dc0f4b6b2422c32c4e8f042e",
+  "main_pages": 4,
+  "total_pages": 10,
+  "pages": [
+    {
+      "page": 1,
+      "preview": "/private/tmp/article-revision-20261118-preview/page-01.png",
+      "sha256": "d40567e360cd8dfbdbaf8e0973975a838492a8979f2058b613f4953411a6b680",
+      "status": "PASS"
+    },
+    {
+      "page": 2,
+      "preview": "/private/tmp/article-revision-20261118-preview/page-02.png",
+      "sha256": "14da37171afd8ff77a4e3c978a61b4eaca013b499385eb73f7e62303a2612a05",
+      "status": "PASS"
+    },
+    {
+      "page": 3,
+      "preview": "/private/tmp/article-revision-20261118-preview/page-03.png",
+      "sha256": "a3b0f815b4ce592625fb13f2abb17be1390a00a4bc117e4eaca7b44d28640e0d",
+      "status": "PASS"
+    },
+    {
+      "page": 4,
+      "preview": "/private/tmp/article-revision-20261118-preview/page-04.png",
+      "sha256": "86ecff610e02eed863711ed4fc43700b2e5053325385312d27f154eb59ab7036",
+      "status": "PASS"
+    },
+    {
+      "page": 5,
+      "preview": "/private/tmp/article-revision-20261118-preview/page-05.png",
+      "sha256": "7f236823a5313f7b06916ade61ea9f643ecf29cd968d20511b5cc29c29f39599",
+      "status": "PASS"
+    },
+    {
+      "page": 6,
+      "preview": "/private/tmp/article-revision-20261118-preview/page-06.png",
+      "sha256": "167e44bae6cfa0662ce9b5e992cecf3b8961d108cfaaff7de88078b988591e7b",
+      "status": "PASS"
+    },
+    {
+      "page": 7,
+      "preview": "/private/tmp/article-revision-20261118-preview/page-07.png",
+      "sha256": "1d803b02798feec71cb9a6acbd6bca257a9abf483bc78bbdbab864c10896cbae",
+      "status": "PASS"
+    },
+    {
+      "page": 8,
+      "preview": "/private/tmp/article-revision-20261118-preview/page-08.png",
+      "sha256": "232c9c56fd204a49cbeca863dc135bc747275a4f76c966d0bcae1849f3d8a565",
+      "status": "PASS"
+    },
+    {
+      "page": 9,
+      "preview": "/private/tmp/article-revision-20261118-preview/page-09.png",
+      "sha256": "7821499647e9ed8860390f8f8b2fd82203412e2d038efdf08f4065fddfdc1933",
+      "status": "PASS"
+    },
+    {
+      "page": 10,
+      "preview": "/private/tmp/article-revision-20261118-preview/page-10.png",
+      "sha256": "5137a67c44dc19f52f47597f7cdf17e7e0d680387c816ceb42417e16d2729396",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Root visually inspected pages 1–3; revision_numeric inspected pages 4–10. No overlaps, clipping, missing legends or unreadable model/SHA/diagnostic tables."
+}

@@ -27,7 +27,7 @@ def digest(path):
 
 def inventory():
     paths = list(ARTICLE.rglob('*'))
-    for relative in ('results/paper_step4/20261118', 'results/article_step5/20261118'):
+    for relative in ('results/paper_step4/20261118', 'results/article_step5/20261118', 'results/article_revision/20261118'):
         paths.extend((ROOT/relative).glob('*'))
     return {str(p.relative_to(ROOT)):digest(p) for p in paths if p.is_file()}
 
@@ -55,6 +55,26 @@ def mutate_table(article):
     replace_one(temporary, '12351', '12352')
     needle = '../../results/article_step5/20261118/family_main.tex'
     replace_one(source_with(article,needle),needle,'mutated_family_main.tex')
+
+
+def crop_model_figure(article):
+    path=source_with(article,'prokaryotic_family_silva.pdf')
+    replace_one(path,'\\includegraphics[','\\includegraphics[trim={1bp 0 0 0},clip,')
+
+
+def duplicate_model_figure(article):
+    replace_one(article/'paper.tex','\\end{document}',
+                '\\includegraphics[width=\\textwidth]{../../figures/taxonomy/family/prokaryotic_family_silva.pdf}\n\\end{document}')
+
+
+def mutate_revision_table(article):
+    source=ROOT/'results/article_revision/20261118/kr_filter_table.tex'
+    target=article/source.name
+    shutil.copyfile(source,target)
+    # Even a wrong sample identifier is an error in the diagnostic table.
+    replace_one(target,'Kr1','Kr9')
+    needle='../../results/article_revision/20261118/kr_filter_table.tex'
+    replace_one(source_with(article,needle),needle,target.name)
 
 
 def mutate_claim(article, claim_id=None):
@@ -148,7 +168,10 @@ def main():
         ('unknown_citation',1,lambda a:replace_one(source_with(a,'\\cite{bokulich2018}'),'\\cite{bokulich2018}','\\cite{invented2099}'),True),
         ('missing_mandatory_section',1,lambda a:replace_one(source_with(a,'\\section{Ограничения}'),'\\section{Ограничения}',''),True),
         ('changed_actual_table_cell',1,mutate_table,True),
-        ('overview_band_gap_or_overlap',1,lambda a:replace_one(source_with(a,'766.03bp'),'766.03bp','765.03bp'),True),
+        ('cropped_model_figure',1,crop_model_figure,True),
+        ('duplicated_model_figure',1,duplicate_model_figure,True),
+        ('changed_revision_table',1,mutate_revision_table,True),
+        ('wrong_model_identity',1,lambda a:replace_one(a/'models.tex','gtdb_classifier_r220.qza','gtdb_classifier_r999.qza'),True),
         ('unmapped_short_prose',1,lambda a:replace_one(a/'sections/problem.tex','\\label{sec:problem}','\\label{sec:problem}\n\nПокрытие составляет 999 процентов.\n'),True),
         ('missing_claim_source',1,mutate_claim,True),
         ('running_title_warning',1,lambda a:(a/'paper.log').write_bytes(b'Title exceeds size limitations for running head.\n'+(a/'paper.log').read_bytes()),False),
@@ -169,7 +192,10 @@ def main():
         'unknown_citation':'unknown citations',
         'missing_mandatory_section':'eight required sections are missing or out of order',
         'changed_actual_table_cell':'actual numeric table differs',
-        'overview_band_gap_or_overlap':'overview bands leave a gap, overlap, or omit source content',
+        'cropped_model_figure':'single-page figure must preserve its full source',
+        'duplicated_model_figure':'model PDF must appear exactly once',
+        'changed_revision_table':'actual revision table differs',
+        'wrong_model_identity':'model filename missing/different',
         'unmapped_short_prose':'unmapped prose paragraph',
         'missing_claim_source':'unsupported/missing source',
         'running_title_warning':'running title exceeds template size limit',

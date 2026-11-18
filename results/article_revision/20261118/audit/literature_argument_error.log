@@ -1,0 +1,4 @@
+usage: check_literature_registry.py [-h] [--root ROOT]
+                                    [--article-dir ARTICLE_DIR]
+check_literature_registry.py: error: unrecognized arguments: --report results/article_revision/20261118/audit/literature.json
+ERROR conda.cli.main_run:execute(142): `conda run python3 src/check_literature_registry.py --article-dir paper/ai4science_ysda2026 --report results/article_revision/20261118/audit/literature.json` failed. (See above for error)

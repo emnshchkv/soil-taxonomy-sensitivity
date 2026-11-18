@@ -1,0 +1,2 @@
+sample	input_reads	retained_reads	observed_asv	shared_soil_asv	control_only_asv	shared_control_reads	total_soil_reads	shared_soil_reads	shared_soil_read_fraction
+K_S63	10396	9802	77	12	65	7535	140987	641	0.0045465184733344205

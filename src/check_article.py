@@ -20,6 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ARTICLE = Path('paper/ai4science_ysda2026')
 BUNDLE = Path('results/paper_step4/20261118')
+REVISION = Path('results/article_revision/20261118')
 SECTIONS = ('Постановка', 'Место в области', 'Метод', 'Проверка',
             'Ограничения', 'Эксперимент', 'Воспроизводимость', 'Заключение')
 FIELDS = ('claim_id', 'section', 'summary', 'basis', 'source', 'locator',
@@ -222,6 +223,14 @@ def inspect(root=ROOT, article_dir=None, draft=False):
             for r in extra_rows:
                 audit.require(r.get('source')==expected_sources.get(r['macro']), 'supplementary scalar source differs: '+r['macro'])
         expected_macros.update(extra_expected)
+        # Verify new diagnostic exports from frozen tables and QZA inputs, without
+        # importing the exporter or changing any scientific source.
+        from check_article_revision import inspect as inspect_revision
+        revision = inspect_revision(root, root / REVISION)
+        audit.require(revision['status'] == 'PASS', 'revision numeric verification failed: ' + '; '.join(revision['errors']))
+        details['revision_numeric_checks'] = revision['checks']
+        revision_rows = read_rows(root / REVISION / 'numbers.tsv')
+        expected_macros.update({row['macro']: row['value'] for row in revision_rows})
         definitions = {}
         for _, _, args, _ in commands(preamble, 'newcommand', 2, optional=True):
             name = args[0].lstrip('\\')
@@ -230,7 +239,7 @@ def inspect(root=ROOT, article_dir=None, draft=False):
             audit.require(definitions.get(name) == [expected], f'macro {name}: expected sole definition {expected!r}, found {definitions.get(name)}')
         for name in expected_macros:
             audit.require(not re.search(r'\\(?:renewcommand|providecommand|def|edef|gdef|xdef)\s*\{?\\' + name + r'\b', text), 'numeric macro overridden: ' + name)
-        frozen_used = set(re.findall(r'\\((?:Project|Cmp|Selected|Article)[A-Za-z]+)\b', body))
+        frozen_used = set(re.findall(r'\\((?:Project|Cmp|Selected|Article|Revision)[A-Za-z]+)\b', body))
         audit.require(frozen_used <= expected_macros.keys(), 'unknown numeric macros: ' + ', '.join(sorted(frozen_used - expected_macros.keys())))
         details['frozen_macros_used'] = sorted(frozen_used)
 
@@ -319,7 +328,7 @@ def inspect(root=ROOT, article_dir=None, draft=False):
             audit.require(row.get('section') == active_section, f'{claim_id}: section mismatch ({active_section!r})')
             for source in separated(row.get('source','')):
                 audit.require(not Path(source).is_absolute() and (root/source).is_file(), claim_id + ': unsupported/missing source ' + source)
-            actual_macros = set(re.findall(r'\\((?:Project|Cmp|Selected|Article)[A-Za-z]+)\b', content))
+            actual_macros = set(re.findall(r'\\((?:Project|Cmp|Selected|Article|Revision)[A-Za-z]+)\b', content))
             audit.require(actual_macros == separated(row.get('macros','')), claim_id + ': macro list does not match actual claim')
             actual_citations = citation_keys(content)
             audit.require(actual_citations == separated(row.get('citations','')), claim_id + ': citation list does not match actual claim')
@@ -360,6 +369,23 @@ def inspect(root=ROOT, article_dir=None, draft=False):
                 audit.need(section in review_text, 'section review not recorded: ' + section)
             audit.need('вслух' in review_text.lower(), 'review does not yet disclose oral-reading status')
 
+        model_source = resolve('models.tex')
+        audit.need(model_source in all_files, 'model identification table is not included')
+        if model_source in all_files:
+            models_text = all_files[model_source].replace(r'\_', '_').replace(r'\allowbreak', '')
+            normalized_models = re.sub(r'\s+', '', models_text)
+            provenance = json.loads((root/'results/full_classification/repair_20261109/model_provenance.json').read_text())
+            release_markers = {'silva138':'138.1', 'gtdb':'r220', 'gg2':'2024.9'}
+            for record in provenance:
+                filename = Path(record['path']).name
+                audit.require(filename in normalized_models, 'model filename missing/different: ' + filename)
+                audit.require(record['sha256'] in normalized_models, 'model SHA256 missing/different: ' + filename)
+                marker = release_markers[record['method']]
+                audit.require(marker in json.dumps(record) and marker in normalized_models, 'model release missing/different: ' + filename)
+                for field in ('framework_version', 'feature_classifier_version'):
+                    audit.require(record[field] in normalized_models, 'training version missing/different: ' + field)
+            audit.need(r'\label{tab:models}' in models_text, 'model table label missing')
+
         # Check the actually included table matrices, preserving row and model
         # order. Header translation is allowed; data-cell translation is not.
         tables = [(path, table_cells(value)) for path, value in all_files.items() if table_cells(value)]
@@ -379,10 +405,26 @@ def inspect(root=ROOT, article_dir=None, draft=False):
             header = all_files[path].split('\\hline',2)[1] if '\\hline' in all_files[path] else all_files[path]
             audit.require(bool(re.search(r'SILVA.*?GTDB.*?(?:GG2|Greengenes)', header, re.S)), 'model header order is not SILVA/GTDB/GG2')
         audit.need(len(tables) >= 2, 'numeric tables missing from actual inputs')
-        audit.require(len(tables) <= 2, 'unexpected numeric tables in actual inputs')
+        # Additional numeric tables are validated revision exports. Check actual
+        # included text as well as the on-disk bundle to catch manuscript copies.
+        revision_tables = ('kr_filter_table.tex', 'genus_denominators_table.tex')
+        for name in revision_tables:
+            expected_content = comments((root / REVISION / name).read_text())
+            candidates = [(path, value) for path, value in all_files.items()
+                          if path.name == name or expected_content == value]
+            audit.need(len(candidates) == 1, 'expected one actual revision table: ' + name)
+            if len(candidates) == 1:
+                audit.require(candidates[0][1] == expected_content, 'actual revision table differs: ' + name)
+        allowed_numeric = set(expected_tables) | set(revision_tables)
+        for path, matrix in tables:
+            if path.name not in allowed_numeric:
+                audit.require(any(matrix == table_cells((root / BUNDLE / name).read_text())
+                                  for name in expected_tables), 'unexpected numeric table: ' + str(path))
 
         figures = read_rows(root/BUNDLE/'figure_sources.tsv')
-        expected_paths = {(root/r['path']).resolve():r for r in figures}
+        # Only the three individual panels are used; the overview duplicated them.
+        expected_paths = {(root/r['path']).resolve():r for r in figures
+                          if r['figure_id'] != 'prokaryotic_family_overview'}
         included, placements = [], {}
         for start, _, args, starts in commands(body, 'includegraphics', optional=True):
             path = resolve(args[0], '.pdf'); included.append(path)
@@ -391,40 +433,12 @@ def inspect(root=ROOT, article_dir=None, draft=False):
             audit.require(path in expected_paths, 'unregistered figure: ' + str(path))
             if path in expected_paths and path.is_file():
                 audit.require(sha(path) == expected_paths[path]['sha256'], 'figure hash differs: ' + str(path))
-        audit.need(set(included) == expected_paths.keys(), 'all four registered appendix figure assets are required')
+        audit.need(set(included) == expected_paths.keys(), 'all three individual registered figure assets are required')
         for path, options in placements.items():
             if path not in expected_paths:
                 continue
-            is_overview = expected_paths[path]['figure_id'] == 'prokaryotic_family_overview'
-            if not is_overview or len(options) == 1:
-                audit.require(len(options) == 1, 'model PDF must appear exactly once: ' + path.name)
-                audit.require(not any('trim' in o or 'viewport' in o for o in options), 'single-page figure must preserve its full source: ' + path.name)
-            else:
-                # A tall overview may be split into three adjacent bands. Verify
-                # the complete vertical partition of the unchanged registered PDF,
-                # rather than accepting arbitrary cropping or duplicate pictures.
-                audit.require(len(options) == 3, 'overview split requires exactly three complete adjacent bands')
-                info = subprocess.run(['pdfinfo',str(path)],capture_output=True,text=True)
-                size = re.search(r'Page size:\s*([\d.]+) x ([\d.]+) pts',info.stdout)
-                audit.require(info.returncode == 0 and bool(size), 'cannot determine original overview page size')
-                intervals=[]
-                if size:
-                    height=Decimal(size.group(2))
-                    for option in options:
-                        trim=re.search(r'trim\s*=\s*\{?([^},\]]+)',option)
-                        values=re.findall(r'-?\d+(?:\.\d+)?(?:bp)?',trim.group(1)) if trim else []
-                        clipping=bool(re.search(r'(?:,|\[)\s*clip(?:\s*=\s*true)?\s*(?:,|\])',option))
-                        audit.require(len(values)==4 and clipping, 'overview band must have four explicit bp trim values and clipping')
-                        if trim:
-                            tokens=trim.group(1).split()
-                            audit.require(len(tokens)==4 and all(re.fullmatch(r'(?:0(?:\.0+)?|\d+(?:\.\d+)?bp)',v) for v in tokens), 'overview trim must use PDF bp units (or unitless zero)')
-                        audit.require('width=\\textwidth' in option.replace(' ',''), 'overview bands must retain full text width')
-                        if len(values)==4:
-                            left,bottom,right,top = [Decimal(v.removesuffix('bp')) for v in values]
-                            audit.require(left==right==0 and 0<=top<height-bottom<=height, 'invalid overview band or horizontal crop')
-                            intervals.append((top,height-bottom))
-                    audit.require(len(intervals)==3 and intervals[0][0]==0 and intervals[-1][1]==height and all(abs(a[1]-b[0])<=Decimal('.01') for a,b in zip(intervals,intervals[1:])), 'overview bands leave a gap, overlap, or omit source content')
-                    details['overview_bands_bp']=[[str(a),str(b)] for a,b in intervals]
+            audit.require(len(options) == 1, 'model PDF must appear exactly once: ' + path.name)
+            audit.require(not any('trim' in o or 'viewport' in o for o in options), 'single-page figure must preserve its full source: ' + path.name)
         details['registered_figure_assets']=len(set(included))
         details['figure_placements']=len(included)
         for _, _, args, _ in commands(body,'ref'):

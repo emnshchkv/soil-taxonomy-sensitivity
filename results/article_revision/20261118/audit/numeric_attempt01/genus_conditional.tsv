@@ -1,0 +1,4 @@
+model_a	model_b	rank	pooled_both_assigned_asv	pooled_both_match_asv	pooled_conditional_asv_fraction	defined_samples	conditional_read_median	conditional_sample_asv_min	conditional_sample_asv_max	conditional_sample_asv_median
+sklearn_silva138	sklearn_gtdb	род	1097	80	0.072926162260711025	6	0.070030349077615434	1	407	293.5
+sklearn_silva138	sklearn_gg2	род	1193	73	0.06119027661357921	6	0.060333747081075494	1	437	320.5
+sklearn_gtdb	sklearn_gg2	род	859	292	0.33993015133876603	6	0.2708895977034631	1	321	225.0

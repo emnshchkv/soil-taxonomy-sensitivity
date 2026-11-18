@@ -1,0 +1,113 @@
+{
+  "scope": "Read-only export and diagnostic aggregation, no new scientific pipeline run.",
+  "kr_filter_reasons": [
+    {
+      "sample": "Kr1_S80",
+      "total_reads": 12351,
+      "Eukaryota_reads": 9947,
+      "unknown_reads": 2364,
+      "organelle_reads": 2,
+      "selected_reads": 38
+    },
+    {
+      "sample": "Kr2_S81",
+      "total_reads": 8904,
+      "Eukaryota_reads": 7780,
+      "unknown_reads": 1113,
+      "organelle_reads": 11,
+      "selected_reads": 0
+    },
+    {
+      "sample": "Kr3_S82",
+      "total_reads": 9985,
+      "Eukaryota_reads": 8761,
+      "unknown_reads": 1213,
+      "organelle_reads": 9,
+      "selected_reads": 2
+    },
+    {
+      "sample": "Kr4_S83",
+      "total_reads": 12293,
+      "Eukaryota_reads": 10998,
+      "unknown_reads": 1046,
+      "organelle_reads": 0,
+      "selected_reads": 249
+    },
+    {
+      "sample": "Kr5_S84",
+      "total_reads": 1505,
+      "Eukaryota_reads": 495,
+      "unknown_reads": 1010,
+      "organelle_reads": 0,
+      "selected_reads": 0
+    }
+  ],
+  "genus_conditional": [
+    {
+      "model_a": "sklearn_silva138",
+      "model_b": "sklearn_gtdb",
+      "rank": "род",
+      "pooled_both_assigned_asv": 1097,
+      "pooled_both_match_asv": 80,
+      "pooled_conditional_asv_fraction": "0.072926162260711025",
+      "defined_samples": 6,
+      "conditional_read_median": "0.070030349077615434",
+      "conditional_sample_asv_min": 1,
+      "conditional_sample_asv_max": 407,
+      "conditional_sample_asv_median": 293.5
+    },
+    {
+      "model_a": "sklearn_silva138",
+      "model_b": "sklearn_gg2",
+      "rank": "род",
+      "pooled_both_assigned_asv": 1193,
+      "pooled_both_match_asv": 73,
+      "pooled_conditional_asv_fraction": "0.06119027661357921",
+      "defined_samples": 6,
+      "conditional_read_median": "0.060333747081075494",
+      "conditional_sample_asv_min": 1,
+      "conditional_sample_asv_max": 437,
+      "conditional_sample_asv_median": 320.5
+    },
+    {
+      "model_a": "sklearn_gtdb",
+      "model_b": "sklearn_gg2",
+      "rank": "род",
+      "pooled_both_assigned_asv": 859,
+      "pooled_both_match_asv": 292,
+      "pooled_conditional_asv_fraction": "0.33993015133876603",
+      "defined_samples": 6,
+      "conditional_read_median": "0.2708895977034631",
+      "conditional_sample_asv_min": 1,
+      "conditional_sample_asv_max": 321,
+      "conditional_sample_asv_median": 225.0
+    }
+  ],
+  "control": {
+    "sample": "K_S63",
+    "input_reads": 10396,
+    "retained_reads": 9802,
+    "observed_asv": 77,
+    "shared_soil_asv": 12,
+    "control_only_asv": 65,
+    "shared_control_reads": 7535,
+    "total_soil_reads": 140987,
+    "shared_soil_reads": 641,
+    "shared_soil_read_fraction": "0.0045465184733344205"
+  },
+  "method_parameters": [
+    {
+      "parameter": "retention_threshold_pct",
+      "value": 30,
+      "source": "checks/verify_denoising.py;src/check_exact_match.py",
+      "locator": "0 < 100 * kept < threshold * n; soil samples"
+    }
+  ],
+  "definitions": {
+    "conditional_asv": "ASVs with nonzero frequency and genus assigned by both models; complete lineage matching is case-sensitive after trimming whitespace.",
+    "conditional_defined_samples": "Samples with nonzero both_assigned_reads; zero denominators remain NA and are excluded from the median.",
+    "pooled_both_assigned_asv": "Distinct ASVs across all ten soil samples, not a sum across sample-specific denominators.",
+    "control_overlap": "ASV identifier set intersection, not proof of contamination or its source; no ASVs removed.",
+    "kr_filter": "Exclusive categories: Eukaryota, unknown domain, explicit organelle labels within Bacteria/Archaea, selected Bacteria/Archaea."
+  }
+}

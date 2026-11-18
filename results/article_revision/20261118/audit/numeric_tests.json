@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "scope": "Temporary diagnostic copies; frozen scientific sources and manuscript untouched.",
+  "cases": [
+    {
+      "case": "baseline",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "PASS",
+        "checks": 747,
+        "errors": [],
+        "scope": "Independent diagnostic transfer verification; no biological truth or contamination verdict."
+      },
+      "stderr": ""
+    },
+    {
+      "case": "wrong_control_overlap",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 747,
+        "errors": [
+          "control_summary.tsv: value differs ('K_S63',) shared_soil_asv",
+          "summary control differs"
+        ],
+        "scope": "Independent diagnostic transfer verification; no biological truth or contamination verdict."
+      },
+      "stderr": ""
+    },
+    {
+      "case": "wrong_sample_denominator",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 747,
+        "errors": [
+          "genus_conditional_per_sample.tsv: value differs ('sklearn_silva138', 'sklearn_gtdb', 'Kr1_S80') both_assigned_asv"
+        ],
+        "scope": "Independent diagnostic transfer verification; no biological truth or contamination verdict."
+      },
+      "stderr": ""
+    },
+    {
+      "case": "wrong_pooled_denominator",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 747,
+        "errors": [
+          "genus_conditional.tsv: value differs ('sklearn_silva138', 'sklearn_gtdb') pooled_both_assigned_asv",
+          "summary differs from genus_conditional.tsv"
+        ],
+        "scope": "Independent diagnostic transfer verification; no biological truth or contamination verdict."
+      },
+      "stderr": ""
+    },
+    {
+      "case": "wrong_kr_partition",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 747,
+        "errors": [
+          "kr_filter_reasons.tsv: value differs ('Kr1_S80',) Eukaryota_reads"
+        ],
+        "scope": "Independent diagnostic transfer verification; no biological truth or contamination verdict."
+      },
+      "stderr": ""
+    },
+    {
+      "case": "wrong_numeric_macro",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 747,
+        "errors": [
+          "revision scalar value/provenance differs: RevisionKrOneSilvaTotalReads"
+        ],
+        "scope": "Independent diagnostic transfer verification; no biological truth or contamination verdict."
+      },
+      "stderr": ""
+    },
+    {
+      "case": "wrong_tex_table",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 747,
+        "errors": [
+          "Kr TeX table differs"
+        ],
+        "scope": "Independent diagnostic transfer verification; no biological truth or contamination verdict."
+      },
+      "stderr": ""
+    },
+    {
+      "case": "wrong_quality_threshold",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 747,
+        "errors": [
+          "method_parameters.tsv: value differs ('retention_threshold_pct',) value"
+        ],
+        "scope": "Independent diagnostic transfer verification; no biological truth or contamination verdict."
+      },
+      "stderr": ""
+    },
+    {
+      "case": "restored",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "PASS",
+        "checks": 747,
+        "errors": [],
+        "scope": "Independent diagnostic transfer verification; no biological truth or contamination verdict."
+      },
+      "stderr": ""
+    }
+  ],
+  "case_count": 9,
+  "source_files_preserved": true
+}

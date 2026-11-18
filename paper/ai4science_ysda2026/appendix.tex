@@ -1,30 +1,25 @@
 \clearpage
 \onecolumn
 \appendix
+\input{models.tex}
+\clearpage
+\section{Дополнительные знаменатели и причины исключения}
+\begin{table}[!ht]
+\centering
+\small
+\caption{\porozhdeno{\Claim{T04}{Разбиение всех ридов образцов Kr после DADA2 по назначениям SILVA: Eukaryota, неизвестный домен, явные метки органелл и оставшиеся прокариотические риды $N$. В этих образцах категории не пересекаются и в сумме дают исходное число ридов; органелльные метки распознаются на любом ранге без учёта регистра. Категории обозначают результат классификации, не независимую проверку биологического происхождения.}}}
+\label{tab:krfilter}
+\input{../../results/article_revision/20261118/kr_filter_table.tex}
+\end{table}
+\begin{table}[!ht]
+\centering
+\small
+\caption{\porozhdeno{\Claim{T05}{Условные знаменатели совпадения полной таксономической линии до рода для каждой почвы и пары моделей: число присутствующих в образце ASV, назначенных обеими моделями, и сумма их ридов. Нулевой знаменатель означает NA; такие образцы не входят в медиану условного совпадения по ридам. Объединённые знаменатели ASV в тексте учитывают каждый уникальный почвенный ASV один раз и не равны сумме столбца по образцам.}}}
+\label{tab:conditional}
+\input{../../results/article_revision/20261118/genus_denominators_table.tex}
+\end{table}
+\clearpage
 \section{Таксономические профили на уровне семейств}
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\textwidth,trim=0bp 766.03bp 0bp 0bp,clip]{../../figures/taxonomy/family/prokaryotic_family_overview.pdf}
-\caption{\porozhdeno{\Claim{F01}{Таксономические профили на уровне семейств. Обзор, верхняя панель: SILVA. Показаны почвы, контроль исключён. Отбор Bacteria + Archaea исключает явные органелльные метки; $N$ зависит от модели. Неопределённое семейство (\texttt{UNCLASSIFIED}, включая точное \texttt{f\_\_uncultured}) остаётся в $N$ и показано штриховкой; при $N=0$ --- NA. Серым объединены назначенные семейства ниже \SelectedDisplayThresholdPct{}\% данного образца без удаления ридов. Обзор разделён на смежные полосы для читаемости; порядок образцов общий и подписан на нижней панели.}}}
-\label{fig:overview}
-\end{figure}
-\clearpage
-\begin{figure}[!ht]
-\ContinuedFloat
-\centering
-\includegraphics[width=\textwidth,trim=0bp 424.03bp 0bp 351bp,clip]{../../figures/taxonomy/family/prokaryotic_family_overview.pdf}
-\caption{\porozhdeno{\Claim{F01B}{Таксономические профили на уровне семейств. Продолжение обзора: GTDB. Знаменатель --- модельный $N$ после отбора Bacteria + Archaea и исключения явных органелльных меток; \texttt{UNCLASSIFIED} входит в $N$, пустой отбор обозначается NA. Порог объединения назначенных семейств --- \SelectedDisplayThresholdPct{}\% данного образца. Цвета и названия относятся к легенде этой модели; совпадение цвета между моделями не является сопоставлением таксонов.}}}
-\label{fig:overviewmiddle}
-\end{figure}
-\clearpage
-\begin{figure}[!ht]
-\ContinuedFloat
-\centering
-\includegraphics[width=\textwidth,trim=0bp 0bp 0bp 693bp,clip]{../../figures/taxonomy/family/prokaryotic_family_overview.pdf}
-\caption{\porozhdeno{\Claim{F01C}{Таксономические профили на уровне семейств. Окончание обзора: Greengenes2 и общий порядок почвенных образцов. Знаменатель --- $N$ после модельного отбора Bacteria + Archaea без явных органелльных меток. \texttt{UNCLASSIFIED} остаётся в $N$, при $N=0$ --- NA; назначенные семейства ниже \SelectedDisplayThresholdPct{}\% объединены серым. Это нижняя смежная полоса того же исходного рисунка.}}}
-\label{fig:overviewbottom}
-\end{figure}
-\clearpage
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=\textwidth]{../../figures/taxonomy/family/prokaryotic_family_silva.pdf}

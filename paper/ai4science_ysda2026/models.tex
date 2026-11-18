@@ -1,0 +1,32 @@
+\section{Идентификация готовых моделей}
+\label{app:models}
+\begin{table}[!ht]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.18}
+\caption{\porozhdeno{\Claim{T03}{Конкретные готовые классификаторы и сведения из записанного происхождения артефактов QIIME. Релиз SILVA указан действием получения референса; релизы GTDB и Greengenes2 устанавливаются только по именам импортов. Источник получения готового файла не следует из источника референсных последовательностей.}}}
+\label{tab:models}
+\begin{tabular}{@{}p{0.115\textwidth}p{0.11\textwidth}p{0.29\textwidth}p{0.135\textwidth}p{0.29\textwidth}@{}}
+\toprule
+База & Релиз & Файл модели & Источник готовой модели & Известная подготовка \\
+\midrule
+SILVA & 138.1, SSURef\_NR99 & \path{silva-138-99-nb-classifier.qza} & URL и автор не установлены & Получение SILVA через RESCRIPt, обратная транскрипция, очистка, фильтрация по длине и дерепликация. \\
+\addlinespace
+GTDB & r220, по именам импортов & \path{gtdb_classifier_r220.qza} & URL и автор не установлены & Импорт \path{bac120_ssu_reps_r220.fna}, \path{ar53_ssu_reps_r220.fna} и соответствующей таксономии; подготовка до импорта неизвестна. \\
+\addlinespace
+Greengenes2 & 2024.9, по именам импортов & \path{gg_2024.09.full-length.nb.sklearn-1.4.2.qza} & URL и автор не установлены & Импорт \path{2024.9.backbone.fna} и \path{2024.9.backbone.tax}; подготовка до импорта неизвестна. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\porozhdeno{\Claim{M05}{У всех моделей записано обучение действием \texttt{fit\_classifier\_naive\_bayes} в QIIME 2 и \texttt{feature-classifier} версии 2024.5.0; версия \texttt{scikit-learn} --- 1.4.2. Регион последовательностей, праймеры и полнота гена не установлены: слова \texttt{full-length} в имени файла Greengenes2 не являются независимым подтверждением полноты последовательностей. Полные SHA256 однозначно идентифицируют использованные файлы:
+\begin{center}
+\small
+\begin{tabular}{@{}ll@{}}
+SILVA & \texttt{c08a1aa4d56b449b511f7215543a43249ae9c54b57491428a7e5548a62613616} \\
+GTDB & \texttt{07aadcf7472d9cc6f853f6b4615348619f1a3eceb56c1fb1b6d8dbb20554765f} \\
+Greengenes2 & \texttt{5c5900c10ad601b12cf0d2280d52cc0f7852627e89070595cc3899a6d690ee27}
+\end{tabular}
+\end{center}
+}}

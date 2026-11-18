@@ -46,10 +46,15 @@ def spoken_text(text: str, macros: dict[str, str]) -> str:
         'tab:comparison': 'сравнения', 'tab:family': 'семейственных профилей',
         'fig:overview': 'обзора', 'fig:ggtwo': 'модели Greengenes два',
         'fig:silva': 'модели SILVA', 'fig:gtdb': 'модели GTDB',
+        'tab:models': 'идентификации моделей',
+        'tab:conditional': 'условных знаменателей',
+        'tab:krfilter': 'причин исключения ридов',
     }
     text = unwrap(text, 'ref', lambda key: references.get(key, key))
     text = text.replace(r'\frac{1}{2}\sum_t |p_t-q_t|',
                         'половина суммы по таксонам модулей разностей долей пэ тэ и ку тэ')
+    text = text.replace(r'\qquad 0\leq D\leq 1',
+                        'расстояние находится в пределах от нуля до единицы')
     text = text.replace(r'\[', ' ').replace(r'\]', ' ')
     text = text.replace(r'\%', ' процентов').replace(r'\_', '_')
     text = text.replace(r'\&', ' и ').replace('~', ' ').replace('$', '')

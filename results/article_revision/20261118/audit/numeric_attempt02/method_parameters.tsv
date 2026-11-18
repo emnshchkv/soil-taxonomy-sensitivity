@@ -1,0 +1,2 @@
+parameter	value	source	locator
+retention_threshold_pct	30	checks/verify_denoising.py;src/check_exact_match.py	0 < 100 * kept < threshold * n; soil samples
