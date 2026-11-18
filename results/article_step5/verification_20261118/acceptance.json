@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "scope": "Local article, numeric/citation/structure checks, independent agent content review, PDF visual review. Not biological truth, human acceptance or submission.",
+  "article": {
+    "pdf": "manuscript/ai4science_ysda2026/paper.pdf",
+    "pdf_sha256": "b44ee887be0fcf8d4e074e62d54de4e85e6c846fd18b2e486354255c79a549f8",
+    "tex": "manuscript/ai4science_ysda2026/paper.tex",
+    "main_pages": 4,
+    "main_text_end": 3,
+    "main_tables_page": 4,
+    "total_pages": 11,
+    "claims": 41,
+    "conditional_limitations": 7,
+    "bibliography_keys": [
+      "balvociute2017",
+      "bokulich2018",
+      "bolyen2019",
+      "callahan2016",
+      "mcdonald2024",
+      "parks2022",
+      "robeson2021"
+    ],
+    "visual_review": "visual_review.json"
+  },
+  "checks": [
+    {
+      "command": "python3 src/check_paper_results.py --out-dir results/paper_step4/20261118",
+      "exit_code": 0,
+      "checks": 1520,
+      "evidence": "numeric_final.log"
+    },
+    {
+      "command": "python3 src/check_literature_registry.py --article-dir manuscript/ai4science_ysda2026",
+      "exit_code": 0,
+      "evidence": "literature_acceptance.log"
+    },
+    {
+      "command": "python3 src/check_paper_scaffold.py",
+      "exit_code": 0,
+      "evidence": "scaffold_acceptance.log"
+    },
+    {
+      "command": "python3 src/check_article.py",
+      "exit_code": 0,
+      "checks": 646,
+      "evidence": "article_acceptance.log"
+    },
+    {
+      "command": "python3 tests/test_article.py",
+      "exit_code": 0,
+      "case_count": 14,
+      "evidence": "article_mutations_layout_retry1.json"
+    },
+    {
+      "command": "python3 checks/check.py",
+      "exit_code": 0,
+      "evidence": "scientific/general.txt"
+    }
+  ],
+  "environment": "conda run --no-capture-output -n qiime2-amplicon-2025.7; q2cli 2025.7.0",
+  "scientific_checks": {
+    "expected_exit_codes_matched": true,
+    "protected_files": 1209,
+    "changed_files": [],
+    "evidence": "scientific/verification.json",
+    "full_denoising_status": "INCOMPLETE/2",
+    "known_limitation": "Kr5_S84:1505/60078; exact-match PASS does not supersede retention criterion"
+  },
+  "build": {
+    "commands_exit_codes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "evidence": "results/article_step5/build_20261118_layout/build.json",
+    "installed_packages": false
+  },
+  "reading": {
+    "kind": "local speech synthesis only; no human listening asserted",
+    "sections": 9,
+    "evidence": "results/article_step5/reading_final_20261118/manifest.json"
+  },
+  "human_accepted": false,
+  "submitted": false,
+  "published": false
+}

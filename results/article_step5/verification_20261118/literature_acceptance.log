@@ -1,0 +1,173 @@
+{
+  "status": "PASS",
+  "scope": "registry, saved metadata and literal citation keys; not scientific or article acceptance",
+  "errors": [],
+  "incomplete": [],
+  "historical_citations": [
+    {
+      "path": "manuscript/ai4science_ysda2026/paper.tex",
+      "line": 44,
+      "command": "cite",
+      "keys": [
+        "callahan2016"
+      ]
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/paper.tex",
+      "line": 44,
+      "command": "cite",
+      "keys": [
+        "bolyen2019"
+      ]
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/paper.tex",
+      "line": 44,
+      "command": "cite",
+      "keys": [
+        "bokulich2018"
+      ]
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/paper.tex",
+      "line": 46,
+      "command": "cite",
+      "keys": [
+        "parks2022"
+      ]
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/paper.tex",
+      "line": 46,
+      "command": "cite",
+      "keys": [
+        "mcdonald2024"
+      ]
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/paper.tex",
+      "line": 46,
+      "command": "cite",
+      "keys": [
+        "robeson2021"
+      ]
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/paper.tex",
+      "line": 46,
+      "command": "cite",
+      "keys": [
+        "balvociute2017"
+      ]
+    }
+  ],
+  "current_citations": [
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/manuscript/ai4science_ysda2026/sections/limitations.tex",
+      "line": 3,
+      "command": "cite",
+      "keys": [
+        "robeson2021"
+      ]
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/manuscript/ai4science_ysda2026/sections/related.tex",
+      "line": 3,
+      "command": "cite",
+      "keys": [
+        "bokulich2018"
+      ]
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/manuscript/ai4science_ysda2026/sections/related.tex",
+      "line": 5,
+      "command": "cite",
+      "keys": [
+        "parks2022"
+      ]
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/manuscript/ai4science_ysda2026/sections/related.tex",
+      "line": 6,
+      "command": "cite",
+      "keys": [
+        "mcdonald2024"
+      ]
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/manuscript/ai4science_ysda2026/sections/related.tex",
+      "line": 8,
+      "command": "cite",
+      "keys": [
+        "robeson2021"
+      ]
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/manuscript/ai4science_ysda2026/sections/related.tex",
+      "line": 10,
+      "command": "cite",
+      "keys": [
+        "callahan2016"
+      ]
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/manuscript/ai4science_ysda2026/sections/related.tex",
+      "line": 11,
+      "command": "cite",
+      "keys": [
+        "bolyen2019"
+      ]
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/manuscript/ai4science_ysda2026/sections/related.tex",
+      "line": 13,
+      "command": "cite",
+      "keys": [
+        "balvociute2017"
+      ]
+    }
+  ],
+  "current_manuscript_status": "checked",
+  "source_commit": "37254a5a90a3efe5b4c6ca22e38c2e2066767178",
+  "historical_tex_files": [
+    "manuscript/ai4science_ysda2026/authors.tex",
+    "manuscript/ai4science_ysda2026/numbers.tex",
+    "manuscript/ai4science_ysda2026/paper.tex",
+    "manuscript/ai4science_ysda2026/paper_final.tex",
+    "manuscript/ai4science_ysda2026/tables/all_distances.tex",
+    "manuscript/ai4science_ysda2026/tables/asv_coverage.tex",
+    "manuscript/ai4science_ysda2026/tables/genus_category_percent.tex",
+    "manuscript/ai4science_ysda2026/tables/genus_coverage.tex",
+    "manuscript/ai4science_ysda2026/tables/genus_pairs.tex",
+    "manuscript/ai4science_ysda2026/tables/genus_read_match.tex"
+  ],
+  "historical_citation_keys": [
+    "balvociute2017",
+    "bokulich2018",
+    "bolyen2019",
+    "callahan2016",
+    "mcdonald2024",
+    "parks2022",
+    "robeson2021"
+  ],
+  "current_citation_keys": [
+    "balvociute2017",
+    "bokulich2018",
+    "bolyen2019",
+    "callahan2016",
+    "mcdonald2024",
+    "parks2022",
+    "robeson2021"
+  ],
+  "selected_keys": [
+    "balvociute2017",
+    "bokulich2018",
+    "bolyen2019",
+    "callahan2016",
+    "mcdonald2024",
+    "parks2022",
+    "robeson2021"
+  ],
+  "transferred_files_checked": 28,
+  "primary_files_checked": 7
+}

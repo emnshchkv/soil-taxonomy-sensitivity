@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/tests/test_article.py", line 139, in <module>
+    sys.exit(main())
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/tests/test_article.py", line 112, in main
+    mutation(article)
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/tests/test_article.py", line 85, in <lambda>
+    ('running_title_warning',1,lambda a:replace_one(a/'paper.log','This is','Title exceeds size limitations for running head.\nThis is'),False),
+  File "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/tests/test_article.py", line 34, in replace_one
+    text = path.read_text()
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/pathlib.py", line 1135, in read_text
+    return f.read()
+  File "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd0 in position 67758: invalid continuation byte
+ERROR conda.cli.main_run:execute(142): `conda run python3 tests/test_article.py --report results/article_step5/verification_20261118/article_mutations_layout.json` failed. (See above for error)

@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "pdf": "manuscript/ai4science_ysda2026/paper.pdf",
+  "pdf_sha256": "b44ee887be0fcf8d4e074e62d54de4e85e6c846fd18b2e486354255c79a549f8",
+  "render_command": [
+    "pdftoppm",
+    "-r",
+    "110",
+    "-png",
+    "manuscript/ai4science_ysda2026/paper.pdf",
+    "/private/tmp/article-step5-render-final/page"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "status": "PASS",
+      "reviewer": "root agent",
+      "note": "Название, аннотация, анонимность и локальная сноска без ложной подачи; текст читаем.",
+      "render_path": "/private/tmp/article-step5-render-final/page-01.png",
+      "render_sha256": "adc909a6c1534d6c277a9e610e66cfd1a85544bd55070d8d305bd48b756fd866"
+    },
+    {
+      "page": 2,
+      "status": "PASS",
+      "reviewer": "root agent",
+      "note": "Колонтитул исправлен; метод, формула, проверки и ограничения читаемы.",
+      "render_path": "/private/tmp/article-step5-render-final/page-02.png",
+      "render_sha256": "f89fa8be478e830baa035ee7ef4f2a4c5e033a0b9fb62bef3b3d397afca68e9c"
+    },
+    {
+      "page": 3,
+      "status": "PASS",
+      "reviewer": "root agent",
+      "note": "Продолжение ограничений, эксперимент, воспроизводимость и заключение; ссылки разрешены.",
+      "render_path": "/private/tmp/article-step5-render-final/page-03.png",
+      "render_sha256": "1299dd4b9bb1c4d6a2eb96bfa9b88059424039ea1d568b6ec78be54d48c4ea9b"
+    },
+    {
+      "page": 4,
+      "status": "PASS",
+      "reviewer": "root agent",
+      "note": "Обе основные таблицы читаемы; объединены в один float, численные ячейки и NA сохранены.",
+      "render_path": "/private/tmp/article-step5-render-final/page-04.png",
+      "render_sha256": "e53a3c3ae98d9749742c8ef0d23a1d78686b2c57d4654f7ae299b1ebd5f428c2"
+    },
+    {
+      "page": 5,
+      "status": "PASS",
+      "reviewer": "root agent",
+      "note": "Библиография и таблица ИИ читаемы; устранено растягивание интервалов библиографии.",
+      "render_path": "/private/tmp/article-step5-render-final/page-05.png",
+      "render_sha256": "cb09b7f3de9f13107c6213c72e0de9b24ca934d54772716eea38b145b17ec3c8"
+    },
+    {
+      "page": 6,
+      "status": "PASS",
+      "reviewer": "independent visual agent",
+      "note": "SILVA верхняя полоса обзора; N/NA, легенда и колонтитул читаемы.",
+      "render_path": "/private/tmp/article-step5-render-final/page-06.png",
+      "render_sha256": "cfb20ccce212b003dee3ddd88cebe92231a1cf59df74a7cd8f96111a0d153036"
+    },
+    {
+      "page": 7,
+      "status": "PASS",
+      "reviewer": "independent visual agent",
+      "note": "GTDB средняя смежная полоса обзора; легенда цела.",
+      "render_path": "/private/tmp/article-step5-render-final/page-07.png",
+      "render_sha256": "ac2cc6917eb28ec453edff7b55f5db11eee4bd67c0e1d9bb3fd883eda69396e0"
+    },
+    {
+      "page": 8,
+      "status": "PASS",
+      "reviewer": "independent visual agent",
+      "note": "GG2 нижняя полоса обзора и общая ось образцов целы.",
+      "render_path": "/private/tmp/article-step5-render-final/page-08.png",
+      "render_sha256": "b8fc9fc5d0a851e281dbe6748d1675237cbeb806e208a0471650cf201f8302b6"
+    },
+    {
+      "page": 9,
+      "status": "PASS",
+      "reviewer": "independent visual agent",
+      "note": "Полный профиль SILVA; легенда и NA читаемы; колонтитул исправлен.",
+      "render_path": "/private/tmp/article-step5-render-final/page-09.png",
+      "render_sha256": "963843b3a17eb940e64936324791917fd0d37b9f9e5e81d8886fd27b00949b56"
+    },
+    {
+      "page": 10,
+      "status": "PASS",
+      "reviewer": "independent visual agent",
+      "note": "Полный профиль GTDB; легенда, N и подпись читаемы.",
+      "render_path": "/private/tmp/article-step5-render-final/page-10.png",
+      "render_sha256": "e1de2ed74f4482fb8e1aacd3fef2d1feb40bb0d5bda0a8ab8eed3a85a8dd75d1"
+    },
+    {
+      "page": 11,
+      "status": "PASS",
+      "reviewer": "independent visual agent",
+      "note": "Полный профиль GG2; легенда, N и подпись читаемы.",
+      "render_path": "/private/tmp/article-step5-render-final/page-11.png",
+      "render_sha256": "0852de74386c460de1a8e2f44ff87ff4c4214ee78a1968bdc034419dd24cd1d0"
+    }
+  ],
+  "main_pages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "main_text_end": 3,
+  "main_tables_page": 4,
+  "bibliography_and_ai_page": 5,
+  "appendix_pages": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "human_review": false,
+  "prior_visual_findings_resolved": [
+    "suppressed running title",
+    "false submitted notice in standard template",
+    "large stretched gaps between tables and bibliography entries"
+  ],
+  "scientific_or_template_source_files_modified": false
+}
