@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "baseline_commit": "4ab9173b66e3d96f6de2614cf53003d2f9970e85",
+  "checks": [
+    {
+      "name": "scaffold",
+      "command": [
+        "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+        "src/check_paper_scaffold.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "project",
+      "command": [
+        "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+        "checks/check.py"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "scaffold_tests": {
+    "count": 10,
+    "exit_code": 0,
+    "executor": "problem_scaffold_transition",
+    "stdout": "scaffold_tests.stdout.txt",
+    "stderr": "scaffold_tests.stderr.txt"
+  },
+  "protected_files_unchanged": {
+    "METHOD_COMPARISON.md": "d6af15ab6b620fcbdb2242c407bad1d2b4081a8f40e841d02af9aabd62d02abe",
+    "METHOD.md": "fe1b7c6a84461a899ae2bb175ff2c54040a5daac6e2b644e73a8ada9b76c6542",
+    "ontology.yaml": "a39cc1fd13e37710b68f47e1b8ead3af725c8b55e36ca4fd40dcc0fc5f3d6035",
+    "data/meta/metadata.tsv": "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123",
+    "data/meta/researcher_ecology_20261118.yaml": "47a785609c497b4acf91f08c56f0c63b3879f124e04c07a0f1c0a21adb91465a",
+    "checks/check.py": "6ade7aad3e3a49f338ff8abea97ca880cf8d2de573902c47737a1f3ce1ee5c37"
+  },
+  "original_method_sections_unchanged_except_trailing_newline": true,
+  "content_review": {
+    "date": "2026-11-18",
+    "reviewer": "problem_source_audit",
+    "scope": "manual comparison against METHOD_COMPARISON.md and git history",
+    "result": "consistent after clarifying INCOMPLETE cases and conditional denominators",
+    "new_hypotheses_introduced": false
+  }
+}

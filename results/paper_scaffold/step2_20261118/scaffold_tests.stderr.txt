@@ -1,0 +1,15 @@
+test_broken_local_link_is_rejected (__main__.ScaffoldCLIContracts) ... ok
+test_clean_scaffold_passes (__main__.ScaffoldCLIContracts) ... ok
+test_duplicate_symbol_is_rejected (__main__.ScaffoldCLIContracts) ... ok
+test_empty_unit_is_rejected (__main__.ScaffoldCLIContracts) ... ok
+test_layout_only_does_not_accept_missing_glossary_as_complete (__main__.ScaffoldCLIContracts) ... ok
+test_literature_must_remain_deferred (__main__.ScaffoldCLIContracts) ... ok
+test_malformed_table_row_is_rejected (__main__.ScaffoldCLIContracts) ... ok
+test_problem_draft_passes_without_claiming_content_acceptance (__main__.ScaffoldCLIContracts) ... ok
+test_unknown_ontology_range_is_rejected (__main__.ScaffoldCLIContracts) ... ok
+test_unknown_problem_state_is_rejected (__main__.ScaffoldCLIContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.137s
+
+OK
