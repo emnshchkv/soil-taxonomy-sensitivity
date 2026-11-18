@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "prompt": "AGENT_ARTICLE_STEP5_PROMPT.txt",
+  "prompt_sha256": "85b6c68abdc1bb3665ad4890f47c52fb1b2592110aa243c3b585976e0118df6a",
+  "existing_input_paths_checked": 21,
+  "manuscript_status": "absent_not_checked",
+  "scope": "Prompt paths and required scope clauses; the prompt has not been executed and no article acceptance is claimed"
+}
