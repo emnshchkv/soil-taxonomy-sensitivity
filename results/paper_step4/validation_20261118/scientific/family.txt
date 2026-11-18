@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": 13201,
+  "scope": "Per-model prokaryotic family profiles and per-sample display threshold",
+  "threshold_fraction": "1/50",
+  "threshold_cases": {
+    "at_or_above": 156,
+    "below": 2310
+  },
+  "soil_bars": 30,
+  "zero_selected_soil_samples": {
+    "sklearn_silva138": [
+      "Kr2_S81",
+      "Kr5_S84"
+    ],
+    "sklearn_gtdb": [],
+    "sklearn_gg2": []
+  },
+  "errors": []
+}

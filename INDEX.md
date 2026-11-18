@@ -98,3 +98,6 @@
 
 - [[results/paper_step4/20261118/README.md]] — числовой комплект будущей статьи, карта 37 макросов, таблицы и реестр рисунков.
 - [[src/make_paper_results.py]], [[src/paper_results_core.py]] — генерация в новый каталог; [[results/paper_step4/validation_20261118/reproduction.json]] — побайтное воспроизведение.
+
+- [[results/paper_step4/README.md]] — итог шага 4 и команды повторной проверки; [[Проверка числового комплекта статьи]] — приёмка чисел и ограничений.
+- [[src/check_paper_results.py]], [[tests/test_paper_results.py]] — независимая сверка и изолированные подмены; [[src/run_paper_step4_scientific_checks.py]] — восемь существующих проверок и сохранность источников.

@@ -1,0 +1,144 @@
+{
+  "scope": "Existing scientific checks and source preservation; no manuscript validation",
+  "records": [
+    {
+      "name": "comparison",
+      "command": [
+        "python3",
+        "src/check_taxonomy_comparison.py",
+        "--out-dir",
+        "results/taxonomy_comparison/finish_20261116/main"
+      ],
+      "environment": "qiime2-amplicon-2025.7",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "matched": true,
+      "log": "comparison.txt",
+      "log_sha256": "b9fc9306c2a51e7d2b1bcb29bc3625cbdd3961b93e8c334092a01f13d3ade9d9",
+      "checker_sha256": "03aa2e7700e0aaf22fa74d36f62f4b9a436816bb916d9645e535c5257e9f233b"
+    },
+    {
+      "name": "family",
+      "command": [
+        "python3",
+        "src/check_prokaryotic_families.py",
+        "--out-dir",
+        "results/taxonomy_barplots/prokaryote_family_20261118_final"
+      ],
+      "environment": "qiime2-amplicon-2025.7",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "matched": true,
+      "log": "family.txt",
+      "log_sha256": "c73d4af409c7160f318febff8305f3bd1248abd1342028a224ed19bdefd465a6",
+      "checker_sha256": "d0a34f9dbb310039520c2c8fb2efbdb964a8f49b593554d396a92caddf2b3feb"
+    },
+    {
+      "name": "family_self_test",
+      "command": [
+        "python3",
+        "src/check_prokaryotic_families.py",
+        "--out-dir",
+        "results/taxonomy_barplots/prokaryote_family_20261118_final",
+        "--self-test"
+      ],
+      "environment": "qiime2-amplicon-2025.7",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "matched": true,
+      "log": "family_self_test.txt",
+      "log_sha256": "7f83f718cc389e149aebf9216a8149672e7c4e0c54ac790cfad718269abda111",
+      "checker_sha256": "d0a34f9dbb310039520c2c8fb2efbdb964a8f49b593554d396a92caddf2b3feb"
+    },
+    {
+      "name": "exact_match",
+      "command": [
+        "python3",
+        "src/check_exact_match.py"
+      ],
+      "environment": "qiime2-amplicon-2025.7",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "matched": true,
+      "log": "exact_match.txt",
+      "log_sha256": "c90ba9ee323e1d88c0125405b5dd9e42ef6824e86de498e5ea641beb29deb94f",
+      "checker_sha256": "cf5bd9dea6347859ad5fe988b1feaa00ec21ded4296e96fab08ade8362d356e4"
+    },
+    {
+      "name": "full_denoising",
+      "command": [
+        "python3",
+        "checks/verify_denoising.py"
+      ],
+      "environment": "qiime2-amplicon-2025.7",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "matched": true,
+      "log": "full_denoising.txt",
+      "log_sha256": "8ad05d41f3e8e27d3b43a91f1144bf8cda2220dadd6e4a836ca4be21936d9dbf",
+      "checker_sha256": "659c083342c32ac6952144bc04f4a7432b675808b9be16c54f4a64b1ab2c3a6c",
+      "status": "INCOMPLETE",
+      "limitation": "Kr5_S84 retention 1505/60078 below 30% in three saved runs; criteria unchanged",
+      "actual_incomplete_reasons": [
+        "INCOMPLETE run 1: Kr5_S84 retention below 30%; human review",
+        "INCOMPLETE run 2: Kr5_S84 retention below 30%; human review",
+        "INCOMPLETE run 3: Kr5_S84 retention below 30%; human review"
+      ],
+      "known_limitation_only": true,
+      "repeat_metrics_zero": true
+    },
+    {
+      "name": "scaffold",
+      "command": [
+        "python3",
+        "src/check_paper_scaffold.py"
+      ],
+      "environment": "qiime2-amplicon-2025.7",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "matched": true,
+      "log": "scaffold.txt",
+      "log_sha256": "f47624f2a66b46fb6492ed1b413f1f6b1b35767b002ae3b1d352b2e986b6207d",
+      "checker_sha256": "0451e63d8752b0b2702abc863a07f6f35265656c2fdfc37e7f928d68a080643b"
+    },
+    {
+      "name": "literature",
+      "command": [
+        "python3",
+        "src/check_literature_registry.py"
+      ],
+      "environment": "qiime2-amplicon-2025.7",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "matched": true,
+      "log": "literature.txt",
+      "log_sha256": "25481f0719ebeaa362dbfb6573ab26169c59cbbcf64d9963587e6ed128aa0517",
+      "checker_sha256": "3df0542014a4a352295f3e13e1cd38aadedcedaee001105a276255edc8dabaa3"
+    },
+    {
+      "name": "general",
+      "command": [
+        "python3",
+        "checks/check.py"
+      ],
+      "environment": "qiime2-amplicon-2025.7",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "matched": true,
+      "log": "general.txt",
+      "log_sha256": "3915737e1e7b391252e1cc999ccedacf437b8e9f528b4e17dde5260d97d545d2",
+      "checker_sha256": "6ade7aad3e3a49f338ff8abea97ca880cf8d2de573902c47737a1f3ce1ee5c37"
+    }
+  ],
+  "all_expected_exit_codes": true,
+  "full_denoising_status": "INCOMPLETE",
+  "protected_files": 1209,
+  "changed_files": [],
+  "source_preservation": "PASS",
+  "baseline_sha256": {
+    "results/paper_step4/preflight_20261118/baseline.json": "18ac9b437d5937b1a10088bc7d861a9f6a6579a901db78b129a5b7562e316062",
+    "results/paper_step4/preflight_20261118/private_inputs_before.json": "a74c5940b636e7991fe9e22c32e5ee3d542a528cbf579334969b45dc47a0cafd"
+  },
+  "runner_sha256": "27d0cc67452c84bcb1aa87a45cf1b670e3a636684b36f2ba6cf2c7d8f4f16262",
+  "manuscript_status": "absent_not_checked"
+}

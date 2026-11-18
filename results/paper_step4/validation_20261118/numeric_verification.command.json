@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "src/check_paper_results.py",
+    "--out-dir",
+    "results/paper_step4/20261118",
+    "--report",
+    "results/paper_step4/validation_20261118/numeric_verification.json"
+  ],
+  "conda_environment": "qiime2-amplicon-2025.7",
+  "started_utc": "2026-11-18T14:41:53.548850+00:00",
+  "finished_utc": "2026-11-18T14:41:53.777180+00:00",
+  "elapsed_seconds": 0.22799604100146098,
+  "exit_code": 0
+}

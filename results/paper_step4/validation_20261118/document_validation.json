@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "links_checked": 104,
+  "ontology_edges_checked": 26,
+  "completed_tasks": 4,
+  "notes_checked": 5,
+  "manuscript_status": "absent_not_checked",
+  "checks": "Local link existence, ontology domain/range, completed task outcomes, summary consistency with saved verification"
+}
