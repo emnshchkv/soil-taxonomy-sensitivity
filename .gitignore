@@ -7,7 +7,7 @@ __pycache__/
 work/
 data/raw/
 data/refs/*.qza
-paper/*.pdf
+references/*.pdf
 
 # Local reference template supplied by the user
 /ai4science_ysda2026_template/

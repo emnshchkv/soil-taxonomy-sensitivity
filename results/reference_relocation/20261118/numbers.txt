@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "checks": 1520,
+  "issues": [],
+  "manuscript_status": "absent_not_checked",
+  "scope": "article-number transfer; biological validity not assessed"
+}

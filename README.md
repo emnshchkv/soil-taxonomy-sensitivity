@@ -61,7 +61,7 @@
 | `checks/` | `check.py` — проверка готовности этапа; только чтение |
 | `env/` | Окружение conda `qiime2-amplicon-2025.7`: `environment.yml`, `explicit.txt` |
 | `memory/` | `denoise_choice.md` — решение человека по `trim-left` и `trunc-len`; конспекты статей (`L1`–`L3`) и `state.md` |
-| `paper/` | PDF статей по теме и их разбивка на части (`parts/`) |
+| `references/` | PDF статей по теме и их разбивка на части (`parts/`) |
 | `library/` | Тексты найденных источников; появляется, когда агент скачивает открытые версии |
 
 

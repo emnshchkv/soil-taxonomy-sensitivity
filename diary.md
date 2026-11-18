@@ -602,3 +602,10 @@ conda run --no-capture-output -n qiime2-amplicon-2025.7 qiime cutadapt trim-sing
 Итог проверки: src/check_paper_results.py --out-dir results/paper_step4/20261118 — PASS/0; tests/test_paper_results.py с тем же каталогом — PASS/0. Исходное сравнение (полный режим), семейства и self-test, check_exact_match.py, каркас, литература, checks/check.py — 0. Полный checks/verify_denoising.py — INCOMPLETE/2 только из-за Kr5 (1505/60078, около 2.51%) во всех трёх повторах; метрики пар 0,0,0,0. 1209 защищённых файлов без изменений. Рукопись не создавалась, её числа/цитаты/вёрстка не проверялись; это следующий шаг.
 
 Дополнительная проверка документов шага 4: 104 ссылки, 26 отношений онтологии, пять новых заметок и четыре завершённые задачи — PASS/0; results/paper_step4/validation_20261118/document_validation.json. После обновления документации check_paper_scaffold.py снова PASS/0; git diff --check — 0.
+
+## 2026-11-18 — Перенос литературы в references
+
+Что сделано: [[Перенести литературу в references]] выполнена; paper/ переименован в references/, обновлены рабочие ссылки, current_path четырёх PDF и .gitignore. Пути каскада сжатия также обновлены, сам каскад не выполнялся.
+Результат: 17 файлов перенесены побайтно, 28 исторических evidence сохранены; lit/ остаётся реестром. Создана [[Проверка переноса литературы в references]].
+Точка проверки: results/reference_relocation/20261118/relocation.json и verification.json.
+Итог проверки: check_literature_registry.py, check_paper_scaffold.py, check_paper_results.py --out-dir results/paper_step4/20261118, checks/check.py — 0 через conda qiime2-amplicon-2025.7; bash -n cascade.sh — 0. PDF исключены из Git; научные расчёты не выполнялись.

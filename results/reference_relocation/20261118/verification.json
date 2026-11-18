@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "literature",
+      "command": [
+        "conda",
+        "run",
+        "--no-capture-output",
+        "-n",
+        "qiime2-amplicon-2025.7",
+        "python3",
+        "src/check_literature_registry.py"
+      ],
+      "exit_code": 0,
+      "log": "literature.txt"
+    },
+    {
+      "name": "scaffold",
+      "command": [
+        "conda",
+        "run",
+        "--no-capture-output",
+        "-n",
+        "qiime2-amplicon-2025.7",
+        "python3",
+        "src/check_paper_scaffold.py"
+      ],
+      "exit_code": 0,
+      "log": "scaffold.txt"
+    },
+    {
+      "name": "numbers",
+      "command": [
+        "conda",
+        "run",
+        "--no-capture-output",
+        "-n",
+        "qiime2-amplicon-2025.7",
+        "python3",
+        "src/check_paper_results.py",
+        "--out-dir",
+        "results/paper_step4/20261118"
+      ],
+      "exit_code": 0,
+      "log": "numbers.txt"
+    },
+    {
+      "name": "general",
+      "command": [
+        "conda",
+        "run",
+        "--no-capture-output",
+        "-n",
+        "qiime2-amplicon-2025.7",
+        "python3",
+        "checks/check.py"
+      ],
+      "exit_code": 0,
+      "log": "general.txt"
+    },
+    {
+      "name": "cascade_syntax",
+      "command": [
+        "bash",
+        "-n",
+        "cascade.sh"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "moved_files_unchanged": true,
+  "ignored_pdf_files": [
+    "references/bokulich18.pdf",
+    "references/robeson21.pdf",
+    "references/parks21.pdf",
+    "references/mcdonald23.pdf"
+  ],
+  "old_directory_absent": true,
+  "historical_evidence_unchanged": true
+}

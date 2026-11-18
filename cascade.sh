@@ -4,19 +4,19 @@
 # следующий уровень читает только файлы предыдущего.
 #
 # Запуск из корня проекта (macOS, Linux, WSL):
-#     bash cascade.sh paper/paper.pdf
+#     bash cascade.sh references/paper.pdf
 # Результат:
-#     paper/paper.txt           текст статьи; страницы разделены символом \f
-#     paper/parts/part_NN.md    части по WORDS_PER_PART слов (по умолчанию 1500) с метками [с. N];
-#                               если есть paper/sections/*.md (статья, разбитая на разделы вручную),
+#     references/paper.txt           текст статьи; страницы разделены символом \f
+#     references/parts/part_NN.md    части по WORDS_PER_PART слов (по умолчанию 1500) с метками [с. N];
+#                               если есть references/sections/*.md (статья, разбитая на разделы вручную),
 #                               сжимаются они
 #     memory/L1/<часть>.md      сжатие каждой части
 #     memory/L1.md, L2.md, L3.md
-# Повторный запуск пропускает уже сжатые части. Чтобы начать заново: rm -rf paper/parts memory/L1
+# Повторный запуск пропускает уже сжатые части. Чтобы начать заново: rm -rf references/parts memory/L1
 # Сверку в memory/L2.md заполняет человек.
 set -euo pipefail
 
-PDF="${1:?укажите PDF статьи: bash cascade.sh paper/paper.pdf}"
+PDF="${1:?укажите PDF статьи: bash cascade.sh references/paper.pdf}"
 WORDS_PER_PART="${WORDS_PER_PART:-1500}"
 export AI4SCIENCE_WEB_DISABLED=1   # поиск в сети не нужен; Lean отключает флаг --no-lean
 
@@ -33,15 +33,15 @@ open(sys.argv[2], "w", encoding="utf-8").write("\f".join(pages))
 PY
 fi
 
-# 2. Части: разделы из paper/sections/ или подряд идущие страницы, в сумме около WORDS_PER_PART слов
+# 2. Части: разделы из references/sections/ или подряд идущие страницы, в сумме около WORDS_PER_PART слов
 mkdir -p memory/L1
-if ls paper/sections/*.md >/dev/null 2>&1; then
-  PARTS=paper/sections
+if ls references/sections/*.md >/dev/null 2>&1; then
+  PARTS=references/sections
 else
-  PARTS=paper/parts
+  PARTS=references/parts
   mkdir -p "$PARTS"
 fi
-if [ "$PARTS" = paper/parts ] && ! ls paper/parts/part_*.md >/dev/null 2>&1; then
+if [ "$PARTS" = references/parts ] && ! ls references/parts/part_*.md >/dev/null 2>&1; then
   python3 - "$TXT" "$WORDS_PER_PART" <<'PY'
 import sys
 pages = open(sys.argv[1], encoding="utf-8").read().split("\f")
@@ -59,7 +59,7 @@ if cur:
     parts.append(cur)
 for k, part in enumerate(parts, start=1):
     first, last = part[0][0], part[-1][0]
-    with open(f"paper/parts/part_{k:02d}.md", "w", encoding="utf-8") as f:
+    with open(f"references/parts/part_{k:02d}.md", "w", encoding="utf-8") as f:
         f.write(f"# Часть {k}: с. {first}–{last}\n\n")
         for i, text in part:
             f.write(f"[с. {i}]\n{text.strip()}\n\n")
