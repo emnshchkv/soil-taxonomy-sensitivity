@@ -1,0 +1,73 @@
+{
+  "author": "AI4Science-агент",
+  "argv": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "src/audit_kr_taxonomy.py",
+    "--out-dir",
+    "results/taxonomy_barplots/kr_diagnostics_20261118"
+  ],
+  "created_utc": "2026-11-18T10:31:39.928798+00:00",
+  "script_sha256": "2748046fe8e0c0af36f9dd95eaa80f66acdbfc05feff6b96fbc663b29af151af",
+  "sources": {
+    "work/qza/ASV_table.qza": "0742f177e67b042b25ab1a479193d3d8c7c5dba22d8e73bd2cec254ef3066489",
+    "work/qza/rep_seq.qza": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86",
+    "data/meta/metadata.tsv": "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123",
+    "data/refs/VERSIONS.md": "d02f87f183b6d43699b3ec0850d8d9ef41149b682eccda38166cee2e01d9e66e",
+    "work/qza/taxonomy_sklearn_silva138.qza": "66d7b18f8349c6adcd2e0d8a74f860e6674f5691e5bdbea8cd885cb0381505d6",
+    "work/qza/taxonomy_sklearn_gtdb.qza": "a542ba9b762e42112b7dc95a05de6b9870b4b8e22b01acd0847b22201090f73e",
+    "work/qza/taxonomy_sklearn_gg2.qza": "e972b452e45cfc991e69712ded06b3ef47d5915a85caecfbdc06016ab2439771"
+  },
+  "old_outputs_before": {
+    "results/taxonomy_barplots/bacteria_20261118/bacterial_mask.tsv": "706d1476b924b850842bee62762d379f0b40a35c6a9d71b4ac49d0a0bb69c095",
+    "results/taxonomy_barplots/bacteria_20261118/bacterial_profiles.tsv": "d7207ef18c6e0a65ce697145cdc0ded72e6fce1fb96c82736bf96dc035833a07",
+    "results/taxonomy_barplots/bacteria_20261118/document_check.json": "9b395e3a8a127f78aba27ff487c7b9de5744988f21cc0078234a1dd78d2a7267",
+    "results/taxonomy_barplots/bacteria_20261118/domain_audit.json": "2dca2d5dfa6ef7df1a4cc0ed9222c52c169a38a0e8948171fc41d731267f1d27",
+    "results/taxonomy_barplots/bacteria_20261118/domain_audit_crosscheck.json": "74154597ab48fbce558cf52e44c9440bec748f017c2e8ffa097cdb532e1eb58d",
+    "results/taxonomy_barplots/bacteria_20261118/domain_by_sample.tsv": "6a255a79f5c9c36388c99b44e4761fd26fba32df7e85c70f297cc495e4838365",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_class.pdf": "368e4f172b91b3b183e922f7253785a0a34ce8432ee024a0696f61223dd632b2",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_class.png": "6c582fecc17ce0f10d0d9c3b3abad5a764c7bbff19347718295fd482ac25e3ae",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_class.svg": "248b5b7c3cfda48198e2540729ea7b27c7be5cc33068742e6094ef73c76e9b57",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_family.pdf": "7777f339474795bc51dd67c2fc7e2b6564db3e193afaa7625f975918a0592d5c",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_family.png": "be8ca1dd508f0b0af9a8d61bc02a83f2937bf41a2706ee26535e4748b0800c11",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_family.svg": "96ab541c06b1ae643a3ecdfe7a0ac700020038830ff6e725a4120c60d98e4abe",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_genus.pdf": "37599e5be7466d2fd05db7972d92b7f10e759cd503d0c65a8d5809475974f1a4",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_genus.png": "2d6a5821d484aceb2649f68497559f461f5d518dc36057f59e2ea3ede90e8b11",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_genus.svg": "aac6fb1790a8f67f22522062681f14a5ebb01eb339d5bd0fd566812b58516856",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_order.pdf": "af4a8e1ff0ea0d53eee9911a4ea535e65734e0e9a83753048fd0f81a429bf358",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_order.png": "8b0496ff352401015a06abf9edf4b6f11c39570dca2dccd2ce807460909ff93c",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_order.svg": "a1f174f29fb26a2d84d8ccb0ac2713d9a948c5ef4a5bbf1a3e72c043acb529ec",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_phylum.pdf": "7ae0cc68f631bd60a016cbab99a08b0e87eaa83da2c4046ed3fbc75d3bac9d23",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_phylum.png": "675c6a50e983e89fed32739dbf068b2378dd940a74b2cc400fe0b965e7f20ebc",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_phylum.svg": "dfcc8ac87778c49638dc201b6da4128f3a2af0afd01d2e18f5507a3bee8c7d73",
+    "results/taxonomy_barplots/bacteria_20261118/git_text_check.json": "859508de8e2640c99fbcd2a9053152b819d65a923e8b9a44f0ec5b5242a49f19",
+    "results/taxonomy_barplots/bacteria_20261118/self_test.json": "4ae41b711130222f659569e3bf6795782a7d35e5380d69495b802022206b56f0",
+    "results/taxonomy_barplots/bacteria_20261118/taxonomy_barplot_data.tsv": "4637f51fb99c89264f127ea7c89358af0e494000218b458456394a692cf3c122",
+    "results/taxonomy_barplots/bacteria_20261118/taxonomy_barplot_keys.tsv": "6a93c7046e19783723e950e479f5c8c9cb5ca286259435f6e82f37cd739266d9",
+    "results/taxonomy_barplots/bacteria_20261118/taxonomy_barplot_manifest.json": "657793e7c97e1a0129e09a4a4792c60e4b5f9a257a679cbafbd5a27d379c84c6",
+    "results/taxonomy_barplots/bacteria_20261118/verification.json": "d259477727ab5c235c26522e0e984352391bb9c59cba29f2bab767b018f2d4ff",
+    "results/taxonomy_barplots/bacteria_20261118/visual_check.json": "45223e3f2c7d4bed87467bf1a48f1149b165851ac1f2476c27252b5be83c0a10"
+  },
+  "confidence_semantics": {
+    "package_version": "2025.7.0",
+    "local_file": "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/lib/python3.10/site-packages/q2_feature_classifier/_skl.py",
+    "sha256": "f891302e061bbcb1aa2f0c1788b08b0f99ad130179c30cfb3ee3210c60bfdee2",
+    "lines": [
+      107,
+      138
+    ],
+    "semantics": "The implementation sums class probabilities for each successive node and stops when node probability is below confidence. For an accepted prefix, saved Confidence is the cumulative probability of the last accepted rank; for Unassigned it is 1-cum_prob. A d__Bacteria Confidence is not a family-level confidence."
+  },
+  "depth_rule": "Deepest explicit non-service rank up to family, independently of missing ancestors; full deepest rank and gaps also recorded.",
+  "placeholder_rule": "Report-only case-insensitive prefix flag: uncultured, unidentified, unclassified, unknown, environmental, metagenom. Does not change the original assigned-rank contract.",
+  "top_rule": "For each Kr sample: descending read count, ties by ASV ID; stop after >=90% original retained reads and at least min(5,observed_ASV) rows.",
+  "output_sha256": {
+    "asv_diagnostics.tsv": "3eac961033ff73c2f159c3d4e577e6015b1c135cef0182098d9f77f149d1fb33",
+    "top_asv_by_kr.tsv": "1d57bbefb18a33bfee30dcfd65fd7c0a0b105c81f7d43cde4946bf7d7c9f2f5d",
+    "sample_filter_summary.tsv": "c839e95e90d6eed78dfecbd33fbf2b2146c64dd881d9daea2b94fbb4420144d3",
+    "filter_reasons.tsv": "0b0fa0cbd847ca253e2974e00ea96cfa00e3f40a464df198f0c051897767b30e",
+    "classification_depth.tsv": "d15b14f2bbdded48cb5291ae2977fa57d65942ad7a5c958e43165fc4f79e198e",
+    "cross_model_transitions.tsv": "8df1a38042d7b2d6d26f95d8417fafb4d9d8c35e4c662d9f2120f67ce1dc9f4b",
+    "family_literal_tokens.tsv": "0a188b4fb4eea49f52d33d31baf058a4524d8f241a98ef4a8dff8a5c5a4a3a44",
+    "verification.json": "9f5be1dc4b65b85102387ad7734a91d74fe1848a7e98a515113df468551f1f0a"
+  }
+}

@@ -495,3 +495,10 @@ conda run --no-capture-output -n qiime2-amplicon-2025.7 qiime cutadapt trim-sing
 Результат: results/taxonomy_barplots/bacteria_20261118/ содержит пять рангов × PNG/PDF/SVG, 150 почвенных столбцов, полные маски/профили/потери/сегменты/легенды/хеши. SILVA Kr1–Kr5: 38, 0, 2, 249, 0 ридов после отбора; нулевые образцы Kr2/Kr5 показаны NA. Контроль сохранён в таблицах отдельно от почвенных рисунков. README описывает команды и ограничения модельных наборов. Подготовка статьи не продолжалась.
 Точка проверки: conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 src/plot_taxonomy_profiles.py --out-dir results/taxonomy_barplots/bacteria_20261118; src/check_taxonomy_barplots.py с тем же --out-dir, затем --self-test; независимый доменный/органелльный аудит и сопоставление; просмотр пяти PNG; checks/check.py; src/check_taxonomy_comparison_documents.py. Полные журналы — preflight_20261118/final_execution/; JSON — verification.json, self_test.json, visual_check.json.
 Итог проверки: генерация 0, независимая проверка PASS/0 (20741 сверка), самотест PASS→FAIL→PASS, независимый органелльный crosscheck PASS/0 (363 сверки), визуальная проверка PASS/0. Общий критерий «ПРОВЕРКА ПРОЙДЕНА»/0, прежний отчёт/методика и 85 защищённых файлов PASS/0. Научные входы и прежние результаты не менялись, новых пакетов не устанавливалось.
+
+## 2026-11-18 — Разбор Kr и семейства бактерий и архей
+
+Что сделано: AI4Science-агент записал новое поручение и три подзадачи; начат разбор исходных ASV и фильтра.
+Результат: новая область отбора Bacteria+Archaea, конечный ранг — семейство; прежний бактериальный комплект сохраняется как предыдущая версия.
+Точка проверки: conda run -n qiime2-amplicon-2025.7 qiime --version.
+Итог проверки: q2cli 2025.7.0, exit 0; расчёты нового комплекта ещё не выполнялись.

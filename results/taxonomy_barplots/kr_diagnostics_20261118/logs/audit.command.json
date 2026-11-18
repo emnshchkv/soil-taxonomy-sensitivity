@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "src/audit_kr_taxonomy.py",
+    "--out-dir",
+    "results/taxonomy_barplots/kr_diagnostics_20261118"
+  ],
+  "start_utc": "2026-11-18T10:31:33.850080+00:00",
+  "end_utc": "2026-11-18T10:31:39.943958+00:00",
+  "exit_code": 0
+}

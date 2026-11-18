@@ -1,0 +1,213 @@
+{
+  "status": "PASS",
+  "output": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/taxonomy_barplots/kr_diagnostics_20261118",
+  "kr_asv": 477,
+  "top_coverage": {
+    "Kr1_S80": {
+      "top_asv": 54,
+      "reads": 11125,
+      "total": 12351,
+      "pct": "90.0736782447"
+    },
+    "Kr2_S81": {
+      "top_asv": 87,
+      "reads": 8027,
+      "total": 8904,
+      "pct": "90.1504941599"
+    },
+    "Kr3_S82": {
+      "top_asv": 92,
+      "reads": 9000,
+      "total": 9985,
+      "pct": "90.1352028042"
+    },
+    "Kr4_S83": {
+      "top_asv": 25,
+      "reads": 11131,
+      "total": 12293,
+      "pct": "90.5474660376"
+    },
+    "Kr5_S84": {
+      "top_asv": 18,
+      "reads": 1369,
+      "total": 1505,
+      "pct": "90.9634551495"
+    }
+  },
+  "samples": [
+    {
+      "model": "sklearn_silva138",
+      "sample": "Kr1_S80",
+      "total_reads": 12351,
+      "old_selected_reads": 38,
+      "new_selected_reads": 38,
+      "returned_Archaea_reads": 0,
+      "old_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_literal_placeholder_reads": 0
+    },
+    {
+      "model": "sklearn_silva138",
+      "sample": "Kr2_S81",
+      "total_reads": 8904,
+      "old_selected_reads": 0,
+      "new_selected_reads": 0,
+      "returned_Archaea_reads": 0,
+      "old_family_UNCLASSIFIED_pct_selected": "NA",
+      "new_family_UNCLASSIFIED_pct_selected": "NA",
+      "new_family_literal_placeholder_reads": 0
+    },
+    {
+      "model": "sklearn_silva138",
+      "sample": "Kr3_S82",
+      "total_reads": 9985,
+      "old_selected_reads": 2,
+      "new_selected_reads": 2,
+      "returned_Archaea_reads": 0,
+      "old_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_literal_placeholder_reads": 0
+    },
+    {
+      "model": "sklearn_silva138",
+      "sample": "Kr4_S83",
+      "total_reads": 12293,
+      "old_selected_reads": 249,
+      "new_selected_reads": 249,
+      "returned_Archaea_reads": 0,
+      "old_family_UNCLASSIFIED_pct_selected": "98.7951807229",
+      "new_family_UNCLASSIFIED_pct_selected": "98.7951807229",
+      "new_family_literal_placeholder_reads": 0
+    },
+    {
+      "model": "sklearn_silva138",
+      "sample": "Kr5_S84",
+      "total_reads": 1505,
+      "old_selected_reads": 0,
+      "new_selected_reads": 0,
+      "returned_Archaea_reads": 0,
+      "old_family_UNCLASSIFIED_pct_selected": "NA",
+      "new_family_UNCLASSIFIED_pct_selected": "NA",
+      "new_family_literal_placeholder_reads": 0
+    },
+    {
+      "model": "sklearn_gtdb",
+      "sample": "Kr1_S80",
+      "total_reads": 12351,
+      "old_selected_reads": 10142,
+      "new_selected_reads": 10142,
+      "returned_Archaea_reads": 0,
+      "old_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_literal_placeholder_reads": 0
+    },
+    {
+      "model": "sklearn_gtdb",
+      "sample": "Kr2_S81",
+      "total_reads": 8904,
+      "old_selected_reads": 8013,
+      "new_selected_reads": 8013,
+      "returned_Archaea_reads": 0,
+      "old_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_literal_placeholder_reads": 0
+    },
+    {
+      "model": "sklearn_gtdb",
+      "sample": "Kr3_S82",
+      "total_reads": 9985,
+      "old_selected_reads": 9147,
+      "new_selected_reads": 9147,
+      "returned_Archaea_reads": 0,
+      "old_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_literal_placeholder_reads": 0
+    },
+    {
+      "model": "sklearn_gtdb",
+      "sample": "Kr4_S83",
+      "total_reads": 12293,
+      "old_selected_reads": 11518,
+      "new_selected_reads": 11518,
+      "returned_Archaea_reads": 0,
+      "old_family_UNCLASSIFIED_pct_selected": "99.9739538114",
+      "new_family_UNCLASSIFIED_pct_selected": "99.9739538114",
+      "new_family_literal_placeholder_reads": 0
+    },
+    {
+      "model": "sklearn_gtdb",
+      "sample": "Kr5_S84",
+      "total_reads": 1505,
+      "old_selected_reads": 1413,
+      "new_selected_reads": 1413,
+      "returned_Archaea_reads": 0,
+      "old_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_literal_placeholder_reads": 0
+    },
+    {
+      "model": "sklearn_gg2",
+      "sample": "Kr1_S80",
+      "total_reads": 12351,
+      "old_selected_reads": 10114,
+      "new_selected_reads": 10114,
+      "returned_Archaea_reads": 0,
+      "old_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_literal_placeholder_reads": 0
+    },
+    {
+      "model": "sklearn_gg2",
+      "sample": "Kr2_S81",
+      "total_reads": 8904,
+      "old_selected_reads": 8098,
+      "new_selected_reads": 8098,
+      "returned_Archaea_reads": 0,
+      "old_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_literal_placeholder_reads": 0
+    },
+    {
+      "model": "sklearn_gg2",
+      "sample": "Kr3_S82",
+      "total_reads": 9985,
+      "old_selected_reads": 8974,
+      "new_selected_reads": 8974,
+      "returned_Archaea_reads": 0,
+      "old_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_literal_placeholder_reads": 0
+    },
+    {
+      "model": "sklearn_gg2",
+      "sample": "Kr4_S83",
+      "total_reads": 12293,
+      "old_selected_reads": 12013,
+      "new_selected_reads": 12013,
+      "returned_Archaea_reads": 0,
+      "old_family_UNCLASSIFIED_pct_selected": "99.975027054",
+      "new_family_UNCLASSIFIED_pct_selected": "99.975027054",
+      "new_family_literal_placeholder_reads": 0
+    },
+    {
+      "model": "sklearn_gg2",
+      "sample": "Kr5_S84",
+      "total_reads": 1505,
+      "old_selected_reads": 1465,
+      "new_selected_reads": 1465,
+      "returned_Archaea_reads": 0,
+      "old_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_UNCLASSIFIED_pct_selected": "100",
+      "new_family_literal_placeholder_reads": 0
+    }
+  ],
+  "old_filter_verification": {
+    "status": "PASS",
+    "checks": 72246,
+    "mask_rows": 10122,
+    "profiles": 9086,
+    "bars": 150,
+    "method": "Independent raw-QZA domain/organelle/rank parsing and ASV-frequency aggregation; no old generator import."
+  },
+  "placeholder_tokens": []
+}

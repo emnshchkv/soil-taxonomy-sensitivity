@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "kr_asv": 477,
+  "original_samples": 11,
+  "top_asv_coverage": {
+    "Kr1_S80": {
+      "top_asv": 54,
+      "reads": 11125,
+      "total": 12351,
+      "pct": "90.0736782447"
+    },
+    "Kr2_S81": {
+      "top_asv": 87,
+      "reads": 8027,
+      "total": 8904,
+      "pct": "90.1504941599"
+    },
+    "Kr3_S82": {
+      "top_asv": 92,
+      "reads": 9000,
+      "total": 9985,
+      "pct": "90.1352028042"
+    },
+    "Kr4_S83": {
+      "top_asv": 25,
+      "reads": 11131,
+      "total": 12293,
+      "pct": "90.5474660376"
+    },
+    "Kr5_S84": {
+      "top_asv": 18,
+      "reads": 1369,
+      "total": 1505,
+      "pct": "90.9634551495"
+    }
+  },
+  "old_checker_exit": 0,
+  "independent_old_check": {
+    "status": "PASS",
+    "checks": 72246,
+    "mask_rows": 10122,
+    "profiles": 9086,
+    "bars": 150,
+    "method": "Independent raw-QZA domain/organelle/rank parsing and ASV-frequency aggregation; no old generator import."
+  },
+  "scientific_inputs_unchanged": true,
+  "old_outputs_unchanged": true,
+  "mass_checks": "ASV/sample totals, old profiles and segments, reason partitions, depth partitions and every pairwise transition conserve original frequencies.",
+  "limitations": [
+    "Assignments are model outputs, not biological ground truth.",
+    "Family depth follows the existing literal contract; placeholder labels are flagged separately and do not alter profiles.",
+    "Known exact organelle labels can be excluded; unlabelled organelles cannot be identified by this rule.",
+    "Sequences were read locally and not uploaded or reclassified."
+  ]
+}
