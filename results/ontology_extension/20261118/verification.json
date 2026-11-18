@@ -1,0 +1,57 @@
+{
+  "checks": [
+    {
+      "name": "class_notes",
+      "command": [
+        "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+        "src/build_ontology_notes.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "extension",
+      "command": [
+        "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+        "src/check_ontology_extension.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "scaffold",
+      "command": [
+        "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+        "src/check_paper_scaffold.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "ecology",
+      "command": [
+        "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+        "src/check_researcher_ecology.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "project",
+      "command": [
+        "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+        "checks/check.py"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "scientific_files_preserved": 1090,
+  "changed_scientific_files": [],
+  "generator_tests": {
+    "tests": 6,
+    "exit_code": 0,
+    "executor": "ontology_extension_review subagent"
+  },
+  "extension_self_test": {
+    "exit_code": 0,
+    "executor": "ontology_extension_review subagent"
+  },
+  "status": "PASS"
+}

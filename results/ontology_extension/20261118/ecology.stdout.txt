@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "mapped_soil_samples": 10,
+  "locations": 8,
+  "chemistry_locations": [
+    "КР1",
+    "ЛЮБ1"
+  ],
+  "chemistry_values": 8,
+  "scope": "transcription and user-confirmed mapping; not chemical-method or ecological validation"
+}

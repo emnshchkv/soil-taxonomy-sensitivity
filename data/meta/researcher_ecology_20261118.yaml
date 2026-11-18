@@ -1,0 +1,109 @@
+recorded_date: '2026-11-18'
+source: сообщения пользователя и приложенное изображение
+image_file: data/meta/source_images/soil_analysis_20261118.png
+image_sha256: 6a9eb65be30192f03735f1b88dff1bd353beaf4b6efba9cccd39969620643a97
+sampling_depth_cm: 8
+depth_scope: общая глубина отбора почв; не интервал 0–8 см и не характеристика отрицательного контроля
+locations:
+- code: КР1
+  address: Крылатские холмы 45, корпус 2
+- code: КР2
+  address: Осенний бульвар 16к1
+- code: КР3
+  address: Осенний бульвар 7к4
+- code: КР4
+  address: Рублёвское ш., 48/1
+- code: КР5
+  address: Осенний б-р, 5к3
+- code: КР6
+  address: Крылатская ул., д.1 соор.1
+- code: ЛЮБ1
+  address: Судакова 29
+- code: ЛЮБ2
+  address: Совхозная 41, детская площадка
+sample_location_map:
+- sample_id: Kr1_S80
+  location_code: КР1
+- sample_id: Kr2_S81
+  location_code: КР2
+- sample_id: Kr3_S82
+  location_code: КР3
+- sample_id: Kr4_S83
+  location_code: КР4
+- sample_id: Kr5_S84
+  location_code: КР5
+- sample_id: LUB2_S92
+  location_code: ЛЮБ1
+- sample_id: LUB3_S93
+  location_code: ЛЮБ1
+- sample_id: LUB4_S94
+  location_code: ЛЮБ1
+- sample_id: LUB5_S95
+  location_code: ЛЮБ2
+- sample_id: LUB6_S96
+  location_code: ЛЮБ2
+location_without_sequencing_sample:
+- КР6
+negative_control:
+  sample_id: K_S63
+  sampling_depth_cm: null
+  location_code: null
+chemistry:
+- location_code: КР1
+  district_label_on_image: Крылатское
+  sampling_basis: одна проба с одной локации; подтверждено пользователем
+  relationship_to_sequenced_material: не уточнено, тот же ли материал и время отбора
+  extract_type: null
+  measurement_method: null
+  measurements:
+  - label_on_image: NH4+
+    unit: г/л
+    value: '0.110'
+    source_display: 0,110
+  - label_on_image: NO3-
+    unit: г/л
+    value: '0.430'
+    source_display: 0,430
+  - label_on_image: NO2-
+    unit: г/л
+    value: '0.067'
+    source_display: 0,067
+  - label_on_image: Organic carbon
+    unit: '%'
+    value: '5.370'
+    source_display: 5,370
+- location_code: ЛЮБ1
+  district_label_on_image: Люблино
+  sampling_basis: одна проба с одной локации; подтверждено пользователем
+  relationship_to_sequenced_material: не уточнено, тот же ли материал и время отбора
+  extract_type: null
+  measurement_method: null
+  measurements:
+  - label_on_image: NH4+
+    unit: г/л
+    value: '0.050'
+    source_display: 0,050
+  - label_on_image: NO3-
+    unit: г/л
+    value: '1.870'
+    source_display: 1,870
+  - label_on_image: NO2-
+    unit: г/л
+    value: '0.086'
+    source_display: 0,086
+  - label_on_image: Organic carbon
+    unit: '%'
+    value: '2.460'
+    source_display: 2,460
+remaining_unknowns:
+- дата отбора
+- растительность
+- pH
+- влажность
+- тип и метод получения вытяжки
+- связь химической пробы с конкретной аликвотой секвенирования
+- номер запуска секвенирования
+restrictions:
+- химия не является средним по району
+- не приписывать химию другим точкам или независимым измерениям каждого sample_id
+- органический углерод не заменяет общее органическое вещество
