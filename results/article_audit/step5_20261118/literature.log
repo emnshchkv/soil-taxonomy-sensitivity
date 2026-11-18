@@ -1,0 +1,103 @@
+{
+  "status": "INCOMPLETE",
+  "scope": "registry, saved metadata and literal citation keys; not scientific or article acceptance",
+  "errors": [],
+  "incomplete": [
+    "current manuscript directory has no TeX sources"
+  ],
+  "historical_citations": [
+    {
+      "path": "manuscript/ai4science_ysda2026/paper.tex",
+      "line": 44,
+      "command": "cite",
+      "keys": [
+        "callahan2016"
+      ]
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/paper.tex",
+      "line": 44,
+      "command": "cite",
+      "keys": [
+        "bolyen2019"
+      ]
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/paper.tex",
+      "line": 44,
+      "command": "cite",
+      "keys": [
+        "bokulich2018"
+      ]
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/paper.tex",
+      "line": 46,
+      "command": "cite",
+      "keys": [
+        "parks2022"
+      ]
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/paper.tex",
+      "line": 46,
+      "command": "cite",
+      "keys": [
+        "mcdonald2024"
+      ]
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/paper.tex",
+      "line": 46,
+      "command": "cite",
+      "keys": [
+        "robeson2021"
+      ]
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/paper.tex",
+      "line": 46,
+      "command": "cite",
+      "keys": [
+        "balvociute2017"
+      ]
+    }
+  ],
+  "current_citations": [],
+  "current_manuscript_status": "present_without_tex",
+  "source_commit": "37254a5a90a3efe5b4c6ca22e38c2e2066767178",
+  "historical_tex_files": [
+    "manuscript/ai4science_ysda2026/authors.tex",
+    "manuscript/ai4science_ysda2026/numbers.tex",
+    "manuscript/ai4science_ysda2026/paper.tex",
+    "manuscript/ai4science_ysda2026/paper_final.tex",
+    "manuscript/ai4science_ysda2026/tables/all_distances.tex",
+    "manuscript/ai4science_ysda2026/tables/asv_coverage.tex",
+    "manuscript/ai4science_ysda2026/tables/genus_category_percent.tex",
+    "manuscript/ai4science_ysda2026/tables/genus_coverage.tex",
+    "manuscript/ai4science_ysda2026/tables/genus_pairs.tex",
+    "manuscript/ai4science_ysda2026/tables/genus_read_match.tex"
+  ],
+  "historical_citation_keys": [
+    "balvociute2017",
+    "bokulich2018",
+    "bolyen2019",
+    "callahan2016",
+    "mcdonald2024",
+    "parks2022",
+    "robeson2021"
+  ],
+  "current_citation_keys": [],
+  "selected_keys": [
+    "balvociute2017",
+    "bokulich2018",
+    "bolyen2019",
+    "callahan2016",
+    "mcdonald2024",
+    "parks2022",
+    "robeson2021"
+  ],
+  "transferred_files_checked": 28,
+  "primary_files_checked": 7
+}
+ERROR conda.cli.main_run:execute(142): `conda run python3 src/check_literature_registry.py --article-dir manuscript/ai4science_ysda2026` failed. (See above for error)

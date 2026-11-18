@@ -1,0 +1,31 @@
+{
+  "audit_status": "PASS",
+  "article_status": "INCOMPLETE",
+  "checks": [
+    {
+      "name": "numbers",
+      "command": "conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 src/check_paper_results.py --out-dir results/paper_step4/20261118",
+      "exit_code": 0,
+      "log": "results/article_audit/step5_20261118/numbers.log"
+    },
+    {
+      "name": "scaffold",
+      "command": "conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 src/check_paper_scaffold.py",
+      "exit_code": 0,
+      "log": "results/article_audit/step5_20261118/scaffold.log"
+    },
+    {
+      "name": "literature",
+      "command": "conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 src/check_literature_registry.py --article-dir manuscript/ai4science_ysda2026",
+      "exit_code": 2,
+      "log": "results/article_audit/step5_20261118/literature.log"
+    },
+    {
+      "name": "project",
+      "command": "conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 checks/check.py",
+      "exit_code": 0,
+      "log": "results/article_audit/step5_20261118/project.log"
+    }
+  ],
+  "note": "Literature exit 2 is expected: current manuscript directory exists but has no TeX sources; errors list is empty. General check PASS does not supersede the previously documented full DADA2 INCOMPLETE for Kr5."
+}

@@ -1,0 +1,120 @@
+{
+  "audited_at_utc": "2026-11-18T15:22:20.966149+00:00",
+  "head_before_audit": "2562a8dd8a080a72881cac67f9a45a4b1dd49a77",
+  "manuscript_files": [
+    {
+      "path": "manuscript/ai4science_ysda2026/ai4science_ysda2026.bst",
+      "bytes": 27304,
+      "sha256": "c933b5f6405103d37f1deb5fa9198e6ff44b29a0a7abe626fe641bc0bdb2b5cb",
+      "source": "ai4science_ysda2026_template/ai4science_ysda2026.bst",
+      "identical_to_source": true
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/ai4science_ysda2026.sty",
+      "bytes": 37851,
+      "sha256": "c77acec66a6ab5c1f22dc4048a5b9d649fc0d598e59e828ee0883b92e5f2f457",
+      "source": "ai4science_ysda2026_template/ai4science_ysda2026.sty",
+      "identical_to_source": true
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/algorithm.sty",
+      "bytes": 2223,
+      "sha256": "93fd0eb31c112eb405833db8f1d7f5d238c7e691b1c05680d7276e68f36d564a",
+      "source": "ai4science_ysda2026_template/algorithm.sty",
+      "identical_to_source": true
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/algorithmic.sty",
+      "bytes": 7414,
+      "sha256": "48d18794a5d97c0479a588cc2eac0917992feb9da83acc4631b8f55757d80f9b",
+      "source": "ai4science_ysda2026_template/algorithmic.sty",
+      "identical_to_source": true
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/fancyhdr.sty",
+      "bytes": 31715,
+      "sha256": "9130c52f91087abc6d223164ffa587e207e3257fcbcd069ef09ecb5391043f14",
+      "source": "ai4science_ysda2026_template/fancyhdr.sty",
+      "identical_to_source": true
+    },
+    {
+      "path": "manuscript/ai4science_ysda2026/references.bib",
+      "bytes": 3146,
+      "sha256": "e19b66e0e5bc91be749a8152ea3a4163e3d0beb80d1219c995a4427b0fa6046d",
+      "source": "lit/references.bib",
+      "identical_to_source": true
+    }
+  ],
+  "writer_tasks": [
+    {
+      "path": "tasks/Написать и проверить статью шага 5.md",
+      "sha256": "80db5100ea1edf765dd6a2821340f3c1aff22ff4c349ce88e054ad1d99221ca4",
+      "status": "в работе"
+    },
+    {
+      "path": "tasks/Написать разделы статьи и карту утверждений.md",
+      "sha256": "2cecf6f845ae0282fac941dac9f244a81c8e06fec2d6e7c0d4b7e85a9f909c49",
+      "status": "открыта"
+    },
+    {
+      "path": "tasks/Подготовить каталог статьи и служебные файлы.md",
+      "sha256": "ad6383c33fda853317c08b456522d266607f5715a3ec88dbbb323df6b60beca1",
+      "status": "в работе"
+    },
+    {
+      "path": "tasks/Реализовать проверку статьи.md",
+      "sha256": "0bfed2d2d86d56588714e84dfb6f2f541d0a8c17f8b0900b03f20c60899cb71e",
+      "status": "открыта"
+    },
+    {
+      "path": "tasks/Собрать PDF и проверить вёрстку.md",
+      "sha256": "f908167db25dc882a828045a76de5090fff6be68baf16aa0491dbf527af8be80",
+      "status": "открыта"
+    }
+  ],
+  "missing_required_outputs": [
+    "manuscript/ai4science_ysda2026/paper.tex",
+    "manuscript/ai4science_ysda2026/paper.pdf",
+    "manuscript/ai4science_ysda2026/claims.tsv",
+    "manuscript/ai4science_ysda2026/section_review.md",
+    "src/check_article.py"
+  ],
+  "tracked_scientific_changes_vs_HEAD": [],
+  "cli_log": {
+    "path": "/Users/elizavetamenshchikova/YSDA/AI/AI4Science/.goose/state/logs/cli/2026-11-18/20261118_181622.log",
+    "sha256": "0e19808c1c39672b238af0aa468107dd96d9f5502a98a2adea7e2298894ff64c",
+    "events": [
+      {
+        "line": 101,
+        "matches": [
+          "daily_token_limit\\\")}}). Returning error: RateLimitExceeded { details: \\\"[AI4Science] Суточный лимит токенов исчерпан (3,033,271 / 3,000,000). Лимит сбросится в полночь. Заверши"
+        ]
+      },
+      {
+        "line": 104,
+        "matches": [
+          "daily_token_limit\\\")}}). Returning error: RateLimitExceeded { details: \\\"[AI4Science] Суточный лимит токенов исчерпан (3,033,271 / 3,000,000). Лимит сбросится в полночь. Заверши"
+        ]
+      },
+      {
+        "line": 107,
+        "matches": [
+          "daily_token_limit\\\")}}). Returning error: RateLimitExceeded { details: \\\"[AI4Science] Суточный лимит токенов исчерпан (3,033,271 / 3,000,000). Лимит сбросится в полночь. Заверши"
+        ]
+      },
+      {
+        "line": 110,
+        "matches": [
+          "daily_token_limit\\\")}}). Returning error: RateLimitExceeded { details: \\\"[AI4Science] Суточный лимит токенов исчерпан (3,033,271 / 3,000,000). Лимит сбросится в полночь. Заверши"
+        ]
+      },
+      {
+        "line": 111,
+        "matches": [
+          "Rate limit exceeded: [AI4Science] Суточный лимит токенов исчерпан (3,033,271 / 3,000,000). Лимит сбросится в полночь. Заверши сессию (/exit).\"},\"target\":\"goose::agents::agent\",\"span\":{\"gen_ai.agent.name\":\"goose\",\"gen_ai.conversation.id\":\"2"
+        ]
+      }
+    ]
+  },
+  "scope": "Read-only audit of interrupted writer; no manuscript writing or scientific recomputation."
+}
