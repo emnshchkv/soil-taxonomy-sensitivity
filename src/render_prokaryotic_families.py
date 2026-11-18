@@ -134,19 +134,22 @@ def render_family_profiles(rows, sample_order, model_order, out_dir, threshold=0
                     handles.append(Patch(facecolor=display['color'], edgecolor=edge, hatch=hatch,
                                          linewidth=0.4, label=wrapped[model, category]))
                 for position, total in zip(positions, totals):
-                    axis.text(position, -0.075, str(total), transform=axis.get_xaxis_transform(),
-                              ha='center', va='top', fontsize=8, clip_on=False)
+                    axis.annotate(str(total), xy=(position, 0), xycoords=axis.get_xaxis_transform(),
+                                  xytext=(0, -6), textcoords='offset points', ha='center',
+                                  va='top', fontsize=8, annotation_clip=False)
                     if total == 0:
                         axis.plot([position - 0.22, position + 0.22], [1.2, 1.2], color='#555555', linewidth=0.9)
                         axis.text(position, 4, 'NA', ha='center', va='bottom', fontsize=8, color='#555555')
-                axis.text(-0.08, -0.075, 'N', transform=axis.transAxes, ha='right', va='top', fontsize=8)
+                axis.annotate('N', xy=(-0.08, 0), xycoords='axes fraction',
+                              xytext=(0, -6), textcoords='offset points', ha='right',
+                              va='top', fontsize=8, annotation_clip=False)
                 axis.legend(handles=handles, loc='upper left', bbox_to_anchor=(1.025, 1), borderaxespad=0,
                             frameon=False, handlelength=1.15, handletextpad=0.45, labelspacing=0.12,
                             borderpad=0, fontsize=8)
                 axis.set_xticks(positions)
                 if index == len(group) - 1:
                     axis.set_xticklabels(samples, rotation=55, ha='right', rotation_mode='anchor')
-                    axis.tick_params(axis='x', pad=16)
+                    axis.tick_params(axis='x', pad=20)
                 else:
                     axis.tick_params(axis='x', labelbottom=False, bottom=False)
             for extension in ('pdf', 'png', 'svg'):
