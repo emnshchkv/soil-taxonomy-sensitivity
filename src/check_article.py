@@ -18,7 +18,7 @@ from decimal import Decimal, ROUND_HALF_EVEN
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ARTICLE = Path('manuscript/ai4science_ysda2026')
+ARTICLE = Path('paper/ai4science_ysda2026')
 BUNDLE = Path('results/paper_step4/20261118')
 SECTIONS = ('Постановка', 'Место в области', 'Метод', 'Проверка',
             'Ограничения', 'Эксперимент', 'Воспроизводимость', 'Заключение')

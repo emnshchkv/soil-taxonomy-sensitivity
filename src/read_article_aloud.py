@@ -67,7 +67,7 @@ def spoken_text(text: str, macros: dict[str, str]) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--article-dir', type=Path,
-                        default=ROOT / 'manuscript/ai4science_ysda2026')
+                        default=ROOT / 'paper/ai4science_ysda2026')
     parser.add_argument('--out-dir', type=Path,
                         default=ROOT / 'results/article_step5/reading_20261118')
     parser.add_argument('--voice', default='Milena')

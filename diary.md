@@ -651,3 +651,10 @@ conda run --no-capture-output -n qiime2-amplicon-2025.7 qiime cutadapt trim-sing
 Результат: manuscript/ai4science_ysda2026/paper.pdf — 4 страницы основной части с обеими таблицами, 11 всего; все страницы просмотрены. Синтезированы 9 аудиофайлов чтения, без утверждения человеческого прослушивания. Статья не подана, не опубликована, push не выполнялся.
 Точка проверки: results/article_step5/build_20261118_layout/build.json, verification_20261118/visual_review.json и acceptance.json, reading_final_20261118/manifest.json.
 Итог проверки: четыре команды сборки — 0; числовая, литературная, структурная, финальная PDF-проверка и общая checks/check.py — 0; научные проверки дали ожидаемые исходы, полный DADA2 остаётся INCOMPLETE/2 по Kr5. Повторная сохранность 1209 файлов и 57 ссылок новых задач/заметок — PASS/0. Пакеты не устанавливались, шаблоны и научные результаты сохранены. Принятие текста исследователем не заявлено.
+
+## 2026-11-18 — Переименование каталога статьи в paper
+
+Что сделано: по подтверждению «Да, в paper» выполнена [[Переименовать каталог рукописи в paper]], создана [[Проверка переименования каталога статьи в paper]]. manuscript/ перенесён в paper/; рабочие пути, промпты и команды обновлены, текущий каталог проверки литературы отделён от исторического источника Git. QIIME: q2cli 2025.7.0.
+Результат: paper/ai4science_ysda2026/paper.pdf и исходники сохранены; 27 файлов перемещены, только README.md и claims.tsv получили исправления путей. 168 файлов прежних свидетельств/чисел/литературы/рисунков/проверок сохранены. references/ не переименовывался.
+Точка проверки: results/article_relocation/20261118/before.json, verification.json, article.json, literature.json, article_tests.json и журналы.
+Итог проверки: src/check_article.py, src/check_literature_registry.py, src/check_paper_scaffold.py, checks/check.py, tests/test_article.py и tests/test_literature_registry.py через conda qiime2-amplicon-2025.7 — все 0. PDF не пересобирался, научные результаты и прежние журналы не переписаны; исторические адреса оставлены для прослеживаемости. Подача и push не выполнялись.

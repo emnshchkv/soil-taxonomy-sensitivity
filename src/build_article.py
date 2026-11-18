@@ -20,7 +20,7 @@ def main():
     parser.add_argument('--log-dir', type=Path, required=True)
     args = parser.parse_args()
     args.log_dir.mkdir(parents=True, exist_ok=False)
-    directory = ROOT/'manuscript/ai4science_ysda2026'
+    directory = ROOT/'paper/ai4science_ysda2026'
     env = os.environ.copy()
     if args.tex_bin:
         env['PATH'] = str(args.tex_bin) + os.pathsep + env.get('PATH','')

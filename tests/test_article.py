@@ -16,7 +16,7 @@ import sys
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
-ARTICLE = ROOT/'manuscript/ai4science_ysda2026'
+ARTICLE = ROOT/'paper/ai4science_ysda2026'
 
 
 def digest(path):
@@ -102,7 +102,7 @@ def main():
     with tempfile.TemporaryDirectory(prefix='article-rejection-') as tmp:
         for name,expected,mutation,draft in specs:
             case_root=Path(tmp)/name
-            article=case_root/'manuscript/ai4science_ysda2026'
+            article=case_root/'paper/ai4science_ysda2026'
             shutil.copytree(ARTICLE,article)
             # These are read-only logical inputs: mutations are strictly limited
             # to `article`, never a path through these symlinks.

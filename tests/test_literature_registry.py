@@ -17,7 +17,8 @@ class LiteratureRegistryTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name) / "project"
         self.root.mkdir()
-        self.base = "manuscript/ai4science_ysda2026/"
+        self.base = "manuscript/ai4science_ysda2026/"  # Historical Git source.
+        self.current = "paper/ai4science_ysda2026/"
         self.evidence = "lit/evidence/20261117"
         self.git("init", "-q")
         records, bib, sections = [], [], []
@@ -124,7 +125,7 @@ class LiteratureRegistryTests(unittest.TestCase):
         self.assertEqual(report["current_manuscript_status"], "requested_path_missing")
 
     def test_present_current_manuscript_is_also_checked(self):
-        self.write(f"{self.base}paper.tex", "\\cite{current_unknown}\n")
+        self.write(f"{self.current}paper.tex", "\\cite{current_unknown}\n")
         code, report = self.run_checker()
         self.assertEqual(code, 1, report)
         self.assertEqual(report["current_manuscript_status"], "checked")

@@ -15,6 +15,7 @@ from pathlib import Path
 
 
 EVIDENCE = "lit/evidence/20261117"
+CURRENT_ARTICLE = Path("paper/ai4science_ysda2026")
 FIELDS = (
     "**Утверждение [источник].**", "**Происхождение и локатор.**",
     "**Отличие проекта [порождено].**", "**Сверка метаданных.**",
@@ -140,7 +141,7 @@ def verify(root: Path, article_dir: Path | None = None) -> dict:
         for path in historical_tex:
             result["historical_citations"].extend(citation_locations(git("show", f"{commit}:{path}").decode(), path))
         result["historical_tex_files"] = historical_tex
-        current_dir = (root / article_dir).resolve() if article_dir is not None else root / base
+        current_dir = (root / article_dir).resolve() if article_dir is not None else root / CURRENT_ARTICLE
         if current_dir.is_dir():
             current_files = sorted(current_dir.rglob("*.tex"))
             result["current_manuscript_status"] = "checked" if current_files else "present_without_tex"
@@ -174,7 +175,7 @@ def verify(root: Path, article_dir: Path | None = None) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
-    parser.add_argument("--article-dir", type=Path, help="also require and inspect this current article directory")
+    parser.add_argument("--article-dir", type=Path, help="require this current article directory (default inspection: paper/ai4science_ysda2026 when present)")
     args = parser.parse_args()
     result = verify(args.root.resolve(), args.article_dir)
     print(json.dumps(result, ensure_ascii=False, indent=2))

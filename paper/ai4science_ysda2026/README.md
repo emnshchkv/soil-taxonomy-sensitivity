@@ -35,7 +35,7 @@ pdflatex -interaction=nonstopmode -halt-on-error paper.tex
 
 ```sh
 python3 src/check_paper_results.py --out-dir results/paper_step4/20261118
-python3 src/check_literature_registry.py --article-dir manuscript/ai4science_ysda2026
+python3 src/check_literature_registry.py --article-dir paper/ai4science_ysda2026
 python3 src/check_paper_scaffold.py
 python3 src/check_article.py
 python3 tests/test_article.py

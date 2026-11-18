@@ -25,11 +25,11 @@
 
 2. Пути и формат
 
-Основной исходник: /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/manuscript/ai4science_ysda2026/paper.tex.
-Итоговый PDF: /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/manuscript/ai4science_ysda2026/paper.pdf.
+Основной исходник: /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/paper.tex.
+Итоговый PDF: /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/paper.pdf.
 Рабочие фрагменты, таблица утверждений и журнал вычитки могут лежать рядом. Читаемые приложения и README со сборкой также сохраняй в этом каталоге.
 
-Литература находится в /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/references/: четыре PDF, текст RESCRIPt и его части. Реестр, BibTeX и исторические свидетельства остаются в /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/lit/. Согласованное место статьи — manuscript/ai4science_ysda2026/.
+Литература находится в /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/references/: четыре PDF, текст RESCRIPt и его части. Реестр, BibTeX и исторические свидетельства остаются в /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/lit/. Согласованное место статьи — paper/ai4science_ysda2026/.
 
 Используй предоставленный шаблон /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/ai4science_ysda2026_template/. Прочитай paper.tex и ai4science_ysda2026.sty из него; необходимые служебные файлы скопируй в рабочий каталог, оригиналы не меняй. Шаблон использует пакет .sty и BibTeX, две колонки, Letter. Не подменяй его другим .cls из учебного каркаса. Не меняй поля, шрифты и интервалы ради объёма. Основной текст — 2–4 страницы; литература, «Использование ИИ-ассистентов» и приложения в этот объём не входят. Собирай обезличенную версию штатным режимом без final/preprint. Это локальный проверяемый черновик, не отправка на конференцию.
 
@@ -107,7 +107,7 @@ K_S63 — отрицательный контроль, не почва. Не о�
 Python запускай через conda run --no-capture-output -n qiime2-amplicon-2025.7 python3. Обязательные проверки из корня проекта:
 
 conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_paper_results.py --out-dir /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118
-conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_literature_registry.py --article-dir /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/manuscript/ai4science_ysda2026
+conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_literature_registry.py --article-dir /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026
 conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_paper_scaffold.py
 conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/check_article.py
 conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/checks/check.py

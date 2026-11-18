@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-18",
+  "status": "PASS",
+  "old_directory": "manuscript",
+  "new_directory": "paper",
+  "article_files": 27,
+  "article_files_sha256": {
+    "ai4science_ysda2026/README.md": "37313b8c2e5d1704efe6086033d54e40bdf2332f615907d6fed29fa96464388e",
+    "ai4science_ysda2026/ai4science_ysda2026.bst": "c933b5f6405103d37f1deb5fa9198e6ff44b29a0a7abe626fe641bc0bdb2b5cb",
+    "ai4science_ysda2026/ai4science_ysda2026.sty": "c77acec66a6ab5c1f22dc4048a5b9d649fc0d598e59e828ee0883b92e5f2f457",
+    "ai4science_ysda2026/ai_usage.tex": "0040b71db2ee0718e6d5b28393eecfb0aa518c47bbc10d3c281cf0ffc23942c8",
+    "ai4science_ysda2026/algorithm.sty": "93fd0eb31c112eb405833db8f1d7f5d238c7e691b1c05680d7276e68f36d564a",
+    "ai4science_ysda2026/algorithmic.sty": "48d18794a5d97c0479a588cc2eac0917992feb9da83acc4631b8f55757d80f9b",
+    "ai4science_ysda2026/appendix.tex": "f65d08f23be5850b5a94c0384473c01234e8b02c5af96c3d22cf2f4d58c313fc",
+    "ai4science_ysda2026/claims.tsv": "504e72a387edf0d9321dd7146a54cedbfb5f3eb004baa21c2970626e6bc42815",
+    "ai4science_ysda2026/fancyhdr.sty": "9130c52f91087abc6d223164ffa587e207e3257fcbcd069ef09ecb5391043f14",
+    "ai4science_ysda2026/paper.aux": "2a3bb417ddd36658f23e46624a4d70b77a8fa1ddeccad8ed40a3da9026ce688f",
+    "ai4science_ysda2026/paper.bbl": "ea5897bc7922efe49ca4742f3d0bfe69c8ff90fa8ba0370454d90a1fdc3befcc",
+    "ai4science_ysda2026/paper.blg": "8668e550cee41010990e8700babea16b78f246ccc498cdc7883a1a81ab58e29e",
+    "ai4science_ysda2026/paper.log": "daf61be0093e4517d47d4d13dc966e9ce5ceabe7a057224a041f930237787fad",
+    "ai4science_ysda2026/paper.out": "ea495b1e406d900ac4023b7142dc4c2fe448176873d24de3cce739289fdad15e",
+    "ai4science_ysda2026/paper.pdf": "b44ee887be0fcf8d4e074e62d54de4e85e6c846fd18b2e486354255c79a549f8",
+    "ai4science_ysda2026/paper.tex": "e370536cf7255825d05a52e537fed5405b260b1a0e8961740d8cee13c6d01e9b",
+    "ai4science_ysda2026/references.bib": "e19b66e0e5bc91be749a8152ea3a4163e3d0beb80d1219c995a4427b0fa6046d",
+    "ai4science_ysda2026/section_review.md": "44875bf5282b83cb9fc6762b979d26d5c70e377cb1df56d0eaa744a092ade486",
+    "ai4science_ysda2026/sections/abstract.tex": "3a4662cac92220a05b6ec8a52c5a120edb0455bfadc149f1bb9171057ddfea51",
+    "ai4science_ysda2026/sections/conclusion.tex": "24f2d17a80472b5c921bb7100d4af57ff53cb42a09fc8d5b330eded56651ad9d",
+    "ai4science_ysda2026/sections/experiment.tex": "eaaab96375a65dd644c099242e410f80dcdbf0bc622efa8b71d374abb0f4adc6",
+    "ai4science_ysda2026/sections/limitations.tex": "de3e11298ddb5bf69ec383f9e094714376b2dfcd1601b975b9d56ffba51e8cbb",
+    "ai4science_ysda2026/sections/method.tex": "de40a8eb9cc771d049a9c32bc6091584759d4679168b93c9a4b5a16ebbd92415",
+    "ai4science_ysda2026/sections/problem.tex": "1b4dc60b28e8b2ccec26dc12fc99ec2e1efcdbcc2a953468efaa556c5168a781",
+    "ai4science_ysda2026/sections/related.tex": "bbb5993680703bb6d7959e3262437762cf3ee705b2cece150f7a448fe0d3461f",
+    "ai4science_ysda2026/sections/reproducibility.tex": "b9b82388c55dc7b4670269a535d5f442b3bae99c180af80d3e9ccd212d00be31",
+    "ai4science_ysda2026/sections/verification.tex": "920052b6bf9c532b750253562f308211c875b67def7e4efb0774ad74e834e67c"
+  },
+  "path_only_edits": [
+    "ai4science_ysda2026/README.md",
+    "ai4science_ysda2026/claims.tsv"
+  ],
+  "pdf_unchanged": true,
+  "pdf_sha256": "b44ee887be0fcf8d4e074e62d54de4e85e6c846fd18b2e486354255c79a549f8",
+  "protected_files_unchanged": 168,
+  "protected_scope": [
+    "results/article_step5",
+    "results/paper_step4",
+    "lit/evidence",
+    "lit/transfer_manifest.json",
+    "references",
+    "figures",
+    "checks"
+  ],
+  "checks": [
+    {
+      "command": "python3 src/check_article.py --report results/article_relocation/20261118/article.json",
+      "exit_code": 0,
+      "evidence": "article.json"
+    },
+    {
+      "command": "python3 src/check_literature_registry.py",
+      "exit_code": 0,
+      "evidence": "literature.json"
+    },
+    {
+      "command": "python3 src/check_paper_scaffold.py",
+      "exit_code": 0,
+      "evidence": "scaffold.log"
+    },
+    {
+      "command": "python3 checks/check.py",
+      "exit_code": 0,
+      "evidence": "project.log"
+    },
+    {
+      "command": "python3 tests/test_article.py --report results/article_relocation/20261118/article_tests.json",
+      "exit_code": 0,
+      "evidence": "article_tests.json"
+    },
+    {
+      "command": "python3 tests/test_literature_registry.py",
+      "exit_code": 0,
+      "evidence": "literature_tests.log"
+    }
+  ],
+  "environment_prefix": "conda run --no-capture-output -n qiime2-amplicon-2025.7",
+  "qiime_version": "2025.7.0",
+  "historical_paths_retained": "Past results, diary entries, immutable literature transfer source paths, historical test fixtures and completed task criteria retain original paths. Live links/defaults use paper/.",
+  "pdf_rebuilt": false,
+  "submitted": false
+}

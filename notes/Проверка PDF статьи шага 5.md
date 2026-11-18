@@ -3,7 +3,7 @@ type: Проверка
 ---
 # Проверка PDF статьи шага 5
 
-2026-11-18. [порождено] Итог — [[manuscript/ai4science_ysda2026/paper.pdf]], исходник — [[manuscript/ai4science_ysda2026/paper.tex]], воспроизведение — [[manuscript/ai4science_ysda2026/README.md]]. Статья не подавалась и не публиковалась.
+2026-11-18. [порождено] Итог — [[paper/ai4science_ysda2026/paper.pdf]], исходник — [[paper/ai4science_ysda2026/paper.tex]], воспроизведение — [[paper/ai4science_ysda2026/README.md]]. Статья не подавалась и не публиковалась.
 
 Существующий временный TinyTeX найден без установки. [[src/build_article.py]] выполнил pdfLaTeX → BibTeX → pdfLaTeX → pdfLaTeX, все коды 0; финальный журнал — [[results/article_step5/build_20261118_layout/build.json]]. Первая обёртка остановилась на декодировании строки TeX, исправлена запись сырых байтов; исходная попытка сохранена отдельно.
 
