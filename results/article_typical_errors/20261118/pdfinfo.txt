@@ -1,0 +1,22 @@
+Title:           Чувствительность таксономических профилей почв Москвы к выбору готовой модели классификатора
+Subject:         AI4Science-YSDA 2026
+Keywords:        таксономическое назначение, городские почвы, воспроизводимость
+Author:          
+Creator:         LaTeX with hyperref
+Producer:        pdfTeX-1.40.29
+CreationDate:    Wed Nov 18 18:47:08 2026 MSK
+ModDate:         Wed Nov 18 18:47:08 2026 MSK
+Custom Metadata: yes
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           11
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       334364 bytes
+Optimized:       no
+PDF version:     1.7

@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-18",
+  "status": "REVIEW_COMPLETE",
+  "scope": "Seven user-supplied typical mistakes; read-only article review, not submission approval",
+  "article": "paper/ai4science_ysda2026/paper.pdf",
+  "pdf_sha256": "b44ee887be0fcf8d4e074e62d54de4e85e6c846fd18b2e486354255c79a549f8",
+  "unchanged_files": 70,
+  "findings": [],
+  "items": [
+    {
+      "item": "final option",
+      "verdict": "PASS",
+      "evidence": "paper.tex:2 loads template without options; anonymous label visually confirmed on page 1"
+    },
+    {
+      "item": "Identity in PDF metadata, text, or repository URL",
+      "verdict": "PASS",
+      "author_metadata": "",
+      "search_matches": {
+        "author_identity": [],
+        "private_path": [],
+        "email": [],
+        "repository_link": []
+      },
+      "uri_annotation_count": 0,
+      "xmp_present": false,
+      "evidence": "pdfinfo.txt, pdf_text.txt, pdf_urls.txt, pdf_xmp.txt; page 1 visual inspection"
+    },
+    {
+      "item": "Related work is only a citation list",
+      "verdict": "PASS",
+      "works_checked": 7,
+      "evidence": "sections/related.tex:3,5,6,8,10,11,13; lit/lit.md; independent agent reviewed saved primary sources"
+    },
+    {
+      "item": "Article result numbers differ from saved results",
+      "verdict": "PASS",
+      "article_checks": 646,
+      "numeric_checks": 1520,
+      "evidence": "article.json; numbers.log; frozen numbers.tex + extra_numbers.tex, included tables and figures; version/date/parameter/formula literals distinguished from measured results"
+    },
+    {
+      "item": "Claims broader than evidence",
+      "verdict": "PASS",
+      "evidence": "abstract, problem, experiment and conclusion; descriptive sensitivity of ready models on fixed inputs, no biological accuracy or causal ecological claim; independent scope review agrees"
+    },
+    {
+      "item": "Vague limitations",
+      "verdict": "PASS",
+      "conditions": 7,
+      "evidence": "limitations.tex:3-9; truth/control, training, nomenclature, lost Kr5 composition, protocol unknowns, model denominators, sampling/chemistry scope"
+    },
+    {
+      "item": "Last-day OpenReview registration",
+      "verdict": "USER_REPORTED_STEP_0_COMPLETE",
+      "evidence": "User stated at beginning: шаг 0 я выполнила",
+      "not_verified": "Current profile activation, account email, and conference-page access were not inspected; no registration/submission performed."
+    }
+  ],
+  "commands": [
+    {
+      "command": "python3 src/check_article.py --report results/article_typical_errors/20261118/article.json",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 src/check_paper_results.py --out-dir results/paper_step4/20261118",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 src/check_literature_registry.py --article-dir paper/ai4science_ysda2026",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 checks/check.py",
+      "exit_code": 0
+    }
+  ],
+  "command_prefix": "conda run --no-capture-output -n qiime2-amplicon-2025.7",
+  "qiime_version": "2025.7.0",
+  "scientific_limitation": "Known full DADA2 INCOMPLETE/2 for Kr5 remains explicitly disclosed; audit PASS is not a biological-validity verdict.",
+  "pdf_rebuilt": false,
+  "submitted": false
+}

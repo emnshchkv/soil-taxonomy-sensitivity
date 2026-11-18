@@ -658,3 +658,10 @@ conda run --no-capture-output -n qiime2-amplicon-2025.7 qiime cutadapt trim-sing
 Результат: paper/ai4science_ysda2026/paper.pdf и исходники сохранены; 27 файлов перемещены, только README.md и claims.tsv получили исправления путей. 168 файлов прежних свидетельств/чисел/литературы/рисунков/проверок сохранены. references/ не переименовывался.
 Точка проверки: results/article_relocation/20261118/before.json, verification.json, article.json, literature.json, article_tests.json и журналы.
 Итог проверки: src/check_article.py, src/check_literature_registry.py, src/check_paper_scaffold.py, checks/check.py, tests/test_article.py и tests/test_literature_registry.py через conda qiime2-amplicon-2025.7 — все 0. PDF не пересобирался, научные результаты и прежние журналы не переписаны; исторические адреса оставлены для прослеживаемости. Подача и push не выполнялись.
+
+## 2026-11-18 — Проверка статьи на типовые ошибки
+
+Что сделано: выполнена [[Проверить статью на типовые ошибки перед подачей]], создана [[Проверка типовых ошибок статьи перед подачей]]. Прочитаны исходники, извлечён полный текст/метаданные/URI PDF, просмотрена первая страница; два независимых агента проверили обзор и границы утверждений/ограничения. QIIME: q2cli 2025.7.0.
+Результат: по первым шести пунктам ошибок не найдено. Шаг 0 OpenReview выполнен по прежнему сообщению пользователя; текущая активация, почта и доступ независимо не проверялись. Статья, PDF, числовые результаты и первичные литературные свидетельства сохранены побайтно.
+Точка проверки: results/article_typical_errors/20261118/audit.json, before.json, article.json, numbers.log, literature.json, project.log; источники проверки анонимности — pdfinfo.txt, pdf_text.txt, pdf_urls.txt, pdf_xmp.txt.
+Итог проверки: src/check_article.py — PASS/0, 646 сверок; src/check_paper_results.py — PASS/0, 1520 сверок; src/check_literature_registry.py и checks/check.py — 0. Известное ограничение полного DADA2 по Kr5 не отменено. Сборка PDF, новые научные расчёты, регистрация, подача и push не выполнялись.
