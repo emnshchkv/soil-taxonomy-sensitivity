@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "reviewer": "AI4Science-агент",
+  "checked_at_utc": "2026-11-18T10:14:33.977356+00:00",
+  "scope": "Visual inspection of every final PNG after the organelle-exclusion update; numeric/domain verification is a separate check.",
+  "figures_reviewed": 5,
+  "figures": [
+    {
+      "rank": "phylum",
+      "path": "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_phylum.png",
+      "sha256": "675c6a50e983e89fed32739dbf068b2378dd940a74b2cc400fe0b965e7f20ebc",
+      "width_px": 2125,
+      "height_px": 2030,
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "status": "PASS",
+      "observations": [
+        "Three model panels, complete legends and 0–100% axes are legible.",
+        "SILVA Kr2_S81 and Kr5_S84 retain their x positions with N=0, a short dash and NA.",
+        "Other assigned and unclassified use distinct hatch patterns; selected taxa use the supplied colours.",
+        "Cyrillic and taxonomic names are readable; no overlaps, missing glyphs or canvas clipping observed.",
+        "The footer explaining N and NA is fully visible and separate from sample IDs."
+      ]
+    },
+    {
+      "rank": "class",
+      "path": "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_class.png",
+      "sha256": "6c582fecc17ce0f10d0d9c3b3abad5a764c7bbff19347718295fd482ac25e3ae",
+      "width_px": 2125,
+      "height_px": 2260,
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "status": "PASS",
+      "observations": [
+        "Wrapped parent-rank annotations in the legends fit without clipping.",
+        "Panel titles, per-bar N values and the common bottom sample order remain distinct.",
+        "SILVA zero-denominator positions are shown as NA rather than a full unclassified bar.",
+        "Cyrillic and taxonomic names are readable; no overlaps, missing glyphs or canvas clipping observed.",
+        "The footer explaining N and NA is fully visible and separate from sample IDs."
+      ]
+    },
+    {
+      "rank": "order",
+      "path": "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_order.png",
+      "sha256": "8b0496ff352401015a06abf9edf4b6f11c39570dca2dccd2ce807460909ff93c",
+      "width_px": 2125,
+      "height_px": 2490,
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "status": "PASS",
+      "observations": [
+        "Long two-line taxonomy legend entries remain inside the right margin.",
+        "The increased figure height keeps adjacent panel legends and N rows separate.",
+        "All ten sample labels and the N/NA footer are fully visible.",
+        "Cyrillic and taxonomic names are readable; no overlaps, missing glyphs or canvas clipping observed.",
+        "The footer explaining N and NA is fully visible and separate from sample IDs."
+      ]
+    },
+    {
+      "rank": "family",
+      "path": "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_family.png",
+      "sha256": "be8ca1dd508f0b0af9a8d61bc02a83f2937bf41a2706ee26535e4748b0800c11",
+      "width_px": 2125,
+      "height_px": 2375,
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "status": "PASS",
+      "observations": [
+        "Long Greengenes2 family names and suffixes wrap visibly without truncation.",
+        "The final SILVA legend does not contain the preliminary Mitochondria entry.",
+        "SILVA Kr2_S81 and Kr5_S84 show N=0 and NA; no cropped legend swatches or sample labels.",
+        "Cyrillic and taxonomic names are readable; no overlaps, missing glyphs or canvas clipping observed.",
+        "The footer explaining N and NA is fully visible and separate from sample IDs."
+      ]
+    },
+    {
+      "rank": "genus",
+      "path": "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_genus.png",
+      "sha256": "2d6a5821d484aceb2649f68497559f461f5d518dc36057f59e2ea3ede90e8b11",
+      "width_px": 2125,
+      "height_px": 2375,
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "status": "PASS",
+      "observations": [
+        "The two SILVA uncultured labels have visible parent annotations; Sphingomonas labels retain their parent distinction.",
+        "Long Greengenes2 genus labels and suffixes fit within the canvas.",
+        "Small coloured segments remain visible where present; neutral hatch patterns, N values and NA positions are distinguishable.",
+        "Cyrillic and taxonomic names are readable; no overlaps, missing glyphs or canvas clipping observed.",
+        "The footer explaining N and NA is fully visible and separate from sample IDs."
+      ]
+    }
+  ],
+  "common_checks": {
+    "three_model_panels": true,
+    "ten_soil_samples_preserved": true,
+    "sample_order_common_and_labels_on_bottom_panel": true,
+    "per_bar_N_visible": true,
+    "silva_Kr2_S81_and_Kr5_S84_N_zero_and_NA": true,
+    "unclassified_distinct_from_other_assigned": true,
+    "legend_parent_annotations_and_suffixes_visible": true,
+    "N_NA_footer_readable": true,
+    "overlaps_or_clipping_observed": false
+  },
+  "issues": [],
+  "source_files_modified": false,
+  "limits": [
+    "This record evaluates visual presentation, not biological correctness or independently recalculated segment values.",
+    "It applies to the five PNG SHA256 values above; altered images need a new visual review."
+  ]
+}

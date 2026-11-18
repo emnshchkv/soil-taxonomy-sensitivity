@@ -1,0 +1,310 @@
+{
+  "status": "PASS",
+  "checker": "AI4Science-агент",
+  "checked_at_utc": "2026-11-18T10:06:45.760700+00:00",
+  "scope": "Current versions of notes/tasks touched by the two specified commits; ontology links/types/statuses and README Ns, no edits to audited documents.",
+  "commits": {
+    "84bdbc1": "84bdbc1a6932f46966bc272d297517d99279b894",
+    "5a8530a": "5a8530ad8db594a7585dc90b6cb207508d2b79d9"
+  },
+  "ontology_sha256": "8cc5e34cd37c57aff6b383f669b8d8e27a83702a736e96cd23077630a095cfe0",
+  "graph": {
+    "files_checked": 10,
+    "records": [
+      {
+        "path": "notes/Аудит доменных назначений перед барплотами.md",
+        "sha256": "98a94d0ccc084b4d1ae7d76be7abcb6634d23e32da6ea346a29e83317e3033bd",
+        "type": "Эксперимент",
+        "status": null,
+        "links": [
+          {
+            "relation": "тип",
+            "target": "ontology/Эксперимент.md",
+            "target_type": "Класс"
+          },
+          {
+            "relation": "использует",
+            "target": "notes/Набор готовых таксономий для сравнения.md",
+            "target_type": "НаборДанных"
+          },
+          {
+            "relation": "применяет",
+            "target": "notes/Метод отбора бактериальных назначений для барплотов.md",
+            "target_type": "Метод"
+          },
+          {
+            "relation": "даёт",
+            "target": "notes/Доменные назначения и потери при бактериальном отборе.md",
+            "target_type": "Результат"
+          },
+          {
+            "relation": "решает",
+            "target": "tasks/Определить бактериальный набор для барплотов.md",
+            "target_type": "Задача"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "path": "notes/Доменные назначения и потери при бактериальном отборе.md",
+        "sha256": "c3da5b0d361417f0ed7c05cb86f8a6f8050d731a60e6b4968ac3f15baddf8b5c",
+        "type": "Результат",
+        "status": null,
+        "links": [
+          {
+            "relation": "тип",
+            "target": "ontology/Результат.md",
+            "target_type": "Класс"
+          },
+          {
+            "relation": "хранитсяВ",
+            "target": "results/taxonomy_barplots/preflight_20261118/domain_audit.json",
+            "target_type": "Файл"
+          },
+          {
+            "relation": "хранитсяВ",
+            "target": "results/taxonomy_barplots/preflight_20261118/domain_assignments.tsv",
+            "target_type": "Файл"
+          },
+          {
+            "relation": "хранитсяВ",
+            "target": "results/taxonomy_barplots/preflight_20261118/domain_by_sample.tsv",
+            "target_type": "Файл"
+          },
+          {
+            "relation": "проверенЧерез",
+            "target": "notes/Проверка доменного аудита барплотов.md",
+            "target_type": "Проверка"
+          },
+          {
+            "relation": "характеризует",
+            "target": "notes/Образец K_S63.md",
+            "target_type": "Образец"
+          },
+          {
+            "relation": "характеризует",
+            "target": "notes/Образец Kr1_S80.md",
+            "target_type": "Образец"
+          },
+          {
+            "relation": "характеризует",
+            "target": "notes/Образец Kr2_S81.md",
+            "target_type": "Образец"
+          },
+          {
+            "relation": "характеризует",
+            "target": "notes/Образец Kr3_S82.md",
+            "target_type": "Образец"
+          },
+          {
+            "relation": "характеризует",
+            "target": "notes/Образец Kr4_S83.md",
+            "target_type": "Образец"
+          },
+          {
+            "relation": "характеризует",
+            "target": "notes/Образец Kr5_S84.md",
+            "target_type": "Образец"
+          },
+          {
+            "relation": "характеризует",
+            "target": "notes/Образец LUB2_S92.md",
+            "target_type": "Образец"
+          },
+          {
+            "relation": "характеризует",
+            "target": "notes/Образец LUB3_S93.md",
+            "target_type": "Образец"
+          },
+          {
+            "relation": "характеризует",
+            "target": "notes/Образец LUB4_S94.md",
+            "target_type": "Образец"
+          },
+          {
+            "relation": "характеризует",
+            "target": "notes/Образец LUB5_S95.md",
+            "target_type": "Образец"
+          },
+          {
+            "relation": "характеризует",
+            "target": "notes/Образец LUB6_S96.md",
+            "target_type": "Образец"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "path": "notes/Метод отбора бактериальных назначений для барплотов.md",
+        "sha256": "243282b1e85e19734e7417083710af3d1b5d9d8cf67522de5581c0257589a36d",
+        "type": "Метод",
+        "status": null,
+        "links": [
+          {
+            "relation": "тип",
+            "target": "ontology/Метод.md",
+            "target_type": "Класс"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "path": "notes/Проверка доменного аудита барплотов.md",
+        "sha256": "8dcc9817c7ae4606903ec9042787247e907707126091523418d16a41652781d3",
+        "type": "Проверка",
+        "status": null,
+        "links": [
+          {
+            "relation": "тип",
+            "target": "ontology/Проверка.md",
+            "target_type": "Класс"
+          },
+          {
+            "relation": "решает",
+            "target": "tasks/Определить бактериальный набор для барплотов.md",
+            "target_type": "Задача"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "path": "notes/Проверка отката подготовки статьи.md",
+        "sha256": "951ed6ff65e039a7ad724148b29c5fe145c7806c5541f450cdb143733f371ffc",
+        "type": "Проверка",
+        "status": null,
+        "links": [
+          {
+            "relation": "тип",
+            "target": "ontology/Проверка.md",
+            "target_type": "Класс"
+          },
+          {
+            "relation": "решает",
+            "target": "tasks/Откатить коммиты подготовки статьи.md",
+            "target_type": "Задача"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "path": "tasks/Определить бактериальный набор для барплотов.md",
+        "sha256": "fc09df55ae13f3156af0bd7c9524d900024ec0172441c59b402e457b23676c69",
+        "type": "Задача",
+        "status": "выполнена",
+        "links": [
+          {
+            "relation": "тип",
+            "target": "ontology/Задача.md",
+            "target_type": "Класс"
+          },
+          {
+            "relation": "подзадачаОт",
+            "target": "tasks/Откатить подготовку статьи и построить самостоятельные барплоты.md",
+            "target_type": "Задача"
+          },
+          {
+            "relation": "подзадачаОт",
+            "target": "tasks/Подготовить бактериальные барплоты с исключением эукариот и архей.md",
+            "target_type": "Задача"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "path": "tasks/Откатить коммиты подготовки статьи.md",
+        "sha256": "71e86297e35896c4730caa12d39278e19b2c368c2b23c69de977efe77adb5a9e",
+        "type": "Задача",
+        "status": "выполнена",
+        "links": [
+          {
+            "relation": "тип",
+            "target": "ontology/Задача.md",
+            "target_type": "Класс"
+          },
+          {
+            "relation": "подзадачаОт",
+            "target": "tasks/Откатить подготовку статьи и построить самостоятельные барплоты.md",
+            "target_type": "Задача"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "path": "tasks/Откатить подготовку статьи и построить самостоятельные барплоты.md",
+        "sha256": "809786991cf8d21cce9508b545f316f36a454c6480fe3039532cd54801b3dee8",
+        "type": "Задача",
+        "status": "в работе",
+        "links": [
+          {
+            "relation": "тип",
+            "target": "ontology/Задача.md",
+            "target_type": "Класс"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "path": "tasks/Подготовить бактериальные барплоты с исключением эукариот и архей.md",
+        "sha256": "fb0023b022ba83db89a284ac96ff5de055be093a17a0827f11cb492c823c8aa9",
+        "type": "Задача",
+        "status": "в работе",
+        "links": [
+          {
+            "relation": "тип",
+            "target": "ontology/Задача.md",
+            "target_type": "Класс"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "path": "tasks/Построить и проверить самостоятельные бактериальные барплоты.md",
+        "sha256": "83a5ca88994795217969c841699b84fda3b59f3fa89393f5a3f084429c427d24",
+        "type": "Задача",
+        "status": "в работе",
+        "links": [
+          {
+            "relation": "тип",
+            "target": "ontology/Задача.md",
+            "target_type": "Класс"
+          },
+          {
+            "relation": "подзадачаОт",
+            "target": "tasks/Откатить подготовку статьи и построить самостоятельные барплоты.md",
+            "target_type": "Задача"
+          },
+          {
+            "relation": "подзадачаОт",
+            "target": "tasks/Подготовить бактериальные барплоты с исключением эукариот и архей.md",
+            "target_type": "Задача"
+          }
+        ],
+        "issues": []
+      }
+    ]
+  },
+  "readme": {
+    "path": "results/taxonomy_barplots/README.md",
+    "sha256": "c9537fb82d02dd30474f4020e12afcb8973466adc2e25cf0b1988efe55d328f9",
+    "source": "results/taxonomy_barplots/preflight_20261118/domain_by_sample.tsv",
+    "source_sha256": "444b30dbbcca9f3f7a4e05b47ee0a68b24b63bc00ab61a7b5ce49a8da7b26433",
+    "rows_checked": 11,
+    "numeric_cells_checked": 44,
+    "columns": [
+      "total_retained_reads",
+      "sklearn_silva138_Bacteria_reads",
+      "sklearn_gtdb_Bacteria_reads",
+      "sklearn_gg2_Bacteria_reads"
+    ],
+    "nonempty_soil_by_model": {
+      "sklearn_silva138": 9,
+      "sklearn_gtdb": 10,
+      "sklearn_gg2": 10
+    }
+  },
+  "issues": [],
+  "limits": [
+    "Does not assess biological correctness or all pre-existing graph nodes.",
+    "Graph outcome is tied to these file hashes; later task/status updates need no silent rewrite of this evidence."
+  ]
+}

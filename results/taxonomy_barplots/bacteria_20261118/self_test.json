@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "baseline": "PASS",
+  "mutated": "FAIL",
+  "restored": "PASS",
+  "mutation": "Moved one read between two categories within one bar, preserving total; recomputed fractions and refreshed the temporary artifact hash.",
+  "sample": "Kr4_S83",
+  "model": "sklearn_silva138",
+  "rank": "тип",
+  "detected": [
+    "Segment ('sklearn_silva138', 'Kr4_S83', 'тип', 'd__Bacteria;p__Proteobacteria'): count mismatch"
+  ],
+  "isolation": "Only a temporary output copy changed; original outputs and scientific inputs were untouched."
+}

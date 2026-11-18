@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "src/plot_taxonomy_profiles.py",
+    "--out-dir",
+    "results/taxonomy_barplots/bacteria_20261118"
+  ],
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "conda_environment": "qiime2-amplicon-2025.7",
+  "start_utc": "2026-11-18T10:13:04.117762+00:00",
+  "temporary_cache_overrides": {
+    "MPLCONFIGDIR": "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/bacterial-barplot-cache-gyrfnesa/matplotlib",
+    "XDG_CACHE_HOME": "/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/bacterial-barplot-cache-gyrfnesa/xdg"
+  },
+  "exit_code": 0,
+  "end_utc": "2026-11-18T10:13:13.917304+00:00",
+  "stdout": "generate.stdout.txt",
+  "stderr": "generate.stderr.txt",
+  "stdout_sha256": "dc35330cbffc41b0eefcf6f96c12dd2e17484633ec7bf86bab34a2e7c50ebeb3",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

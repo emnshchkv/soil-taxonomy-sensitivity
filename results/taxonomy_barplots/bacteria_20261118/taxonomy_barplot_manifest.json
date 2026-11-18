@@ -1,0 +1,301 @@
+{
+  "schema": "bacterial-taxonomy-barplots-v1",
+  "author": "AI4Science-агент",
+  "created_utc": "2026-11-18T10:13:13.685417+00:00",
+  "argv": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "src/plot_taxonomy_profiles.py",
+    "--out-dir",
+    "results/taxonomy_barplots/bacteria_20261118"
+  ],
+  "working_directory": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "code_commit": "8852a7b8d0b6e7aa0030e326b19e11b0336f9796",
+  "code_sha256": {
+    "src/plot_taxonomy_profiles.py": "de34d3aafcd7aba695fe2d3f6f23821d3a3566488dce6635f3557937c228f61f",
+    "src/check_taxonomy_barplots.py": "9144bb3034d38384f6415cd36e6f17a2df607857384c102a839431cb4578551f",
+    "src/render_taxonomy_barplots.py": "dcedefda93fa8a184967d2af1cd98a9c9ff907b2de8b95cde2ff9b58b1a28f5e"
+  },
+  "sources": {
+    "work/qza/ASV_table.qza": "0742f177e67b042b25ab1a479193d3d8c7c5dba22d8e73bd2cec254ef3066489",
+    "work/qza/rep_seq.qza": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86",
+    "data/meta/metadata.tsv": "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123",
+    "data/refs/VERSIONS.md": "d02f87f183b6d43699b3ec0850d8d9ef41149b682eccda38166cee2e01d9e66e",
+    "work/qza/taxonomy_sklearn_silva138.qza": "66d7b18f8349c6adcd2e0d8a74f860e6674f5691e5bdbea8cd885cb0381505d6",
+    "work/qza/taxonomy_sklearn_gtdb.qza": "a542ba9b762e42112b7dc95a05de6b9870b4b8e22b01acd0847b22201090f73e",
+    "work/qza/taxonomy_sklearn_gg2.qza": "e972b452e45cfc991e69712ded06b3ef47d5915a85caecfbdc06016ab2439771",
+    "results/taxonomy_comparison/finish_20261116/main/assignments.tsv": "d4378a9c18697702d13d5c3866389874fbfd2080b5ca60da60a8684c490e91c5"
+  },
+  "inputs_unchanged": true,
+  "parameters": {
+    "domain_policy": "per-model explicit Bacteria",
+    "organelle_exclusion": [
+      "Mitochondria",
+      "Chloroplast"
+    ],
+    "organelle_rule": "case-insensitive exact complete token after rank prefix and whitespace removal, any rank; each ASV counted once",
+    "top_n": 8,
+    "ranks": [
+      "тип",
+      "класс",
+      "порядок",
+      "семейство",
+      "род"
+    ],
+    "models": [
+      "sklearn_silva138",
+      "sklearn_gtdb",
+      "sklearn_gg2"
+    ],
+    "soil_samples": [
+      "Kr1_S80",
+      "Kr2_S81",
+      "Kr3_S82",
+      "Kr4_S83",
+      "Kr5_S84",
+      "LUB2_S92",
+      "LUB3_S93",
+      "LUB4_S94",
+      "LUB5_S95",
+      "LUB6_S96"
+    ],
+    "all_samples": [
+      "K_S63",
+      "Kr1_S80",
+      "Kr2_S81",
+      "Kr3_S82",
+      "Kr4_S83",
+      "Kr5_S84",
+      "LUB2_S92",
+      "LUB3_S93",
+      "LUB4_S94",
+      "LUB5_S95",
+      "LUB6_S96"
+    ],
+    "audit_only": false
+  },
+  "selection_rule": "For each model and rank independently: descending mean fraction over all nonempty bacterial soil samples, absent keys contribute zero; ties use the complete lineage key lexicographically.",
+  "normalization": "Count divided by the per-model selected bacterial reads of that sample after domain and exact labelled-organelle exclusions. Zero selected reads => NA, sample retained. Eukaryota, Archaea and unknown-domain ASVs excluded; rank UNCLASSIFIED inside remaining explicit Bacteria retained. Unlabelled organelles cannot be identified by this rule.",
+  "comparison_limit": "The ASV masks and denominators differ by model; these plots are not a common-input comparison or biological ground truth.",
+  "other_assigned": "Remaining assigned complete keys are grouped for display only; membership differs between model/rank panels and is listed in taxonomy_barplot_keys.tsv.",
+  "color_rule": "Within a rank, identical full keys share a color; different full keys have different colors even when their terminal labels match.",
+  "colors": {
+    "тип": {
+      "d__Bacteria;p__Acidobacteriota": "#1f77b4",
+      "d__Bacteria;p__Actinobacteriota": "#ff7f0e",
+      "d__Bacteria;p__Actinomycetota": "#2ca02c",
+      "d__Bacteria;p__Bacteroidota": "#d62728",
+      "d__Bacteria;p__Chloroflexota": "#9467bd",
+      "d__Bacteria;p__Gemmatimonadota": "#8c564b",
+      "d__Bacteria;p__Myxococcota": "#e377c2",
+      "d__Bacteria;p__Myxococcota_A_473307": "#17becf",
+      "d__Bacteria;p__Planctomycetota": "#bcbd22",
+      "d__Bacteria;p__Proteobacteria": "#aec7e8",
+      "d__Bacteria;p__Pseudomonadota": "#ffbb78",
+      "d__Bacteria;p__Verrucomicrobiota": "#98df8a"
+    },
+    "класс": {
+      "d__Bacteria;p__Acidobacteriota;c__Blastocatellia": "#1f77b4",
+      "d__Bacteria;p__Acidobacteriota;c__Holophagae": "#ff7f0e",
+      "d__Bacteria;p__Acidobacteriota;c__Thermoanaerobaculia": "#2ca02c",
+      "d__Bacteria;p__Acidobacteriota;c__Vicinamibacteria": "#d62728",
+      "d__Bacteria;p__Bacteroidota;c__Bacteroidia": "#9467bd",
+      "d__Bacteria;p__Gemmatimonadota;c__Gemmatimonadetes": "#8c564b",
+      "d__Bacteria;p__Planctomycetota;c__Planctomycetes": "#e377c2",
+      "d__Bacteria;p__Planctomycetota;c__Planctomycetia": "#17becf",
+      "d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria": "#bcbd22",
+      "d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria": "#aec7e8",
+      "d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria": "#ffbb78",
+      "d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria": "#98df8a",
+      "d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiae": "#ff9896"
+    },
+    "порядок": {
+      "d__Bacteria;p__Acidobacteriota;c__Blastocatellia;o__Pyrinomonadales": "#1f77b4",
+      "d__Bacteria;p__Acidobacteriota;c__Holophagae;o__Subgroup_7": "#ff7f0e",
+      "d__Bacteria;p__Acidobacteriota;c__Thermoanaerobaculia;o__UBA5066": "#2ca02c",
+      "d__Bacteria;p__Acidobacteriota;c__Vicinamibacteria;o__Vicinamibacterales": "#d62728",
+      "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Chitinophagales": "#9467bd",
+      "d__Bacteria;p__Gemmatimonadota;c__Gemmatimonadetes;o__Gemmatimonadales": "#8c564b",
+      "d__Bacteria;p__Planctomycetota;c__Planctomycetes;o__Pirellulales": "#e377c2",
+      "d__Bacteria;p__Planctomycetota;c__Planctomycetia;o__Pirellulales": "#17becf",
+      "d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Rhizobiales": "#bcbd22",
+      "d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Sphingomonadales": "#aec7e8",
+      "d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Burkholderiales": "#ffbb78",
+      "d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhizobiales": "#98df8a",
+      "d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhizobiales_505101": "#ff9896",
+      "d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Sphingomonadales": "#c5b0d5",
+      "d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales": "#c49c94"
+    },
+    "семейство": {
+      "d__Bacteria;p__Acidobacteriota;c__Blastocatellia;o__Pyrinomonadales;f__Pyrinomonadaceae": "#1f77b4",
+      "d__Bacteria;p__Acidobacteriota;c__Holophagae;o__Subgroup_7;f__Subgroup_7": "#ff7f0e",
+      "d__Bacteria;p__Acidobacteriota;c__Thermoanaerobaculia;o__Gp7-AA8;f__Gp7-AA8": "#2ca02c",
+      "d__Bacteria;p__Acidobacteriota;c__Vicinamibacteria;o__Vicinamibacterales;f__UBA2999": "#d62728",
+      "d__Bacteria;p__Acidobacteriota;c__Vicinamibacteria;o__Vicinamibacterales;f__Vicinamibacteraceae": "#9467bd",
+      "d__Bacteria;p__Acidobacteriota;c__Vicinamibacteria;o__Vicinamibacterales;f__uncultured": "#8c564b",
+      "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Chitinophagales;f__Chitinophagaceae": "#e377c2",
+      "d__Bacteria;p__Gemmatimonadota;c__Gemmatimonadetes;o__Gemmatimonadales;f__Gemmatimonadaceae": "#17becf",
+      "d__Bacteria;p__Planctomycetota;c__Phycisphaerae;o__Tepidisphaerales;f__Tepidisphaeraceae": "#bcbd22",
+      "d__Bacteria;p__Planctomycetota;c__Planctomycetes;o__Pirellulales;f__Pirellulaceae": "#aec7e8",
+      "d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Sphingomonadales;f__Sphingomonadaceae": "#ffbb78",
+      "d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Burkholderiales;f__Comamonadaceae": "#98df8a",
+      "d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhizobiales;f__Xanthobacteraceae": "#ff9896",
+      "d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhizobiales_505101;f__Xanthobacteraceae": "#c5b0d5",
+      "d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Sphingomonadales;f__Sphingomonadaceae": "#c49c94",
+      "d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Sphingomonadales;f__Sphingomonadaceae_486827": "#f7b6d2",
+      "d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae": "#9edae5",
+      "d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_A_595421": "#dbdb8d",
+      "d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Xanthomonadales;f__Xanthomonadaceae": "#393b79"
+    },
+    "род": {
+      "d__Bacteria;p__Acidobacteriota;c__Blastocatellia;o__Pyrinomonadales;f__Pyrinomonadaceae;g__OLB17": "#1f77b4",
+      "d__Bacteria;p__Acidobacteriota;c__Blastocatellia;o__Pyrinomonadales;f__Pyrinomonadaceae;g__PSRF01": "#ff7f0e",
+      "d__Bacteria;p__Acidobacteriota;c__Blastocatellia;o__Pyrinomonadales;f__Pyrinomonadaceae;g__RB41": "#2ca02c",
+      "d__Bacteria;p__Acidobacteriota;c__Holophagae;o__Subgroup_7;f__Subgroup_7;g__Subgroup_7": "#d62728",
+      "d__Bacteria;p__Acidobacteriota;c__Thermoanaerobaculia;o__Gp7-AA8;f__Gp7-AA8;g__QHVT01": "#9467bd",
+      "d__Bacteria;p__Acidobacteriota;c__Vicinamibacteria;o__Vicinamibacterales;f__UBA2999;g__Gp6-AA40": "#8c564b",
+      "d__Bacteria;p__Acidobacteriota;c__Vicinamibacteria;o__Vicinamibacterales;f__UBA2999;g__Gp6-AA45": "#e377c2",
+      "d__Bacteria;p__Acidobacteriota;c__Vicinamibacteria;o__Vicinamibacterales;f__Vicinamibacteraceae;g__Vicinamibacteraceae": "#17becf",
+      "d__Bacteria;p__Acidobacteriota;c__Vicinamibacteria;o__Vicinamibacterales;f__uncultured;g__uncultured": "#bcbd22",
+      "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Chitinophagales;f__Chitinophagaceae;g__Ferruginibacter": "#aec7e8",
+      "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Chitinophagales;f__Chitinophagaceae;g__Flavisolibacter_B": "#ffbb78",
+      "d__Bacteria;p__Cyanobacteriota;c__Cyanobacteriia;o__Cyanobacteriales;f__Nostocaceae;g__NIES-3974": "#98df8a",
+      "d__Bacteria;p__Gemmatimonadota;c__Gemmatimonadetes;o__Gemmatimonadales;f__Gemmatimonadaceae;g__uncultured": "#ff9896",
+      "d__Bacteria;p__Planctomycetota;c__Phycisphaerae;o__Tepidisphaerales;f__Tepidisphaeraceae;g__UBA2421": "#c5b0d5",
+      "d__Bacteria;p__Planctomycetota;c__Phycisphaerae;o__Tepidisphaerales;f__WD2101_soil_group;g__WD2101_soil_group": "#c49c94",
+      "d__Bacteria;p__Planctomycetota;c__Planctomycetes;o__Pirellulales;f__Pirellulaceae;g__Pirellula": "#f7b6d2",
+      "d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Sphingomonadales;f__Sphingomonadaceae;g__Sphingomonas": "#9edae5",
+      "d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Caulobacterales;f__TH1-2;g__Vitreimonas": "#dbdb8d",
+      "d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Sphingomonadales;f__Sphingomonadaceae;g__Sphingomicrobium": "#393b79",
+      "d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Sphingomonadales;f__Sphingomonadaceae;g__Sphingomonas": "#637939",
+      "d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Sphingomonadales;f__Sphingomonadaceae_486827;g__Sphingomonas_L_486704": "#8c6d31",
+      "d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Xanthomonadales;f__Xanthomonadaceae;g__Arenimonas": "#843c39",
+      "d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Xanthomonadales;f__Xanthomonadaceae;g__Arenimonas_613591": "#7b4173",
+      "d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiae;o__Limisphaerales;f__Pedosphaeraceae;g__Pedosphaera": "#3182bd"
+    }
+  },
+  "nonempty_bacterial_soil_samples": {
+    "sklearn_silva138": [
+      "Kr1_S80",
+      "Kr3_S82",
+      "Kr4_S83",
+      "LUB2_S92",
+      "LUB3_S93",
+      "LUB4_S94",
+      "LUB5_S95",
+      "LUB6_S96"
+    ],
+    "sklearn_gtdb": [
+      "Kr1_S80",
+      "Kr2_S81",
+      "Kr3_S82",
+      "Kr4_S83",
+      "Kr5_S84",
+      "LUB2_S92",
+      "LUB3_S93",
+      "LUB4_S94",
+      "LUB5_S95",
+      "LUB6_S96"
+    ],
+    "sklearn_gg2": [
+      "Kr1_S80",
+      "Kr2_S81",
+      "Kr3_S82",
+      "Kr4_S83",
+      "Kr5_S84",
+      "LUB2_S92",
+      "LUB3_S93",
+      "LUB4_S94",
+      "LUB5_S95",
+      "LUB6_S96"
+    ]
+  },
+  "asv_domain_summary": {
+    "all": {
+      "asv": 3374,
+      "per_model": {
+        "sklearn_silva138": {
+          "Bacteria": 2885,
+          "Eukaryota": 342,
+          "unknown": 133,
+          "Archaea": 14
+        },
+        "sklearn_gtdb": {
+          "Bacteria": 3297,
+          "unknown": 63,
+          "Archaea": 14
+        },
+        "sklearn_gg2": {
+          "Bacteria": 3303,
+          "unknown": 58,
+          "Archaea": 13
+        }
+      },
+      "bacterial_organelle_excluded_asv": {
+        "sklearn_silva138": 20,
+        "sklearn_gtdb": 0,
+        "sklearn_gg2": 4
+      },
+      "selected_bacterial_asv": {
+        "sklearn_silva138": 2865,
+        "sklearn_gtdb": 3297,
+        "sklearn_gg2": 3299
+      },
+      "common_bacteria_asv": 2883
+    },
+    "soil": {
+      "asv": 3309,
+      "per_model": {
+        "sklearn_silva138": {
+          "Bacteria": 2820,
+          "Eukaryota": 342,
+          "unknown": 133,
+          "Archaea": 14
+        },
+        "sklearn_gtdb": {
+          "Bacteria": 3232,
+          "unknown": 63,
+          "Archaea": 14
+        },
+        "sklearn_gg2": {
+          "Bacteria": 3238,
+          "unknown": 58,
+          "Archaea": 13
+        }
+      },
+      "bacterial_organelle_excluded_asv": {
+        "sklearn_silva138": 16,
+        "sklearn_gtdb": 0,
+        "sklearn_gg2": 2
+      },
+      "selected_bacterial_asv": {
+        "sklearn_silva138": 2804,
+        "sklearn_gtdb": 3232,
+        "sklearn_gg2": 3236
+      },
+      "common_bacteria_asv": 2818
+    }
+  },
+  "outputs": {
+    "bacterial_mask.tsv": "706d1476b924b850842bee62762d379f0b40a35c6a9d71b4ac49d0a0bb69c095",
+    "domain_by_sample.tsv": "6a255a79f5c9c36388c99b44e4761fd26fba32df7e85c70f297cc495e4838365",
+    "domain_audit.json": "2dca2d5dfa6ef7df1a4cc0ed9222c52c169a38a0e8948171fc41d731267f1d27",
+    "bacterial_profiles.tsv": "d7207ef18c6e0a65ce697145cdc0ded72e6fce1fb96c82736bf96dc035833a07",
+    "taxonomy_barplot_keys.tsv": "6a93c7046e19783723e950e479f5c8c9cb5ca286259435f6e82f37cd739266d9",
+    "taxonomy_barplot_data.tsv": "4637f51fb99c89264f127ea7c89358af0e494000218b458456394a692cf3c122",
+    "figures/taxonomy_phylum.pdf": "7ae0cc68f631bd60a016cbab99a08b0e87eaa83da2c4046ed3fbc75d3bac9d23",
+    "figures/taxonomy_phylum.png": "675c6a50e983e89fed32739dbf068b2378dd940a74b2cc400fe0b965e7f20ebc",
+    "figures/taxonomy_phylum.svg": "dfcc8ac87778c49638dc201b6da4128f3a2af0afd01d2e18f5507a3bee8c7d73",
+    "figures/taxonomy_class.pdf": "368e4f172b91b3b183e922f7253785a0a34ce8432ee024a0696f61223dd632b2",
+    "figures/taxonomy_class.png": "6c582fecc17ce0f10d0d9c3b3abad5a764c7bbff19347718295fd482ac25e3ae",
+    "figures/taxonomy_class.svg": "248b5b7c3cfda48198e2540729ea7b27c7be5cc33068742e6094ef73c76e9b57",
+    "figures/taxonomy_order.pdf": "af4a8e1ff0ea0d53eee9911a4ea535e65734e0e9a83753048fd0f81a429bf358",
+    "figures/taxonomy_order.png": "8b0496ff352401015a06abf9edf4b6f11c39570dca2dccd2ce807460909ff93c",
+    "figures/taxonomy_order.svg": "a1f174f29fb26a2d84d8ccb0ac2713d9a948c5ef4a5bbf1a3e72c043acb529ec",
+    "figures/taxonomy_family.pdf": "7777f339474795bc51dd67c2fc7e2b6564db3e193afaa7625f975918a0592d5c",
+    "figures/taxonomy_family.png": "be8ca1dd508f0b0af9a8d61bc02a83f2937bf41a2706ee26535e4748b0800c11",
+    "figures/taxonomy_family.svg": "96ab541c06b1ae643a3ecdfe7a0ac700020038830ff6e725a4120c60d98e4abe",
+    "figures/taxonomy_genus.pdf": "37599e5be7466d2fd05db7972d92b7f10e759cd503d0c65a8d5809475974f1a4",
+    "figures/taxonomy_genus.png": "2d6a5821d484aceb2649f68497559f461f5d518dc36057f59e2ea3ede90e8b11",
+    "figures/taxonomy_genus.svg": "aac6fb1790a8f67f22522062681f14a5ebb01eb339d5bd0fd566812b58516856"
+  }
+}

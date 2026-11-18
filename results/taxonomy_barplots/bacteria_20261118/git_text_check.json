@@ -1,0 +1,12 @@
+{
+  "text_diff_check_exit": 0,
+  "generated_svg_trailing_whitespace_lines": 7500,
+  "generated_svg_files": [
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_class.svg",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_family.svg",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_genus.svg",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_order.svg",
+    "results/taxonomy_barplots/bacteria_20261118/figures/taxonomy_phylum.svg"
+  ],
+  "note": "Matplotlib SVG path formatting retains trailing whitespace; verified generated artifacts are kept byte-for-byte. Text/code diff passes with only these SVG exports excluded."
+}

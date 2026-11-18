@@ -1,0 +1,39 @@
+{
+  "status": "LAYOUT_PASS_PRELIMINARY",
+  "reviewer": "AI4Science-агент",
+  "checked_at_utc": "2026-11-18T10:11:51.426684+00:00",
+  "scope": "Visual inspection of class, order and family PNGs from real-data preliminary preview; no scientific acceptance of the previous domain mask.",
+  "figures": [
+    {
+      "path": "/tmp/project_bacteria_barplots_preview_20261118/figures/taxonomy_class.png",
+      "sha256": "4bb4cdbe55e3c078e437bbd936606c23f0f79e5466ff951082ac03ce52d12708",
+      "layout": "PASS"
+    },
+    {
+      "path": "/tmp/project_bacteria_barplots_preview_20261118/figures/taxonomy_order.png",
+      "sha256": "f947c9b0b29967387deaa1b278a21a57a9cc5cfa8636905424e98efe22825460",
+      "layout": "PASS"
+    },
+    {
+      "path": "/tmp/project_bacteria_barplots_preview_20261118/figures/taxonomy_family.png",
+      "sha256": "b417fde45e97ef51cb80d15a1b8ede1c4e4709d1dddb2c81e1234252f44da10f",
+      "layout": "PASS"
+    }
+  ],
+  "observations": [
+    "Three model panels, axes, legends, wrapped taxonomy labels and sample IDs are legible.",
+    "No clipped glyphs or legend/bar collisions observed.",
+    "Separate hatch patterns distinguish other assigned and unclassified; zero N uses dash and NA.",
+    "Long family labels remain within the canvas."
+  ],
+  "renderer_change": {
+    "path": "src/render_taxonomy_barplots.py",
+    "sha256": "dcedefda93fa8a184967d2af1cd98a9c9ff907b2de8b95cde2ff9b58b1a28f5e",
+    "description": "Added an 8 pt N/NA glossary footer and 6 mm additional bottom space. Syntax PASS; footer is to be checked in regenerated final figures."
+  },
+  "required_next": [
+    "Regenerate with the agreed organelle exclusions and review all five final figures.",
+    "Do not treat preliminary N values or top taxa as final."
+  ],
+  "scientific_files_modified": false
+}

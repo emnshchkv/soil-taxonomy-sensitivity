@@ -1,0 +1,300 @@
+{
+  "author": "AI4Science-агент",
+  "created_utc": "2026-11-18T10:03:56.509975+00:00",
+  "status": "PASS",
+  "checks": 91810,
+  "violations": [],
+  "method": "Read raw QZA Taxon and integer ASV frequencies via read-only load_dataset; independently parse domain prefixes with regex and re-sum ASVs/reads. No domain audit computation code imported.",
+  "scope": "Verify existing audit; no common mask selected or used for downstream profiles.",
+  "command": "conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 src/check_taxonomy_domain_audit.py",
+  "checker_sha256": "8649b44d17a7956dcea127c96a9340335b34c0d5974463cc8a766cded44ebf96",
+  "sources_before": {
+    "results/taxonomy_comparison/finish_20261116/main/assignments.tsv": "d4378a9c18697702d13d5c3866389874fbfd2080b5ca60da60a8684c490e91c5",
+    "data/meta/metadata.tsv": "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123",
+    "work/qza/ASV_table.qza": "0742f177e67b042b25ab1a479193d3d8c7c5dba22d8e73bd2cec254ef3066489",
+    "work/qza/rep_seq.qza": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86",
+    "work/qza/taxonomy_sklearn_silva138.qza": "66d7b18f8349c6adcd2e0d8a74f860e6674f5691e5bdbea8cd885cb0381505d6",
+    "work/qza/taxonomy_sklearn_gtdb.qza": "a542ba9b762e42112b7dc95a05de6b9870b4b8e22b01acd0847b22201090f73e",
+    "work/qza/taxonomy_sklearn_gg2.qza": "e972b452e45cfc991e69712ded06b3ef47d5915a85caecfbdc06016ab2439771",
+    "data/refs/VERSIONS.md": "d02f87f183b6d43699b3ec0850d8d9ef41149b682eccda38166cee2e01d9e66e",
+    "results/exact_match_reproduction/provenance/samples.tsv": "121b66402d7277e34411e6ad87c18afd02d4aa36a1123dcd7310c8540f48d961"
+  },
+  "sources_after": {
+    "results/taxonomy_comparison/finish_20261116/main/assignments.tsv": "d4378a9c18697702d13d5c3866389874fbfd2080b5ca60da60a8684c490e91c5",
+    "data/meta/metadata.tsv": "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123",
+    "work/qza/ASV_table.qza": "0742f177e67b042b25ab1a479193d3d8c7c5dba22d8e73bd2cec254ef3066489",
+    "work/qza/rep_seq.qza": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86",
+    "work/qza/taxonomy_sklearn_silva138.qza": "66d7b18f8349c6adcd2e0d8a74f860e6674f5691e5bdbea8cd885cb0381505d6",
+    "work/qza/taxonomy_sklearn_gtdb.qza": "a542ba9b762e42112b7dc95a05de6b9870b4b8e22b01acd0847b22201090f73e",
+    "work/qza/taxonomy_sklearn_gg2.qza": "e972b452e45cfc991e69712ded06b3ef47d5915a85caecfbdc06016ab2439771",
+    "data/refs/VERSIONS.md": "d02f87f183b6d43699b3ec0850d8d9ef41149b682eccda38166cee2e01d9e66e",
+    "results/exact_match_reproduction/provenance/samples.tsv": "121b66402d7277e34411e6ad87c18afd02d4aa36a1123dcd7310c8540f48d961"
+  },
+  "inputs_unchanged": true,
+  "sample_domain_read_counts": {
+    "K_S63": {
+      "total_reads": 9802,
+      "sklearn_silva138": {
+        "Bacteria": 9802,
+        "Archaea": 0,
+        "Eukaryota": 0,
+        "unknown": 0,
+        "unexpected": 0
+      },
+      "sklearn_gtdb": {
+        "Bacteria": 9802,
+        "Archaea": 0,
+        "Eukaryota": 0,
+        "unknown": 0,
+        "unexpected": 0
+      },
+      "sklearn_gg2": {
+        "Bacteria": 9802,
+        "Archaea": 0,
+        "Eukaryota": 0,
+        "unknown": 0,
+        "unexpected": 0
+      }
+    },
+    "Kr1_S80": {
+      "total_reads": 12351,
+      "sklearn_silva138": {
+        "Bacteria": 40,
+        "Archaea": 0,
+        "Eukaryota": 9947,
+        "unknown": 2364,
+        "unexpected": 0
+      },
+      "sklearn_gtdb": {
+        "Bacteria": 10142,
+        "Archaea": 0,
+        "Eukaryota": 0,
+        "unknown": 2209,
+        "unexpected": 0
+      },
+      "sklearn_gg2": {
+        "Bacteria": 10114,
+        "Archaea": 0,
+        "Eukaryota": 0,
+        "unknown": 2237,
+        "unexpected": 0
+      }
+    },
+    "Kr2_S81": {
+      "total_reads": 8904,
+      "sklearn_silva138": {
+        "Bacteria": 11,
+        "Archaea": 0,
+        "Eukaryota": 7780,
+        "unknown": 1113,
+        "unexpected": 0
+      },
+      "sklearn_gtdb": {
+        "Bacteria": 8013,
+        "Archaea": 0,
+        "Eukaryota": 0,
+        "unknown": 891,
+        "unexpected": 0
+      },
+      "sklearn_gg2": {
+        "Bacteria": 8098,
+        "Archaea": 0,
+        "Eukaryota": 0,
+        "unknown": 806,
+        "unexpected": 0
+      }
+    },
+    "Kr3_S82": {
+      "total_reads": 9985,
+      "sklearn_silva138": {
+        "Bacteria": 11,
+        "Archaea": 0,
+        "Eukaryota": 8761,
+        "unknown": 1213,
+        "unexpected": 0
+      },
+      "sklearn_gtdb": {
+        "Bacteria": 9147,
+        "Archaea": 0,
+        "Eukaryota": 0,
+        "unknown": 838,
+        "unexpected": 0
+      },
+      "sklearn_gg2": {
+        "Bacteria": 8974,
+        "Archaea": 0,
+        "Eukaryota": 0,
+        "unknown": 1011,
+        "unexpected": 0
+      }
+    },
+    "Kr4_S83": {
+      "total_reads": 12293,
+      "sklearn_silva138": {
+        "Bacteria": 249,
+        "Archaea": 0,
+        "Eukaryota": 10998,
+        "unknown": 1046,
+        "unexpected": 0
+      },
+      "sklearn_gtdb": {
+        "Bacteria": 11518,
+        "Archaea": 0,
+        "Eukaryota": 0,
+        "unknown": 775,
+        "unexpected": 0
+      },
+      "sklearn_gg2": {
+        "Bacteria": 12013,
+        "Archaea": 0,
+        "Eukaryota": 0,
+        "unknown": 280,
+        "unexpected": 0
+      }
+    },
+    "Kr5_S84": {
+      "total_reads": 1505,
+      "sklearn_silva138": {
+        "Bacteria": 0,
+        "Archaea": 0,
+        "Eukaryota": 495,
+        "unknown": 1010,
+        "unexpected": 0
+      },
+      "sklearn_gtdb": {
+        "Bacteria": 1413,
+        "Archaea": 0,
+        "Eukaryota": 0,
+        "unknown": 92,
+        "unexpected": 0
+      },
+      "sklearn_gg2": {
+        "Bacteria": 1465,
+        "Archaea": 0,
+        "Eukaryota": 0,
+        "unknown": 40,
+        "unexpected": 0
+      }
+    },
+    "LUB2_S92": {
+      "total_reads": 25216,
+      "sklearn_silva138": {
+        "Bacteria": 25146,
+        "Archaea": 66,
+        "Eukaryota": 2,
+        "unknown": 2,
+        "unexpected": 0
+      },
+      "sklearn_gtdb": {
+        "Bacteria": 25150,
+        "Archaea": 66,
+        "Eukaryota": 0,
+        "unknown": 0,
+        "unexpected": 0
+      },
+      "sklearn_gg2": {
+        "Bacteria": 25148,
+        "Archaea": 66,
+        "Eukaryota": 0,
+        "unknown": 2,
+        "unexpected": 0
+      }
+    },
+    "LUB3_S93": {
+      "total_reads": 6623,
+      "sklearn_silva138": {
+        "Bacteria": 6589,
+        "Archaea": 34,
+        "Eukaryota": 0,
+        "unknown": 0,
+        "unexpected": 0
+      },
+      "sklearn_gtdb": {
+        "Bacteria": 6589,
+        "Archaea": 34,
+        "Eukaryota": 0,
+        "unknown": 0,
+        "unexpected": 0
+      },
+      "sklearn_gg2": {
+        "Bacteria": 6589,
+        "Archaea": 29,
+        "Eukaryota": 0,
+        "unknown": 5,
+        "unexpected": 0
+      }
+    },
+    "LUB4_S94": {
+      "total_reads": 16199,
+      "sklearn_silva138": {
+        "Bacteria": 16147,
+        "Archaea": 40,
+        "Eukaryota": 6,
+        "unknown": 6,
+        "unexpected": 0
+      },
+      "sklearn_gtdb": {
+        "Bacteria": 16155,
+        "Archaea": 40,
+        "Eukaryota": 0,
+        "unknown": 4,
+        "unexpected": 0
+      },
+      "sklearn_gg2": {
+        "Bacteria": 16159,
+        "Archaea": 40,
+        "Eukaryota": 0,
+        "unknown": 0,
+        "unexpected": 0
+      }
+    },
+    "LUB5_S95": {
+      "total_reads": 19090,
+      "sklearn_silva138": {
+        "Bacteria": 18664,
+        "Archaea": 424,
+        "Eukaryota": 2,
+        "unknown": 0,
+        "unexpected": 0
+      },
+      "sklearn_gtdb": {
+        "Bacteria": 18666,
+        "Archaea": 424,
+        "Eukaryota": 0,
+        "unknown": 0,
+        "unexpected": 0
+      },
+      "sklearn_gg2": {
+        "Bacteria": 18666,
+        "Archaea": 424,
+        "Eukaryota": 0,
+        "unknown": 0,
+        "unexpected": 0
+      }
+    },
+    "LUB6_S96": {
+      "total_reads": 28821,
+      "sklearn_silva138": {
+        "Bacteria": 28455,
+        "Archaea": 364,
+        "Eukaryota": 0,
+        "unknown": 2,
+        "unexpected": 0
+      },
+      "sklearn_gtdb": {
+        "Bacteria": 28457,
+        "Archaea": 364,
+        "Eukaryota": 0,
+        "unknown": 0,
+        "unexpected": 0
+      },
+      "sklearn_gg2": {
+        "Bacteria": 28457,
+        "Archaea": 364,
+        "Eukaryota": 0,
+        "unknown": 0,
+        "unexpected": 0
+      }
+    }
+  }
+}

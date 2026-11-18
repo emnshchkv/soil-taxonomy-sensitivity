@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/Users/elizavetamenshchikova/miniconda3/envs/qiime2-amplicon-2025.7/bin/python3",
+    "src/check_taxonomy_barplots.py",
+    "--out-dir",
+    "results/taxonomy_barplots/bacteria_20261118",
+    "--self-test",
+    "--json-out",
+    "results/taxonomy_barplots/bacteria_20261118/self_test.json"
+  ],
+  "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria",
+  "conda_environment": "qiime2-amplicon-2025.7",
+  "start_utc": "2026-11-18T10:14:25.416633+00:00",
+  "exit_code": 0,
+  "end_utc": "2026-11-18T10:14:34.020263+00:00",
+  "stdout": "self_test.stdout.txt",
+  "stderr": "self_test.stderr.txt",
+  "stdout_sha256": "4ae41b711130222f659569e3bf6795782a7d35e5380d69495b802022206b56f0",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

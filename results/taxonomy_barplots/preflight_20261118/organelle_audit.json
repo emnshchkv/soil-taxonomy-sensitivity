@@ -1,0 +1,180 @@
+{
+  "author": "AI4Science-агент",
+  "created_utc": "2026-11-18T10:11:46.367801+00:00",
+  "status": "PASS",
+  "source": "Current raw Taxon strings from three QZA taxonomies and integer ASV counts, via read-only load_dataset",
+  "rule": "Per model: keep explicit domain Bacteria, then exclude the union of ASVs with a rank-prefixed token whose entire trimmed value lower() equals mitochondria or chloroplast at ANY rank. No substring or related-taxon inference.",
+  "overlap_note": "mitochondria_reads and chloroplast_reads may overlap; organelle_reads is their union, with both_markers_reads subtracted once.",
+  "scope": "Independent organelle audit only; source QZA, existing audits, article and graph unchanged.",
+  "command": "conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 /tmp/ai4science-organelle-audit-XXXXXXXX.py",
+  "script_sha256": "b35018d0be039572f3a8360af78463fa1a78f054d863b9b5a545d6ff7d09ab97",
+  "reproduction_python": "\"\"\"Independent exact-token organelle audit; no scientific input writes.\"\"\"\nfrom pathlib import Path\nimport csv\nfrom collections import Counter\nfrom datetime import datetime, timezone\nimport json\nimport re\nimport sys\n\nsys.dont_write_bytecode = True\nROOT = Path('/Users/elizavetamenshchikova/YSDA/AI/project_bacteria')\nsys.path.insert(0, str(ROOT / 'src'))\nfrom taxonomy_compare_io import load_dataset, MODELS, sha256\n\nOUT = ROOT / 'results/taxonomy_barplots/preflight_20261118'\nJSON_OUT = OUT / 'organelle_audit.json'\nTSV_OUT = OUT / 'organelle_by_sample.tsv'\nassert not JSON_OUT.exists() and not TSV_OUT.exists(), 'Use new output names for a rerun'\nprior_audit = json.loads((OUT / 'domain_audit.json').read_text())\nsource_paths = list(prior_audit['sources_before']) + [\n    'results/taxonomy_barplots/preflight_20261118/domain_audit.json',\n    'results/taxonomy_barplots/preflight_20261118/domain_by_sample.tsv']\nbefore = {p: sha256(ROOT / p) for p in source_paths}\nassert all(before[p] == h == prior_audit['sources_after'][p]\n           for p, h in prior_audit['sources_before'].items())\ndataset, issues = load_dataset(ROOT)\nassert not issues, issues\nwith (OUT / 'domain_by_sample.tsv').open() as stream:\n    old = {row['sample_id']: row for row in csv.DictReader(stream, delimiter='\\t')}\ndomains, markers, marker_token_counts = {}, {}, {}\nfor model in MODELS:\n    token_counts = Counter()\n    for fid, raw in dataset['taxonomies'][model].items():\n        tokens = [t.strip() for t in raw.split(';') if t.strip()]\n        if not tokens or tokens == ['Unassigned']:\n            d = 'unknown'\n        else:\n            found = [m.group(1).strip() for t in tokens\n                     if (m := re.fullmatch(r'(?:d__|D_0__)(.*)', t))]\n            assert len(found) == 1 and found[0] in ('Bacteria', 'Archaea', 'Eukaryota'), raw\n            d = found[0]\n        domains[model, fid] = d\n        hits = set()\n        for token in tokens:\n            match = re.fullmatch(r'(?:[dpcofgs]__|D_[0-6]__)(.*)', token)\n            if match and match.group(1).strip().lower() in ('mitochondria', 'chloroplast'):\n                hits.add(match.group(1).strip().lower())\n                if d == 'Bacteria':\n                    token_counts[token] += 1\n        markers[model, fid] = hits\n    marker_token_counts[model] = dict(token_counts)\n\nrows, summary = [], {}\nfor model in MODELS:\n    bacterial = {fid for fid in dataset['table'] if domains[model, fid] == 'Bacteria'}\n    organelles = {fid for fid in bacterial if markers[model, fid]}\n    selected = bacterial - organelles\n    mito = {fid for fid in bacterial if 'mitochondria' in markers[model, fid]}\n    chloro = {fid for fid in bacterial if 'chloroplast' in markers[model, fid]}\n    summary[model] = {}\n    for label, ids in [('all', set(dataset['table'])),\n                       ('soil', {f for f, counts in dataset['table'].items()\n                                 if sum(counts[s] for s in dataset['soil_samples']) > 0})]:\n        summary[model][label] = dict(Bacteria_before_asv=len(bacterial & ids),\n                                    organelle_asv=len(organelles & ids),\n                                    selected_asv=len(selected & ids),\n                                    mitochondria_asv=len(mito & ids),\n                                    chloroplast_asv=len(chloro & ids),\n                                    both_markers_asv=len(mito & chloro & ids))\n    for sample in dataset['samples']:\n        observed = {f for f, counts in dataset['table'].items() if counts[sample] > 0}\n        def reads(ids):\n            return sum(dataset['table'][fid][sample] for fid in ids)\n        total = reads(dataset['table'])\n        b = reads(bacterial)\n        organelle = reads(organelles)\n        remaining = reads(selected)\n        row = dict(model=model, sample=sample,\n                   sample_type='soil' if sample in dataset['soil_samples'] else 'negative_control',\n                   total_retained_reads=total,\n                   Bacteria_before_reads=b, Bacteria_before_observed_asv=len(bacterial & observed),\n                   organelle_reads=organelle, organelle_observed_asv=len(organelles & observed),\n                   mitochondria_reads=reads(mito), chloroplast_reads=reads(chloro),\n                   both_markers_reads=reads(mito & chloro),\n                   selected_bacterial_reads=remaining, selected_observed_asv=len(selected & observed),\n                   excluded_nonbacterial_domain_reads=total - b,\n                   excluded_total_reads=total - remaining,\n                   selected_fraction_of_original=format(remaining / total, '.17g'),\n                   organelle_fraction_of_Bacteria='NA' if not b else format(organelle / b, '.17g'),\n                   zero_selected=int(remaining == 0))\n        for d in ('Archaea', 'Eukaryota', 'unknown', 'unexpected'):\n            ids = {f for f in dataset['table'] if domains[model, f] == d}\n            row[d + '_excluded_reads'] = reads(ids)\n            row[d + '_excluded_observed_asv'] = len(ids & observed)\n            assert reads(ids) == int(old[sample][f'{model}_{d}_reads'])\n            assert len(ids & observed) == int(old[sample][f'{model}_{d}_asv'])\n        assert total == int(old[sample]['total_retained_reads'])\n        assert b == int(old[sample][model + '_Bacteria_reads'])\n        assert len(bacterial & observed) == int(old[sample][model + '_Bacteria_asv'])\n        assert b == organelle + remaining\n        assert total == remaining + organelle + sum(row[d + '_excluded_reads'] for d in ('Archaea', 'Eukaryota', 'unknown', 'unexpected'))\n        assert organelle == row['mitochondria_reads'] + row['chloroplast_reads'] - row['both_markers_reads']\n        assert len(bacterial & observed) == row['organelle_observed_asv'] + row['selected_observed_asv']\n        rows.append(row)\nafter = {p: sha256(ROOT / p) for p in source_paths}\nassert before == after, 'Input changed during audit'\nwith TSV_OUT.open('x', encoding='utf-8', newline='') as stream:\n    writer = csv.DictWriter(stream, fieldnames=list(rows[0]), delimiter='\\t', lineterminator='\\n')\n    writer.writeheader()\n    writer.writerows(rows)\nnonempty = {model: [r['sample'] for r in rows if r['model'] == model and r['sample_type'] == 'soil' and r['selected_bacterial_reads'] > 0] for model in MODELS}\nkr = {model: {r['sample']: r['selected_bacterial_reads'] for r in rows if r['model'] == model and r['sample'].startswith('Kr')} for model in MODELS}\nresult = dict(author='AI4Science-агент', created_utc=datetime.now(timezone.utc).isoformat(), status='PASS',\n              source='Current raw Taxon strings from three QZA taxonomies and integer ASV counts, via read-only load_dataset',\n              rule='Per model: keep explicit domain Bacteria, then exclude the union of ASVs with a rank-prefixed token whose entire trimmed value lower() equals mitochondria or chloroplast at ANY rank. No substring or related-taxon inference.',\n              overlap_note='mitochondria_reads and chloroplast_reads may overlap; organelle_reads is their union, with both_markers_reads subtracted once.',\n              scope='Independent organelle audit only; source QZA, existing audits, article and graph unchanged.',\n              command='conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 /tmp/ai4science-organelle-audit-XXXXXXXX.py',\n              script_sha256=sha256(Path(__file__)), reproduction_python=Path(__file__).read_text(),\n              sources_before=before, sources_after=after, inputs_unchanged=True,\n              rows=len(rows), checks='All 33 sample/model rows conserve reads and observed bacterial ASVs; all prior domain counts match; no double counting of organelle union.',\n              raw_organelle_token_occurrences_in_bacterial_asvs=marker_token_counts,\n              asv_summary=summary, selected_Kr_read_counts=kr,\n              nonempty_bacterial_soil_samples=nonempty,\n              nonempty_soil_n={model: len(values) for model, values in nonempty.items()},\n              output={'path': str(TSV_OUT.relative_to(ROOT)), 'sha256': sha256(TSV_OUT)}, violations=[])\nwith JSON_OUT.open('x', encoding='utf-8') as stream:\n    json.dump(result, stream, ensure_ascii=False, indent=2)\n    stream.write('\\n')\nprint('PASS: 33 sample/model rows; domain counts matched; union counts conserved; inputs unchanged')\nprint(json.dumps({'selected_Kr_read_counts': kr, 'nonempty_soil_n': result['nonempty_soil_n'], 'tokens': marker_token_counts}, ensure_ascii=False, indent=2))\n",
+  "sources_before": {
+    "results/taxonomy_comparison/finish_20261116/main/assignments.tsv": "d4378a9c18697702d13d5c3866389874fbfd2080b5ca60da60a8684c490e91c5",
+    "data/meta/metadata.tsv": "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123",
+    "work/qza/ASV_table.qza": "0742f177e67b042b25ab1a479193d3d8c7c5dba22d8e73bd2cec254ef3066489",
+    "work/qza/rep_seq.qza": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86",
+    "work/qza/taxonomy_sklearn_silva138.qza": "66d7b18f8349c6adcd2e0d8a74f860e6674f5691e5bdbea8cd885cb0381505d6",
+    "work/qza/taxonomy_sklearn_gtdb.qza": "a542ba9b762e42112b7dc95a05de6b9870b4b8e22b01acd0847b22201090f73e",
+    "work/qza/taxonomy_sklearn_gg2.qza": "e972b452e45cfc991e69712ded06b3ef47d5915a85caecfbdc06016ab2439771",
+    "data/refs/VERSIONS.md": "d02f87f183b6d43699b3ec0850d8d9ef41149b682eccda38166cee2e01d9e66e",
+    "results/exact_match_reproduction/provenance/samples.tsv": "121b66402d7277e34411e6ad87c18afd02d4aa36a1123dcd7310c8540f48d961",
+    "results/taxonomy_barplots/preflight_20261118/domain_audit.json": "057f8c08f63b682105c0eecefcc9afd94b12cc6842241cef887c18c27e7b0b77",
+    "results/taxonomy_barplots/preflight_20261118/domain_by_sample.tsv": "444b30dbbcca9f3f7a4e05b47ee0a68b24b63bc00ab61a7b5ce49a8da7b26433"
+  },
+  "sources_after": {
+    "results/taxonomy_comparison/finish_20261116/main/assignments.tsv": "d4378a9c18697702d13d5c3866389874fbfd2080b5ca60da60a8684c490e91c5",
+    "data/meta/metadata.tsv": "41ceed920479044d4fd8aaa75e1dc099593e3545fb649260925c6c7645e1b123",
+    "work/qza/ASV_table.qza": "0742f177e67b042b25ab1a479193d3d8c7c5dba22d8e73bd2cec254ef3066489",
+    "work/qza/rep_seq.qza": "2f81bcce47316cfac022c82a6b4f2e3206eb1a3fa817a81883aff2bc858cda86",
+    "work/qza/taxonomy_sklearn_silva138.qza": "66d7b18f8349c6adcd2e0d8a74f860e6674f5691e5bdbea8cd885cb0381505d6",
+    "work/qza/taxonomy_sklearn_gtdb.qza": "a542ba9b762e42112b7dc95a05de6b9870b4b8e22b01acd0847b22201090f73e",
+    "work/qza/taxonomy_sklearn_gg2.qza": "e972b452e45cfc991e69712ded06b3ef47d5915a85caecfbdc06016ab2439771",
+    "data/refs/VERSIONS.md": "d02f87f183b6d43699b3ec0850d8d9ef41149b682eccda38166cee2e01d9e66e",
+    "results/exact_match_reproduction/provenance/samples.tsv": "121b66402d7277e34411e6ad87c18afd02d4aa36a1123dcd7310c8540f48d961",
+    "results/taxonomy_barplots/preflight_20261118/domain_audit.json": "057f8c08f63b682105c0eecefcc9afd94b12cc6842241cef887c18c27e7b0b77",
+    "results/taxonomy_barplots/preflight_20261118/domain_by_sample.tsv": "444b30dbbcca9f3f7a4e05b47ee0a68b24b63bc00ab61a7b5ce49a8da7b26433"
+  },
+  "inputs_unchanged": true,
+  "rows": 33,
+  "checks": "All 33 sample/model rows conserve reads and observed bacterial ASVs; all prior domain counts match; no double counting of organelle union.",
+  "raw_organelle_token_occurrences_in_bacterial_asvs": {
+    "sklearn_silva138": {
+      "o__Chloroplast": 5,
+      "f__Chloroplast": 5,
+      "g__Chloroplast": 5,
+      "f__Mitochondria": 15,
+      "g__Mitochondria": 15
+    },
+    "sklearn_gtdb": {},
+    "sklearn_gg2": {
+      "f__Mitochondria": 2,
+      "c__Chloroplast": 2
+    }
+  },
+  "asv_summary": {
+    "sklearn_silva138": {
+      "all": {
+        "Bacteria_before_asv": 2885,
+        "organelle_asv": 20,
+        "selected_asv": 2865,
+        "mitochondria_asv": 15,
+        "chloroplast_asv": 5,
+        "both_markers_asv": 0
+      },
+      "soil": {
+        "Bacteria_before_asv": 2820,
+        "organelle_asv": 16,
+        "selected_asv": 2804,
+        "mitochondria_asv": 12,
+        "chloroplast_asv": 4,
+        "both_markers_asv": 0
+      }
+    },
+    "sklearn_gtdb": {
+      "all": {
+        "Bacteria_before_asv": 3297,
+        "organelle_asv": 0,
+        "selected_asv": 3297,
+        "mitochondria_asv": 0,
+        "chloroplast_asv": 0,
+        "both_markers_asv": 0
+      },
+      "soil": {
+        "Bacteria_before_asv": 3232,
+        "organelle_asv": 0,
+        "selected_asv": 3232,
+        "mitochondria_asv": 0,
+        "chloroplast_asv": 0,
+        "both_markers_asv": 0
+      }
+    },
+    "sklearn_gg2": {
+      "all": {
+        "Bacteria_before_asv": 3303,
+        "organelle_asv": 4,
+        "selected_asv": 3299,
+        "mitochondria_asv": 2,
+        "chloroplast_asv": 2,
+        "both_markers_asv": 0
+      },
+      "soil": {
+        "Bacteria_before_asv": 3238,
+        "organelle_asv": 2,
+        "selected_asv": 3236,
+        "mitochondria_asv": 1,
+        "chloroplast_asv": 1,
+        "both_markers_asv": 0
+      }
+    }
+  },
+  "selected_Kr_read_counts": {
+    "sklearn_silva138": {
+      "Kr1_S80": 38,
+      "Kr2_S81": 0,
+      "Kr3_S82": 2,
+      "Kr4_S83": 249,
+      "Kr5_S84": 0
+    },
+    "sklearn_gtdb": {
+      "Kr1_S80": 10142,
+      "Kr2_S81": 8013,
+      "Kr3_S82": 9147,
+      "Kr4_S83": 11518,
+      "Kr5_S84": 1413
+    },
+    "sklearn_gg2": {
+      "Kr1_S80": 10114,
+      "Kr2_S81": 8098,
+      "Kr3_S82": 8974,
+      "Kr4_S83": 12013,
+      "Kr5_S84": 1465
+    }
+  },
+  "nonempty_bacterial_soil_samples": {
+    "sklearn_silva138": [
+      "Kr1_S80",
+      "Kr3_S82",
+      "Kr4_S83",
+      "LUB2_S92",
+      "LUB3_S93",
+      "LUB4_S94",
+      "LUB5_S95",
+      "LUB6_S96"
+    ],
+    "sklearn_gtdb": [
+      "Kr1_S80",
+      "Kr2_S81",
+      "Kr3_S82",
+      "Kr4_S83",
+      "Kr5_S84",
+      "LUB2_S92",
+      "LUB3_S93",
+      "LUB4_S94",
+      "LUB5_S95",
+      "LUB6_S96"
+    ],
+    "sklearn_gg2": [
+      "Kr1_S80",
+      "Kr2_S81",
+      "Kr3_S82",
+      "Kr4_S83",
+      "Kr5_S84",
+      "LUB2_S92",
+      "LUB3_S93",
+      "LUB4_S94",
+      "LUB5_S95",
+      "LUB6_S96"
+    ]
+  },
+  "nonempty_soil_n": {
+    "sklearn_silva138": 8,
+    "sklearn_gtdb": 10,
+    "sklearn_gg2": 10
+  },
+  "output": {
+    "path": "results/taxonomy_barplots/preflight_20261118/organelle_by_sample.tsv",
+    "sha256": "1d141ffc54b4ba6449f0f2ea65a1f1f264772f7b3fe73314ed54865ce087e565"
+  },
+  "violations": []
+}

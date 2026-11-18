@@ -1,0 +1,66 @@
+{
+  "all": {
+    "asv": 3374,
+    "per_model": {
+      "sklearn_silva138": {
+        "Bacteria": 2885,
+        "Eukaryota": 342,
+        "unknown": 133,
+        "Archaea": 14
+      },
+      "sklearn_gtdb": {
+        "Bacteria": 3297,
+        "unknown": 63,
+        "Archaea": 14
+      },
+      "sklearn_gg2": {
+        "Bacteria": 3303,
+        "unknown": 58,
+        "Archaea": 13
+      }
+    },
+    "bacterial_organelle_excluded_asv": {
+      "sklearn_silva138": 20,
+      "sklearn_gtdb": 0,
+      "sklearn_gg2": 4
+    },
+    "selected_bacterial_asv": {
+      "sklearn_silva138": 2865,
+      "sklearn_gtdb": 3297,
+      "sklearn_gg2": 3299
+    },
+    "common_bacteria_asv": 2883
+  },
+  "soil": {
+    "asv": 3309,
+    "per_model": {
+      "sklearn_silva138": {
+        "Bacteria": 2820,
+        "Eukaryota": 342,
+        "unknown": 133,
+        "Archaea": 14
+      },
+      "sklearn_gtdb": {
+        "Bacteria": 3232,
+        "unknown": 63,
+        "Archaea": 14
+      },
+      "sklearn_gg2": {
+        "Bacteria": 3238,
+        "unknown": 58,
+        "Archaea": 13
+      }
+    },
+    "bacterial_organelle_excluded_asv": {
+      "sklearn_silva138": 16,
+      "sklearn_gtdb": 0,
+      "sklearn_gg2": 2
+    },
+    "selected_bacterial_asv": {
+      "sklearn_silva138": 2804,
+      "sklearn_gtdb": 3232,
+      "sklearn_gg2": 3236
+    },
+    "common_bacteria_asv": 2818
+  }
+}

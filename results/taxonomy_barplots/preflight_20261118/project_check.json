@@ -1,0 +1,4 @@
+{
+  "command": "conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 checks/check.py",
+  "exit_code": 0
+}

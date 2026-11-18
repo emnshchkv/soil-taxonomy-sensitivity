@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "model_sample_rows": 33,
+  "checks": 363,
+  "columns": {
+    "original_retained_reads": "total_retained_reads",
+    "Bacteria_reads": "Bacteria_before_reads",
+    "Bacteria_observed_asv": "Bacteria_before_observed_asv",
+    "bacterial_organelle_excluded_reads": "organelle_reads",
+    "bacterial_organelle_excluded_observed_asv": "organelle_observed_asv",
+    "selected_bacterial_reads": "selected_bacterial_reads",
+    "selected_bacterial_observed_asv": "selected_observed_asv",
+    "domain_excluded_reads": "excluded_nonbacterial_domain_reads",
+    "excluded_reads": "excluded_total_reads",
+    "zero_bacterial": "zero_selected"
+  },
+  "note": "Final per-model bacterial counts exactly match the independent preflight organelle audit, including the negative control."
+}

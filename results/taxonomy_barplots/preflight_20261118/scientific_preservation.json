@@ -1,0 +1,4 @@
+{
+  "command": "conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 src/check_taxonomy_comparison_documents.py",
+  "exit_code": 0
+}

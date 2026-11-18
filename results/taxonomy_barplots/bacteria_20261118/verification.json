@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "scope": "per-model bacterial barplots",
+  "checks": 20741,
+  "ranks": [
+    "тип",
+    "класс",
+    "порядок",
+    "семейство",
+    "род"
+  ],
+  "top_n": 8,
+  "soil_bars": 150,
+  "zero_bacterial_soil_samples": {
+    "sklearn_silva138": [
+      "Kr2_S81",
+      "Kr5_S84"
+    ],
+    "sklearn_gtdb": [],
+    "sklearn_gg2": []
+  },
+  "errors": [],
+  "warnings": [
+    "Model-specific ASV masks and denominators differ; this is not a common-input comparison."
+  ]
+}
