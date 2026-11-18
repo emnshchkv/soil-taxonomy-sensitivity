@@ -1,0 +1,326 @@
+{
+  "status": "PASS",
+  "author": "AI4Science-агент",
+  "copies_checked": 12,
+  "original_files_recorded": 146,
+  "original_files_unchanged": 145,
+  "intentional_change": {
+    "file": "results/taxonomy_barplots/README.md",
+    "archived_byte_identical_as": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md"
+  },
+  "source_manifest_unchanged": true,
+  "links_checked": [
+    {
+      "document": "README.md",
+      "target": "figures/taxonomy/family/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "src/TAXONOMY_BARPLOTS.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "results/taxonomy_barplots/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "METHOD_COMPARISON.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/Сравнение%20таксономических%20профилей.md",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "../../../results/taxonomy_barplots/prokaryote_family_20261118_final/README.md",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "prokaryotic_family_silva.png",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "prokaryotic_family_silva.pdf",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "prokaryotic_family_silva.svg",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "prokaryotic_family_gtdb.png",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "prokaryotic_family_gtdb.pdf",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "prokaryotic_family_gtdb.svg",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "prokaryotic_family_gg2.png",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "prokaryotic_family_gg2.pdf",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "prokaryotic_family_gg2.svg",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "prokaryotic_family_overview.png",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "prokaryotic_family_overview.pdf",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "prokaryotic_family_overview.svg",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "../../../src/TAXONOMY_BARPLOTS.md",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "../../../results/taxonomy_barplots/kr_diagnostics_20261118/README.md",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "manifest.json",
+      "exists": true
+    },
+    {
+      "document": "figures/taxonomy/family/README.md",
+      "target": "../../../results/taxonomy_barplots/README.md",
+      "exists": true
+    },
+    {
+      "document": "src/TAXONOMY_BARPLOTS.md",
+      "target": "../figures/taxonomy/family/README.md",
+      "exists": true
+    },
+    {
+      "document": "src/TAXONOMY_BARPLOTS.md",
+      "target": "../results/taxonomy_barplots/prokaryote_family_20261118_final/README.md",
+      "exists": true
+    },
+    {
+      "document": "src/TAXONOMY_BARPLOTS.md",
+      "target": "../results/taxonomy_barplots/kr_diagnostics_20261118/README.md",
+      "exists": true
+    },
+    {
+      "document": "src/TAXONOMY_BARPLOTS.md",
+      "target": "plot_prokaryotic_families.py",
+      "exists": true
+    },
+    {
+      "document": "src/TAXONOMY_BARPLOTS.md",
+      "target": "render_prokaryotic_families.py",
+      "exists": true
+    },
+    {
+      "document": "src/TAXONOMY_BARPLOTS.md",
+      "target": "check_prokaryotic_families.py",
+      "exists": true
+    },
+    {
+      "document": "src/TAXONOMY_BARPLOTS.md",
+      "target": "audit_kr_taxonomy.py",
+      "exists": true
+    },
+    {
+      "document": "src/TAXONOMY_BARPLOTS.md",
+      "target": "plot_taxonomy_profiles.py",
+      "exists": true
+    },
+    {
+      "document": "src/TAXONOMY_BARPLOTS.md",
+      "target": "render_taxonomy_barplots.py",
+      "exists": true
+    },
+    {
+      "document": "src/TAXONOMY_BARPLOTS.md",
+      "target": "check_taxonomy_barplots.py",
+      "exists": true
+    },
+    {
+      "document": "src/TAXONOMY_BARPLOTS.md",
+      "target": "check_taxonomy_domain_audit.py",
+      "exists": true
+    },
+    {
+      "document": "src/TAXONOMY_BARPLOTS.md",
+      "target": "../results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/README.md",
+      "target": "../../figures/taxonomy/family/README.md",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/README.md",
+      "target": "../../src/TAXONOMY_BARPLOTS.md",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/README.md",
+      "target": "prokaryote_family_20261118_final/README.md",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/README.md",
+      "target": "kr_diagnostics_20261118/README.md",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/README.md",
+      "target": "../../figures/taxonomy/family/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/README.md",
+      "target": "prokaryote_family_20261118_final/README.md",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/README.md",
+      "target": "kr_diagnostics_20261118/README.md",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/README.md",
+      "target": "prokaryote_family_20261118/README.md",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/README.md",
+      "target": "bacteria_20261118/",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/README.md",
+      "target": "BACTERIA_ONLY_20261118.md",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/README.md",
+      "target": "preflight_20261118/",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/README.md",
+      "target": "organization_20261118/",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "target": "bacteria_20261118/figures/taxonomy_phylum.png",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "target": "bacteria_20261118/figures/taxonomy_phylum.pdf",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "target": "bacteria_20261118/figures/taxonomy_phylum.svg",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "target": "bacteria_20261118/figures/taxonomy_class.png",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "target": "bacteria_20261118/figures/taxonomy_class.pdf",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "target": "bacteria_20261118/figures/taxonomy_class.svg",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "target": "bacteria_20261118/figures/taxonomy_order.png",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "target": "bacteria_20261118/figures/taxonomy_order.pdf",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "target": "bacteria_20261118/figures/taxonomy_order.svg",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "target": "bacteria_20261118/figures/taxonomy_family.png",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "target": "bacteria_20261118/figures/taxonomy_family.pdf",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "target": "bacteria_20261118/figures/taxonomy_family.svg",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "target": "bacteria_20261118/figures/taxonomy_genus.png",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "target": "bacteria_20261118/figures/taxonomy_genus.pdf",
+      "exists": true
+    },
+    {
+      "document": "results/taxonomy_barplots/BACTERIA_ONLY_20261118.md",
+      "target": "bacteria_20261118/figures/taxonomy_genus.svg",
+      "exists": true
+    }
+  ],
+  "code_already_tracked": [
+    "src/plot_prokaryotic_families.py",
+    "src/render_prokaryotic_families.py",
+    "src/check_prokaryotic_families.py",
+    "src/audit_kr_taxonomy.py"
+  ],
+  "violations": []
+}

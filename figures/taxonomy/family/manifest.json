@@ -1,0 +1,73 @@
+{
+  "schema": "taxonomy-figure-copies-v1",
+  "author": "AI4Science-агент",
+  "date": "2026-11-18",
+  "path_base": "repository root",
+  "source_results_commit": "712e132",
+  "generation_code_commit": "24ec42e9344c470423d868713dc3093278802b05",
+  "source_manifest": "results/taxonomy_barplots/prokaryote_family_20261118_final/prokaryotic_family_manifest.json",
+  "source_manifest_sha256": "3939ab11e1e18f9026824ef04110b9cb5c7d041dc441ab9c4bc418994bf493e2",
+  "policy": "Byte-identical presentation copies; validated run remains in results/. No rerendering or scientific recalculation.",
+  "files": [
+    {
+      "file": "figures/taxonomy/family/prokaryotic_family_gg2.pdf",
+      "source": "results/taxonomy_barplots/prokaryote_family_20261118_final/figures/prokaryotic_family_gg2.pdf",
+      "sha256": "b56f52b938b5038d704ea34a40c9079fdc1dd1a1d407257080e632ec5565679a"
+    },
+    {
+      "file": "figures/taxonomy/family/prokaryotic_family_gg2.png",
+      "source": "results/taxonomy_barplots/prokaryote_family_20261118_final/figures/prokaryotic_family_gg2.png",
+      "sha256": "9940e93c75b0af19ccacad86d9a86cc807caddbcbf39027afbc62591e79b56ae"
+    },
+    {
+      "file": "figures/taxonomy/family/prokaryotic_family_gg2.svg",
+      "source": "results/taxonomy_barplots/prokaryote_family_20261118_final/figures/prokaryotic_family_gg2.svg",
+      "sha256": "0dee24ff1b478be37a4ff178222aa7a95c9ff2221ffadcb4749b676a3c69bc6f"
+    },
+    {
+      "file": "figures/taxonomy/family/prokaryotic_family_gtdb.pdf",
+      "source": "results/taxonomy_barplots/prokaryote_family_20261118_final/figures/prokaryotic_family_gtdb.pdf",
+      "sha256": "5e869c209915078e5520821a232f82f482a1d053614e51f466e7116d5d756a8c"
+    },
+    {
+      "file": "figures/taxonomy/family/prokaryotic_family_gtdb.png",
+      "source": "results/taxonomy_barplots/prokaryote_family_20261118_final/figures/prokaryotic_family_gtdb.png",
+      "sha256": "96f5708bb0dab7ad364a357037a16cfb70c3b33aec53cba5259deb53895a2fda"
+    },
+    {
+      "file": "figures/taxonomy/family/prokaryotic_family_gtdb.svg",
+      "source": "results/taxonomy_barplots/prokaryote_family_20261118_final/figures/prokaryotic_family_gtdb.svg",
+      "sha256": "cf53eca41c85b364b7fe4015fcc5ed35de2babddd4fe7d151fe1a7364811fe2f"
+    },
+    {
+      "file": "figures/taxonomy/family/prokaryotic_family_overview.pdf",
+      "source": "results/taxonomy_barplots/prokaryote_family_20261118_final/figures/prokaryotic_family_overview.pdf",
+      "sha256": "9b5a674742159a0f95ec58ea44297e47c2aa6c95934759a0f05a3fa3a2d8a627"
+    },
+    {
+      "file": "figures/taxonomy/family/prokaryotic_family_overview.png",
+      "source": "results/taxonomy_barplots/prokaryote_family_20261118_final/figures/prokaryotic_family_overview.png",
+      "sha256": "3190e77cce2720b432ceb0e188458c1e16bca9c158dba146b0c8c61eba553e1a"
+    },
+    {
+      "file": "figures/taxonomy/family/prokaryotic_family_overview.svg",
+      "source": "results/taxonomy_barplots/prokaryote_family_20261118_final/figures/prokaryotic_family_overview.svg",
+      "sha256": "6f4c480c12294d1e32f533d8e5a5871ab200bcc8e9cb4664caa0d780b8ffed93"
+    },
+    {
+      "file": "figures/taxonomy/family/prokaryotic_family_silva.pdf",
+      "source": "results/taxonomy_barplots/prokaryote_family_20261118_final/figures/prokaryotic_family_silva.pdf",
+      "sha256": "56d6dd8931d2b061217c9cc1d13ad20a57d57c2f5e2c35a4b778efe84f7a012d"
+    },
+    {
+      "file": "figures/taxonomy/family/prokaryotic_family_silva.png",
+      "source": "results/taxonomy_barplots/prokaryote_family_20261118_final/figures/prokaryotic_family_silva.png",
+      "sha256": "cdbd66d6b6bb06de1cd0c58deba73c0371bd62400be3b5eeda33e8496d935df8"
+    },
+    {
+      "file": "figures/taxonomy/family/prokaryotic_family_silva.svg",
+      "source": "results/taxonomy_barplots/prokaryote_family_20261118_final/figures/prokaryotic_family_silva.svg",
+      "sha256": "3408f2a8388406615b408c39e0822d845e449d05afba802ddc3de1fa62ab6b37"
+    }
+  ]
+}
