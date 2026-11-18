@@ -1,0 +1,9 @@
+{
+  "request": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC7015180/unicode",
+  "retrieved": "2026-11-17",
+  "format": "PMC BioC XML",
+  "valid_primary_text": true,
+  "content_type": "text/xml",
+  "sha256": "fb2ac975444d96dba9789f58685fc227a908c734889b979bcfb41c3f5a54e081",
+  "text_characters": 13646
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "source_commit": "37254a5a90a3efe5b4c6ca22e38c2e2066767178",
+  "git_copies_verified": 28,
+  "course_copies_verified": 1,
+  "selected_sources": 7,
+  "doi_openalex_matches": 7,
+  "network_requests_performed": false
+}

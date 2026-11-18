@@ -1,0 +1,163 @@
+{
+  "source": "OpenAlex",
+  "request": "https://api.openalex.org/works/W2603346833?select=id,doi,display_name,publication_year,authorships,biblio,primary_location,open_access",
+  "retrieved": "2026-11-17",
+  "method": "Python urllib HTTPS GET, not research-mcp",
+  "historical_execution": false,
+  "response": {
+    "id": "https://openalex.org/W2603346833",
+    "doi": "https://doi.org/10.1186/s12864-017-3501-4",
+    "display_name": "SILVA, RDP, Greengenes, NCBI and OTT — how do these taxonomies compare?",
+    "publication_year": 2017,
+    "authorships": [
+      {
+        "author_position": "first",
+        "author": {
+          "id": "https://openalex.org/A5028986236",
+          "display_name": "Monika Balvočiūtė",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I8087733",
+            "display_name": "University of Tübingen",
+            "ror": "https://ror.org/03a1kwz48",
+            "country_code": "DE",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I8087733"
+            ]
+          }
+        ],
+        "countries": [
+          "DE"
+        ],
+        "is_corresponding": true,
+        "raw_author_name": "Monika Balvočiūtė",
+        "raw_affiliation_strings": [
+          "University of Tübingen, Department of Computer Science, Sand 14, Tübingen, 72076, Germany. monika.balvociute@uni-tuebingen.de",
+          "University of Tübingen, Department of Computer Science, Sand 14, Tübingen, 72076, Germany"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "University of Tübingen, Department of Computer Science, Sand 14, Tübingen, 72076, Germany. monika.balvociute@uni-tuebingen.de",
+            "institution_ids": [
+              "https://openalex.org/I8087733"
+            ]
+          },
+          {
+            "raw_affiliation_string": "University of Tübingen, Department of Computer Science, Sand 14, Tübingen, 72076, Germany",
+            "institution_ids": [
+              "https://openalex.org/I8087733"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "last",
+        "author": {
+          "id": "https://openalex.org/A5026094905",
+          "display_name": "Daniel H. Huson",
+          "orcid": "https://orcid.org/0000-0002-2961-604X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-2961-604X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I8087733",
+            "display_name": "University of Tübingen",
+            "ror": "https://ror.org/03a1kwz48",
+            "country_code": "DE",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I8087733"
+            ]
+          }
+        ],
+        "countries": [
+          "DE"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Daniel H. Huson",
+        "raw_affiliation_strings": [
+          "University of Tübingen, Department of Computer Science, Sand 14, Tübingen, 72076, Germany"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "University of Tübingen, Department of Computer Science, Sand 14, Tübingen, 72076, Germany",
+            "institution_ids": [
+              "https://openalex.org/I8087733"
+            ]
+          }
+        ]
+      }
+    ],
+    "biblio": {
+      "volume": "18",
+      "issue": "S2",
+      "first_page": "114",
+      "last_page": "114"
+    },
+    "primary_location": {
+      "id": "doi:10.1186/s12864-017-3501-4",
+      "doi": "https://doi.org/10.1186/s12864-017-3501-4",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1186/s12864-017-3501-4",
+      "pdf_url": "https://bmcgenomics.biomedcentral.com/counter/pdf/10.1186/s12864-017-3501-4",
+      "source": {
+        "id": "https://openalex.org/S28614077",
+        "display_name": "BMC Genomics",
+        "issn_l": "1471-2164",
+        "issn": [
+          "1471-2164"
+        ],
+        "is_oa": true,
+        "is_in_doaj": true,
+        "is_core": true,
+        "listed_in": [
+          "anvur-scientific",
+          "cwts-core",
+          "doaj",
+          "dongbi-c",
+          "doyens",
+          "jufo-1",
+          "ki-jl-1",
+          "medline",
+          "norway-1",
+          "oarl",
+          "poland-140",
+          "russia-white-list-1",
+          "vabb-shw"
+        ],
+        "host_organization": "https://openalex.org/P4310320256",
+        "host_organization_name": "BioMed Central",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320256",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "BioMed Central",
+          "Springer Nature"
+        ],
+        "type": "journal"
+      },
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "BMC Genomics",
+      "raw_type": "journal-article"
+    },
+    "open_access": {
+      "is_oa": true,
+      "oa_status": "gold",
+      "oa_url": "https://bmcgenomics.biomedcentral.com/counter/pdf/10.1186/s12864-017-3501-4",
+      "any_repository_has_fulltext": true
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "tool": "research-mcp__openalex_search",
+  "arguments": {
+    "limit": 3,
+    "query": "SILVA, RDP, Greengenes, NCBI and OTT how do these taxonomies compare"
+  },
+  "message_index": 104,
+  "result_message_index": 105,
+  "historical_execution_date": "2026-11-17",
+  "restored_by": "AI4Science-агент",
+  "restoration_date": "2026-11-17",
+  "historical_execution": true,
+  "source_log_basename": "llm_request.0.jsonl",
+  "source_log_sha256": "855ba92e2ed241087cfa0c631deae866b51733d21182463f12a61c7173b5f96f",
+  "result": {
+    "provenance": {
+      "source": "OpenAlex",
+      "request": "https://api.openalex.org/works?search=SILVA%2C+RDP%2C+Greengenes%2C+NCBI+and+OTT+how+do+these+taxonomies+compare&per_page=3&sort=relevance_score%3Adesc&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Cauthorships%2Cprimary_location%2Ctype%2Ccited_by_count%2Copen_access",
+      "retrieved": "2026-11-17",
+      "untrusted_text_fields": [
+        "title",
+        "abstract",
+        "description"
+      ]
+    },
+    "found": 332,
+    "results": [
+      {
+        "openalex_id": "W2603346833",
+        "title": "SILVA, RDP, Greengenes, NCBI and OTT — how do these taxonomies compare?",
+        "year": 2017,
+        "authors": [
+          "Monika Balvočiūtė",
+          "Daniel H. Huson"
+        ],
+        "source": "BMC Genomics",
+        "type": "article",
+        "cited_by": 485,
+        "doi": "10.1186/s12864-017-3501-4",
+        "oa_status": "gold",
+        "oa_url": "https://bmcgenomics.biomedcentral.com/counter/pdf/10.1186/s12864-017-3501-4"
+      },
+      {
+        "openalex_id": "W4365446407",
+        "title": "A comparison between Greengenes, SILVA, RDP, and NCBI reference databases in four published microbiota datasets",
+        "year": 2023,
+        "authors": [
+          "Camilla Ceccarani",
+          "Marco Severgnini"
+        ],
+        "source": "bioRxiv (Cold Spring Harbor Laboratory)",
+        "type": "preprint",
+        "cited_by": 34,
+        "doi": "10.1101/2023.04.12.535864",
+        "oa_status": "green",
+        "oa_url": "https://www.biorxiv.org/content/biorxiv/early/2023/04/13/2023.04.12.535864.full.pdf"
+      },
+      {
+        "openalex_id": "W2795986106",
+        "title": "Taxonomic annotation errors incorrectly assign the family Pseudoalteromonadaceae to the order Vibrionales in Greengenes: implications for microbial community assessments",
+        "year": 2018,
+        "authors": [
+          "Keri Ann Lydon",
+          "Erin K. Lipp"
+        ],
+        "source": "PeerJ",
+        "type": "article",
+        "cited_by": 33,
+        "doi": "10.7717/peerj.5248",
+        "oa_status": "gold",
+        "oa_url": "https://doi.org/10.7717/peerj.5248"
+      }
+    ]
+  }
+}

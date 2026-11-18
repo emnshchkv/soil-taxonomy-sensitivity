@@ -1,0 +1,1213 @@
+{
+  "source": "OpenAlex",
+  "request": "https://api.openalex.org/works/W4385302437?select=id,doi,display_name,publication_year,authorships,biblio,primary_location,open_access",
+  "retrieved": "2026-11-17",
+  "method": "Python urllib HTTPS GET, not research-mcp",
+  "historical_execution": false,
+  "response": {
+    "id": "https://openalex.org/W4385302437",
+    "doi": "https://doi.org/10.1038/s41587-023-01845-1",
+    "display_name": "Greengenes2 unifies microbial data in a single reference tree",
+    "publication_year": 2023,
+    "authorships": [
+      {
+        "author_position": "first",
+        "author": {
+          "id": "https://openalex.org/A5022461817",
+          "display_name": "Daniel T. McDonald",
+          "orcid": "https://orcid.org/0000-0003-0876-9060",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-0876-9060"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Daniel McDonald",
+        "raw_affiliation_strings": [
+          "Department of Pediatrics, University of California San Diego School of Medicine, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego School of Medicine, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5030824535",
+          "display_name": "Yueyu Jiang",
+          "orcid": "https://orcid.org/0000-0001-8425-7556",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-8425-7556"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Yueyu Jiang",
+        "raw_affiliation_strings": [
+          "Department of Electrical and Computer Engineering, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Electrical and Computer Engineering, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5083364801",
+          "display_name": "Metin Balaban",
+          "orcid": "https://orcid.org/0000-0002-6947-5915",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-6947-5915"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Metin Balaban",
+        "raw_affiliation_strings": [
+          "Bioinformatics and Systems Biology Program, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Bioinformatics and Systems Biology Program, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5090384093",
+          "display_name": "Kalen Cantrell",
+          "orcid": "https://orcid.org/0000-0002-6262-1668",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-6262-1668"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Kalen Cantrell",
+        "raw_affiliation_strings": [
+          "Department of Computer Science and Engineering, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Computer Science and Engineering, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5064767131",
+          "display_name": "Qiyun Zhu",
+          "orcid": "https://orcid.org/0000-0002-3568-6271",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-3568-6271"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I55732556",
+            "display_name": "Arizona State University",
+            "ror": "https://ror.org/03efmqc40",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I55732556"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Qiyun Zhu",
+        "raw_affiliation_strings": [
+          "Biodesign Center for Fundamental and Applied Microbiomics, Arizona State University, Tempe, AZ, USA",
+          "School of Life Sciences, Arizona State University, Tempe, AZ, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-3568-6271",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Biodesign Center for Fundamental and Applied Microbiomics, Arizona State University, Tempe, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I55732556"
+            ]
+          },
+          {
+            "raw_affiliation_string": "School of Life Sciences, Arizona State University, Tempe, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I55732556"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5101532298",
+          "display_name": "Antonio González",
+          "orcid": "https://orcid.org/0000-0002-5900-3965",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-5900-3965"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Antonio Gonzalez",
+        "raw_affiliation_strings": [
+          "Department of Pediatrics, University of California San Diego School of Medicine, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego School of Medicine, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5067935665",
+          "display_name": "James T. Morton",
+          "orcid": "https://orcid.org/0000-0003-3189-2681",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-3189-2681",
+            "https://orcid.org/0000-0003-0511-6240"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1299303238",
+            "display_name": "National Institutes of Health",
+            "ror": "https://ror.org/01cwqze88",
+            "country_code": "US",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I1299022934",
+              "https://openalex.org/I1299303238"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4210144228",
+            "display_name": "Eunice Kennedy Shriver National Institute of Child Health and Human Development",
+            "ror": "https://ror.org/04byxyr05",
+            "country_code": "US",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I1299022934",
+              "https://openalex.org/I1299303238",
+              "https://openalex.org/I4210144228"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "James T. Morton",
+        "raw_affiliation_strings": [
+          "Biostatistics & Bioinformatics Branch, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health, Bethesda, MD, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Biostatistics & Bioinformatics Branch, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health, Bethesda, MD, USA",
+            "institution_ids": [
+              "https://openalex.org/I1299303238",
+              "https://openalex.org/I4210144228"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5078609075",
+          "display_name": "Giorgia Nicolaou",
+          "orcid": "https://orcid.org/0009-0007-2687-2586",
+          "observed_orcids": [
+            "https://orcid.org/0009-0007-2687-2586"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Giorgia Nicolaou",
+        "raw_affiliation_strings": [
+          "Halicioglu Data Science Institute, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Halicioglu Data Science Institute, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5060754496",
+          "display_name": "Donovan H. Parks",
+          "orcid": "https://orcid.org/0000-0001-6662-9010",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-6662-9010"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I165143802",
+            "display_name": "The University of Queensland",
+            "ror": "https://ror.org/00rqy9422",
+            "country_code": "AU",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I165143802"
+            ]
+          }
+        ],
+        "countries": [
+          "AU"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Donovan H. Parks",
+        "raw_affiliation_strings": [
+          "Australian Centre for Ecogenomics, School of Chemistry and Molecular Biosciences, The University of Queensland, St Lucia, Queensland, Australia"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-6662-9010",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Australian Centre for Ecogenomics, School of Chemistry and Molecular Biosciences, The University of Queensland, St Lucia, Queensland, Australia",
+            "institution_ids": [
+              "https://openalex.org/I165143802"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5090056152",
+          "display_name": "Søren Michael Karst",
+          "orcid": "https://orcid.org/0000-0002-0233-160X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-0233-160X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I78577930",
+            "display_name": "Columbia University",
+            "ror": "https://ror.org/00hj8s172",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I78577930"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Søren M. Karst",
+        "raw_affiliation_strings": [
+          "Department of Obstetrics and Gynecology, Columbia University, New York, NY, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Obstetrics and Gynecology, Columbia University, New York, NY, USA",
+            "institution_ids": [
+              "https://openalex.org/I78577930"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5049393683",
+          "display_name": "Mads Albertsen",
+          "orcid": "https://orcid.org/0000-0002-6151-190X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-6151-190X",
+            "https://orcid.org/0000-0002-2370-417X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I891191580",
+            "display_name": "Aalborg University",
+            "ror": "https://ror.org/04m5j1k67",
+            "country_code": "DK",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I891191580"
+            ]
+          }
+        ],
+        "countries": [
+          "DK"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Mads Albertsen",
+        "raw_affiliation_strings": [
+          "Department of Chemistry and Bioscience, Aalborg University, Aalborg, Denmark"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-6151-190X",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Chemistry and Bioscience, Aalborg University, Aalborg, Denmark",
+            "institution_ids": [
+              "https://openalex.org/I891191580"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5075159561",
+          "display_name": "Philip Hugenholtz",
+          "orcid": "https://orcid.org/0000-0001-5386-7925",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-5386-7925"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I165143802",
+            "display_name": "The University of Queensland",
+            "ror": "https://ror.org/00rqy9422",
+            "country_code": "AU",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I165143802"
+            ]
+          }
+        ],
+        "countries": [
+          "AU"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Philip Hugenholtz",
+        "raw_affiliation_strings": [
+          "Australian Centre for Ecogenomics, School of Chemistry and Molecular Biosciences, The University of Queensland, St Lucia, Queensland, Australia"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-5386-7925",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Australian Centre for Ecogenomics, School of Chemistry and Molecular Biosciences, The University of Queensland, St Lucia, Queensland, Australia",
+            "institution_ids": [
+              "https://openalex.org/I165143802"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5011289872",
+          "display_name": "Todd Z. DeSantis",
+          "orcid": "https://orcid.org/0000-0002-1786-1013",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-1786-1013"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210133866",
+            "display_name": "Second Genome (United States)",
+            "ror": "https://ror.org/03mnpq162",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I4210133866"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Todd DeSantis",
+        "raw_affiliation_strings": [
+          "Department of Informatics, Second Genome, Brisbane, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Informatics, Second Genome, Brisbane, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I4210133866"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5007034049",
+          "display_name": "Se Jin Song",
+          "orcid": "https://orcid.org/0000-0003-0750-5709",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-0750-5709"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Se Jin Song",
+        "raw_affiliation_strings": [
+          "Center for Microbiome Innovation, Jacobs School of Engineering, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Microbiome Innovation, Jacobs School of Engineering, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5027207468",
+          "display_name": "Andrew P. Bartko",
+          "orcid": "https://orcid.org/0000-0002-1237-2747",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-1237-2747"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Andrew Bartko",
+        "raw_affiliation_strings": [
+          "Center for Microbiome Innovation, Jacobs School of Engineering, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-1237-2747",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Microbiome Innovation, Jacobs School of Engineering, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5054656133",
+          "display_name": "Aki Samuli Havulinna",
+          "orcid": "https://orcid.org/0000-0002-4787-8959",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-4787-8959"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I39624965",
+            "display_name": "Finnish Institute for Health and Welfare",
+            "ror": "https://ror.org/03tf0c761",
+            "country_code": "FI",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I39624965"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4210133586",
+            "display_name": "Institute for Molecular Medicine Finland",
+            "ror": "https://ror.org/030sbze61",
+            "country_code": "FI",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I133731052",
+              "https://openalex.org/I4210133586"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4391768107",
+            "display_name": "HiLIFE – Elämäntieteiden Instituutti",
+            "ror": "https://ror.org/018bh0m68",
+            "country_code": "FI",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I133731052",
+              "https://openalex.org/I4391768107"
+            ]
+          }
+        ],
+        "countries": [
+          "FI"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Aki S. Havulinna",
+        "raw_affiliation_strings": [
+          "Finnish Institute for Health and Welfare, Helsinki, Finland",
+          "Institute for Molecular Medicine Finland, FIMM-HiLIFE, Helsinki, Finland"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-4787-8959",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Finnish Institute for Health and Welfare, Helsinki, Finland",
+            "institution_ids": [
+              "https://openalex.org/I39624965"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Institute for Molecular Medicine Finland, FIMM-HiLIFE, Helsinki, Finland",
+            "institution_ids": [
+              "https://openalex.org/I4210133586",
+              "https://openalex.org/I4391768107"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5079752612",
+          "display_name": "Pekka Jousilahti",
+          "orcid": "https://orcid.org/0000-0001-7190-0979",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-7190-0979"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I39624965",
+            "display_name": "Finnish Institute for Health and Welfare",
+            "ror": "https://ror.org/03tf0c761",
+            "country_code": "FI",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I39624965"
+            ]
+          }
+        ],
+        "countries": [
+          "FI"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Pekka Jousilahti",
+        "raw_affiliation_strings": [
+          "Finnish Institute for Health and Welfare, Helsinki, Finland"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Finnish Institute for Health and Welfare, Helsinki, Finland",
+            "institution_ids": [
+              "https://openalex.org/I39624965"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5025695986",
+          "display_name": "Susan C. Cheng",
+          "orcid": "https://orcid.org/0000-0002-4977-036X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-4977-036X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1282927834",
+            "display_name": "Cedars-Sinai Medical Center",
+            "ror": "https://ror.org/02pammg90",
+            "country_code": "US",
+            "type": "healthcare",
+            "lineage": [
+              "https://openalex.org/I1282927834"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I1283280774",
+            "display_name": "Brigham and Women's Hospital",
+            "ror": "https://ror.org/04b6nzv94",
+            "country_code": "US",
+            "type": "healthcare",
+            "lineage": [
+              "https://openalex.org/I121934306",
+              "https://openalex.org/I1283280774",
+              "https://openalex.org/I48633490"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Susan Cheng",
+        "raw_affiliation_strings": [
+          "Cedars-Sinai Medical Center, Los Angeles, CA, USA",
+          "Division of Cardiology, Brigham and Women's Hospital, Boston, MA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cedars-Sinai Medical Center, Los Angeles, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I1282927834"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Division of Cardiology, Brigham and Women's Hospital, Boston, MA, USA",
+            "institution_ids": [
+              "https://openalex.org/I1283280774"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5056977453",
+          "display_name": "Michael Inouye",
+          "orcid": "https://orcid.org/0000-0001-9413-6520",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-9413-6520"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I142471025",
+            "display_name": "Baker Heart and Diabetes Institute",
+            "ror": "https://ror.org/03rke0285",
+            "country_code": "AU",
+            "type": "nonprofit",
+            "lineage": [
+              "https://openalex.org/I142471025"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I241749",
+            "display_name": "University of Cambridge",
+            "ror": "https://ror.org/013meh722",
+            "country_code": "GB",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I241749"
+            ]
+          }
+        ],
+        "countries": [
+          "AU",
+          "GB"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Michael Inouye",
+        "raw_affiliation_strings": [
+          "Cambridge Baker Systems Genomics Initiative, Baker Heart and Diabetes Institute, Melbourne, Victoria, Australia",
+          "Cambridge Baker Systems Genomics Initiative, Department of Public Health and Primary Care, University of Cambridge, Cambridge, UK"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cambridge Baker Systems Genomics Initiative, Baker Heart and Diabetes Institute, Melbourne, Victoria, Australia",
+            "institution_ids": [
+              "https://openalex.org/I142471025"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Cambridge Baker Systems Genomics Initiative, Department of Public Health and Primary Care, University of Cambridge, Cambridge, UK",
+            "institution_ids": [
+              "https://openalex.org/I241749"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5081976107",
+          "display_name": "Teemu Niiranen",
+          "orcid": "https://orcid.org/0000-0002-7394-7487",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-7394-7487"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I155660961",
+            "display_name": "University of Turku",
+            "ror": "https://ror.org/05vghhr25",
+            "country_code": "FI",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I155660961"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I2801970007",
+            "display_name": "Turku University Hospital",
+            "ror": "https://ror.org/05dbzj528",
+            "country_code": "FI",
+            "type": "healthcare",
+            "lineage": [
+              "https://openalex.org/I2801970007",
+              "https://openalex.org/I4210127022"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I39624965",
+            "display_name": "Finnish Institute for Health and Welfare",
+            "ror": "https://ror.org/03tf0c761",
+            "country_code": "FI",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I39624965"
+            ]
+          }
+        ],
+        "countries": [
+          "FI"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Teemu Niiranen",
+        "raw_affiliation_strings": [
+          "Division of Medicine, Turku University Hospital and University of Turku, Turku, Finland",
+          "Finnish Institute for Health and Welfare, Helsinki, Finland"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Division of Medicine, Turku University Hospital and University of Turku, Turku, Finland",
+            "institution_ids": [
+              "https://openalex.org/I155660961",
+              "https://openalex.org/I2801970007"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Finnish Institute for Health and Welfare, Helsinki, Finland",
+            "institution_ids": [
+              "https://openalex.org/I39624965"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5079372832",
+          "display_name": "Mohit Jain",
+          "orcid": "https://orcid.org/0000-0001-8628-2069",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-8628-2069",
+            "https://orcid.org/0009-0003-8718-4374"
+          ]
+        },
+        "institutions": [],
+        "countries": [],
+        "is_corresponding": false,
+        "raw_author_name": "Mohit Jain",
+        "raw_affiliation_strings": [
+          "Sapient Bioanalytics, LLC, San Diego, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Sapient Bioanalytics, LLC, San Diego, CA, USA",
+            "institution_ids": []
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5066237154",
+          "display_name": "Veikko V Salomaa",
+          "orcid": "https://orcid.org/0000-0001-7563-5324",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-7563-5324"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I39624965",
+            "display_name": "Finnish Institute for Health and Welfare",
+            "ror": "https://ror.org/03tf0c761",
+            "country_code": "FI",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I39624965"
+            ]
+          }
+        ],
+        "countries": [
+          "FI"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Veikko Salomaa",
+        "raw_affiliation_strings": [
+          "Finnish Institute for Health and Welfare, Helsinki, Finland"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-7563-5324",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Finnish Institute for Health and Welfare, Helsinki, Finland",
+            "institution_ids": [
+              "https://openalex.org/I39624965"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5082648063",
+          "display_name": "Leo Lahti",
+          "orcid": "https://orcid.org/0000-0001-5537-637X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-5537-637X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I155660961",
+            "display_name": "University of Turku",
+            "ror": "https://ror.org/05vghhr25",
+            "country_code": "FI",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I155660961"
+            ]
+          }
+        ],
+        "countries": [
+          "FI"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Leo Lahti",
+        "raw_affiliation_strings": [
+          "Department of Computing, University of Turku, Turku, Finland"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Computing, University of Turku, Turku, Finland",
+            "institution_ids": [
+              "https://openalex.org/I155660961"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5087959579",
+          "display_name": "Siavash Mirarab",
+          "orcid": "https://orcid.org/0000-0001-5410-1518",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-5410-1518"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Siavash Mirarab",
+        "raw_affiliation_strings": [
+          "Department of Electrical and Computer Engineering, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-5410-1518",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Electrical and Computer Engineering, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "last",
+        "author": {
+          "id": "https://openalex.org/A5033881627",
+          "display_name": "Rob D. Knight",
+          "orcid": "https://orcid.org/0000-0002-0975-9019",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-0975-9019",
+            "https://orcid.org/0000-0001-7531-0087"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": true,
+        "raw_author_name": "Rob Knight",
+        "raw_affiliation_strings": [
+          "Center for Microbiome Innovation, Jacobs School of Engineering, University of California San Diego, La Jolla, CA, USA. robknight@eng.ucsd.edu",
+          "Department of Bioengineering, University of California San Diego, La Jolla, CA, USA. robknight@eng.ucsd.edu",
+          "Department of Computer Science and Engineering, University of California San Diego, La Jolla, CA, USA. robknight@eng.ucsd.edu",
+          "Department of Pediatrics, University of California San Diego School of Medicine, La Jolla, CA, USA. robknight@eng.ucsd.edu",
+          "Center for Microbiome Innovation, Jacobs School of Engineering, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-0975-9019",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Microbiome Innovation, Jacobs School of Engineering, University of California San Diego, La Jolla, CA, USA. robknight@eng.ucsd.edu",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Bioengineering, University of California San Diego, La Jolla, CA, USA. robknight@eng.ucsd.edu",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Computer Science and Engineering, University of California San Diego, La Jolla, CA, USA. robknight@eng.ucsd.edu",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego School of Medicine, La Jolla, CA, USA. robknight@eng.ucsd.edu",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Center for Microbiome Innovation, Jacobs School of Engineering, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      }
+    ],
+    "biblio": {
+      "volume": "42",
+      "issue": "5",
+      "first_page": "715",
+      "last_page": "718"
+    },
+    "primary_location": {
+      "id": "doi:10.1038/s41587-023-01845-1",
+      "doi": "https://doi.org/10.1038/s41587-023-01845-1",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1038/s41587-023-01845-1",
+      "pdf_url": "https://www.nature.com/articles/s41587-023-01845-1.pdf",
+      "source": {
+        "id": "https://openalex.org/S106963461",
+        "display_name": "Nature Biotechnology",
+        "issn_l": "0733-222X",
+        "issn": [
+          "0733-222X",
+          "1087-0156",
+          "1546-1696",
+          "2331-3684"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "listed_in": [
+          "anvur-scientific",
+          "cwts-core",
+          "dongbi-a",
+          "doyens",
+          "jufo-3",
+          "ki-jl-3",
+          "medline",
+          "norway-2",
+          "poland-200",
+          "russia-white-list-1",
+          "vabb-shw"
+        ],
+        "host_organization": "https://openalex.org/P4310319908",
+        "host_organization_name": "Nature Portfolio",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319908",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Nature Portfolio",
+          "Springer Nature"
+        ],
+        "type": "journal"
+      },
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Nature Biotechnology",
+      "raw_type": "journal-article"
+    },
+    "open_access": {
+      "is_oa": true,
+      "oa_status": "hybrid",
+      "oa_url": "https://www.nature.com/articles/s41587-023-01845-1.pdf",
+      "any_repository_has_fulltext": true
+    }
+  }
+}

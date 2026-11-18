@@ -1,0 +1,68 @@
+{
+  "tool": "research-mcp__openalex_search",
+  "arguments": {
+    "limit": 2,
+    "query": "GTDB an ongoing census of bacterial and archaeal diversity through a phylogenetically consistent rank normalized and complete genome-based taxonomy"
+  },
+  "message_index": 96,
+  "result_message_index": 97,
+  "historical_execution_date": "2026-11-17",
+  "restored_by": "AI4Science-агент",
+  "restoration_date": "2026-11-17",
+  "historical_execution": true,
+  "source_log_basename": "llm_request.0.jsonl",
+  "source_log_sha256": "855ba92e2ed241087cfa0c631deae866b51733d21182463f12a61c7173b5f96f",
+  "result": {
+    "provenance": {
+      "source": "OpenAlex",
+      "request": "https://api.openalex.org/works?search=GTDB+an+ongoing+census+of+bacterial+and+archaeal+diversity+through+a+phylogenetically+consistent+rank+normalized+and+complete+genome-based+taxonomy&per_page=2&sort=relevance_score%3Adesc&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Cauthorships%2Cprimary_location%2Ctype%2Ccited_by_count%2Copen_access",
+      "retrieved": "2026-11-17",
+      "untrusted_text_fields": [
+        "title",
+        "abstract",
+        "description"
+      ]
+    },
+    "found": 1731,
+    "results": [
+      {
+        "openalex_id": "W3200103613",
+        "title": "GTDB: an ongoing census of bacterial and archaeal diversity through a phylogenetically consistent, rank normalized and complete genome-based taxonomy",
+        "year": 2021,
+        "authors": [
+          "Donovan H. Parks",
+          "Maria S. Chuvochina",
+          "Christian Rinke",
+          "Aaron James Mussig",
+          "Pierre-Alain Chaumeil",
+          "и др."
+        ],
+        "source": "Nucleic Acids Research",
+        "type": "article",
+        "cited_by": 2699,
+        "doi": "10.1093/nar/gkab776",
+        "oa_status": "gold",
+        "oa_url": "https://academic.oup.com/nar/article-pdf/50/D1/D785/42058270/gkab776.pdf"
+      },
+      {
+        "openalex_id": "W4415469270",
+        "title": "GTDB release 10: a complete and systematic taxonomy for 715 230 bacterial and 17 245 archaeal genomes",
+        "year": 2025,
+        "authors": [
+          "Donovan H. Parks",
+          "Pierre-Alain Chaumeil",
+          "Aaron James Mussig",
+          "Christian Rinke",
+          "Maria S. Chuvochina",
+          "и др."
+        ],
+        "source": "Nucleic Acids Research",
+        "type": "article",
+        "cited_by": 195,
+        "doi": "10.1093/nar/gkaf1040",
+        "oa_status": "gold",
+        "oa_url": "https://academic.oup.com/nar/advance-article-pdf/doi/10.1093/nar/gkaf1040/64848953/gkaf1040.pdf"
+      }
+    ]
+  }
+}

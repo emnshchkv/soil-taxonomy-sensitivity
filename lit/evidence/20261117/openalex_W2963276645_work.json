@@ -1,0 +1,5109 @@
+{
+  "source": "OpenAlex",
+  "request": "https://api.openalex.org/works/W2963276645?select=id,doi,display_name,publication_year,authorships,biblio,primary_location,open_access",
+  "retrieved": "2026-11-17",
+  "method": "Python urllib HTTPS GET, not research-mcp",
+  "historical_execution": false,
+  "response": {
+    "id": "https://openalex.org/W2963276645",
+    "doi": "https://doi.org/10.1038/s41587-019-0209-9",
+    "display_name": "Reproducible, interactive, scalable and extensible microbiome data science using QIIME 2",
+    "publication_year": 2019,
+    "authorships": [
+      {
+        "author_position": "first",
+        "author": {
+          "id": "https://openalex.org/A5014309302",
+          "display_name": "Evan K Bolyen",
+          "orcid": "https://orcid.org/0000-0002-5362-6782",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-5362-6782"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Evan Bolyen",
+        "raw_affiliation_strings": [
+          "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-5362-6782",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5045260328",
+          "display_name": "Jai Ram Rideout",
+          "orcid": "https://orcid.org/0000-0003-2587-1454",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-2587-1454"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Jai Ram Rideout",
+        "raw_affiliation_strings": [
+          "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-2587-1454",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5044141437",
+          "display_name": "Matthew R. Dillon",
+          "orcid": "https://orcid.org/0000-0002-7713-1952",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-7713-1952"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Matthew R. Dillon",
+        "raw_affiliation_strings": [
+          "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-7713-1952",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5000165682",
+          "display_name": "Nicholas A. Bokulich",
+          "orcid": "https://orcid.org/0000-0002-1784-8935",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-1784-8935"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Nicholas A. Bokulich",
+        "raw_affiliation_strings": [
+          "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-1784-8935",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5012823292",
+          "display_name": "Christian C. Abnet",
+          "orcid": "https://orcid.org/0000-0002-3008-7843",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-3008-7843"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210140884",
+            "display_name": "National Cancer Institute",
+            "ror": "https://ror.org/040gcmg81",
+            "country_code": "US",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I1299022934",
+              "https://openalex.org/I1299303238",
+              "https://openalex.org/I4210140884"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Christian C. Abnet",
+        "raw_affiliation_strings": [
+          "Metabolic Epidemiology Branch, National Cancer Institute, Rockville, MD, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-3008-7843",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Metabolic Epidemiology Branch, National Cancer Institute, Rockville, MD, USA",
+            "institution_ids": [
+              "https://openalex.org/I4210140884"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5058766687",
+          "display_name": "Gabriel A. Al‐Ghalith",
+          "orcid": "https://orcid.org/0000-0002-6953-6319",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-6953-6319"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I130238516",
+            "display_name": "University of Minnesota",
+            "ror": "https://ror.org/017zqws13",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Gabriel A. Al-Ghalith",
+        "raw_affiliation_strings": [
+          "Department of Computer Science and Engineering, University of Minnesota, Minneapolis, MN, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-6953-6319",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Computer Science and Engineering, University of Minnesota, Minneapolis, MN, USA",
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5013626144",
+          "display_name": "Harriet Alexander",
+          "orcid": "https://orcid.org/0000-0003-1308-8008",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-1308-8008"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I66958751",
+            "display_name": "Woods Hole Oceanographic Institution",
+            "ror": "https://ror.org/03zbnzt98",
+            "country_code": "US",
+            "type": "nonprofit",
+            "lineage": [
+              "https://openalex.org/I66958751"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I84218800",
+            "display_name": "University of California, Davis",
+            "ror": "https://ror.org/05rrcem69",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I84218800"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Harriet Alexander",
+        "raw_affiliation_strings": [
+          "Biology Department, Woods Hole Oceanographic Institution, Woods Hole, MA, USA",
+          "Department of Population Health and Reproduction, University of California, Davis, Davis, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Biology Department, Woods Hole Oceanographic Institution, Woods Hole, MA, USA",
+            "institution_ids": [
+              "https://openalex.org/I66958751"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Population Health and Reproduction, University of California, Davis, Davis, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I84218800"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5091119492",
+          "display_name": "Eric J. Alm",
+          "orcid": "https://orcid.org/0000-0001-8294-9364",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-8294-9364"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I63966007",
+            "display_name": "Massachusetts Institute of Technology",
+            "ror": "https://ror.org/042nb2s44",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I63966007"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Eric J. Alm",
+        "raw_affiliation_strings": [
+          "Center for Microbiome Informatics and Therapeutics, Massachusetts Institute of Technology, Cambridge, MA, USA",
+          "Department of Biological Engineering, Massachusetts Institute of Technology, Cambridge, MA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-8294-9364",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Microbiome Informatics and Therapeutics, Massachusetts Institute of Technology, Cambridge, MA, USA",
+            "institution_ids": [
+              "https://openalex.org/I63966007"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Biological Engineering, Massachusetts Institute of Technology, Cambridge, MA, USA",
+            "institution_ids": [
+              "https://openalex.org/I63966007"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5058914957",
+          "display_name": "Manimozhiyan Arumugam",
+          "orcid": "https://orcid.org/0000-0002-0886-9101",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-0886-9101",
+            "https://orcid.org/0000-0002-3065-3745"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I124055696",
+            "display_name": "University of Copenhagen",
+            "ror": "https://ror.org/035b05819",
+            "country_code": "DK",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I124055696"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4391767703",
+            "display_name": "Novo Nordisk Foundation Center for Basic Metabolic Research",
+            "ror": "https://ror.org/02s32fb62",
+            "country_code": "DK",
+            "type": "other",
+            "lineage": [
+              "https://openalex.org/I124055696",
+              "https://openalex.org/I4391767703"
+            ]
+          }
+        ],
+        "countries": [
+          "DK"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Manimozhiyan Arumugam",
+        "raw_affiliation_strings": [
+          "Novo Nordisk Foundation Center for Basic Metabolic Research, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-0886-9101",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Novo Nordisk Foundation Center for Basic Metabolic Research, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark",
+            "institution_ids": [
+              "https://openalex.org/I124055696",
+              "https://openalex.org/I4391767703"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5023870348",
+          "display_name": "Francesco Asnicar",
+          "orcid": "https://orcid.org/0000-0003-3732-1468",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-3732-1468"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I193223587",
+            "display_name": "University of Trento",
+            "ror": "https://ror.org/05trd4x28",
+            "country_code": "IT",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I193223587"
+            ]
+          }
+        ],
+        "countries": [
+          "IT"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Francesco Asnicar",
+        "raw_affiliation_strings": [
+          "Centre for Integrative Biology, University of Trento, Trento, Italy"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-3732-1468",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Centre for Integrative Biology, University of Trento, Trento, Italy",
+            "institution_ids": [
+              "https://openalex.org/I193223587"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5100630907",
+          "display_name": "Yang Bai",
+          "orcid": "https://orcid.org/0000-0003-2652-7022",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-2652-7022"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I19820366",
+            "display_name": "Chinese Academy of Sciences",
+            "ror": "https://ror.org/034t30j35",
+            "country_code": "CN",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I19820366"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4210112230",
+            "display_name": "State Key Laboratory of Plant Genomics",
+            "ror": "https://ror.org/0205xz563",
+            "country_code": "CN",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I4210112230"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4210124606",
+            "display_name": "Institute of Genetics and Developmental Biology",
+            "ror": "https://ror.org/02aee5m12",
+            "country_code": "CN",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210124606"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4210165038",
+            "display_name": "University of Chinese Academy of Sciences",
+            "ror": "https://ror.org/05qbk4x57",
+            "country_code": "CN",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210165038"
+            ]
+          }
+        ],
+        "countries": [
+          "CN"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Yang Bai",
+        "raw_affiliation_strings": [
+          "Centre of Excellence for Plant and Microbial Sciences (CEPAMS), Institute of Genetics and Developmental Biology, Chinese Academy of Sciences & John Innes Centre, Beijing, China",
+          "State Key Laboratory of Plant Genomics, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China",
+          "University of Chinese Academy of Sciences, Beijing, China"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-2652-7022",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Centre of Excellence for Plant and Microbial Sciences (CEPAMS), Institute of Genetics and Developmental Biology, Chinese Academy of Sciences & John Innes Centre, Beijing, China",
+            "institution_ids": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210124606"
+            ]
+          },
+          {
+            "raw_affiliation_string": "State Key Laboratory of Plant Genomics, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China",
+            "institution_ids": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210112230",
+              "https://openalex.org/I4210124606"
+            ]
+          },
+          {
+            "raw_affiliation_string": "University of Chinese Academy of Sciences, Beijing, China",
+            "institution_ids": [
+              "https://openalex.org/I4210165038"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5068812632",
+          "display_name": "Jordan E. Bisanz",
+          "orcid": "https://orcid.org/0000-0002-8649-1706",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-8649-1706"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I180670191",
+            "display_name": "University of California, San Francisco",
+            "ror": "https://ror.org/043mz5j54",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I180670191"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Jordan E. Bisanz",
+        "raw_affiliation_strings": [
+          "Department of Microbiology and Immunology, University of California, San Francisco, San Francisco, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-8649-1706",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Microbiology and Immunology, University of California, San Francisco, San Francisco, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I180670191"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5066967353",
+          "display_name": "Kyle L. Bittinger",
+          "orcid": "https://orcid.org/0000-0003-3472-5934",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-3472-5934"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1335321130",
+            "display_name": "Children's Hospital of Philadelphia",
+            "ror": "https://ror.org/01z7r7q48",
+            "country_code": "US",
+            "type": "healthcare",
+            "lineage": [
+              "https://openalex.org/I1335321130"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Kyle Bittinger",
+        "raw_affiliation_strings": [
+          "Division of Gastroenterology and Nutrition, Children's Hospital of Philadelphia, Philadelphia, PA, USA",
+          "Hepatology, Children's Hospital of Philadelphia, Philadelphia, PA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Division of Gastroenterology and Nutrition, Children's Hospital of Philadelphia, Philadelphia, PA, USA",
+            "institution_ids": [
+              "https://openalex.org/I1335321130"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Hepatology, Children's Hospital of Philadelphia, Philadelphia, PA, USA",
+            "institution_ids": [
+              "https://openalex.org/I1335321130"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5051319454",
+          "display_name": "Asker Brejnrod",
+          "orcid": "https://orcid.org/0000-0002-1327-2051",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-1327-2051"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I124055696",
+            "display_name": "University of Copenhagen",
+            "ror": "https://ror.org/035b05819",
+            "country_code": "DK",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I124055696"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4391767703",
+            "display_name": "Novo Nordisk Foundation Center for Basic Metabolic Research",
+            "ror": "https://ror.org/02s32fb62",
+            "country_code": "DK",
+            "type": "other",
+            "lineage": [
+              "https://openalex.org/I124055696",
+              "https://openalex.org/I4391767703"
+            ]
+          }
+        ],
+        "countries": [
+          "DK"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Asker Brejnrod",
+        "raw_affiliation_strings": [
+          "Novo Nordisk Foundation Center for Basic Metabolic Research, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Novo Nordisk Foundation Center for Basic Metabolic Research, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark",
+            "institution_ids": [
+              "https://openalex.org/I124055696",
+              "https://openalex.org/I4391767703"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5000856048",
+          "display_name": "Colin Brislawn",
+          "orcid": "https://orcid.org/0000-0002-9109-1950",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-9109-1950"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I142606810",
+            "display_name": "Pacific Northwest National Laboratory",
+            "ror": "https://ror.org/05h992307",
+            "country_code": "US",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I1325736334",
+              "https://openalex.org/I1330989302",
+              "https://openalex.org/I142606810",
+              "https://openalex.org/I39565521"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Colin J. Brislawn",
+        "raw_affiliation_strings": [
+          "Earth and Biological Sciences Directorate, Pacific Northwest National Laboratory, Richland, WA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Earth and Biological Sciences Directorate, Pacific Northwest National Laboratory, Richland, WA, USA",
+            "institution_ids": [
+              "https://openalex.org/I142606810"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5036229691",
+          "display_name": "C. Titus Brown",
+          "orcid": "https://orcid.org/0000-0001-6001-2677",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-6001-2677"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I84218800",
+            "display_name": "University of California, Davis",
+            "ror": "https://ror.org/05rrcem69",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I84218800"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "C. Titus Brown",
+        "raw_affiliation_strings": [
+          "Department of Population Health and Reproduction, University of California, Davis, Davis, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-6001-2677",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Population Health and Reproduction, University of California, Davis, Davis, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I84218800"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5027561072",
+          "display_name": "Benjamin J. Callahan",
+          "orcid": "https://orcid.org/0000-0002-8752-117X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-8752-117X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I137902535",
+            "display_name": "North Carolina State University",
+            "ror": "https://ror.org/04tj63d06",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I137902535"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Benjamin J. Callahan",
+        "raw_affiliation_strings": [
+          "Bioinformatics Research Center, North Carolina State University, Raleigh, NC, USA",
+          "Department of Population Health & Pathobiology, North Carolina State University, Raleigh, NC, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-8752-117X",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Bioinformatics Research Center, North Carolina State University, Raleigh, NC, USA",
+            "institution_ids": [
+              "https://openalex.org/I137902535"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Population Health & Pathobiology, North Carolina State University, Raleigh, NC, USA",
+            "institution_ids": [
+              "https://openalex.org/I137902535"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5012057261",
+          "display_name": "Andrés Mauricio Caraballo‐Rodríguez",
+          "orcid": "https://orcid.org/0000-0001-5499-2728",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-5499-2728"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Andrés Mauricio Caraballo-Rodríguez",
+        "raw_affiliation_strings": [
+          "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-5499-2728",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5104274724",
+          "display_name": "John Chase",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "John Chase",
+        "raw_affiliation_strings": [
+          "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5012356079",
+          "display_name": "Emily K. Cope",
+          "orcid": "https://orcid.org/0000-0002-9631-2791",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-9631-2791"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Emily K. Cope",
+        "raw_affiliation_strings": [
+          "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA",
+          "Department of Biological Sciences, Northern Arizona University, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Biological Sciences, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5063348766",
+          "display_name": "Ricardo Silva",
+          "orcid": "https://orcid.org/0000-0001-6378-0479",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-6378-0479"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Ricardo Da Silva",
+        "raw_affiliation_strings": [
+          "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5004117093",
+          "display_name": "Christian Diener",
+          "orcid": "https://orcid.org/0000-0002-7476-0868",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-7476-0868"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I3148997608",
+            "display_name": "Institute for Systems Biology",
+            "ror": "https://ror.org/02tpgw303",
+            "country_code": "US",
+            "type": "nonprofit",
+            "lineage": [
+              "https://openalex.org/I3148997608"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Christian Diener",
+        "raw_affiliation_strings": [
+          "Institute for Systems Biology, Seattle, WA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-7476-0868",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Institute for Systems Biology, Seattle, WA, USA",
+            "institution_ids": [
+              "https://openalex.org/I3148997608"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5082720301",
+          "display_name": "Pieter C. Dorrestein",
+          "orcid": "https://orcid.org/0000-0002-3003-1030",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-3003-1030"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Pieter C. Dorrestein",
+        "raw_affiliation_strings": [
+          "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-3003-1030",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5001579116",
+          "display_name": "Gavin M. Douglas",
+          "orcid": "https://orcid.org/0000-0001-5164-6707",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-5164-6707"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I129902397",
+            "display_name": "Dalhousie University",
+            "ror": "https://ror.org/01e6qks80",
+            "country_code": "CA",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I129902397"
+            ]
+          }
+        ],
+        "countries": [
+          "CA"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Gavin M. Douglas",
+        "raw_affiliation_strings": [
+          "Department of Microbiology and Immunology, Dalhousie University, Halifax, Nova Scotia, Canada"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Microbiology and Immunology, Dalhousie University, Halifax, Nova Scotia, Canada",
+            "institution_ids": [
+              "https://openalex.org/I129902397"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5021434656",
+          "display_name": "Daniel M. Durall",
+          "orcid": "https://orcid.org/0000-0001-7414-4443",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-7414-4443"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I141945490",
+            "display_name": "University of British Columbia",
+            "ror": "https://ror.org/03rmrcq20",
+            "country_code": "CA",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I141945490"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4405260628",
+            "display_name": "University of British Columbia, Okanagan Campus",
+            "ror": "https://ror.org/04241wz75",
+            "country_code": "CA",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I141945490",
+              "https://openalex.org/I4405260628"
+            ]
+          }
+        ],
+        "countries": [
+          "CA"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Daniel M. Durall",
+        "raw_affiliation_strings": [
+          "Irving K. Barber School of Arts and Sciences, University of British Columbia, Kelowna, British Columbia, Canada"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-7414-4443",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Irving K. Barber School of Arts and Sciences, University of British Columbia, Kelowna, British Columbia, Canada",
+            "institution_ids": [
+              "https://openalex.org/I141945490",
+              "https://openalex.org/I4405260628"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5078594398",
+          "display_name": "Claire Duvallet",
+          "orcid": "https://orcid.org/0000-0002-8093-8394",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-8093-8394"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I63966007",
+            "display_name": "Massachusetts Institute of Technology",
+            "ror": "https://ror.org/042nb2s44",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I63966007"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Claire Duvallet",
+        "raw_affiliation_strings": [
+          "Department of Biological Engineering, Massachusetts Institute of Technology, Cambridge, MA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-8093-8394",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Biological Engineering, Massachusetts Institute of Technology, Cambridge, MA, USA",
+            "institution_ids": [
+              "https://openalex.org/I63966007"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5081796051",
+          "display_name": "Christian F. Edwardson",
+          "orcid": "https://orcid.org/0000-0001-7524-7209",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-7524-7209"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I2801284671",
+            "display_name": "Shedd Aquarium",
+            "ror": "https://ror.org/03tsq7092",
+            "country_code": "US",
+            "type": "archive",
+            "lineage": [
+              "https://openalex.org/I2801284671"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Christian F. Edwardson",
+        "raw_affiliation_strings": [
+          "A. Watson Armour III Center for Animal Health and Welfare, Aquarium Microbiome Project, John G. Shedd Aquarium, Chicago, IL, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-7524-7209",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "A. Watson Armour III Center for Animal Health and Welfare, Aquarium Microbiome Project, John G. Shedd Aquarium, Chicago, IL, USA",
+            "institution_ids": [
+              "https://openalex.org/I2801284671"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5010086188",
+          "display_name": "Madeleine Ernst",
+          "orcid": "https://orcid.org/0000-0001-9530-3837",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-9530-3837"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I101527212",
+            "display_name": "Statens Serum Institut",
+            "ror": "https://ror.org/0417ye583",
+            "country_code": "DK",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I101527212"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "DK",
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Madeleine Ernst",
+        "raw_affiliation_strings": [
+          "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+          "Department of Congenital Disorders, Statens Serum Institut, Copenhagen, Denmark"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Congenital Disorders, Statens Serum Institut, Copenhagen, Denmark",
+            "institution_ids": [
+              "https://openalex.org/I101527212"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5049341324",
+          "display_name": "Mehrbod Estaki",
+          "orcid": "https://orcid.org/0000-0003-4556-8444",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-4556-8444"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4405260628",
+            "display_name": "University of British Columbia, Okanagan Campus",
+            "ror": "https://ror.org/04241wz75",
+            "country_code": "CA",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I141945490",
+              "https://openalex.org/I4405260628"
+            ]
+          }
+        ],
+        "countries": [
+          "CA"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Mehrbod Estaki",
+        "raw_affiliation_strings": [
+          "Department of Biology, University of British Columbia Okanagan, Okanagan, British Columbia, Canada"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Biology, University of British Columbia Okanagan, Okanagan, British Columbia, Canada",
+            "institution_ids": [
+              "https://openalex.org/I4405260628"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5023589584",
+          "display_name": "Jennifer Fouquier",
+          "orcid": "https://orcid.org/0000-0002-0975-8235",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-0975-8235"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I51713134",
+            "display_name": "University of Colorado Anschutz",
+            "ror": "https://ror.org/03wmf1y16",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I51713134"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Jennifer Fouquier",
+        "raw_affiliation_strings": [
+          "Computational Bioscience Program, University of Colorado Anschutz Medical Campus, Aurora, CO, USA",
+          "Department of Medicine, Division of Biomedical Informatics and Personalized Medicine, University of Colorado Anschutz Medical Campus, Aurora, CO, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-0975-8235",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Computational Bioscience Program, University of Colorado Anschutz Medical Campus, Aurora, CO, USA",
+            "institution_ids": [
+              "https://openalex.org/I51713134"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Medicine, Division of Biomedical Informatics and Personalized Medicine, University of Colorado Anschutz Medical Campus, Aurora, CO, USA",
+            "institution_ids": [
+              "https://openalex.org/I51713134"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5032648643",
+          "display_name": "Julia M. Gauglitz",
+          "orcid": "https://orcid.org/0000-0003-3146-2489",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-3146-2489"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Julia M. Gauglitz",
+        "raw_affiliation_strings": [
+          "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5064118261",
+          "display_name": "Sean M. Gibbons",
+          "orcid": "https://orcid.org/0000-0002-8724-7916",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-8724-7916"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I201448701",
+            "display_name": "University of Washington",
+            "ror": "https://ror.org/00cvxb145",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I201448701"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I3148997608",
+            "display_name": "Institute for Systems Biology",
+            "ror": "https://ror.org/02tpgw303",
+            "country_code": "US",
+            "type": "nonprofit",
+            "lineage": [
+              "https://openalex.org/I3148997608"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Sean M. Gibbons",
+        "raw_affiliation_strings": [
+          "Institute for Systems Biology, Seattle, WA, USA",
+          "eScience Institute, University of Washington, Seattle, WA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-8724-7916",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Institute for Systems Biology, Seattle, WA, USA",
+            "institution_ids": [
+              "https://openalex.org/I3148997608"
+            ]
+          },
+          {
+            "raw_affiliation_string": "eScience Institute, University of Washington, Seattle, WA, USA",
+            "institution_ids": [
+              "https://openalex.org/I201448701"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5037837504",
+          "display_name": "Deanna Lynn Gibson",
+          "orcid": "https://orcid.org/0000-0003-0052-7550",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-0052-7550"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I141945490",
+            "display_name": "University of British Columbia",
+            "ror": "https://ror.org/03rmrcq20",
+            "country_code": "CA",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I141945490"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4405260628",
+            "display_name": "University of British Columbia, Okanagan Campus",
+            "ror": "https://ror.org/04241wz75",
+            "country_code": "CA",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I141945490",
+              "https://openalex.org/I4405260628"
+            ]
+          }
+        ],
+        "countries": [
+          "CA"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Deanna L. Gibson",
+        "raw_affiliation_strings": [
+          "Department of Medicine, University of British Columbia, Kelowna, British Columbia, Canada",
+          "Irving K. Barber School of Arts and Sciences, Department of Biology, University of British Columbia, Kelowna, British Columbia, Canada"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Medicine, University of British Columbia, Kelowna, British Columbia, Canada",
+            "institution_ids": [
+              "https://openalex.org/I141945490",
+              "https://openalex.org/I4405260628"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Irving K. Barber School of Arts and Sciences, Department of Biology, University of British Columbia, Kelowna, British Columbia, Canada",
+            "institution_ids": [
+              "https://openalex.org/I141945490",
+              "https://openalex.org/I4405260628"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5101532298",
+          "display_name": "Antonio González",
+          "orcid": "https://orcid.org/0000-0002-5900-3965",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-5900-3965"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Antonio Gonzalez",
+        "raw_affiliation_strings": [
+          "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5000991724",
+          "display_name": "Kestrel Gorlick",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Kestrel Gorlick",
+        "raw_affiliation_strings": [
+          "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5021380321",
+          "display_name": "Jiarong Guo",
+          "orcid": "https://orcid.org/0000-0002-6903-5418",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-6903-5418"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I87216513",
+            "display_name": "Michigan State University",
+            "ror": "https://ror.org/05hs6h993",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I87216513"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Jiarong Guo",
+        "raw_affiliation_strings": [
+          "Center for Microbial Ecology, Michigan State University, East Lansing, MI, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Microbial Ecology, Michigan State University, East Lansing, MI, USA",
+            "institution_ids": [
+              "https://openalex.org/I87216513"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5063135788",
+          "display_name": "Benjamin Hillmann",
+          "orcid": "https://orcid.org/0000-0003-4276-1329",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-4276-1329"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I130238516",
+            "display_name": "University of Minnesota",
+            "ror": "https://ror.org/017zqws13",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Benjamin Hillmann",
+        "raw_affiliation_strings": [
+          "Department of Computer Science and Engineering, University of Minnesota, Minneapolis, MN, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Computer Science and Engineering, University of Minnesota, Minneapolis, MN, USA",
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5003674456",
+          "display_name": "Susan Holmes",
+          "orcid": "https://orcid.org/0000-0002-2208-8168",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-2208-8168"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I97018004",
+            "display_name": "Stanford University",
+            "ror": "https://ror.org/00f54p054",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I97018004"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Susan Holmes",
+        "raw_affiliation_strings": [
+          "Statistics Department, Stanford University, Palo Alto, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-2208-8168",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Statistics Department, Stanford University, Palo Alto, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I97018004"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5072721379",
+          "display_name": "Hannes Holste",
+          "orcid": "https://orcid.org/0000-0001-7739-6590",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-7739-6590"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Hannes Holste",
+        "raw_affiliation_strings": [
+          "Department of Computer Science and Engineering, University of California San Diego, La Jolla, CA, USA",
+          "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-7739-6590",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Computer Science and Engineering, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5008844345",
+          "display_name": "Curtis Huttenhower",
+          "orcid": "https://orcid.org/0000-0002-1110-0096",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-1110-0096"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I107606265",
+            "display_name": "Broad Institute",
+            "ror": "https://ror.org/05a0ya142",
+            "country_code": "US",
+            "type": "nonprofit",
+            "lineage": [
+              "https://openalex.org/I107606265"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I136199984",
+            "display_name": "Harvard University",
+            "ror": "https://ror.org/03vek6s52",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I136199984"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Curtis Huttenhower",
+        "raw_affiliation_strings": [
+          "Broad Institute of MIT and Harvard, Cambridge, MA, USA",
+          "Department of Biostatistics, Harvard T.H. Chan School of Public Health, Boston, MA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-1110-0096",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Broad Institute of MIT and Harvard, Cambridge, MA, USA",
+            "institution_ids": [
+              "https://openalex.org/I107606265"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Biostatistics, Harvard T.H. Chan School of Public Health, Boston, MA, USA",
+            "institution_ids": [
+              "https://openalex.org/I136199984"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5091335490",
+          "display_name": "Gavin A. Huttley",
+          "orcid": "https://orcid.org/0000-0001-7224-2074",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-7224-2074"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I118347636",
+            "display_name": "Australian National University",
+            "ror": "https://ror.org/019wvm592",
+            "country_code": "AU",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I118347636"
+            ]
+          }
+        ],
+        "countries": [
+          "AU"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Gavin A. Huttley",
+        "raw_affiliation_strings": [
+          "Research School of Biology, The Australian National University, Canberra, Australian Capital Territory, Australia"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Research School of Biology, The Australian National University, Canberra, Australian Capital Territory, Australia",
+            "institution_ids": [
+              "https://openalex.org/I118347636"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": null,
+          "display_name": "Stefan Janssen",
+          "orcid": "https://orcid.org/0000-0003-0955-0589",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-0955-0589"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I44260953",
+            "display_name": "Heinrich Heine University Düsseldorf",
+            "ror": "https://ror.org/024z2rq82",
+            "country_code": "DE",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I44260953"
+            ]
+          }
+        ],
+        "countries": [
+          "DE"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Stefan Janssen",
+        "raw_affiliation_strings": [
+          "Department of Pediatric Oncology, Hematology and Clinical Immunology, Heinrich-Heine University Dusseldorf, Dusseldorf, Germany"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-0955-0589",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Pediatric Oncology, Hematology and Clinical Immunology, Heinrich-Heine University Dusseldorf, Dusseldorf, Germany",
+            "institution_ids": [
+              "https://openalex.org/I44260953"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5084397587",
+          "display_name": "Alan K. Jarmusch",
+          "orcid": "https://orcid.org/0000-0002-2228-6308",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-2228-6308"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Alan K. Jarmusch",
+        "raw_affiliation_strings": [
+          "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5066665482",
+          "display_name": "Lingjing Jiang",
+          "orcid": "https://orcid.org/0000-0001-8706-2850",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-8706-2850"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Lingjing Jiang",
+        "raw_affiliation_strings": [
+          "Department of Family Medicine and Public Health, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Family Medicine and Public Health, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5069233200",
+          "display_name": "Benjamin D. Kaehler",
+          "orcid": "https://orcid.org/0000-0002-5318-9551",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-5318-9551"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I118347636",
+            "display_name": "Australian National University",
+            "ror": "https://ror.org/019wvm592",
+            "country_code": "AU",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I118347636"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4394709116",
+            "display_name": "UNSW Canberra",
+            "ror": "https://ror.org/0125wpx05",
+            "country_code": "AU",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I31746571",
+              "https://openalex.org/I4394709116"
+            ]
+          }
+        ],
+        "countries": [
+          "AU"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Benjamin D. Kaehler",
+        "raw_affiliation_strings": [
+          "Research School of Biology, The Australian National University, Canberra, Australian Capital Territory, Australia",
+          "School of Science, University of New South Wales, Canberra, Australian Capital Territory, Australia"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Research School of Biology, The Australian National University, Canberra, Australian Capital Territory, Australia",
+            "institution_ids": [
+              "https://openalex.org/I118347636"
+            ]
+          },
+          {
+            "raw_affiliation_string": "School of Science, University of New South Wales, Canberra, Australian Capital Territory, Australia",
+            "institution_ids": [
+              "https://openalex.org/I4394709116"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5024849145",
+          "display_name": "Kyo Bin Kang",
+          "orcid": "https://orcid.org/0000-0003-3290-1017",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-3290-1017"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I31766871",
+            "display_name": "Sookmyung Women's University",
+            "ror": "https://ror.org/00vvvt117",
+            "country_code": "KR",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I31766871"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "KR",
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Kyo Bin Kang",
+        "raw_affiliation_strings": [
+          "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+          "College of Pharmacy, Sookmyung Women's University, Seoul, Republic of Korea"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-3290-1017",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "raw_affiliation_string": "College of Pharmacy, Sookmyung Women's University, Seoul, Republic of Korea",
+            "institution_ids": [
+              "https://openalex.org/I31766871"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5043637496",
+          "display_name": "Christopher R. Keefe",
+          "orcid": "https://orcid.org/0000-0002-4289-0991",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-4289-0991"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Christopher R. Keefe",
+        "raw_affiliation_strings": [
+          "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-4289-0991",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5045601734",
+          "display_name": "Paul Keim",
+          "orcid": "https://orcid.org/0000-0003-0089-5820",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-0089-5820"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Paul Keim",
+        "raw_affiliation_strings": [
+          "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5049973896",
+          "display_name": "Scott T. Kelley",
+          "orcid": "https://orcid.org/0000-0001-9547-4169",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-9547-4169"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I26538001",
+            "display_name": "San Diego State University",
+            "ror": "https://ror.org/0264fdx42",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I26538001"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Scott T. Kelley",
+        "raw_affiliation_strings": [
+          "Department of Biology, San Diego State University, San Diego, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Biology, San Diego State University, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I26538001"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5082358375",
+          "display_name": "Dan Knights",
+          "orcid": "https://orcid.org/0000-0002-8205-2511",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-8205-2511"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I130238516",
+            "display_name": "University of Minnesota",
+            "ror": "https://ror.org/017zqws13",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Dan Knights",
+        "raw_affiliation_strings": [
+          "Biotechnology Institute, University of Minnesota, Saint Paul, MN, USA",
+          "Department of Computer Science and Engineering, University of Minnesota, Minneapolis, MN, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Biotechnology Institute, University of Minnesota, Saint Paul, MN, USA",
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Computer Science and Engineering, University of Minnesota, Minneapolis, MN, USA",
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5046633037",
+          "display_name": "Irina Koester",
+          "orcid": "https://orcid.org/0000-0002-1571-882X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-1571-882X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I150209017",
+            "display_name": "Scripps Institution of Oceanography",
+            "ror": "https://ror.org/04v7hvq31",
+            "country_code": "US",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I150209017",
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Irina Koester",
+        "raw_affiliation_strings": [
+          "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+          "Scripps Institution of Oceanography, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Scripps Institution of Oceanography, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I150209017",
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5084827722",
+          "display_name": "Tomasz Kościółek",
+          "orcid": "https://orcid.org/0000-0002-9915-7387",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-9915-7387"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Tomasz Kosciolek",
+        "raw_affiliation_strings": [
+          "Department of Pediatrics, University of California San Diego, La Jolla, California, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-9915-7387",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego, La Jolla, California, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5089511913",
+          "display_name": "Jorden Kreps",
+          "orcid": "https://orcid.org/0000-0003-3758-6458",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-3758-6458"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Jorden Kreps",
+        "raw_affiliation_strings": [
+          "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-3758-6458",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5061354858",
+          "display_name": "Morgan G. I. Langille",
+          "orcid": "https://orcid.org/0000-0002-6604-3009",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-6604-3009"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I129902397",
+            "display_name": "Dalhousie University",
+            "ror": "https://ror.org/01e6qks80",
+            "country_code": "CA",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I129902397"
+            ]
+          }
+        ],
+        "countries": [
+          "CA"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Morgan G. I. Langille",
+        "raw_affiliation_strings": [
+          "Department of Pharmacology, Dalhousie University, Halifax, Nova Scotia, Canada"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Pharmacology, Dalhousie University, Halifax, Nova Scotia, Canada",
+            "institution_ids": [
+              "https://openalex.org/I129902397"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5003368129",
+          "display_name": "Joslynn S. Lee",
+          "orcid": "https://orcid.org/0000-0001-9363-6013",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-9363-6013"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1344073410",
+            "display_name": "Howard Hughes Medical Institute",
+            "ror": "https://ror.org/006w34k90",
+            "country_code": "US",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I1344073410"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Joslynn Lee",
+        "raw_affiliation_strings": [
+          "Science Education, Howard Hughes Medical Institute, Ashburn, VA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Science Education, Howard Hughes Medical Institute, Ashburn, VA, USA",
+            "institution_ids": [
+              "https://openalex.org/I1344073410"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5066589732",
+          "display_name": "Ruth E. Ley",
+          "orcid": "https://orcid.org/0000-0002-9087-1672",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-9087-1672"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I205783295",
+            "display_name": "Cornell University",
+            "ror": "https://ror.org/05bnh6r87",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I205783295"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4210112458",
+            "display_name": "Max Planck Institute for Developmental Biology",
+            "ror": "https://ror.org/022jc0g24",
+            "country_code": "DE",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I149899117",
+              "https://openalex.org/I4210112458"
+            ]
+          }
+        ],
+        "countries": [
+          "DE",
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Ruth Ley",
+        "raw_affiliation_strings": [
+          "Department of Microbiome Science, Max Planck Institute for Developmental Biology, Tübingen, Germany",
+          "Department of Molecular Biology and Genetics, Cornell University, Ithaca, NY, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Microbiome Science, Max Planck Institute for Developmental Biology, Tübingen, Germany",
+            "institution_ids": [
+              "https://openalex.org/I4210112458"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Molecular Biology and Genetics, Cornell University, Ithaca, NY, USA",
+            "institution_ids": [
+              "https://openalex.org/I205783295"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5100765918",
+          "display_name": "Yongxin Liu",
+          "orcid": "https://orcid.org/0000-0003-1832-9835",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-1832-9835",
+            "https://orcid.org/0000-0002-6506-7148"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I19820366",
+            "display_name": "Chinese Academy of Sciences",
+            "ror": "https://ror.org/034t30j35",
+            "country_code": "CN",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I19820366"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4210112230",
+            "display_name": "State Key Laboratory of Plant Genomics",
+            "ror": "https://ror.org/0205xz563",
+            "country_code": "CN",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I4210112230"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4210124606",
+            "display_name": "Institute of Genetics and Developmental Biology",
+            "ror": "https://ror.org/02aee5m12",
+            "country_code": "CN",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210124606"
+            ]
+          }
+        ],
+        "countries": [
+          "CN"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Yong-Xin Liu",
+        "raw_affiliation_strings": [
+          "Centre of Excellence for Plant and Microbial Sciences (CEPAMS), Institute of Genetics and Developmental Biology, Chinese Academy of Sciences & John Innes Centre, Beijing, China",
+          "State Key Laboratory of Plant Genomics, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-1832-9835",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Centre of Excellence for Plant and Microbial Sciences (CEPAMS), Institute of Genetics and Developmental Biology, Chinese Academy of Sciences & John Innes Centre, Beijing, China",
+            "institution_ids": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210124606"
+            ]
+          },
+          {
+            "raw_affiliation_string": "State Key Laboratory of Plant Genomics, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China",
+            "institution_ids": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210112230",
+              "https://openalex.org/I4210124606"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5047818038",
+          "display_name": "Erikka Loftfield",
+          "orcid": "https://orcid.org/0000-0002-3573-8748",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-3573-8748"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210140884",
+            "display_name": "National Cancer Institute",
+            "ror": "https://ror.org/040gcmg81",
+            "country_code": "US",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I1299022934",
+              "https://openalex.org/I1299303238",
+              "https://openalex.org/I4210140884"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Erikka Loftfield",
+        "raw_affiliation_strings": [
+          "Metabolic Epidemiology Branch, National Cancer Institute, Rockville, MD, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-3573-8748",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Metabolic Epidemiology Branch, National Cancer Institute, Rockville, MD, USA",
+            "institution_ids": [
+              "https://openalex.org/I4210140884"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5086938254",
+          "display_name": "Catherine Lozupone",
+          "orcid": "https://orcid.org/0000-0003-4786-7202",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-4786-7202"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I51713134",
+            "display_name": "University of Colorado Anschutz",
+            "ror": "https://ror.org/03wmf1y16",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I51713134"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Catherine Lozupone",
+        "raw_affiliation_strings": [
+          "Department of Medicine, Division of Biomedical Informatics and Personalized Medicine, University of Colorado Anschutz Medical Campus, Aurora, CO, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-4786-7202",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Medicine, Division of Biomedical Informatics and Personalized Medicine, University of Colorado Anschutz Medical Campus, Aurora, CO, USA",
+            "institution_ids": [
+              "https://openalex.org/I51713134"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5090166556",
+          "display_name": "Massoud Maher",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Massoud Maher",
+        "raw_affiliation_strings": [
+          "Department of Computer Science & Engineering, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Computer Science & Engineering, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5009540046",
+          "display_name": "Clarisse A. Marotz",
+          "orcid": "https://orcid.org/0000-0002-1520-8854",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-1520-8854"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Clarisse Marotz",
+        "raw_affiliation_strings": [
+          "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-1520-8854",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5022081563",
+          "display_name": "Bryan D Martin",
+          "orcid": "https://orcid.org/0000-0002-8002-5296",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-8002-5296"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I201448701",
+            "display_name": "University of Washington",
+            "ror": "https://ror.org/00cvxb145",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I201448701"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Bryan D. Martin",
+        "raw_affiliation_strings": [
+          "Department of Statistics, University of Washington, Seattle, WA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-8002-5296",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Statistics, University of Washington, Seattle, WA, USA",
+            "institution_ids": [
+              "https://openalex.org/I201448701"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5022461817",
+          "display_name": "Daniel T. McDonald",
+          "orcid": "https://orcid.org/0000-0003-0876-9060",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-0876-9060"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Daniel McDonald",
+        "raw_affiliation_strings": [
+          "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-0876-9060",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5055202207",
+          "display_name": "Lauren J. McIver",
+          "orcid": "https://orcid.org/0000-0002-2199-4310",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-2199-4310"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I107606265",
+            "display_name": "Broad Institute",
+            "ror": "https://ror.org/05a0ya142",
+            "country_code": "US",
+            "type": "nonprofit",
+            "lineage": [
+              "https://openalex.org/I107606265"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I136199984",
+            "display_name": "Harvard University",
+            "ror": "https://ror.org/03vek6s52",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I136199984"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Lauren J. McIver",
+        "raw_affiliation_strings": [
+          "Broad Institute of MIT and Harvard, Cambridge, MA, USA",
+          "Department of Biostatistics, Harvard T.H. Chan School of Public Health, Boston, MA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Broad Institute of MIT and Harvard, Cambridge, MA, USA",
+            "institution_ids": [
+              "https://openalex.org/I107606265"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Biostatistics, Harvard T.H. Chan School of Public Health, Boston, MA, USA",
+            "institution_ids": [
+              "https://openalex.org/I136199984"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5011189475",
+          "display_name": "Alexey V. Melnik",
+          "orcid": "https://orcid.org/0000-0002-4645-8880",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-4645-8880"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Alexey V. Melnik",
+        "raw_affiliation_strings": [
+          "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-4645-8880",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5081142594",
+          "display_name": "Jessica L. Metcalf",
+          "orcid": "https://orcid.org/0000-0001-8374-8046",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-8374-8046"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I92446798",
+            "display_name": "Colorado State University",
+            "ror": "https://ror.org/03k1gpj17",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I92446798"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Jessica L. Metcalf",
+        "raw_affiliation_strings": [
+          "Department of Animal Science, Colorado State University, Fort Collins, CO, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Animal Science, Colorado State University, Fort Collins, CO, USA",
+            "institution_ids": [
+              "https://openalex.org/I92446798"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5091486856",
+          "display_name": "Sydney Morgan",
+          "orcid": "https://orcid.org/0000-0002-8152-1320",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-8152-1320"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I141945490",
+            "display_name": "University of British Columbia",
+            "ror": "https://ror.org/03rmrcq20",
+            "country_code": "CA",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I141945490"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4405260628",
+            "display_name": "University of British Columbia, Okanagan Campus",
+            "ror": "https://ror.org/04241wz75",
+            "country_code": "CA",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I141945490",
+              "https://openalex.org/I4405260628"
+            ]
+          }
+        ],
+        "countries": [
+          "CA"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Sydney C. Morgan",
+        "raw_affiliation_strings": [
+          "Irving K. Barber School of Arts and Sciences, Unit 2 (Biology), University of British Columbia, Kelowna, British Columbia, Canada"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Irving K. Barber School of Arts and Sciences, Unit 2 (Biology), University of British Columbia, Kelowna, British Columbia, Canada",
+            "institution_ids": [
+              "https://openalex.org/I141945490",
+              "https://openalex.org/I4405260628"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5039009666",
+          "display_name": "Jamie T. Morton",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Jamie T. Morton",
+        "raw_affiliation_strings": [
+          "Department of Computer Science & Engineering, University of California San Diego, La Jolla, CA, USA",
+          "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Computer Science & Engineering, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5015750563",
+          "display_name": "Ahmad Turan Naimey",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Ahmad Turan Naimey",
+        "raw_affiliation_strings": [
+          "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5007031983",
+          "display_name": "Jose Antonio Navas-Molina",
+          "orcid": "https://orcid.org/0000-0003-4595-920X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-4595-920X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1291425158",
+            "display_name": "Google (United States)",
+            "ror": "https://ror.org/00njsd438",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I1291425158",
+              "https://openalex.org/I4210128969"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Jose A. Navas-Molina",
+        "raw_affiliation_strings": [
+          "Department of Computer Science & Engineering, University of California San Diego, La Jolla, CA, USA",
+          "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA",
+          "Google LLC, Mountain View, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-4595-920X",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Computer Science & Engineering, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Google LLC, Mountain View, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I1291425158"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5081815233",
+          "display_name": "Louis-Félix Nothias-Scaglia",
+          "orcid": "https://orcid.org/0000-0001-6711-6719",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-6711-6719"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Louis Felix Nothias",
+        "raw_affiliation_strings": [
+          "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5090259722",
+          "display_name": "Stephanie B. Orchanian",
+          "orcid": "https://orcid.org/0000-0002-2491-1074",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-2491-1074"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Stephanie B. Orchanian",
+        "raw_affiliation_strings": [
+          "Center for Microbiome Innovation, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-2491-1074",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Microbiome Innovation, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5019273406",
+          "display_name": "Talima Pearson",
+          "orcid": "https://orcid.org/0000-0003-3696-041X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-3696-041X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Talima Pearson",
+        "raw_affiliation_strings": [
+          "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-3696-041X",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5017863068",
+          "display_name": "Samuel L Peoples",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210138624",
+            "display_name": "University of Washington Bothell",
+            "ror": "https://ror.org/02ygzhr13",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I201448701",
+              "https://openalex.org/I4210138624"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I70983195",
+            "display_name": "Syracuse University",
+            "ror": "https://ror.org/025r5qe02",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I70983195"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Samuel L. Peoples",
+        "raw_affiliation_strings": [
+          "School of Information Studies, Syracuse University, Syracuse, NY, USA",
+          "School of STEM, University of Washington Bothell, Bothell, WA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "School of Information Studies, Syracuse University, Syracuse, NY, USA",
+            "institution_ids": [
+              "https://openalex.org/I70983195"
+            ]
+          },
+          {
+            "raw_affiliation_string": "School of STEM, University of Washington Bothell, Bothell, WA, USA",
+            "institution_ids": [
+              "https://openalex.org/I4210138624"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5012059205",
+          "display_name": "Daniel Petras",
+          "orcid": "https://orcid.org/0000-0002-6561-3022",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-6561-3022"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Daniel Petras",
+        "raw_affiliation_strings": [
+          "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-6561-3022",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5034532474",
+          "display_name": "Mary Lai Preuss",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I97098773",
+            "display_name": "Webster University",
+            "ror": "https://ror.org/01x8j4206",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I97098773"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Mary Lai Preuss",
+        "raw_affiliation_strings": [
+          "Department of Biological Sciences, Webster University, St. Louis, MO, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Biological Sciences, Webster University, St. Louis, MO, USA",
+            "institution_ids": [
+              "https://openalex.org/I97098773"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5003436229",
+          "display_name": "Elmar Pruesse",
+          "orcid": "https://orcid.org/0000-0002-1656-6020",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-1656-6020"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I51713134",
+            "display_name": "University of Colorado Anschutz",
+            "ror": "https://ror.org/03wmf1y16",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I51713134"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Elmar Pruesse",
+        "raw_affiliation_strings": [
+          "Department of Medicine, Division of Biomedical Informatics and Personalized Medicine, University of Colorado Anschutz Medical Campus, Aurora, CO, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Medicine, Division of Biomedical Informatics and Personalized Medicine, University of Colorado Anschutz Medical Campus, Aurora, CO, USA",
+            "institution_ids": [
+              "https://openalex.org/I51713134"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5009625579",
+          "display_name": "Lasse Buur Rasmussen",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I124055696",
+            "display_name": "University of Copenhagen",
+            "ror": "https://ror.org/035b05819",
+            "country_code": "DK",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I124055696"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4391767703",
+            "display_name": "Novo Nordisk Foundation Center for Basic Metabolic Research",
+            "ror": "https://ror.org/02s32fb62",
+            "country_code": "DK",
+            "type": "other",
+            "lineage": [
+              "https://openalex.org/I124055696",
+              "https://openalex.org/I4391767703"
+            ]
+          }
+        ],
+        "countries": [
+          "DK"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Lasse Buur Rasmussen",
+        "raw_affiliation_strings": [
+          "Novo Nordisk Foundation Center for Basic Metabolic Research, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Novo Nordisk Foundation Center for Basic Metabolic Research, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark",
+            "institution_ids": [
+              "https://openalex.org/I124055696",
+              "https://openalex.org/I4391767703"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5085522942",
+          "display_name": "Adam R. Rivers",
+          "orcid": "https://orcid.org/0000-0002-3703-834X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-3703-834X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1312222531",
+            "display_name": "Agricultural Research Service",
+            "ror": "https://ror.org/02d2m2044",
+            "country_code": "US",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I1312222531",
+              "https://openalex.org/I1336096307"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I1336096307",
+            "display_name": "United States Department of Agriculture",
+            "ror": "https://ror.org/01na82s61",
+            "country_code": "US",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I1336096307"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Adam Rivers",
+        "raw_affiliation_strings": [
+          "Agricultural Research Service, Genomics and Bioinformatics Research Unit, United States Department of Agriculture, Gainesville, FL, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-3703-834X",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Agricultural Research Service, Genomics and Bioinformatics Research Unit, United States Department of Agriculture, Gainesville, FL, USA",
+            "institution_ids": [
+              "https://openalex.org/I1312222531",
+              "https://openalex.org/I1336096307"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5028011279",
+          "display_name": "Michael Scott Robeson",
+          "orcid": "https://orcid.org/0000-0001-7119-6301",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-7119-6301"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I79620101",
+            "display_name": "University of Arkansas for Medical Sciences",
+            "ror": "https://ror.org/00xcryt71",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I79620101"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Michael S. Robeson",
+        "raw_affiliation_strings": [
+          "College of Medicine, Department of Biomedical Informatics, University of Arkansas for Medical Sciences, Little Rock, AR, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-7119-6301",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "College of Medicine, Department of Biomedical Informatics, University of Arkansas for Medical Sciences, Little Rock, AR, USA",
+            "institution_ids": [
+              "https://openalex.org/I79620101"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5068955749",
+          "display_name": "Patrick Rosenthal",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I97098773",
+            "display_name": "Webster University",
+            "ror": "https://ror.org/01x8j4206",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I97098773"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Patrick Rosenthal",
+        "raw_affiliation_strings": [
+          "Department of Biological Sciences, Webster University, St. Louis, MO, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Biological Sciences, Webster University, St. Louis, MO, USA",
+            "institution_ids": [
+              "https://openalex.org/I97098773"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5068576885",
+          "display_name": "Nicola Segata",
+          "orcid": "https://orcid.org/0000-0002-1583-5794",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-1583-5794"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I193223587",
+            "display_name": "University of Trento",
+            "ror": "https://ror.org/05trd4x28",
+            "country_code": "IT",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I193223587"
+            ]
+          }
+        ],
+        "countries": [
+          "IT"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Nicola Segata",
+        "raw_affiliation_strings": [
+          "Centre for Integrative Biology, University of Trento, Trento, Italy"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-1583-5794",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Centre for Integrative Biology, University of Trento, Trento, Italy",
+            "institution_ids": [
+              "https://openalex.org/I193223587"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": null,
+          "display_name": "Michael Shaffer",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I51713134",
+            "display_name": "University of Colorado Anschutz",
+            "ror": "https://ror.org/03wmf1y16",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I51713134"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Michael Shaffer",
+        "raw_affiliation_strings": [
+          "Computational Bioscience Program, University of Colorado Anschutz Medical Campus, Aurora, CO, USA",
+          "Department of Medicine, Division of Biomedical Informatics and Personalized Medicine, University of Colorado Anschutz Medical Campus, Aurora, CO, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Computational Bioscience Program, University of Colorado Anschutz Medical Campus, Aurora, CO, USA",
+            "institution_ids": [
+              "https://openalex.org/I51713134"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Medicine, Division of Biomedical Informatics and Personalized Medicine, University of Colorado Anschutz Medical Campus, Aurora, CO, USA",
+            "institution_ids": [
+              "https://openalex.org/I51713134"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5073261976",
+          "display_name": "Arron Shiffer",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Arron Shiffer",
+        "raw_affiliation_strings": [
+          "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5084125220",
+          "display_name": "Rashmi R. Sinha",
+          "orcid": "https://orcid.org/0000-0002-2466-7462",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-2466-7462"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210140884",
+            "display_name": "National Cancer Institute",
+            "ror": "https://ror.org/040gcmg81",
+            "country_code": "US",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I1299022934",
+              "https://openalex.org/I1299303238",
+              "https://openalex.org/I4210140884"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Rashmi Sinha",
+        "raw_affiliation_strings": [
+          "Metabolic Epidemiology Branch, National Cancer Institute, Rockville, MD, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Metabolic Epidemiology Branch, National Cancer Institute, Rockville, MD, USA",
+            "institution_ids": [
+              "https://openalex.org/I4210140884"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5007034049",
+          "display_name": "Se Jin Song",
+          "orcid": "https://orcid.org/0000-0003-0750-5709",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-0750-5709"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Se Jin Song",
+        "raw_affiliation_strings": [
+          "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-0750-5709",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5045792442",
+          "display_name": "John R. Spear",
+          "orcid": "https://orcid.org/0000-0002-4664-7438",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-4664-7438"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I167576493",
+            "display_name": "Colorado School of Mines",
+            "ror": "https://ror.org/04raf6v53",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I167576493"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "John R. Spear",
+        "raw_affiliation_strings": [
+          "Department of Civil and Environmental Engineering, Colorado School of Mines, Golden, CO, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Civil and Environmental Engineering, Colorado School of Mines, Golden, CO, USA",
+            "institution_ids": [
+              "https://openalex.org/I167576493"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5005856984",
+          "display_name": "Austin D.-E. Swafford",
+          "orcid": "https://orcid.org/0000-0001-5655-8300",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-5655-8300"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Austin D. Swafford",
+        "raw_affiliation_strings": [
+          "Center for Microbiome Innovation, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Microbiome Innovation, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5010836192",
+          "display_name": "Luke Thompson",
+          "orcid": "https://orcid.org/0000-0002-3911-1280",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-3911-1280"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1308126019",
+            "display_name": "National Oceanic and Atmospheric Administration",
+            "ror": "https://ror.org/02z5nhe81",
+            "country_code": "US",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I1308126019",
+              "https://openalex.org/I1343035065"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I2802094821",
+            "display_name": "NOAA Atlantic Oceanographic and Meteorological Laboratories",
+            "ror": "https://ror.org/042r9xb17",
+            "country_code": "US",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I1308126019",
+              "https://openalex.org/I1343035065",
+              "https://openalex.org/I2802094821",
+              "https://openalex.org/I2802992173"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I2802162544",
+            "display_name": "Northern Gulf Institute",
+            "ror": "https://ror.org/018qsef31",
+            "country_code": "US",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I1308126019",
+              "https://openalex.org/I1343035065",
+              "https://openalex.org/I2802162544"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I44854399",
+            "display_name": "University of Southern Mississippi",
+            "ror": "https://ror.org/0270vfa57",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I4210141039",
+              "https://openalex.org/I44854399"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Luke R. Thompson",
+        "raw_affiliation_strings": [
+          "Department of Biological Sciences and Northern Gulf Institute, University of Southern Mississippi, Hattiesburg, MS, USA",
+          "Ocean Chemistry and Ecosystems Division, Atlantic Oceanographic and Meteorological Laboratory, National Oceanic and Atmospheric Administration, La Jolla, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-3911-1280",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Biological Sciences and Northern Gulf Institute, University of Southern Mississippi, Hattiesburg, MS, USA",
+            "institution_ids": [
+              "https://openalex.org/I2802162544",
+              "https://openalex.org/I44854399"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Ocean Chemistry and Ecosystems Division, Atlantic Oceanographic and Meteorological Laboratory, National Oceanic and Atmospheric Administration, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I1308126019",
+              "https://openalex.org/I2802094821"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5058418462",
+          "display_name": "Pedro J. Torres",
+          "orcid": "https://orcid.org/0000-0002-0606-8482",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-0606-8482"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I26538001",
+            "display_name": "San Diego State University",
+            "ror": "https://ror.org/0264fdx42",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I26538001"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Pedro J. Torres",
+        "raw_affiliation_strings": [
+          "Department of Biology, San Diego State University, San Diego, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Biology, San Diego State University, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I26538001"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": null,
+          "display_name": "Pauline Trinh",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I201448701",
+            "display_name": "University of Washington",
+            "ror": "https://ror.org/00cvxb145",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I201448701"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Pauline Trinh",
+        "raw_affiliation_strings": [
+          "Department of Environmental and Occupational Health Sciences, University of Washington, Seattle, WA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Environmental and Occupational Health Sciences, University of Washington, Seattle, WA, USA",
+            "institution_ids": [
+              "https://openalex.org/I201448701"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5060283036",
+          "display_name": "Anupriya Tripathi",
+          "orcid": "https://orcid.org/0000-0001-8912-9684",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-8912-9684"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Anupriya Tripathi",
+        "raw_affiliation_strings": [
+          "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+          "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA",
+          "Division of Biological Sciences, University of California San Diego, San Diego, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Division of Biological Sciences, University of California San Diego, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5079232459",
+          "display_name": "Peter James Turnbaugh",
+          "orcid": "https://orcid.org/0000-0002-0888-2875",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-0888-2875"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I180670191",
+            "display_name": "University of California, San Francisco",
+            "ror": "https://ror.org/043mz5j54",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I180670191"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Peter J. Turnbaugh",
+        "raw_affiliation_strings": [
+          "Department of Microbiology and Immunology, University of California San Francisco, San Francisco, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-0888-2875",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Microbiology and Immunology, University of California San Francisco, San Francisco, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I180670191"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5003179870",
+          "display_name": "Sabah Ul-Hasan",
+          "orcid": "https://orcid.org/0000-0001-6334-452X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-6334-452X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I156087764",
+            "display_name": "University of California, Merced",
+            "ror": "https://ror.org/00d9ah105",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I156087764"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Sabah Ul-Hasan",
+        "raw_affiliation_strings": [
+          "Quantitative and Systems Biology Graduate Program, University of California Merced, Merced, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Quantitative and Systems Biology Graduate Program, University of California Merced, Merced, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I156087764"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5075156076",
+          "display_name": "Justin J. J. van der Hooft",
+          "orcid": "https://orcid.org/0000-0002-9340-5511",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-9340-5511"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I913481162",
+            "display_name": "Wageningen University & Research",
+            "ror": "https://ror.org/04qw24q55",
+            "country_code": "NL",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I913481162"
+            ]
+          }
+        ],
+        "countries": [
+          "NL"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Justin J. J. van der Hooft",
+        "raw_affiliation_strings": [
+          "Bioinformatics Group, Wageningen University, Wageningen, the Netherlands"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-9340-5511",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Bioinformatics Group, Wageningen University, Wageningen, the Netherlands",
+            "institution_ids": [
+              "https://openalex.org/I913481162"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5086305028",
+          "display_name": "Fernando Vargas",
+          "orcid": "https://orcid.org/0000-0001-5847-2439",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-5847-2439"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Fernando Vargas",
+        "raw_affiliation_strings": [
+          "Division of Biological Sciences, University of California San Diego, San Diego, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Division of Biological Sciences, University of California San Diego, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5024143614",
+          "display_name": "Yoshiki Vázquez‐Baeza",
+          "orcid": "https://orcid.org/0000-0001-6014-2009",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-6014-2009"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Yoshiki Vázquez-Baeza",
+        "raw_affiliation_strings": [
+          "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5080956415",
+          "display_name": "Emily Vogtmann",
+          "orcid": "https://orcid.org/0000-0003-1355-5593",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-1355-5593"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210140884",
+            "display_name": "National Cancer Institute",
+            "ror": "https://ror.org/040gcmg81",
+            "country_code": "US",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I1299022934",
+              "https://openalex.org/I1299303238",
+              "https://openalex.org/I4210140884"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Emily Vogtmann",
+        "raw_affiliation_strings": [
+          "Metabolic Epidemiology Branch, National Cancer Institute, Rockville, MD, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-1355-5593",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Metabolic Epidemiology Branch, National Cancer Institute, Rockville, MD, USA",
+            "institution_ids": [
+              "https://openalex.org/I4210140884"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5072785379",
+          "display_name": "Max von Hippel",
+          "orcid": "https://orcid.org/0000-0003-0288-5802",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-0288-5802"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I138006243",
+            "display_name": "University of Arizona",
+            "ror": "https://ror.org/03m2x1q45",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I138006243"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Max von Hippel",
+        "raw_affiliation_strings": [
+          "Department of Mathematics, University of Arizona, Tucson, AZ, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-0288-5802",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Mathematics, University of Arizona, Tucson, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I138006243"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5025148058",
+          "display_name": "William Anton Walters",
+          "orcid": "https://orcid.org/0000-0003-1716-3984",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-1716-3984"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210112458",
+            "display_name": "Max Planck Institute for Developmental Biology",
+            "ror": "https://ror.org/022jc0g24",
+            "country_code": "DE",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I149899117",
+              "https://openalex.org/I4210112458"
+            ]
+          }
+        ],
+        "countries": [
+          "DE"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "William Walters",
+        "raw_affiliation_strings": [
+          "Department of Microbiome Science, Max Planck Institute for Developmental Biology, Tübingen, Germany"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Microbiome Science, Max Planck Institute for Developmental Biology, Tübingen, Germany",
+            "institution_ids": [
+              "https://openalex.org/I4210112458"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5028612043",
+          "display_name": "Yunhu Wan",
+          "orcid": "https://orcid.org/0000-0002-6556-0602",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-6556-0602"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210140884",
+            "display_name": "National Cancer Institute",
+            "ror": "https://ror.org/040gcmg81",
+            "country_code": "US",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I1299022934",
+              "https://openalex.org/I1299303238",
+              "https://openalex.org/I4210140884"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Yunhu Wan",
+        "raw_affiliation_strings": [
+          "Metabolic Epidemiology Branch, National Cancer Institute, Rockville, MD, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Metabolic Epidemiology Branch, National Cancer Institute, Rockville, MD, USA",
+            "institution_ids": [
+              "https://openalex.org/I4210140884"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5058074901",
+          "display_name": "Mingxun Wang",
+          "orcid": "https://orcid.org/0000-0001-7647-6097",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-7647-6097"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Mingxun Wang",
+        "raw_affiliation_strings": [
+          "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego, San Diego, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5102792713",
+          "display_name": "Jonathan Warren",
+          "orcid": "https://orcid.org/0000-0003-3381-3852",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-3381-3852"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I184903800",
+            "display_name": "Environment Agency",
+            "ror": "https://ror.org/01zewfb16",
+            "country_code": "GB",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I1326803253",
+              "https://openalex.org/I184903800",
+              "https://openalex.org/I2802373619"
+            ]
+          }
+        ],
+        "countries": [
+          "GB"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Jonathan Warren",
+        "raw_affiliation_strings": [
+          "National Laboratory Service, Environment Agency, Starcross, UK"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-3381-3852",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "National Laboratory Service, Environment Agency, Starcross, UK",
+            "institution_ids": [
+              "https://openalex.org/I184903800"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5011309429",
+          "display_name": "Kyle C. Weber",
+          "orcid": "https://orcid.org/0000-0002-3379-6303",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-3379-6303"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1312222531",
+            "display_name": "Agricultural Research Service",
+            "ror": "https://ror.org/02d2m2044",
+            "country_code": "US",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I1312222531",
+              "https://openalex.org/I1336096307"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I1336096307",
+            "display_name": "United States Department of Agriculture",
+            "ror": "https://ror.org/01na82s61",
+            "country_code": "US",
+            "type": "government",
+            "lineage": [
+              "https://openalex.org/I1336096307"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I33213144",
+            "display_name": "University of Florida",
+            "ror": "https://ror.org/02y3ad647",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I33213144"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Kyle C. Weber",
+        "raw_affiliation_strings": [
+          "Agricultural Research Service, Genomics and Bioinformatics Research Unit, United States Department of Agriculture, Gainesville, FL, USA",
+          "College of Agriculture and Life Sciences, University of Florida, Gainesville, FL, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Agricultural Research Service, Genomics and Bioinformatics Research Unit, United States Department of Agriculture, Gainesville, FL, USA",
+            "institution_ids": [
+              "https://openalex.org/I1312222531",
+              "https://openalex.org/I1336096307"
+            ]
+          },
+          {
+            "raw_affiliation_string": "College of Agriculture and Life Sciences, University of Florida, Gainesville, FL, USA",
+            "institution_ids": [
+              "https://openalex.org/I33213144"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5111447081",
+          "display_name": "Charles H. D. Williamson",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Charles H. D. Williamson",
+        "raw_affiliation_strings": [
+          "Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5005338517",
+          "display_name": "Amy D. Willis",
+          "orcid": "https://orcid.org/0000-0002-2802-4317",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-2802-4317"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I201448701",
+            "display_name": "University of Washington",
+            "ror": "https://ror.org/00cvxb145",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I201448701"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Amy D. Willis",
+        "raw_affiliation_strings": [
+          "Department of Biostatistics, University of Washington, Seattle, WA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-2802-4317",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Biostatistics, University of Washington, Seattle, WA, USA",
+            "institution_ids": [
+              "https://openalex.org/I201448701"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5076136013",
+          "display_name": "Zhenjiang Zech Xu",
+          "orcid": "https://orcid.org/0000-0003-1080-024X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-1080-024X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Zhenjiang Zech Xu",
+        "raw_affiliation_strings": [
+          "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5037261939",
+          "display_name": "Jesse Zaneveld",
+          "orcid": "https://orcid.org/0000-0002-9823-810X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-9823-810X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210138624",
+            "display_name": "University of Washington Bothell",
+            "ror": "https://ror.org/02ygzhr13",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I201448701",
+              "https://openalex.org/I4210138624"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Jesse R. Zaneveld",
+        "raw_affiliation_strings": [
+          "School of STEM, Division of Biological Sciences, University of Washington Bothell, Bothell, WA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "School of STEM, Division of Biological Sciences, University of Washington Bothell, Bothell, WA, USA",
+            "institution_ids": [
+              "https://openalex.org/I4210138624"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5100618238",
+          "display_name": "Yilong Zhang",
+          "orcid": "https://orcid.org/0000-0002-0668-4429",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-0668-4429"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1285764155",
+            "display_name": "Merck & Co., Inc., Rahway, NJ, USA (United States)",
+            "ror": "https://ror.org/02891sr49",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I1285764155"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Yilong Zhang",
+        "raw_affiliation_strings": [
+          "Merck & Co. Inc., Kenilworth, NJ, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Merck & Co. Inc., Kenilworth, NJ, USA",
+            "institution_ids": [
+              "https://openalex.org/I1285764155"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5064767131",
+          "display_name": "Qiyun Zhu",
+          "orcid": "https://orcid.org/0000-0002-3568-6271",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-3568-6271"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Qiyun Zhu",
+        "raw_affiliation_strings": [
+          "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-3568-6271",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5033881627",
+          "display_name": "Rob D. Knight",
+          "orcid": "https://orcid.org/0000-0002-0975-9019",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-0975-9019",
+            "https://orcid.org/0000-0001-7531-0087"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Rob Knight",
+        "raw_affiliation_strings": [
+          "Center for Microbiome Innovation, University of California San Diego, La Jolla, CA, USA",
+          "Department of Computer Science and Engineering, University of California San Diego, La Jolla, CA, USA",
+          "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-0975-9019",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Microbiome Innovation, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Computer Science and Engineering, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Pediatrics, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "last",
+        "author": {
+          "id": "https://openalex.org/A5038626201",
+          "display_name": "J. Gregory Caporaso",
+          "orcid": "https://orcid.org/0000-0002-8865-1670",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-8865-1670"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": true,
+        "raw_author_name": "J. Gregory Caporaso",
+        "raw_affiliation_strings": [
+          "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA. greg.caporaso@nau.edu",
+          "Department of Biological Sciences, Northern Arizona University, Flagstaff, AZ, USA. greg.caporaso@nau.edu",
+          "Department of Biological Sciences, Northern Arizona University, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-8865-1670",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Center for Applied Microbiome Science, Pathogen and Microbiome Institute, Northern Arizona University, Flagstaff, AZ, USA. greg.caporaso@nau.edu",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Biological Sciences, Northern Arizona University, Flagstaff, AZ, USA. greg.caporaso@nau.edu",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Biological Sciences, Northern Arizona University, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      }
+    ],
+    "biblio": {
+      "volume": "37",
+      "issue": "8",
+      "first_page": "852",
+      "last_page": "857"
+    },
+    "primary_location": {
+      "id": "doi:10.1038/s41587-019-0209-9",
+      "doi": "https://doi.org/10.1038/s41587-019-0209-9",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1038/s41587-019-0209-9",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S106963461",
+        "display_name": "Nature Biotechnology",
+        "issn_l": "0733-222X",
+        "issn": [
+          "0733-222X",
+          "1087-0156",
+          "1546-1696",
+          "2331-3684"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "listed_in": [
+          "anvur-scientific",
+          "cwts-core",
+          "dongbi-a",
+          "doyens",
+          "jufo-3",
+          "ki-jl-3",
+          "medline",
+          "norway-2",
+          "poland-200",
+          "russia-white-list-1",
+          "vabb-shw"
+        ],
+        "host_organization": "https://openalex.org/P4310319908",
+        "host_organization_name": "Nature Portfolio",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319908",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Nature Portfolio",
+          "Springer Nature"
+        ],
+        "type": "journal"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Nature Biotechnology",
+      "raw_type": "journal-article"
+    },
+    "open_access": {
+      "is_oa": true,
+      "oa_status": "green",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7015180",
+      "any_repository_has_fulltext": true
+    }
+  }
+}

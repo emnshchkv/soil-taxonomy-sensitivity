@@ -1,0 +1,68 @@
+{
+  "tool": "research-mcp__openalex_search",
+  "arguments": {
+    "limit": 2,
+    "query": "RESCRIPt reproducible sequence taxonomy reference database management"
+  },
+  "message_index": 98,
+  "result_message_index": 99,
+  "historical_execution_date": "2026-11-17",
+  "restored_by": "AI4Science-агент",
+  "restoration_date": "2026-11-17",
+  "historical_execution": true,
+  "source_log_basename": "llm_request.0.jsonl",
+  "source_log_sha256": "855ba92e2ed241087cfa0c631deae866b51733d21182463f12a61c7173b5f96f",
+  "result": {
+    "provenance": {
+      "source": "OpenAlex",
+      "request": "https://api.openalex.org/works?search=RESCRIPt+reproducible+sequence+taxonomy+reference+database+management&per_page=2&sort=relevance_score%3Adesc&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Cauthorships%2Cprimary_location%2Ctype%2Ccited_by_count%2Copen_access",
+      "retrieved": "2026-11-17",
+      "untrusted_text_fields": [
+        "title",
+        "abstract",
+        "description"
+      ]
+    },
+    "found": 819,
+    "results": [
+      {
+        "openalex_id": "W3213732104",
+        "title": "RESCRIPt: Reproducible sequence taxonomy reference database management",
+        "year": 2021,
+        "authors": [
+          "Michael Scott Robeson",
+          "Devon R. O’Rourke",
+          "Benjamin D. Kaehler",
+          "Michał Ziemski",
+          "Matthew R. Dillon",
+          "и др."
+        ],
+        "source": "PLoS Computational Biology",
+        "type": "article",
+        "cited_by": 1109,
+        "doi": "10.1371/journal.pcbi.1009581",
+        "oa_status": "gold",
+        "oa_url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1009581&type=printable"
+      },
+      {
+        "openalex_id": "W3089811728",
+        "title": "RESCRIPt: Reproducible sequence taxonomy reference database management for the masses",
+        "year": 2020,
+        "authors": [
+          "Michael Scott Robeson",
+          "Devon R. O’Rourke",
+          "Benjamin D. Kaehler",
+          "Michał Ziemski",
+          "Matthew R. Dillon",
+          "и др."
+        ],
+        "source": "bioRxiv (Cold Spring Harbor Laboratory)",
+        "type": "preprint",
+        "cited_by": 175,
+        "doi": "10.1101/2020.10.05.326504",
+        "oa_status": "green",
+        "oa_url": "https://www.biorxiv.org/content/biorxiv/early/2020/10/05/2020.10.05.326504.full.pdf"
+      }
+    ]
+  }
+}

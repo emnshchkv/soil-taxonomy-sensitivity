@@ -1,0 +1,234 @@
+{
+  "source_commit": "37254a5a90a3efe5b4c6ca22e38c2e2066767178",
+  "source_ref": "backup/article-before-pause-20261118",
+  "source_base": "manuscript/ai4science_ysda2026/",
+  "transferred_date": "2026-11-18",
+  "network_requests_performed": false,
+  "human_confirmation": {
+    "date": "2026-11-17",
+    "quote": "Подтверждаю все семь DOI",
+    "reconfirmation_required": false
+  },
+  "files": [
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/README.md",
+      "destination": "lit/evidence/20261117/README.md",
+      "sha256": "6c9665d2d454c929986cab1e8c0932b92d8c4a54643ebd79247f7bcd89cc4433",
+      "bytes": 2498
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/balvociute2017_primary.html",
+      "destination": "lit/evidence/20261117/balvociute2017_primary.html",
+      "sha256": "2260f13bd02f696ab87ddbf9bf038db7ebd053eca86a4958d16891cddc3bc097",
+      "bytes": 375207
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/balvociute2017_primary_access.json",
+      "destination": "lit/evidence/20261117/balvociute2017_primary_access.json",
+      "sha256": "577b1dbdcf41a6582a34dcd036a1c709ed3210bbc9beb2e2a6ac4c5f99f10116",
+      "bytes": 536
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/bibliography_check_20261117.log",
+      "destination": "lit/evidence/20261117/bibliography_check_20261117.log",
+      "sha256": "9025cc8f824345bc05f50fc1f78ee038f2177edef0d73abc89a92b38b3ee08f1",
+      "bytes": 110
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/bolyen2019_bioc_access.json",
+      "destination": "lit/evidence/20261117/bolyen2019_bioc_access.json",
+      "sha256": "148333dc6bd03c6a7c3ef3718b1973bd51d73070cefbfa79afdd06488eacbbd4",
+      "bytes": 335
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/bolyen2019_primary_access.json",
+      "destination": "lit/evidence/20261117/bolyen2019_primary_access.json",
+      "sha256": "a34648787778709fe8aae7f94d76a947ad8ef0d12cb598d25b8f025efc3946cd",
+      "bytes": 343
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/bolyen2019_primary_bioc.xml",
+      "destination": "lit/evidence/20261117/bolyen2019_primary_bioc.xml",
+      "sha256": "fb2ac975444d96dba9789f58685fc227a908c734889b979bcfb41c3f5a54e081",
+      "bytes": 35773
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/callahan2016_bioc_access.json",
+      "destination": "lit/evidence/20261117/callahan2016_bioc_access.json",
+      "sha256": "372df3e6ba52e017871edea229d92a737325a41f43894e826783aa6a30bee275",
+      "bytes": 335
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/callahan2016_primary_access.json",
+      "destination": "lit/evidence/20261117/callahan2016_primary_access.json",
+      "sha256": "b44917b8d093bde0fdc1557a1b5dbc3bfc67a224e013da10c47f1d31f491ca42",
+      "bytes": 343
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/callahan2016_primary_bioc.xml",
+      "destination": "lit/evidence/20261117/callahan2016_primary_bioc.xml",
+      "sha256": "ff1bb38db0528814ae66062e67ab41bbc204e2b0977a984bc720b979c86307dc",
+      "bytes": 104129
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/openalex_W2401404581_work.json",
+      "destination": "lit/evidence/20261117/openalex_W2401404581_work.json",
+      "sha256": "1b60b3e479d9e86d754616782f3b4b934921c217a8ebf4f1fd59c871ea2c2260",
+      "bytes": 9583
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/openalex_W2603346833_work.json",
+      "destination": "lit/evidence/20261117/openalex_W2603346833_work.json",
+      "sha256": "e473b8f4f50fddc4d9be4e5f1c85203e99bf38e0349419af798afbabf64b06ed",
+      "bytes": 5412
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/openalex_W2807194798_work.json",
+      "destination": "lit/evidence/20261117/openalex_W2807194798_work.json",
+      "sha256": "5e920f93233f61b825219b901bb15307626072e508c35cafc9bfe432a8a9b228",
+      "bytes": 15758
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/openalex_W2963276645_work.json",
+      "destination": "lit/evidence/20261117/openalex_W2963276645_work.json",
+      "sha256": "eccae1255e061f9a7a8fba62ca8a173544b0966e5f592e5623c7c49e59b49271",
+      "bytes": 177739
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/openalex_W3200103613_work.json",
+      "destination": "lit/evidence/20261117/openalex_W3200103613_work.json",
+      "sha256": "25db827e3262db3e736a14c20f450308e9d7fb321457102c47fe0ca451f4a31f",
+      "bytes": 11045
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/openalex_W3213732104_work.json",
+      "destination": "lit/evidence/20261117/openalex_W3213732104_work.json",
+      "sha256": "784c4fb4e33ee67e7d83befad815b12c9187221ee020e0b34ac43da17cad4b58",
+      "bytes": 13287
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/openalex_W4385302437_work.json",
+      "destination": "lit/evidence/20261117/openalex_W4385302437_work.json",
+      "sha256": "243c33ca8dab36c7f657a8c8878cd2475b0eb2561e40b0532f4013b53f167540",
+      "bytes": 41806
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/openalex_search_01_restored.json",
+      "destination": "lit/evidence/20261117/openalex_search_01_restored.json",
+      "sha256": "4cc5240afc2cf100edc16fa30824e274f4e2980f30779041abcac93765ec3ee7",
+      "bytes": 2746
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/openalex_search_02_restored.json",
+      "destination": "lit/evidence/20261117/openalex_search_02_restored.json",
+      "sha256": "1f73fa31947029ac8f99253ba8fc5ee3a45fa953380e7b3df1d8a65c6f7413fe",
+      "bytes": 2237
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/openalex_search_03_restored.json",
+      "destination": "lit/evidence/20261117/openalex_search_03_restored.json",
+      "sha256": "c7a71cb1673dac4546439df8abbc0d3bf05e18629795154a83fd135b417a5b77",
+      "bytes": 2615
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/openalex_search_04_restored.json",
+      "destination": "lit/evidence/20261117/openalex_search_04_restored.json",
+      "sha256": "b6b7dbab2c624a08fdda44db21f8e26cecd42ea62bf34a30b4b004cd22dfe6cd",
+      "bytes": 2418
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/openalex_search_05_restored.json",
+      "destination": "lit/evidence/20261117/openalex_search_05_restored.json",
+      "sha256": "e648e4a469777614cf6f5a16403242b73556523b96c90e685d04d12dea2f59a6",
+      "bytes": 2164
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/openalex_search_06_restored.json",
+      "destination": "lit/evidence/20261117/openalex_search_06_restored.json",
+      "sha256": "cdbbfd7cb2426a9c8b23d05528cff93341acf4fb28fc22a0a3fe7b0cbbfc8310",
+      "bytes": 2383
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/openalex_search_07_restored.json",
+      "destination": "lit/evidence/20261117/openalex_search_07_restored.json",
+      "sha256": "73c649ac7747df0a13aa47b09244811cd5df64538aa5c4c1fe9c55e360828804",
+      "bytes": 2720
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/literature_provenance/verified_sources.json",
+      "destination": "lit/evidence/20261117/verified_sources.json",
+      "sha256": "cd746671ad4da0409ce9d17f0cffda6e20859bd934d4f86ee34683e5d1655d9c",
+      "bytes": 12796
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/bibliography_sources.tsv",
+      "destination": "lit/evidence/20261117/bibliography_sources.tsv",
+      "sha256": "074e870868ce1eadcb2dbb9c3b8dd58786dcf20b479007dfd78bec1349e00db7",
+      "bytes": 8788
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/bibliography_review.md",
+      "destination": "lit/evidence/20261117/bibliography_review.md",
+      "sha256": "9735ab6eb7d91f21c2215e92edd3380637f20351f892769eb7515fc640dce8ac",
+      "bytes": 9371
+    },
+    {
+      "source": "manuscript/ai4science_ysda2026/paper.bib",
+      "destination": "lit/references.bib",
+      "sha256": "e19b66e0e5bc91be749a8152ea3a4163e3d0beb80d1219c995a4427b0fa6046d",
+      "bytes": 3146
+    }
+  ],
+  "primary_files": [
+    {
+      "key": "bokulich2018",
+      "original_path": "paper/bokulich18.pdf",
+      "current_path": "paper/bokulich18.pdf",
+      "sha256": "bff323dc0ebcc355a6115231750ab856ff0490081b78719a1f2457f06afcd470"
+    },
+    {
+      "key": "mcdonald2024",
+      "original_path": "paper/mcdonald23.pdf",
+      "current_path": "paper/mcdonald23.pdf",
+      "sha256": "7fa0c22cc46cb897acb37b5d51e1adedff45b40e38d796bf21513c6f621972e5"
+    },
+    {
+      "key": "parks2022",
+      "original_path": "paper/parks21.pdf",
+      "current_path": "paper/parks21.pdf",
+      "sha256": "d28df175af359e73f9ea96eca521fa43cee3ebd7709fa8d684d2daace449ce0c"
+    },
+    {
+      "key": "robeson2021",
+      "original_path": "paper/robeson21.pdf",
+      "current_path": "paper/robeson21.pdf",
+      "sha256": "8e91cf39785b71d38e238f3b287064faa8050ea4dfc20c1e862ede6452a2248a"
+    },
+    {
+      "key": "callahan2016",
+      "original_path": "manuscript/ai4science_ysda2026/literature_provenance/callahan2016_primary_bioc.xml",
+      "current_path": "lit/evidence/20261117/callahan2016_primary_bioc.xml",
+      "sha256": "ff1bb38db0528814ae66062e67ab41bbc204e2b0977a984bc720b979c86307dc"
+    },
+    {
+      "key": "bolyen2019",
+      "original_path": "manuscript/ai4science_ysda2026/literature_provenance/bolyen2019_primary_bioc.xml",
+      "current_path": "lit/evidence/20261117/bolyen2019_primary_bioc.xml",
+      "sha256": "fb2ac975444d96dba9789f58685fc227a908c734889b979bcfb41c3f5a54e081"
+    },
+    {
+      "key": "balvociute2017",
+      "original_path": "manuscript/ai4science_ysda2026/literature_provenance/balvociute2017_primary.html",
+      "current_path": "lit/evidence/20261117/balvociute2017_primary.html",
+      "sha256": "2260f13bd02f696ab87ddbf9bf038db7ebd053eca86a4958d16891cddc3bc097"
+    }
+  ],
+  "course_materials": [
+    {
+      "source": "/Users/elizavetamenshchikova/YSDA/AI/week_5/artefacts/my_search_report.md",
+      "destination": "lit/evidence/week5_library_search_20261018.md",
+      "sha256": "4d2990d3191ea60a9f982a5eb103015337bdbdc5e55266864832054ee9799ae7",
+      "role": "historical library search; not metadata evidence for the selected seven sources"
+    }
+  ]
+}

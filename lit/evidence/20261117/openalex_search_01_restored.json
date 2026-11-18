@@ -1,0 +1,77 @@
+{
+  "tool": "research-mcp__openalex_search",
+  "arguments": {
+    "query": "Optimizing taxonomic classification of marker-gene amplicon sequences with QIIME 2's q2-feature-classifier plugin",
+    "limit": 3
+  },
+  "message_index": 92,
+  "result_message_index": 93,
+  "historical_execution_date": "2026-11-17",
+  "restored_by": "AI4Science-агент",
+  "restoration_date": "2026-11-17",
+  "historical_execution": true,
+  "source_log_basename": "llm_request.0.jsonl",
+  "source_log_sha256": "855ba92e2ed241087cfa0c631deae866b51733d21182463f12a61c7173b5f96f",
+  "result": {
+    "provenance": {
+      "source": "OpenAlex",
+      "request": "https://api.openalex.org/works?search=Optimizing+taxonomic+classification+of+marker-gene+amplicon+sequences+with+QIIME+2%27s+q2-feature-classifier+plugin&per_page=3&sort=relevance_score%3Adesc&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Cauthorships%2Cprimary_location%2Ctype%2Ccited_by_count%2Copen_access",
+      "retrieved": "2026-11-17",
+      "untrusted_text_fields": [
+        "title",
+        "abstract",
+        "description"
+      ]
+    },
+    "found": 3817,
+    "results": [
+      {
+        "openalex_id": "W2807194798",
+        "title": "Optimizing taxonomic classification of marker-gene amplicon sequences with QIIME 2’s q2-feature-classifier plugin",
+        "year": 2018,
+        "authors": [
+          "Nicholas A. Bokulich",
+          "Benjamin D. Kaehler",
+          "Jai Ram Rideout",
+          "Matthew R. Dillon",
+          "Evan K Bolyen",
+          "и др."
+        ],
+        "source": "Microbiome",
+        "type": "article",
+        "cited_by": 6535,
+        "doi": "10.1186/s40168-018-0470-z",
+        "oa_status": "gold",
+        "oa_url": "https://microbiomejournal.biomedcentral.com/track/pdf/10.1186/s40168-018-0470-z"
+      },
+      {
+        "openalex_id": "W4393884863",
+        "title": "Silva 138.1 taxonomy classifiers for use with QIIME 2 q2-feature-classifier",
+        "year": 2022,
+        "authors": [
+          "Benjamin D. Kaehler"
+        ],
+        "source": "Zenodo (CERN European Organization for Nuclear Research)",
+        "type": "dataset",
+        "cited_by": 5,
+        "doi": "10.5281/zenodo.6395538",
+        "oa_status": "green",
+        "oa_url": "https://zenodo.org/record/6395539"
+      },
+      {
+        "openalex_id": "W4393599395",
+        "title": "Qiime2 classifiers",
+        "year": 2021,
+        "authors": [
+          "Attayeb S. Mohsen"
+        ],
+        "source": "Zenodo (CERN European Organization for Nuclear Research)",
+        "type": "dataset",
+        "cited_by": 2,
+        "doi": "10.5281/zenodo.5535615",
+        "oa_status": "green",
+        "oa_url": "https://doi.org/10.5281/zenodo.5535615"
+      }
+    ]
+  }
+}

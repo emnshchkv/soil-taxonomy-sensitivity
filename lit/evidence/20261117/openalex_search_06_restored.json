@@ -1,0 +1,68 @@
+{
+  "tool": "research-mcp__openalex_search",
+  "arguments": {
+    "limit": 2,
+    "query": "Reproducible, interactive, scalable and extensible microbiome data science using QIIME 2"
+  },
+  "message_index": 102,
+  "result_message_index": 103,
+  "historical_execution_date": "2026-11-17",
+  "restored_by": "AI4Science-агент",
+  "restoration_date": "2026-11-17",
+  "historical_execution": true,
+  "source_log_basename": "llm_request.0.jsonl",
+  "source_log_sha256": "855ba92e2ed241087cfa0c631deae866b51733d21182463f12a61c7173b5f96f",
+  "result": {
+    "provenance": {
+      "source": "OpenAlex",
+      "request": "https://api.openalex.org/works?search=Reproducible%2C+interactive%2C+scalable+and+extensible+microbiome+data+science+using+QIIME+2&per_page=2&sort=relevance_score%3Adesc&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Cauthorships%2Cprimary_location%2Ctype%2Ccited_by_count%2Copen_access",
+      "retrieved": "2026-11-17",
+      "untrusted_text_fields": [
+        "title",
+        "abstract",
+        "description"
+      ]
+    },
+    "found": 16610,
+    "results": [
+      {
+        "openalex_id": "W2963276645",
+        "title": "Reproducible, interactive, scalable and extensible microbiome data science using QIIME 2",
+        "year": 2019,
+        "authors": [
+          "Evan K Bolyen",
+          "Jai Ram Rideout",
+          "Matthew R. Dillon",
+          "Nicholas A. Bokulich",
+          "Christian C. Abnet",
+          "и др."
+        ],
+        "source": "Nature Biotechnology",
+        "type": "article",
+        "cited_by": 26243,
+        "doi": "10.1038/s41587-019-0209-9",
+        "oa_status": "green",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7015180"
+      },
+      {
+        "openalex_id": "W2967163687",
+        "title": "Author Correction: Reproducible, interactive, scalable and extensible microbiome data science using QIIME 2",
+        "year": 2019,
+        "authors": [
+          "Evan K Bolyen",
+          "Jai Ram Rideout",
+          "Matthew R. Dillon",
+          "Nicholas A. Bokulich",
+          "Christian C. Abnet",
+          "и др."
+        ],
+        "source": "Nature Biotechnology",
+        "type": "erratum",
+        "cited_by": 970,
+        "doi": "10.1038/s41587-019-0252-6",
+        "oa_status": "bronze",
+        "oa_url": "https://www.nature.com/articles/s41587-019-0252-6.pdf"
+      }
+    ]
+  }
+}

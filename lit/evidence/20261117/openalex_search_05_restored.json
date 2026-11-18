@@ -1,0 +1,63 @@
+{
+  "tool": "research-mcp__openalex_search",
+  "arguments": {
+    "limit": 2,
+    "query": "DADA2 high-resolution sample inference from Illumina amplicon data"
+  },
+  "message_index": 100,
+  "result_message_index": 101,
+  "historical_execution_date": "2026-11-17",
+  "restored_by": "AI4Science-агент",
+  "restoration_date": "2026-11-17",
+  "historical_execution": true,
+  "source_log_basename": "llm_request.0.jsonl",
+  "source_log_sha256": "855ba92e2ed241087cfa0c631deae866b51733d21182463f12a61c7173b5f96f",
+  "result": {
+    "provenance": {
+      "source": "OpenAlex",
+      "request": "https://api.openalex.org/works?search=DADA2+high-resolution+sample+inference+from+Illumina+amplicon+data&per_page=2&sort=relevance_score%3Adesc&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Cauthorships%2Cprimary_location%2Ctype%2Ccited_by_count%2Copen_access",
+      "retrieved": "2026-11-17",
+      "untrusted_text_fields": [
+        "title",
+        "abstract",
+        "description"
+      ]
+    },
+    "found": 23808,
+    "results": [
+      {
+        "openalex_id": "W2401404581",
+        "title": "DADA2: High-resolution sample inference from Illumina amplicon data",
+        "year": 2016,
+        "authors": [
+          "Benjamin J. Callahan",
+          "Paul J. McMurdie",
+          "Michael Rosen",
+          "Andrew Han",
+          "Amy Jo Johnson",
+          "и др."
+        ],
+        "source": "Nature Methods",
+        "type": "article",
+        "cited_by": 39037,
+        "doi": "10.1038/nmeth.3869",
+        "oa_status": "green",
+        "oa_url": "https://www.biorxiv.org/content/biorxiv/early/2015/08/06/024034.full.pdf"
+      },
+      {
+        "openalex_id": "W2538509698",
+        "title": "UNOISE2: improved error-correction for Illumina 16S and ITS amplicon sequencing",
+        "year": 2016,
+        "authors": [
+          "R. C. Edgar"
+        ],
+        "source": "bioRxiv (Cold Spring Harbor Laboratory)",
+        "type": "preprint",
+        "cited_by": 2124,
+        "doi": "10.1101/081257",
+        "oa_status": "green",
+        "oa_url": "https://www.biorxiv.org/content/biorxiv/early/2016/10/15/081257.full.pdf"
+      }
+    ]
+  }
+}

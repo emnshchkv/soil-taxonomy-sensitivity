@@ -1,0 +1,433 @@
+{
+  "source": "OpenAlex",
+  "request": "https://api.openalex.org/works/W2807194798?select=id,doi,display_name,publication_year,authorships,biblio,primary_location,open_access",
+  "retrieved": "2026-11-17",
+  "method": "Python urllib HTTPS GET, not research-mcp",
+  "historical_execution": false,
+  "response": {
+    "id": "https://openalex.org/W2807194798",
+    "doi": "https://doi.org/10.1186/s40168-018-0470-z",
+    "display_name": "Optimizing taxonomic classification of marker-gene amplicon sequences with QIIME 2’s q2-feature-classifier plugin",
+    "publication_year": 2018,
+    "authorships": [
+      {
+        "author_position": "first",
+        "author": {
+          "id": "https://openalex.org/A5000165682",
+          "display_name": "Nicholas A. Bokulich",
+          "orcid": "https://orcid.org/0000-0002-1784-8935",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-1784-8935"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": true,
+        "raw_author_name": "Nicholas A. Bokulich",
+        "raw_affiliation_strings": [
+          "The Pathogen and Microbiome Institute, Northern Arizona University, PO Box 4073, Flagstaff, AZ, 86011-4073, USA. nicholas.bokulich@nau.edu",
+          "The Pathogen and Microbiome Institute, Northern Arizona University, PO Box 4073, Flagstaff, AZ, 86011-4073, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "The Pathogen and Microbiome Institute, Northern Arizona University, PO Box 4073, Flagstaff, AZ, 86011-4073, USA. nicholas.bokulich@nau.edu",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          },
+          {
+            "raw_affiliation_string": "The Pathogen and Microbiome Institute, Northern Arizona University, PO Box 4073, Flagstaff, AZ, 86011-4073, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5069233200",
+          "display_name": "Benjamin D. Kaehler",
+          "orcid": "https://orcid.org/0000-0002-5318-9551",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-5318-9551"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I118347636",
+            "display_name": "Australian National University",
+            "ror": "https://ror.org/019wvm592",
+            "country_code": "AU",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I118347636"
+            ]
+          }
+        ],
+        "countries": [
+          "AU"
+        ],
+        "is_corresponding": true,
+        "raw_author_name": "Benjamin D. Kaehler",
+        "raw_affiliation_strings": [
+          "Research School of Biology, Australian National University, 46 Sullivans Creek Road, Acton ACT, 2601, Australia. benjamin.kaehler@anu.edu.au",
+          "Research School of Biology, Australian National University, 46 Sullivans Creek Road, Acton ACT, 2601, Australia"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Research School of Biology, Australian National University, 46 Sullivans Creek Road, Acton ACT, 2601, Australia. benjamin.kaehler@anu.edu.au",
+            "institution_ids": [
+              "https://openalex.org/I118347636"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Research School of Biology, Australian National University, 46 Sullivans Creek Road, Acton ACT, 2601, Australia",
+            "institution_ids": [
+              "https://openalex.org/I118347636"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5045260328",
+          "display_name": "Jai Ram Rideout",
+          "orcid": "https://orcid.org/0000-0003-2587-1454",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-2587-1454"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Jai Ram Rideout",
+        "raw_affiliation_strings": [
+          "The Pathogen and Microbiome Institute, Northern Arizona University, PO Box 4073, Flagstaff, AZ, 86011-4073, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "The Pathogen and Microbiome Institute, Northern Arizona University, PO Box 4073, Flagstaff, AZ, 86011-4073, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5044141437",
+          "display_name": "Matthew R. Dillon",
+          "orcid": "https://orcid.org/0000-0002-7713-1952",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-7713-1952"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Matthew Dillon",
+        "raw_affiliation_strings": [
+          "The Pathogen and Microbiome Institute, Northern Arizona University, PO Box 4073, Flagstaff, AZ, 86011-4073, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "The Pathogen and Microbiome Institute, Northern Arizona University, PO Box 4073, Flagstaff, AZ, 86011-4073, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5014309302",
+          "display_name": "Evan K Bolyen",
+          "orcid": "https://orcid.org/0000-0002-5362-6782",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-5362-6782"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Evan Bolyen",
+        "raw_affiliation_strings": [
+          "The Pathogen and Microbiome Institute, Northern Arizona University, PO Box 4073, Flagstaff, AZ, 86011-4073, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "The Pathogen and Microbiome Institute, Northern Arizona University, PO Box 4073, Flagstaff, AZ, 86011-4073, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5033881627",
+          "display_name": "Rob D. Knight",
+          "orcid": "https://orcid.org/0000-0002-0975-9019",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-0975-9019",
+            "https://orcid.org/0000-0001-7531-0087"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I36258959",
+            "display_name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Rob Knight",
+        "raw_affiliation_strings": [
+          "Departments of Pediatrics and Computer Science and Engineering, and Center for Microbiome Innovation, University of California San Diego, La Jolla, CA, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Departments of Pediatrics and Computer Science and Engineering, and Center for Microbiome Innovation, University of California San Diego, La Jolla, CA, USA",
+            "institution_ids": [
+              "https://openalex.org/I36258959"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5091335490",
+          "display_name": "Gavin A. Huttley",
+          "orcid": "https://orcid.org/0000-0001-7224-2074",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-7224-2074"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I118347636",
+            "display_name": "Australian National University",
+            "ror": "https://ror.org/019wvm592",
+            "country_code": "AU",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I118347636"
+            ]
+          }
+        ],
+        "countries": [
+          "AU"
+        ],
+        "is_corresponding": true,
+        "raw_author_name": "Gavin A. Huttley",
+        "raw_affiliation_strings": [
+          "Research School of Biology, Australian National University, 46 Sullivans Creek Road, Acton ACT, 2601, Australia. gavin.huttley@anu.edu.au",
+          "Research School of Biology, Australian National University, 46 Sullivans Creek Road, Acton ACT, 2601, Australia"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Research School of Biology, Australian National University, 46 Sullivans Creek Road, Acton ACT, 2601, Australia. gavin.huttley@anu.edu.au",
+            "institution_ids": [
+              "https://openalex.org/I118347636"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Research School of Biology, Australian National University, 46 Sullivans Creek Road, Acton ACT, 2601, Australia",
+            "institution_ids": [
+              "https://openalex.org/I118347636"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "last",
+        "author": {
+          "id": "https://openalex.org/A5038626201",
+          "display_name": "J. Gregory Caporaso",
+          "orcid": "https://orcid.org/0000-0002-8865-1670",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-8865-1670"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I203172682",
+            "display_name": "Northern Arizona University",
+            "ror": "https://ror.org/0272j5188",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": true,
+        "raw_author_name": "J. Gregory Caporaso",
+        "raw_affiliation_strings": [
+          "Department of Biological Sciences, Northern Arizona University, 1298 S Knoles Drive, Building 56, 3rd Floor, Flagstaff, AZ, USA. gregcaporaso@gmail.com",
+          "The Pathogen and Microbiome Institute, Northern Arizona University, PO Box 4073, Flagstaff, AZ, 86011-4073, USA. gregcaporaso@gmail.com",
+          "Department of Biological Sciences, Northern Arizona University, 1298 S Knoles Drive, Building 56, 3rd Floor, Flagstaff, AZ, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Biological Sciences, Northern Arizona University, 1298 S Knoles Drive, Building 56, 3rd Floor, Flagstaff, AZ, USA. gregcaporaso@gmail.com",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          },
+          {
+            "raw_affiliation_string": "The Pathogen and Microbiome Institute, Northern Arizona University, PO Box 4073, Flagstaff, AZ, 86011-4073, USA. gregcaporaso@gmail.com",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Biological Sciences, Northern Arizona University, 1298 S Knoles Drive, Building 56, 3rd Floor, Flagstaff, AZ, USA",
+            "institution_ids": [
+              "https://openalex.org/I203172682"
+            ]
+          }
+        ]
+      }
+    ],
+    "biblio": {
+      "volume": "6",
+      "issue": "1",
+      "first_page": "90",
+      "last_page": "90"
+    },
+    "primary_location": {
+      "id": "doi:10.1186/s40168-018-0470-z",
+      "doi": "https://doi.org/10.1186/s40168-018-0470-z",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1186/s40168-018-0470-z",
+      "pdf_url": "https://microbiomejournal.biomedcentral.com/track/pdf/10.1186/s40168-018-0470-z",
+      "source": {
+        "id": "https://openalex.org/S3004984423",
+        "display_name": "Microbiome",
+        "issn_l": "2049-2618",
+        "issn": [
+          "2049-2618"
+        ],
+        "is_oa": true,
+        "is_in_doaj": true,
+        "is_core": true,
+        "listed_in": [
+          "cwts-core",
+          "doaj",
+          "dongbi-b",
+          "doyens",
+          "jufo-3",
+          "ki-jl-2",
+          "medline",
+          "norway-2",
+          "oarl",
+          "poland-140",
+          "russia-white-list-1",
+          "vabb-shw"
+        ],
+        "host_organization": "https://openalex.org/P4310320256",
+        "host_organization_name": "BioMed Central",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320256",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "BioMed Central",
+          "Springer Nature"
+        ],
+        "type": "journal"
+      },
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Microbiome",
+      "raw_type": "journal-article"
+    },
+    "open_access": {
+      "is_oa": true,
+      "oa_status": "gold",
+      "oa_url": "https://microbiomejournal.biomedcentral.com/track/pdf/10.1186/s40168-018-0470-z",
+      "any_repository_has_fulltext": true
+    }
+  }
+}
