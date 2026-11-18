@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "source_claim_groups": 5,
+  "links_checked": 10,
+  "source_scope": "selection documents and existing source rows; no manuscript",
+  "documents": [
+    "research/results_selection.md",
+    "research/paper_results_contract.md"
+  ]
+}
