@@ -134,7 +134,9 @@ def inspect(root=ROOT, article_dir=None, draft=False):
     directory = Path(article_dir).resolve() if article_dir else root / ARTICLE
     audit = Audit()
     details = {'mode': 'draft' if draft else 'final', 'article_directory': str(directory),
-               'scope': 'actual TeX, numeric transfer, claims structure, citations, assets and PDF; semantic review is separately recorded; no biological accuracy verdict'}
+               'scope': 'actual TeX, numeric transfer, claims structure, citations and assets; '
+                        + ('PDF not checked (draft mode)' if draft else 'PDF checked')
+                        + '; semantic review is separately recorded; no biological accuracy verdict'}
     all_files = {}
 
     def resolve(name, suffix=''):
@@ -436,6 +438,17 @@ def inspect(root=ROOT, article_dir=None, draft=False):
     return finish(audit, details)
 
 
+def check_submission_notice(audit, text):
+    """Accept truthful preparation states without claiming an actual submission."""
+    text = ' '.join(text.split())
+    submitted = re.search(r'\b(?:Работа|Статья)\s+(?:была\s+)?подана\b|\bSubmitted\s+to\b', text, re.I)
+    local_draft = (re.search(r'Локальный\s+обезличенный\s+черновик', text, re.I)
+                   and re.search(r'не\s+подана', text, re.I))
+    ready = 'обезличенная версия для подачи на ai4science-ysda 2026.' in text.casefold()
+    audit.require(not submitted, 'PDF incorrectly claims the article was submitted')
+    audit.require(bool(local_draft or ready), 'PDF must identify an anonymous local draft or ready-to-submit version')
+
+
 def check_pdf(audit, details, directory, all_files, body, keys):
     pdf, aux, log = (directory / ('paper.'+ext) for ext in ('pdf','aux','log'))
     for path in (pdf,aux,log,directory/'paper.bbl'):
@@ -460,8 +473,7 @@ def check_pdf(audit, details, directory, all_files, body, keys):
     audit.require(not author or not author.group(1).strip() or author.group(1).strip() in {'Anonymous','Анонимные авторы'}, 'PDF Author metadata is not anonymous')
     audit.require('Анонимные авторы' in pdf_text, 'anonymous author label missing from PDF')
     audit.require('title suppressed due to excessive size' not in normalized_pdf.lower(), 'running title suppressed in PDF')
-    audit.require(not re.search(r'\bРабота\s+подана\b|\bSubmitted\s+to\b', normalized_pdf, re.I), 'PDF incorrectly claims the draft was submitted')
-    audit.require(bool(re.search(r'Локальный\s+обезличенный\s+черновик', normalized_pdf, re.I)) and bool(re.search(r'не\s+подана', normalized_pdf, re.I)), 'PDF must disclose local anonymous draft and no submission')
+    check_submission_notice(audit, normalized_pdf)
     audit.require(not re.search(r'\?\?|\[\?\]',pdf_text), 'unresolved PDF reference/citation')
     labels = {}
     for _,_,args,_ in commands(aux.read_text(),'newlabel',2):

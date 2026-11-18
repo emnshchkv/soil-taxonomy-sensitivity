@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "pdf": "paper/ai4science_ysda2026/paper.pdf",
+  "pdf_sha256": "d0fd27bf297a390b92a8006d660eb4c489b398960e4a227acea649f536dc3587",
+  "pages": [
+    {
+      "page": 1,
+      "preview": "/private/tmp/article-final-20261118-ready/page-01.png",
+      "sha256": "4e5071207556433a62eebb10ca406d766c7d8880e835e2a45cfa4ca9ee5ba472",
+      "status": "PASS"
+    },
+    {
+      "page": 2,
+      "preview": "/private/tmp/article-final-20261118-ready/page-02.png",
+      "sha256": "9315fe44b083a606e91defbaaf23a7d100d00cad681c7336a4289dfae13502b6",
+      "status": "PASS"
+    },
+    {
+      "page": 3,
+      "preview": "/private/tmp/article-final-20261118-ready/page-03.png",
+      "sha256": "7a508c745e5125b6a7a008e758ba7834a4f6a6710c02483b3d657b90aafae6ba",
+      "status": "PASS"
+    },
+    {
+      "page": 4,
+      "preview": "/private/tmp/article-final-20261118-ready/page-04.png",
+      "sha256": "5343d1c89a4c1652d9bb3ddf3c7008748d2331e4f068d9e663311829aacc8e33",
+      "status": "PASS"
+    },
+    {
+      "page": 5,
+      "preview": "/private/tmp/article-final-20261118-ready/page-05.png",
+      "sha256": "5554852880b0a2fb981fc16a5e93f343b7db9b7dc4dc7a2bcb43046f8e3b6c6c",
+      "status": "PASS"
+    },
+    {
+      "page": 6,
+      "preview": "/private/tmp/article-final-20261118-ready/page-06.png",
+      "sha256": "ee84e890acce844e9a46076900d4075733704385f9fbe398e7cb55b0e656e70e",
+      "status": "PASS"
+    },
+    {
+      "page": 7,
+      "preview": "/private/tmp/article-final-20261118-ready/page-07.png",
+      "sha256": "570a57734090673f796827e533f2f73c8f71f3ec7a4ca7b077cdb189e5292d60",
+      "status": "PASS"
+    },
+    {
+      "page": 8,
+      "preview": "/private/tmp/article-final-20261118-ready/page-08.png",
+      "sha256": "8fef6395f781a2bae3475f5616063e3a0bc23eb8310453bf92a352339e23f4a7",
+      "status": "PASS"
+    },
+    {
+      "page": 9,
+      "preview": "/private/tmp/article-final-20261118-ready/page-09.png",
+      "sha256": "a5a5fead9f5215d9dfb4abacf84af84320151b69c440c47bffbb40c8a0f711be",
+      "status": "PASS"
+    },
+    {
+      "page": 10,
+      "preview": "/private/tmp/article-final-20261118-ready/page-10.png",
+      "sha256": "9c72391c8df99e1c3681d32240501ff8e15e944ebb4465375458dc4e142f3a2b",
+      "status": "PASS"
+    },
+    {
+      "page": 11,
+      "preview": "/private/tmp/article-final-20261118-ready/page-11.png",
+      "sha256": "dd449c2aaf51867dad264bd00ef6534217f57f522c12636a6e208de5c2136128",
+      "status": "PASS"
+    }
+  ],
+  "notes": "All final pages inspected; no overlap, clipping, missing legends or unreadable captions. Main pages 1–4 reviewed by root, pages 5–11 by final_pdf_visual."
+}

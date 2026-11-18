@@ -1,0 +1,54 @@
+{
+  "started_utc": "2026-11-18T17:41:36.564270+00:00",
+  "status": "PASS",
+  "commands": [
+    {
+      "command": [
+        "/private/tmp/ai4science-tex-Hbaug4IY/TinyTeX/bin/universal-darwin/pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "paper.tex"
+      ],
+      "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026",
+      "log": "01_pdflatex.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/private/tmp/ai4science-tex-Hbaug4IY/TinyTeX/bin/universal-darwin/bibtex",
+        "paper"
+      ],
+      "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026",
+      "log": "02_bibtex.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/private/tmp/ai4science-tex-Hbaug4IY/TinyTeX/bin/universal-darwin/pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "paper.tex"
+      ],
+      "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026",
+      "log": "03_pdflatex.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/private/tmp/ai4science-tex-Hbaug4IY/TinyTeX/bin/universal-darwin/pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "paper.tex"
+      ],
+      "cwd": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026",
+      "log": "04_pdflatex.log",
+      "exit_code": 0
+    }
+  ],
+  "outputs": {
+    "paper.pdf": "d0fd27bf297a390b92a8006d660eb4c489b398960e4a227acea649f536dc3587",
+    "paper.aux": "513420d8d450f4ac3707c04b225bf99abceb0fca450145991bb5f5eaf85cf01a",
+    "paper.log": "573c83487585189baf3adfbfbc26b1ceb9dd4158550d43b5be4c7e157ae3e244",
+    "paper.bbl": "ea5897bc7922efe49ca4742f3d0bfe69c8ff90fa8ba0370454d90a1fdc3befcc"
+  }
+}

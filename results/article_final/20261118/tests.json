@@ -1,0 +1,2602 @@
+{
+  "status": "PASS",
+  "scope": "source/final-PDF CLI regressions and extracted-PDF-text notice unit cases",
+  "draft_only": false,
+  "skipped_cases": [],
+  "case_count": 33,
+  "cases": [
+    {
+      "case": "baseline",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "PASS",
+        "checks": 675,
+        "errors": [],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/baseline/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/baseline/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/baseline/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/baseline/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/baseline/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/baseline/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/baseline/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/baseline/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/baseline/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/baseline/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/baseline/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/baseline/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/baseline/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 42,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "final_baseline",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "PASS",
+        "checks": 710,
+        "errors": [],
+        "incomplete": [],
+        "mode": "final",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/final_baseline/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF checked; semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/final_baseline/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/final_baseline/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/final_baseline/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/final_baseline/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/final_baseline/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/final_baseline/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/final_baseline/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/final_baseline/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/final_baseline/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/final_baseline/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/final_baseline/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/final_baseline/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 42,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6,
+        "pdf_total_pages": 11,
+        "main_text_end": 4,
+        "main_table_pages": {
+          "tab:comparison": 4,
+          "tab:family": 4
+        },
+        "main_page_start": 1,
+        "main_page_end": 4,
+        "main_page_count": 4,
+        "overfull_boxes": []
+      },
+      "stderr": ""
+    },
+    {
+      "case": "written_mark",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "PASS",
+        "checks": 675,
+        "errors": [],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_mark/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_mark/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_mark/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_mark/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_mark/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_mark/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_mark/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_mark/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_mark/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_mark/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_mark/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_mark/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_mark/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 39,
+          "napisano": 4
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "written_optional_argument",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "PASS",
+        "checks": 675,
+        "errors": [],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_optional_argument/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_optional_argument/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_optional_argument/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_optional_argument/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_optional_argument/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_optional_argument/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_optional_argument/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_optional_argument/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_optional_argument/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_optional_argument/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_optional_argument/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_optional_argument/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_optional_argument/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 39,
+          "napisano": 4
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "entirely_written",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "PASS",
+        "checks": 675,
+        "errors": [],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/entirely_written/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/entirely_written/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/entirely_written/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/entirely_written/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/entirely_written/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/entirely_written/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/entirely_written/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/entirely_written/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/entirely_written/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/entirely_written/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/entirely_written/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/entirely_written/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/entirely_written/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 0,
+          "napisano": 43
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "written_literal_result_number",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 675,
+        "errors": [
+          "P02: macro list does not match actual claim",
+          "P02: literal result numbers outside verified macros: ['999']"
+        ],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_literal_result_number/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_literal_result_number/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_literal_result_number/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_literal_result_number/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_literal_result_number/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_literal_result_number/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_literal_result_number/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_literal_result_number/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_literal_result_number/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_literal_result_number/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_literal_result_number/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_literal_result_number/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_literal_result_number/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 39,
+          "napisano": 4
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "written_unknown_citation",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 675,
+        "errors": [
+          "unknown citations: invented2099",
+          "L01: citation list does not match actual claim"
+        ],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_unknown_citation/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_unknown_citation/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_unknown_citation/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_unknown_citation/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_unknown_citation/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_unknown_citation/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_unknown_citation/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_unknown_citation/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_unknown_citation/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_unknown_citation/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_unknown_citation/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_unknown_citation/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_unknown_citation/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bolyen2019",
+          "callahan2016",
+          "invented2099",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 35,
+          "napisano": 8
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "written_missing_claim_source",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 674,
+        "errors": [
+          "P01: unsupported/missing source results/nonexistent-claim-evidence.tsv"
+        ],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_missing_claim_source/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_missing_claim_source/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_missing_claim_source/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_missing_claim_source/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_missing_claim_source/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_missing_claim_source/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_missing_claim_source/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_missing_claim_source/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_missing_claim_source/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_missing_claim_source/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_missing_claim_source/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_missing_claim_source/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/written_missing_claim_source/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 39,
+          "napisano": 4
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "missing_authorship_mark",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 675,
+        "errors": [
+          "P01: not enclosed in authorship mark"
+        ],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_authorship_mark/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_authorship_mark/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_authorship_mark/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_authorship_mark/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_authorship_mark/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_authorship_mark/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_authorship_mark/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_authorship_mark/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_authorship_mark/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_authorship_mark/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_authorship_mark/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_authorship_mark/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_authorship_mark/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 41,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "empty_written_mark",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 675,
+        "errors": [
+          "P01: not enclosed in authorship mark"
+        ],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/empty_written_mark/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/empty_written_mark/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/empty_written_mark/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/empty_written_mark/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/empty_written_mark/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/empty_written_mark/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/empty_written_mark/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/empty_written_mark/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/empty_written_mark/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/empty_written_mark/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/empty_written_mark/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/empty_written_mark/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/empty_written_mark/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 41,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "source_mark_without_authorship",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 676,
+        "errors": [
+          "L01: not enclosed in authorship mark"
+        ],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/source_mark_without_authorship/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/source_mark_without_authorship/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/source_mark_without_authorship/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/source_mark_without_authorship/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/source_mark_without_authorship/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/source_mark_without_authorship/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/source_mark_without_authorship/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/source_mark_without_authorship/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/source_mark_without_authorship/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/source_mark_without_authorship/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/source_mark_without_authorship/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/source_mark_without_authorship/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/source_mark_without_authorship/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 41,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "conflicting_authorship_marks",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 675,
+        "errors": [
+          "P01: conflicting authorship marks",
+          "P02: conflicting authorship marks",
+          "P03: conflicting authorship marks"
+        ],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/conflicting_authorship_marks/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/conflicting_authorship_marks/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/conflicting_authorship_marks/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/conflicting_authorship_marks/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/conflicting_authorship_marks/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/conflicting_authorship_marks/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/conflicting_authorship_marks/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/conflicting_authorship_marks/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/conflicting_authorship_marks/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/conflicting_authorship_marks/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/conflicting_authorship_marks/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/conflicting_authorship_marks/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/conflicting_authorship_marks/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 42,
+          "napisano": 4
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "numeric_macro_override",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 675,
+        "errors": [
+          "numeric macro overridden: ProjectSamplesSoil"
+        ],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/numeric_macro_override/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/numeric_macro_override/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/numeric_macro_override/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/numeric_macro_override/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/numeric_macro_override/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/numeric_macro_override/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/numeric_macro_override/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/numeric_macro_override/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/numeric_macro_override/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/numeric_macro_override/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/numeric_macro_override/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/numeric_macro_override/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/numeric_macro_override/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 42,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "literal_result_number",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 675,
+        "errors": [
+          "P02: macro list does not match actual claim",
+          "P02: literal result numbers outside verified macros: ['999']"
+        ],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/literal_result_number/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/literal_result_number/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/literal_result_number/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/literal_result_number/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/literal_result_number/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/literal_result_number/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/literal_result_number/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/literal_result_number/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/literal_result_number/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/literal_result_number/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/literal_result_number/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/literal_result_number/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/literal_result_number/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 42,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "wrong_existing_macro",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 675,
+        "errors": [
+          "P02: macro list does not match actual claim"
+        ],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/wrong_existing_macro/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/wrong_existing_macro/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/wrong_existing_macro/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/wrong_existing_macro/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/wrong_existing_macro/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/wrong_existing_macro/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/wrong_existing_macro/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/wrong_existing_macro/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/wrong_existing_macro/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/wrong_existing_macro/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/wrong_existing_macro/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/wrong_existing_macro/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/wrong_existing_macro/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesAll",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 42,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "unknown_citation",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 675,
+        "errors": [
+          "unknown citations: invented2099",
+          "L01: citation list does not match actual claim"
+        ],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unknown_citation/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unknown_citation/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unknown_citation/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unknown_citation/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unknown_citation/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unknown_citation/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unknown_citation/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unknown_citation/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unknown_citation/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unknown_citation/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unknown_citation/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unknown_citation/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unknown_citation/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bolyen2019",
+          "callahan2016",
+          "invented2099",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 42,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "missing_mandatory_section",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 666,
+        "errors": [
+          "O01: section mismatch ('Проверка')",
+          "O02: section mismatch ('Проверка')",
+          "O03: section mismatch ('Проверка')",
+          "O04: section mismatch ('Проверка')",
+          "O05: section mismatch ('Проверка')",
+          "O06: section mismatch ('Проверка')",
+          "O07: section mismatch ('Проверка')"
+        ],
+        "incomplete": [
+          "eight required sections are missing or out of order: ['Постановка', 'Место в области', 'Метод', 'Проверка', 'Эксперимент', 'Воспроизводимость', 'Заключение']"
+        ],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_mandatory_section/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_mandatory_section/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_mandatory_section/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_mandatory_section/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_mandatory_section/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_mandatory_section/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_mandatory_section/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_mandatory_section/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_mandatory_section/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_mandatory_section/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_mandatory_section/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_mandatory_section/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_mandatory_section/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 42,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "changed_actual_table_cell",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 675,
+        "errors": [
+          "actual numeric table differs: /private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/changed_actual_table_cell/paper/ai4science_ysda2026/mutated_family_main.tex"
+        ],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/changed_actual_table_cell/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/changed_actual_table_cell/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/changed_actual_table_cell/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/changed_actual_table_cell/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/changed_actual_table_cell/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/changed_actual_table_cell/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/changed_actual_table_cell/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/changed_actual_table_cell/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/changed_actual_table_cell/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/changed_actual_table_cell/paper/ai4science_ysda2026/mutated_family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/changed_actual_table_cell/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/changed_actual_table_cell/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/changed_actual_table_cell/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/changed_actual_table_cell/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 42,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "overview_band_gap_or_overlap",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 675,
+        "errors": [
+          "overview bands leave a gap, overlap, or omit source content"
+        ],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/overview_band_gap_or_overlap/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/overview_band_gap_or_overlap/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/overview_band_gap_or_overlap/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/overview_band_gap_or_overlap/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/overview_band_gap_or_overlap/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/overview_band_gap_or_overlap/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/overview_band_gap_or_overlap/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/overview_band_gap_or_overlap/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/overview_band_gap_or_overlap/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/overview_band_gap_or_overlap/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/overview_band_gap_or_overlap/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/overview_band_gap_or_overlap/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/overview_band_gap_or_overlap/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 42,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "352.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "unmapped_short_prose",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 676,
+        "errors": [
+          "unmapped prose paragraph: Покрытие составляет процентов"
+        ],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unmapped_short_prose/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unmapped_short_prose/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unmapped_short_prose/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unmapped_short_prose/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unmapped_short_prose/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unmapped_short_prose/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unmapped_short_prose/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unmapped_short_prose/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unmapped_short_prose/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unmapped_short_prose/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unmapped_short_prose/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unmapped_short_prose/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/unmapped_short_prose/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 42,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "missing_claim_source",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 674,
+        "errors": [
+          "P01: unsupported/missing source results/nonexistent-claim-evidence.tsv"
+        ],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_claim_source/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_claim_source/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_claim_source/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_claim_source/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_claim_source/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_claim_source/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_claim_source/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_claim_source/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_claim_source/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_claim_source/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_claim_source/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_claim_source/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_claim_source/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 42,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "running_title_warning",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "FAIL",
+        "checks": 710,
+        "errors": [
+          "running title exceeds template size limit"
+        ],
+        "incomplete": [],
+        "mode": "final",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/running_title_warning/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF checked; semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/running_title_warning/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/running_title_warning/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/running_title_warning/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/running_title_warning/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/running_title_warning/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/running_title_warning/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/running_title_warning/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/running_title_warning/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/running_title_warning/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/running_title_warning/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/running_title_warning/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/running_title_warning/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 42,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6,
+        "pdf_total_pages": 11,
+        "main_text_end": 4,
+        "main_table_pages": {
+          "tab:comparison": 4,
+          "tab:family": 4
+        },
+        "main_page_start": 1,
+        "main_page_end": 4,
+        "main_page_count": 4,
+        "overfull_boxes": []
+      },
+      "stderr": ""
+    },
+    {
+      "case": "missing_pdf_final",
+      "expected_exit_code": 2,
+      "actual_exit_code": 2,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "INCOMPLETE",
+        "checks": 679,
+        "errors": [],
+        "incomplete": [
+          "missing build output: paper.pdf"
+        ],
+        "mode": "final",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_pdf_final/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF checked; semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_pdf_final/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_pdf_final/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_pdf_final/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_pdf_final/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_pdf_final/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_pdf_final/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_pdf_final/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_pdf_final/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_pdf_final/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_pdf_final/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_pdf_final/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/missing_pdf_final/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 42,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "restored",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "status": "PASS",
+        "checks": 675,
+        "errors": [],
+        "incomplete": [],
+        "mode": "draft",
+        "article_directory": "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/restored/paper/ai4science_ysda2026",
+        "scope": "actual TeX, numeric transfer, claims structure, citations and assets; PDF not checked (draft mode); semantic review is separately recorded; no biological accuracy verdict",
+        "tex_files": [
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/restored/paper/ai4science_ysda2026/paper.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/restored/paper/ai4science_ysda2026/sections/abstract.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/restored/paper/ai4science_ysda2026/sections/problem.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/restored/paper/ai4science_ysda2026/sections/related.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/restored/paper/ai4science_ysda2026/sections/method.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/restored/paper/ai4science_ysda2026/sections/verification.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/restored/paper/ai4science_ysda2026/sections/limitations.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/restored/paper/ai4science_ysda2026/sections/experiment.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/comparison_main.tex",
+          "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/family_main.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/restored/paper/ai4science_ysda2026/sections/reproducibility.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/restored/paper/ai4science_ysda2026/sections/conclusion.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/restored/paper/ai4science_ysda2026/ai_usage.tex",
+          "/private/var/folders/8y/ss49cjdn49l7l4ft072ygf9r0000gn/T/article-rejection-fh_ewmpj/restored/paper/ai4science_ysda2026/appendix.tex"
+        ],
+        "frozen_numeric_checks": 1520,
+        "frozen_macros_used": [
+          "ArticleDetectedMutations",
+          "ArticleSilvaGtdbFamilyDistanceMax",
+          "ArticleSilvaGtdbFamilyDistanceMin",
+          "ArticleTransferCases",
+          "ArticleTransferChecks",
+          "CmpGgTwoFamilyAsvPct",
+          "CmpGgTwoFamilyReadMedianPct",
+          "CmpGtdbFamilyAsvPct",
+          "CmpGtdbFamilyReadMedianPct",
+          "CmpGtdbGgTwoFamilyDistanceMedian",
+          "CmpGtdbGgTwoGenusConditionalAsvPct",
+          "CmpGtdbGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaFamilyAsvPct",
+          "CmpSilvaFamilyReadMedianPct",
+          "CmpSilvaGgTwoFamilyDistanceMedian",
+          "CmpSilvaGgTwoGenusConditionalAsvPct",
+          "CmpSilvaGgTwoGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbFamilyDistanceMedian",
+          "CmpSilvaGtdbGenusConditionalAsvPct",
+          "CmpSilvaGtdbGenusConditionalReadMedianPct",
+          "CmpSilvaGtdbGenusDefinedSamples",
+          "ProjectAsvAll",
+          "ProjectAsvLength",
+          "ProjectAsvSoil",
+          "ProjectKrFiveInput",
+          "ProjectKrFiveRetained",
+          "ProjectKrFiveRetentionPct",
+          "ProjectSamplesSoil",
+          "ProjectTrimLeft",
+          "ProjectTruncLen",
+          "SelectedDisplayThresholdPct"
+        ],
+        "limitation_sentences": 8,
+        "citation_keys": [
+          "balvociute2017",
+          "bokulich2018",
+          "bolyen2019",
+          "callahan2016",
+          "mcdonald2024",
+          "parks2022",
+          "robeson2021"
+        ],
+        "authorship_claims": {
+          "porozhdeno": 42,
+          "napisano": 1
+        },
+        "claims_checked": 43,
+        "overview_bands_bp": [
+          [
+            "0",
+            "351.00"
+          ],
+          [
+            "351",
+            "693.00"
+          ],
+          [
+            "693",
+            "1117.03"
+          ]
+        ],
+        "registered_figure_assets": 4,
+        "figure_placements": 6
+      },
+      "stderr": ""
+    },
+    {
+      "case": "notice_local_draft",
+      "kind": "extracted-PDF-text notice unit case",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "errors": []
+      },
+      "stderr": ""
+    },
+    {
+      "case": "notice_ready_to_submit",
+      "kind": "extracted-PDF-text notice unit case",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "errors": []
+      },
+      "stderr": ""
+    },
+    {
+      "case": "notice_ready_wrapped",
+      "kind": "extracted-PDF-text notice unit case",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "errors": []
+      },
+      "stderr": ""
+    },
+    {
+      "case": "notice_missing",
+      "kind": "extracted-PDF-text notice unit case",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "errors": [
+          "PDF must identify an anonymous local draft or ready-to-submit version"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case": "notice_draft_without_status",
+      "kind": "extracted-PDF-text notice unit case",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "errors": [
+          "PDF must identify an anonymous local draft or ready-to-submit version"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case": "notice_false_submission_ru",
+      "kind": "extracted-PDF-text notice unit case",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "errors": [
+          "PDF incorrectly claims the article was submitted"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case": "notice_false_submission_article",
+      "kind": "extracted-PDF-text notice unit case",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "errors": [
+          "PDF incorrectly claims the article was submitted"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case": "notice_false_submission_en",
+      "kind": "extracted-PDF-text notice unit case",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "errors": [
+          "PDF incorrectly claims the article was submitted"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case": "notice_conflicting_status",
+      "kind": "extracted-PDF-text notice unit case",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "detected_intended_issue": true,
+      "accepted": true,
+      "result": {
+        "errors": [
+          "PDF incorrectly claims the article was submitted"
+        ]
+      },
+      "stderr": ""
+    }
+  ],
+  "source_files_preserved": true,
+  "preserved_file_count": 42,
+  "changed_paths": []
+}

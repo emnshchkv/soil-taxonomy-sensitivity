@@ -5,9 +5,9 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{microtype}
-% Local anonymous draft: preserve template files and layout, state actual status.
+% Anonymous submission-ready version; the article has not been submitted.
 \makeatletter
-\renewcommand{\ICML@review}{Локальный обезличенный черновик AI4Science-YSDA 2026. Статья не подана.}
+\renewcommand{\ICML@review}{Обезличенная версия для подачи на AI4Science-YSDA 2026.}
 \makeatother
 \newcommand{\Claim}[2]{#2}
 \input{../../results/paper_step4/20261118/numbers.tex}
@@ -24,7 +24,11 @@
 ]
 \printAffiliationsAndNotice{}
 \label{main:start}
+\begingroup
+\clubpenalty=10000
+\widowpenalty=10000
 \input{sections/abstract.tex}
+\endgroup
 \input{sections/problem.tex}
 \input{sections/related.tex}
 \input{sections/method.tex}

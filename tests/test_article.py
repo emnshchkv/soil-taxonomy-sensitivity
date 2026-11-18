@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
 import shutil
@@ -88,6 +89,37 @@ def mark_all_written(article):
 def conflicting_authorship(article):
     path=article/'sections/problem.tex'
     path.write_text('\\napisano{'+path.read_text()+'}\n')
+
+
+def submission_notice_cases():
+    """Exercise extracted PDF-text notice rules without altering a real PDF."""
+    spec=importlib.util.spec_from_file_location('article_notice_checker',ROOT/'src/check_article.py')
+    checker=importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(checker)
+    legacy='Локальный обезличенный черновик AI4Science-YSDA 2026. Статья не подана.'
+    ready='Обезличенная версия для подачи на AI4Science-YSDA 2026.'
+    examples=[
+        ('notice_local_draft',legacy,0,None),
+        ('notice_ready_to_submit',ready,0,None),
+        ('notice_ready_wrapped',ready.replace(' ','\n'),0,None),
+        ('notice_missing','Анонимные авторы',1,'PDF must identify'),
+        ('notice_draft_without_status','Локальный обезличенный черновик AI4Science-YSDA 2026.',1,'PDF must identify'),
+        ('notice_false_submission_ru',ready+' Работа подана.',1,'incorrectly claims'),
+        ('notice_false_submission_article',ready+' Статья была подана.',1,'incorrectly claims'),
+        ('notice_false_submission_en',ready+' Submitted to AI4Science-YSDA 2026.',1,'incorrectly claims'),
+        ('notice_conflicting_status',legacy+' Работа подана.',1,'incorrectly claims'),
+    ]
+    cases=[]
+    for name,text,expected,intended in examples:
+        audit=checker.Audit()
+        checker.check_submission_notice(audit,text)
+        actual=1 if audit.errors else 0
+        detected=intended is None or any(intended in error for error in audit.errors)
+        cases.append({'case':name,'kind':'extracted-PDF-text notice unit case',
+                      'expected_exit_code':expected,'actual_exit_code':actual,
+                      'detected_intended_issue':detected,'accepted':actual==expected and detected,
+                      'result':{'errors':audit.errors},'stderr':''})
+    return cases
 
 
 def main():
@@ -170,10 +202,12 @@ def main():
             cases.append({'case':name,'expected_exit_code':expected,'actual_exit_code':process.returncode,
                           'detected_intended_issue':intended_issue,
                           'accepted':process.returncode==expected and intended_issue,'result':result,'stderr':process.stderr})
+    if not args.draft_only:
+        cases.extend(submission_notice_cases())
     after=inventory()
     preserved=before==after
     report={'status':'PASS' if preserved and all(c['accepted'] for c in cases) else 'FAIL',
-            'scope':'source-only CLI regressions; final PDF not checked' if args.draft_only else 'source and final-PDF CLI regressions',
+            'scope':'source-only CLI regressions; final PDF and notice unit cases not checked' if args.draft_only else 'source/final-PDF CLI regressions and extracted-PDF-text notice unit cases',
             'draft_only':args.draft_only,'skipped_cases':skipped_cases,
             'case_count':len(cases),'cases':cases,'source_files_preserved':preserved,
             'preserved_file_count':len(before),'changed_paths':sorted(k for k in set(before)|set(after) if before.get(k)!=after.get(k))}

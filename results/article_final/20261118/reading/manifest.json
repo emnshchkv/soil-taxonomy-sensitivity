@@ -1,0 +1,407 @@
+{
+  "status": "PASS",
+  "created_at_utc": "2026-11-18T17:42:03.490492+00:00",
+  "scope": "Local speech synthesis from actual Claim text; no speaker playback or human listening.",
+  "voice": "Milena",
+  "rate_words_per_minute": 220,
+  "macro_count": 42,
+  "macros": {
+    "ProjectSamplesAll": "11",
+    "ProjectSamplesSoil": "10",
+    "ProjectSamplesControl": "1",
+    "ProjectAsvAll": "3374",
+    "ProjectAsvSoil": "3309",
+    "ProjectTrimLeft": "20",
+    "ProjectTruncLen": "200",
+    "ProjectAsvLength": "180",
+    "ProjectKrFiveInput": "60078",
+    "ProjectKrFiveRetained": "1505",
+    "ProjectKrFiveRetentionPct": "2.51",
+    "ProjectModels": "3",
+    "SelectedDisplayThresholdPct": "2.00",
+    "CmpSilvaFamilyAsvPct": "78.15",
+    "CmpSilvaFamilyReadMedianPct": "64.96",
+    "SelectedSilvaZeroSoilSamples": "2",
+    "CmpGtdbFamilyAsvPct": "63.31",
+    "CmpGtdbFamilyReadMedianPct": "36.20",
+    "SelectedGtdbZeroSoilSamples": "0",
+    "CmpGgTwoFamilyAsvPct": "64.19",
+    "CmpGgTwoFamilyReadMedianPct": "35.68",
+    "SelectedGgTwoZeroSoilSamples": "0",
+    "CmpSilvaGtdbFamilyDistanceMedian": "0.554920",
+    "CmpSilvaGtdbGenusDistanceMedian": "0.444442",
+    "CmpSilvaGtdbGenusConditionalAsvPct": "7.29",
+    "CmpSilvaGtdbGenusConditionalReadMedianPct": "7.00",
+    "CmpSilvaGtdbGenusDefinedSamples": "6",
+    "CmpSilvaGgTwoFamilyDistanceMedian": "0.560384",
+    "CmpSilvaGgTwoGenusDistanceMedian": "0.455923",
+    "CmpSilvaGgTwoGenusConditionalAsvPct": "6.12",
+    "CmpSilvaGgTwoGenusConditionalReadMedianPct": "6.03",
+    "CmpSilvaGgTwoGenusDefinedSamples": "6",
+    "CmpGtdbGgTwoFamilyDistanceMedian": "0.167251",
+    "CmpGtdbGgTwoGenusDistanceMedian": "0.186607",
+    "CmpGtdbGgTwoGenusConditionalAsvPct": "33.99",
+    "CmpGtdbGgTwoGenusConditionalReadMedianPct": "27.09",
+    "CmpGtdbGgTwoGenusDefinedSamples": "6",
+    "ArticleTransferChecks": "1520",
+    "ArticleTransferCases": "16",
+    "ArticleDetectedMutations": "14",
+    "ArticleSilvaGtdbFamilyDistanceMin": "0.000729",
+    "ArticleSilvaGtdbFamilyDistanceMax": "0.780298"
+  },
+  "audio_directory": "/private/tmp/article-step5-readings-htj5b2k0",
+  "sources": [
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/paper.tex",
+      "sha256": "745d899c918d67b4d1698137ff019c99fcbea1f03f8e3f84f93d3659be8d603d"
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/paper_step4/20261118/numbers.tex",
+      "sha256": "1c9ee98f90e72eacb3a5d3793e0fe877dd0a55a015da30bd08dbe7ddb80a3e01"
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_step5/20261118/extra_numbers.tex",
+      "sha256": "bba75ed4492ecc33fa8b2d9ae53a49f11dfbcb794f77b6f5745ab020fb4a411f"
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/abstract.tex",
+      "sha256": "a8ceef24213de9b1bd345c55cc4fa245a73e66468a487c0bf6f2553ca83aaf4b"
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/problem.tex",
+      "sha256": "8f42fd51c47a896f832df2e47118b79066a619b32f34fc69cbf35837691f10b4"
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/related.tex",
+      "sha256": "bbb5993680703bb6d7959e3262437762cf3ee705b2cece150f7a448fe0d3461f"
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/method.tex",
+      "sha256": "de40a8eb9cc771d049a9c32bc6091584759d4679168b93c9a4b5a16ebbd92415"
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/verification.tex",
+      "sha256": "920052b6bf9c532b750253562f308211c875b67def7e4efb0774ad74e834e67c"
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/limitations.tex",
+      "sha256": "3c2ae0f1006e346210533f300839bad7878d4b7f05684f469844032e3d7d8c86"
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/experiment.tex",
+      "sha256": "9fa5a6ed2a8fa8e5afcad7f71d0a1281e1495499a07875a1a9258a626b6ad6d0"
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/reproducibility.tex",
+      "sha256": "b9b82388c55dc7b4670269a535d5f442b3bae99c180af80d3e9ccd212d00be31"
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/conclusion.tex",
+      "sha256": "6cc5715d3e9f8068170ac8d5d639b8a32d007bb3c8698543ace58dd33482ae2e"
+    },
+    {
+      "path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/src/read_article_aloud.py",
+      "sha256": "ef94373eb46634a06aa776f2f1bc8434e9fb98aa9eaad349d10ae8cf21e259f4"
+    }
+  ],
+  "transformations": [
+    "Numeric macros expanded from the actual included TeX files.",
+    "Authorship/style wrappers unwrapped; citation commands omitted for speech.",
+    "Cross-reference labels rendered as descriptions; decimal separator localized.",
+    "Distance equation normalized to a spoken description without changing its meaning."
+  ],
+  "human_listening_performed": false,
+  "speaker_playback_performed": false,
+  "sections": [
+    {
+      "title": "Аннотация",
+      "source": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/abstract.tex",
+      "claims": [
+        "A02",
+        "A01"
+      ],
+      "text_path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/01_abstract.txt",
+      "text_sha256": "dbab538e0aa8be393286f95600c3934108b731928f3eea8065c2cc0d41ce7171",
+      "audio_path": "/private/tmp/article-step5-readings-htj5b2k0/01_abstract.aiff",
+      "command": [
+        "/usr/bin/say",
+        "-v",
+        "Milena",
+        "-r",
+        "220",
+        "-f",
+        "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/01_abstract.txt",
+        "-o",
+        "/private/tmp/article-step5-readings-htj5b2k0/01_abstract.aiff",
+        "--file-format=AIFF"
+      ],
+      "started_at_utc": "2026-11-18T17:42:03.491567+00:00",
+      "finished_at_utc": "2026-11-18T17:42:06.963115+00:00",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "audio_sha256": "4c791db0bb69dee6f720d7477f3b0561b2f567681577ab75ae17bcdcf2562ce6",
+      "audio_bytes": 2995338
+    },
+    {
+      "title": "Постановка",
+      "source": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/problem.tex",
+      "claims": [
+        "P01",
+        "P02",
+        "P03"
+      ],
+      "text_path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/02_problem.txt",
+      "text_sha256": "d6f0be70f0f2f34317339e8d02291219564a72b8439886c569a14c95dbd71e8e",
+      "audio_path": "/private/tmp/article-step5-readings-htj5b2k0/02_problem.aiff",
+      "command": [
+        "/usr/bin/say",
+        "-v",
+        "Milena",
+        "-r",
+        "220",
+        "-f",
+        "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/02_problem.txt",
+        "-o",
+        "/private/tmp/article-step5-readings-htj5b2k0/02_problem.aiff",
+        "--file-format=AIFF"
+      ],
+      "started_at_utc": "2026-11-18T17:42:06.974024+00:00",
+      "finished_at_utc": "2026-11-18T17:42:08.715140+00:00",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "audio_sha256": "bcaa2cf8f5fbaad4393376f0d39a3ad9a43862a6f43d6c1707e1451a52977676",
+      "audio_bytes": 2833730
+    },
+    {
+      "title": "Место в области",
+      "source": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/related.tex",
+      "claims": [
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L05",
+        "L06",
+        "L07"
+      ],
+      "text_path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/03_related.txt",
+      "text_sha256": "6c74e3155260dd43a2707ee6e57cce5d4f6d781172342a7f2366e2f6846a8a75",
+      "audio_path": "/private/tmp/article-step5-readings-htj5b2k0/03_related.aiff",
+      "command": [
+        "/usr/bin/say",
+        "-v",
+        "Milena",
+        "-r",
+        "220",
+        "-f",
+        "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/03_related.txt",
+        "-o",
+        "/private/tmp/article-step5-readings-htj5b2k0/03_related.aiff",
+        "--file-format=AIFF"
+      ],
+      "started_at_utc": "2026-11-18T17:42:08.725541+00:00",
+      "finished_at_utc": "2026-11-18T17:42:10.330942+00:00",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "audio_sha256": "230279e986a025547b11380a3d0be5010018aa5b53f0c3d7ed766ad6606baa04",
+      "audio_bytes": 2708588
+    },
+    {
+      "title": "Метод",
+      "source": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/method.tex",
+      "claims": [
+        "M01",
+        "M02",
+        "M03",
+        "M04"
+      ],
+      "text_path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/04_method.txt",
+      "text_sha256": "5b72b0a1e0f599496b2788a7d60089e860a2eb0d731f313ba759f24cfa125a8a",
+      "audio_path": "/private/tmp/article-step5-readings-htj5b2k0/04_method.aiff",
+      "command": [
+        "/usr/bin/say",
+        "-v",
+        "Milena",
+        "-r",
+        "220",
+        "-f",
+        "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/04_method.txt",
+        "-o",
+        "/private/tmp/article-step5-readings-htj5b2k0/04_method.aiff",
+        "--file-format=AIFF"
+      ],
+      "started_at_utc": "2026-11-18T17:42:10.340605+00:00",
+      "finished_at_utc": "2026-11-18T17:42:12.455520+00:00",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "audio_sha256": "0674377c75470de4daf1e438dfec894baa1c78b1695990ea93382cb10f1c564f",
+      "audio_bytes": 3492976
+    },
+    {
+      "title": "Проверка",
+      "source": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/verification.tex",
+      "claims": [
+        "V01",
+        "V02",
+        "V03"
+      ],
+      "text_path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/05_verification.txt",
+      "text_sha256": "9d0d6eba3050f3f466c0c59764b6cb0cc53ccffa85ba7286348817cb5896fc4b",
+      "audio_path": "/private/tmp/article-step5-readings-htj5b2k0/05_verification.aiff",
+      "command": [
+        "/usr/bin/say",
+        "-v",
+        "Milena",
+        "-r",
+        "220",
+        "-f",
+        "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/05_verification.txt",
+        "-o",
+        "/private/tmp/article-step5-readings-htj5b2k0/05_verification.aiff",
+        "--file-format=AIFF"
+      ],
+      "started_at_utc": "2026-11-18T17:42:12.467425+00:00",
+      "finished_at_utc": "2026-11-18T17:42:14.007665+00:00",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "audio_sha256": "59cc545f9b884b1e453e1bb4504b97608e05f31d78816945ffb745156eb4f194",
+      "audio_bytes": 2553154
+    },
+    {
+      "title": "Ограничения",
+      "source": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/limitations.tex",
+      "claims": [
+        "O01",
+        "O02",
+        "O03",
+        "O04",
+        "O05",
+        "O06",
+        "O07"
+      ],
+      "text_path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/06_limitations.txt",
+      "text_sha256": "a08dc77e949becbcc45855a31f855227b05573b316de9ac27d82b74732242e79",
+      "audio_path": "/private/tmp/article-step5-readings-htj5b2k0/06_limitations.aiff",
+      "command": [
+        "/usr/bin/say",
+        "-v",
+        "Milena",
+        "-r",
+        "220",
+        "-f",
+        "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/06_limitations.txt",
+        "-o",
+        "/private/tmp/article-step5-readings-htj5b2k0/06_limitations.aiff",
+        "--file-format=AIFF"
+      ],
+      "started_at_utc": "2026-11-18T17:42:14.016269+00:00",
+      "finished_at_utc": "2026-11-18T17:42:15.879960+00:00",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "audio_sha256": "a550435c928a8378e689a87e2044ba42be47aded333e6fef81f738065d59fe38",
+      "audio_bytes": 3605632
+    },
+    {
+      "title": "Эксперимент",
+      "source": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/experiment.tex",
+      "claims": [
+        "E01",
+        "T01",
+        "T02",
+        "E02",
+        "E03"
+      ],
+      "text_path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/07_experiment.txt",
+      "text_sha256": "43183d01102dd2cd7b75d3c80c728f7bc0bac81f98833d1c9a2cd959b25686a3",
+      "audio_path": "/private/tmp/article-step5-readings-htj5b2k0/07_experiment.aiff",
+      "command": [
+        "/usr/bin/say",
+        "-v",
+        "Milena",
+        "-r",
+        "220",
+        "-f",
+        "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/07_experiment.txt",
+        "-o",
+        "/private/tmp/article-step5-readings-htj5b2k0/07_experiment.aiff",
+        "--file-format=AIFF"
+      ],
+      "started_at_utc": "2026-11-18T17:42:15.891925+00:00",
+      "finished_at_utc": "2026-11-18T17:42:18.888818+00:00",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "audio_sha256": "99636a57b2299cb98e5dc0ee41414b8c59fa3a57331f12e767bf74cb990c2bf9",
+      "audio_bytes": 6294646
+    },
+    {
+      "title": "Воспроизводимость",
+      "source": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/reproducibility.tex",
+      "claims": [
+        "R01",
+        "R02",
+        "R03"
+      ],
+      "text_path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/08_reproducibility.txt",
+      "text_sha256": "ab0f5178d1defd483eb5f33024e83cfae9421a972722d61dda350aa87645aa54",
+      "audio_path": "/private/tmp/article-step5-readings-htj5b2k0/08_reproducibility.aiff",
+      "command": [
+        "/usr/bin/say",
+        "-v",
+        "Milena",
+        "-r",
+        "220",
+        "-f",
+        "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/08_reproducibility.txt",
+        "-o",
+        "/private/tmp/article-step5-readings-htj5b2k0/08_reproducibility.aiff",
+        "--file-format=AIFF"
+      ],
+      "started_at_utc": "2026-11-18T17:42:18.908901+00:00",
+      "finished_at_utc": "2026-11-18T17:42:20.289789+00:00",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "audio_sha256": "f9da0df8fd6a2ae98a13a3d0b13665540858cea11d272e5b375281bc9a463ecf",
+      "audio_bytes": 2184824
+    },
+    {
+      "title": "Заключение",
+      "source": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/paper/ai4science_ysda2026/sections/conclusion.tex",
+      "claims": [
+        "C01",
+        "C02"
+      ],
+      "text_path": "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/09_conclusion.txt",
+      "text_sha256": "33e731589730de25c06fc8172b8f3f9d39d6b3b8c035e1936994b4121d78e0e4",
+      "audio_path": "/private/tmp/article-step5-readings-htj5b2k0/09_conclusion.aiff",
+      "command": [
+        "/usr/bin/say",
+        "-v",
+        "Milena",
+        "-r",
+        "220",
+        "-f",
+        "/Users/elizavetamenshchikova/YSDA/AI/project_bacteria/results/article_final/20261118/reading/09_conclusion.txt",
+        "-o",
+        "/private/tmp/article-step5-readings-htj5b2k0/09_conclusion.aiff",
+        "--file-format=AIFF"
+      ],
+      "started_at_utc": "2026-11-18T17:42:20.298166+00:00",
+      "finished_at_utc": "2026-11-18T17:42:21.494829+00:00",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "audio_sha256": "ff16aa01d4b698f65ce4e885204eb710a163416a2006758c51de9b23928e8b5e",
+      "audio_bytes": 1856226
+    }
+  ],
+  "changed_sources_during_synthesis": [],
+  "completed_at_utc": "2026-11-18T17:42:21.501889+00:00"
+}
