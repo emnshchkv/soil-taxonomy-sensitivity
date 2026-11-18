@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "rollback_commit": "dd1fac5a2b526a1ce4eba2cf2f1373272f0d2033",
+  "old_head": "37254a5a90a3efe5b4c6ca22e38c2e2066767178",
+  "backup_branch": "backup/article-before-pause-20261118",
+  "working_archive": "/tmp/project_bacteria_article_backup_20261118_ynuut46c/working_article.tar.gz",
+  "workspace_sha256_unchanged": "5152d12a64109699e54dfb58d6177ef9d1542719c0e88b8006346bca0a90b9a4",
+  "article_directory_present": false,
+  "scientific_paths_changed": []
+}
