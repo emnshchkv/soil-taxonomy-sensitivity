@@ -1,0 +1,7 @@
+{
+  "status": "INCOMPLETE",
+  "reason": "The first pdfLaTeX invocation produced a PDF, but the initial build wrapper stopped while decoding its output: TeX wrapped a line inside a UTF-8 sequence. BibTeX and subsequent passes had not run.",
+  "wrapper_exit_code": 1,
+  "repair": "Capture and preserve raw output bytes; retry the full prescribed command sequence in a new log directory.",
+  "next_attempt": "results/article_step5/build_20261118_retry1"
+}

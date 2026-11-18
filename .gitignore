@@ -11,3 +11,10 @@ references/*.pdf
 
 # Local reference template supplied by the user
 /ai4science_ysda2026_template/
+
+# Rebuildable local TeX intermediates; the reviewed PDF is kept in Git.
+/manuscript/ai4science_ysda2026/*.aux
+/manuscript/ai4science_ysda2026/*.bbl
+/manuscript/ai4science_ysda2026/*.blg
+/manuscript/ai4science_ysda2026/*.log
+/manuscript/ai4science_ysda2026/*.out
