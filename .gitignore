@@ -18,3 +18,7 @@ references/*.pdf
 /paper/ai4science_ysda2026/*.blg
 /paper/ai4science_ysda2026/*.log
 /paper/ai4science_ysda2026/*.out
+
+# Local article-writing prompts
+/AGENT_ARTICLE_PROMPT.txt
+/AGENT_ARTICLE_STEP5_PROMPT.txt

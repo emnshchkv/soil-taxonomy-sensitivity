@@ -665,3 +665,10 @@ conda run --no-capture-output -n qiime2-amplicon-2025.7 qiime cutadapt trim-sing
 Результат: по первым шести пунктам ошибок не найдено. Шаг 0 OpenReview выполнен по прежнему сообщению пользователя; текущая активация, почта и доступ независимо не проверялись. Статья, PDF, числовые результаты и первичные литературные свидетельства сохранены побайтно.
 Точка проверки: results/article_typical_errors/20261118/audit.json, before.json, article.json, numbers.log, literature.json, project.log; источники проверки анонимности — pdfinfo.txt, pdf_text.txt, pdf_urls.txt, pdf_xmp.txt.
 Итог проверки: src/check_article.py — PASS/0, 646 сверок; src/check_paper_results.py — PASS/0, 1520 сверок; src/check_literature_registry.py и checks/check.py — 0. Известное ограничение полного DADA2 по Kr5 не отменено. Сборка PDF, новые научные расчёты, регистрация, подача и push не выполнялись.
+
+## 2026-11-18 — Исключение двух промптов статьи из Git
+
+Что сделано: выполнена [[Исключить промпты статьи из отслеживания Git]], создана [[Проверка исключения промптов статьи из Git]]. По уточнению «пусть только промпты уберутся из отслеживания» выполнен git rm --cached только для AGENT_ARTICLE_PROMPT.txt и AGENT_ARTICLE_STEP5_PROMPT.txt; добавлены два адресных правила .gitignore. QIIME: q2cli 2025.7.0.
+Результат: локальные копии сохранены; results/, tasks/ и остальные пути из индекса не исключались. История не переписывалась, push не выполнялся.
+Точка проверки: git ls-files, git check-ignore -v, shasum -a 256 двух промптов; заметка проверки хранит контрольные суммы.
+Итог проверки: промпты отсутствуют в индексе, оба игнорируются; SHA256 до/после совпадают. conda run --no-capture-output -n qiime2-amplicon-2025.7 python3 checks/check.py — код 0.
