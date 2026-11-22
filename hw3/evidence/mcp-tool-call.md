@@ -1,3 +1,13 @@
+## ai4science doctor
+
+```
+=== AI4Science doctor ===
+...
+MCP research: OK (5 инструментов: openalex_search, openalex_work, openalex_links, wikidata_search, wikidata_sparql)
+MCP family-profile: OK (1 инструментов: family_profile)
+...
+```
+
 ## Запрос пользователя
 
 ```
