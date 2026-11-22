@@ -1,0 +1,407 @@
+
+    __( O)>  ● new session · openai gpt://b1gi39jvrih75di87rqs/deepseek-v4-flash/latest
+   \____)    20261122_9 · /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/hw3
+     L L     goose is ready
+I'll start by reading the task and checking the project structure.
+
+
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat scenario/task.md; echo "---"; ls bus/ 2>/dev/null; echo "---"; ls
+
+# Справка к рисунку статьи по пробе Kr2_S81
+
+Подготовь короткую справку для читателя статьи о семейственных профилях
+почвенной пробы Kr2_S81. Читатель должен понять, сколько ридов вошло
+в профиль каждой модели и почему доля ридов без назначенного семейства
+в одном случае неопределима.
+
+Основу справки составляет одна таблица Markdown. Дай по одной строке
+для SILVA 138, GTDB и Greengenes2. Используй пять столбцов:
+
+| Модель | Ридов после DADA2 | Вошло в профиль | Из них без назначенного семейства | Доля без семейства среди вошедших |
+|---|---:|---:|---:|---:|
+
+Под таблицей дай пояснение в 2–3 предложениях. Укажи знаменатель доли
+и объясни на примере этой пробы, что означают NA и 100%.
+Заверши справку путём к исходной таблице данных.
+
+Справка готова, когда все три строки совпадают с данными проекта,
+а читателю понятно, как нулевое число отобранных ридов влияет на долю.---
+---
+bus
+check_hw3.py
+evidence
+PROMPT_MCP.txt
+REPORT_TEMPLATE.md
+scenario
+toolЗапрашиваю данные пробы Kr2_S81 через MCP.
+
+
+  ────────────────────────────────────────
+  ▸ family_profile family-profile-mcp
+    sample_id: Kr2_S81
+
+Данные получены. Проверяю исходную таблицу и логику отбора, чтобы пояснение было точным.
+
+
+  ────────────────────────────────────────
+  ▸ shell
+    command: cd /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/hw3; head -3 results/paper_step4/20261118/family_sample_counts.tsv; echo "---"; grep -n "Kr2_S81" results/paper_step4/20261118/family_sample_counts.tsv; echo "--- tool ---"; sed -n 1,80p tool/family_profile_mcp.py
+
+head: results/paper_step4/20261118/family_sample_counts.tsv: No such file or directory
+---
+grep: results/paper_step4/20261118/family_sample_counts.tsv: No such file or directory
+--- tool ---
+"""family_profile_mcp — MCP-инструмент «family-profile» для проекта бактериальных сообществ.
+
+Один инструмент: `family_profile` читает готовую таблицу
+`results/paper_step4/20261118/family_sample_counts.tsv` и возвращает для одной пробы
+счётчики ридов по семействам для трёх моделей таксономии (sklearn_silva138,
+sklearn_gtdb, sklearn_gg2). Нужен, когда требуется назвать числа к рисунку статьи
+без ручного поиска строки в TSV и без риска перепутать модель или пробу.
+
+Источник данных только читается: файл открывается на чтение, ничего не пишется.
+
+Проверка без агента:  python3 hw3/tool/family_profile_mcp.py --selftest
+Вызов из командной строки: python3 hw3/tool/family_profile_mcp.py --sample Kr2_S81
+"""
+from __future__ import annotations
+
+import csv
+import json
+import os
+import sys
+from pathlib import Path
+
+try:                       # пакет mcp 1.x
+    from mcp.server.fastmcp import FastMCP
+except ImportError:
+    try:                   # пакет mcp 2.x
+        from mcp.server.mcpserver import MCPServer as FastMCP
+    except ImportError:    # без пакета mcp работают режимы --selftest и --sample
+        class FastMCP:     # type: ignore[no-redef]
+            def __init__(self, name: str) -> None:
+                self.name = name
+
+            def tool(self):
+                return lambda f: f
+
+            def run(self) -> None:
+                sys.exit("нет пакета mcp: запускайте интерпретатором из окружения учебного агента")
+
+if sys.platform == "win32":  # протокол MCP — UTF-8
+    for _stream in (sys.stdin, sys.stdout, sys.stderr):
+        try:
+            _stream.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+        except Exception:
+            pass
+
+mcp = FastMCP("family-profile")
+
+# относительный путь к таблице от корня проекта
+TSV_REL = Path("results") / "paper_step4" / "20261118" / "family_sample_counts.tsv"
+MODELS: tuple[str, ...] = ("sklearn_silva138", "sklearn_gtdb", "sklearn_gg2")
+
+INT_FIELDS: tuple[str, ...] = ("post_dada2_reads", "selected_reads", "unclassified_family_reads")
+PCT_FIELD = "unclassified_pct_of_selected"
+
+
+def default_tsv_path() -> Path:
+    """Путь к таблице: переменная окружения, затем корень проекта от файла модуля, затем cwd."""
+    env = os.environ.get("FAMILY_PROFILE_TSV")
+    if env:
+        return Path(env).expanduser()
+    here = Path(__file__).resolve()
+    candidates = [here.parents[2] / TSV_REL, Path.cwd() / TSV_REL]
+    for cand in candidates:
+        if cand.is_file():
+            return cand
+    return candidates[0]
+
+
+def _read_rows(tsv_path: Path) -> list[dict[str, str]]:
+    """Прочитать TSV с разделителем табуляции; ошибки чтения — исключением."""
+    with tsv_path.open("r", encoding="utf-8", newline="") as fh:
+        reader = csv.DictReader(fh, delimiter="\t")
+        missing = [c for c in ("model", "sample", *INT_FIELDS, PCT_FIELD) if c not in (reader.fieldnames or [])]
+        if missing:
+            raise ValueError(f"в таблице нет столбцов: {', '.join(missing)}")
+        return [dict(row) for row in reader]
+
+
+def _as_int(row: dict[str, str], field: str, where: str) -> int:
+    raw = (row.get(field) or "").strip()
+    try:Таблица лежит в корне проекта, не в hw3. Проверяю строки Kr2_S81 и критерий отбора.
+
+
+  ────────────────────────────────────────
+  ▸ shell
+    command: cd /Users/elizavetamenshchikova/YSDA/AI/project_bacteria; head -2 results/paper_step4/20261118/family_sample_counts.tsv; echo "---"; grep -n "Kr2_S81" results/paper_step4/20261118/family_sample_counts.tsv; echo "--- sel ---"; sed -n 80,200p hw3/tool/family_profile_mcp.py
+
+scope	model	sample	sample_type	post_dada2_reads	selected_reads	excluded_reads	selected_bacteria_reads	selected_archaea_reads	named_family_reads	unclassified_family_reads	selected_pct_of_post_dada2	unclassified_pct_of_selected	zero_selected
+family_prokaryote_selected	sklearn_silva138	K_S63	negative_control	9802	9650	152	9650	0	6293	3357	98.4492960620281575188736992450520301979187920832483166700673	34.7875647668393782383419689119170984455958549222797927461140	0
+---
+4:family_prokaryote_selected	sklearn_silva138	Kr2_S81	soil	8904	0	8904	0	0	0	0	0	NA	1
+15:family_prokaryote_selected	sklearn_gtdb	Kr2_S81	soil	8904	8013	891	8013	0	0	8013	89.9932614555256064690026954177897574123989218328840970350404	100	0
+26:family_prokaryote_selected	sklearn_gg2	Kr2_S81	soil	8904	8098	806	8098	0	0	8098	90.9478885893980233602875112309074573225516621743036837376460	100	0
+--- sel ---
+    try:
+        return int(raw)
+    except ValueError:
+        raise ValueError(f"{where}: поле {field} не целое число: {raw!r}") from None
+
+
+def profile_at(sample_id: str, tsv_path: Path) -> dict:
+    """Собрать ответ инструмента по явному пути к таблице (используется и в самопроверке)."""
+    if not isinstance(sample_id, str) or not sample_id.strip():
+        return {"error": "не задан sample_id: передайте идентификатор пробы, например Kr2_S81"}
+    sample_id = sample_id.strip()
+
+    if not tsv_path.is_file():
+        return {"error": f"нет таблицы {tsv_path} — проверьте путь к results/paper_step4/20261118/family_sample_counts.tsv"}
+
+    try:
+        rows = _read_rows(tsv_path)
+    except (OSError, UnicodeDecodeError, ValueError) as exc:
+        return {"error": f"таблица {tsv_path} не читается: {exc}"}
+
+    selected = [r for r in rows if (r.get("sample") or "").strip() == sample_id]
+    if not selected:
+        known = sorted({(r.get("sample") or "").strip() for r in rows})
+        return {"error": f"неизвестная проба {sample_id!r}: в таблице нет строк с таким sample",
+                "known_samples": known}
+
+    records: list[dict] = []
+    for model in MODELS:
+        hits = [r for r in selected if (r.get("model") or "").strip() == model]
+        if not hits:
+            return {"error": f"для пробы {sample_id} нет строки модели {model}"}
+        if len(hits) > 1:
+            return {"error": f"для пробы {sample_id} и модели {model} найдено строк: {len(hits)}, ожидалась одна"}
+        row = hits[0]
+        where = f"{sample_id}/{model}"
+        try:
+            counts = {field: _as_int(row, field, where) for field in INT_FIELDS}
+        except ValueError as exc:
+            return {"error": str(exc)}
+
+        pct = (row.get(PCT_FIELD) or "").strip()
+        if counts["selected_reads"] == 0:
+            # при нуле отобранных ридов процент неопределим
+            pct = "NA"
+        elif pct in ("", "NA"):
+            return {"error": f"{where}: при {counts['selected_reads']} отобранных ридах процент не задан"}
+
+        records.append({
+            "model": model,
+            "post_dada2_reads": counts["post_dada2_reads"],
+            "selected_reads": counts["selected_reads"],
+            "unclassified_family_reads": counts["unclassified_family_reads"],
+            "unclassified_pct_of_selected": pct,
+        })
+
+    return {
+        "sample_id": sample_id,
+        "source": TSV_REL.as_posix(),
+        "records": records,
+    }
+
+
+@mcp.tool()
+def family_profile(sample_id: str) -> dict:
+    """Данные к рисунку статьи: счётчики ридов по семействам для одной пробы почвы или контроля.
+
+    Вызывать, когда нужно назвать числа к рисунку или таблице статьи по семействам:
+    сколько ридов осталось после DADA2, сколько отобрано для профиля семейств, сколько
+    ридов осталось без назначенного семейства и какой это процент от отобранных, —
+    сразу для трёх моделей таксономии (sklearn_silva138, sklearn_gtdb, sklearn_gg2).
+
+    sample_id — идентификатор пробы ровно как в столбце sample таблицы, например
+    "Kr2_S81", "LUB2_S92", "K_S63" (отрицательный контроль). Совпадение точное,
+    регистр важен; список допустимых значений — в поле known_samples ответа на ошибку.
+
+    Возвращает словарь: sample_id, source (относительный путь к исходному TSV) и records —
+    три записи по одной на модель с полями model, post_dada2_reads, selected_reads,
+    unclassified_family_reads (целые числа) и unclassified_pct_of_selected (строка из TSV
+    с сохранённой точностью; "NA", если отобранных ридов ноль и процент неопределим).
+    При неизвестной пробе, отсутствии таблицы, дубликате или пропуске строки модели
+    возвращает словарь с полем error. Только чтение, файлы проекта не меняются.
+    """
+    return profile_at(sample_id, default_tsv_path())
+
+
+# ---------------------------------------------------------------- самопроверка
+
+def _check(cond: bool, message: str) -> None:
+    if not cond:
+        raise SystemExit(f"FAIL: {message}")
+
+
+def _triple(record: dict) -> tuple[int, int, str]:
+    return (record["selected_reads"], record["unclassified_family_reads"],
+            record["unclassified_pct_of_selected"])
+
+
+def selftest() -> None:
+    """Проверка на известных значениях таблицы и на подменённых таблицах во временном каталоге."""
+    import tempfile
+
+    tsv = default_tsv_path()
+    _check(tsv.is_file(), f"нет таблицы {tsv}")
+
+    kr2 = profile_at("Kr2_S81", tsv)
+    _check("error" not in kr2, f"Kr2_S81: {kr2.get('error')}")
+    _check(kr2["sample_id"] == "Kr2_S81", "Kr2_S81: неверный sample_id")
+    _check(kr2["source"] == TSV_REL.as_posix(), f"Kr2_S81: неверный source {kr2['source']}")
+    _check([r["model"] for r in kr2["records"]] == list(MODELS), "Kr2_S81: не тот набор моделей")
+    for rec in kr2["records"]:
+        _check(rec["post_dada2_reads"] == 8904, f"Kr2_S81/{rec['model']}: post_dada2_reads {rec['post_dada2_reads']} != 8904")
+        _check(isinstance(rec["post_dada2_reads"], int), "post_dada2_reads не int")
+        _check(isinstance(rec["selected_reads"], int), "selected_reads не int")
+        _check(isinstance(rec["unclassified_family_reads"], int), "unclassified_family_reads не int")
+        _check(isinstance(rec["unclassified_pct_of_selected"], str), "процент должен быть строкой")
+    expected = {
+        "sklearn_silva138": (0, 0, "NA"),
+        "sklearn_gtdb": (8013, 8013, "100"),
+        "sklearn_gg2": (8098, 8098, "100"),
+    }
+    for rec in kr2["records"]:Уточняю критерий отбора (почему у SILVA 0 отобранных) — читаю контракт числового переноса.
+
+
+  ────────────────────────────────────────
+  ▸ shell
+    command: cd /Users/elizavetamenshchikova/YSDA/AI/project_bacteria; grep -n -i -E "selected|отбор|excluded|исключ|prokaryote|zero_selected" research/paper_results_contract.md | head -40; echo "=== README ==="; grep -n -i -E "selected|отбор|excluded|исключ|zero_selected|Kr2" results/paper_step4/README.md | head -40
+
+11:1. `comparison_all_post_dada2`: `results/taxonomy_comparison/finish_20261116/main/`. Пять рангов в порядке тип, класс, порядок, семейство, род; модели `sklearn_silva138`, `sklearn_gtdb`, `sklearn_gg2`; пары SILVA–GTDB, SILVA–GG2, GTDB–GG2. Все десять почвенных образцов; контроль исключён. Знаменатель покрытия ридов и профилей — все риды образца после DADA2. Покрытие ASV — все ASV, присутствующие в почвах. Сохранены исходная буквальная нормализация родословной и категория UNCLASSIFIED, включая прежнюю обработку uncultured.
+12:2. `family_prokaryote_selected`: `results/taxonomy_barplots/prokaryote_family_20261118_final/`. Отбор Bacteria + Archaea отдельно каждой моделью; исключены явно помеченные органеллы, Eukaryota и неизвестный домен. Конечное точное f__uncultured без учёта регистра означает UNCLASSIFIED; ASV при этом не удаляется. Знаменатель семейственных долей — selected_reads данной модели и образца. При N=0 доля NA. Порог 2% из манифеста относится только к отображению семейств, не к удалению ридов.
+24:| comparison_pairs.tsv | model_a, model_b, rank; 15 строк | scope; distance_min, distance_median, distance_max, n_samples; both_match, both_diff, only_a, only_b, neither, total_asv, both_assigned_asv; conditional_asv_pct; conditional_read_min_pct, conditional_read_median_pct, conditional_read_max_pct, conditional_defined_samples. Условный знаменатель — both_assigned, нулевой знаменатель даёт NA и исключается только из условной сводки. |
+25:| family_sample_counts.tsv | model, sample; 33 строки | scope, sample_type; post_dada2_reads, selected_reads, excluded_reads, selected_bacteria_reads, selected_archaea_reads; named_family_reads, unclassified_family_reads; selected_pct_of_post_dada2, unclassified_pct_of_selected, zero_selected. Полная сумма family_profiles.count равна N; UNCLASSIFIED выбирается по полному ключу. |
+37:- ProjectSamplesAll, ProjectSamplesSoil, ProjectSamplesControl, ProjectAsvAll, ProjectAsvSoil, ProjectTrimLeft, ProjectTruncLen, ProjectAsvLength, ProjectKrFiveInput, ProjectKrFiveRetained, ProjectKrFiveRetentionPct, ProjectModels, SelectedDisplayThresholdPct.
+38:- Для Silva, Gtdb, GgTwo: Cmp<модель>FamilyAsvPct, Cmp<модель>FamilyReadMedianPct, Selected<модель>ZeroSoilSamples.
+=== README ===
+8:- [Контракт](../../research/paper_results_contract.md): зафиксирован до генерации; разделяет исходное сравнение всех ридов после DADA2 и модельный отбор Bacteria + Archaea.
+25:| Точное совпадение трёх DADA2 | PASS/0 при ранее согласованном исключении Kr5; [exact_match.txt](validation_20261118/scientific/exact_match.txt). |Проверяю, что SILVA назначила ридам Kr2_S81 (чтобы корректно объяснить нулевой отбор).
+
+
+  ────────────────────────────────────────
+  ▸ shell
+    command: cd /Users/elizavetamenshchikova/YSDA/AI/project_bacteria; ls results/taxonomy_barplots/prokaryote_family_20261118_final/; echo "---"; head -2 results/taxonomy_barplots/prokaryote_family_20261118_final/family_profiles.tsv 2>/dev/null; echo "--- silva Kr2 ---"; awk -F'\t' 'NR==1 || ($0 ~ /Kr2_S81/ && $0 ~ /silva/)' results/taxonomy_barplots/prokaryote_family_20261118_final/family_profiles.tsv 2>/dev/null | head -20
+
+asv_mask.tsv
+document_check.json
+family_barplot_data.tsv
+family_keys.tsv
+family_membership.tsv
+family_profiles.tsv
+figures
+filter_counts.tsv
+layout_data_check.json
+prokaryotic_family_manifest.json
+README.md
+self_test.json
+verification.json
+visual_check.json
+---
+model	sample	sample_type	rank	key	count	total_reads	fraction
+sklearn_silva138	K_S63	negative_control	семейство	UNCLASSIFIED	3357	9650	0.34787564766839379
+--- silva Kr2 ---
+model	sample	sample_type	rank	key	count	total_reads	fraction
+sklearn_silva138	Kr2_S81	soil	семейство	UNCLASSIFIED	0	0	NAСмотрю разбивку исключённых ридов по причинам.
+
+
+  ────────────────────────────────────────
+  ▸ shell
+    command: cd /Users/elizavetamenshchikova/YSDA/AI/project_bacteria; head -2 results/taxonomy_barplots/prokaryote_family_20261118_final/filter_counts.tsv; echo "---"; awk -F'\t' 'NR==1 || $0 ~ /Kr2_S81/' results/taxonomy_barplots/prokaryote_family_20261118_final/filter_counts.tsv
+
+model	sample	sample_type	total_reads	total_observed_asv	Bacteria_reads	Archaea_reads	Eukaryota_reads	unknown_reads	organelle_reads	organelle_observed_asv	selected_reads	selected_observed_asv	excluded_reads	selected_Bacteria_reads	selected_Archaea_reads	selected_fraction	zero_selected
+sklearn_silva138	K_S63	negative_control	9802	77	9802	0	0	0	152	5	9650	72	152	9650	0	0.98449296062028158	0
+---
+model	sample	sample_type	total_reads	total_observed_asv	Bacteria_reads	Archaea_reads	Eukaryota_reads	unknown_reads	organelle_reads	organelle_observed_asv	selected_reads	selected_observed_asv	excluded_reads	selected_Bacteria_reads	selected_Archaea_reads	selected_fraction	zero_selected
+sklearn_silva138	Kr2_S81	soil	8904	200	11	0	7780	1113	11	2	0	0	8904	0	0	0	1
+sklearn_gtdb	Kr2_S81	soil	8904	200	8013	0	0	891	0	0	8013	176	891	8013	0	0.89993261455525608	0
+sklearn_gg2	Kr2_S81	soil	8904	200	8098	0	0	806	0	0	8098	174	806	8098	0	0.90947888589398018	0
+
+
+  ────────────────────────────────────────
+  ▸ shell
+    command: cd /Users/elizavetamenshchikova/YSDA/AI/project_bacteria; awk -F'\t' 'NR==1 || ($0 ~ /Kr2_S81/ && $0 !~ /silva/)' results/taxonomy_barplots/prokaryote_family_20261118_final/family_profiles.tsv | head -20
+
+model	sample	sample_type	rank	key	count	total_reads	fraction
+sklearn_gtdb	Kr2_S81	soil	семейство	UNCLASSIFIED	8013	8013	1
+sklearn_gg2	Kr2_S81	soil	семейство	UNCLASSIFIED	8098	8098	1Данные сверены с исходной таблицей. Пишу справку.
+
+
+  ────────────────────────────────────────
+  ▸ write
+    path ~/YSDA/AI/project_bacteria/hw3/bus/draft_1.md
+    content: # Справка к рисунку статьи: семейственные профили пробы Kr2_S81
+
+**Роль:** генератор. **Раунд:** 1.
+
+Проба Kr2_S81 (почва). Числа — из ответа MCP-инструмента `family_profile`
+(поля `records`), путь к таблице — из поля `source`.
+
+| Модель | Ридов после DADA2 | Вошло в профиль | Из них без назначенного семейства | Доля без семейства среди вошедших |
+|---|---:|---:|---:|---:|
+| SILVA 138 | 8904 | 0 | 0 | NA |
+| GTDB | 8904 | 8013 | 8013 | 100% |
+| Greengenes2 | 8904 | 8098 | 8098 | 100% |
+
+Знаменатель доли — не все риды после DADA2, а только вошедшие в профиль:
+риды, чей ASV данная модель отнесла к Bacteria или Archaea, за вычетом
+помеченных органелл, Eukaryota и неизвестного домена. У SILVA 138 в этой
+пробе в профиль не вошёл ни один рид из 8904, поэтому знаменатель равен нулю
+и доля не определена — в таблице стоит `NA` (деление 0 на 0 не имеет смысла,
+а не означает «ноль процентов»). У GTDB и Greengenes2, наоборот, все вошедшие
+риды (8013 и 8098) остались без назначенного семейства, поэтому доля равна
+100%: модели определили домен, но ни для одного рида не назвали семейство.
+
+Источник данных: `results/paper_step4/20261118/family_sample_counts.tsv`.
+
+
+Created /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/hw3/bus/draft_1.md (23 lines)Проверяю черновик штатной проверкой.
+
+
+  ────────────────────────────────────────
+  ▸ shell
+    command: cd /Users/elizavetamenshchikova/YSDA/AI/project_bacteria/hw3; python3 check_hw3.py 2>&1 | tail -30
+
+  да   есть файл инструмента *_mcp.py
+  да   family_profile_mcp.py: у инструмента family_profile типы аргументов и результата
+  да   family_profile_mcp.py: у инструмента family_profile строка документации (не короче 12 слов)
+  да   family_profile_mcp.py: есть функция с декоратором tool
+  да   family_profile_mcp.py: --selftest завершается с кодом 0
+  НЕТ  bus/INDEX.md: есть записи генератора и критика
+  НЕТ  каждая рецензия критика начинается строкой «ВЕРДИКТ:»
+  НЕТ  scenario/journal.log: не меньше пяти записей с отметкой времени
+  НЕТ  scenario/journal.log: есть строка с итогом сценария
+  НЕТ  метка git hw3 существует
+  НЕТ  есть REPORT.md
+  НЕТ  в отчёте есть вывод tmux ls
+  НЕТ  в отчёте есть строка вызова инструмента из сеанса
+  НЕТ  в отчёте есть пометки авторства
+
+пройдено 5 из 14Готово. `bus/draft_1.md` создан.
+
+**Что в справке:**
+- Таблица из трёх строк (SILVA 138, GTDB, Greengenes2) с пятью требуемыми столбцами; числа — из `records` MCP-ответа.
+- Пояснение: знаменатель доли — `selected_reads` (риды, отнесённые моделью к Bacteria/Archaea без органелл, Eukaryota и неизвестного домена), а не все риды после DADA2. `NA` у SILVA 138 — знаменатель 0 (0/0 неопределимо, не «ноль процентов»); `100%` у GTDB и Greengenes2 — все вошедшие риды без названного семейства.
+- Источник: `results/paper_step4/20261118/family_sample_counts.tsv`.
+
+**Сверка:** числа совпали с исходной таблицей (`family_sample_counts.tsv`, строки 4/15/26) и с `filter_counts.tsv` (у SILVA 138 все 8904 рида исключены). `check_hw3.py` — 5/14; оставшиеся провалы относятся к поздним стадиям (INDEX.md, journal.log, REPORT.md, git-метка), не к раунду 1.
+
+  ─── AI4Science ───────────────────────────────────────────────
+    ИИ-ассистент исследователя
+    Инференс  →  Контекст  →  Верификация
+  ─────────────────────────────────────────────────────────────
+    Модель:    deepseek-v4-flash/latest (Yandex AI Studio)
+    Контекст:  1M токенов, сжатие истории при 99k
+    Режим:     auto
+    Lean 4:    недоступен (https://scilibai.ru/grag); lean_check вернёт сообщение об ошибке
+    Бюджет:    4,519,914 / 10,000,000 токенов сегодня
+  ─────────────────────────────────────────────────────────────
+    Курс ШАД «ИИ-ассистенты для исследователя. AI4Science»
+    Модель:    /model <алиас> — qwen qwen235 deepseek gptoss junior
+    Команды:   /status  /mode <режим>  /plan <задача>  /compact  /help  /exit
+
