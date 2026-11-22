@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# Запуск сервера MCP «family-profile» интерпретатором из окружения учебного агента.
+# Запускает проектный исходник hw3/tool/family_profile_mcp.py напрямую, без копии в src/ агента.
+# Путь к проекту: $FAMILY_PROFILE_PROJECT, иначе — каталог проекта рядом с этим файлом
+# (запуск из проекта), иначе — путь, записанный при подключении к агенту.
+SELF="${BASH_SOURCE[0]}"
+while [ -L "$SELF" ]; do
+    TARGET="$(readlink "$SELF")"
+    [[ "$TARGET" = /* ]] || TARGET="$(dirname "$SELF")/$TARGET"
+    SELF="$TARGET"
+done
+HERE="$(cd "$(dirname "$SELF")" && pwd)"
+AGENT_DIR="$(cd "$HERE/.." && pwd)"
+
+PY="$AGENT_DIR/.venv/bin/python"
+[ -x "$PY" ] || PY="$(command -v python3 || command -v python)"
+
+DEFAULT_PROJECT="/Users/elizavetamenshchikova/YSDA/AI/project_bacteria"
+
+PROJECT="${FAMILY_PROFILE_PROJECT:-}"
+if [ -z "$PROJECT" ] && [ -f "$HERE/family_profile_mcp.py" ]; then
+    PROJECT="$(cd "$HERE/../.." && pwd)"          # запуск из проекта: hw3/tool/ -> корень
+fi
+if [ -z "$PROJECT" ] && [ -f "$PWD/hw3/tool/family_profile_mcp.py" ]; then
+    PROJECT="$PWD"                                # старт из корня проекта
+fi
+[ -n "$PROJECT" ] || PROJECT="$DEFAULT_PROJECT"
+
+MODULE="$PROJECT/hw3/tool/family_profile_mcp.py"
+if [ ! -f "$MODULE" ]; then
+    echo "family-profile-mcp: нет модуля $MODULE (задайте FAMILY_PROFILE_PROJECT)" >&2
+    exit 1
+fi
+
+exec "$PY" "$MODULE" "$@"
